@@ -178,6 +178,38 @@ async def watch_15m(client: ClobClient, poll_ms: int) -> None:
                     if cex:
                         snap2 = {"ts": now_ms(), "type": "cex_signals", "venue": "binance_spot", "signals": cex}
                         append_jsonl(f"cex-signal-{time.strftime('%Y-%m-%d')}.jsonl", snap2)
+
+                        # Edge vs Polymarket 15m top-of-book (executable asks)
+                        edges = {}
+                        for sym, mm in snap.get("markets", {}).items():
+                            try:
+                                toks = mm.get("tokens") or []
+                                up = next((x for x in toks if str(x.get("outcome", "")).lower() == "up"), None)
+                                down = next((x for x in toks if str(x.get("outcome", "")).lower() == "down"), None)
+                                if not up or not down:
+                                    continue
+                                up_ask = up.get("best_ask")
+                                down_ask = down.get("best_ask")
+                                if not isinstance(up_ask, (int, float)) or not isinstance(down_ask, (int, float)):
+                                    continue
+                                p_hat = float((cex.get(sym, {}) or {}).get("p_hat_up"))
+                                # simple expected edge ignoring fee (paper reference)
+                                edge_up = p_hat - float(up_ask)
+                                edge_down = (1.0 - p_hat) - float(down_ask)
+                                edges[sym] = {
+                                    "condition_id": mm.get("condition_id"),
+                                    "p_hat_up": p_hat,
+                                    "up_ask": float(up_ask),
+                                    "down_ask": float(down_ask),
+                                    "edge_up": float(edge_up),
+                                    "edge_down": float(edge_down),
+                                }
+                            except Exception:
+                                continue
+
+                        if edges:
+                            snap3 = {"ts": now_ms(), "type": "cex_edge_vs_pm15m", "venue": "binance_spot", "edges": edges}
+                            append_jsonl(f"cex-edge-{time.strftime('%Y-%m-%d')}.jsonl", snap3)
                 except Exception:
                     pass
 

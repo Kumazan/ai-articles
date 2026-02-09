@@ -68,6 +68,7 @@ def api_status():
     arbscan = tail_jsonl(DATA / f"arbscan-{day}.jsonl", 200)
     signals = tail_jsonl(DATA / f"arb-signals-{day}.jsonl", 200)
     cex = tail_jsonl(DATA / f"cex-signal-{day}.jsonl", 50)
+    cex_edge = tail_jsonl(DATA / f"cex-edge-{day}.jsonl", 50)
 
     pm15m = latest_15m_snapshot(day)
     daily = latest_json(DATA / f"daily-summary-{day}.json")
@@ -80,6 +81,7 @@ def api_status():
         "pm15m_latest": pm15m,
         "daily_summary": daily,
         "cex_signals_recent": cex[-10:],
+        "cex_edge_recent": cex_edge[-10:],
     }
 
 
@@ -179,6 +181,7 @@ def index():
     <div class="muted small" id="daily">載入中…</div>
     <div class="footer">由 <span class="mono">data/daily-summary-YYYY-MM-DD.json</span> 生成（若不存在會顯示載入中）。</div>
     <div class="muted small" style="margin-top:8px;" id="cex">CEX 外部訊號：載入中…</div>
+    <div class="muted small" style="margin-top:6px;" id="cexEdge">Edge：載入中…</div>
     <div class="footer">CEX 外部訊號（Binance）：15m drift → p_hat_up（保守映射；僅供參考/紙上交易）。</div>
   </div>
 
@@ -322,6 +325,22 @@ async function refresh(){
           return `${sym}: drift=${drift} p_hat_up=${ph}`;
         });
         el.textContent = parts.join(' ｜ ');
+      }
+    }
+
+    // CEX edge vs PM15m (latest)
+    const edger = (j.cex_edge_recent || []);
+    const edgeLatest = edger.length ? edger[edger.length-1] : null;
+    if(edgeLatest && edgeLatest.edges){
+      const el2 = document.getElementById('cexEdge');
+      if(el2){
+        const parts2 = Object.keys(edgeLatest.edges).map(sym=>{
+          const e = edgeLatest.edges[sym] || {};
+          const eu = (typeof e.edge_up === 'number') ? (e.edge_up*100).toFixed(2)+'pp' : '--';
+          const ed = (typeof e.edge_down === 'number') ? (e.edge_down*100).toFixed(2)+'pp' : '--';
+          return `${sym}: edge_up=${eu} edge_down=${ed}`;
+        });
+        el2.textContent = 'Edge(僅參考,未含fee)：' + parts2.join(' ｜ ');
       }
     }
     const tbody = document.getElementById('pm15mRows');
