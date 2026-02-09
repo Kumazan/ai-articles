@@ -315,14 +315,20 @@ async function refresh(){
     // CEX signals (latest)
     const cexr = (j.cex_signals_recent || []);
     const cexLatest = cexr.length ? cexr[cexr.length-1] : null;
-    if(cexLatest && cexLatest.signals){
+    if(cexLatest){
       const el = document.getElementById('cex');
       if(el){
-        const parts = Object.keys(cexLatest.signals).map(sym=>{
-          const s = cexLatest.signals[sym] || {};
-          const drift = (typeof s.drift === 'number') ? (s.drift*100).toFixed(3)+'%' : '--';
-          const ph = (typeof s.p_hat_up === 'number') ? s.p_hat_up.toFixed(3) : '--';
-          return `${sym}: drift=${drift} p_hat_up=${ph}`;
+        const driftS = cexLatest.signals_drift || {};
+        const distS = cexLatest.signals_dist || {};
+        const syms = Array.from(new Set([...Object.keys(driftS), ...Object.keys(distS)]));
+        const parts = syms.map(sym=>{
+          const sd = driftS[sym] || {};
+          const ss = distS[sym] || {};
+          const drift = (typeof sd.drift === 'number') ? (sd.drift*100).toFixed(3)+'%' : '--';
+          const p1 = (typeof sd.p_hat_up === 'number') ? sd.p_hat_up.toFixed(3) : '--';
+          const p2 = (typeof ss.p_hat_up === 'number') ? ss.p_hat_up.toFixed(3) : '--';
+          const tr = (typeof ss.t_rem_s === 'number') ? Math.round(ss.t_rem_s)+'s' : '--';
+          return `${sym}: drift=${drift} p_drift=${p1} p_dist=${p2} t_rem=${tr}`;
         });
         el.textContent = parts.join(' ｜ ');
       }
@@ -336,9 +342,11 @@ async function refresh(){
       if(el2){
         const parts2 = Object.keys(edgeLatest.edges).map(sym=>{
           const e = edgeLatest.edges[sym] || {};
-          const eu = (typeof e.edge_up === 'number') ? (e.edge_up*100).toFixed(2)+'pp' : '--';
-          const ed = (typeof e.edge_down === 'number') ? (e.edge_down*100).toFixed(2)+'pp' : '--';
-          return `${sym}: edge_up=${eu} edge_down=${ed}`;
+          const eu1 = (typeof e.edge_up_drift === 'number') ? (e.edge_up_drift*100).toFixed(2)+'pp' : '--';
+          const ed1 = (typeof e.edge_down_drift === 'number') ? (e.edge_down_drift*100).toFixed(2)+'pp' : '--';
+          const eu2 = (typeof e.edge_up_dist === 'number') ? (e.edge_up_dist*100).toFixed(2)+'pp' : '--';
+          const ed2 = (typeof e.edge_down_dist === 'number') ? (e.edge_down_dist*100).toFixed(2)+'pp' : '--';
+          return `${sym}: up(drift/dist)=${eu1}/${eu2} down(drift/dist)=${ed1}/${ed2}`;
         });
         el2.textContent = 'Edge(僅參考,未含fee)：' + parts2.join(' ｜ ');
       }

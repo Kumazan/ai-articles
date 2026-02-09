@@ -167,16 +167,26 @@ async def watch_15m(client: ClobClient, poll_ms: int) -> None:
                 }
                 # External reference signal (Binance 15m drift -> p_hat)
                 try:
-                    from cex_signal import compute_drift_signal
+                    from cex_signal import compute_drift_signal, compute_dist_to_open_signal
 
                     sym_map = {"BTC": "BTCUSDT", "ETH": "ETHUSDT", "SOL": "SOLUSDT"}
                     cex = {}
+                    cex2 = {}
                     for k, bsym in sym_map.items():
                         sig = await compute_drift_signal(session, symbol=bsym)
+                        sig2 = await compute_dist_to_open_signal(session, symbol=bsym)
                         if sig:
                             cex[k] = sig.__dict__
-                    if cex:
-                        snap2 = {"ts": now_ms(), "type": "cex_signals", "venue": "binance_spot", "signals": cex}
+                        if sig2:
+                            cex2[k] = sig2.__dict__
+                    if cex or cex2:
+                        snap2 = {
+                            "ts": now_ms(),
+                            "type": "cex_signals",
+                            "venue": "binance_spot",
+                            "signals_drift": cex,
+                            "signals_dist": cex2,
+                        }
                         append_jsonl(f"cex-signal-{time.strftime('%Y-%m-%d')}.jsonl", snap2)
 
                         # Edge vs Polymarket 15m top-of-book (executable asks)
@@ -192,18 +202,32 @@ async def watch_15m(client: ClobClient, poll_ms: int) -> None:
                                 down_ask = down.get("best_ask")
                                 if not isinstance(up_ask, (int, float)) or not isinstance(down_ask, (int, float)):
                                     continue
-                                p_hat = float((cex.get(sym, {}) or {}).get("p_hat_up"))
-                                # simple expected edge ignoring fee (paper reference)
-                                edge_up = p_hat - float(up_ask)
-                                edge_down = (1.0 - p_hat) - float(down_ask)
-                                edges[sym] = {
+
+                                p_drift = float((cex.get(sym, {}) or {}).get("p_hat_up")) if sym in cex else None
+                                p_dist = float((cex2.get(sym, {}) or {}).get("p_hat_up")) if sym in cex2 else None
+
+                                rec = {
                                     "condition_id": mm.get("condition_id"),
-                                    "p_hat_up": p_hat,
                                     "up_ask": float(up_ask),
                                     "down_ask": float(down_ask),
-                                    "edge_up": float(edge_up),
-                                    "edge_down": float(edge_down),
                                 }
+                                if p_drift is not None:
+                                    rec.update(
+                                        {
+                                            "p_hat_up_drift": float(p_drift),
+                                            "edge_up_drift": float(p_drift - float(up_ask)),
+                                            "edge_down_drift": float((1.0 - p_drift) - float(down_ask)),
+                                        }
+                                    )
+                                if p_dist is not None:
+                                    rec.update(
+                                        {
+                                            "p_hat_up_dist": float(p_dist),
+                                            "edge_up_dist": float(p_dist - float(up_ask)),
+                                            "edge_down_dist": float((1.0 - p_dist) - float(down_ask)),
+                                        }
+                                    )
+                                edges[sym] = rec
                             except Exception:
                                 continue
 
