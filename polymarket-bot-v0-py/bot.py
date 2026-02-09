@@ -324,6 +324,10 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                 if best is None:
                     return None
 
+                # Success path: gently decay backoff.
+                async with lock:
+                    transport_backoff_s = max(0.0, transport_backoff_s - 0.01)
+
                 return {
                     "ts": now_ms(),
                     "type": "arb_exec_buy_all_outcomes",
@@ -399,9 +403,27 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                     elif "connection" in low or "connect" in low:
                         cat = "connect_error"
 
+                # Robust status_code extraction (covers repr and embedded JSON error payloads)
+                try:
+                    import re
+
+                    m_sc = re.search(r"status_code=(\d+)", msg)
+                    if m_sc:
+                        cat = f"HTTP_{int(m_sc.group(1))}"
+                    else:
+                        m_sc2 = re.search(r"\"statuscode\"\s*:\s*(\d+)", msg.lower())
+                        if m_sc2:
+                            cat = f"HTTP_{int(m_sc2.group(1))}"
+                except Exception:
+                    pass
+
                 m = msg.lower()
                 if "429" in m:
                     cat = "HTTP_429"
+                elif "timeout_read" in m:
+                    cat = "timeout_read"
+                elif "timeout_connect" in m:
+                    cat = "timeout_connect"
                 elif "timeout" in m:
                     cat = "timeout"
                 elif "geoblock" in m or "forbidden" in m or "403" in m:
