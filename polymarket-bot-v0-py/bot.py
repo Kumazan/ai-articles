@@ -250,6 +250,12 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
     async def eval_market(cid: str) -> Optional[Dict[str, Any]]:
         nonlocal err_count, rate_limit_count, signal_bids_gt_1
         async with sem:
+            # shared backoff if transport errors are spiking
+            try:
+                if transport_backoff_s > 0:
+                    await asyncio.sleep(transport_backoff_s)
+            except Exception:
+                pass
             try:
                 mkt = await asyncio.to_thread(client.get_market, cid)
                 tokens = mkt.get("tokens") or []
@@ -350,15 +356,10 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                     pass
 
                 if cat == "PolyApiException":
-                    # Parse PolyApiException repr for status_code and common transport errors.
+                    # Parse PolyApiException repr for status_code and transport-level error strings.
                     low = msg.lower()
-                    if "status_code=none" in low:
-                        cat = "PolyApiException_no_status"
-                    if "timeout" in low:
-                        cat = "timeout"
-                    if "connect" in low and "error" in low:
-                        cat = "connect_error"
 
+                    # status_code
                     if "status_code=" in msg:
                         try:
                             import re
@@ -368,6 +369,25 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                                 cat = f"HTTP_{int(m_sc.group(1))}"
                         except Exception:
                             pass
+
+                    # transport-ish classification (when status is missing)
+                    if cat == "PolyApiException" and "status_code=none" in low:
+                        cat = "PolyApiException_no_status"
+
+                    if "readtimeout" in low or "read timeout" in low:
+                        cat = "timeout_read"
+                    elif "connecttimeout" in low or "connect timeout" in low:
+                        cat = "timeout_connect"
+                    elif "timeout" in low:
+                        cat = "timeout"
+                    elif "dns" in low or "name or service not known" in low or "temporary failure in name resolution" in low:
+                        cat = "dns_error"
+                    elif "ssl" in low or "certificate" in low:
+                        cat = "ssl_error"
+                    elif "remoteprotocollerror" in low or "protocol error" in low:
+                        cat = "remote_protocol"
+                    elif "connection" in low or "connect" in low:
+                        cat = "connect_error"
 
                 m = msg.lower()
                 if "429" in m:
@@ -393,17 +413,25 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
 
                 async with lock:
                     err_count += 1
+
+                    # adaptive backoff for flaky transport errors (helps without waiting for autotune)
+                    if cat in {"timeout", "timeout_read", "timeout_connect", "connect_error", "dns_error", "ssl_error", "remote_protocol", "PolyApiException_no_status"}:
+                        transport_backoff_s = min(0.50, transport_backoff_s + 0.05)
+
                     # record a capped sample of categories only
                     try:
                         if len(errors_detail) < 50:
                             errors_detail.append(cat)
                     except Exception:
                         pass
-                    if "429" in msg or "rate" in msg.lower():
+
+                    if "429" in msg or "rate" in msg.lower() or cat == "HTTP_429":
                         rate_limit_count += 1
                 return None
 
     errors_detail: list[str] = []
+    # dynamic backoff to reduce transport-level flakiness without touching optimizer
+    transport_backoff_s: float = 0.0
 
     tasks = [eval_market(cid) for cid in cids]
     results = await asyncio.gather(*tasks)
