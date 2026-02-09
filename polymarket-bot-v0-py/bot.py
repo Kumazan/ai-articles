@@ -165,6 +165,22 @@ async def watch_15m(client: ClobClient, poll_ms: int) -> None:
                     "down_bid": down.get("best_bid") if down else None,
                     "down_ask": down.get("best_ask") if down else None,
                 }
+                # External reference signal (Binance 15m drift -> p_hat)
+                try:
+                    from cex_signal import compute_drift_signal
+
+                    sym_map = {"BTC": "BTCUSDT", "ETH": "ETHUSDT", "SOL": "SOLUSDT"}
+                    cex = {}
+                    for k, bsym in sym_map.items():
+                        sig = await compute_drift_signal(session, symbol=bsym)
+                        if sig:
+                            cex[k] = sig.__dict__
+                    if cex:
+                        snap2 = {"ts": now_ms(), "type": "cex_signals", "venue": "binance_spot", "signals": cex}
+                        append_jsonl(f"cex-signal-{time.strftime('%Y-%m-%d')}.jsonl", snap2)
+                except Exception:
+                    pass
+
                 console.print({"15m_top": brief})
                 last_summary = time.time()
 
@@ -204,10 +220,17 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
         # 1) rewards universe (best liquidity proxy)
         if use_rewards:
             try:
-                from universe import fetch_rewards_condition_ids
+                from universe import fetch_filtered_universe
 
                 async with aiohttp.ClientSession() as s:
-                    rewards_cids = await fetch_rewards_condition_ids(session=s, host=os.getenv("CLOB_HOST", "https://clob.polymarket.com"), limit=min(rewards_n, max_markets))
+                    rewards_cids, _stats = await fetch_filtered_universe(
+                        session=s,
+                        host=os.getenv("CLOB_HOST", "https://clob.polymarket.com"),
+                        limit=min(rewards_n, max_markets),
+                        min_volume_24h=float(os.getenv("UNIVERSE_MIN_VOL", "0")),
+                        min_daily_rate=float(os.getenv("UNIVERSE_MIN_RATE", "0")),
+                        verbose=False,
+                    )
                 for cid in rewards_cids:
                     if cid not in seen:
                         cids.append(cid)

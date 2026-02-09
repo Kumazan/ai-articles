@@ -67,6 +67,7 @@ def api_status():
     day = __import__("time").strftime("%Y-%m-%d")
     arbscan = tail_jsonl(DATA / f"arbscan-{day}.jsonl", 200)
     signals = tail_jsonl(DATA / f"arb-signals-{day}.jsonl", 200)
+    cex = tail_jsonl(DATA / f"cex-signal-{day}.jsonl", 50)
 
     pm15m = latest_15m_snapshot(day)
     daily = latest_json(DATA / f"daily-summary-{day}.json")
@@ -78,6 +79,7 @@ def api_status():
         "signals_recent": signals[-60:],
         "pm15m_latest": pm15m,
         "daily_summary": daily,
+        "cex_signals_recent": cex[-10:],
     }
 
 
@@ -176,6 +178,8 @@ def index():
     <h2>今日總覽（Daily Summary）</h2>
     <div class="muted small" id="daily">載入中…</div>
     <div class="footer">由 <span class="mono">data/daily-summary-YYYY-MM-DD.json</span> 生成（若不存在會顯示載入中）。</div>
+    <div class="muted small" style="margin-top:8px;" id="cex">CEX 外部訊號：載入中…</div>
+    <div class="footer">CEX 外部訊號（Binance）：15m drift → p_hat_up（保守映射；僅供參考/紙上交易）。</div>
   </div>
 
   <div class="grid">
@@ -304,6 +308,22 @@ async function refresh(){
 
     // 15m
     const pm = j.pm15m_latest;
+
+    // CEX signals (latest)
+    const cexr = (j.cex_signals_recent || []);
+    const cexLatest = cexr.length ? cexr[cexr.length-1] : null;
+    if(cexLatest && cexLatest.signals){
+      const el = document.getElementById('cex');
+      if(el){
+        const parts = Object.keys(cexLatest.signals).map(sym=>{
+          const s = cexLatest.signals[sym] || {};
+          const drift = (typeof s.drift === 'number') ? (s.drift*100).toFixed(3)+'%' : '--';
+          const ph = (typeof s.p_hat_up === 'number') ? s.p_hat_up.toFixed(3) : '--';
+          return `${sym}: drift=${drift} p_hat_up=${ph}`;
+        });
+        el.textContent = parts.join(' ｜ ');
+      }
+    }
     const tbody = document.getElementById('pm15mRows');
     if(pm && pm.markets){
       const syms = Object.keys(pm.markets);
