@@ -67,6 +67,7 @@ def api_status():
     day = __import__("time").strftime("%Y-%m-%d")
     arbscan = tail_jsonl(DATA / f"arbscan-{day}.jsonl", 200)
     signals = tail_jsonl(DATA / f"arb-signals-{day}.jsonl", 200)
+    paper = tail_jsonl(DATA / f"paper-signals-{day}.jsonl", 200)
     cex = tail_jsonl(DATA / f"cex-signal-{day}.jsonl", 50)
     cex_edge = tail_jsonl(DATA / f"cex-edge-{day}.jsonl", 50)
 
@@ -82,6 +83,7 @@ def api_status():
         "daily_summary": daily,
         "cex_signals_recent": cex[-10:],
         "cex_edge_recent": cex_edge[-10:],
+        "paper_signals_recent": paper[-10:],
     }
 
 
@@ -219,6 +221,10 @@ def index():
       <h2>套利訊號：sum(best bids) &gt; 1（僅訊號）</h2>
       <div class="muted small">這類通常需要庫存/反向腿才好執行；先用來觀察市場不一致。</div>
       <pre class="mono small" id="signals">載入中…</pre>
+
+      <h2 style="margin-top:12px;">Paper signals（CEX edge，未下單）</h2>
+      <div class="muted small">當 edge_net 超過門檻會寫入一筆（只做 paper 訊號）。</div>
+      <pre class="mono small" id="paper">載入中…</pre>
     </div>
 
     <div class="card">
@@ -346,7 +352,11 @@ async function refresh(){
           const ed1 = (typeof e.edge_down_drift === 'number') ? (e.edge_down_drift*100).toFixed(2)+'pp' : '--';
           const eu2 = (typeof e.edge_up_dist === 'number') ? (e.edge_up_dist*100).toFixed(2)+'pp' : '--';
           const ed2 = (typeof e.edge_down_dist === 'number') ? (e.edge_down_dist*100).toFixed(2)+'pp' : '--';
-          return `${sym}: up(drift/dist)=${eu1}/${eu2} down(drift/dist)=${ed1}/${ed2}`;
+          const enu1 = (typeof e.edge_up_net_drift === 'number') ? (e.edge_up_net_drift*100).toFixed(2)+'pp' : '--';
+          const end1 = (typeof e.edge_down_net_drift === 'number') ? (e.edge_down_net_drift*100).toFixed(2)+'pp' : '--';
+          const enu2 = (typeof e.edge_up_net_dist === 'number') ? (e.edge_up_net_dist*100).toFixed(2)+'pp' : '--';
+          const end2 = (typeof e.edge_down_net_dist === 'number') ? (e.edge_down_net_dist*100).toFixed(2)+'pp' : '--';
+          return `${sym}: net up(d/d)=${enu1}/${enu2} net down(d/d)=${end1}/${end2}`;
         });
         el2.textContent = 'Edge(僅參考,未含fee)：' + parts2.join(' ｜ ');
       }
@@ -374,6 +384,13 @@ async function refresh(){
     // signals
     const sig = (j.signals_recent || []).slice(-6).reverse();
     document.getElementById('signals').textContent = sig.length ? JSON.stringify(sig, null, 2) : '最近沒有訊號';
+
+    // Paper signals (best-effort)
+    const ps = (j.paper_signals_recent || []).slice(-3).reverse();
+    const elps = document.getElementById('paper');
+    if(elps){
+      elps.textContent = ps.length ? JSON.stringify(ps, null, 2) : '最近沒有 paper signal';
+    }
 
     // raw
     document.getElementById('raw').textContent = JSON.stringify({day:j.day, autotune:j.autotune}, null, 2);

@@ -51,6 +51,7 @@ class MarketRef:
     condition_id: str
     question: str
     tokens: List[TokenRef]
+    fee_bps: int = 0
 
 
 def best(ob: Any) -> Tuple[Optional[float], Optional[float]]:
@@ -98,7 +99,14 @@ async def resolve_active_15m_market(session: aiohttp.ClientSession, client: Clob
             tokens = [
                 TokenRef(symbol=symbol, outcome=t["outcome"], token_id=t["token_id"]) for t in (mkt.get("tokens") or [])
             ]
-            return MarketRef(symbol=symbol, condition_id=condition_id, question=mkt.get("question", ""), tokens=tokens)
+            fee_bps = int(mkt.get("taker_base_fee") or 0)
+            return MarketRef(
+                symbol=symbol,
+                condition_id=condition_id,
+                question=mkt.get("question", ""),
+                tokens=tokens,
+                fee_bps=fee_bps,
+            )
         except Exception:
             continue
 
@@ -139,7 +147,7 @@ async def watch_15m(client: ClobClient, poll_ms: int) -> None:
             snap = {"ts": now_ms(), "type": "pm_15m_top", "markets": {}}
 
             for sym, mkt in markets.items():
-                snap["markets"][sym] = {"condition_id": mkt.condition_id, "tokens": []}
+                snap["markets"][sym] = {"condition_id": mkt.condition_id, "fee_bps": int(getattr(mkt, "fee_bps", 0) or 0), "tokens": []}
                 for t in mkt.tokens:
                     try:
                         ob = client.get_order_book(t.token_id)
@@ -206,17 +214,29 @@ async def watch_15m(client: ClobClient, poll_ms: int) -> None:
                                 p_drift = float((cex.get(sym, {}) or {}).get("p_hat_up")) if sym in cex else None
                                 p_dist = float((cex2.get(sym, {}) or {}).get("p_hat_up")) if sym in cex2 else None
 
+                                fee_bps = int(mm.get("fee_bps") or 0)
+                                fee_rate = fee_bps / 10000.0
+                                buf = float(os.getenv("CEX_EDGE_BUFFER_PP", "0.003"))
+
                                 rec = {
                                     "condition_id": mm.get("condition_id"),
+                                    "fee_bps": fee_bps,
+                                    "buffer_pp": buf,
                                     "up_ask": float(up_ask),
                                     "down_ask": float(down_ask),
                                 }
+                                def net_edge(p: float, ask: float) -> float:
+                                    # EV per share approx: p - ask*(1+fee) - buffer
+                                    return float(p - ask * (1.0 + fee_rate) - buf)
+
                                 if p_drift is not None:
                                     rec.update(
                                         {
                                             "p_hat_up_drift": float(p_drift),
                                             "edge_up_drift": float(p_drift - float(up_ask)),
                                             "edge_down_drift": float((1.0 - p_drift) - float(down_ask)),
+                                            "edge_up_net_drift": net_edge(float(p_drift), float(up_ask)),
+                                            "edge_down_net_drift": net_edge(float(1.0 - p_drift), float(down_ask)),
                                         }
                                     )
                                 if p_dist is not None:
@@ -225,6 +245,8 @@ async def watch_15m(client: ClobClient, poll_ms: int) -> None:
                                             "p_hat_up_dist": float(p_dist),
                                             "edge_up_dist": float(p_dist - float(up_ask)),
                                             "edge_down_dist": float((1.0 - p_dist) - float(down_ask)),
+                                            "edge_up_net_dist": net_edge(float(p_dist), float(up_ask)),
+                                            "edge_down_net_dist": net_edge(float(1.0 - p_dist), float(down_ask)),
                                         }
                                     )
                                 edges[sym] = rec
@@ -234,6 +256,48 @@ async def watch_15m(client: ClobClient, poll_ms: int) -> None:
                         if edges:
                             snap3 = {"ts": now_ms(), "type": "cex_edge_vs_pm15m", "venue": "binance_spot", "edges": edges}
                             append_jsonl(f"cex-edge-{time.strftime('%Y-%m-%d')}.jsonl", snap3)
+
+                            # Paper signal if net edge crosses threshold
+                            thr = float(os.getenv("CEX_EDGE_THRESHOLD_PP", "0.006"))
+                            best_sig = None
+                            for sym, e in edges.items():
+                                # candidates: (edge, side, model)
+                                cands = []
+                                for model in ("drift", "dist"):
+                                    eu = e.get(f"edge_up_net_{model}")
+                                    ed = e.get(f"edge_down_net_{model}")
+                                    if isinstance(eu, (int, float)):
+                                        cands.append((float(eu), "UP", model))
+                                    if isinstance(ed, (int, float)):
+                                        cands.append((float(ed), "DOWN", model))
+                                if not cands:
+                                    continue
+                                edge, side, model = max(cands, key=lambda x: x[0])
+                                if edge > thr and (best_sig is None or edge > best_sig[0]):
+                                    best_sig = (edge, sym, side, model)
+
+                            if best_sig is not None:
+                                edge, sym, side, model = best_sig
+                                e = edges[sym]
+                                sig = {
+                                    "ts": now_ms(),
+                                    "type": "paper_signal",
+                                    "strategy": "cex_edge_vs_pm15m",
+                                    "venue": "binance_spot",
+                                    "symbol": sym,
+                                    "condition_id": e.get("condition_id"),
+                                    "side": side,
+                                    "model": model,
+                                    "edge_net": float(edge),
+                                    "threshold_pp": thr,
+                                    "fee_bps": e.get("fee_bps"),
+                                    "buffer_pp": e.get("buffer_pp"),
+                                    "up_ask": e.get("up_ask"),
+                                    "down_ask": e.get("down_ask"),
+                                    "p_hat_up_drift": e.get("p_hat_up_drift"),
+                                    "p_hat_up_dist": e.get("p_hat_up_dist"),
+                                }
+                                append_jsonl(f"paper-signals-{time.strftime('%Y-%m-%d')}.jsonl", sig)
                 except Exception:
                     pass
 
@@ -296,7 +360,12 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
 
         # 2) sampling markets as fallback/fill
         cursor = "MA=="  # INITIAL_CURSOR base64
-        pages = int(os.getenv("ARB_SCAN_PAGES", "8"))
+        pages = int(os.getenv("ARB_SCAN_PAGES", "4"))
+
+        cooldown_until = float(_UNIVERSE_CACHE.get("sampling_cooldown_until", 0.0))
+        if time.time() < cooldown_until:
+            pages = 0
+
         for _ in range(pages):
             try:
                 res = await asyncio.to_thread(client.get_sampling_markets, cursor)
@@ -306,7 +375,8 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                 console.print({"sampling_markets_failed": msg[:180]}, style="yellow")
                 # mark rate limit and stop sampling for now
                 if "1015" in msg or "429" in msg:
-                    # backoff aggressively
+                    # backoff aggressively and set cooldown to avoid CF ban loops
+                    _UNIVERSE_CACHE["sampling_cooldown_until"] = time.time() + 15 * 60
                     await asyncio.sleep(60)
                 break
 
