@@ -73,10 +73,15 @@ class DailySummary:
 
     # arbscan
     arbscan_count: int
+    scanned_sum: int
     took_s_avg: float
     took_s_p50: float
     took_s_p95: float
     errors_sum: int
+    scans_with_errors: int
+    errors_per_scan_avg: float
+    errors_per_market_avg: float
+    top_error_categories: List[Tuple[str, int]]
     rate_limits_sum: int
     found_sum: int
 
@@ -102,15 +107,29 @@ def summarize(day: str, data_dir: Path) -> DailySummary:
     errors_sum = 0
     rl_sum = 0
     found_sum = 0
+    scanned_sum = 0
+    scans_with_errors = 0
+    error_cats: Dict[str, int] = {}
 
     for r in arbscan:
         # These keys exist in our arbscan log entries.
         took = r.get("took_s")
         if isinstance(took, (int, float)):
             took_vals.append(float(took))
+        scanned = r.get("scanned")
+        if isinstance(scanned, int):
+            scanned_sum += scanned
         err = r.get("errors")
         if isinstance(err, int):
             errors_sum += err
+            if err > 0:
+                scans_with_errors += 1
+        # optional detail categories (capped list)
+        det = r.get("errors_detail")
+        if isinstance(det, list):
+            for x in det:
+                if isinstance(x, str) and x:
+                    error_cats[x] = error_cats.get(x, 0) + 1
         rl = r.get("rate_limits")
         if isinstance(rl, int):
             rl_sum += rl
@@ -138,6 +157,10 @@ def summarize(day: str, data_dir: Path) -> DailySummary:
 
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
+    top_cats = sorted(error_cats.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    errors_per_scan = (errors_sum / len(arbscan)) if arbscan else 0.0
+    errors_per_mkt = (errors_sum / scanned_sum) if scanned_sum else 0.0
+
     return DailySummary(
         day=day,
         generated_at=now,
@@ -148,10 +171,15 @@ def summarize(day: str, data_dir: Path) -> DailySummary:
             "autotune_jsonl": bad_autotune,
         },
         arbscan_count=len(arbscan),
+        scanned_sum=int(scanned_sum),
         took_s_avg=float(took_avg),
         took_s_p50=_quantile(took_vals_sorted, 0.50),
         took_s_p95=_quantile(took_vals_sorted, 0.95),
         errors_sum=int(errors_sum),
+        scans_with_errors=int(scans_with_errors),
+        errors_per_scan_avg=float(errors_per_scan),
+        errors_per_market_avg=float(errors_per_mkt),
+        top_error_categories=top_cats,
         rate_limits_sum=int(rl_sum),
         found_sum=int(found_sum),
         signals_count=int(signals_count),
@@ -168,14 +196,17 @@ def render_text(s: DailySummary) -> str:
             f"generated_at: {s.generated_at}",
             "",
             "Arbscan:",
-            f"  scans:       {s.arbscan_count}",
+            f"  scans:       {s.arbscan_count} (markets scanned total={s.scanned_sum})",
             f"  took_s:      avg={s.took_s_avg:.2f}  p50={s.took_s_p50:.2f}  p95={s.took_s_p95:.2f}",
-            f"  errors:      {s.errors_sum}",
+            f"  errors:      sum={s.errors_sum}  scans_with_errors={s.scans_with_errors}  per_scan={s.errors_per_scan_avg:.2f}  per_market={s.errors_per_market_avg:.4f}",
             f"  rate_limits: {s.rate_limits_sum}",
             f"  found_sum:   {s.found_sum}",
             "",
             "Signals:",
             f"  count:       {s.signals_count}",
+            "",
+            "Top error categories (sample):",
+            "  " + (", ".join([f"{k}={v}" for k, v in s.top_error_categories]) if s.top_error_categories else "(none)"),
             "",
             "Autotune (best-effort):",
             f"  last_concurrency: {conc}",

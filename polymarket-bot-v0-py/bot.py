@@ -329,11 +329,35 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                 }
             except Exception as e:
                 msg = str(e)
+                etype = type(e).__name__
+                # Keep a small sample of error categories for daily summaries.
+                # Avoid dumping long messages or secrets.
+                cat = etype
+                m = msg.lower()
+                if "429" in m:
+                    cat = "HTTP_429"
+                elif "timeout" in m:
+                    cat = "timeout"
+                elif "geoblock" in m or "forbidden" in m or "403" in m:
+                    cat = "forbidden"
+                elif "connection" in m or "connect" in m:
+                    cat = "connect_error"
+                elif "json" in m and "decode" in m:
+                    cat = "json_decode"
+
                 async with lock:
                     err_count += 1
+                    # record a capped sample of categories only
+                    try:
+                        if len(errors_detail) < 50:
+                            errors_detail.append(cat)
+                    except Exception:
+                        pass
                     if "429" in msg or "rate" in msg.lower():
                         rate_limit_count += 1
                 return None
+
+    errors_detail: list[str] = []
 
     tasks = [eval_market(cid) for cid in cids]
     results = await asyncio.gather(*tasks)
@@ -355,6 +379,7 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
         "concurrency": concurrency,
         "universe_ttl_s": cache_ttl,
         "errors": err_count,
+        "errors_detail": errors_detail,
         "rate_limits": rate_limit_count,
         "signals_sum_bids_gt_1": signal_bids_gt_1,
     }
