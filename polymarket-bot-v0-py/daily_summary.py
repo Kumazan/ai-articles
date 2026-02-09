@@ -82,6 +82,7 @@ class DailySummary:
     errors_per_scan_avg: float
     errors_per_market_avg: float
     top_error_categories: List[Tuple[str, int]]
+    top_error_categories_recent: List[Tuple[str, int]]
     rate_limits_sum: int
     found_sum: int
 
@@ -110,9 +111,14 @@ def summarize(day: str, data_dir: Path) -> DailySummary:
     scanned_sum = 0
     scans_with_errors = 0
     error_cats: Dict[str, int] = {}
+    recent_error_cats: Dict[str, int] = {}
+    recent_window: List[Dict[str, Any]] = []
 
     for r in arbscan:
         # These keys exist in our arbscan log entries.
+        recent_window.append(r)
+        if len(recent_window) > 60:
+            recent_window.pop(0)
         took = r.get("took_s")
         if isinstance(took, (int, float)):
             took_vals.append(float(took))
@@ -157,7 +163,16 @@ def summarize(day: str, data_dir: Path) -> DailySummary:
 
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
+    # recent top categories (last 60 arbscan records)
+    for r in recent_window:
+        det = r.get("errors_detail")
+        if isinstance(det, list):
+            for x in det:
+                if isinstance(x, str) and x:
+                    recent_error_cats[x] = recent_error_cats.get(x, 0) + 1
+
     top_cats = sorted(error_cats.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    top_cats_recent = sorted(recent_error_cats.items(), key=lambda kv: kv[1], reverse=True)[:10]
     errors_per_scan = (errors_sum / len(arbscan)) if arbscan else 0.0
     errors_per_mkt = (errors_sum / scanned_sum) if scanned_sum else 0.0
 
@@ -180,6 +195,7 @@ def summarize(day: str, data_dir: Path) -> DailySummary:
         errors_per_scan_avg=float(errors_per_scan),
         errors_per_market_avg=float(errors_per_mkt),
         top_error_categories=top_cats,
+        top_error_categories_recent=top_cats_recent,
         rate_limits_sum=int(rl_sum),
         found_sum=int(found_sum),
         signals_count=int(signals_count),
@@ -205,8 +221,10 @@ def render_text(s: DailySummary) -> str:
             "Signals:",
             f"  count:       {s.signals_count}",
             "",
-            "Top error categories (sample):",
+            "Top error categories (today sample):",
             "  " + (", ".join([f"{k}={v}" for k, v in s.top_error_categories]) if s.top_error_categories else "(none)"),
+            "Top error categories (recent 60 scans):",
+            "  " + (", ".join([f"{k}={v}" for k, v in s.top_error_categories_recent]) if s.top_error_categories_recent else "(none)"),
             "",
             "Autotune (best-effort):",
             f"  last_concurrency: {conc}",
