@@ -357,13 +357,39 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                         else:
                             cat = "PolyApiException"
 
-                        # Use error_msg (may be dict/str) for finer classification without logging it.
+                        # Use error_msg payload (may be dict/str) for finer classification.
+                        # We do NOT log this; we only derive a category.
                         em = getattr(e, "error_msg", None)
                         try:
                             if isinstance(em, dict):
-                                msg = msg + " | " + json.dumps(em, ensure_ascii=False)[:500]
+                                for k in ("statusCode", "status_code", "status"):
+                                    v = em.get(k)
+                                    if isinstance(v, int):
+                                        cat = f"HTTP_{v}"
+                                        break
+                                # Some payloads use "code" as an int HTTP-ish code.
+                                if cat == "PolyApiException":
+                                    v = em.get("code")
+                                    if isinstance(v, int) and 100 <= v <= 599:
+                                        cat = f"HTTP_{v}"
+
+                                # If server responds with a string error, do light keyword mapping.
+                                em_s = json.dumps(em, ensure_ascii=False)
+                                low_em = em_s.lower()
+                                if "geoblock" in low_em or "forbidden" in low_em:
+                                    cat = "HTTP_403"
+                                elif "not found" in low_em:
+                                    cat = "HTTP_404"
+                                elif "rate" in low_em and "limit" in low_em:
+                                    cat = "HTTP_429"
                             elif isinstance(em, str):
-                                msg = msg + " | " + em[:500]
+                                low_em = em.lower()
+                                if "forbidden" in low_em:
+                                    cat = "HTTP_403"
+                                elif "not found" in low_em:
+                                    cat = "HTTP_404"
+                                elif "rate" in low_em and "limit" in low_em:
+                                    cat = "HTTP_429"
                         except Exception:
                             pass
                 except Exception:
