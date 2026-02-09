@@ -355,7 +355,8 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                         if isinstance(sc, int):
                             cat = f"HTTP_{sc}"
                         else:
-                            cat = "PolyApiException"
+                            # Default bucket when we have no HTTP status.
+                            cat = "PolyApiException_no_status"
 
                         # Use error_msg payload (may be dict/str) for finer classification.
                         # We do NOT log this; we only derive a category.
