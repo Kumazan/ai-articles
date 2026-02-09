@@ -10,9 +10,9 @@ class Level:
     size: float
 
 
-def _to_levels(asks: Any) -> List[Level]:
+def _to_levels(levels: Any, *, side: str) -> List[Level]:
     out: List[Level] = []
-    for x in asks or []:
+    for x in levels or []:
         # OrderSummary has .price/.size; dict has ['price']/['size']
         p = getattr(x, "price", None)
         s = getattr(x, "size", None)
@@ -23,9 +23,25 @@ def _to_levels(asks: Any) -> List[Level]:
         out.append(Level(price=float(p), size=float(s)))
 
     # IMPORTANT: Polymarket CLOB arrays are not guaranteed best-first.
-    # Normalize to best-first for buy cost calculation.
-    out.sort(key=lambda lv: lv.price)
+    # Normalize order:
+    # - asks: lowest price first
+    # - bids: highest price first
+    if side.upper() == "ASK":
+        out.sort(key=lambda lv: lv.price)
+    else:
+        out.sort(key=lambda lv: -lv.price)
     return out
+
+
+def best_bid_ask(orderbook: Any) -> tuple[Optional[float], Optional[float]]:
+    """Return (best_bid, best_ask) from an OrderBookSummary or dict."""
+    bids = getattr(orderbook, "bids", None) or (orderbook.get("bids") if isinstance(orderbook, dict) else []) or []
+    asks = getattr(orderbook, "asks", None) or (orderbook.get("asks") if isinstance(orderbook, dict) else []) or []
+    b = _to_levels(bids, side="BID")
+    a = _to_levels(asks, side="ASK")
+    best_bid = b[0].price if b else None
+    best_ask = a[0].price if a else None
+    return best_bid, best_ask
 
 
 def cost_to_buy_shares(asks: Any, shares: float) -> Optional[Tuple[float, float]]:
@@ -36,7 +52,7 @@ def cost_to_buy_shares(asks: Any, shares: float) -> Optional[Tuple[float, float]
     if shares <= 0:
         return 0.0, 0.0
 
-    levels = _to_levels(asks)
+    levels = _to_levels(asks, side="ASK")
     remaining = shares
     cost = 0.0
 

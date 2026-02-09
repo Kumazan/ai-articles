@@ -182,7 +182,7 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
     Still v0: keep it bounded & robust.
     """
     from py_clob_client.clob_types import BookParams
-    from arb_exec import find_best_structural_arb
+    from arb_exec import find_best_structural_arb, best_bid_ask
 
     t0 = time.time()
 
@@ -244,10 +244,11 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
     sem = asyncio.Semaphore(max(1, concurrency))
     err_count = 0
     rate_limit_count = 0
+    signal_bids_gt_1 = 0
     lock = asyncio.Lock()
 
     async def eval_market(cid: str) -> Optional[Dict[str, Any]]:
-        nonlocal err_count, rate_limit_count
+        nonlocal err_count, rate_limit_count, signal_bids_gt_1
         async with sem:
             try:
                 mkt = await asyncio.to_thread(client.get_market, cid)
@@ -261,6 +262,42 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                 obs = await asyncio.to_thread(client.get_order_books, params)
                 ob_by_id = {ob.asset_id: ob for ob in obs}
 
+                # Extra signal: sum(best bids) > 1 (often needs inventory/shorting; log as signal only)
+                sum_best_bid = 0.0
+                sum_best_ask = 0.0
+                ok_bidask = True
+                legs_top = []
+                for t in tokens:
+                    ob = ob_by_id.get(t["token_id"])
+                    if not ob:
+                        ok_bidask = False
+                        break
+                    bb, ba = best_bid_ask(ob)
+                    legs_top.append({"outcome": t.get("outcome"), "token_id": t.get("token_id"), "best_bid": bb, "best_ask": ba})
+                    if bb is None or ba is None:
+                        ok_bidask = False
+                        break
+                    sum_best_bid += bb
+                    sum_best_ask += ba
+
+                if ok_bidask and sum_best_bid > 1.0 + min_profit_pct:
+                    async with lock:
+                        signal_bids_gt_1 += 1
+                    append_jsonl(
+                        f"arb-signals-{time.strftime('%Y-%m-%d')}.jsonl",
+                        {
+                            "ts": now_ms(),
+                            "type": "signal_sum_best_bids_gt_1",
+                            "condition_id": cid,
+                            "question": mkt.get("question"),
+                            "n_outcomes": len(tokens),
+                            "sum_best_bid": round(sum_best_bid, 6),
+                            "sum_best_ask": round(sum_best_ask, 6),
+                            "note": "signal only; execution may require inventory/shorting",
+                            "legs": legs_top,
+                        },
+                    )
+
                 ob0 = next(iter(ob_by_id.values()), None)
                 ob_min = getattr(ob0, "min_order_size", None) if ob0 is not None else None
                 try:
@@ -268,6 +305,7 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                 except Exception:
                     min_shares = env_min_shares
 
+                # Fast-path note: binary markets benefit most from buy-all-outcomes arb
                 best = find_best_structural_arb(
                     outcomes=tokens,
                     orderbooks=ob_by_id,
@@ -318,6 +356,7 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
         "universe_ttl_s": cache_ttl,
         "errors": err_count,
         "rate_limits": rate_limit_count,
+        "signals_sum_bids_gt_1": signal_bids_gt_1,
     }
 
     append_jsonl(f"arbscan-{time.strftime('%Y-%m-%d')}.jsonl", summary)
