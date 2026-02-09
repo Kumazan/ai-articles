@@ -333,17 +333,63 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                 # Keep a small sample of error categories for daily summaries.
                 # Avoid dumping long messages or secrets.
                 cat = etype
+
+                # Special-case py_clob_client PolyApiException (has status_code).
+                # In some thread/serialization paths the exception identity can be odd,
+                # so also fall back to parsing the string repr.
+                try:
+                    from py_clob_client.exceptions import PolyApiException  # type: ignore
+
+                    if isinstance(e, PolyApiException):
+                        sc = getattr(e, "status_code", None)
+                        if isinstance(sc, int):
+                            cat = f"HTTP_{sc}"
+                        else:
+                            cat = "PolyApiException"
+                except Exception:
+                    pass
+
+                if cat == "PolyApiException":
+                    # Parse PolyApiException repr for status_code and common transport errors.
+                    low = msg.lower()
+                    if "status_code=none" in low:
+                        cat = "PolyApiException_no_status"
+                    if "timeout" in low:
+                        cat = "timeout"
+                    if "connect" in low and "error" in low:
+                        cat = "connect_error"
+
+                    if "status_code=" in msg:
+                        try:
+                            import re
+
+                            m_sc = re.search(r"status_code=(\d+)", msg)
+                            if m_sc:
+                                cat = f"HTTP_{int(m_sc.group(1))}"
+                        except Exception:
+                            pass
+
                 m = msg.lower()
                 if "429" in m:
                     cat = "HTTP_429"
                 elif "timeout" in m:
                     cat = "timeout"
                 elif "geoblock" in m or "forbidden" in m or "403" in m:
-                    cat = "forbidden"
+                    cat = "HTTP_403"
                 elif "connection" in m or "connect" in m:
                     cat = "connect_error"
                 elif "json" in m and "decode" in m:
                     cat = "json_decode"
+                elif "not found" in m or "404" in m:
+                    cat = "HTTP_404"
+                elif "500" in m:
+                    cat = "HTTP_500"
+                elif "502" in m:
+                    cat = "HTTP_502"
+                elif "503" in m:
+                    cat = "HTTP_503"
+                elif "504" in m:
+                    cat = "HTTP_504"
 
                 async with lock:
                     err_count += 1
