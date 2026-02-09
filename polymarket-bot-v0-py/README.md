@@ -24,3 +24,9 @@ python bot.py
 ## Notes
 - This is **paper only** right now; no live order posting implemented.
 - Next steps: executable sizing (depth-aware), fee curve, and paper-fill simulator.
+
+## Dashboard
+- External: https://bot.kumax.dev/
+
+## Roadmap
+- See `ROADMAP.md`
