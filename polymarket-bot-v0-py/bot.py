@@ -352,6 +352,16 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                             cat = f"HTTP_{sc}"
                         else:
                             cat = "PolyApiException"
+
+                        # Use error_msg (may be dict/str) for finer classification without logging it.
+                        em = getattr(e, "error_msg", None)
+                        try:
+                            if isinstance(em, dict):
+                                msg = msg + " | " + json.dumps(em, ensure_ascii=False)[:500]
+                            elif isinstance(em, str):
+                                msg = msg + " | " + em[:500]
+                        except Exception:
+                            pass
                 except Exception:
                     pass
 
