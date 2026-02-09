@@ -5,7 +5,7 @@ _Learn about the person you're helping. Update this as you go._
 - **Name:** Kuma
 - **What to call them:** Kuma
 - **Pronouns:** _(optional)_
-- **Timezone:** UTC
+- **Timezone:** Asia/Taipei (UTC+8)
 - **Notes:** 偏好使用繁體中文（zh-tw）交流；語氣輕鬆隨意。
 
 ## Context
