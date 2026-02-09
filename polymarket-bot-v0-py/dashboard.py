@@ -69,6 +69,7 @@ def api_status():
     signals = tail_jsonl(DATA / f"arb-signals-{day}.jsonl", 200)
 
     pm15m = latest_15m_snapshot(day)
+    daily = latest_json(DATA / f"daily-summary-{day}.json")
 
     return {
         "day": day,
@@ -76,6 +77,7 @@ def api_status():
         "arbscan_recent": arbscan[-60:],
         "signals_recent": signals[-60:],
         "pm15m_latest": pm15m,
+        "daily_summary": daily,
     }
 
 
@@ -169,6 +171,13 @@ def index():
 </header>
 
 <div class="wrap">
+
+  <div class="card" style="margin-bottom:14px;">
+    <h2>今日總覽（Daily Summary）</h2>
+    <div class="muted small" id="daily">載入中…</div>
+    <div class="footer">由 <span class="mono">data/daily-summary-YYYY-MM-DD.json</span> 生成（若不存在會顯示載入中）。</div>
+  </div>
+
   <div class="grid">
     <div class="card">
       <h2>自動優化（Autotune）</h2>
@@ -243,6 +252,15 @@ async function refresh(){
     document.getElementById('k_err').textContent = fmt(a.errors);
     document.getElementById('k_rl').textContent = fmt(a.rate_limits);
     document.getElementById('k_conc').textContent = fmt(a.concurrency);
+
+    // daily summary (best-effort)
+    const ds = j.daily_summary || null;
+    if(ds){
+      const el = document.getElementById('daily');
+      if(el){
+        el.textContent = `掃描 ${ds.arbscan_count} 次｜錯誤 ${ds.errors_sum}｜429 ${ds.rate_limits_sum}｜found ${ds.found_sum}｜took_s p50 ${Number(ds.took_s_p50||0).toFixed(2)}｜p95 ${Number(ds.took_s_p95||0).toFixed(2)}`;
+      }
+    }
 
     // Chart
     const rowsAll = j.arbscan_recent || [];
