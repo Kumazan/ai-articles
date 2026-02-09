@@ -430,6 +430,10 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                     elif "connection" in low or "connect" in low:
                         cat = "connect_error"
 
+                # Never emit the raw PolyApiException bucket; force it to no_status.
+                if cat == "PolyApiException":
+                    cat = "PolyApiException_no_status"
+
                 # Robust status_code extraction (covers repr and embedded JSON error payloads)
                 try:
                     import re
