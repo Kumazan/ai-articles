@@ -274,7 +274,18 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
         cursor = "MA=="  # INITIAL_CURSOR base64
         pages = int(os.getenv("ARB_SCAN_PAGES", "8"))
         for _ in range(pages):
-            res = await asyncio.to_thread(client.get_sampling_markets, cursor)
+            try:
+                res = await asyncio.to_thread(client.get_sampling_markets, cursor)
+            except Exception as e:
+                # Do not crash the bot on Cloudflare rate limits.
+                msg = str(e)
+                console.print({"sampling_markets_failed": msg[:180]}, style="yellow")
+                # mark rate limit and stop sampling for now
+                if "1015" in msg or "429" in msg:
+                    # backoff aggressively
+                    await asyncio.sleep(60)
+                break
+
             cursor = res.get("next_cursor")
             for m in res.get("data", []):
                 cid = m.get("condition_id")
