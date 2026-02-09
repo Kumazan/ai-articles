@@ -83,6 +83,7 @@ class DailySummary:
     errors_per_market_avg: float
     top_error_categories: List[Tuple[str, int]]
     top_error_categories_recent: List[Tuple[str, int]]
+    top_error_categories_recent_15: List[Tuple[str, int]]
     rate_limits_sum: int
     found_sum: int
 
@@ -112,6 +113,7 @@ def summarize(day: str, data_dir: Path) -> DailySummary:
     scans_with_errors = 0
     error_cats: Dict[str, int] = {}
     recent_error_cats: Dict[str, int] = {}
+    recent_error_cats_15: Dict[str, int] = {}
     recent_window: List[Dict[str, Any]] = []
 
     for r in arbscan:
@@ -171,8 +173,17 @@ def summarize(day: str, data_dir: Path) -> DailySummary:
                 if isinstance(x, str) and x:
                     recent_error_cats[x] = recent_error_cats.get(x, 0) + 1
 
+    # ultra-recent (last 15)
+    for r in recent_window[-15:]:
+        det = r.get("errors_detail")
+        if isinstance(det, list):
+            for x in det:
+                if isinstance(x, str) and x:
+                    recent_error_cats_15[x] = recent_error_cats_15.get(x, 0) + 1
+
     top_cats = sorted(error_cats.items(), key=lambda kv: kv[1], reverse=True)[:10]
     top_cats_recent = sorted(recent_error_cats.items(), key=lambda kv: kv[1], reverse=True)[:10]
+    top_cats_recent_15 = sorted(recent_error_cats_15.items(), key=lambda kv: kv[1], reverse=True)[:10]
     errors_per_scan = (errors_sum / len(arbscan)) if arbscan else 0.0
     errors_per_mkt = (errors_sum / scanned_sum) if scanned_sum else 0.0
 
@@ -196,6 +207,7 @@ def summarize(day: str, data_dir: Path) -> DailySummary:
         errors_per_market_avg=float(errors_per_mkt),
         top_error_categories=top_cats,
         top_error_categories_recent=top_cats_recent,
+        top_error_categories_recent_15=top_cats_recent_15,
         rate_limits_sum=int(rl_sum),
         found_sum=int(found_sum),
         signals_count=int(signals_count),
@@ -225,6 +237,8 @@ def render_text(s: DailySummary) -> str:
             "  " + (", ".join([f"{k}={v}" for k, v in s.top_error_categories]) if s.top_error_categories else "(none)"),
             "Top error categories (recent 60 scans):",
             "  " + (", ".join([f"{k}={v}" for k, v in s.top_error_categories_recent]) if s.top_error_categories_recent else "(none)"),
+            "Top error categories (recent 15 scans):",
+            "  " + (", ".join([f"{k}={v}" for k, v in s.top_error_categories_recent_15]) if s.top_error_categories_recent_15 else "(none)"),
             "",
             "Autotune (best-effort):",
             f"  last_concurrency: {conc}",
