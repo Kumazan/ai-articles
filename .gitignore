@@ -18,3 +18,7 @@ dist/
 MEMORY.md
 memory/
 **/memory/
+
+# git worktrees directory (local-only)
+worktrees/
+**/worktrees/
