@@ -81,6 +81,9 @@ def p_hat_from_dist_to_open(
     last: float,
     t_rem_s: float,
     sigma_1m: float,
+    sigma_1m_floor: float = 0.0010,
+    clamp_low: float = 0.25,
+    clamp_high: float = 0.75,
 ) -> float:
     """Estimate P(close > open) using a simple Brownian approximation.
 
@@ -88,24 +91,31 @@ def p_hat_from_dist_to_open(
     - log returns are roughly normal
     - drift is ignored (conservative)
 
-    If t_rem_s is tiny or sigma is 0, probability collapses to a step function.
+    Guardrails:
+    - sigma_1m is floored to avoid extreme probabilities when vol estimate is tiny.
+    - output is clamped to [clamp_low, clamp_high] to avoid fake huge edges.
+
+    If t_rem_s is tiny, probability collapses to a step function.
     """
     if open_15m <= 0 or last <= 0:
         return 0.5
     if t_rem_s <= 1:
         return 1.0 if last > open_15m else 0.0
 
+    sigma_1m = max(float(sigma_1m_floor), float(sigma_1m))
+
     # Convert 1m sigma of log returns to remaining horizon sigma.
     # sigma_T = sigma_1m * sqrt(T_minutes)
     T_min = max(1e-6, t_rem_s / 60.0)
     sigma_T = max(1e-9, sigma_1m * math.sqrt(T_min))
 
-    # We want P(log(close/open) > 0).
-    # If log return ~ N(0, sigma_T^2), then P(X > -log(last/open)).
     a = math.log(last / open_15m)
-    # P(close > open) = P(X > -a) = 1 - Phi((-a)/sigma_T)
     z = (-a) / sigma_T
-    return max(0.0, min(1.0, 1.0 - _phi(z)))
+    p = max(0.0, min(1.0, 1.0 - _phi(z)))
+
+    lo = min(clamp_low, clamp_high)
+    hi = max(clamp_low, clamp_high)
+    return max(lo, min(hi, p))
 
 
 async def fetch_binance_1m_klines(
@@ -208,7 +218,22 @@ async def compute_dist_to_open_signal(
 
     sigma_1m = _sigma_1m_from_klines(kl)
     t_rem = _t_rem_to_next_15m_boundary_s()
-    p_hat = p_hat_from_dist_to_open(open_15m=open_15m, last=last, t_rem_s=t_rem, sigma_1m=sigma_1m)
+    # Guardrails via env (kept conservative by default)
+    import os
+
+    sigma_floor = float(os.getenv("CEX_DIST_SIGMA_1M_FLOOR", "0.0010"))
+    clamp_low = float(os.getenv("CEX_DIST_P_HAT_CLAMP_LOW", "0.25"))
+    clamp_high = float(os.getenv("CEX_DIST_P_HAT_CLAMP_HIGH", "0.75"))
+
+    p_hat = p_hat_from_dist_to_open(
+        open_15m=open_15m,
+        last=last,
+        t_rem_s=t_rem,
+        sigma_1m=sigma_1m,
+        sigma_1m_floor=sigma_floor,
+        clamp_low=clamp_low,
+        clamp_high=clamp_high,
+    )
 
     return DistToOpenSignal(
         ts=int(time.time() * 1000),

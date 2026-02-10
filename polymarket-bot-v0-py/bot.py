@@ -276,28 +276,42 @@ async def watch_15m(client: ClobClient, poll_ms: int) -> None:
                                 if edge > thr and (best_sig is None or edge > best_sig[0]):
                                     best_sig = (edge, sym, side, model)
 
+                            # de-dupe signals: same (condition, side, model) at most once per TTL
+                            global _PAPER_SIG_LAST
+                            try:
+                                _PAPER_SIG_LAST
+                            except NameError:
+                                _PAPER_SIG_LAST = {}
+
+                            ttl = float(os.getenv("PAPER_SIGNAL_DEDUPE_TTL_S", "60"))
+
                             if best_sig is not None:
                                 edge, sym, side, model = best_sig
                                 e = edges[sym]
-                                sig = {
-                                    "ts": now_ms(),
-                                    "type": "paper_signal",
-                                    "strategy": "cex_edge_vs_pm15m",
-                                    "venue": "binance_spot",
-                                    "symbol": sym,
-                                    "condition_id": e.get("condition_id"),
-                                    "side": side,
-                                    "model": model,
-                                    "edge_net": float(edge),
-                                    "threshold_pp": thr,
-                                    "fee_bps": e.get("fee_bps"),
-                                    "buffer_pp": e.get("buffer_pp"),
-                                    "up_ask": e.get("up_ask"),
-                                    "down_ask": e.get("down_ask"),
-                                    "p_hat_up_drift": e.get("p_hat_up_drift"),
-                                    "p_hat_up_dist": e.get("p_hat_up_dist"),
-                                }
-                                append_jsonl(f"paper-signals-{time.strftime('%Y-%m-%d')}.jsonl", sig)
+                                key = f"{e.get('condition_id')}|{side}|{model}"
+                                now = time.time()
+                                last = float(_PAPER_SIG_LAST.get(key, 0.0) or 0.0)
+                                if now - last >= ttl:
+                                    _PAPER_SIG_LAST[key] = now
+                                    sig = {
+                                        "ts": now_ms(),
+                                        "type": "paper_signal",
+                                        "strategy": "cex_edge_vs_pm15m",
+                                        "venue": "binance_spot",
+                                        "symbol": sym,
+                                        "condition_id": e.get("condition_id"),
+                                        "side": side,
+                                        "model": model,
+                                        "edge_net": float(edge),
+                                        "threshold_pp": thr,
+                                        "fee_bps": e.get("fee_bps"),
+                                        "buffer_pp": e.get("buffer_pp"),
+                                        "up_ask": e.get("up_ask"),
+                                        "down_ask": e.get("down_ask"),
+                                        "p_hat_up_drift": e.get("p_hat_up_drift"),
+                                        "p_hat_up_dist": e.get("p_hat_up_dist"),
+                                    }
+                                    append_jsonl(f"paper-signals-{time.strftime('%Y-%m-%d')}.jsonl", sig)
                 except Exception:
                     pass
 
@@ -650,11 +664,43 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
 
                     if "429" in msg or "rate" in msg.lower() or cat == "HTTP_429":
                         rate_limit_count += 1
+                        # set cooldown (extend) so next scan pauses
+                        _ARB_RL_UNTIL = max(float(_ARB_RL_UNTIL), time.time() + float(os.getenv("ARB_RL_COOLDOWN_S", "300")))
                 return None
 
     errors_detail: list[str] = []
     # dynamic backoff to reduce transport-level flakiness without touching optimizer
     transport_backoff_s: float = 0.0
+
+    # global rate limit cooldown (avoid CF 1015/429 ban loops)
+    global _ARB_RL_UNTIL
+    try:
+        _ARB_RL_UNTIL
+    except NameError:
+        _ARB_RL_UNTIL = 0.0
+
+    if time.time() < float(_ARB_RL_UNTIL):
+        # still cooling down
+        summary = {
+            "ts": now_ms(),
+            "type": "arb_scan_summary",
+            "scanned": 0,
+            "universe": 0,
+            "found": 0,
+            "best_profit_usdc": None,
+            "best_profit_pct": None,
+            "took_s": 0.0,
+            "max_shares": float(os.getenv("ARB_MAX_SHARES", "50")),
+            "step": float(os.getenv("ARB_SHARE_STEP", "5")),
+            "concurrency": int(os.getenv("ARB_CONCURRENCY", "10")),
+            "universe_ttl_s": cache_ttl,
+            "errors": 0,
+            "errors_detail": [],
+            "rate_limits": 1,
+            "note": "cooldown_after_429",
+        }
+        append_jsonl(f"arbscan-{time.strftime('%Y-%m-%d')}.jsonl", summary)
+        return
 
     tasks = [eval_market(cid) for cid in cids]
     results = await asyncio.gather(*tasks)
