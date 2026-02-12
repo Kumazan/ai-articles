@@ -70,6 +70,7 @@ def api_status():
     paper = tail_jsonl(DATA / f"paper-signals-{day}.jsonl", 200)
     cex = tail_jsonl(DATA / f"cex-signal-{day}.jsonl", 50)
     cex_edge = tail_jsonl(DATA / f"cex-edge-{day}.jsonl", 50)
+    comb = tail_jsonl(DATA / f"comb-candidates-{day}.jsonl", 50)
 
     pm15m = latest_15m_snapshot(day)
     daily = latest_json(DATA / f"daily-summary-{day}.json")
@@ -84,6 +85,7 @@ def api_status():
         "cex_signals_recent": cex[-10:],
         "cex_edge_recent": cex_edge[-10:],
         "paper_signals_recent": paper[-10:],
+        "comb_candidates_recent": comb[-10:],
     }
 
 
@@ -393,7 +395,12 @@ async function refresh(){
     }
 
     // raw
-    document.getElementById('raw').textContent = JSON.stringify({day:j.day, autotune:j.autotune}, null, 2);
+    document.getElementById('raw').textContent = JSON.stringify({
+      day:j.day,
+      autotune:j.autotune,
+      paper_signals_recent_len:(j.paper_signals_recent||[]).length,
+      comb_candidates_recent_len:(j.comb_candidates_recent||[]).length
+    }, null, 2);
 
     document.getElementById('dot').style.background = 'var(--good)';
     document.getElementById('statusText').textContent = '已連線';

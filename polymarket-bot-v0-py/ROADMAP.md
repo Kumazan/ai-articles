@@ -15,21 +15,30 @@
 ## 下一步（短期：1–3 天）
 
 ### 1) Universe 先過濾再掃描（減少無效 API / 提升穩定）
-- [ ] 在 `universe.py` 建立 universe 時先過濾：`accepting_orders==true && enable_order_book==true && closed==false`
-- [ ] Universe cache 內容要記錄「過濾前後數量」與原因統計（例如 closed / no_book）
+- [x] 在 `universe.py` 建立 universe 時先過濾：`accepting_orders==true && enable_order_book==true && closed==false`
+- [x] Universe cache 記錄過濾統計（reason counts）
+- [x] 遇到 429/1015 不 crash，並啟用 cooldown 降頻
 
 ### 2) Daily summary / Review loop（把資料變成決策）
-- [ ] 新增每日產物：`data/daily-summary-YYYY-MM-DD.json` + `.txt`
-  - scans 次數、平均/分位數 took_s
-  - errors / rate_limits 次數與時間分佈
-  - found 次數、最佳/平均 profit（若有）
-  - signals_sum_bids_gt_1 次數
-- [ ] Dashboard 顯示「今天摘要」與「昨天摘要」
+- [x] 每日產物：`data/daily-summary-YYYY-MM-DD.json` + `.txt`
+- [x] 指標：scans / took_s 分位數 / errors / rate_limits / found
+- [x] 錯誤分佈：today + recent 60 + recent 15
+- [x] systemd timer 每日自動產生
 
 ### 3) Dashboard 下一輪（更像交易台）
+- [x] 今日摘要卡片（daily summary）
+- [x] CEX 外部訊號（drift + dist-to-open）
+- [x] CEX vs PM15m edge（raw + net，含 fee + buffer）
+- [x] Paper signals（去重後）
 - [ ] found>0 時置頂「機會卡片」（profit、size、conditionId、腿資訊）
 - [ ] 把 `signals_sum_bids_gt_1` 畫成小趨勢（或 KPI）
-- [ ] 增加「最近 24h」統計卡片（found/errors/rl/took_s）
+
+### 4) 論文驅動：Combinatorial 候選縮減器（P0）
+> 來源：arXiv 2508.03474（Unravelling the Probabilistic Forest）
+- [ ] 建立 market 關係候選（同時間窗 + 同標的 + 問題語意重疊）
+- [ ] 先限制 2-leg / 3-leg 候選，避免組合爆炸
+- [ ] 輸出 `data/comb-candidates-YYYY-MM-DD.jsonl`（先 signal-only）
+- [ ] 對候選跑可執行檢查（ask/bid + fee + buffer），分類 executable / signal_only
 
 ---
 

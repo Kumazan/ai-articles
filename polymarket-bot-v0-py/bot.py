@@ -1,6 +1,7 @@
 import asyncio
 import json
 import os
+import re
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -72,6 +73,98 @@ def best(ob: Any) -> Tuple[Optional[float], Optional[float]]:
     best_bid = max((px(x) for x in bids), default=None)  # type: ignore[arg-type]
     best_ask = min((px(x) for x in asks), default=None)  # type: ignore[arg-type]
     return best_bid, best_ask
+
+
+def _norm_tokens(text: str) -> List[str]:
+    words = re.findall(r"[a-zA-Z0-9]+", (text or "").lower())
+    stop = {
+        "will",
+        "the",
+        "and",
+        "for",
+        "with",
+        "this",
+        "that",
+        "from",
+        "into",
+        "market",
+        "price",
+        "yes",
+        "no",
+    }
+    return [w for w in words if len(w) > 2 and w not in stop]
+
+
+def _guess_symbol(question: str) -> Optional[str]:
+    q = (question or "").lower()
+    for sym in ("btc", "bitcoin", "eth", "ethereum", "sol", "solana"):
+        if sym in q:
+            if sym.startswith("btc") or sym == "bitcoin":
+                return "BTC"
+            if sym.startswith("eth") or sym == "ethereum":
+                return "ETH"
+            if sym.startswith("sol") or sym == "solana":
+                return "SOL"
+    return None
+
+
+def generate_comb_candidates(markets: List[Dict[str, Any]], *, top_n: int = 20) -> List[Dict[str, Any]]:
+    """Heuristic candidate generator for cross-market combinatorial relations.
+
+    Rules (P0):
+    - same guessed symbol
+    - lexical overlap on normalized question tokens
+    - keep top-N pairs by overlap score
+    """
+    out: List[Dict[str, Any]] = []
+    n = len(markets)
+    for i in range(n):
+        a = markets[i]
+        ta = set(_norm_tokens(a.get("question") or ""))
+        if not ta:
+            continue
+        for j in range(i + 1, n):
+            b = markets[j]
+            if a.get("condition_id") == b.get("condition_id"):
+                continue
+            sa = a.get("symbol_guess")
+            sb = b.get("symbol_guess")
+            if sa and sb and sa != sb:
+                continue
+
+            tb = set(_norm_tokens(b.get("question") or ""))
+            if not tb:
+                continue
+            inter = ta & tb
+            union = ta | tb
+            if not union:
+                continue
+            jacc = len(inter) / len(union)
+            if jacc < 0.12:
+                continue
+
+            score = jacc + (0.05 if sa and sb and sa == sb else 0.0)
+            out.append(
+                {
+                    "type": "comb_candidate_pair",
+                    "score": round(score, 4),
+                    "jaccard": round(jacc, 4),
+                    "shared_terms": sorted(list(inter))[:8],
+                    "a": {
+                        "condition_id": a.get("condition_id"),
+                        "question": a.get("question"),
+                        "symbol_guess": sa,
+                    },
+                    "b": {
+                        "condition_id": b.get("condition_id"),
+                        "question": b.get("question"),
+                        "symbol_guess": sb,
+                    },
+                }
+            )
+
+    out.sort(key=lambda x: -float(x.get("score") or 0.0))
+    return out[:top_n]
 
 
 async def resolve_active_15m_market(session: aiohttp.ClientSession, client: ClobClient, symbol: str) -> MarketRef:
@@ -420,6 +513,7 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
     rate_limit_count = 0
     signal_bids_gt_1 = 0
     lock = asyncio.Lock()
+    market_meta: List[Dict[str, Any]] = []
 
     async def eval_market(cid: str) -> Optional[Dict[str, Any]]:
         nonlocal err_count, rate_limit_count, signal_bids_gt_1
@@ -432,6 +526,17 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
                 pass
             try:
                 mkt = await asyncio.to_thread(client.get_market, cid)
+                q = str(mkt.get("question") or "")
+                async with lock:
+                    market_meta.append(
+                        {
+                            "condition_id": cid,
+                            "question": q,
+                            "symbol_guess": _guess_symbol(q),
+                            "n_outcomes": len(mkt.get("tokens") or []),
+                        }
+                    )
+
                 tokens = mkt.get("tokens") or []
                 if len(tokens) < 2 or len(tokens) > max_outcomes:
                     return None
@@ -728,6 +833,24 @@ async def scan_structural_arb(client: ClobClient, max_markets: int, max_outcomes
     }
 
     append_jsonl(f"arbscan-{time.strftime('%Y-%m-%d')}.jsonl", summary)
+
+    # P0 combinatorial candidate generation (signal-only for now)
+    try:
+        cand_top_n = int(os.getenv("COMB_CANDIDATE_TOP_N", "20"))
+        cands = generate_comb_candidates(market_meta, top_n=max(1, cand_top_n))
+        if cands:
+            append_jsonl(
+                f"comb-candidates-{time.strftime('%Y-%m-%d')}.jsonl",
+                {
+                    "ts": now_ms(),
+                    "type": "comb_candidates_summary",
+                    "scanned_markets": len(market_meta),
+                    "candidate_pairs": len(cands),
+                    "top": cands,
+                },
+            )
+    except Exception:
+        pass
 
     if found:
         for o in found[:5]:
