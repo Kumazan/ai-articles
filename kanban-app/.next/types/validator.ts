@@ -56,6 +56,24 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../app/api/kanban/cards/[id]/comments/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/kanban/cards/[id]/comments">> = Specific
+  const handler = {} as typeof import("../../app/api/kanban/cards/[id]/comments/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/api/kanban/cards/[id]/move/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/kanban/cards/[id]/move">> = Specific
+  const handler = {} as typeof import("../../app/api/kanban/cards/[id]/move/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/api/kanban/cards/[id]/route.ts
 {
   type __IsExpected<Specific extends RouteHandlerConfig<"/api/kanban/cards/[id]">> = Specific

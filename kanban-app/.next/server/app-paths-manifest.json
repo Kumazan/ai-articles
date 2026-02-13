@@ -1,8 +1,6 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/kanban/cards/[id]/route": "app/api/kanban/cards/[id]/route.js",
-  "/api/kanban/notify/route": "app/api/kanban/notify/route.js",
   "/api/kanban/cards/route": "app/api/kanban/cards/route.js",
-  "/api/kanban/route": "app/api/kanban/route.js",
-  "/page": "app/page.js"
+  "/api/kanban/cards/[id]/move/route": "app/api/kanban/cards/[id]/move/route.js",
+  "/api/kanban/cards/[id]/comments/route": "app/api/kanban/cards/[id]/comments/route.js",
+  "/api/kanban/cards/[id]/route": "app/api/kanban/cards/[id]/route.js"
 }
