@@ -13,7 +13,8 @@ import {
   type DragEndEvent,
   type DragOverEvent,
 } from '@dnd-kit/core'
-import type { KanbanData, Card, Column } from '@/types/kanban'
+import type { KanbanData, Card, Column, Comment } from '@/types/kanban'
+import { v4 as uuidv4 } from 'uuid'
 import { fetchKanban, saveKanban } from '@/lib/api'
 import { KanbanColumn } from './kanban-column'
 import { KanbanCard } from './kanban-card'
@@ -150,6 +151,10 @@ export function KanbanBoard() {
       return next
     })
   }, [])
+
+  const addSystemComment = useCallback((card: Card, text: string): Comment => ({
+    id: uuidv4(), author: '系統', text, createdAt: new Date().toISOString(), isSystem: true,
+  }), [])
 
   const isFiltering = searchQuery !== '' || selectedPriorities.size > 0 || selectedLabels.size > 0
 
@@ -401,22 +406,39 @@ export function KanbanBoard() {
     const newData = structuredClone(data)
 
     // Remove from old column if moving
-    for (const col of newData.columns) {
-      const idx = col.cards.findIndex(c => c.id === card.id)
-      if (idx >= 0 && col.id !== columnId) {
-        col.cards.splice(idx, 1)
+    let movedFromCol: string | null = null
+    for (const c of newData.columns) {
+      const idx = c.cards.findIndex(x => x.id === card.id)
+      if (idx >= 0 && c.id !== columnId) {
+        movedFromCol = c.title
+        c.cards.splice(idx, 1)
         break
       }
+    }
+    if (movedFromCol) {
+      const targetTitle = newData.columns.find(c => c.id === columnId)?.title ?? columnId
+      if (!card.comments) card.comments = []
+      card.comments.push(addSystemComment(card, `從「${movedFromCol}」移至「${targetTitle}」`))
     }
 
     const col = newData.columns.find(c => c.id === columnId)
     if (!col) return
 
     const existing = col.cards.findIndex(c => c.id === card.id)
+    const updatedCard = { ...card, updatedAt: new Date().toISOString() }
+    if (!updatedCard.comments) updatedCard.comments = []
+
     if (existing >= 0) {
-      col.cards[existing] = { ...card, updatedAt: new Date().toISOString() }
+      // Track changes
+      const oldCard = col.cards[existing]
+      if (oldCard.priority !== card.priority) {
+        updatedCard.comments.push(addSystemComment(card, `優先級從 ${oldCard.priority} 改為 ${card.priority}`))
+      }
+      col.cards[existing] = updatedCard
     } else {
-      col.cards.push(card)
+      // New card
+      updatedCard.comments = [addSystemComment(card, '卡片已建立'), ...(updatedCard.comments || [])]
+      col.cards.push(updatedCard)
     }
     await persist(newData)
     setEditingCard(null)

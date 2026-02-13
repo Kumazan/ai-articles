@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import type { Card, Column } from '@/types/kanban'
+import type { Card, Column, Comment } from '@/types/kanban'
 import { v4 as uuidv4 } from 'uuid'
 import ReactMarkdown from 'react-markdown'
 
@@ -43,6 +43,8 @@ export function CardModal({ card, columnId, columns, labelColors, allLabels, onS
   const [dueDate, setDueDate] = useState(card?.dueDate ?? '')
   const [selectedColumn, setSelectedColumn] = useState(columnId)
   const [showPreview, setShowPreview] = useState(false)
+  const [comments, setComments] = useState<Comment[]>(card?.comments ?? [])
+  const [newComment, setNewComment] = useState('')
   const [confirmDelete, setConfirmDelete] = useState(false)
   const titleRef = useRef<HTMLInputElement>(null)
 
@@ -63,6 +65,7 @@ export function CardModal({ card, columnId, columns, labelColors, allLabels, onS
       priority,
       labels,
       dueDate: dueDate || undefined,
+      comments,
       createdAt: card?.createdAt ?? now,
       updatedAt: now,
     }
@@ -219,6 +222,49 @@ export function CardModal({ card, columnId, columns, labelColors, allLabels, onS
               />
             )}
           </div>
+
+          {/* Comments / Activity */}
+          {card && (
+            <div>
+              <label className="text-sm sm:text-xs text-text-secondary block mb-1.5 sm:mb-1">留言 & 活動記錄</label>
+              <div className="max-h-40 overflow-y-auto space-y-2 mb-2">
+                {comments.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).map(c => (
+                  <div key={c.id} className={`text-xs p-2 rounded-lg ${c.isSystem ? 'bg-surface-hover text-text-secondary italic' : 'bg-surface-alt border border-border'}`}>
+                    <div className="flex justify-between mb-0.5">
+                      <span className="font-medium">{c.author}</span>
+                      <span className="text-text-secondary">{new Date(c.createdAt).toLocaleString('zh-TW')}</span>
+                    </div>
+                    <p>{c.text}</p>
+                  </div>
+                ))}
+                {comments.length === 0 && <p className="text-xs text-text-secondary/50">尚無留言</p>}
+              </div>
+              <div className="flex gap-2">
+                <input
+                  value={newComment}
+                  onChange={e => setNewComment(e.target.value)}
+                  onKeyDown={e => {
+                    if (e.key === 'Enter' && newComment.trim()) {
+                      e.preventDefault()
+                      setComments(prev => [...prev, { id: uuidv4(), author: 'Kuma', text: newComment.trim(), createdAt: new Date().toISOString() }])
+                      setNewComment('')
+                    }
+                  }}
+                  placeholder="輸入留言..."
+                  className="flex-1 px-3 py-2 sm:py-1.5 rounded-lg border border-border bg-surface-alt text-sm focus:outline-none focus:border-p2"
+                />
+                <button type="button"
+                  onClick={() => {
+                    if (newComment.trim()) {
+                      setComments(prev => [...prev, { id: uuidv4(), author: 'Kuma', text: newComment.trim(), createdAt: new Date().toISOString() }])
+                      setNewComment('')
+                    }
+                  }}
+                  className="text-xs px-3 py-2 rounded-lg bg-surface-hover text-text-secondary hover:text-text transition-colors"
+                >送出</button>
+              </div>
+            </div>
+          )}
 
           {/* Metadata */}
           {card && (

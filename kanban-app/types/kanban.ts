@@ -1,3 +1,11 @@
+export interface Comment {
+  id: string
+  author: string
+  text: string
+  createdAt: string
+  isSystem?: boolean
+}
+
 export interface Card {
   id: string
   title: string
@@ -5,6 +13,7 @@ export interface Card {
   priority: 'P0' | 'P1' | 'P2' | 'P3'
   labels: string[]
   dueDate?: string
+  comments?: Comment[]
   createdAt: string
   updatedAt: string
 }
