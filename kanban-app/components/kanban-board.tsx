@@ -15,7 +15,7 @@ import {
 } from '@dnd-kit/core'
 import type { KanbanData, Card, Column, Comment } from '@/types/kanban'
 import { v4 as uuidv4 } from 'uuid'
-import { fetchKanban, saveKanban } from '@/lib/api'
+import { fetchKanban, saveKanban, sendNotify } from '@/lib/api'
 import { KanbanColumn } from './kanban-column'
 import { KanbanCard } from './kanban-card'
 import { CardModal } from './card-modal'
@@ -419,6 +419,7 @@ export function KanbanBoard() {
       const targetTitle = newData.columns.find(c => c.id === columnId)?.title ?? columnId
       if (!card.comments) card.comments = []
       card.comments.push(addSystemComment(card, `從「${movedFromCol}」移至「${targetTitle}」`))
+      sendNotify({ cardTitle: card.title, status: targetTitle, dueDate: card.dueDate, eventType: '狀態變更' })
     }
 
     const col = newData.columns.find(c => c.id === columnId)

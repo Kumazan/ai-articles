@@ -47,3 +47,11 @@ export async function deleteCard(id: string): Promise<void> {
   const res = await fetch(`${BASE}/cards/${id}`, { method: 'DELETE' })
   if (!res.ok) throw new Error('Failed to delete')
 }
+
+export async function sendNotify(payload: { cardTitle: string; status?: string; dueDate?: string; eventType: string }): Promise<void> {
+  fetch(`${BASE}/notify`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  }).catch(() => {})
+}
