@@ -14,6 +14,7 @@ export interface Card {
   labels: string[]
   dueDate?: string
   comments?: Comment[]
+  assignee?: string
   createdAt: string
   updatedAt: string
 }

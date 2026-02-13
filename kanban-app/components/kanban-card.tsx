@@ -54,7 +54,7 @@ export function KanbanCard({ card, onEdit, isKeyboardFocused, labelColors }: Pro
       {...attributes}
       onClick={() => onEdit(card)}
       className={`
-        group bg-surface rounded-xl sm:rounded-lg border px-5 py-5 sm:px-3 sm:py-2.5 cursor-grab active:cursor-grabbing
+        group relative bg-surface rounded-xl sm:rounded-lg border px-5 py-5 sm:px-3 sm:py-2.5 cursor-grab active:cursor-grabbing
         transition-all duration-150 animate-card-in
         ${isDragging ? 'opacity-30 scale-95' : 'hover:shadow-md hover:-translate-y-0.5'}
         ${isKeyboardFocused
@@ -67,6 +67,13 @@ export function KanbanCard({ card, onEdit, isKeyboardFocused, labelColors }: Pro
         <div className={`shrink-0 w-2.5 h-2.5 sm:w-1.5 sm:h-1.5 rounded-full mt-1.5 ${priorityDot[card.priority]}`} />
         <span className="text-base sm:text-sm font-medium leading-snug line-clamp-2 flex-1">{card.title}</span>
       </div>
+
+      {/* Assignee avatar */}
+      {card.assignee && (
+        <div className="absolute top-2 right-2 w-6 h-6 rounded-full bg-p2 text-white text-xs flex items-center justify-center font-semibold">
+          {card.assignee[0]}
+        </div>
+      )}
 
       {/* Labels + priority badge + due date */}
       <div className="flex items-center gap-2.5 sm:gap-1.5 mt-3.5 sm:mt-2 flex-wrap">

@@ -42,6 +42,7 @@ export function KanbanBoard() {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedPriorities, setSelectedPriorities] = useState<Set<Card['priority']>>(new Set())
   const [selectedLabels, setSelectedLabels] = useState<Set<string>>(new Set())
+  const [selectedAssignees, setSelectedAssignees] = useState<Set<string>>(new Set())
 
   // Keyboard navigation
   const [focusedColIdx, setFocusedColIdx] = useState(-1)
@@ -133,8 +134,9 @@ export function KanbanBoard() {
     if (q && !card.title.toLowerCase().includes(q) && !card.description.toLowerCase().includes(q)) return false
     if (selectedPriorities.size > 0 && !selectedPriorities.has(card.priority)) return false
     if (selectedLabels.size > 0 && !card.labels.some(l => selectedLabels.has(l))) return false
+    if (selectedAssignees.size > 0 && (!card.assignee || !selectedAssignees.has(card.assignee))) return false
     return true
-  }, [searchQuery, selectedPriorities, selectedLabels])
+  }, [searchQuery, selectedPriorities, selectedLabels, selectedAssignees])
 
   const togglePriority = useCallback((p: Card['priority']) => {
     setSelectedPriorities(prev => {
@@ -152,11 +154,19 @@ export function KanbanBoard() {
     })
   }, [])
 
+  const toggleAssignee = useCallback((a: string) => {
+    setSelectedAssignees(prev => {
+      const next = new Set(prev)
+      if (next.has(a)) next.delete(a); else next.add(a)
+      return next
+    })
+  }, [])
+
   const addSystemComment = useCallback((card: Card, text: string): Comment => ({
     id: uuidv4(), author: '系統', text, createdAt: new Date().toISOString(), isSystem: true,
   }), [])
 
-  const isFiltering = searchQuery !== '' || selectedPriorities.size > 0 || selectedLabels.size > 0
+  const isFiltering = searchQuery !== '' || selectedPriorities.size > 0 || selectedLabels.size > 0 || selectedAssignees.size > 0
 
   // Keyboard handler
   useEffect(() => {
@@ -564,6 +574,8 @@ export function KanbanBoard() {
         allLabels={allLabels}
         selectedLabels={selectedLabels}
         onToggleLabel={toggleLabel}
+        selectedAssignees={selectedAssignees}
+        onToggleAssignee={toggleAssignee}
       />
 
       {/* Board */}

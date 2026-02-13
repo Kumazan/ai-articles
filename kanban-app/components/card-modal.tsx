@@ -41,6 +41,7 @@ export function CardModal({ card, columnId, columns, labelColors, allLabels, onS
   const [labels, setLabels] = useState<string[]>(card?.labels ?? [])
   const [newLabel, setNewLabel] = useState('')
   const [dueDate, setDueDate] = useState(card?.dueDate ?? '')
+  const [assignee, setAssignee] = useState(card?.assignee ?? '')
   const [selectedColumn, setSelectedColumn] = useState(columnId)
   const [showPreview, setShowPreview] = useState(false)
   const [comments, setComments] = useState<Comment[]>(card?.comments ?? [])
@@ -65,6 +66,7 @@ export function CardModal({ card, columnId, columns, labelColors, allLabels, onS
       priority,
       labels,
       dueDate: dueDate || undefined,
+      assignee: assignee || undefined,
       comments,
       createdAt: card?.createdAt ?? now,
       updatedAt: now,
@@ -195,6 +197,20 @@ export function CardModal({ card, columnId, columns, labelColors, allLabels, onS
               onChange={e => setDueDate(e.target.value)}
               className="w-full px-4 py-3 sm:px-3 sm:py-2 rounded-lg border border-border bg-surface-alt text-base sm:text-sm focus:outline-none focus:border-p2 transition-colors"
             />
+          </div>
+
+          {/* Assignee */}
+          <div>
+            <label className="text-sm sm:text-xs text-text-secondary block mb-1.5 sm:mb-1">指派給</label>
+            <select
+              value={assignee}
+              onChange={e => setAssignee(e.target.value)}
+              className="w-full px-4 py-3 sm:px-3 sm:py-2 rounded-lg border border-border bg-surface-alt text-base sm:text-sm focus:outline-none focus:border-p2"
+            >
+              <option value="">未指派</option>
+              <option value="Kuma">Kuma</option>
+              <option value="Guo">Guo</option>
+            </select>
           </div>
 
           {/* Description */}

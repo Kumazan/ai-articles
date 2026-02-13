@@ -10,6 +10,8 @@ const priorityColors: Record<string, string> = {
   P3: 'bg-p3 text-white',
 }
 
+const MEMBERS = ['Kuma', 'Guo']
+
 interface Props {
   searchQuery: string
   onSearchChange: (q: string) => void
@@ -18,12 +20,15 @@ interface Props {
   allLabels: string[]
   selectedLabels: Set<string>
   onToggleLabel: (label: string) => void
+  selectedAssignees: Set<string>
+  onToggleAssignee: (a: string) => void
 }
 
 export function SearchFilter({
   searchQuery, onSearchChange,
   selectedPriorities, onTogglePriority,
   allLabels, selectedLabels, onToggleLabel,
+  selectedAssignees, onToggleAssignee,
 }: Props) {
   return (
     <div className="shrink-0 px-5 py-3 sm:px-3 sm:py-2 border-b border-border bg-surface space-y-2">
@@ -73,6 +78,24 @@ export function SearchFilter({
           ))}
         </div>
       )}
+      {/* Assignee chips */}
+      <div className="flex items-center gap-1.5 flex-wrap">
+        <span className="text-xs text-text-secondary mr-1">指派</span>
+        {MEMBERS.map(m => (
+          <button
+            key={m}
+            onClick={() => onToggleAssignee(m)}
+            className={`text-xs px-2.5 py-1 rounded-full transition-all flex items-center gap-1 ${
+              selectedAssignees.has(m)
+                ? 'bg-p2 text-white shadow-sm'
+                : 'bg-surface-hover text-text-secondary hover:text-text'
+            }`}
+          >
+            <span className="w-4 h-4 rounded-full bg-p2/30 text-[10px] flex items-center justify-center font-semibold">{m[0]}</span>
+            {m}
+          </button>
+        ))}
+      </div>
     </div>
   )
 }
