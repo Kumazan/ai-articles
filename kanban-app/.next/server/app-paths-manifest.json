@@ -1,7 +1,7 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/kanban/cards/route": "app/api/kanban/cards/route.js",
   "/api/kanban/route": "app/api/kanban/route.js",
+  "/api/kanban/cards/route": "app/api/kanban/cards/route.js",
   "/api/kanban/cards/[id]/route": "app/api/kanban/cards/[id]/route.js",
   "/page": "app/page.js"
 }

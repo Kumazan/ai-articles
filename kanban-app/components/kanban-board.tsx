@@ -21,6 +21,7 @@ import { CardModal } from './card-modal'
 import { KeyboardHelp } from './keyboard-help'
 import { MovePicker } from './move-picker'
 import { SearchFilter } from './search-filter'
+import { Dashboard } from './dashboard'
 
 export function KanbanBoard() {
   const [data, setData] = useState<KanbanData | null>(null)
@@ -35,6 +36,8 @@ export function KanbanBoard() {
   const MAX_UNDO = 20
 
   // Search & filter state
+  const [showDashboard, setShowDashboard] = useState(false)
+
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedPriorities, setSelectedPriorities] = useState<Set<Card['priority']>>(new Set())
   const [selectedLabels, setSelectedLabels] = useState<Set<string>>(new Set())
@@ -505,7 +508,9 @@ export function KanbanBoard() {
     <div className="h-screen flex flex-col">
       {/* Header */}
       <header className="shrink-0 px-5 py-5 sm:px-4 sm:py-3 border-b border-border flex items-center justify-between bg-surface">
-        <h1 className="text-xl sm:text-lg font-semibold tracking-tight">看板</h1>
+        <button onClick={() => setShowDashboard(p => !p)} className="text-xl sm:text-lg font-semibold tracking-tight hover:opacity-70 transition-opacity flex items-center gap-2">
+          看板 <span className="text-sm">{showDashboard ? '▲' : '📊'}</span>
+        </button>
         <div className="flex items-center gap-3">
           <button onClick={undo} disabled={undoStack.current.length === 0}
             className="text-lg text-text-secondary hover:text-text disabled:opacity-20 transition-colors" title="復原 ⌘Z">↩</button>
@@ -523,6 +528,9 @@ export function KanbanBoard() {
           </span>
         </div>
       </header>
+
+      {/* Dashboard */}
+      {showDashboard && <Dashboard data={data} />}
 
       {/* Search & Filter */}
       <SearchFilter
