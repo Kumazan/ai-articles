@@ -1,0 +1,171 @@
+    <!-- ITINERARY TAB -->
+    <section class="panel is-active" id="tab-itinerary" role="tabpanel" aria-label="行程">
+
+      <section class="day">
+        <button class="day__header" type="button" aria-expanded="false">
+          <div class="day__badge">Day 0</div>
+          <div class="day__meta">
+            <div class="day__title">3/18（三）Landing｜軟著陸</div>
+            <div class="day__subtitle">基地 Silom｜晚餐 Lon Lon 18:30</div>
+          </div>
+          <div class="day__chev" aria-hidden="true">▾</div>
+        </button>
+        <div class="day__body" hidden>
+          <ol class="timeline">
+            <li><span class="t">16:30</span><span class="e">抵達</span><span class="p">BKK</span></li>
+            <li><span class="t">17:30</span><span class="e">市區移動（Grab/專車）</span><span class="p">BKK → Silom</span></li>
+            <li><span class="t">18:30</span><span class="e">晚餐（已訂）</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://share.google/7fGheuyjtnWY0ItZk">Lon Lon Local Diner</a></span></li>
+            <li><span class="t">19:00</span><span class="e">入住</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Serene%20a%20Boutique%20Hotel%207%2C%203%20Phiphat%202%2C%20Si%20Lom%2C%20Bang%20Rak%2C%20Bangkok%2010500">Silom Serene</a></span></li>
+            <li><span class="t">20:00</span><span class="e">補給/散步（可選）</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Convent%20Road%20Silom%20Bangkok">Convent Rd 周邊</a></span></li>
+            <li><span class="t">22:30</span><span class="e">回飯店休息</span><span class="p">Silom Serene</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="day">
+        <button class="day__header" type="button" aria-expanded="false">
+          <div class="day__badge">Day 1</div>
+          <div class="day__meta">
+            <div class="day__title">3/19（四）大城｜Ayutthaya 私人包車</div>
+            <div class="day__subtitle">09:00 飯店接送｜夜晚：Kingdom → Prime Massage</div>
+          </div>
+          <div class="day__chev" aria-hidden="true">▾</div>
+        </button>
+        <div class="day__body" hidden>
+          <ol class="timeline">
+            <li><span class="t">08:00</span><span class="e">早餐</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Serene%20a%20Boutique%20Hotel%207%2C%203%20Phiphat%202%2C%20Si%20Lom%2C%20Bang%20Rak%2C%20Bangkok%2010500">Silom Serene</a></span></li>
+            <li><span class="t">09:00</span><span class="e">出發（私人包車）</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Serene%20a%20Boutique%20Hotel%207%2C%203%20Phiphat%202%2C%20Si%20Lom%2C%20Bang%20Rak%2C%20Bangkok%2010500">Silom Serene</a></span></li>
+            <li><span class="t">10:30</span><span class="e">邦芭茵夏宮</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bang%20Pa-In%20Summer%20Palace">Bang Pa-In Summer Palace</a></span></li>
+            <li><span class="t">12:30</span><span class="e">午餐（自理）</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ayutthaya">Ayutthaya</a></span></li>
+            <li><span class="t">14:00</span><span class="e">瑪哈泰寺＋臥佛</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Wat%20Mahathat%20Ayutthaya">Wat Mahathat</a> + <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Wat%20Lokayasutharam">Wat Lokayasutharam</a></span></li>
+            <li><span class="t">15:40</span><span class="e">咖啡休息</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rakna%20Cafe%20Ayutthaya">Rakna Cafe</a></span></li>
+            <li><span class="t">16:40</span><span class="e">柴瓦塔那蘭寺</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Wat%20Chaiwatthanaram">Wat Chaiwatthanaram</a></span></li>
+            <li><span class="t">17:40</span><span class="e">長尾船（視天氣）</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Longtail%20boat%20Ayutthaya">Longtail Boat</a></span></li>
+            <li><span class="t">18:30</span><span class="e">回程</span><span class="p">Ayutthaya → Bangkok</span></li>
+            <li><span class="t">20:45</span><span class="e">店內放鬆</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cannabis%20Kingdom%2018%2F1%20Convent%20Rd%20Silom%20Bangkok">Cannabis Kingdom</a></span></li>
+            <li><span class="t">21:45</span><span class="e">按摩</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=The%20Prime%20Massage%20Silom%20Bangkok">The Prime Massage</a></span></li>
+            <li><span class="t">23:30</span><span class="e">回飯店</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Serene%20a%20Boutique%20Hotel%207%2C%203%20Phiphat%202%2C%20Si%20Lom%2C%20Bang%20Rak%2C%20Bangkok%2010500">Silom Serene</a></span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="day">
+        <button class="day__header" type="button" aria-expanded="false">
+          <div class="day__badge">Day 2</div>
+          <div class="day__meta">
+            <div class="day__title">3/20（五）Modern Bangkok｜One Bangkok ＋夜店</div>
+            <div class="day__subtitle">逛街購物｜DJ Station 23:00</div>
+          </div>
+          <div class="day__chev" aria-hidden="true">▾</div>
+        </button>
+        <div class="day__body" hidden>
+          <ol class="timeline">
+            <li><span class="t">10:30</span><span class="e">睡飽/放空</span><span class="p">Silom Serene</span></li>
+            <li><span class="t">14:30</span><span class="e">逛街</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=One%20Bangkok">One Bangkok</a></span></li>
+            <li><span class="t">19:00</span><span class="e">清淡晚餐</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Bangkok">Silom（就近）</a></span></li>
+            <li><span class="t">23:00</span><span class="e">夜店</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=DJ%20Station%20Bangkok">DJ Station</a></span></li>
+            <li><span class="t">02:00</span><span class="e">回飯店</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Serene%20a%20Boutique%20Hotel%207%2C%203%20Phiphat%202%2C%20Si%20Lom%2C%20Bang%20Rak%2C%20Bangkok%2010500">Silom Serene</a></span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="day">
+        <button class="day__header" type="button" aria-expanded="false">
+          <div class="day__badge">Day 3</div>
+          <div class="day__meta">
+            <div class="day__title">3/21（六）Old Town + Song Wat｜甜點拍照＋夜店</div>
+            <div class="day__subtitle">松瓦路｜夜店 23:00</div>
+          </div>
+          <div class="day__chev" aria-hidden="true">▾</div>
+        </button>
+        <div class="day__body" hidden>
+          <ol class="timeline">
+            <li><span class="t">09:30</span><span class="e">玄天上帝廟</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Tiger%20God%20Shrine%20Bangkok">Tiger God Shrine</a></span></li>
+            <li><span class="t">10:15</span><span class="e">大秋千</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Giant%20Swing%20Bangkok">Giant Swing</a></span></li>
+            <li><span class="t">11:15</span><span class="e">國柱神廟</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=City%20Pillar%20Shrine%20Bangkok">City Pillar Shrine</a></span></li>
+            <li><span class="t">13:30</span><span class="e">拍照散步</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Song%20Wat%20Road%20Bangkok">Song Wat Road</a></span></li>
+            <li><span class="t">14:00</span><span class="e">甜點咖啡（1）</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Song%20Wat%20Road%20Cafe%20Dessert">Song Wat Road</a></span></li>
+            <li><span class="t">15:15</span><span class="e">甜點咖啡（2）</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Song%20Wat%20Road%20Cafe%20Dessert">Song Wat Road</a></span></li>
+            <li><span class="t">17:30</span><span class="e">深層按摩</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Bangkok%20Massage">Silom</a></span></li>
+            <li><span class="t">19:30</span><span class="e">晚餐</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Bangkok%20Restaurant">Silom</a></span></li>
+            <li><span class="t">23:00</span><span class="e">夜店</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Soi%202%20Nightclub">Silom</a></span></li>
+            <li><span class="t">02:00</span><span class="e">回飯店</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Silom%20Serene%20a%20Boutique%20Hotel%207%2C%203%20Phiphat%202%2C%20Si%20Lom%2C%20Bang%20Rak%2C%20Bangkok%2010500">Silom Serene</a></span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="day day--peak">
+        <button class="day__header" type="button" aria-expanded="false">
+          <div class="day__badge">Day 4</div>
+          <div class="day__meta">
+            <div class="day__title">3/22（日）小郭生日｜Peak Day｜奢華轉場</div>
+            <div class="day__subtitle">換 Kimpton｜Inddee 19:30（已訂）</div>
+          </div>
+          <div class="day__chev" aria-hidden="true">▾</div>
+        </button>
+        <div class="day__body" hidden>
+          <ol class="timeline">
+            <li><span class="t">10:30</span><span class="e">早餐/整理行李</span><span class="p">Silom Serene</span></li>
+            <li><span class="t">12:00</span><span class="e">退房</span><span class="p">Silom Serene</span></li>
+            <li><span class="t">12:30</span><span class="e">前往 Kimpton（Grab）</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kimpton%20Maa-Lai%20Bangkok%2078%20Soi%20Ton%20Son">Kimpton Maa-Lai Bangkok</a></span></li>
+            <li><span class="t">13:30</span><span class="e">輕午餐</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Restaurants%20near%20Kimpton%20Maa-Lai%20Bangkok">Kimpton 周邊</a></span></li>
+            <li><span class="t">14:00</span><span class="e">入住/放鬆</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kimpton%20Maa-Lai%20Bangkok%2078%20Soi%20Ton%20Son">Kimpton Maa-Lai</a></span></li>
+            <li><span class="t">16:30</span><span class="e">休息/小睡</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kimpton%20Maa-Lai%20Bangkok%2078%20Soi%20Ton%20Son">Kimpton Maa-Lai</a></span></li>
+            <li><span class="t">18:00</span><span class="e">酒吧</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bar.Yard%20Kimpton%20Maa-Lai%20Bangkok">Bar.Yard</a></span></li>
+            <li><span class="t">19:30</span><span class="e">晚餐（已訂）</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Inddee%20Bangkok">Inddee</a></span></li>
+            <li><span class="t">22:30</span><span class="e">回飯店</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kimpton%20Maa-Lai%20Bangkok%2078%20Soi%20Ton%20Son">Kimpton Maa-Lai</a></span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="day">
+        <button class="day__header" type="button" aria-expanded="false">
+          <div class="day__badge">Day 5</div>
+          <div class="day__meta">
+            <div class="day__title">3/23（一）End Day｜Copper 收尾</div>
+            <div class="day__subtitle">Copper 17:00｜Gaysorn Amarin</div>
+          </div>
+          <div class="day__chev" aria-hidden="true">▾</div>
+        </button>
+        <div class="day__body" hidden>
+          <ol class="timeline">
+            <li><span class="t">09:30</span><span class="e">早餐</span><span class="p">Kimpton Maa-Lai</span></li>
+            <li><span class="t">12:00</span><span class="e">自由活動</span><span class="p">Kimpton 周邊</span></li>
+            <li><span class="t">16:30</span><span class="e">前往餐廳</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gaysorn%20Amarin%20496-502%20Phloen%20Chit%20Rd%20Bangkok">Gaysorn Amarin</a></span></li>
+            <li><span class="t">17:00</span><span class="e">晚餐</span><span class="p"><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Copper%20Beyond%20Buffet%20Gaysorn%20Amarin">Copper Beyond Buffet</a></span></li>
+            <li><span class="t">19:30</span><span class="e">回飯店</span><span class="p">Kimpton Maa-Lai</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="day">
+        <button class="day__header" type="button" aria-expanded="false">
+          <div class="day__badge">Day 6</div>
+          <div class="day__meta">
+            <div class="day__title">3/24（二）Departure｜返台</div>
+            <div class="day__subtitle">10:30 出發去機場｜13:45 起飛</div>
+          </div>
+          <div class="day__chev" aria-hidden="true">▾</div>
+        </button>
+        <div class="day__body" hidden>
+          <ol class="timeline">
+            <li><span class="t">08:30</span><span class="e">早餐</span><span class="p">Kimpton Maa-Lai</span></li>
+            <li><span class="t">10:30</span><span class="e">前往機場</span><span class="p">Bangkok → BKK</span></li>
+            <li><span class="t">13:45</span><span class="e">起飛</span><span class="p">BKK → TPE</span></li>
+          </ol>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- BOOKINGS TAB -->
+    <section class="panel" id="tab-bookings" role="tabpanel" aria-label="訂位／提醒" hidden>
+      <div class="card">
+        <h2>訂位／提醒</h2>
+        <ul class="list">
+          <li><b>大城私人團</b>｜3/19（四）09:00 飯店接送｜（待下單）</li>
+          <li><b>Inddee</b>｜3/22（日）19:30｜已訂</li>
+          <li><b>Copper Beyond Buffet（Gaysorn Amarin）</b>｜3/23（一）17:00｜待確認/比價後下訂</li>
+          <li><b>提醒</b>｜2/22：提醒處理 Copper 訂位｜今晚 12:00：提醒下單大城團</li>
+        </ul>
+      </div>

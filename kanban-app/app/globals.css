@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-p0: #ef4444;
+  --color-p1: #f97316;
+  --color-p2: #3b82f6;
+  --color-p3: #9ca3af;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8f9fb;
+  --color-surface-hover: #f1f3f5;
+  --color-border: #e5e7eb;
+  --color-text: #111827;
+  --color-text-secondary: #6b7280;
+  --color-overlay: rgba(0, 0, 0, 0.4);
+}
+
+@variant dark {
+  @theme {
+    --color-surface: #1a1b1e;
+    --color-surface-alt: #25262b;
+    --color-surface-hover: #2c2e33;
+    --color-border: #373a40;
+    --color-text: #e4e5e7;
+    --color-text-secondary: #909296;
+    --color-overlay: rgba(0, 0, 0, 0.6);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-text);
+  min-height: 100dvh;
+}
+
+/* Telegram Mini App viewport fix */
+html, body, #__next {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 2px;
+}
+
+/* Drag overlay */
+.drag-overlay {
+  opacity: 0.9;
+  transform: rotate(2deg) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Card enter animation */
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-card-in {
+  animation: card-in 0.2s ease-out;
+}
+
+/* Modal animation */
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.96) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.animate-modal-in {
+  animation: modal-in 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fade-in 0.15s ease-out;
+}

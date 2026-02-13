@@ -17,5 +17,8 @@ export async function fetchTopOfBook(client: ClobClient, tokenId: string): Promi
   const bestBid = bids.length ? Number(bids[0].price) : undefined;
   const bestAsk = asks.length ? Number(asks[0].price) : undefined;
 
-  return { tokenId, bestBid, bestAsk, ts: Date.now() };
+  const result: BookTop = { tokenId, ts: Date.now() };
+  if (bestBid !== undefined) result.bestBid = bestBid;
+  if (bestAsk !== undefined) result.bestAsk = bestAsk;
+  return result;
 }

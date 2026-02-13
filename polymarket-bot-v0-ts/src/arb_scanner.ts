@@ -53,7 +53,10 @@ export async function scanStructuralArb(params: {
         const outcome = t.outcome;
         const ob = await client.getOrderBook(tokenId);
         const { bestAsk, bestBid } = top(ob);
-        legs.push({ outcome, tokenId, bestAsk, bestBid });
+        const leg: ArbOpportunity['legs'][number] = { outcome, tokenId };
+        if (bestAsk !== undefined) leg.bestAsk = bestAsk;
+        if (bestBid !== undefined) leg.bestBid = bestBid;
+        legs.push(leg);
         if (bestAsk === undefined) {
           missing = true;
         } else {

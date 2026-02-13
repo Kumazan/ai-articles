@@ -7,6 +7,7 @@ _Learn about the person you're helping. Update this as you go._
 - **Pronouns:** _(optional)_
 - **Timezone:** Asia/Taipei (UTC+8)
 - **Notes:** 偏好使用繁體中文（zh-tw）交流；語氣輕鬆隨意。
+- **格式要求：** 標題（`#`/`##`/`**粗體標題**`）前面一定要空一行，不要跟上一段內文黏在一起。
 
 ## Context
 

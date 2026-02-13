@@ -1,0 +1,81 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import { useDraggable } from '@dnd-kit/core'
+import type { Card } from '@/types/kanban'
+
+const priorityStyles: Record<string, string> = {
+  P0: 'bg-p0/15 text-p0 border-p0/30',
+  P1: 'bg-p1/15 text-p1 border-p1/30',
+  P2: 'bg-p2/15 text-p2 border-p2/30',
+  P3: 'bg-p3/15 text-p3 border-p3/30',
+}
+
+const priorityDot: Record<string, string> = {
+  P0: 'bg-p0',
+  P1: 'bg-p1',
+  P2: 'bg-p2',
+  P3: 'bg-p3',
+}
+
+interface Props {
+  card: Card
+  onEdit: (card: Card) => void
+  isKeyboardFocused?: boolean
+}
+
+export function KanbanCard({ card, onEdit, isKeyboardFocused }: Props) {
+  const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
+    id: card.id,
+  })
+  const elRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (isKeyboardFocused && elRef.current) {
+      elRef.current.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+    }
+  }, [isKeyboardFocused])
+
+  const style = transform
+    ? { transform: `translate(${transform.x}px, ${transform.y}px)` }
+    : undefined
+
+  return (
+    <div
+      ref={(node) => { setNodeRef(node); (elRef as React.MutableRefObject<HTMLDivElement | null>).current = node }}
+      style={style}
+      {...listeners}
+      {...attributes}
+      onClick={() => onEdit(card)}
+      className={`
+        group bg-surface rounded-xl sm:rounded-lg border px-5 py-5 sm:px-3 sm:py-2.5 cursor-grab active:cursor-grabbing
+        transition-all duration-150 animate-card-in
+        ${isDragging ? 'opacity-30 scale-95' : 'hover:shadow-md hover:-translate-y-0.5'}
+        ${isKeyboardFocused
+          ? 'border-p2 ring-2 ring-p2/40 shadow-md'
+          : 'border-border hover:border-text-secondary/30'}
+      `}
+    >
+      {/* Top row: priority + title */}
+      <div className="flex items-start gap-3 sm:gap-2">
+        <div className={`shrink-0 w-2.5 h-2.5 sm:w-1.5 sm:h-1.5 rounded-full mt-1.5 ${priorityDot[card.priority]}`} />
+        <span className="text-base sm:text-sm font-medium leading-snug line-clamp-2 flex-1">{card.title}</span>
+      </div>
+
+      {/* Labels + priority badge */}
+      <div className="flex items-center gap-2.5 sm:gap-1.5 mt-3.5 sm:mt-2 flex-wrap">
+        <span className={`text-xs sm:text-[10px] font-mono font-semibold px-2 py-1 sm:px-1.5 sm:py-0.5 rounded border ${priorityStyles[card.priority]}`}>
+          {card.priority}
+        </span>
+        {card.labels.map(label => (
+          <span
+            key={label}
+            className="text-xs sm:text-[10px] text-text-secondary bg-surface-hover rounded px-2 py-1 sm:px-1.5 sm:py-0.5"
+          >
+            {label}
+          </span>
+        ))}
+      </div>
+    </div>
+  )
+}

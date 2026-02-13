@@ -43,7 +43,11 @@ export async function discover15mCrypto(host: string, chainId = 137): Promise<Di
       const isCrypto = /Bitcoin|Ethereum|Solana|\bBTC\b|\bETH\b|\bSOL\b/i.test(q);
 
       if (isUpDown && isCrypto && is15m && tokenIds.length >= 2 && conditionId) {
-        hits.push({ conditionId, question: q, slug, tokenIds, outcomes, endDateIso });
+        const entry: DiscoveredMarket = { conditionId, question: q, tokenIds };
+        if (slug !== undefined) entry.slug = slug;
+        if (outcomes !== undefined) entry.outcomes = outcomes;
+        if (endDateIso !== undefined) entry.endDateIso = endDateIso;
+        hits.push(entry);
       }
     }
 

@@ -5,10 +5,10 @@ Python v0 bot using `py-clob-client`.
 ## Setup
 
 ```bash
-cd /root/.openclaw/workspace/polymarket-bot-v0-py
+cd /Users/kumax/.openclaw/workspace/polymarket-bot-v0-py
 cp .env.example .env
 
-# Put your private key into /root/.openclaw/workspace/.secrets/polymarket.env (already exists)
+# Put your private key into /Users/kumax/.openclaw/workspace/.secrets/polymarket.env (already exists)
 # then export it or paste into .env (recommended: source secrets file)
 
 . .venv/bin/activate

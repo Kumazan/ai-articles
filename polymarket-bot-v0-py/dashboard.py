@@ -9,6 +9,7 @@ from fastapi.responses import HTMLResponse
 
 BASE = Path(__file__).resolve().parent
 DATA = BASE / "data"
+DATA_TS = Path("/Users/kumax/.openclaw/workspace/polymarket-bot-v0-ts/data")
 
 app = FastAPI(title="Polymarket Bot v0 儀表板")
 
@@ -46,7 +47,6 @@ def latest_json(path: Path) -> Optional[dict[str, Any]]:
 
 def latest_15m_snapshot(day: str) -> Optional[dict[str, Any]]:
     rows = tail_jsonl(DATA / f"pm15m-{day}.jsonl", 200)
-    # find last pm_15m_top
     for r in reversed(rows):
         if r.get("type") == "pm_15m_top":
             return r
@@ -60,10 +60,7 @@ def health():
 
 @app.get("/api/status")
 def api_status():
-    # Latest autotune snapshot
     snap = latest_json(DATA / "autotune-status.json")
-
-    # Recent scan summaries / signals
     day = __import__("time").strftime("%Y-%m-%d")
     arbscan = tail_jsonl(DATA / f"arbscan-{day}.jsonl", 200)
     signals = tail_jsonl(DATA / f"arb-signals-{day}.jsonl", 200)
@@ -71,7 +68,6 @@ def api_status():
     cex = tail_jsonl(DATA / f"cex-signal-{day}.jsonl", 50)
     cex_edge = tail_jsonl(DATA / f"cex-edge-{day}.jsonl", 50)
     comb = tail_jsonl(DATA / f"comb-candidates-{day}.jsonl", 50)
-
     pm15m = latest_15m_snapshot(day)
     daily = latest_json(DATA / f"daily-summary-{day}.json")
 
@@ -89,10 +85,99 @@ def api_status():
     }
 
 
+@app.get("/api/weather")
+def api_weather():
+    import time
+    day = time.strftime("%Y-%m-%d")
+
+    portfolio = latest_json(DATA_TS / "paper-portfolio.json")
+    edges = tail_jsonl(DATA_TS / f"weather-edge-{day}.jsonl", 500)
+    trades = tail_jsonl(DATA_TS / f"paper-trades-{day}.jsonl", 500)
+
+    # Deduplicate edges by conditionId, keep latest
+    edge_map: dict[str, dict] = {}
+    for e in edges:
+        cid = e.get("contract", {}).get("conditionId", "")
+        if cid:
+            edge_map[cid] = e
+    unique_edges = list(edge_map.values())
+
+    # Sort by abs edge desc, take top 10
+    top_edges = sorted(unique_edges, key=lambda x: abs(x.get("edge", 0)), reverse=True)[:10]
+
+    # Last poll time
+    last_ts = edges[-1].get("ts") if edges else None
+
+    # Portfolio summary
+    p_summary = None
+    if portfolio:
+        positions = portfolio.get("positions", [])
+        open_pos = [p for p in positions if not p.get("settled")]
+        settled_pos = [p for p in positions if p.get("settled")]
+        total_cost = sum(p.get("cost", 0) for p in open_pos)
+        total_value = portfolio.get("cash", 0) + total_cost  # approximate
+        starting = portfolio.get("startingCapital", 100)
+        ret_pct = ((total_value - starting) / starting) * 100 if starting else 0
+        p_summary = {
+            "startingCapital": starting,
+            "cash": portfolio.get("cash", 0),
+            "totalValue": total_value,
+            "returnPct": ret_pct,
+            "totalPnl": portfolio.get("totalPnl", 0),
+            "trades": portfolio.get("trades", 0),
+            "wins": portfolio.get("wins", 0),
+            "losses": portfolio.get("losses", 0),
+            "openPositions": open_pos,
+            "settledPositions": settled_pos,
+            "startedAt": portfolio.get("startedAt"),
+        }
+
+    # Edge distribution: buckets
+    edge_vals = [e.get("edge", 0) for e in unique_edges]
+    buckets = {}
+    for v in edge_vals:
+        b = round(v * 10) / 10  # round to nearest 0.1
+        key = f"{b:+.1f}"
+        buckets[key] = buckets.get(key, 0) + 1
+    # Sort buckets
+    sorted_buckets = dict(sorted(buckets.items(), key=lambda x: float(x[0])))
+
+    # Portfolio value over time from trades
+    value_timeline = []
+    if portfolio and trades:
+        cash = portfolio.get("startingCapital", 100)
+        positions_cost = 0
+        for t in trades:
+            if t.get("action") == "open":
+                cost = t.get("cost", 0)
+                cash -= cost
+                positions_cost += cost
+            elif t.get("action") == "settle":
+                pnl = t.get("pnl", 0)
+                cost = t.get("cost", 0)
+                cash += cost + pnl
+                positions_cost -= cost
+            value_timeline.append({
+                "ts": t.get("openedAt") or t.get("settledAt") or t.get("ts", 0),
+                "value": round(cash + positions_cost, 2),
+            })
+
+    return {
+        "day": day,
+        "portfolio": p_summary,
+        "topEdges": top_edges,
+        "totalEdges": len(unique_edges),
+        "totalScanned": len(unique_edges),
+        "lastPollTs": last_ts,
+        "edgeDistribution": sorted_buckets,
+        "valueTimeline": value_timeline,
+        "recentTrades": trades[-10:],
+    }
+
+
 @app.get("/", response_class=HTMLResponse)
 def index():
-    # Single-page dashboard (ZH-TW), CDN-only.
-    html = """<!doctype html>
+    html = r"""<!doctype html>
 <html lang="zh-Hant">
 <head>
   <meta charset='utf-8'/>
@@ -162,9 +247,14 @@ def index():
     .bad { color: var(--bad); }
     .footer { margin-top: 14px; color: var(--muted); font-size: 11px; }
     pre { white-space: pre-wrap; word-break: break-word; max-height: 260px; overflow: auto; border: 1px solid var(--line); border-radius: 12px; padding: 10px; background: rgba(0,0,0,0.15); }
+    .section-title { font-size: 15px; margin: 24px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    .kpis4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .kpis6 { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
     @media (max-width: 980px) {
       .grid { grid-template-columns: 1fr; }
       .kpis { grid-template-columns: repeat(2, 1fr); }
+      .kpis4 { grid-template-columns: repeat(2, 1fr); }
+      .kpis6 { grid-template-columns: repeat(2, 1fr); }
       .grid2 { grid-template-columns: 1fr; }
     }
   </style>
@@ -234,10 +324,78 @@ def index():
       <pre class="mono small" id="raw">載入中…</pre>
     </div>
   </div>
+
+  <!-- ====== Weather Oracle Section ====== -->
+  <div class="section-title">🌤️ 天氣預言機（Weather Oracle）</div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <h2>天氣 Edge 總覽</h2>
+    <div class="kpis4">
+      <div class="kpi"><div class="label">掃描合約數</div><div class="value" id="w_scanned">--</div></div>
+      <div class="kpi"><div class="label">今日 Edge 數</div><div class="value" id="w_edges">--</div></div>
+      <div class="kpi"><div class="label">最大 Edge</div><div class="value" id="w_best">--</div></div>
+      <div class="kpi"><div class="label">最後輪詢</div><div class="value" id="w_poll">--</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <h2>Top 10 Edge（按絕對值排序）</h2>
+    <table>
+      <thead><tr><th>城市</th><th>日期</th><th class="right">預報溫度</th><th class="right">市場價格</th><th class="right">Edge %</th><th>訊號</th></tr></thead>
+      <tbody id="wEdgeRows"><tr><td colspan="6" class="muted">載入中…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="grid" style="margin-bottom:14px;">
+    <div class="card">
+      <h2>Edge 分佈</h2>
+      <div class="chartWrap"><canvas id="edgeDistChart"></canvas></div>
+    </div>
+    <div class="card">
+      <h2>投資組合價值走勢</h2>
+      <div class="chartWrap"><canvas id="valueChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- ====== Paper Trading Section ====== -->
+  <div class="section-title">📊 紙上交易（Paper Trading）</div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <h2>投資組合摘要</h2>
+    <div class="kpis6">
+      <div class="kpi"><div class="label">初始資金</div><div class="value" id="p_start">$100</div></div>
+      <div class="kpi"><div class="label">現金餘額</div><div class="value" id="p_cash">--</div></div>
+      <div class="kpi"><div class="label">總價值</div><div class="value" id="p_total">--</div></div>
+      <div class="kpi"><div class="label">報酬率</div><div class="value" id="p_ret">--</div></div>
+      <div class="kpi"><div class="label">勝/敗</div><div class="value" id="p_wl">--</div></div>
+      <div class="kpi"><div class="label">勝率</div><div class="value" id="p_wr">--</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <h2>持倉中（Open Positions）</h2>
+    <div style="overflow-x:auto;">
+    <table>
+      <thead><tr><th>城市</th><th>日期</th><th>方向</th><th class="right">進場價</th><th class="right">股數</th><th class="right">成本</th><th class="right">Edge</th></tr></thead>
+      <tbody id="openPosRows"><tr><td colspan="7" class="muted">載入中…</td></tr></tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:14px;">
+    <h2>已結算（Settled Positions）</h2>
+    <div style="overflow-x:auto;">
+    <table>
+      <thead><tr><th>城市</th><th>日期</th><th>方向</th><th>結果</th><th class="right">實際溫度</th><th class="right">P&amp;L</th></tr></thead>
+      <tbody id="settledRows"><tr><td colspan="6" class="muted">載入中…</td></tr></tbody>
+    </table>
+    </div>
+  </div>
+
 </div>
 
 <script>
-let chart;
+let chart, edgeDistChart, valueChart;
 function fmt(x){
   if(x === null || x === undefined) return '--';
   if(typeof x === 'number') return Number.isFinite(x) ? x.toFixed(3).replace(/\.000$/,'') : '--';
@@ -248,9 +406,171 @@ function fmt2(x){
   if(typeof x === 'number') return Number.isFinite(x) ? x.toFixed(2) : '--';
   return String(x);
 }
+function fmtPct(x){
+  if(typeof x !== 'number' || !isFinite(x)) return '--';
+  return (x*100).toFixed(1) + '%';
+}
 function safeSpread(bid, ask){
   if(typeof bid !== 'number' || typeof ask !== 'number' || !isFinite(bid) || !isFinite(ask) || ask<=0) return null;
   return ask - bid;
+}
+function tsToTime(ts){
+  if(!ts) return '--';
+  const d = new Date(ts);
+  return d.toLocaleTimeString('zh-TW', {hour12:false});
+}
+
+async function refreshWeather(){
+  try {
+    const r = await fetch('/api/weather', {cache:'no-store'});
+    const w = await r.json();
+
+    // KPI cards
+    document.getElementById('w_scanned').textContent = w.totalScanned || 0;
+    document.getElementById('w_edges').textContent = w.totalEdges || 0;
+
+    // Best edge
+    if(w.topEdges && w.topEdges.length){
+      const best = w.topEdges[0];
+      const city = best.contract?.city || '?';
+      const edge = best.edge;
+      document.getElementById('w_best').innerHTML = `<span class="${edge>0?'good':'bad'}">${city} ${fmtPct(edge)}</span>`;
+    }
+
+    // Last poll
+    document.getElementById('w_poll').textContent = tsToTime(w.lastPollTs);
+
+    // Edge table
+    const tbody = document.getElementById('wEdgeRows');
+    if(w.topEdges && w.topEdges.length){
+      tbody.innerHTML = w.topEdges.map(e => {
+        const c = e.contract || {};
+        const edgeCls = e.edge > 0 ? 'good' : 'bad';
+        const signal = e.signal === 'buy_yes' ? '<span class="good">買 YES</span>' : '<span class="bad">買 NO</span>';
+        return `<tr>
+          <td>${c.city||'?'}</td>
+          <td class="mono small">${c.date||'?'}</td>
+          <td class="right mono">${e.forecastHigh||'?'}°${e.forecastUnit||'F'}</td>
+          <td class="right mono">${fmt2(c.yesPrice)}</td>
+          <td class="right mono ${edgeCls}">${fmtPct(e.edge)}</td>
+          <td>${signal}</td>
+        </tr>`;
+      }).join('');
+    } else {
+      tbody.innerHTML = '<tr><td colspan="6" class="muted">尚無資料</td></tr>';
+    }
+
+    // Edge distribution chart
+    if(w.edgeDistribution){
+      const labels = Object.keys(w.edgeDistribution);
+      const data = Object.values(w.edgeDistribution);
+      const colors = labels.map(l => parseFloat(l) >= 0 ? 'rgba(45,212,191,0.7)' : 'rgba(251,113,133,0.7)');
+      if(!edgeDistChart){
+        edgeDistChart = new Chart(document.getElementById('edgeDistChart'), {
+          type: 'bar',
+          data: { labels, datasets: [{ label: '合約數', data, backgroundColor: colors }] },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            scales: {
+              y: { beginAtZero:true, grid:{color:'rgba(255,255,255,0.08)'}, ticks:{color:'rgba(255,255,255,0.7)'} },
+              x: { grid:{display:false}, ticks:{color:'rgba(255,255,255,0.7)', font:{size:10}} }
+            },
+            plugins: { legend:{display:false} }
+          }
+        });
+      } else {
+        edgeDistChart.data.labels = labels;
+        edgeDistChart.data.datasets[0].data = data;
+        edgeDistChart.data.datasets[0].backgroundColor = colors;
+        edgeDistChart.update();
+      }
+    }
+
+    // Value timeline chart
+    if(w.valueTimeline && w.valueTimeline.length){
+      const tl = w.valueTimeline;
+      const vlabels = tl.map((_,i)=>String(i+1));
+      const vdata = tl.map(t=>t.value);
+      if(!valueChart){
+        valueChart = new Chart(document.getElementById('valueChart'), {
+          type: 'line',
+          data: { labels: vlabels, datasets: [{
+            label: '總價值 ($)',
+            data: vdata,
+            borderColor: 'rgba(45,212,191,0.9)',
+            backgroundColor: 'rgba(45,212,191,0.15)',
+            tension: 0.3, pointRadius: 1, fill: true
+          }] },
+          options: {
+            responsive: true, maintainAspectRatio: false,
+            scales: {
+              y: { grid:{color:'rgba(255,255,255,0.08)'}, ticks:{color:'rgba(255,255,255,0.7)'} },
+              x: { grid:{display:false}, ticks:{display:false} }
+            },
+            plugins: { legend:{labels:{color:'rgba(255,255,255,0.7)'}} }
+          }
+        });
+      } else {
+        valueChart.data.labels = vlabels;
+        valueChart.data.datasets[0].data = vdata;
+        valueChart.update();
+      }
+    }
+
+    // Portfolio summary
+    const p = w.portfolio;
+    if(p){
+      document.getElementById('p_start').textContent = '$' + fmt2(p.startingCapital);
+      document.getElementById('p_cash').textContent = '$' + fmt2(p.cash);
+      document.getElementById('p_total').textContent = '$' + fmt2(p.totalValue);
+      const retEl = document.getElementById('p_ret');
+      retEl.textContent = fmt2(p.returnPct) + '%';
+      retEl.className = 'value ' + (p.returnPct >= 0 ? 'good' : 'bad');
+      document.getElementById('p_wl').textContent = `${p.wins}W / ${p.losses}L`;
+      const total = p.wins + p.losses;
+      document.getElementById('p_wr').textContent = total > 0 ? fmt2(p.wins/total*100)+'%' : 'N/A';
+
+      // Open positions table
+      const openTb = document.getElementById('openPosRows');
+      if(p.openPositions && p.openPositions.length){
+        openTb.innerHTML = p.openPositions.map(pos => {
+          const edgeCls = pos.edge > 0 ? 'good' : 'bad';
+          return `<tr>
+            <td>${pos.city||'?'}</td>
+            <td class="mono small">${pos.date||'?'}</td>
+            <td class="mono">${pos.side?.toUpperCase()||'?'}</td>
+            <td class="right mono">${fmt2(pos.entryPrice)}</td>
+            <td class="right mono">${fmt2(pos.shares)}</td>
+            <td class="right mono">$${fmt2(pos.cost)}</td>
+            <td class="right mono ${edgeCls}">${fmtPct(pos.edge)}</td>
+          </tr>`;
+        }).join('');
+      } else {
+        openTb.innerHTML = '<tr><td colspan="7" class="muted">無持倉</td></tr>';
+      }
+
+      // Settled positions table
+      const setTb = document.getElementById('settledRows');
+      if(p.settledPositions && p.settledPositions.length){
+        setTb.innerHTML = p.settledPositions.map(pos => {
+          const won = pos.pnl > 0;
+          return `<tr>
+            <td>${pos.city||'?'}</td>
+            <td class="mono small">${pos.date||'?'}</td>
+            <td class="mono">${pos.side?.toUpperCase()||'?'}</td>
+            <td>${won ? '✅' : '❌'}</td>
+            <td class="right mono">${pos.actualTemp != null ? pos.actualTemp + '°' : '--'}</td>
+            <td class="right mono ${won?'good':'bad'}">$${fmt2(pos.pnl)}</td>
+          </tr>`;
+        }).join('');
+      } else {
+        setTb.innerHTML = '<tr><td colspan="6" class="muted">尚無結算</td></tr>';
+      }
+    }
+
+  } catch(e){
+    console.error('weather refresh error', e);
+  }
 }
 
 async function refresh(){
@@ -268,7 +588,6 @@ async function refresh(){
     document.getElementById('k_rl').textContent = fmt(a.rate_limits);
     document.getElementById('k_conc').textContent = fmt(a.concurrency);
 
-    // daily summary (best-effort)
     const ds = j.daily_summary || null;
     if(ds){
       const el = document.getElementById('daily');
@@ -277,12 +596,10 @@ async function refresh(){
       }
     }
 
-    // Chart
     const rowsAll = j.arbscan_recent || [];
     const keepN = 30;
     const rows = rowsAll.slice(-keepN);
     const labels = rows.map((_,i)=>String(i-rows.length+1));
-    // clamp to avoid "爆炸" scale from occasional spikes
     const took = rows.map(x=>Math.min(10, Number(x.took_s || 0)));
     const errs = rows.map(x=>Math.min(50, Number(x.errors || 0)));
     if(!chart){
@@ -317,10 +634,8 @@ async function refresh(){
       chart.update();
     }
 
-    // 15m
     const pm = j.pm15m_latest;
 
-    // CEX signals (latest)
     const cexr = (j.cex_signals_recent || []);
     const cexLatest = cexr.length ? cexr[cexr.length-1] : null;
     if(cexLatest){
@@ -342,7 +657,6 @@ async function refresh(){
       }
     }
 
-    // CEX edge vs PM15m (latest)
     const edger = (j.cex_edge_recent || []);
     const edgeLatest = edger.length ? edger[edger.length-1] : null;
     if(edgeLatest && edgeLatest.edges){
@@ -350,10 +664,6 @@ async function refresh(){
       if(el2){
         const parts2 = Object.keys(edgeLatest.edges).map(sym=>{
           const e = edgeLatest.edges[sym] || {};
-          const eu1 = (typeof e.edge_up_drift === 'number') ? (e.edge_up_drift*100).toFixed(2)+'pp' : '--';
-          const ed1 = (typeof e.edge_down_drift === 'number') ? (e.edge_down_drift*100).toFixed(2)+'pp' : '--';
-          const eu2 = (typeof e.edge_up_dist === 'number') ? (e.edge_up_dist*100).toFixed(2)+'pp' : '--';
-          const ed2 = (typeof e.edge_down_dist === 'number') ? (e.edge_down_dist*100).toFixed(2)+'pp' : '--';
           const enu1 = (typeof e.edge_up_net_drift === 'number') ? (e.edge_up_net_drift*100).toFixed(2)+'pp' : '--';
           const end1 = (typeof e.edge_down_net_drift === 'number') ? (e.edge_down_net_drift*100).toFixed(2)+'pp' : '--';
           const enu2 = (typeof e.edge_up_net_dist === 'number') ? (e.edge_up_net_dist*100).toFixed(2)+'pp' : '--';
@@ -383,18 +693,15 @@ async function refresh(){
       tbody.innerHTML = `<tr><td colspan='4' class='muted'>尚無 15m 快照</td></tr>`;
     }
 
-    // signals
     const sig = (j.signals_recent || []).slice(-6).reverse();
     document.getElementById('signals').textContent = sig.length ? JSON.stringify(sig, null, 2) : '最近沒有訊號';
 
-    // Paper signals (best-effort)
     const ps = (j.paper_signals_recent || []).slice(-3).reverse();
     const elps = document.getElementById('paper');
     if(elps){
       elps.textContent = ps.length ? JSON.stringify(ps, null, 2) : '最近沒有 paper signal';
     }
 
-    // raw
     document.getElementById('raw').textContent = JSON.stringify({
       day:j.day,
       autotune:j.autotune,
@@ -411,8 +718,12 @@ async function refresh(){
   }
 }
 
-refresh();
-setInterval(refresh, 10000);
+async function refreshAll(){
+  await Promise.all([refresh(), refreshWeather()]);
+}
+
+refreshAll();
+setInterval(refreshAll, 10000);
 </script>
 </body>
 </html>"""

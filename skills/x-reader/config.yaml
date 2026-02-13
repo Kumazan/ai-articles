@@ -1,0 +1,96 @@
+# X Reader Configuration
+# Account: @AI1982509738473
+
+accounts:
+  # Tier S — 一手來源型（必追）
+  tier_s:
+    - handle: karpathy
+      desc: "Ex-Tesla AI Director, OpenAI founding team, nanoGPT/nanochat"
+    - handle: ylecun
+      desc: "Meta Chief AI Scientist, NYU prof, Turing Award"
+    - handle: sama
+      desc: "OpenAI CEO"
+    - handle: OpenAI
+      desc: "OpenAI official"
+    - handle: AnthropicAI
+      desc: "Anthropic official"
+    - handle: demishassabis
+      desc: "DeepMind CEO, Nobel Laureate"
+    - handle: miramurati
+      desc: "Ex-OpenAI CTO, Thinking Machines Lab founder"
+    - handle: geoffreyhinton
+      desc: "Deep learning 教父, Turing Award"
+
+  # Tier A — 實務工程型（高價值）
+  tier_a:
+    - handle: DrJimFan
+      desc: "NVIDIA Director of Robotics, embodied AI"
+    - handle: lilianweng
+      desc: "Thinking Machines Lab, ex-OpenAI VP, Lil'Log"
+    - handle: soumithchintala
+      desc: "PyTorch co-creator, Thinking Machines CTO"
+    - handle: JeffDean
+      desc: "Google DeepMind Chief Scientist, Gemini lead"
+    - handle: quocleix
+      desc: "Google Fellow, ML research"
+    - handle: YiTayML
+      desc: "DeepMind, Gemini Deepthink co-lead"
+    - handle: percyliang
+      desc: "Stanford NLP prof, Together Compute co-founder"
+    - handle: _akhaliq
+      desc: "AI paper 最速報, HuggingFace/Gradio"
+    - handle: NVIDIAAI
+      desc: "NVIDIA AI official"
+
+  # Tier B — AI 應用生態＋產品型
+  tier_b:
+    - handle: steipete
+      desc: "OpenClaw creator, AI agent builder ecosystem"
+    - handle: svpino
+      desc: "Santiago, ML 應用工程教學, ml.school"
+    - handle: AndrewYNg
+      desc: "Andrew Ng, Coursera/DeepLearning.ai, AI 應用教育"
+    - handle: AravSrinivas
+      desc: "Perplexity CEO, AI search/agent product"
+    - handle: hwchase17
+      desc: "Harrison Chase, LangChain founder, agent infra"
+    - handle: LangChain
+      desc: "LangChain official, agent engineering platform"
+    - handle: GoogleDeepMind
+      desc: "Google DeepMind official"
+    - handle: AIatMeta
+      desc: "Meta AI official, open-source AI research"
+    - handle: perplexity_ai
+      desc: "Perplexity official, AI search product"
+    - handle: lexfridman
+      desc: "Lex Fridman, AI/tech 深度訪談 podcast"
+
+  # Tier C — 選擇性
+  tier_c: []
+
+# Blacklist patterns
+blacklist_signals:
+  - "每日 AI 新聞 but no sources"
+  - "OMG / INSANE / GAME CHANGER in every post"
+  - "only quote-tweets, no original content"
+  - "course / newsletter / paid community bait"
+
+# Filter rules
+filters:
+  must_collect:
+    - has_external_link
+    - is_thread
+    - has_code_block
+    - has_benchmark_or_data
+  auto_skip:
+    - pure_opinion_no_evidence
+    - emotional_argument
+    - non_tech_politics
+    - engagement_bait
+
+# Digest settings
+digest:
+  max_tweets_per_account: 10
+  max_age_hours: 48
+  translate_mode: key_sentences
+  output_lang: zh-tw

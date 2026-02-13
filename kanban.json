@@ -1,0 +1,126 @@
+{
+  "columns": [
+    {
+      "id": "todo",
+      "title": "📋 待辦",
+      "cards": [
+        {
+          "id": "c1a2b3c4-0001-4000-8000-000000000001",
+          "title": "設計系統架構文件",
+          "description": "撰寫完整的系統架構文件，包含：\n\n- **資料流程圖**\n- API 規格\n- 部署架構\n\n> 需要在下週一前完成初稿",
+          "priority": "P0",
+          "labels": [
+            "文件",
+            "架構"
+          ],
+          "createdAt": "2026-02-10T08:00:00.000Z",
+          "updatedAt": "2026-02-10T08:00:00.000Z"
+        },
+        {
+          "id": "c1a2b3c4-0001-4000-8000-000000000002",
+          "title": "更新依賴套件版本",
+          "description": "將所有 npm 套件升級到最新穩定版本，特別注意 breaking changes。",
+          "priority": "P2",
+          "labels": [
+            "維護"
+          ],
+          "createdAt": "2026-02-11T03:00:00.000Z",
+          "updatedAt": "2026-02-11T03:00:00.000Z"
+        },
+        {
+          "id": "c1a2b3c4-0001-4000-8000-000000000003",
+          "title": "研究 Edge Runtime 效能",
+          "description": "比較 Edge Runtime 與 Node.js Runtime 的冷啟動時間和記憶體使用。",
+          "priority": "P3",
+          "labels": [
+            "研究"
+          ],
+          "createdAt": "2026-02-12T06:00:00.000Z",
+          "updatedAt": "2026-02-12T06:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "ongoing",
+      "title": "🔨 進行中",
+      "cards": [
+        {
+          "id": "c1a2b3c4-0002-4000-8000-000000000001",
+          "title": "實作使用者認證模組",
+          "description": "整合 OAuth 2.0 登入流程：\n\n1. Google 登入\n2. GitHub 登入\n3. Session 管理",
+          "priority": "P0",
+          "labels": [
+            "功能",
+            "後端"
+          ],
+          "createdAt": "2026-02-08T10:00:00.000Z",
+          "updatedAt": "2026-02-12T14:30:00.000Z"
+        },
+        {
+          "id": "c1a2b3c4-0002-4000-8000-000000000002",
+          "title": "首頁 RWD 調整",
+          "description": "修正手機版面跑版問題，breakpoint 設定需要重新檢視。",
+          "priority": "P1",
+          "labels": [
+            "前端",
+            "UI"
+          ],
+          "createdAt": "2026-02-09T07:00:00.000Z",
+          "updatedAt": "2026-02-13T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "title": "👀 審查",
+      "cards": [
+        {
+          "id": "c1a2b3c4-0003-4000-8000-000000000001",
+          "title": "API Rate Limiting PR",
+          "description": "PR #142 — 加入 API 速率限制，使用 sliding window 演算法。\n\n需要確認：\n- 限制閾值是否合理\n- Redis 連線池設定",
+          "priority": "P1",
+          "labels": [
+            "PR",
+            "後端"
+          ],
+          "createdAt": "2026-02-11T09:00:00.000Z",
+          "updatedAt": "2026-02-12T16:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "done",
+      "title": "✅ 完成",
+      "cards": [
+        {
+          "id": "c1a2b3c4-0004-4000-8000-000000000001",
+          "title": "CI/CD Pipeline 建置",
+          "description": "完成 GitHub Actions 設定，包含 lint、test、build、deploy 四個階段。",
+          "priority": "P0",
+          "labels": [
+            "DevOps"
+          ],
+          "createdAt": "2026-02-05T04:00:00.000Z",
+          "updatedAt": "2026-02-10T11:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "title": "📦 封存",
+      "cards": [
+        {
+          "id": "c1a2b3c4-0005-4000-8000-000000000001",
+          "title": "舊版 API 移除",
+          "description": "已移除 v1 API endpoints，所有客戶端已遷移至 v2。",
+          "priority": "P2",
+          "labels": [
+            "清理"
+          ],
+          "createdAt": "2026-01-20T08:00:00.000Z",
+          "updatedAt": "2026-02-01T10:00:00.000Z"
+        }
+      ]
+    }
+  ]
+}
