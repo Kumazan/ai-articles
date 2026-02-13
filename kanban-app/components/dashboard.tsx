@@ -19,8 +19,8 @@ export function Dashboard({ data }: Props) {
   }
 
   return (
-    <div className="shrink-0 px-5 py-4 sm:px-3 sm:py-3 border-b border-border bg-surface-alt/50 animate-fade-in">
-      <div className="grid grid-cols-2 gap-6 sm:gap-4">
+    <div className="shrink-0 px-4 py-3 border-b border-border bg-surface-alt/50 animate-fade-in">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-3">
         {/* Column card counts */}
         <div>
           <h3 className="text-xs font-medium text-text-secondary mb-2">各欄卡片數</h3>

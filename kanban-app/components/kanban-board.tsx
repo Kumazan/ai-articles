@@ -599,9 +599,9 @@ export function KanbanBoard() {
   return (
     <div className="h-screen flex flex-col">
       {/* Header */}
-      <header className="shrink-0 px-5 py-5 sm:px-4 sm:py-3 border-b border-border flex items-center justify-between bg-surface">
-        <button onClick={() => setShowDashboard(p => !p)} className="text-xl sm:text-lg font-semibold tracking-tight hover:opacity-70 transition-opacity flex items-center gap-2">
-          看板 <span className="text-sm">{showDashboard ? '▲' : '📊'}</span>
+      <header className="shrink-0 px-4 py-2.5 border-b border-border flex items-center justify-between bg-surface">
+        <button onClick={() => setShowDashboard(p => !p)} className="text-lg font-semibold tracking-tight hover:opacity-70 active:scale-95 transition-all flex items-center gap-1.5">
+          看板 <span className="text-xs">{showDashboard ? '▲' : '📊'}</span>
         </button>
         <div className="flex items-center gap-3">
           <button onClick={undo} disabled={undoStack.current.length === 0}
@@ -713,7 +713,7 @@ export function KanbanBoard() {
 
       {/* Batch toolbar */}
       {(batchMode || selectedCardIds.size > 0) && (
-        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 bg-surface border border-border rounded-2xl shadow-2xl px-4 py-3 flex items-center gap-3 animate-modal-in">
+        <div className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] left-1/2 -translate-x-1/2 z-40 bg-surface border border-border rounded-2xl shadow-2xl px-4 py-3 flex items-center gap-3 animate-modal-in">
           <span className="text-xs text-text-secondary">已選 {selectedCardIds.size} 張</span>
           <div className="flex items-center gap-1.5">
             {data.columns.map(c => (
