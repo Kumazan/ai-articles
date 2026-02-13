@@ -635,6 +635,11 @@ export function KanbanBoard() {
         onToggleLabel={toggleLabel}
         selectedAssignees={selectedAssignees}
         onToggleAssignee={toggleAssignee}
+        onClearAll={() => {
+          setSelectedPriorities(new Set())
+          setSelectedLabels(new Set())
+          setSelectedAssignees(new Set())
+        }}
       />
 
       {/* Board */}
