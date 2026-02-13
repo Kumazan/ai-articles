@@ -18,13 +18,19 @@ const priorityDot: Record<string, string> = {
   P3: 'bg-p3',
 }
 
+const DEFAULT_LABEL_COLORS: Record<string, string> = {
+  '前端': '#3b82f6', '後端': '#10b981', 'UI': '#a855f7',
+  'Bug': '#ef4444', '功能': '#f59e0b', '優化': '#06b6d4',
+}
+
 interface Props {
   card: Card
   onEdit: (card: Card) => void
   isKeyboardFocused?: boolean
+  labelColors?: Record<string, string>
 }
 
-export function KanbanCard({ card, onEdit, isKeyboardFocused }: Props) {
+export function KanbanCard({ card, onEdit, isKeyboardFocused, labelColors }: Props) {
   const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
     id: card.id,
   })
@@ -76,14 +82,16 @@ export function KanbanCard({ card, onEdit, isKeyboardFocused }: Props) {
           const label = diff < 0 ? '已過期' : diff === 0 ? '今天' : diff <= 3 ? `${Math.ceil(diff)}天內` : card.dueDate
           return <span className={`text-xs sm:text-[10px] px-2 py-1 sm:px-1.5 sm:py-0.5 rounded border ${style}`}>📅 {label}</span>
         })()}
-        {card.labels.map(label => (
-          <span
-            key={label}
-            className="text-xs sm:text-[10px] text-text-secondary bg-surface-hover rounded px-2 py-1 sm:px-1.5 sm:py-0.5"
-          >
-            {label}
-          </span>
-        ))}
+        {card.labels.map(label => {
+          const colors = { ...DEFAULT_LABEL_COLORS, ...labelColors }
+          const color = colors[label] || '#6b7280'
+          return (
+            <span key={label} className="text-xs sm:text-[10px] text-text-secondary bg-surface-hover rounded px-2 py-1 sm:px-1.5 sm:py-0.5 flex items-center gap-1">
+              <span className="inline-block w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: color }} />
+              {label}
+            </span>
+          )
+        })}
       </div>
     </div>
   )

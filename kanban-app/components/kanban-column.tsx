@@ -21,9 +21,10 @@ interface Props {
   onAddCard: () => void
   onEditCard: (card: Card) => void
   filterCard?: (card: Card) => boolean
+  labelColors?: Record<string, string>
 }
 
-export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, onToggleCollapse, onAddCard, onEditCard, filterCard }: Props) {
+export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, onToggleCollapse, onAddCard, onEditCard, filterCard, labelColors }: Props) {
   const { setNodeRef, isOver } = useDroppable({ id: column.id })
   const accent = accentColors[column.id] || 'bg-gray-400'
 
@@ -78,6 +79,7 @@ export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, o
                   card={card}
                   onEdit={onEditCard}
                   isKeyboardFocused={isFocused && focusedCardIndex === idx}
+                  labelColors={labelColors}
                 />
               ))}
               {filtered.length === 0 && column.cards.length > 0 && filterCard && (

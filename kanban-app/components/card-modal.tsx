@@ -13,21 +13,33 @@ const priorityColors: Record<string, string> = {
   P3: 'bg-p3 text-white',
 }
 
+const DEFAULT_LABEL_COLORS: Record<string, string> = {
+  '前端': '#3b82f6',
+  '後端': '#10b981',
+  'UI': '#a855f7',
+  'Bug': '#ef4444',
+  '功能': '#f59e0b',
+  '優化': '#06b6d4',
+}
+
 interface Props {
   card: Card | null
   columnId: string
   columns: Column[]
+  labelColors?: Record<string, string>
+  allLabels?: string[]
   onSave: (card: Card, columnId: string) => void
   onDelete: (id: string) => void
   onClose: () => void
 }
 
-export function CardModal({ card, columnId, columns, onSave, onDelete, onClose }: Props) {
+export function CardModal({ card, columnId, columns, labelColors, allLabels, onSave, onDelete, onClose }: Props) {
   const isNew = !card
   const [title, setTitle] = useState(card?.title ?? '')
   const [description, setDescription] = useState(card?.description ?? '')
   const [priority, setPriority] = useState<Card['priority']>(card?.priority ?? 'P3')
-  const [labels, setLabels] = useState(card?.labels.join(', ') ?? '')
+  const [labels, setLabels] = useState<string[]>(card?.labels ?? [])
+  const [newLabel, setNewLabel] = useState('')
   const [dueDate, setDueDate] = useState(card?.dueDate ?? '')
   const [selectedColumn, setSelectedColumn] = useState(columnId)
   const [showPreview, setShowPreview] = useState(false)
@@ -49,7 +61,7 @@ export function CardModal({ card, columnId, columns, onSave, onDelete, onClose }
       title: title.trim(),
       description: description.trim(),
       priority,
-      labels: labels.split(',').map(l => l.trim()).filter(Boolean),
+      labels,
       dueDate: dueDate || undefined,
       createdAt: card?.createdAt ?? now,
       updatedAt: now,
@@ -129,13 +141,46 @@ export function CardModal({ card, columnId, columns, onSave, onDelete, onClose }
 
           {/* Labels */}
           <div>
-            <label className="text-sm sm:text-xs text-text-secondary block mb-1.5 sm:mb-1">標籤（以逗號分隔）</label>
-            <input
-              value={labels}
-              onChange={e => setLabels(e.target.value)}
-              placeholder="前端, UI, bug..."
-              className="w-full px-4 py-3 sm:px-3 sm:py-2 rounded-lg border border-border bg-surface-alt text-base sm:text-sm focus:outline-none focus:border-p2 transition-colors"
-            />
+            <label className="text-sm sm:text-xs text-text-secondary block mb-1.5 sm:mb-1">標籤</label>
+            <div className="flex items-center gap-1.5 flex-wrap mb-2">
+              {(() => {
+                const colors = { ...DEFAULT_LABEL_COLORS, ...labelColors }
+                const available = Array.from(new Set([...Object.keys(DEFAULT_LABEL_COLORS), ...(allLabels ?? [])]))
+                return available.map(l => {
+                  const selected = labels.includes(l)
+                  const color = colors[l] || '#6b7280'
+                  return (
+                    <button key={l} type="button"
+                      onClick={() => setLabels(prev => selected ? prev.filter(x => x !== l) : [...prev, l])}
+                      className={`text-xs px-2.5 py-1 rounded-full border transition-all ${selected ? 'border-current shadow-sm' : 'border-transparent bg-surface-hover text-text-secondary hover:text-text'}`}
+                      style={selected ? { color, borderColor: color, backgroundColor: color + '20' } : {}}
+                    >
+                      <span className="inline-block w-2 h-2 rounded-full mr-1" style={{ backgroundColor: color }} />
+                      {l}
+                    </button>
+                  )
+                })
+              })()}
+            </div>
+            <div className="flex gap-2">
+              <input
+                value={newLabel}
+                onChange={e => setNewLabel(e.target.value)}
+                onKeyDown={e => {
+                  if (e.key === 'Enter' && newLabel.trim()) {
+                    e.preventDefault()
+                    if (!labels.includes(newLabel.trim())) setLabels(prev => [...prev, newLabel.trim()])
+                    setNewLabel('')
+                  }
+                }}
+                placeholder="自訂標籤..."
+                className="flex-1 px-3 py-2 sm:py-1.5 rounded-lg border border-border bg-surface-alt text-sm focus:outline-none focus:border-p2 transition-colors"
+              />
+              <button type="button"
+                onClick={() => { if (newLabel.trim() && !labels.includes(newLabel.trim())) { setLabels(prev => [...prev, newLabel.trim()]); setNewLabel('') } }}
+                className="text-xs px-3 py-2 rounded-lg bg-surface-hover text-text-secondary hover:text-text transition-colors"
+              >+</button>
+            </div>
           </div>
 
           {/* Due Date */}

@@ -514,6 +514,7 @@ export function KanbanBoard() {
                   onAddCard={() => handleAddCard(column.id)}
                   onEditCard={handleEditCard}
                   filterCard={isFiltering ? filterCard : undefined}
+                  labelColors={data.labelColors}
                 />
               )
             })}
@@ -523,7 +524,7 @@ export function KanbanBoard() {
         <DragOverlay>
           {activeCard ? (
             <div className="drag-overlay">
-              <KanbanCard card={activeCard} onEdit={() => {}} />
+              <KanbanCard card={activeCard} onEdit={() => {}} labelColors={data.labelColors} />
             </div>
           ) : null}
         </DragOverlay>
@@ -535,6 +536,8 @@ export function KanbanBoard() {
           card={editingCard.card}
           columnId={editingCard.columnId}
           columns={data.columns}
+          labelColors={data.labelColors}
+          allLabels={allLabels}
           onSave={handleSaveCard}
           onDelete={handleDeleteCard}
           onClose={() => setEditingCard(null)}

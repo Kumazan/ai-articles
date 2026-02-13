@@ -17,4 +17,5 @@ export interface Column {
 
 export interface KanbanData {
   columns: Column[]
+  labelColors?: Record<string, string>
 }
