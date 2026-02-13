@@ -29,6 +29,11 @@ export function KanbanBoard() {
   const [collapsedColumns, setCollapsedColumns] = useState<Set<string>>(new Set(['archive']))
   const [loading, setLoading] = useState(true)
 
+  // Undo/Redo
+  const undoStack = useRef<KanbanData[]>([])
+  const redoStack = useRef<KanbanData[]>([])
+  const MAX_UNDO = 20
+
   // Search & filter state
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedPriorities, setSelectedPriorities] = useState<Set<Card['priority']>>(new Set())
@@ -74,8 +79,36 @@ export function KanbanBoard() {
   )
 
   const persist = useCallback(async (newData: KanbanData) => {
-    setData(newData)
+    setData(prev => {
+      if (prev) {
+        undoStack.current = [...undoStack.current.slice(-(MAX_UNDO - 1)), prev]
+        redoStack.current = []
+      }
+      return newData
+    })
     await saveKanban(newData)
+  }, [])
+
+  const undo = useCallback(async () => {
+    if (undoStack.current.length === 0) return
+    const prev = undoStack.current[undoStack.current.length - 1]
+    undoStack.current = undoStack.current.slice(0, -1)
+    setData(current => {
+      if (current) redoStack.current = [...redoStack.current, current]
+      return prev
+    })
+    await saveKanban(prev)
+  }, [])
+
+  const redo = useCallback(async () => {
+    if (redoStack.current.length === 0) return
+    const next = redoStack.current[redoStack.current.length - 1]
+    redoStack.current = redoStack.current.slice(0, -1)
+    setData(current => {
+      if (current) undoStack.current = [...undoStack.current, current]
+      return next
+    })
+    await saveKanban(next)
   }, [])
 
   const findColumn = useCallback((cardId: string): Column | undefined => {
@@ -120,6 +153,13 @@ export function KanbanBoard() {
   // Keyboard handler
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      // Undo/Redo: ⌘Z / ⌘⇧Z (works globally)
+      if ((e.metaKey || e.ctrlKey) && e.key === 'z') {
+        e.preventDefault()
+        if (e.shiftKey) redo(); else undo()
+        return
+      }
+
       // Don't handle if modal is open (modal has its own Esc handler) or typing in input
       const tag = (e.target as HTMLElement)?.tagName
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return
@@ -269,7 +309,7 @@ export function KanbanBoard() {
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [data, editingCard, focusedColIdx, focusedCardIdx, collapsedColumns, showHelp, showMovePicker, confirmDeleteId, persist, visibleColumns])
+  }, [data, editingCard, focusedColIdx, focusedCardIdx, collapsedColumns, showHelp, showMovePicker, confirmDeleteId, persist, visibleColumns, undo, redo])
 
   // Reset keyboard mode on mouse
   useEffect(() => {
@@ -467,6 +507,10 @@ export function KanbanBoard() {
       <header className="shrink-0 px-5 py-5 sm:px-4 sm:py-3 border-b border-border flex items-center justify-between bg-surface">
         <h1 className="text-xl sm:text-lg font-semibold tracking-tight">看板</h1>
         <div className="flex items-center gap-3">
+          <button onClick={undo} disabled={undoStack.current.length === 0}
+            className="text-lg text-text-secondary hover:text-text disabled:opacity-20 transition-colors" title="復原 ⌘Z">↩</button>
+          <button onClick={redo} disabled={redoStack.current.length === 0}
+            className="text-lg text-text-secondary hover:text-text disabled:opacity-20 transition-colors" title="重做 ⌘⇧Z">↪</button>
           <button
             onClick={() => setShowHelp(true)}
             className="hidden md:flex text-xs text-text-secondary hover:text-text bg-surface-hover rounded px-2 py-1 transition-colors"
