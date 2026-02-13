@@ -28,9 +28,12 @@ interface Props {
   onEdit: (card: Card) => void
   isKeyboardFocused?: boolean
   labelColors?: Record<string, string>
+  batchMode?: boolean
+  isSelected?: boolean
+  onToggleBatchSelect?: (cardId: string) => void
 }
 
-export function KanbanCard({ card, onEdit, isKeyboardFocused, labelColors }: Props) {
+export function KanbanCard({ card, onEdit, isKeyboardFocused, labelColors, batchMode, isSelected, onToggleBatchSelect }: Props) {
   const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
     id: card.id,
   })
@@ -52,14 +55,23 @@ export function KanbanCard({ card, onEdit, isKeyboardFocused, labelColors }: Pro
       style={style}
       {...listeners}
       {...attributes}
-      onClick={() => onEdit(card)}
+      onClick={(e) => {
+        if (batchMode || e.ctrlKey || e.metaKey) {
+          e.preventDefault()
+          e.stopPropagation()
+          onToggleBatchSelect?.(card.id)
+        } else {
+          onEdit(card)
+        }
+      }}
       className={`
         group relative bg-surface rounded-xl sm:rounded-lg border px-5 py-5 sm:px-3 sm:py-2.5 cursor-grab active:cursor-grabbing
         transition-all duration-150 animate-card-in
         ${isDragging ? 'opacity-30 scale-95' : 'hover:shadow-md hover:-translate-y-0.5'}
+        ${isSelected ? 'border-p2 ring-2 ring-p2/40 bg-p2/5' : ''}
         ${isKeyboardFocused
           ? 'border-p2 ring-2 ring-p2/40 shadow-md'
-          : 'border-border hover:border-text-secondary/30'}
+          : !isSelected ? 'border-border hover:border-text-secondary/30' : ''}
       `}
     >
       {/* Top row: priority + title */}
@@ -67,6 +79,13 @@ export function KanbanCard({ card, onEdit, isKeyboardFocused, labelColors }: Pro
         <div className={`shrink-0 w-2.5 h-2.5 sm:w-1.5 sm:h-1.5 rounded-full mt-1.5 ${priorityDot[card.priority]}`} />
         <span className="text-base sm:text-sm font-medium leading-snug line-clamp-2 flex-1">{card.title}</span>
       </div>
+
+      {/* Batch checkbox */}
+      {batchMode && (
+        <div className={`absolute top-2 left-2 w-5 h-5 rounded border-2 flex items-center justify-center text-xs ${isSelected ? 'bg-p2 border-p2 text-white' : 'border-border bg-surface'}`}>
+          {isSelected && '✓'}
+        </div>
+      )}
 
       {/* Assignee avatar */}
       {card.assignee && (

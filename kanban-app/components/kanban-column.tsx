@@ -22,9 +22,12 @@ interface Props {
   onEditCard: (card: Card) => void
   filterCard?: (card: Card) => boolean
   labelColors?: Record<string, string>
+  batchMode?: boolean
+  selectedCardIds?: Set<string>
+  onToggleBatchSelect?: (cardId: string) => void
 }
 
-export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, onToggleCollapse, onAddCard, onEditCard, filterCard, labelColors }: Props) {
+export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, onToggleCollapse, onAddCard, onEditCard, filterCard, labelColors, batchMode, selectedCardIds, onToggleBatchSelect }: Props) {
   const { setNodeRef, isOver } = useDroppable({ id: column.id })
   const accent = accentColors[column.id] || 'bg-gray-400'
 
@@ -80,6 +83,9 @@ export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, o
                   onEdit={onEditCard}
                   isKeyboardFocused={isFocused && focusedCardIndex === idx}
                   labelColors={labelColors}
+                  batchMode={batchMode}
+                  isSelected={selectedCardIds?.has(card.id)}
+                  onToggleBatchSelect={onToggleBatchSelect}
                 />
               ))}
               {filtered.length === 0 && column.cards.length > 0 && filterCard && (

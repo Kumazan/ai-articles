@@ -39,6 +39,10 @@ export function KanbanBoard() {
   // Search & filter state
   const [showDashboard, setShowDashboard] = useState(false)
 
+  // Batch mode
+  const [batchMode, setBatchMode] = useState(false)
+  const [selectedCardIds, setSelectedCardIds] = useState<Set<string>>(new Set())
+
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedPriorities, setSelectedPriorities] = useState<Set<Card['priority']>>(new Set())
   const [selectedLabels, setSelectedLabels] = useState<Set<string>>(new Set())
@@ -166,6 +170,61 @@ export function KanbanBoard() {
     id: uuidv4(), author: '系統', text, createdAt: new Date().toISOString(), isSystem: true,
   }), [])
 
+  const toggleBatchSelect = useCallback((cardId: string) => {
+    setBatchMode(true)
+    setSelectedCardIds(prev => {
+      const next = new Set(prev)
+      if (next.has(cardId)) next.delete(cardId); else next.add(cardId)
+      return next
+    })
+  }, [])
+
+  const batchMove = useCallback(async (columnId: string) => {
+    if (!data || selectedCardIds.size === 0) return
+    const newData = structuredClone(data)
+    const targetCol = newData.columns.find(c => c.id === columnId)
+    if (!targetCol) return
+    for (const col of newData.columns) {
+      col.cards = col.cards.filter(c => {
+        if (selectedCardIds.has(c.id) && col.id !== columnId) {
+          targetCol.cards.push(c)
+          return false
+        }
+        return true
+      })
+    }
+    await persist(newData)
+    setSelectedCardIds(new Set())
+    setBatchMode(false)
+  }, [data, selectedCardIds, persist])
+
+  const batchSetPriority = useCallback(async (priority: Card['priority']) => {
+    if (!data || selectedCardIds.size === 0) return
+    const newData = structuredClone(data)
+    for (const col of newData.columns) {
+      for (const card of col.cards) {
+        if (selectedCardIds.has(card.id)) {
+          card.priority = priority
+          card.updatedAt = new Date().toISOString()
+        }
+      }
+    }
+    await persist(newData)
+    setSelectedCardIds(new Set())
+    setBatchMode(false)
+  }, [data, selectedCardIds, persist])
+
+  const batchDelete = useCallback(async () => {
+    if (!data || selectedCardIds.size === 0) return
+    const newData = structuredClone(data)
+    for (const col of newData.columns) {
+      col.cards = col.cards.filter(c => !selectedCardIds.has(c.id))
+    }
+    await persist(newData)
+    setSelectedCardIds(new Set())
+    setBatchMode(false)
+  }, [data, selectedCardIds, persist])
+
   const isFiltering = searchQuery !== '' || selectedPriorities.size > 0 || selectedLabels.size > 0 || selectedAssignees.size > 0
 
   // Keyboard handler
@@ -214,8 +273,8 @@ export function KanbanBoard() {
         }
         case 'Escape': {
           e.preventDefault()
-          setFocusedColIdx(-1)
-          setFocusedCardIdx(-1)
+          if (batchMode) { setBatchMode(false); setSelectedCardIds(new Set()) }
+          else { setFocusedColIdx(-1); setFocusedCardIdx(-1) }
           break
         }
         case 'ArrowRight': {
@@ -602,6 +661,9 @@ export function KanbanBoard() {
                   onEditCard={handleEditCard}
                   filterCard={isFiltering ? filterCard : undefined}
                   labelColors={data.labelColors}
+                  batchMode={batchMode}
+                  selectedCardIds={selectedCardIds}
+                  onToggleBatchSelect={toggleBatchSelect}
                 />
               )
             })}
@@ -642,6 +704,25 @@ export function KanbanBoard() {
           onSelect={handleMoveCard}
           onClose={() => setShowMovePicker(false)}
         />
+      )}
+
+      {/* Batch toolbar */}
+      {(batchMode || selectedCardIds.size > 0) && (
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 bg-surface border border-border rounded-2xl shadow-2xl px-4 py-3 flex items-center gap-3 animate-modal-in">
+          <span className="text-xs text-text-secondary">已選 {selectedCardIds.size} 張</span>
+          <div className="flex items-center gap-1.5">
+            {data.columns.map(c => (
+              <button key={c.id} onClick={() => batchMove(c.id)} className="text-xs px-2 py-1 rounded bg-surface-hover hover:bg-p2 hover:text-white transition-colors">{c.title.replace(/[^\u4e00-\u9fff\w]/g, '')}</button>
+            ))}
+          </div>
+          <div className="w-px h-5 bg-border" />
+          {(['P0','P1','P2','P3'] as const).map(p => (
+            <button key={p} onClick={() => batchSetPriority(p)} className="text-xs font-mono px-1.5 py-0.5 rounded bg-surface-hover hover:text-white hover:bg-p2 transition-colors">{p}</button>
+          ))}
+          <div className="w-px h-5 bg-border" />
+          <button onClick={batchDelete} className="text-xs text-p0 px-2 py-1 rounded hover:bg-p0/10 transition-colors">刪除</button>
+          <button onClick={() => { setBatchMode(false); setSelectedCardIds(new Set()) }} className="text-xs text-text-secondary px-2 py-1 rounded hover:bg-surface-hover transition-colors">取消</button>
+        </div>
       )}
 
       {/* Delete confirmation */}
