@@ -62,11 +62,20 @@ export function KanbanCard({ card, onEdit, isKeyboardFocused }: Props) {
         <span className="text-base sm:text-sm font-medium leading-snug line-clamp-2 flex-1">{card.title}</span>
       </div>
 
-      {/* Labels + priority badge */}
+      {/* Labels + priority badge + due date */}
       <div className="flex items-center gap-2.5 sm:gap-1.5 mt-3.5 sm:mt-2 flex-wrap">
         <span className={`text-xs sm:text-[10px] font-mono font-semibold px-2 py-1 sm:px-1.5 sm:py-0.5 rounded border ${priorityStyles[card.priority]}`}>
           {card.priority}
         </span>
+        {card.dueDate && (() => {
+          const now = new Date()
+          now.setHours(0,0,0,0)
+          const due = new Date(card.dueDate + 'T00:00:00')
+          const diff = (due.getTime() - now.getTime()) / (1000*60*60*24)
+          const style = diff < 0 ? 'bg-p0/15 text-p0 border-p0/30' : diff <= 3 ? 'bg-p1/15 text-p1 border-p1/30' : 'bg-surface-hover text-text-secondary border-border'
+          const label = diff < 0 ? '已過期' : diff === 0 ? '今天' : diff <= 3 ? `${Math.ceil(diff)}天內` : card.dueDate
+          return <span className={`text-xs sm:text-[10px] px-2 py-1 sm:px-1.5 sm:py-0.5 rounded border ${style}`}>📅 {label}</span>
+        })()}
         {card.labels.map(label => (
           <span
             key={label}

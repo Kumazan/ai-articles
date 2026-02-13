@@ -28,6 +28,7 @@ export function CardModal({ card, columnId, columns, onSave, onDelete, onClose }
   const [description, setDescription] = useState(card?.description ?? '')
   const [priority, setPriority] = useState<Card['priority']>(card?.priority ?? 'P3')
   const [labels, setLabels] = useState(card?.labels.join(', ') ?? '')
+  const [dueDate, setDueDate] = useState(card?.dueDate ?? '')
   const [selectedColumn, setSelectedColumn] = useState(columnId)
   const [showPreview, setShowPreview] = useState(false)
   const [confirmDelete, setConfirmDelete] = useState(false)
@@ -49,6 +50,7 @@ export function CardModal({ card, columnId, columns, onSave, onDelete, onClose }
       description: description.trim(),
       priority,
       labels: labels.split(',').map(l => l.trim()).filter(Boolean),
+      dueDate: dueDate || undefined,
       createdAt: card?.createdAt ?? now,
       updatedAt: now,
     }
@@ -132,6 +134,17 @@ export function CardModal({ card, columnId, columns, onSave, onDelete, onClose }
               value={labels}
               onChange={e => setLabels(e.target.value)}
               placeholder="前端, UI, bug..."
+              className="w-full px-4 py-3 sm:px-3 sm:py-2 rounded-lg border border-border bg-surface-alt text-base sm:text-sm focus:outline-none focus:border-p2 transition-colors"
+            />
+          </div>
+
+          {/* Due Date */}
+          <div>
+            <label className="text-sm sm:text-xs text-text-secondary block mb-1.5 sm:mb-1">到期日</label>
+            <input
+              type="date"
+              value={dueDate}
+              onChange={e => setDueDate(e.target.value)}
               className="w-full px-4 py-3 sm:px-3 sm:py-2 rounded-lg border border-border bg-surface-alt text-base sm:text-sm focus:outline-none focus:border-p2 transition-colors"
             />
           </div>

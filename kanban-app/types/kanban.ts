@@ -4,6 +4,7 @@ export interface Card {
   description: string
   priority: 'P0' | 'P1' | 'P2' | 'P3'
   labels: string[]
+  dueDate?: string
   createdAt: string
   updatedAt: string
 }
