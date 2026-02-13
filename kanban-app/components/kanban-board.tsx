@@ -605,9 +605,9 @@ export function KanbanBoard() {
         </button>
         <div className="flex items-center gap-3">
           <button onClick={undo} disabled={undoStack.current.length === 0}
-            className="text-lg text-text-secondary hover:text-text disabled:opacity-20 transition-colors" title="復原 ⌘Z">↩</button>
+            className="w-10 h-10 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg text-lg text-text-secondary hover:text-text hover:bg-surface-hover active:scale-90 disabled:opacity-20 transition-all" title="復原 ⌘Z">↩</button>
           <button onClick={redo} disabled={redoStack.current.length === 0}
-            className="text-lg text-text-secondary hover:text-text disabled:opacity-20 transition-colors" title="重做 ⌘⇧Z">↪</button>
+            className="w-10 h-10 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg text-lg text-text-secondary hover:text-text hover:bg-surface-hover active:scale-90 disabled:opacity-20 transition-all" title="重做 ⌘⇧Z">↪</button>
           <button
             onClick={() => setShowHelp(true)}
             className="hidden md:flex text-xs text-text-secondary hover:text-text bg-surface-hover rounded px-2 py-1 transition-colors"

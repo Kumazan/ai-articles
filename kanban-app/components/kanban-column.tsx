@@ -60,7 +60,7 @@ export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, o
         </button>
         <button
           onClick={onAddCard}
-          className="w-10 h-10 sm:w-6 sm:h-6 flex items-center justify-center rounded-lg sm:rounded hover:bg-surface-hover text-text-secondary hover:text-text transition-colors text-2xl sm:text-lg leading-none"
+          className="w-10 h-10 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg hover:bg-surface-hover active:scale-90 text-text-secondary hover:text-text transition-all text-2xl sm:text-lg leading-none"
           title="新增卡片"
         >
           +

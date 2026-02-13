@@ -65,9 +65,9 @@ export function KanbanCard({ card, onEdit, isKeyboardFocused, labelColors, batch
         }
       }}
       className={`
-        group relative bg-surface rounded-xl sm:rounded-lg border px-5 py-5 sm:px-3 sm:py-2.5 cursor-grab active:cursor-grabbing
-        transition-all duration-150 animate-card-in
-        ${isDragging ? 'opacity-30 scale-95' : 'hover:shadow-md hover:-translate-y-0.5'}
+        group relative bg-surface rounded-xl sm:rounded-lg border px-5 py-4 sm:px-3 sm:py-2.5 cursor-grab active:cursor-grabbing
+        transition-all duration-150 animate-card-in select-none
+        ${isDragging ? 'opacity-30 scale-95' : 'hover:shadow-md hover:-translate-y-0.5 active:scale-[0.97] active:shadow-sm'}
         ${isSelected ? 'border-p2 ring-2 ring-p2/40 bg-p2/5' : ''}
         ${isKeyboardFocused
           ? 'border-p2 ring-2 ring-p2/40 shadow-md'

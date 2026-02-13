@@ -12,15 +12,15 @@
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-ebd51be49873d76c.js",
       "static/chunks/main-app-e2f8ea1258fb72ae.js",
-      "static/css/f7dae32a278a42fc.css",
+      "static/css/5193c3df6327f5ab.css",
       "static/chunks/app/layout-306643bc5c4587f4.js"
     ],
-    "/api/kanban/route": [
+    "/api/kanban/cards/route": [
       "static/chunks/webpack-d568e8aed9874c1e.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-ebd51be49873d76c.js",
       "static/chunks/main-app-e2f8ea1258fb72ae.js",
-      "static/chunks/app/api/kanban/route-04e6ee2b028cf4b1.js"
+      "static/chunks/app/api/kanban/cards/route-04e6ee2b028cf4b1.js"
     ],
     "/api/kanban/notify/route": [
       "static/chunks/webpack-d568e8aed9874c1e.js",
@@ -29,12 +29,12 @@
       "static/chunks/main-app-e2f8ea1258fb72ae.js",
       "static/chunks/app/api/kanban/notify/route-04e6ee2b028cf4b1.js"
     ],
-    "/api/kanban/cards/route": [
+    "/api/kanban/route": [
       "static/chunks/webpack-d568e8aed9874c1e.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-ebd51be49873d76c.js",
       "static/chunks/main-app-e2f8ea1258fb72ae.js",
-      "static/chunks/app/api/kanban/cards/route-04e6ee2b028cf4b1.js"
+      "static/chunks/app/api/kanban/route-04e6ee2b028cf4b1.js"
     ],
     "/api/kanban/cards/[id]/route": [
       "static/chunks/webpack-d568e8aed9874c1e.js",
@@ -49,7 +49,7 @@
       "static/chunks/255-ebd51be49873d76c.js",
       "static/chunks/main-app-e2f8ea1258fb72ae.js",
       "static/chunks/366-625198aba72febc3.js",
-      "static/chunks/app/page-bc82d725eb1d2dfd.js"
+      "static/chunks/app/page-3db7d668868de029.js"
     ]
   }
 }
