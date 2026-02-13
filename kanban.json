@@ -37,6 +37,90 @@
           ],
           "createdAt": "2026-02-12T06:00:00.000Z",
           "updatedAt": "2026-02-12T06:00:00.000Z"
+        },
+        {
+          "id": "fa38ddda-b93c-49cd-b8fe-7f4a3d48f0b8",
+          "title": "批次工具列 safe-area 底部間距",
+          "description": "Fixed bottom toolbar 可能被 Telegram 底部 UI 遮住。已在改進 #3 部分修復（env(safe-area-inset-bottom)），需實機驗證。",
+          "priority": "P2",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-13T18:09:23.518521Z"
+        },
+        {
+          "id": "a0cc8cf9-eddc-4a34-ace6-9a82a465abf1",
+          "title": "Dashboard 手機 UX 優化",
+          "description": "Dashboard 已改為手機單欄，但可進一步加入：迷你圖表動畫、可點擊跳轉到特定篩選、顯示過期卡片數量警告。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-13T18:09:23.518521Z"
+        },
+        {
+          "id": "fa2a8689-f2fb-403c-98e3-e0586c16adb1",
+          "title": "篩選啟用時的視覺強調",
+          "description": "當有 active filter 時，看板區域可加淡色 overlay 或 header 提示條，讓使用者更明確知道正在篩選中。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-13T18:09:23.518521Z"
+        },
+        {
+          "id": "98b622be-ef3e-4841-b824-d8450645d0e2",
+          "title": "空狀態設計優化",
+          "description": "欄位為空時只有純文字「拖曳卡片到此處」，應改為插圖 + 引導文字 + 新增按鈕，提升首次使用體驗。",
+          "priority": "P2",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-13T18:09:23.518521Z"
+        },
+        {
+          "id": "20c63318-2b6e-4b88-904a-f27cc505d83c",
+          "title": "卡片滑動手勢（swipe actions）",
+          "description": "行動端常見的 swipe-to-action：向右滑＝移動到下一欄、向左滑＝刪除。可用 @dnd-kit 或自訂 touch handler 實作。",
+          "priority": "P2",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-13T18:09:23.518521Z"
+        },
+        {
+          "id": "deec51c7-07cb-463a-880e-9360b7eef14a",
+          "title": "Modal 下拉關閉手勢",
+          "description": "卡片編輯 Modal 在手機上應支援下拉關閉（drag down to dismiss），更符合原生 app 操作習慣。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-13T18:09:23.518521Z"
+        },
+        {
+          "id": "f666a51a-9bd1-4935-ad6f-1a7da8f86075",
+          "title": "整合 Telegram WebApp Haptic Feedback",
+          "description": "在拖曳開始/結束、刪除確認、篩選切換等操作呼叫 Telegram.WebApp.HapticFeedback.impactOccurred()，提升觸感回饋。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-13T18:09:23.518521Z"
         }
       ]
     },
