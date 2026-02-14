@@ -4,12 +4,39 @@ import json
 from pathlib import Path
 from typing import Any, Optional
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.responses import HTMLResponse
+import hashlib
+import hmac
+import urllib.parse
 
 BASE = Path(__file__).resolve().parent
 DATA = BASE / "data"
 DATA_TS = Path("/Users/kumax/.openclaw/workspace/polymarket-bot-v0-ts/data")
+
+BOT_TOKEN = "8526661122:AAH9SrCrbaZ62vOthdUUip8Jza9mKOAERfo"
+ALLOWED_USER_ID = 1085354433
+
+def validate_twa(init_data: str) -> bool:
+    if not init_data: return False
+    try:
+        parsed = urllib.parse.parse_qs(init_data)
+        if 'hash' not in parsed: return False
+        hash_val = parsed.pop('hash')[0]
+        # Sort and join
+        data_check_string = '\n'.join(f'{k}={v[0]}' for k, v in sorted(parsed.items()))
+        # HMAC
+        secret_key = hmac.new(b"WebAppData", BOT_TOKEN.encode(), hashlib.sha256).digest()
+        calc_hash = hmac.new(secret_key, data_check_string.encode(), hashlib.sha256).hexdigest()
+        if calc_hash != hash_val: return False
+        # Check User ID
+        if 'user' in parsed:
+            user_data = json.loads(parsed['user'][0])
+            if user_data.get('id') != ALLOWED_USER_ID: return False
+        return True
+    except Exception as e:
+        print(f"Auth error: {e}")
+        return False
 
 app = FastAPI(title="Polymarket Bot v0 儀表板")
 
@@ -59,7 +86,9 @@ def health():
 
 
 @app.get("/api/status")
-def api_status():
+def api_status(x_telegram_init_data: str = Header(default=None)):
+    if not validate_twa(x_telegram_init_data or ""):
+        raise HTTPException(status_code=401, detail="unauthorized")
     snap = latest_json(DATA / "autotune-status.json")
     day = __import__("time").strftime("%Y-%m-%d")
     arbscan = tail_jsonl(DATA / f"arbscan-{day}.jsonl", 200)
@@ -86,7 +115,9 @@ def api_status():
 
 
 @app.get("/api/weather")
-def api_weather():
+def api_weather(x_telegram_init_data: str = Header(default=None)):
+    if not validate_twa(x_telegram_init_data or ""):
+        raise HTTPException(status_code=401, detail="unauthorized")
     import time
     day = time.strftime("%Y-%m-%d")
 
@@ -184,6 +215,19 @@ def index():
   <meta name='viewport' content='width=device-width, initial-scale=1'/>
   <title>Polymarket Bot 儀表板</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script>
+    // Init Telegram Mini App
+    if(window.Telegram && window.Telegram.WebApp) {
+      window.Telegram.WebApp.ready();
+      window.Telegram.WebApp.expand();
+      // Theme handling
+      if(window.Telegram.WebApp.colorScheme === 'dark') {
+         document.documentElement.style.setProperty('--bg', '#101010');
+         document.documentElement.style.setProperty('--card', 'rgba(255,255,255,0.08)');
+      }
+    }
+  </script>
   <style>
     :root {
       --bg: #0b1020;
@@ -422,7 +466,13 @@ function tsToTime(ts){
 
 async function refreshWeather(){
   try {
-    const r = await fetch('/api/weather', {cache:'no-store'});
+    const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
+    const initData = tg ? tg.initData : '';
+    const r = await fetch('api/weather', {cache:'no-store', headers: {'X-Telegram-Init-Data': initData}});
+    if(r.status === 401){
+      document.getElementById('statusText').textContent = '未授權（請用 Telegram 打開）';
+      return;
+    }
     const w = await r.json();
 
     // KPI cards
@@ -575,7 +625,13 @@ async function refreshWeather(){
 
 async function refresh(){
   try{
-    const r = await fetch('/api/status', {cache:'no-store'});
+    const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
+    const initData = tg ? tg.initData : '';
+    const r = await fetch('api/status', {cache:'no-store', headers: {'X-Telegram-Init-Data': initData}});
+    if(r.status === 401){
+      document.getElementById('statusText').textContent = '未授權（請用 Telegram 打開）';
+      return;
+    }
     const j = await r.json();
 
     const now = new Date();

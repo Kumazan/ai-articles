@@ -275,19 +275,20 @@ export class PaperTrader {
     const unit: 'F' | 'C' = condition.includes('°F') ? 'F' : 'C';
 
     // "33°F or below"
-    const lteMatch = condition.match(/(\d+)°[FC] or below/);
+    const lteMatch = condition.match(/(-?\d+)°[FC] or below/);
     if (lteMatch) return actualTemp <= Number(lteMatch[1]);
 
     // "80°F or higher"
-    const gteMatch = condition.match(/(\d+)°[FC] or higher/);
+    const gteMatch = condition.match(/(-?\d+)°[FC] or higher/);
     if (gteMatch) return actualTemp >= Number(gteMatch[1]);
 
     // "between 34-35°F"
-    const rangeMatch = condition.match(/between (\d+)-(\d+)°[FC]/);
+    const rangeMatch = condition.match(/between (-?\d+)[-–](-?\d+)°[FC]/);
     if (rangeMatch) return actualTemp >= Number(rangeMatch[1]) && actualTemp <= Number(rangeMatch[2]);
 
     // "6°C" (exact)
-    const exactMatch = condition.match(/^(\d+)°[FC]$/);
+    const exactMatch = condition.match(/^(-?\d+)°[FC]$/);
+
     if (exactMatch) return actualTemp === Number(exactMatch[1]);
 
     return false;
