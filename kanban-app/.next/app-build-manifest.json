@@ -1,24 +1,40 @@
 {
   "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/api/boards/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/boards/route.js"
+    ],
+    "/api/kanban/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/kanban/route.js"
+    ],
     "/api/kanban/cards/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/api/kanban/cards/route.js"
     ],
-    "/api/kanban/cards/[id]/move/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/kanban/cards/[id]/move/route.js"
-    ],
-    "/api/kanban/cards/[id]/comments/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/kanban/cards/[id]/comments/route.js"
-    ],
     "/api/kanban/cards/[id]/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/api/kanban/cards/[id]/route.js"
+    ],
+    "/api/kanban/cards/[id]/move/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/kanban/cards/[id]/move/route.js"
     ]
   }
 }

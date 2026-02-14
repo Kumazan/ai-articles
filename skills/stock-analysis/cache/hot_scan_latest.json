@@ -1,60 +1,139 @@
 {
-  "scan_time": "2026-02-13T09:29:26.877479+00:00",
+  "scan_time": "2026-02-14T01:03:36.915110+00:00",
   "top_trending": [
     {
       "symbol": "BTC",
-      "mentions": 7,
+      "mentions": 5,
       "sources": [
         "Google News Crypto",
         "CoinGecko Trending"
       ],
       "signals": [
-        "\ud83d\udcc9 bearish (-0.8%)"
+        "\ud83d\ude80 bullish (+4.8%)"
       ]
     },
     {
-      "symbol": "ETH",
-      "mentions": 7,
-      "sources": [
-        "Google News Crypto",
-        "CoinGecko Trending"
-      ],
-      "signals": [
-        "\ud83d\udcc9 bearish (-0.6%)"
-      ]
-    },
-    {
-      "symbol": "AAPL",
-      "mentions": 4,
-      "sources": [
-        "Yahoo Gainers",
-        "Yahoo Most Active",
-        "Google News",
-        "Yahoo Losers"
-      ],
-      "signals": [
-        "\ud83d\udcf0 Trump\u2019s campaign against \u2018left-wing\u2019 med..."
-      ]
-    },
-    {
-      "symbol": "PI",
+      "symbol": "TAO",
       "mentions": 3,
       "sources": [
         "CoinGecko Movers",
         "CoinGecko Trending"
       ],
       "signals": [
-        "\ud83d\ude80 bullish (+5.7%)",
-        "\ud83d\ude80 pumping (+5.7%)"
+        "\ud83d\ude80 bullish (+18.7%)",
+        "\ud83d\ude80 pumping (+17.9%)"
       ]
+    },
+    {
+      "symbol": "SOL",
+      "mentions": 3,
+      "sources": [
+        "CoinGecko Movers",
+        "CoinGecko Trending"
+      ],
+      "signals": [
+        "\ud83d\ude80 bullish (+9.0%)",
+        "\ud83d\ude80 pumping (+9.0%)"
+      ]
+    },
+    {
+      "symbol": "XRP",
+      "mentions": 3,
+      "sources": [
+        "Google News Crypto",
+        "CoinGecko Trending"
+      ],
+      "signals": [
+        "\ud83d\ude80 bullish (+4.5%)"
+      ]
+    },
+    {
+      "symbol": "EPD",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "RIME",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "CRWD",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "MSTR",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "NET",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "EMAT",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "TPH",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
     },
     {
       "symbol": "RIVN",
       "mentions": 3,
       "sources": [
-        "Yahoo Most Active",
         "Yahoo Gainers",
-        "Yahoo Losers"
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "MGA",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
       ],
       "signals": []
     },
@@ -62,324 +141,323 @@
       "symbol": "COIN",
       "mentions": 3,
       "sources": [
-        "Yahoo Most Active",
         "Yahoo Gainers",
-        "Yahoo Losers"
+        "Yahoo Losers",
+        "Yahoo Most Active"
       ],
       "signals": []
     },
     {
-      "symbol": "AMAT",
+      "symbol": "IRON",
       "mentions": 3,
       "sources": [
-        "Yahoo Most Active",
         "Yahoo Gainers",
-        "Yahoo Losers"
+        "Yahoo Losers",
+        "Yahoo Most Active"
       ],
       "signals": []
     },
     {
-      "symbol": "FSLY",
+      "symbol": "BFAM",
       "mentions": 3,
       "sources": [
-        "Yahoo Most Active",
         "Yahoo Gainers",
-        "Yahoo Losers"
+        "Yahoo Losers",
+        "Yahoo Most Active"
       ],
       "signals": []
     },
     {
-      "symbol": "CGNX",
+      "symbol": "FBIN",
       "mentions": 3,
       "sources": [
-        "Yahoo Most Active",
         "Yahoo Gainers",
-        "Yahoo Losers"
+        "Yahoo Losers",
+        "Yahoo Most Active"
       ],
       "signals": []
     },
     {
-      "symbol": "IPGP",
+      "symbol": "PINS",
       "mentions": 3,
       "sources": [
-        "Yahoo Most Active",
         "Yahoo Gainers",
-        "Yahoo Losers"
+        "Yahoo Losers",
+        "Yahoo Most Active"
       ],
       "signals": []
     },
     {
-      "symbol": "SPHR",
+      "symbol": "CALY",
       "mentions": 3,
       "sources": [
-        "Yahoo Most Active",
         "Yahoo Gainers",
-        "Yahoo Losers"
+        "Yahoo Losers",
+        "Yahoo Most Active"
       ],
       "signals": []
     },
     {
-      "symbol": "IRDM",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Most Active",
-        "Yahoo Gainers",
-        "Yahoo Losers"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "ICLR",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Most Active",
-        "Yahoo Gainers",
-        "Yahoo Losers"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "RXO",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Most Active",
-        "Yahoo Gainers",
-        "Yahoo Losers"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "APP",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Most Active",
-        "Yahoo Gainers",
-        "Yahoo Losers"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "MICC",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Most Active",
-        "Yahoo Gainers",
-        "Yahoo Losers"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "BAX",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Most Active",
-        "Yahoo Gainers",
-        "Yahoo Losers"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "NVDA",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Most Active",
-        "Yahoo Gainers",
-        "Yahoo Losers"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "ESP",
+      "symbol": "AMZN",
       "mentions": 2,
       "sources": [
-        "CoinGecko Trending"
+        "Google News"
       ],
       "signals": [
-        "\ud83d\udcc9 bearish (-18.9%)"
-      ]
-    },
-    {
-      "symbol": "UNI",
-      "mentions": 2,
-      "sources": [
-        "CoinGecko Trending"
-      ],
-      "signals": [
-        "\ud83d\udcc9 bearish (-1.4%)"
+        "\ud83d\udcf0 Amazon\u2019s stock just clinched its worst l...",
+        "\ud83d\udcf0 Amazon's Ring ends deal with surveillanc..."
       ]
     }
   ],
   "crypto_highlights": [
     {
-      "symbol": "ESP",
-      "name": "Espresso",
-      "rank": 585,
-      "price_change_24h": -18.93,
+      "symbol": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 110,
+      "price_change_24h": 7.96,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "UNI",
-      "name": "Uniswap",
-      "rank": 39,
-      "price_change_24h": -1.42,
-      "source": "coingecko_trending"
-    },
-    {
-      "symbol": "AZTEC",
-      "name": "Aztec",
-      "rank": 378,
-      "price_change_24h": 7.45,
+      "symbol": "TAO",
+      "name": "Bittensor",
+      "rank": 44,
+      "price_change_24h": 18.69,
       "source": "coingecko_trending"
     },
     {
       "symbol": "BTC",
       "name": "Bitcoin",
       "rank": 1,
-      "price_change_24h": -0.76,
+      "price_change_24h": 4.76,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "PENGU",
-      "name": "Pudgy Penguins",
-      "rank": 112,
-      "price_change_24h": -0.97,
+      "symbol": "OM",
+      "name": "MANTRA",
+      "rank": 381,
+      "price_change_24h": 22.82,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "BERA",
-      "name": "Berachain",
-      "rank": 217,
-      "price_change_24h": -16.47,
+      "symbol": "ESP",
+      "name": "Espresso",
+      "rank": 622,
+      "price_change_24h": -13.72,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "TAO",
-      "name": "Bittensor",
-      "rank": 53,
-      "price_change_24h": 2.18,
+      "symbol": "AZTEC",
+      "name": "Aztec",
+      "rank": 320,
+      "price_change_24h": 35.88,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "ETH",
-      "name": "Ethereum",
-      "rank": 2,
-      "price_change_24h": -0.63,
+      "symbol": "SOL",
+      "name": "Solana",
+      "rank": 7,
+      "price_change_24h": 9.02,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "HYPE",
-      "name": "Hyperliquid",
-      "rank": 16,
-      "price_change_24h": -0.94,
+      "symbol": "UNI",
+      "name": "Uniswap",
+      "rank": 39,
+      "price_change_24h": 5.82,
       "source": "coingecko_trending"
+    },
+    {
+      "symbol": "XRP",
+      "name": "XRP",
+      "rank": 4,
+      "price_change_24h": 4.46,
+      "source": "coingecko_trending"
+    },
+    {
+      "symbol": "AAVE",
+      "name": "Aave",
+      "rank": 42,
+      "price_change_24h": 5.87,
+      "source": "coingecko_trending"
+    },
+    {
+      "symbol": "ZEC",
+      "name": "Zcash",
+      "price": 276.78,
+      "change_24h": 18.94,
+      "volume": 492612872,
+      "source": "coingecko_movers"
+    },
+    {
+      "symbol": "NIGHT",
+      "name": "Midnight",
+      "price": 0.057451,
+      "change_24h": 14.03,
+      "volume": 14617125,
+      "source": "coingecko_movers"
     },
     {
       "symbol": "PI",
       "name": "Pi Network",
-      "rank": 55,
-      "price_change_24h": 5.67,
-      "source": "coingecko_trending"
-    },
-    {
-      "symbol": "MYX",
-      "name": "MYX Finance",
-      "price": 2.96,
-      "change_24h": -6.32,
-      "volume": 34389871,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "CC",
-      "name": "Canton",
-      "price": 0.15963,
-      "change_24h": -5.97,
-      "volume": 15111827,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "HASH",
-      "name": "Provenance Blockchain",
-      "price": 0.01905215,
-      "change_24h": 5.6,
-      "volume": 10649.26,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "ICP",
-      "name": "Internet Computer",
-      "price": 2.3,
-      "change_24h": -4.73,
-      "volume": 58100094,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "POL",
-      "name": "POL (ex-MATIC)",
-      "price": 0.095735,
-      "change_24h": 4.56,
-      "volume": 103070602,
+      "price": 0.153654,
+      "change_24h": 13.97,
+      "volume": 34947395,
       "source": "coingecko_movers"
     },
     {
       "symbol": "PIPPIN",
       "name": "pippin",
-      "price": 0.522369,
-      "change_24h": 4.18,
-      "volume": 65543883,
+      "price": 0.584597,
+      "change_24h": 13.52,
+      "volume": 67576950,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "RAIN",
-      "name": "Rain",
-      "price": 0.00999424,
-      "change_24h": -4.12,
-      "volume": 31533788,
+      "symbol": "JUP",
+      "name": "Jupiter",
+      "price": 0.15516,
+      "change_24h": 12.88,
+      "volume": 54021567,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "WLFI",
-      "name": "World Liberty Financial",
-      "price": 0.101976,
-      "change_24h": -3.78,
-      "volume": 114511742,
+      "symbol": "HBAR",
+      "name": "Hedera",
+      "price": 0.104032,
+      "change_24h": 12.48,
+      "volume": 117116373,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "TON",
-      "name": "Toncoin",
-      "price": 1.4,
-      "change_24h": 3.56,
-      "volume": 85758847,
+      "symbol": "BCH",
+      "name": "Bitcoin Cash",
+      "price": 563.82,
+      "change_24h": 12.02,
+      "volume": 416573838,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "SEI",
-      "name": "Sei",
-      "price": 0.075551,
-      "change_24h": 3.43,
-      "volume": 60449872,
+      "symbol": "PUMP",
+      "name": "Pump.fun",
+      "price": 0.0021105,
+      "change_24h": 10.24,
+      "volume": 105599447,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "APT",
-      "name": "Aptos",
-      "price": 0.918005,
-      "change_24h": -3.27,
-      "volume": 73550342,
+      "symbol": "ATOM",
+      "name": "Cosmos Hub",
+      "price": 2.12,
+      "change_24h": 8.28,
+      "volume": 40280372,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "QNT",
-      "name": "Quant",
-      "price": 67.47,
-      "change_24h": -3.04,
-      "volume": 15872410,
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.268294,
+      "change_24h": 8.08,
+      "volume": 41611583,
+      "source": "coingecko_movers"
+    },
+    {
+      "symbol": "MYX",
+      "name": "MYX Finance",
+      "price": 2.88,
+      "change_24h": -8.0,
+      "volume": 19350835,
+      "source": "coingecko_movers"
+    },
+    {
+      "symbol": "MORPHO",
+      "name": "Morpho",
+      "price": 1.19,
+      "change_24h": 7.79,
+      "volume": 20914564,
+      "source": "coingecko_movers"
+    },
+    {
+      "symbol": "CRO",
+      "name": "Cronos",
+      "price": 0.081961,
+      "change_24h": 7.18,
+      "volume": 18753927,
+      "source": "coingecko_movers"
+    },
+    {
+      "symbol": "XLM",
+      "name": "Stellar",
+      "price": 0.165946,
+      "change_24h": 7.09,
+      "volume": 113313166,
+      "source": "coingecko_movers"
+    },
+    {
+      "symbol": "RENDER",
+      "name": "Render",
+      "price": 1.39,
+      "change_24h": 6.79,
+      "volume": 52369698,
+      "source": "coingecko_movers"
+    },
+    {
+      "symbol": "NEAR",
+      "name": "NEAR Protocol",
+      "price": 1.024,
+      "change_24h": 6.64,
+      "volume": 136338534,
+      "source": "coingecko_movers"
+    },
+    {
+      "symbol": "POL",
+      "name": "POL (ex-MATIC)",
+      "price": 0.10142,
+      "change_24h": 6.59,
+      "volume": 95668623,
+      "source": "coingecko_movers"
+    },
+    {
+      "symbol": "FIL",
+      "name": "Filecoin",
+      "price": 0.96013,
+      "change_24h": 6.49,
+      "volume": 82061033,
       "source": "coingecko_movers"
     }
   ],
   "stock_highlights": [
     {
-      "symbol": "AAPL",
+      "symbol": "EPD",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "RIME",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "CRWD",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "MSTR",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "NET",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "EMAT",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "TPH",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
@@ -389,67 +467,37 @@
       "source": "yahoo_gainers"
     },
     {
+      "symbol": "MGA",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
       "symbol": "COIN",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "AMAT",
+      "symbol": "IRON",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "FSLY",
+      "symbol": "BFAM",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "CGNX",
+      "symbol": "FBIN",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "IPGP",
+      "symbol": "PINS",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "SPHR",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "IRDM",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "ICLR",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "RXO",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "APP",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "MICC",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "BAX",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "NVDA",
+      "symbol": "CALY",
       "category": "gainers",
       "source": "yahoo_gainers"
     }
@@ -457,61 +505,42 @@
   "social_buzz": [],
   "breaking_news": [
     {
-      "title": "XRP, BTC Price News: Ripple linked token plunges as bitcoin back below $87,000 - CoinDesk",
+      "title": "Amazon\u2019s stock just clinched its worst losing streak in nearly 20 years. It\u2019s giving investors AWS d\u00e9j\u00e0 vu. - MarketWatch",
       "tickers": [
-        "XRP",
-        "BTC"
+        "AMZN",
+        "AWS"
       ]
     },
     {
-      "title": "Crypto Crash Prediction Comes True: Here\u2019s What\u2019s Next For Bitcoin And Ethereum - TradingView",
+      "title": "Amazon's Ring ends deal with surveillance firm after backlash - BBC",
       "tickers": [
-        "ETH",
-        "BTC"
-      ]
-    },
-    {
-      "title": "CRYPTO PUMPS AFTER JEROME POWELL SPEECH, ETH CLOSE TO ATH, ALTS & MEMES PUMP - Decrypt",
-      "tickers": [
-        "ALTS",
-        "ETH",
-        "PUMP"
-      ]
-    },
-    {
-      "title": "Eric Adams\u2019 NYC Token Crashes 80% in Hours, Offering a Stark Lesson in Why Bitcoin Is Different - Bitcoin Magazine",
-      "tickers": [
-        "NYC",
-        "BTC"
-      ]
-    },
-    {
-      "title": "Why Is Crypto Going Up Today? Bitcoin Hits ATH, XRP at 2-Month High, Ethereum and Dogecoin Follow - Finance Magnates",
-      "tickers": [
-        "ATH",
-        "ETH",
-        "BTC",
-        "DOGE",
-        "XRP"
-      ]
-    },
-    {
-      "title": "Arthur Hayes: Credit expansion will drive Bitcoin to $250,000 and Ethereum to $10,000 - dlnews.com",
-      "tickers": [
-        "ETH",
-        "BTC"
-      ]
-    },
-    {
-      "title": "Emails Show Even Epstein Thought Crypto Pumps are Unethical - Gizmodo",
-      "tickers": [
-        "ETH"
-      ]
-    },
-    {
-      "title": "US antitrust chief resigns amid tensions with Trump officials - BBC",
-      "tickers": [
+        "AMZN",
         "BBC"
+      ]
+    },
+    {
+      "title": "Valentine\u2019s Day sticker shock: Chocolate prices are spiking - CNN",
+      "tickers": [
+        "CNN"
+      ]
+    },
+    {
+      "title": "Rivian Surges 30% On Upgrades As Attention Turns To Its New Tesla Model Y Competitor - Investor's Business Daily",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "How packaging and logistics companies are automating their warehouses - CNBC",
+      "tickers": [
+        "CNBC"
+      ]
+    },
+    {
+      "title": "The 2027 Toyota Highlander Gets An EV Feature Most Teslas Don't Have - InsideEVs",
+      "tickers": [
+        "TSLA",
+        "EV"
       ]
     }
   ]

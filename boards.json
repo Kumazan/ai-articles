@@ -1,0 +1,23 @@
+{
+  "boards": [
+    {
+      "id": "main",
+      "name": "主看板",
+      "emoji": "🦐",
+      "createdAt": "2026-02-14T00:51:08.852Z"
+    },
+    {
+      "id": "bangkok",
+      "name": "曼谷旅行",
+      "emoji": "✈️",
+      "createdAt": "2026-02-14T00:51:14.126Z"
+    },
+    {
+      "id": "polymarket",
+      "name": "Polymarket Bot",
+      "emoji": "📈",
+      "createdAt": "2026-02-14T00:51:14.142Z"
+    }
+  ],
+  "defaultBoardId": "main"
+}

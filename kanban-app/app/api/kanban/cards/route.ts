@@ -7,10 +7,11 @@ export const dynamic = 'force-dynamic'
 
 export async function POST(request: Request) {
   try {
+    const boardId = new URL(request.url).searchParams.get('boardId') || undefined
     const body = await request.json()
-    const { columnId, title, description, priority, labels } = body
+    const { columnId, title, description, priority, labels, assignee, dueDate } = body
 
-    const data = readKanban()
+    const data = readKanban(boardId)
     const column = data.columns.find(c => c.id === columnId)
     if (!column) {
       return NextResponse.json({ error: 'Column not found' }, { status: 404 })
@@ -23,12 +24,14 @@ export async function POST(request: Request) {
       description: description || '',
       priority: priority || 'P3',
       labels: labels || [],
+      assignee: assignee || undefined,
+      dueDate: dueDate || undefined,
       createdAt: now,
       updatedAt: now,
     }
 
     column.cards.push(card)
-    writeKanban(data)
+    writeKanban(data, boardId)
     return NextResponse.json(card, { status: 201 })
   } catch {
     return NextResponse.json({ error: 'Failed to create card' }, { status: 500 })

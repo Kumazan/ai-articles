@@ -13,6 +13,7 @@ export interface Card {
   priority: 'P0' | 'P1' | 'P2' | 'P3'
   labels: string[]
   dueDate?: string
+  prUrl?: string
   comments?: Comment[]
   assignee?: string
   createdAt: string
@@ -28,4 +29,16 @@ export interface Column {
 export interface KanbanData {
   columns: Column[]
   labelColors?: Record<string, string>
+}
+
+export interface Board {
+  id: string
+  name: string
+  emoji: string
+  createdAt: string
+}
+
+export interface BoardsData {
+  boards: Board[]
+  defaultBoardId: string
 }

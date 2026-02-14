@@ -13,9 +13,9 @@ import {
   type DragEndEvent,
   type DragOverEvent,
 } from '@dnd-kit/core'
-import type { KanbanData, Card, Column, Comment } from '@/types/kanban'
+import type { KanbanData, Card, Column, Comment, Board } from '@/types/kanban'
 import { v4 as uuidv4 } from 'uuid'
-import { fetchKanban, saveKanban, sendNotify } from '@/lib/api'
+import { fetchKanban, saveKanban, sendNotify, fetchBoards, createBoardApi } from '@/lib/api'
 import { KanbanColumn } from './kanban-column'
 import { KanbanCard } from './kanban-card'
 import { CardModal } from './card-modal'
@@ -23,8 +23,12 @@ import { KeyboardHelp } from './keyboard-help'
 import { MovePicker } from './move-picker'
 import { SearchFilter } from './search-filter'
 import { Dashboard } from './dashboard'
+import { hapticImpact, hapticNotification, hapticSelection } from '@/lib/haptic'
 
 export function KanbanBoard() {
+  const [boards, setBoards] = useState<Board[]>([])
+  const [currentBoardId, setCurrentBoardId] = useState<string>('main')
+  const [showBoardPicker, setShowBoardPicker] = useState(false)
   const [data, setData] = useState<KanbanData | null>(null)
   const [activeCard, setActiveCard] = useState<Card | null>(null)
   const [editingCard, setEditingCard] = useState<{ card: Card | null; columnId: string } | null>(null)
@@ -35,6 +39,12 @@ export function KanbanBoard() {
   const undoStack = useRef<KanbanData[]>([])
   const redoStack = useRef<KanbanData[]>([])
   const MAX_UNDO = 20
+
+  // Mobile detection
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    setIsMobile('ontouchstart' in window && window.innerWidth < 640)
+  }, [])
 
   // Search & filter state
   const [showDashboard, setShowDashboard] = useState(false)
@@ -57,8 +67,16 @@ export function KanbanBoard() {
   const usingKeyboard = useRef(false)
 
   useEffect(() => {
-    fetchKanban().then(d => { setData(d); setLoading(false) }).catch(() => setLoading(false))
+    fetchBoards().then(b => {
+      setBoards(b.boards)
+      setCurrentBoardId(b.defaultBoardId)
+    }).catch(() => {})
   }, [])
+
+  useEffect(() => {
+    setLoading(true)
+    fetchKanban(currentBoardId).then(d => { setData(d); setLoading(false) }).catch(() => setLoading(false))
+  }, [currentBoardId])
 
   // Telegram theme
   useEffect(() => {
@@ -83,8 +101,8 @@ export function KanbanBoard() {
   }, [])
 
   const sensors = useSensors(
-    useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
-    useSensor(TouchSensor, { activationConstraint: { delay: 200, tolerance: 5 } })
+    useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
+    useSensor(TouchSensor, { activationConstraint: { delay: 400, tolerance: 12 } })
   )
 
   const persist = useCallback(async (newData: KanbanData) => {
@@ -95,8 +113,8 @@ export function KanbanBoard() {
       }
       return newData
     })
-    await saveKanban(newData)
-  }, [])
+    await saveKanban(newData, currentBoardId)
+  }, [currentBoardId])
 
   const undo = useCallback(async () => {
     if (undoStack.current.length === 0) return
@@ -106,8 +124,8 @@ export function KanbanBoard() {
       if (current) redoStack.current = [...redoStack.current, current]
       return prev
     })
-    await saveKanban(prev)
-  }, [])
+    await saveKanban(prev, currentBoardId)
+  }, [currentBoardId])
 
   const redo = useCallback(async () => {
     if (redoStack.current.length === 0) return
@@ -117,8 +135,8 @@ export function KanbanBoard() {
       if (current) undoStack.current = [...undoStack.current, current]
       return next
     })
-    await saveKanban(next)
-  }, [])
+    await saveKanban(next, currentBoardId)
+  }, [currentBoardId])
 
   const findColumn = useCallback((cardId: string): Column | undefined => {
     return data?.columns.find(col => col.cards.some(c => c.id === cardId))
@@ -397,7 +415,12 @@ export function KanbanBoard() {
 
   const handleDragStart = (event: DragStartEvent) => {
     const card = data?.columns.flatMap(c => c.cards).find(c => c.id === event.active.id)
-    if (card) setActiveCard(card)
+    if (card) {
+      setActiveCard(card)
+      hapticImpact('medium')
+      document.body.style.overflow = 'hidden'
+      document.body.style.touchAction = 'none'
+    }
   }
 
   const handleDragOver = (event: DragOverEvent) => {
@@ -432,6 +455,9 @@ export function KanbanBoard() {
   const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event
     setActiveCard(null)
+    // Re-enable scrolling
+    document.body.style.overflow = ''
+    document.body.style.touchAction = ''
     if (!data || !over) return
 
     const col = findColumn(active.id as string)
@@ -449,6 +475,7 @@ export function KanbanBoard() {
         return
       }
     }
+    hapticImpact('light')
     persist(data)
   }
 
@@ -557,6 +584,31 @@ export function KanbanBoard() {
     })
   }
 
+  // Handle direct quick move (card + targetColumnId from long-press sheet)
+  const handleDirectQuickMove = async (card: Card, targetColumnId: string) => {
+    if (!data) return
+    const newData = structuredClone(data)
+    let srcCol: typeof newData.columns[0] | undefined
+    for (const col of newData.columns) {
+      const idx = col.cards.findIndex(c => c.id === card.id)
+      if (idx >= 0) {
+        srcCol = col
+        col.cards.splice(idx, 1)
+        break
+      }
+    }
+    const dstCol = newData.columns.find(c => c.id === targetColumnId)
+    if (dstCol && srcCol && srcCol.id !== targetColumnId) {
+      const movedCard = structuredClone(card)
+      if (!movedCard.comments) movedCard.comments = []
+      movedCard.comments.push(addSystemComment(movedCard, `從「${srcCol.title}」移至「${dstCol.title}」`))
+      movedCard.updatedAt = new Date().toISOString()
+      dstCol.cards.push(movedCard)
+    }
+    hapticNotification('success')
+    await persist(newData)
+  }
+
   // Handle keyboard delete confirmation
   const handleConfirmDelete = async () => {
     if (!confirmDeleteId || !data) return
@@ -600,14 +652,21 @@ export function KanbanBoard() {
     <div className="h-screen flex flex-col">
       {/* Header */}
       <header className="shrink-0 px-4 py-2.5 border-b border-border flex items-center justify-between bg-surface">
-        <button onClick={() => setShowDashboard(p => !p)} className="text-lg font-semibold tracking-tight hover:opacity-70 active:scale-95 transition-all flex items-center gap-1.5">
-          看板 <span className="text-xs">{showDashboard ? '▲' : '📊'}</span>
-        </button>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
+          <button onClick={() => setShowBoardPicker(p => !p)} className="text-lg font-semibold tracking-tight hover:opacity-70 active:scale-95 transition-all flex items-center gap-1.5">
+            {boards.find(b => b.id === currentBoardId)?.emoji || '📋'}{' '}
+            {boards.find(b => b.id === currentBoardId)?.name || '看板'}
+            <span className="text-xs text-text-secondary">▾</span>
+          </button>
+          <button onClick={() => setShowDashboard(p => !p)} className="text-xs text-text-secondary hover:text-text active:scale-95 transition-all">
+            {showDashboard ? '▲' : '📊'}
+          </button>
+        </div>
+        <div className="flex items-center gap-2">
           <button onClick={undo} disabled={undoStack.current.length === 0}
-            className="w-10 h-10 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg text-lg text-text-secondary hover:text-text hover:bg-surface-hover active:scale-90 disabled:opacity-20 transition-all" title="復原 ⌘Z">↩</button>
+            className="w-9 h-9 flex items-center justify-center rounded-lg text-lg text-text-secondary hover:text-text hover:bg-surface-hover active:scale-90 disabled:opacity-20 transition-all" title="復原 ⌘Z">↩</button>
           <button onClick={redo} disabled={redoStack.current.length === 0}
-            className="w-10 h-10 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg text-lg text-text-secondary hover:text-text hover:bg-surface-hover active:scale-90 disabled:opacity-20 transition-all" title="重做 ⌘⇧Z">↪</button>
+            className="w-9 h-9 flex items-center justify-center rounded-lg text-lg text-text-secondary hover:text-text hover:bg-surface-hover active:scale-90 disabled:opacity-20 transition-all" title="重做 ⌘⇧Z">↪</button>
           <button
             onClick={() => setShowHelp(true)}
             className="hidden md:flex text-xs text-text-secondary hover:text-text bg-surface-hover rounded px-2 py-1 transition-colors"
@@ -615,11 +674,51 @@ export function KanbanBoard() {
           >
             ⌨️ <kbd className="ml-1 font-mono">?</kbd>
           </button>
-          <span className="text-sm sm:text-xs text-text-secondary">
+          <span className="text-xs text-text-secondary tabular-nums">
             {data.columns.reduce((sum, c) => sum + c.cards.length, 0)} 張卡片
           </span>
         </div>
       </header>
+
+      {/* Board picker */}
+      {showBoardPicker && (
+        <div className="shrink-0 border-b border-border bg-surface-alt/80 animate-fade-in">
+          <div className="px-4 py-2 space-y-1">
+            {boards.map(b => (
+              <button
+                key={b.id}
+                onClick={() => { setCurrentBoardId(b.id); setShowBoardPicker(false) }}
+                className={`w-full text-left text-sm px-3 py-2.5 rounded-lg transition-colors flex items-center gap-2 ${
+                  b.id === currentBoardId ? 'bg-p2/10 text-p2 font-medium' : 'hover:bg-surface-hover'
+                }`}
+              >
+                <span>{b.emoji}</span>
+                <span>{b.name}</span>
+                {b.id === currentBoardId && <span className="text-xs ml-auto">✓</span>}
+              </button>
+            ))}
+            <button
+              onClick={async () => {
+                const name = prompt('看板名稱？')
+                if (!name) return
+                const emoji = prompt('Emoji？', '📋') || '📋'
+                const id = name.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-')
+                try {
+                  await createBoardApi(id, name, emoji)
+                  const b = await fetchBoards()
+                  setBoards(b.boards)
+                  setCurrentBoardId(id)
+                  setShowBoardPicker(false)
+                } catch (e) { alert(String(e)) }
+              }}
+              className="w-full text-left text-sm px-3 py-2.5 rounded-lg text-text-secondary hover:bg-surface-hover transition-colors flex items-center gap-2"
+            >
+              <span>➕</span>
+              <span>新增看板</span>
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Dashboard */}
       {showDashboard && <Dashboard data={data} />}
@@ -641,6 +740,19 @@ export function KanbanBoard() {
           setSelectedAssignees(new Set())
         }}
       />
+
+      {/* Filter active indicator */}
+      {isFiltering && (
+        <div className="shrink-0 px-4 py-1.5 bg-p2/10 border-b border-p2/20 flex items-center justify-between animate-fade-in">
+          <span className="text-xs text-p2 font-medium">🔍 篩選中 — 部分卡片已隱藏</span>
+          <button
+            onClick={() => { setSearchQuery(''); setSelectedPriorities(new Set()); setSelectedLabels(new Set()); setSelectedAssignees(new Set()) }}
+            className="text-xs text-p2/70 hover:text-p2 px-2 py-0.5 rounded hover:bg-p2/10 transition-colors"
+          >
+            清除
+          </button>
+        </div>
+      )}
 
       {/* Board */}
       <DndContext
@@ -664,11 +776,15 @@ export function KanbanBoard() {
                   onToggleCollapse={() => toggleCollapse(column.id)}
                   onAddCard={() => handleAddCard(column.id)}
                   onEditCard={handleEditCard}
+                  onQuickMove={isMobile ? handleDirectQuickMove : undefined}
+                  onDeleteCard={handleDeleteCard}
+                  allColumns={data.columns}
                   filterCard={isFiltering ? filterCard : undefined}
                   labelColors={data.labelColors}
                   batchMode={batchMode}
                   selectedCardIds={selectedCardIds}
                   onToggleBatchSelect={toggleBatchSelect}
+                  isMobile={isMobile}
                 />
               )
             })}
@@ -685,7 +801,13 @@ export function KanbanBoard() {
       </DndContext>
 
       {/* Modal */}
-      {editingCard && (
+      {editingCard && (() => {
+        // Build flat card list for carousel navigation
+        const allCards: { card: Card; columnId: string }[] = []
+        for (const col of data.columns) {
+          for (const c of col.cards) allCards.push({ card: c, columnId: col.id })
+        }
+        return (
         <CardModal
           card={editingCard.card}
           columnId={editingCard.columnId}
@@ -695,8 +817,10 @@ export function KanbanBoard() {
           onSave={handleSaveCard}
           onDelete={handleDeleteCard}
           onClose={() => setEditingCard(null)}
-        />
-      )}
+          cardList={allCards}
+          onNavigate={(entry) => setEditingCard({ card: entry.card, columnId: entry.columnId })}
+        />)
+      })()}
 
       {/* Keyboard help overlay */}
       {showHelp && <KeyboardHelp onClose={() => setShowHelp(false)} />}

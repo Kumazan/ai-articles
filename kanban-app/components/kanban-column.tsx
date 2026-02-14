@@ -20,14 +20,18 @@ interface Props {
   onToggleCollapse: () => void
   onAddCard: () => void
   onEditCard: (card: Card) => void
+  onQuickMove?: (card: Card, targetColumnId: string) => void
+  onDeleteCard?: (cardId: string) => void
+  allColumns?: Column[]
   filterCard?: (card: Card) => boolean
   labelColors?: Record<string, string>
   batchMode?: boolean
   selectedCardIds?: Set<string>
   onToggleBatchSelect?: (cardId: string) => void
+  isMobile?: boolean
 }
 
-export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, onToggleCollapse, onAddCard, onEditCard, filterCard, labelColors, batchMode, selectedCardIds, onToggleBatchSelect }: Props) {
+export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, onToggleCollapse, onAddCard, onEditCard, onQuickMove, onDeleteCard, allColumns, filterCard, labelColors, batchMode, selectedCardIds, onToggleBatchSelect, isMobile }: Props) {
   const { setNodeRef, isOver } = useDroppable({ id: column.id })
   const accent = accentColors[column.id] || 'bg-gray-400'
 
@@ -48,7 +52,7 @@ export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, o
       <div className={`h-1 ${accent} ${isFocused ? 'opacity-100' : 'opacity-40'} transition-opacity duration-200`} />
 
       {/* Column header */}
-      <div className={`px-4 py-2.5 sm:px-3 sm:py-2 flex items-center justify-between border-b border-border transition-colors duration-200 ${isFocused ? 'bg-surface-hover' : 'bg-surface-alt'}`}>
+      <div className={`px-4 py-2.5 flex items-center justify-between border-b border-border transition-colors duration-200 ${isFocused ? 'bg-surface-hover' : 'bg-surface-alt'}`}>
         <button
           onClick={onToggleCollapse}
           className="flex items-center gap-2 hover:opacity-70 transition-opacity"
@@ -70,7 +74,7 @@ export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, o
       {/* Cards */}
       <div
         ref={setNodeRef}
-        className={`flex-1 overflow-y-auto px-3 py-3 sm:p-2 space-y-3 sm:space-y-1.5 transition-colors ${isOver ? 'bg-surface-hover/50' : ''}`}
+        className={`flex-1 overflow-y-auto px-3 py-3 space-y-2.5 sm:space-y-1.5 transition-colors ${isOver ? 'bg-surface-hover/50' : ''}`}
       >
         {(() => {
           const filtered = filterCard ? column.cards.filter(filterCard) : column.cards
@@ -81,11 +85,16 @@ export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, o
                   key={card.id}
                   card={card}
                   onEdit={onEditCard}
+                  onQuickMove={onQuickMove}
+                  onDelete={onDeleteCard}
+                  columns={allColumns}
+                  currentColumnId={column.id}
                   isKeyboardFocused={isFocused && focusedCardIndex === idx}
                   labelColors={labelColors}
                   batchMode={batchMode}
                   isSelected={selectedCardIds?.has(card.id)}
                   onToggleBatchSelect={onToggleBatchSelect}
+                  isMobile={isMobile}
                 />
               ))}
               {filtered.length === 0 && column.cards.length > 0 && filterCard && (
@@ -94,8 +103,15 @@ export function KanbanColumn({ column, collapsed, isFocused, focusedCardIndex, o
                 </div>
               )}
               {column.cards.length === 0 && (
-                <div className="text-center text-xs text-text-secondary/50 py-8">
-                  拖曳卡片到此處
+                <div className="flex flex-col items-center justify-center py-10 gap-3">
+                  <span className="text-3xl opacity-30">📭</span>
+                  <p className="text-sm text-text-secondary/50">這裡還沒有卡片</p>
+                  <button
+                    onClick={onAddCard}
+                    className="text-xs text-p2 bg-p2/10 px-3 py-1.5 rounded-lg hover:bg-p2/20 transition-colors"
+                  >
+                    + 新增一張
+                  </button>
                 </div>
               )}
             </>

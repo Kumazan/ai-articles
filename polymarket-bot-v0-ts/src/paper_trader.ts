@@ -77,6 +77,12 @@ const TAKER_FEE = 0.02;
 const MAX_POS_PER_MARKET = 3;
 /** Minimum bet size in dollars */
 const MIN_BET = 0.50;
+/** Maximum single position size in dollars */
+const MAX_POSITION_SIZE = 50;
+/** Minimum distance from threshold to take a trade (°F) */
+const MIN_THRESHOLD_DISTANCE_F = 1;
+/** Minimum distance from threshold to take a trade (°C) */
+const MIN_THRESHOLD_DISTANCE_C = 0.5;
 
 // ---- Paper Trader ----
 
@@ -141,11 +147,30 @@ export class PaperTrader {
       ).length;
       if (existingCount >= MAX_POS_PER_MARKET) continue;
 
-      // Check if we already have this exact contract
+      // Check if we already have ANY open position on this contract (dedup)
       const alreadyHave = this.portfolio.positions.some(
-        p => !p.settled && p.conditionId === e.contract.conditionId && p.side === side,
+        p => !p.settled && p.conditionId === e.contract.conditionId,
       );
       if (alreadyHave) continue;
+
+      // Skip if forecast is too close to contract threshold (boundary risk)
+      const minDist = e.contract.tempRange.unit === 'C' ? MIN_THRESHOLD_DISTANCE_C : MIN_THRESHOLD_DISTANCE_F;
+      const tr = e.contract.tempRange;
+      let tooCloseToThreshold = false;
+      if (tr.type === 'gte' || tr.type === 'lte' || tr.type === 'eq') {
+        if (tr.low !== undefined && Math.abs(e.forecastHigh - tr.low) < minDist) {
+          tooCloseToThreshold = true;
+        }
+      } else if (tr.type === 'range') {
+        if ((tr.low !== undefined && Math.abs(e.forecastHigh - tr.low) < minDist) ||
+            (tr.high !== undefined && Math.abs(e.forecastHigh - tr.high) < minDist)) {
+          tooCloseToThreshold = true;
+        }
+      }
+      if (tooCloseToThreshold) {
+        logger.debug({ city: e.contract.city, forecast: e.forecastHigh, tempRange: tr }, 'SKIP: forecast too close to threshold');
+        continue;
+      }
 
       // Half-Kelly position sizing
       // Kelly fraction = edge / odds
@@ -157,6 +182,7 @@ export class PaperTrader {
       const betFraction = Math.min(halfKelly, MAX_BET_FRACTION);
 
       let betAmount = this.portfolio.cash * betFraction;
+      betAmount = Math.min(betAmount, MAX_POSITION_SIZE);
       // Apply taker fee
       const effectiveCost = betAmount * (1 + TAKER_FEE);
 

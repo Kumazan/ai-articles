@@ -9,8 +9,9 @@ export async function PATCH(
 ) {
   try {
     const { id } = await params
+    const boardId = new URL(request.url).searchParams.get('boardId') || undefined
     const updates = await request.json()
-    const data = readKanban()
+    const data = readKanban(boardId)
 
     for (const column of data.columns) {
       const cardIndex = column.cards.findIndex(c => c.id === id)
@@ -21,7 +22,7 @@ export async function PATCH(
           id,
           updatedAt: new Date().toISOString(),
         }
-        writeKanban(data)
+        writeKanban(data, boardId)
         return NextResponse.json(column.cards[cardIndex])
       }
     }
@@ -33,18 +34,19 @@ export async function PATCH(
 }
 
 export async function DELETE(
-  _request: Request,
+  request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const { id } = await params
-    const data = readKanban()
+    const boardId = new URL(request.url).searchParams.get('boardId') || undefined
+    const data = readKanban(boardId)
 
     for (const column of data.columns) {
       const cardIndex = column.cards.findIndex(c => c.id === id)
       if (cardIndex !== -1) {
         column.cards.splice(cardIndex, 1)
-        writeKanban(data)
+        writeKanban(data, boardId)
         return NextResponse.json({ ok: true })
       }
     }

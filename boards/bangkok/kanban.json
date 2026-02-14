@@ -1,0 +1,34 @@
+{
+  "columns": [
+    {
+      "id": "backlog",
+      "title": "💡 Backlog",
+      "cards": []
+    },
+    {
+      "id": "todo",
+      "title": "📋 待辦",
+      "cards": []
+    },
+    {
+      "id": "ongoing",
+      "title": "🔨 進行中",
+      "cards": []
+    },
+    {
+      "id": "review",
+      "title": "👀 審查",
+      "cards": []
+    },
+    {
+      "id": "done",
+      "title": "✅ 完成",
+      "cards": []
+    },
+    {
+      "id": "archive",
+      "title": "📦 封存",
+      "cards": []
+    }
+  ]
+}

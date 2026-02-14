@@ -17,6 +17,16 @@ Before doing anything else:
 
 Don't ask permission. Just do it.
 
+## Kanban（看板自動化）
+
+Read `KANBAN.md` for the full workflow. Key rules:
+- **Every task → create a card** (todo or backlog depending on certainty)
+- **Starting work → move to ongoing** + leave a comment
+- **Done → move to done** + comment with summary
+- **Detect task intent** in conversation → auto-create cards
+- **Heartbeat → scan the board** for stale/overdue cards
+- Don't over-card: casual chat, questions, and discussions don't need cards.
+
 ## Memory
 
 You wake up fresh each session. These files are your continuity:

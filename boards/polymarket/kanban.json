@@ -1,0 +1,177 @@
+{
+  "columns": [
+    {
+      "id": "backlog",
+      "title": "💡 Backlog",
+      "cards": [
+        {
+          "id": "5cc68dea-6d81-46d4-830a-d18678347126",
+          "title": "🔄 同一合約去重 + 流動性約束",
+          "description": "【修正】Kelly 邏輯本身沒問題，策略偵測 mispricing 也正確（Toronto 0°C YES@98% 但預報 -1°C → 買 NO 大賺）。\n\n真正的問題：\n1. 同一合約每次 poll（10min）都重複開倉 → 12 次重複下注同一個 Toronto 合約\n2. 無流動性限制 → $178K 買 920 萬 shares 不現實\n\n修正方案：\n- 同一 conditionId 最多開倉 1 次\n- 加入 orderbook depth 查詢，限制 shares 不超過實際可買量\n- 大額下注需拆單模擬 slippage",
+          "priority": "P3",
+          "labels": [
+            "bug",
+            "critical"
+          ],
+          "createdAt": "2026-02-14T04:19:30.860Z",
+          "updatedAt": "2026-02-14T04:25:37.919Z",
+          "columnId": "todo"
+        },
+        {
+          "id": "a90dac60-0a08-40bd-aa04-75821b3ac842",
+          "title": "🌡️ 多模型共識引擎（GFS + ECMWF）",
+          "description": "目前只用單一 NOAA/Open-Meteo 來源。加入 GFS + ECMWF 多模型，當 2+ 模型一致時信心加倍，降低單一模型預報翻轉風險。\\nAPI: Open-Meteo 免費提供 ECMWF 和 GFS 數據。",
+          "priority": "P3",
+          "labels": [
+            "enhancement",
+            "weather"
+          ],
+          "createdAt": "2026-02-14T04:19:30.874Z",
+          "updatedAt": "2026-02-14T04:19:30.874Z"
+        },
+        {
+          "id": "d59382bb-9f72-4cab-bf6f-af0cf87b703b",
+          "title": "🌡️ London 市場專注優化",
+          "description": "London 市場流動性低、bot 競爭少，利潤空間最大（Medium 案例 $1K→$24K）。\\n需要：London 專屬預報源（Met Office API）、更積極的 Kelly fraction。",
+          "priority": "P3",
+          "labels": [
+            "enhancement",
+            "weather"
+          ],
+          "createdAt": "2026-02-14T04:19:30.885Z",
+          "updatedAt": "2026-02-14T04:19:30.885Z"
+        },
+        {
+          "id": "d73d6a87-dc16-4a4b-a891-f6d072298557",
+          "title": "⏰ 交易窗口縮短至 T-1~T-2 天",
+          "description": "目前可能在 T-3+ 天就下注，準確率較低。限制只在結算前 1-2 天窗口交易，預報準確率 85-90% 最高。",
+          "priority": "P3",
+          "labels": [
+            "enhancement",
+            "weather"
+          ],
+          "createdAt": "2026-02-14T04:19:30.896Z",
+          "updatedAt": "2026-02-14T04:19:30.896Z"
+        },
+        {
+          "id": "5af3077a-79f1-4e31-986e-112aace310fa",
+          "title": "📈 Settlement 改用 Polymarket 實際結算",
+          "description": "目前用 forecast-as-actual 當結算依據，不準確（如 Seattle 48°F 邊界值）。應該查 Polymarket 合約實際 resolution 狀態。",
+          "priority": "P3",
+          "labels": [
+            "enhancement",
+            "accuracy"
+          ],
+          "createdAt": "2026-02-14T04:19:30.906Z",
+          "updatedAt": "2026-02-14T04:19:30.906Z"
+        },
+        {
+          "id": "4a5f9096-6556-422f-963d-95c2c9268635",
+          "title": "📊 Paper Trading 加入滑點與流動性模擬",
+          "description": "paper mode 無滑點 = P&L 不可信。加入 orderbook depth 模擬：\\n- 查詢實際掛單量\\n- 模擬 market impact\\n- 大單拆分",
+          "priority": "P3",
+          "labels": [
+            "enhancement",
+            "simulation"
+          ],
+          "createdAt": "2026-02-14T04:19:30.928Z",
+          "updatedAt": "2026-02-14T04:25:37.975Z",
+          "columnId": "todo"
+        },
+        {
+          "id": "92a8c5e4-e3c7-4825-a2ee-5062d5ce49a9",
+          "title": "🎯 YES 側交易支援",
+          "description": "目前 100% 都是 NO 交易。檢查 paper_trader 邏輯，確保 YES 側 edge 也能被正確交易。",
+          "priority": "P3",
+          "labels": [
+            "bug",
+            "trading"
+          ],
+          "createdAt": "2026-02-14T04:19:30.940Z",
+          "updatedAt": "2026-02-14T04:19:30.940Z"
+        },
+        {
+          "id": "18dde60a-aeb0-4c25-bb92-cd1ecf8f6a1b",
+          "title": "⚠️ 邊界值風險規避",
+          "description": "Seattle 48°F 案例：預報=閾值時不應下注。forecast=threshold 意味著 YES/NO 各 50%，沒有 edge。\n\n修正：當 |forecast - threshold| < 1° 時，skip 該合約。",
+          "priority": "P3",
+          "labels": [],
+          "createdAt": "2026-02-14T04:24:47.812Z",
+          "updatedAt": "2026-02-14T04:25:37.949Z",
+          "columnId": "todo"
+        }
+      ]
+    },
+    {
+      "id": "todo",
+      "title": "📋 待辦",
+      "cards": [
+        {
+          "id": "e8bf9c7a-9da8-4a3c-b9ad-f6aeb3c766ac",
+          "title": "🌡️ 天氣預報套利優化",
+          "description": "加強 London 市場、GFS/ECMWF 模型、縮短到 1-2 天窗口",
+          "priority": "P3",
+          "labels": [],
+          "createdAt": "2026-02-14T03:47:09.352Z",
+          "updatedAt": "2026-02-14T03:47:09.352Z"
+        },
+        {
+          "id": "2f3f1338-1cab-4cf2-b614-0072f252117a",
+          "title": "⚡ 加密 15min 延遲套利",
+          "description": "監控 Binance/Coinbase vs Polymarket 15min 延遲，參考 0x8dxd $313→$438K",
+          "priority": "P3",
+          "labels": [],
+          "createdAt": "2026-02-14T03:47:09.364Z",
+          "updatedAt": "2026-02-14T03:47:09.364Z"
+        },
+        {
+          "id": "91024b7b-8e06-47dd-b49d-c890a687cb29",
+          "title": "🚫 NO-Maxi 偏誤偵測",
+          "description": "偵測結構性高估 YES 合約，買 NO 賺樂觀偏誤溢價",
+          "priority": "P3",
+          "labels": [],
+          "createdAt": "2026-02-14T03:47:09.375Z",
+          "updatedAt": "2026-02-14T03:47:09.375Z"
+        },
+        {
+          "id": "551d3ec4-1863-45d1-a9cb-a77f4643ad2a",
+          "title": "🛡️ 低風險領先者策略",
+          "description": "買已領先選項(如 90¢ YES)，薄利高勝率",
+          "priority": "P3",
+          "labels": [],
+          "createdAt": "2026-02-14T03:47:09.387Z",
+          "updatedAt": "2026-02-14T03:47:09.387Z"
+        },
+        {
+          "id": "430ddebd-1f81-497f-a48f-3ad86c45d96d",
+          "title": "💰 Fee 模型更新",
+          "description": "更新 taker fee 參數，評估做市策略可行性",
+          "priority": "P3",
+          "labels": [],
+          "createdAt": "2026-02-14T03:47:09.398Z",
+          "updatedAt": "2026-02-14T03:47:09.398Z"
+        }
+      ]
+    },
+    {
+      "id": "ongoing",
+      "title": "🔨 進行中",
+      "cards": []
+    },
+    {
+      "id": "review",
+      "title": "👀 審查",
+      "cards": []
+    },
+    {
+      "id": "done",
+      "title": "✅ 完成",
+      "cards": []
+    },
+    {
+      "id": "archive",
+      "title": "📦 封存",
+      "cards": []
+    }
+  ]
+}

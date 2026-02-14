@@ -5,21 +5,20 @@ import type { Comment } from '@/types/kanban'
 
 export const dynamic = 'force-dynamic'
 
-// POST /api/kanban/cards/[id]/comments
-// Body: { author: string, text: string, isSystem?: boolean }
 export async function POST(
   request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const { id } = await params
+    const boardId = new URL(request.url).searchParams.get('boardId') || undefined
     const { author, text, isSystem } = await request.json()
 
     if (!text) {
       return NextResponse.json({ error: 'text is required' }, { status: 400 })
     }
 
-    const data = readKanban()
+    const data = readKanban(boardId)
 
     for (const column of data.columns) {
       const card = column.cards.find(c => c.id === id)
@@ -34,7 +33,7 @@ export async function POST(
         if (!card.comments) card.comments = []
         card.comments.push(comment)
         card.updatedAt = new Date().toISOString()
-        writeKanban(data)
+        writeKanban(data, boardId)
         return NextResponse.json(comment, { status: 201 })
       }
     }

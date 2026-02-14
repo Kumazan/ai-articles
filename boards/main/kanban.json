@@ -1,0 +1,354 @@
+{
+  "columns": [
+    {
+      "id": "backlog",
+      "title": "💡 Backlog",
+      "cards": []
+    },
+    {
+      "id": "todo",
+      "title": "📋 待辦",
+      "cards": []
+    },
+    {
+      "id": "ongoing",
+      "title": "🔨 進行中",
+      "cards": []
+    },
+    {
+      "id": "review",
+      "title": "👀 審查",
+      "cards": []
+    },
+    {
+      "id": "done",
+      "title": "✅ 完成",
+      "cards": [
+        {
+          "id": "ebe011c6-d232-47bf-b763-6fc52075d44f",
+          "title": "Kanban Move + Comment API",
+          "description": "新增 Move API 和 Comment API，讓小蝦可以自動建卡、移動卡片、留言。\n\nCommit: b4be267",
+          "priority": "P1",
+          "labels": [
+            "API",
+            "🦐 自動化"
+          ],
+          "createdAt": "2026-02-13T23:38:11.620Z",
+          "updatedAt": "2026-02-13T23:38:21.057Z",
+          "comments": [
+            {
+              "id": "56a82b0f-6386-47d9-ae29-406bb30bdc5b",
+              "author": "🦐 小蝦",
+              "text": "✅ 已完成！API 測試全數通過（POST create / POST move / POST comment / PATCH / DELETE）。Kuma 確認方案 B，即刻啟用。",
+              "createdAt": "2026-02-13T23:38:21.057Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "d9e02ded-6046-4419-ad3c-aa4cad37133e",
+          "title": "更新 MEMORY.md（2/13-14 事件）",
+          "description": "整理今天的重要事件寫入 MEMORY.md：\n- SDD 學習網站上線\n- Lon Lon 卡片跑版修復\n- Kanban API 整合完成\n- Polymarket bot 持續運行正常",
+          "priority": "P2",
+          "labels": [
+            "記憶",
+            "🦐 自動化"
+          ],
+          "createdAt": "2026-02-13T23:38:21.072Z",
+          "updatedAt": "2026-02-13T23:38:53.697Z",
+          "comments": [
+            {
+              "id": "88f36320-0df0-4547-af68-a72a1918897e",
+              "author": "🦐 小蝦",
+              "text": "✅ MEMORY.md 已更新：新增 Kanban App、SDD Learn、Trip Bangkok 修復、Polymarket bot 狀態等記錄。",
+              "createdAt": "2026-02-13T23:38:53.697Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "00a6405e-5b59-4a6e-90e9-8c4c204d61a3",
+          "title": "策略一：任務生命週期自動化",
+          "description": "收到任務 → 自動建卡(待辦) → 開工移(進行中) → 完成移(完成) + 留言結果。每張卡記錄做了什麼、改了哪些檔案。",
+          "priority": "P0",
+          "labels": [
+            "自動化",
+            "功能"
+          ],
+          "createdAt": "2026-02-14T00:38:57.998Z",
+          "updatedAt": "2026-02-14T00:39:53.614Z",
+          "comments": [
+            {
+              "id": "4254fc75-c969-44de-8d8c-2e1da082a064",
+              "author": "小蝦",
+              "text": "完成：寫了 KANBAN.md 定義完整工作流程，更新 AGENTS.md 加入看板規範。",
+              "createdAt": "2026-02-14T00:39:53.614Z"
+            }
+          ]
+        },
+        {
+          "id": "456ea151-3033-48a9-9dca-310bd102f893",
+          "title": "策略二：Heartbeat 看板巡邏",
+          "description": "心跳時掃看板：進行中卡太久沒動 → 提醒；待辦裡能做的 → 自動開工；過期卡片 → 通知 Kuma。",
+          "priority": "P1",
+          "labels": [
+            "自動化",
+            "功能"
+          ],
+          "createdAt": "2026-02-14T00:38:58.031Z",
+          "updatedAt": "2026-02-14T00:39:53.639Z",
+          "comments": [
+            {
+              "id": "1c887c99-deb9-4370-a18c-b0b0658492a9",
+              "author": "小蝦",
+              "text": "完成：HEARTBEAT.md 加入看板巡邏 checklist — 每次心跳掃進行中/待辦/過期。",
+              "createdAt": "2026-02-14T00:39:53.639Z"
+            }
+          ]
+        },
+        {
+          "id": "fa38ddda-b93c-49cd-b8fe-7f4a3d48f0b8",
+          "title": "批次工具列 safe-area 底部間距",
+          "description": "Fixed bottom toolbar 可能被 Telegram 底部 UI 遮住。已在改進 #3 部分修復（env(safe-area-inset-bottom)），需實機驗證。",
+          "priority": "P2",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T02:24:36.954Z",
+          "comments": [
+            {
+              "id": "1b1b4bdc-2c6f-4b49-bc68-19f80032db76",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:47.852Z",
+              "isSystem": true
+            },
+            {
+              "id": "69f689d3-a30f-4f08-9744-00ca4d9a8515",
+              "author": "小蝦",
+              "text": "確認完成：batch toolbar 已經有 bottom-[max(1rem,env(safe-area-inset-bottom))]，不會被 Telegram 底部遮住。",
+              "createdAt": "2026-02-14T02:24:36.954Z"
+            }
+          ]
+        },
+        {
+          "id": "deec51c7-07cb-463a-880e-9360b7eef14a",
+          "title": "Modal 下拉關閉手勢",
+          "description": "卡片編輯 Modal 在手機上應支援下拉關閉（drag down to dismiss），更符合原生 app 操作習慣。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T02:25:35.835Z",
+          "comments": [
+            {
+              "id": "0534fb2b-ec8f-4aef-84c3-3f20e49fd661",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:44:59.408Z",
+              "isSystem": true
+            },
+            {
+              "id": "08e7e724-d8cc-4323-85f8-997dbcc1b2d4",
+              "author": "小蝦",
+              "text": "已完成（稍早實作）：card-modal 支援 touchStart/Move/End swipe-down to dismiss，拖曳超過 120px 關閉，有背景漸淡動畫。",
+              "createdAt": "2026-02-14T02:25:35.835Z"
+            }
+          ]
+        },
+        {
+          "id": "fa2a8689-f2fb-403c-98e3-e0586c16adb1",
+          "title": "篩選啟用時的視覺強調",
+          "description": "當有 active filter 時，看板區域可加淡色 overlay 或 header 提示條，讓使用者更明確知道正在篩選中。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T02:25:57.602Z",
+          "comments": [
+            {
+              "id": "42adea59-6206-42bf-a1ea-d815cd661766",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:31.998Z",
+              "isSystem": true
+            },
+            {
+              "id": "0cabc82e-a308-4b44-9941-7fe2d38bcc61",
+              "author": "小蝦",
+              "text": "完成：篩選啟用時在看板上方顯示藍色提示條「🔍 篩選中 — 部分卡片已隱藏」+ 清除按鈕。",
+              "createdAt": "2026-02-14T02:25:57.602Z"
+            }
+          ]
+        },
+        {
+          "id": "a0cc8cf9-eddc-4a34-ace6-9a82a465abf1",
+          "title": "Dashboard 手機 UX 優化",
+          "description": "Dashboard 已改為手機單欄，但可進一步加入：迷你圖表動畫、可點擊跳轉到特定篩選、顯示過期卡片數量警告。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T02:26:26.072Z",
+          "comments": [
+            {
+              "id": "12368599-257f-46e9-a6cc-ca1ff203dea8",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:17.615Z",
+              "isSystem": true
+            },
+            {
+              "id": "b6392d63-8dc7-4524-a0a6-74d5b53b0100",
+              "author": "小蝦",
+              "text": "完成：Dashboard 加入過期卡片數量警告⚠️、隱藏封存欄位、bar 動畫加 500ms ease-out transition。",
+              "createdAt": "2026-02-14T02:26:26.072Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "title": "📦 封存",
+      "cards": [
+        {
+          "id": "05d6ceaf-5d86-4164-a373-9474b2bc8df3",
+          "title": "多看板切換功能",
+          "description": "支援多個 board，header 加下拉選單切換。預設三個板：🦐 主看板、✈️ 曼谷旅行、📈 Polymarket Bot。資料結構改為 boards/{boardId}/kanban.json",
+          "priority": "P0",
+          "labels": [
+            "功能",
+            "架構"
+          ],
+          "createdAt": "2026-02-14T00:48:12.762Z",
+          "updatedAt": "2026-02-14T03:47:09.622Z",
+          "comments": [
+            {
+              "id": "4aa78455-c986-4349-a0e6-7656a6d0fdb9",
+              "author": "小蝦",
+              "text": "完成：多看板功能上線。boards.json 管理看板列表，每板獨立 kanban.json。API 全面支援 ?boardId= 參數。前端 header 加看板切換選單。已建三個板：🦐 主看板、✈️ 曼谷旅行、📈 Polymarket Bot。",
+              "createdAt": "2026-02-14T00:51:56.450Z"
+            },
+            {
+              "id": "555217ab-2a87-47d8-a75f-3c4827776871",
+              "author": "系統",
+              "text": "從「✅ 完成」移至「📦 封存」",
+              "createdAt": "2026-02-14T03:47:09.622Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "36e8bfb5-189c-454f-9d0e-6d3a6148a621",
+          "title": "策略三：對話意圖偵測建卡",
+          "description": "Kuma 聊天中提到任務意圖 → 自動判斷並建卡 + 標 priority + 標籤，不需手動開看板。",
+          "priority": "P1",
+          "labels": [
+            "自動化",
+            "功能"
+          ],
+          "createdAt": "2026-02-14T00:38:58.044Z",
+          "updatedAt": "2026-02-14T04:00:37.869Z",
+          "comments": [
+            {
+              "id": "31253ac0-7d4c-4746-a126-e381f5e5a752",
+              "author": "小蝦",
+              "text": "完成：KANBAN.md + AGENTS.md 定義意圖偵測規則 — 偵測到任務語氣自動建卡，模糊想法進 backlog。",
+              "createdAt": "2026-02-14T00:39:53.660Z"
+            },
+            {
+              "id": "e4f9db74-731f-4ca2-9945-417e1b9c4c59",
+              "author": "系統",
+              "text": "從「✅ 完成」移至「📦 封存」",
+              "createdAt": "2026-02-14T04:00:37.868Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "98b622be-ef3e-4841-b824-d8450645d0e2",
+          "title": "空狀態設計優化",
+          "description": "欄位為空時只有純文字「拖曳卡片到此處」，應改為插圖 + 引導文字 + 新增按鈕，提升首次使用體驗。",
+          "priority": "P2",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T04:00:52.513Z",
+          "comments": [
+            {
+              "id": "39cf3a1a-b140-40cc-9dd3-f381a787ded3",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:20.098Z",
+              "isSystem": true
+            },
+            {
+              "id": "4882a469-31f6-48fa-88f7-e0d063a2e0d5",
+              "author": "小蝦",
+              "text": "自動開工：改善空欄位的空狀態設計",
+              "createdAt": "2026-02-14T02:24:00.183Z"
+            },
+            {
+              "id": "1356431c-fd76-4f39-88dd-e0c3e6bd1490",
+              "author": "小蝦",
+              "text": "完成：空欄位現在顯示 📭 圖標 + 引導文字 + 藍色新增按鈕。修改 kanban-column.tsx。",
+              "createdAt": "2026-02-14T02:24:21.142Z"
+            },
+            {
+              "id": "939e3e43-5aaa-4535-8c94-6b5c81f81e09",
+              "author": "系統",
+              "text": "從「✅ 完成」移至「📦 封存」",
+              "createdAt": "2026-02-14T04:00:52.513Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "f666a51a-9bd1-4935-ad6f-1a7da8f86075",
+          "title": "整合 Telegram WebApp Haptic Feedback",
+          "description": "在拖曳開始/結束、刪除確認、篩選切換等操作呼叫 Telegram.WebApp.HapticFeedback.impactOccurred()，提升觸感回饋。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T04:00:59.335Z",
+          "comments": [
+            {
+              "id": "32f10b97-70b1-4ec0-b354-0be425c93287",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:07.763Z",
+              "isSystem": true
+            },
+            {
+              "id": "22d006fa-920b-4426-a552-7ee68ea4e94a",
+              "author": "小蝦",
+              "text": "完成：建 lib/haptic.ts 共用模組，整合到拖曳開始/結束、快速移動、長按選單。支援 impact/notification/selection 三種類型。",
+              "createdAt": "2026-02-14T02:25:27.429Z"
+            },
+            {
+              "id": "7dde5c80-01f7-436a-b56a-de1828d5c113",
+              "author": "系統",
+              "text": "從「✅ 完成」移至「📦 封存」",
+              "createdAt": "2026-02-14T04:00:59.335Z",
+              "isSystem": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

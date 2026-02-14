@@ -1,103 +1,14 @@
 {
   "columns": [
     {
+      "id": "backlog",
+      "title": "💡 Backlog",
+      "cards": []
+    },
+    {
       "id": "todo",
       "title": "📋 待辦",
       "cards": [
-        {
-          "id": "c1a2b3c4-0001-4000-8000-000000000001",
-          "title": "設計系統架構文件",
-          "description": "撰寫完整的系統架構文件，包含：\n\n- **資料流程圖**\n- API 規格\n- 部署架構\n\n> 需要在下週一前完成初稿",
-          "priority": "P0",
-          "labels": [
-            "文件",
-            "架構"
-          ],
-          "createdAt": "2026-02-10T08:00:00.000Z",
-          "updatedAt": "2026-02-10T08:00:00.000Z"
-        },
-        {
-          "id": "c1a2b3c4-0001-4000-8000-000000000002",
-          "title": "更新依賴套件版本",
-          "description": "將所有 npm 套件升級到最新穩定版本，特別注意 breaking changes。",
-          "priority": "P2",
-          "labels": [
-            "維護"
-          ],
-          "createdAt": "2026-02-11T03:00:00.000Z",
-          "updatedAt": "2026-02-11T03:00:00.000Z"
-        },
-        {
-          "id": "c1a2b3c4-0001-4000-8000-000000000003",
-          "title": "研究 Edge Runtime 效能",
-          "description": "比較 Edge Runtime 與 Node.js Runtime 的冷啟動時間和記憶體使用。",
-          "priority": "P3",
-          "labels": [
-            "研究"
-          ],
-          "createdAt": "2026-02-12T06:00:00.000Z",
-          "updatedAt": "2026-02-12T06:00:00.000Z"
-        },
-        {
-          "id": "fa38ddda-b93c-49cd-b8fe-7f4a3d48f0b8",
-          "title": "批次工具列 safe-area 底部間距",
-          "description": "Fixed bottom toolbar 可能被 Telegram 底部 UI 遮住。已在改進 #3 部分修復（env(safe-area-inset-bottom)），需實機驗證。",
-          "priority": "P2",
-          "labels": [
-            "UI",
-            "UX"
-          ],
-          "createdAt": "2026-02-13T18:09:23.518521Z",
-          "updatedAt": "2026-02-13T18:09:23.518521Z"
-        },
-        {
-          "id": "a0cc8cf9-eddc-4a34-ace6-9a82a465abf1",
-          "title": "Dashboard 手機 UX 優化",
-          "description": "Dashboard 已改為手機單欄，但可進一步加入：迷你圖表動畫、可點擊跳轉到特定篩選、顯示過期卡片數量警告。",
-          "priority": "P3",
-          "labels": [
-            "UI",
-            "UX"
-          ],
-          "createdAt": "2026-02-13T18:09:23.518521Z",
-          "updatedAt": "2026-02-13T18:09:23.518521Z"
-        },
-        {
-          "id": "fa2a8689-f2fb-403c-98e3-e0586c16adb1",
-          "title": "篩選啟用時的視覺強調",
-          "description": "當有 active filter 時，看板區域可加淡色 overlay 或 header 提示條，讓使用者更明確知道正在篩選中。",
-          "priority": "P3",
-          "labels": [
-            "UI",
-            "UX"
-          ],
-          "createdAt": "2026-02-13T18:09:23.518521Z",
-          "updatedAt": "2026-02-13T18:09:23.518521Z"
-        },
-        {
-          "id": "98b622be-ef3e-4841-b824-d8450645d0e2",
-          "title": "空狀態設計優化",
-          "description": "欄位為空時只有純文字「拖曳卡片到此處」，應改為插圖 + 引導文字 + 新增按鈕，提升首次使用體驗。",
-          "priority": "P2",
-          "labels": [
-            "UI",
-            "UX"
-          ],
-          "createdAt": "2026-02-13T18:09:23.518521Z",
-          "updatedAt": "2026-02-13T18:09:23.518521Z"
-        },
-        {
-          "id": "20c63318-2b6e-4b88-904a-f27cc505d83c",
-          "title": "卡片滑動手勢（swipe actions）",
-          "description": "行動端常見的 swipe-to-action：向右滑＝移動到下一欄、向左滑＝刪除。可用 @dnd-kit 或自訂 touch handler 實作。",
-          "priority": "P2",
-          "labels": [
-            "UI",
-            "UX"
-          ],
-          "createdAt": "2026-02-13T18:09:23.518521Z",
-          "updatedAt": "2026-02-13T18:09:23.518521Z"
-        },
         {
           "id": "deec51c7-07cb-463a-880e-9360b7eef14a",
           "title": "Modal 下拉關閉手勢",
@@ -108,7 +19,16 @@
             "UX"
           ],
           "createdAt": "2026-02-13T18:09:23.518521Z",
-          "updatedAt": "2026-02-13T18:09:23.518521Z"
+          "updatedAt": "2026-02-14T00:44:59.408Z",
+          "comments": [
+            {
+              "id": "0534fb2b-ec8f-4aef-84c3-3f20e49fd661",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:44:59.408Z",
+              "isSystem": true
+            }
+          ]
         },
         {
           "id": "f666a51a-9bd1-4935-ad6f-1a7da8f86075",
@@ -120,7 +40,100 @@
             "UX"
           ],
           "createdAt": "2026-02-13T18:09:23.518521Z",
-          "updatedAt": "2026-02-13T18:09:23.518521Z"
+          "updatedAt": "2026-02-14T00:45:07.763Z",
+          "comments": [
+            {
+              "id": "32f10b97-70b1-4ec0-b354-0be425c93287",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:07.763Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "a0cc8cf9-eddc-4a34-ace6-9a82a465abf1",
+          "title": "Dashboard 手機 UX 優化",
+          "description": "Dashboard 已改為手機單欄，但可進一步加入：迷你圖表動畫、可點擊跳轉到特定篩選、顯示過期卡片數量警告。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T00:45:17.615Z",
+          "comments": [
+            {
+              "id": "12368599-257f-46e9-a6cc-ca1ff203dea8",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:17.615Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "98b622be-ef3e-4841-b824-d8450645d0e2",
+          "title": "空狀態設計優化",
+          "description": "欄位為空時只有純文字「拖曳卡片到此處」，應改為插圖 + 引導文字 + 新增按鈕，提升首次使用體驗。",
+          "priority": "P2",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T00:45:20.098Z",
+          "comments": [
+            {
+              "id": "39cf3a1a-b140-40cc-9dd3-f381a787ded3",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:20.098Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "fa2a8689-f2fb-403c-98e3-e0586c16adb1",
+          "title": "篩選啟用時的視覺強調",
+          "description": "當有 active filter 時，看板區域可加淡色 overlay 或 header 提示條，讓使用者更明確知道正在篩選中。",
+          "priority": "P3",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T00:45:31.998Z",
+          "comments": [
+            {
+              "id": "42adea59-6206-42bf-a1ea-d815cd661766",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:31.998Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "fa38ddda-b93c-49cd-b8fe-7f4a3d48f0b8",
+          "title": "批次工具列 safe-area 底部間距",
+          "description": "Fixed bottom toolbar 可能被 Telegram 底部 UI 遮住。已在改進 #3 部分修復（env(safe-area-inset-bottom)），需實機驗證。",
+          "priority": "P2",
+          "labels": [
+            "UI",
+            "UX"
+          ],
+          "createdAt": "2026-02-13T18:09:23.518521Z",
+          "updatedAt": "2026-02-14T00:45:47.852Z",
+          "comments": [
+            {
+              "id": "1b1b4bdc-2c6f-4b49-bc68-19f80032db76",
+              "author": "系統",
+              "text": "從「💡 Backlog」移至「📋 待辦」",
+              "createdAt": "2026-02-14T00:45:47.852Z",
+              "isSystem": true
+            }
+          ]
         }
       ]
     },
@@ -129,82 +142,136 @@
       "title": "🔨 進行中",
       "cards": [
         {
-          "id": "c1a2b3c4-0002-4000-8000-000000000001",
-          "title": "實作使用者認證模組",
-          "description": "整合 OAuth 2.0 登入流程：\n\n1. Google 登入\n2. GitHub 登入\n3. Session 管理",
+          "id": "05d6ceaf-5d86-4164-a373-9474b2bc8df3",
+          "title": "多看板切換功能",
+          "description": "支援多個 board，header 加下拉選單切換。預設三個板：🦐 主看板、✈️ 曼谷旅行、📈 Polymarket Bot。資料結構改為 boards/{boardId}/kanban.json",
           "priority": "P0",
           "labels": [
             "功能",
-            "後端"
+            "架構"
           ],
-          "createdAt": "2026-02-08T10:00:00.000Z",
-          "updatedAt": "2026-02-12T14:30:00.000Z"
-        },
-        {
-          "id": "c1a2b3c4-0002-4000-8000-000000000002",
-          "title": "首頁 RWD 調整",
-          "description": "修正手機版面跑版問題，breakpoint 設定需要重新檢視。",
-          "priority": "P1",
-          "labels": [
-            "前端",
-            "UI"
-          ],
-          "createdAt": "2026-02-09T07:00:00.000Z",
-          "updatedAt": "2026-02-13T02:00:00.000Z"
+          "createdAt": "2026-02-14T00:48:12.762Z",
+          "updatedAt": "2026-02-14T00:48:16.725Z"
         }
       ]
     },
     {
       "id": "review",
       "title": "👀 審查",
-      "cards": [
-        {
-          "id": "c1a2b3c4-0003-4000-8000-000000000001",
-          "title": "API Rate Limiting PR",
-          "description": "PR #142 — 加入 API 速率限制，使用 sliding window 演算法。\n\n需要確認：\n- 限制閾值是否合理\n- Redis 連線池設定",
-          "priority": "P1",
-          "labels": [
-            "PR",
-            "後端"
-          ],
-          "createdAt": "2026-02-11T09:00:00.000Z",
-          "updatedAt": "2026-02-12T16:00:00.000Z"
-        }
-      ]
+      "cards": []
     },
     {
       "id": "done",
       "title": "✅ 完成",
       "cards": [
         {
-          "id": "c1a2b3c4-0004-4000-8000-000000000001",
-          "title": "CI/CD Pipeline 建置",
-          "description": "完成 GitHub Actions 設定，包含 lint、test、build、deploy 四個階段。",
+          "id": "ebe011c6-d232-47bf-b763-6fc52075d44f",
+          "title": "Kanban Move + Comment API",
+          "description": "新增 Move API 和 Comment API，讓小蝦可以自動建卡、移動卡片、留言。\n\nCommit: b4be267",
+          "priority": "P1",
+          "labels": [
+            "API",
+            "🦐 自動化"
+          ],
+          "createdAt": "2026-02-13T23:38:11.620Z",
+          "updatedAt": "2026-02-13T23:38:21.057Z",
+          "comments": [
+            {
+              "id": "56a82b0f-6386-47d9-ae29-406bb30bdc5b",
+              "author": "🦐 小蝦",
+              "text": "✅ 已完成！API 測試全數通過（POST create / POST move / POST comment / PATCH / DELETE）。Kuma 確認方案 B，即刻啟用。",
+              "createdAt": "2026-02-13T23:38:21.057Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "d9e02ded-6046-4419-ad3c-aa4cad37133e",
+          "title": "更新 MEMORY.md（2/13-14 事件）",
+          "description": "整理今天的重要事件寫入 MEMORY.md：\n- SDD 學習網站上線\n- Lon Lon 卡片跑版修復\n- Kanban API 整合完成\n- Polymarket bot 持續運行正常",
+          "priority": "P2",
+          "labels": [
+            "記憶",
+            "🦐 自動化"
+          ],
+          "createdAt": "2026-02-13T23:38:21.072Z",
+          "updatedAt": "2026-02-13T23:38:53.697Z",
+          "comments": [
+            {
+              "id": "88f36320-0df0-4547-af68-a72a1918897e",
+              "author": "🦐 小蝦",
+              "text": "✅ MEMORY.md 已更新：新增 Kanban App、SDD Learn、Trip Bangkok 修復、Polymarket bot 狀態等記錄。",
+              "createdAt": "2026-02-13T23:38:53.697Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "00a6405e-5b59-4a6e-90e9-8c4c204d61a3",
+          "title": "策略一：任務生命週期自動化",
+          "description": "收到任務 → 自動建卡(待辦) → 開工移(進行中) → 完成移(完成) + 留言結果。每張卡記錄做了什麼、改了哪些檔案。",
           "priority": "P0",
           "labels": [
-            "DevOps"
+            "自動化",
+            "功能"
           ],
-          "createdAt": "2026-02-05T04:00:00.000Z",
-          "updatedAt": "2026-02-10T11:00:00.000Z"
+          "createdAt": "2026-02-14T00:38:57.998Z",
+          "updatedAt": "2026-02-14T00:39:53.614Z",
+          "comments": [
+            {
+              "id": "4254fc75-c969-44de-8d8c-2e1da082a064",
+              "author": "小蝦",
+              "text": "完成：寫了 KANBAN.md 定義完整工作流程，更新 AGENTS.md 加入看板規範。",
+              "createdAt": "2026-02-14T00:39:53.614Z"
+            }
+          ]
+        },
+        {
+          "id": "456ea151-3033-48a9-9dca-310bd102f893",
+          "title": "策略二：Heartbeat 看板巡邏",
+          "description": "心跳時掃看板：進行中卡太久沒動 → 提醒；待辦裡能做的 → 自動開工；過期卡片 → 通知 Kuma。",
+          "priority": "P1",
+          "labels": [
+            "自動化",
+            "功能"
+          ],
+          "createdAt": "2026-02-14T00:38:58.031Z",
+          "updatedAt": "2026-02-14T00:39:53.639Z",
+          "comments": [
+            {
+              "id": "1c887c99-deb9-4370-a18c-b0b0658492a9",
+              "author": "小蝦",
+              "text": "完成：HEARTBEAT.md 加入看板巡邏 checklist — 每次心跳掃進行中/待辦/過期。",
+              "createdAt": "2026-02-14T00:39:53.639Z"
+            }
+          ]
+        },
+        {
+          "id": "36e8bfb5-189c-454f-9d0e-6d3a6148a621",
+          "title": "策略三：對話意圖偵測建卡",
+          "description": "Kuma 聊天中提到任務意圖 → 自動判斷並建卡 + 標 priority + 標籤，不需手動開看板。",
+          "priority": "P1",
+          "labels": [
+            "自動化",
+            "功能"
+          ],
+          "createdAt": "2026-02-14T00:38:58.044Z",
+          "updatedAt": "2026-02-14T00:39:53.660Z",
+          "comments": [
+            {
+              "id": "31253ac0-7d4c-4746-a126-e381f5e5a752",
+              "author": "小蝦",
+              "text": "完成：KANBAN.md + AGENTS.md 定義意圖偵測規則 — 偵測到任務語氣自動建卡，模糊想法進 backlog。",
+              "createdAt": "2026-02-14T00:39:53.660Z"
+            }
+          ]
         }
       ]
     },
     {
       "id": "archive",
       "title": "📦 封存",
-      "cards": [
-        {
-          "id": "c1a2b3c4-0005-4000-8000-000000000001",
-          "title": "舊版 API 移除",
-          "description": "已移除 v1 API endpoints，所有客戶端已遷移至 v2。",
-          "priority": "P2",
-          "labels": [
-            "清理"
-          ],
-          "createdAt": "2026-01-20T08:00:00.000Z",
-          "updatedAt": "2026-02-01T10:00:00.000Z"
-        }
-      ]
+      "cards": []
     }
   ]
 }

@@ -1,6 +1,7 @@
 {
   "/api/kanban/cards/route": "app/api/kanban/cards/route.js",
+  "/api/kanban/cards/[id]/route": "app/api/kanban/cards/[id]/route.js",
   "/api/kanban/cards/[id]/move/route": "app/api/kanban/cards/[id]/move/route.js",
-  "/api/kanban/cards/[id]/comments/route": "app/api/kanban/cards/[id]/comments/route.js",
-  "/api/kanban/cards/[id]/route": "app/api/kanban/cards/[id]/route.js"
+  "/api/kanban/route": "app/api/kanban/route.js",
+  "/page": "app/page.js"
 }
