@@ -4,4 +4,4 @@
 
 ## 文章列表
 
-- [2026-02-15: Claude Opus 4.6, xAI & SpaceX, AI Audits](./2026-02-15-ai-news.html)
+- [2026-02-15: Claude Opus 4.6, xAI & SpaceX, AI Audits](./2026-02-15-claude-opus-xai-spacex-ai-audits.html)

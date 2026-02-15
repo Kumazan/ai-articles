@@ -1,0 +1,17 @@
+---
+---
+@import "{{ site.theme }}";
+
+body {
+  font-size: 18px !important; /* Default is usually 16px, so 18px-19px is ~15-20% larger, forcing it just in case */
+}
+
+/* Adjust heading sizes to match the scale up */
+h1 { font-size: 2.2em !important; }
+h2 { font-size: 1.8em !important; }
+h3 { font-size: 1.5em !important; }
+
+/* Content container width adjust for better reading with larger text */
+section {
+  max-width: 900px !important;
+}
