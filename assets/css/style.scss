@@ -41,6 +41,28 @@ h1 {
   line-height: 1.25 !important;
 }
 
+.hero-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  margin-bottom: 0.8rem;
+}
+
+.sep {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--faint);
+  font-size: 1.2rem;
+  letter-spacing: 0.5em;
+}
+
 h2 {
   font-weight: 900 !important;
   font-size: 1.6rem !important;
