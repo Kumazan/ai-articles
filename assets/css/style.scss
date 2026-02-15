@@ -2,16 +2,113 @@
 ---
 @import "{{ site.theme }}";
 
-body {
-  font-size: 16px !important; /* Back to default size */
+:root {
+  --bg: #FAF8F5;
+  --fg: #1a1a1a;
+  --muted: #6b6560;
+  --faint: #c4bfb8;
+  --accent: #c44b2b;
+  --accent-soft: #f3e0d8;
+  --serif: 'Noto Serif TC', serif;
+  --sans: 'Noto Sans TC', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
 }
 
-/* Adjust heading sizes to match the scale up */
-h1 { font-size: 2.2em !important; }
-h2 { font-size: 1.8em !important; }
-h3 { font-size: 1.5em !important; }
+html { -webkit-text-size-adjust: 100%; }
 
-/* Content container width adjust for better reading with larger text */
-section {
-  max-width: 900px !important;
+body {
+  background: var(--bg) !important;
+  color: var(--fg) !important;
+  font-family: var(--sans) !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  max-width: 760px !important;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--serif) !important;
+  color: var(--fg) !important;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-weight: 900 !important;
+  font-size: clamp(2rem, 6vw, 2.6rem) !important;
+  line-height: 1.25 !important;
+}
+
+h2 {
+  font-weight: 900 !important;
+  font-size: 1.6rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+h3 {
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+h4 {
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+}
+
+p, li {
+  color: var(--fg) !important;
+  font-weight: 300 !important;
+}
+
+a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--faint);
+  margin: 2rem 0;
+}
+
+/* List styling for index */
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 0.4rem; }
+
+/* Subtle section separation */
+.main-content {
+  padding-top: 1rem;
+}
+
+/* Blockquote refinement */
+blockquote {
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  padding: 0.8rem 1rem;
+  border-radius: 0 10px 10px 0;
+  color: var(--muted);
+}
+
+code {
+  font-family: var(--mono);
+  background: var(--accent-soft);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+pre {
+  background: #2b2926;
+  color: #e8e0d6;
+  border-radius: 12px;
 }
