@@ -2,9 +2,12 @@
 title: "Claude Opus 4.6 思維更聰明、xAI 加入 SpaceX、AI 超越醫生、標準化 AI 審計"
 date: 2026-02-15
 layout: post
+permalink: /2026-02-15/claude-opus-xai-spacex-ai-audits.html
 ---
 
 # The Batch AI 新聞與見解
+
+**原文連結：** https://charonhub.deeplearning.ai/issue-340/
 
 **來自 Andrew Ng 的訊息：**
 
