@@ -3,7 +3,7 @@
 @import "{{ site.theme }}";
 
 body {
-  font-size: 18px !important; /* Default is usually 16px, so 18px-19px is ~15-20% larger, forcing it just in case */
+  font-size: 17px !important; /* Adjusted down slightly from 18px */
 }
 
 /* Adjust heading sizes to match the scale up */
