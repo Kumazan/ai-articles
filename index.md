@@ -4,6 +4,10 @@
 
 ## 文章列表
 
+### 2026-02-19
+
+#### ・ [用 Evaluation Flywheel 打造更穩健的 Prompt](./2026-02-19/building-resilient-prompts-evaluation-flywheel.html)
+
 ### 2026-02-15
 
 #### ・ [個人全景監獄：用 Claude Code 管理整個人生](./2026-02-15/personal-panopticon-claude-code.html)
