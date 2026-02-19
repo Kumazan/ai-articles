@@ -14,7 +14,10 @@
   --mono: 'JetBrains Mono', monospace;
 }
 
-html { -webkit-text-size-adjust: 100%; }
+html {
+  -webkit-text-size-adjust: 100%;
+  touch-action: manipulation;
+}
 
 body {
   background: var(--bg) !important;
@@ -26,7 +29,10 @@ body {
 }
 
 .wrapper {
-  max-width: 760px !important;
+  /* Keep enough room for the theme's header + section layout.
+     Too narrow can cause iOS visual viewport jump/scale on touch. */
+  max-width: 860px !important;
+  width: auto !important;
 }
 
 h1, h2, h3, h4 {
@@ -96,6 +102,14 @@ a {
 
 a:hover {
   border-bottom-color: var(--accent);
+}
+
+/* jekyll-theme-minimal sets a:hover,a:focus font-weight:bold;
+   on mobile touch this can trigger layout reflow/jumpy scale. */
+a:hover,
+a:focus,
+a:active {
+  font-weight: inherit !important;
 }
 
 hr {
