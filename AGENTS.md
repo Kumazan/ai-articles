@@ -14,7 +14,8 @@
 2. Frontmatter 後加 hero badge，例如：
    - `<div class="hero-badge">OpenAI Cookbook · 2026-02-19</div>`
 3. 主標題使用 `#`
-4. 保留原文連結區塊：`**原文連結：** <url>`
+4. 保留原文連結區塊，優先用「短文字 + 超連結」，避免裸露超長網址：
+   - `**原文連結：** [OpenAI Cookbook（文章名）](https://...)`
 5. 使用分隔線：`<div class="sep">· · ·</div>`
 6. 文章放在對應日期資料夾：`YYYY-MM-DD/slug.md`
 
