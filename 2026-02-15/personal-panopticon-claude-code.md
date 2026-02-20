@@ -7,8 +7,6 @@ permalink: /2026-02-15/personal-panopticon-claude-code.html
 
 <div class="hero-badge">AI Essay · 2026-02-15</div>
 
-# 個人全景監獄：用 Claude Code 管理整個人生
-
 **原文連結：** [Molly Cantillon on X](https://x.com/mollycantillon/status/2008918474006122936)
 
 <div class="sep">· · ·</div>

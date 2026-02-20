@@ -7,8 +7,6 @@ permalink: /2026-02-15/claude-opus-xai-spacex-ai-audits.html
 
 <div class="hero-badge">AI News · 2026-02-15</div>
 
-# The Batch AI 新聞與見解
-
 **原文連結：** https://charonhub.deeplearning.ai/issue-340/
 
 <div class="sep">· · ·</div>

@@ -7,8 +7,6 @@ permalink: /2026-02-19/building-resilient-prompts-evaluation-flywheel.html
 
 <div class="hero-badge">OpenAI Cookbook · 2026-02-19</div>
 
-# 用 Evaluation Flywheel 打造更穩健的 Prompt
-
 **原文連結：** https://developers.openai.com/cookbook/examples/evaluation/building_resilient_prompts_using_an_evaluation_flywheel
 
 <div class="sep">· · ·</div>
