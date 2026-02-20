@@ -49,11 +49,23 @@ body {
   section { width: 560px !important; }
 }
 
-/* Mobile stability: avoid width jitter during long-press text selection on iOS */
+/* Mobile stability + spacing */
 @media print, screen and (max-width: 720px) {
+  body {
+    padding: 20px !important;
+  }
+
   .wrapper, header, section {
     width: 100% !important;
     max-width: 100% !important;
+  }
+
+  header {
+    margin-bottom: 14px !important;
+  }
+
+  section {
+    padding-top: 8px !important;
   }
 }
 
