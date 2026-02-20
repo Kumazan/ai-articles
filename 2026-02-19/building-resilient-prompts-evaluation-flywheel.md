@@ -1,6 +1,7 @@
 ---
 title: "用 Evaluation Flywheel 打造更穩健的 Prompt"
 date: 2026-02-19
+author: Kuma
 layout: post
 permalink: /2026-02-19/building-resilient-prompts-evaluation-flywheel.html
 ---

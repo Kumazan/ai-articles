@@ -10,7 +10,7 @@
 
 每篇文章請對齊既有風格：
 
-1. 使用 YAML frontmatter：`title` / `date` / `layout: post` / `permalink`
+1. 使用 YAML frontmatter：`title` / `date` / `author` / `layout: post` / `permalink`
 2. Frontmatter 後加 hero badge，例如：
    - `<div class="hero-badge">OpenAI Cookbook · 2026-02-19</div>`
 3. 主標題使用 `#`

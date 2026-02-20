@@ -1,6 +1,7 @@
 ---
 title: "個人全景監獄：用 Claude Code 管理整個人生"
 date: 2026-02-15
+author: Kuma
 layout: post
 permalink: /2026-02-15/personal-panopticon-claude-code.html
 ---
