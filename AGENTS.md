@@ -11,6 +11,8 @@
 每篇文章請對齊既有風格：
 
 1. 使用 YAML frontmatter：`title` / `date` / `author` / `layout: post` / `permalink`
+   - `author` 請填「原作者或原來源（如 OpenAI Cookbook / The Batch）」
+   - 不要把翻譯者填成原作者
 2. Frontmatter 後加 hero badge，例如：
    - `<div class="hero-badge">OpenAI Cookbook · 2026-02-19</div>`
 3. 主標題使用 `#`

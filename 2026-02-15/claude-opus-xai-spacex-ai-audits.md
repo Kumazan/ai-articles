@@ -1,7 +1,7 @@
 ---
 title: "Claude Opus 4.6 思維更聰明、xAI 加入 SpaceX、AI 超越醫生、標準化 AI 審計"
 date: 2026-02-15
-author: Kuma
+author: The Batch / deeplearning.ai
 layout: post
 permalink: /2026-02-15/claude-opus-xai-spacex-ai-audits.html
 ---
