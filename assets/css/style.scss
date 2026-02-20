@@ -16,7 +16,15 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  touch-action: manipulation;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -39,6 +47,14 @@ body {
 @media print, screen and (min-width: 961px) {
   header { width: 250px !important; }
   section { width: 560px !important; }
+}
+
+/* Mobile stability: avoid width jitter during long-press text selection on iOS */
+@media print, screen and (max-width: 720px) {
+  .wrapper, header, section {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 h1, h2, h3, h4 {
