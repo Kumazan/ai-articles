@@ -88,6 +88,21 @@ PY
 URL="${BASE_URL}?q=${ENCODED_Q}&maximum_number_of_tokens=${TOKENS}&count=${COUNT}"
 [[ -n "$FRESHNESS" ]] && URL+="&freshness=${FRESHNESS}"
 [[ -n "$COUNTRY" ]] && URL+="&country=${COUNTRY}"
+
+# Normalize common locale aliases to Brave-supported language enums
+case "${LANG,,}" in
+  zh-tw|zh-hk|zh-mo)
+    LANG="zh-hant"
+    ;;
+  zh-cn|zh-sg)
+    LANG="zh-hans"
+    ;;
+  zh)
+    # Default to Traditional Chinese in this workspace
+    LANG="zh-hant"
+    ;;
+esac
+
 [[ -n "$LANG" ]] && URL+="&search_lang=${LANG}"
 
 # Make request and keep HTTP status

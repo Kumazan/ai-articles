@@ -21,7 +21,9 @@ Needs env: `BRAVE_API_KEY` (Search plan key).
 ./search.sh "query" --count 10               # More source URLs
 ./search.sh "query" --freshness pw           # Past week only
 ./search.sh "query" --country TW             # Country-specific
-./search.sh "query" --lang zh                # Language filter
+./search.sh "query" --lang zh-hant           # Language filter (繁中)
+
+> Note: If you pass `--lang zh-tw`, the script auto-normalizes it to `zh-hant`.
 ```
 
 ## Options
