@@ -89,8 +89,9 @@ URL="${BASE_URL}?q=${ENCODED_Q}&maximum_number_of_tokens=${TOKENS}&count=${COUNT
 [[ -n "$FRESHNESS" ]] && URL+="&freshness=${FRESHNESS}"
 [[ -n "$COUNTRY" ]] && URL+="&country=${COUNTRY}"
 
-# Normalize common locale aliases to Brave-supported language enums
-case "${LANG,,}" in
+# Normalize common locale aliases to Brave-supported language enums (bash 3.2 compatible)
+LANG_LC=$(printf '%s' "$LANG" | tr '[:upper:]' '[:lower:]')
+case "$LANG_LC" in
   zh-tw|zh-hk|zh-mo)
     LANG="zh-hant"
     ;;
