@@ -12,12 +12,20 @@
     </array>
 
     <key>StartCalendarInterval</key>
-    <dict>
-      <key>Hour</key>
-      <integer>3</integer>
-      <key>Minute</key>
-      <integer>0</integer>
-    </dict>
+    <array>
+      <dict>
+        <key>Hour</key>
+        <integer>3</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>Hour</key>
+        <integer>15</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+      </dict>
+    </array>
 
     <key>StandardOutPath</key>
     <string>/Users/kumax/.openclaw/workspace/tmp/openclaw-backup-launchd.out.log</string>

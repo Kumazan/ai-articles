@@ -5,6 +5,12 @@ SRC="$HOME/.openclaw/"
 BACKUP_DIR="$HOME/.openclaw/workspace/tmp/openclaw-backup"
 LOG_DIR="$HOME/.openclaw/workspace/memory"
 LOG_FILE="$LOG_DIR/nightly-dev-log.md"
+TG_CHANNEL="telegram"
+TG_TARGET="1085354433"
+OPENCLAW_BIN="$(command -v openclaw || true)"
+if [ -z "$OPENCLAW_BIN" ] && [ -x "/opt/homebrew/bin/openclaw" ]; then
+  OPENCLAW_BIN="/opt/homebrew/bin/openclaw"
+fi
 
 mkdir -p "$BACKUP_DIR" "$LOG_DIR"
 
@@ -102,3 +108,11 @@ git push origin main >/dev/null
 TS=$(date '+%Y-%m-%d %H:%M:%S')
 SHA=$(git rev-parse --short HEAD)
 echo "- [$TS] openclaw backup: pushed $SHA" >> "$LOG_FILE"
+
+# Notify Telegram only when there is a new backup commit
+if [ -n "$OPENCLAW_BIN" ]; then
+  "$OPENCLAW_BIN" message send \
+    --channel "$TG_CHANNEL" \
+    --target "$TG_TARGET" \
+    --message "🗂️ OpenClaw 備份完成：$SHA ($TS)" >/dev/null 2>&1 || true
+fi
