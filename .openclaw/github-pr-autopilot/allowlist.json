@@ -35,6 +35,11 @@
       "repo": "Kumazan/ai-articles",
       "localPath": "/Users/kumax/.openclaw/workspace/ai-articles",
       "enabled": true
+    },
+    {
+      "repo": "Kumazan/polymarket-bond-scanner",
+      "localPath": "/Users/kumax/.openclaw/workspace/polymarket-bond-scanner",
+      "enabled": true
     }
   ],
   "fallbackPolicy": {
