@@ -1,0 +1,45 @@
+{
+  "workflow": "github-pr-autopilot",
+  "version": 1,
+  "updatedAt": "2026-02-23",
+  "notes": "Initial allowlist bootstrap from recent active local repos + accessible GitHub repos. Kuma should confirm/finalize this list.",
+  "maxAutoPrPerDay": 3,
+  "localWorkspaceRoot": "/Users/kumax/.openclaw/workspace",
+  "repos": [
+    {
+      "repo": "Kumazan/trip-bangkok",
+      "localPath": "/Users/kumax/.openclaw/workspace/trip-bangkok",
+      "enabled": true
+    },
+    {
+      "repo": "Kumazan/kanban-app",
+      "localPath": "/Users/kumax/.openclaw/workspace/kanban-app",
+      "enabled": true
+    },
+    {
+      "repo": "Kumazan/polymarket-bot-v0-ts",
+      "localPath": "/Users/kumax/.openclaw/workspace/polymarket-bot-v0-ts",
+      "enabled": true
+    },
+    {
+      "repo": "Kumazan/polymarket-strategies",
+      "localPath": "/Users/kumax/.openclaw/workspace/polymarket-strategies",
+      "enabled": true
+    },
+    {
+      "repo": "Kumazan/sdd-learn",
+      "localPath": "/Users/kumax/.openclaw/workspace/sdd-learn",
+      "enabled": true
+    },
+    {
+      "repo": "Kumazan/ai-articles",
+      "localPath": "/Users/kumax/.openclaw/workspace/ai-articles",
+      "enabled": true
+    }
+  ],
+  "fallbackPolicy": {
+    "enabledWhenAllowlistMissing": true,
+    "strategy": "recent_active_repos",
+    "topN": 6
+  }
+}

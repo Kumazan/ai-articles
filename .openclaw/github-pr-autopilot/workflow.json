@@ -1,0 +1,37 @@
+{
+  "workflow": "github-pr-autopilot",
+  "enabled": true,
+  "timezone": "Asia/Taipei",
+  "updatedAt": "2026-02-23T16:45:00+08:00",
+  "jobs": [
+    {
+      "phase": "04:00 scan + sizing + implementation",
+      "id": "93b5f6ff-4a2e-4ac8-bf00-ad524ec9908f",
+      "name": "github-pr-autopilot@04:00-scan",
+      "cron": "0 4 * * *"
+    },
+    {
+      "phase": "05:00 copilot review patrol",
+      "id": "f0ab70fb-118b-4282-9eea-ab05e6f69b15",
+      "name": "github-pr-autopilot@05:00-review",
+      "cron": "0 5 * * *"
+    },
+    {
+      "phase": "06:00 re-review patrol",
+      "id": "27efbd4d-167e-4287-bac0-ec2df0da9a3a",
+      "name": "github-pr-autopilot@06:00-rereview",
+      "cron": "0 6 * * *"
+    },
+    {
+      "phase": "07:00 telegram summary",
+      "id": "999603dd-2608-4b4c-9428-63cdae030781",
+      "name": "github-pr-autopilot@07:00-summary",
+      "cron": "0 7 * * *"
+    }
+  ],
+  "disabledOldJobs": [
+    "588550d6-bd84-4878-a7ca-25b9d57e6eb2",
+    "899b3682-4ac8-40f7-85ab-dea5dd344356",
+    "d1fda39e-6ca9-4e87-b0e3-d42ddc3c0e64"
+  ]
+}
