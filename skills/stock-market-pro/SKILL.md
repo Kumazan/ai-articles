@@ -1,46 +1,134 @@
 ---
 name: stock-market-pro
-description: Professional stock price tracking, fundamental analysis, and financial reporting tool. Supports global markets (US, KR, etc.), Crypto, and Forex with real-time data. (1) Real-time quotes, (2) Valuation metrics (PE, EPS, ROE), (3) Earnings calendar and consensus, (4) High-quality Candlestick & Line charts with technical indicators (MA5/20/60).
+description: >-
+  Yahoo Finance (yfinance) powered stock analysis skill: quotes, fundamentals,
+  ASCII trends, high-resolution charts (RSI/MACD/BB/VWAP/ATR), plus optional
+  web add-ons (news + browser-first options/flow).
 ---
 
 # Stock Market Pro
 
-A professional-grade financial analysis tool powered by Yahoo Finance data.
+**Stock Market Pro** is a fast, local-first market research toolkit.
+Get clean price + fundamentals, generate publication-ready charts with indicator panels (RSI/MACD/BB/VWAP/ATR), and run a one-shot report that outputs both a summary and a high-res PNG.
+Optional add-ons: quick news link sweep (DDG) + browser-first options/flow (Unusual Whales).
 
-## Core Features
-
-### 1. Real-time Quotes (`price`)
-Get instant price updates and day ranges.
-```bash
-uv run --script scripts/yf price [TICKER]
-```
-
-### 2. Professional Charts (`pro`)
-Generate high-resolution PNG charts with Volume and Moving Averages.
-- **Candlestick**: `uv run --script scripts/yf pro [TICKER] [PERIOD]`
-- **Line Chart**: `uv run --script scripts/yf pro [TICKER] [PERIOD] line`
-- **Periods**: `1mo`, `3mo`, `6mo`, `1y`, `5y`, `max`, etc.
-
-### 3. Fundamental Analysis (`fundamentals`)
-Deep dive into valuation: Market Cap, PE, EPS, ROE, and Profit Margins.
-```bash
-uv run --script scripts/yf fundamentals [TICKER]
-```
-
-### 4. Earnings & Estimates (`earnings`)
-Check upcoming earnings dates and market consensus (Expected Revenue/EPS).
-
-### 5. Historical Trends (`history`)
-View recent 10-day trends with terminal-friendly ASCII charts.
-
-## Ticker Examples
-- **US Stocks**: `AAPL`, `NVDA`, `TSLA`
-- **Korean Stocks**: `005930.KS` (Samsung), `000660.KS` (SK Hynix)
-- **Crypto**: `BTC-USD`, `ETH-KRW`
-
-## Technical Notes
-- **Engine**: Python 3.11+, `yfinance`, `mplfinance`, `rich`
-- **Key Benefit**: No API key required. Automatically handles dependencies via `uv`.
+## What you can do
+- Get **real-time quotes** (price + change)
+- Summarize **fundamentals** (Market Cap, Forward PE, EPS, ROE)
+- Print **ASCII trends** (terminal-friendly)
+- Generate **high-resolution PNG charts** with overlays/panels:
+  - RSI / MACD / Bollinger Bands / VWAP / ATR
+- Run a **one-shot report** that prints a compact summary and emits a chart path
+- Search **news links** via DuckDuckGo (ddgs)
+- Open **options / flow pages** (browser-first, Unusual Whales)
 
 ---
-*한국어 설명: 실시간 주가 조회, 재무 지표 분석 및 전문 봉차트 생성이 가능한 종합 주식 분석 스킬입니다.*
+
+## Commands (Local)
+
+> This skill uses `uv run --script` for dependency handling.
+> If you don't have `uv`: install from https://github.com/astral-sh/uv
+
+### 1) Quotes
+```bash
+uv run --script scripts/yf.py price TSLA
+# shorthand
+uv run --script scripts/yf.py TSLA
+```
+
+### 2) Fundamentals
+```bash
+uv run --script scripts/yf.py fundamentals NVDA
+```
+
+### 3) ASCII trend
+```bash
+uv run --script scripts/yf.py history AAPL 6mo
+```
+
+### 4) Pro chart (PNG)
+```bash
+# candlestick (default)
+uv run --script scripts/yf.py pro 000660.KS 6mo
+
+# line chart
+uv run --script scripts/yf.py pro 000660.KS 6mo line
+```
+
+#### Indicators (optional)
+```bash
+uv run --script scripts/yf.py pro TSLA 6mo --rsi --macd --bb
+uv run --script scripts/yf.py pro TSLA 6mo --vwap --atr
+```
+
+- `--rsi` : RSI(14)
+- `--macd`: MACD(12,26,9)
+- `--bb`  : Bollinger Bands(20,2)
+- `--vwap`: VWAP (cumulative over the selected range)
+- `--atr` : ATR(14)
+
+### 5) One-shot report
+Prints a compact text summary and generates a chart PNG.
+
+```bash
+uv run --script scripts/yf.py report 000660.KS 6mo
+# output includes: CHART_PATH:/tmp/<...>.png
+```
+
+> Optional web add-ons (news/options) can be appended by the agent workflow.
+
+---
+
+## Web Add-ons (Optional)
+
+### A) News search (DuckDuckGo via `ddgs`)
+This skill vendors a helper script (`scripts/ddg_search.py`).
+
+Dependency:
+```bash
+pip3 install -U ddgs
+```
+
+Run:
+```bash
+python3 scripts/news.py NVDA --max 8
+# or
+python3 scripts/ddg_search.py "NVDA earnings guidance" --kind news --max 8 --out md
+```
+
+### B) Options / Flow (browser-first)
+Unusual Whales frequently blocks scraping/headless access.
+So the recommended approach is: **open the pages in a browser and summarize what you can see**.
+
+Quick link helper:
+```bash
+python3 scripts/options_links.py NVDA
+```
+
+Common URLs:
+- `https://unusualwhales.com/stock/{TICKER}/overview`
+- `https://unusualwhales.com/live-options-flow?ticker_symbol={TICKER}`
+- `https://unusualwhales.com/stock/{TICKER}/options-flow-history`
+
+---
+
+## Subcommands (yf.py)
+`yf.py` supports:
+- `price`
+- `fundamentals`
+- `history`
+- `pro`
+- `chart` (alias)
+- `report`
+- `option` (best-effort; browser fallback recommended)
+
+Check:
+```bash
+python3 scripts/yf.py --help
+```
+
+## Ticker examples
+- US: `AAPL`, `NVDA`, `TSLA`
+- KR: `005930.KS`, `000660.KS`
+- Crypto: `BTC-USD`, `ETH-KRW`
+- FX: `USDKRW=X`
