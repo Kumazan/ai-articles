@@ -25,6 +25,12 @@
   - Auto-renew: enabled
   - Expiry: 2026-03-08
 
+### Telegram / 股市群組 Topic 路由
+- 股市報告目標群：`-1003815026231`。
+- 股市分析 topic threadId：`51`（需帶 threadId 才會進入該 topic，否則會落到 General）。
+- 適用任務：`台股盤前報告`、`台股盤後報告` cron。
+- 春節國際盤勢追蹤已停用（enabled=false）。
+
 ### Cloudflare / Scanner Access
 - Cloudflare Zero Trust Apps page (account-specific):
   - https://one.dash.cloudflare.com/f6628b05c86b58bf21991282f2950950/access-controls/apps
