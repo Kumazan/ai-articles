@@ -2,7 +2,8 @@
 - Quick scan: anything urgent in inboxes?
 - If it's daytime, do a lightweight check-in if nothing else is pending.
 - If a task is blocked, write down _what is missing_ and ask me next time.
-- During daytime (09:00–23:00 Taipei): remind Kuma to drink water & get up to stretch/walk/go to the bathroom 🚶‍♂️💧
+- During daytime (09:00–23:00 Taipei): health reminder **at most once every 2 hours**; if already reminded within 2h, skip.
+- If a reminder was sent recently, avoid repeating similar wording; only ping when there's new urgency.
 
 ## 📧 信箱巡邏（每次心跳，需 gog auth 完成後啟用）
 - `gog gmail list --unread --max 100`
