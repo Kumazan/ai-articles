@@ -5,13 +5,13 @@
 - During daytime (09:00–23:00 Taipei): health reminder **at most once every 2 hours**; if already reminded within 2h, skip.
 - If a reminder was sent recently, avoid repeating similar wording; only ping when there's new urgency.
 
-## 📧 信箱巡邏（每次心跳，需 gog auth 完成後啟用）
-- `gog gmail list --unread --max 100`
+## 📧 信箱巡邏（每次心跳，需 gws auth 完成後啟用）
+- `gws gmail users threads list --params '{"userId":"me","q":"is:unread","maxResults":100}'`
 - 有未讀且重要的（特定寄件者 or 標題含「urgent」「緊急」「invoice」「付款」）→ 通知 Kuma
 - 普通未讀 → 不用通知，記錄到 heartbeat-state.json 的 lastEmailCheck
 
-## 📅 行事曆提醒（每次心跳，需 gog auth 完成後啟用）
-- `gog cal list --days 2`
+## 📅 行事曆提醒（每次心跳，需 gws auth 完成後啟用）
+- `gws calendar events list --params '{"calendarId":"primary","timeMin":"<now>","timeMax":"<now+2d>","singleEvents":true,"orderBy":"startTime"}'`
 - 未來 2 小時內有事件 → 提醒 Kuma（含時間、地點、標題）
 - 未來 24h 有重要事件（會議、航班、訂位）→ 摘要通知
 

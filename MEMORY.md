@@ -22,6 +22,7 @@
 
 - 人物關係備註：小郭（Guo）是 Kuma 的男朋友（男），提及時勿使用女性代稱。 (Set 2026-03-02)
 - Uber Eats 優惠碼回報偏好（Set 2026-03-02）：每月 1 號主動搜尋一次「非新用戶、非青少年」可用碼；回覆格式固定為【`優惠code`】 - 優惠內容。
+- Google Workspace CLI 偏好（Set 2026-03-09）：改用 `gws` 作為 Google Workspace 主力工具；`gog` 已卸載，不再依賴。
 
 ## Infrastructure
 - Linode (Akamai) VPS used for OpenClaw gateway:
@@ -29,7 +30,7 @@
   - Region: Amsterdam, Netherlands
   - Plan: 4 CPU cores, 7.7 GB RAM, USD $24/month
   - Auto-renew: enabled
-  - Expiry: 2026-03-08
+  - Last known expiry: 2026-03-08 (auto-renew should have renewed; confirm next billing cycle)
 
 ### Telegram / 股市群組 Topic 路由
 - 股市報告目標群：`-1003815026231`。
@@ -49,6 +50,12 @@
 Source: user message 2026-02-19.
 
 Source: user message 2026-02-09.
+
+## Security
+- ClawJacked WebSocket 劫持漏洞（2026-03-01 發現）：已修復，OpenClaw 升級至 2026.3.2（修復版為 2026.2.25）。 (Resolved 2026-03-09)
+
+## Known Blockers
+- Kanban API: 間歇性 500 error（missing ./331.js），非關鍵。(Since ~2026-03-01)
 
 ## Archived Index
 - 2026-02-23 清理歸檔（Projects / Model Config / Bangkok Travel）：`memory/archive/longterm-archive-2026-02-23.md`
