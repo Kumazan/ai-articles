@@ -25,6 +25,7 @@
 - Google Workspace CLI 偏好（Set 2026-03-09）：改用 `gws` 作為 Google Workspace 主力工具；`gog` 已卸載，不再依賴。
 - OpenClaw 遠端 Gateway 固定做法（Set 2026-03-09）：Mac mini 走 Tailscale Serve + `gateway.trustedProxies: ["127.0.0.1", "::1"]` + device pairing；常駐背景服務用 `openclaw gateway install/start`（LaunchAgent）。新裝置若看到 `pairing required`，在 Mac 上跑 `openclaw devices list` → `openclaw devices approve <requestId>`。
 - OpenClaw / AI agent 情報偏好（Set 2026-03-10）：Kuma 偏好「實用技巧／實戰流程／踩坑修法」類型的整理，價值高於單純新功能列表；訂閱模式為「每日更新，但只有有料才推」+「每週整理」。
+- STARLUX / COSMILE 亞洲－歐洲／美洲線獎勵票速記（Set 2026-03-11）：經濟艙單程 50,000 哩／來回 100,000 哩；豪華經濟艙單程 60,000 哩／來回 120,000 哩；商務艙單程 90,000 哩／來回 180,000 哩。共通：改票免手續費、退票 USD 50、未登機（2024-06-01 含後）USD 100。之後 Kuma 問星宇長程哩程兌換時可直接用這組基準先估值。
 
 ## Infrastructure
 - Linode (Akamai) VPS used for OpenClaw gateway:
