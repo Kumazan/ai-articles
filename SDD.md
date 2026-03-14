@@ -31,7 +31,7 @@ The repo currently has no `.gitignore`. For a Jekyll-based GitHub Pages site, co
 - `git status` — must show only `.gitignore` as new file
 
 ### Results
-(populated after run)
+✅ All checks passed — .DS_Store matched, git status clean
 
 ## Rollback
 Delete `.gitignore` — no other files touched.
