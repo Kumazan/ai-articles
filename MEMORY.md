@@ -57,6 +57,29 @@ Source: user message 2026-02-09.
 ## Security
 - ClawJacked WebSocket 劫持漏洞（2026-03-01 發現）：已修復，OpenClaw 升級至 2026.3.2（修復版為 2026.2.25）。 (Resolved 2026-03-09)
 
+## Projects
+- pokopia-zh：寶可夢 Pokopia 中文整理站，private repo + Cloudflare Pages，方向 `play.kumax.dev/pokopia`，主色百變怪紫。翻譯基準：wiki.52poke.com；專長官方用語已確認為「專長」（共 17 種）；進化機制無練等，棲息地直接招募。 (Updated 2026-03-14)
+- Kuma 報名 4/18 搖滾路跑 肌肉組（HYROX），訓練站：`https://kumazan.github.io/hyrox-training/`。3/18-3/24 出國曼谷。 (Set 2026-03-12)
+
+## Bangkok Trip 3/18–3/24
+- 去程 JX745 3/18 13:25 TPE → 16:30 BKK；回程 JX742 3/24 13:45 BKK → 18:25 TPE
+- 住宿：Silom Serene（3/18–3/22）→ Kimpton Maa-Lai（3/22–3/24，Conf: 64079311）
+- 關鍵訂位：3/19 大城一日遊、3/20 Tingly Thai 烹飪課 13:00、3/21 寺廟半日遊 13:00、3/22 Inddee 生日晚餐 19:30（訂位 RWZTH3HCBYK，訂金已付）、3/22 Ruby's Experience 16:00、3/23 泰拳 13:30、3/23 Copper Beyond Buffet 17:00
+- 小郭 3/22 生日（31 歲），Kimpton 有詢問布置，Copper 已備注
+- TDAC 電子入境卡需在入境前 72h 內填：https://tdac.immigration.go.th
+- 3/22 回程選位開放（13:45 前 48h）
+- 旅平險已附（刷星宇世界卡）。(Set 2026-03-16)
+
+## Fitness / Health
+- 跑步實測基準（2026-03-12）：16 分鐘跑 1.86K，配速 ~8'34"/km，心率 169 avg / 194 max。策略：保守配速、跑走交替、控心率。
+- 農夫走路 25kg×2 可走 ~40 步，非主要弱項；主攻跑步/波比跳前進/弓箭步。
+- 上斜啞鈴臥推 24kg 為 12 下工作重量，目標 4 組。
+- World Gym 啞鈴以 2kg 為級距（24/26/28kg），不要建議 25/27.5kg。
+- Kuma 曾被啞鈴夾傷小拇指（2026-03-12），短期避免重握力訓練。
+
+## Tools & Techniques
+- claude.ai 用量監控：用 `openclaw browser navigate` + `openclaw browser evaluate` 打 `/api/organizations/.../subscription_details`，比直接 CDP 簡單，且 Cloudflare cookie 正確。(2026-03-14)
+
 ## Known Blockers
 - Kanban API: 間歇性 500 error（missing ./331.js），非關鍵。(Since ~2026-03-01)
 
