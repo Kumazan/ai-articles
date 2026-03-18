@@ -10,6 +10,8 @@
 
 ### 2026-02-19
 
+#### ・ [建構 Claude Code 學到的教訓：Prompt Caching 就是一切](./2026-02-19/lessons-building-claude-code-prompt-caching.html)
+
 #### ・ [用 Evaluation Flywheel 打造更穩健的 Prompt](./2026-02-19/building-resilient-prompts-evaluation-flywheel.html)
 
 ### 2026-02-15
