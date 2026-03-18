@@ -22,7 +22,13 @@ html {
   box-sizing: border-box;
 }
 
-html, body {
+html {
+  width: 100%;
+  /* Do NOT set overflow-x: hidden on html — iOS treats body as a
+     separate scroll container, killing momentum/inertial scroll */
+}
+
+body {
   width: 100%;
   overflow-x: hidden;
 }
