@@ -77,6 +77,11 @@ Source: user message 2026-02-09.
 - World Gym 啞鈴以 2kg 為級距（24/26/28kg），不要建議 25/27.5kg。
 - Kuma 曾被啞鈴夾傷小拇指（2026-03-12），短期避免重握力訓練。
 
+## Web / CSS Lessons
+
+- **iOS Safari 慣性滾動失效**：`overflow-x: hidden` 同時設在 `html` + `body` 上，iOS 會把 body 當獨立 scroll container，慣性滾動死掉。解法：只設在 `body`，`html` 不動。(2026-03-18)
+- **Jekyll theme viewport 覆蓋**：theme 自己輸出 `<meta viewport>` 沒有 `maximum-scale`，後加的第二個 meta 被瀏覽器忽略。唯一有效做法是用 JS 在 `head-custom.html` 裡直接 `querySelector` 修改第一個 meta 的 content。(2026-03-18)
+
 ## Tools & Techniques
 - claude.ai 用量監控：用 `openclaw browser navigate` + `openclaw browser evaluate` 打 `/api/organizations/.../subscription_details`，比直接 CDP 簡單，且 Cloudflare cookie 正確。(2026-03-14)
 
