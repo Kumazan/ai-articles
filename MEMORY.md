@@ -61,7 +61,7 @@ Source: user message 2026-02-09.
 - pokopia-zh：寶可夢 Pokopia 中文整理站，private repo + Cloudflare Pages，方向 `play.kumax.dev/pokopia`，主色百變怪紫。翻譯基準：wiki.52poke.com；專長官方用語已確認為「專長」（共 17 種）；進化機制無練等，棲息地直接招募。 (Updated 2026-03-14)
 - Kuma 報名 4/18 搖滾路跑 肌肉組（HYROX），訓練站：`https://kumazan.github.io/hyrox-training/`。3/18-3/24 出國曼谷。 (Set 2026-03-12)
 
-## Bangkok Trip 3/18–3/24
+## Bangkok Trip 3/18–3/24（進行中）
 - 去程 JX745 3/18 13:25 TPE → 16:30 BKK；回程 JX742 3/24 13:45 BKK → 18:25 TPE
 - 住宿：Silom Serene（3/18–3/22）→ Kimpton Maa-Lai（3/22–3/24，Conf: 64079311）
 - 關鍵訂位：3/19 大城一日遊、3/20 Tingly Thai 烹飪課 13:00、3/21 寺廟半日遊 13:00、3/22 Inddee 生日晚餐 19:30（訂位 RWZTH3HCBYK，訂金已付）、3/22 Ruby's Experience 16:00、3/23 泰拳 13:30、3/23 Copper Beyond Buffet 17:00
@@ -69,6 +69,7 @@ Source: user message 2026-02-09.
 - TDAC 電子入境卡需在入境前 72h 內填：https://tdac.immigration.go.th
 - 3/22 回程選位開放（13:45 前 48h）
 - 旅平險已附（刷星宇世界卡）。(Set 2026-03-16)
+- 實際狀況更新（2026-03-19）：已抵達，入住 Silom Serene。TDAC 兩人均填妥（Kuma 卡號 BEDA0A1）。3/18 嘗試大麻（Papaya Cake），一口即有感，約 10 分鐘起效。3/19 大城一日遊完成，含邦芭茵夏宮、樹根佛頭、炭烤大蝦市場午餐。
 
 ## Fitness / Health
 - 跑步實測基準（2026-03-12）：16 分鐘跑 1.86K，配速 ~8'34"/km，心率 169 avg / 194 max。策略：保守配速、跑走交替、控心率。
@@ -84,9 +85,13 @@ Source: user message 2026-02-09.
 
 ## Tools & Techniques
 - claude.ai 用量監控：用 `openclaw browser navigate` + `openclaw browser evaluate` 打 `/api/organizations/.../subscription_details`，比直接 CDP 簡單，且 Cloudflare cookie 正確。(2026-03-14)
+- OpenClaw gateway 維護：升級後若 embed token 異常，用 `openclaw gateway install --force` + bootstrap 修復。目前版本 2026.3.8，pid 80538。(2026-03-19)
 
 ## Known Blockers
 - Kanban API: 間歇性 500 error（missing ./331.js），非關鍵。(Since ~2026-03-01)
+
+## Messaging / Platform Quirks
+- **Telegram Markdown bug**：冒號後緊接 backtick code block，Telegram 解析器會靜默吃掉後半段。修法：code 另起一行獨立傳，不接在行尾冒號後。(2026-03-17)
 
 ## Archived Index
 - 2026-02-23 清理歸檔（Projects / Model Config / Bangkok Travel）：`memory/archive/longterm-archive-2026-02-23.md`
