@@ -1,5 +1,8 @@
 # MEMORY.md
 
+## Top Rules（最高優先）
+- **任何 repo 開發改動前，必先讀該 repo 的 CLAUDE.md**（如果存在）。這是 Kuma 常用 CC 自行開發的前提，違反此規則視為任務失敗。(Set 2026-03-20)
+
 ## Kuma / Preferences
 - Prefers Traditional Chinese (zh-tw); casual tone. (See USER.md)
 - 偏好執行流程（特別是中大型改動）：先用 subagent（First Principles + Plan Mode）出 Plan → 我先 review 回報 → 你確認後再實作 → 最後開 PR。 (Set 2026-02-19)
