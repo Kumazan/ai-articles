@@ -10,8 +10,6 @@ permalink: /{{DATE}}/{{SLUG}}.html
 
 **原文連結：** [{{SOURCE_URL}}]({{SOURCE_URL}})
 
-<div class="sep">· · ·</div>
-
 ## 摘要
 
 - {{SUMMARY_1}}
@@ -19,6 +17,8 @@ permalink: /{{DATE}}/{{SLUG}}.html
 - {{SUMMARY_3}}
 - {{SUMMARY_4}}
 - {{SUMMARY_5}}
+
+<div class="sep">· · ·</div>
 
 ## 內文（繁中翻譯）
 
