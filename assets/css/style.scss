@@ -257,10 +257,6 @@ pre {
   color: var(--fg) !important;
 }
 
-.article-toc a.active {
-  color: var(--accent) !important;
-  font-weight: 500 !important;
-}
 
 /* Sidebar: theme uses position:fixed; ensure it stays on top and scrollable */
 @media print, screen and (min-width: 961px) {
@@ -271,16 +267,32 @@ pre {
     padding-bottom: 24px;
   }
 
-  /* Push footer to right column so it doesn't overlap fixed sidebar */
+  /* Hide original footer — content moved to sidebar via JS */
   footer {
-    margin-left: 290px !important;
-    width: 560px !important;
+    display: none !important;
   }
+}
+
+/* Sidebar footer */
+.sidebar-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--faint);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.sidebar-footer p {
+  margin: 0 0 4px !important;
+  font-size: 0.75rem !important;
 }
 
 /* Hide TOC on mobile (too narrow) */
 @media (max-width: 960px) {
   .article-toc {
+    display: none;
+  }
+  .sidebar-footer {
     display: none;
   }
 }
