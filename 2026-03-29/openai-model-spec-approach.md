@@ -8,9 +8,7 @@ permalink: /2026-03-29/openai-model-spec-approach.html
 
 <div class="hero-badge">AI News · 2026-03-29</div>
 
-# OpenAI Model Spec 的哲學與機制：他們如何決定 ChatGPT 的行為邊界
-
-**原文連結：** https://openai.com/index/our-approach-to-the-model-spec/
+**原文連結：** [https://openai.com/index/our-approach-to-the-model-spec/](https://openai.com/index/our-approach-to-the-model-spec/)
 
 <div class="sep">· · ·</div>
 
