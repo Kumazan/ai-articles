@@ -208,3 +208,71 @@ pre {
   color: #e8e0d6;
   border-radius: 12px;
 }
+
+/* ---------- Sticky TOC (auto-generated) ---------- */
+.article-toc {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--faint);
+}
+
+.toc-title {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.article-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.article-toc li {
+  margin: 0 !important;
+}
+
+.article-toc li.toc-sub {
+  padding-left: 12px;
+}
+
+.article-toc a {
+  font-family: var(--sans) !important;
+  font-size: 0.82rem !important;
+  font-weight: 400 !important;
+  color: var(--muted) !important;
+  border-bottom: none !important;
+  transition: color 0.2s;
+  line-height: 1.5;
+}
+
+.article-toc a:hover {
+  color: var(--fg) !important;
+}
+
+.article-toc a.active {
+  color: var(--accent) !important;
+  font-weight: 500 !important;
+}
+
+/* Make sidebar sticky on desktop for TOC visibility */
+@media print, screen and (min-width: 961px) {
+  header {
+    position: sticky !important;
+    top: 24px;
+    align-self: start;
+  }
+}
+
+/* Hide TOC on mobile (too narrow) */
+@media (max-width: 960px) {
+  .article-toc {
+    display: none;
+  }
+}

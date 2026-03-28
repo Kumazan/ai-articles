@@ -9,4 +9,50 @@
       vp.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
     }
   })();
+
+  // Auto-generate sticky TOC from h2/h3 headings in article
+  document.addEventListener('DOMContentLoaded', function() {
+    var section = document.querySelector('section');
+    if (!section) return;
+    var headings = section.querySelectorAll('h2, h3');
+    if (headings.length < 2) return;
+
+    headings.forEach(function(h, i) {
+      if (!h.id) h.id = 'section-' + i;
+    });
+
+    var nav = document.createElement('nav');
+    nav.className = 'article-toc';
+    var title = document.createElement('div');
+    title.className = 'toc-title';
+    title.textContent = '段落導覽';
+    nav.appendChild(title);
+
+    var ul = document.createElement('ul');
+    headings.forEach(function(h) {
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.className = 'toc-sub';
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    nav.appendChild(ul);
+
+    var header = document.querySelector('header');
+    if (header) header.appendChild(nav);
+
+    var tocLinks = nav.querySelectorAll('a');
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(function(l) { l.classList.remove('active'); });
+          var active = nav.querySelector('a[href="#' + entry.target.id + '"]');
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    headings.forEach(function(h) { observer.observe(h); });
+  });
 </script>
