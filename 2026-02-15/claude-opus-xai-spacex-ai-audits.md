@@ -12,6 +12,8 @@ permalink: /2026-02-15/claude-opus-xai-spacex-ai-audits.html
 
 <div class="sep">· · ·</div>
 
+## 內文
+
 **來自 Andrew Ng 的訊息：**
 
 親愛的朋友們，

@@ -7,11 +7,7 @@ permalink: /2026-02-19/lessons-building-claude-code-prompt-caching.html
 
 <div class="hero-badge">AI News · 2026-02-19</div>
 
-# 建構 Claude Code 學到的教訓：Prompt Caching 就是一切
-
-**原文連結：** https://x.com/trq212/status/2024574133011673516
-
-<div class="sep">· · ·</div>
+**原文連結：** [https://x.com/trq212/status/2024574133011673516](https://x.com/trq212/status/2024574133011673516)
 
 ## 摘要
 
@@ -20,6 +16,8 @@ permalink: /2026-02-19/lessons-building-claude-code-prompt-caching.html
 - 中途修改 system prompt、更換模型、增刪 tools，都會破壞快取，代價可能比維持現狀更昂貴。
 - Claude Code 團隊把 cache hit rate 當作服務 uptime 來監控，命中率下降就宣告事故（SEV）。
 - Fork 操作（如 compaction 壓縮上下文）需沿用完全相同的前綴，才能繼承快取不額外付費。
+
+<div class="sep">· · ·</div>
 
 ## 內文（繁中翻譯）
 

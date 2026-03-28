@@ -10,8 +10,6 @@ permalink: /2026-02-15/personal-panopticon-claude-code.html
 
 **原文連結：** [Molly Cantillon on X](https://x.com/mollycantillon/status/2008918474006122936)
 
-<div class="sep">· · ·</div>
-
 ## 摘要
 
 - 作者用 Claude Code 建立了 8 個平行 agent（產品、指標、信箱、成長、交易、健康、寫作、個人），全面自動化日常生活。

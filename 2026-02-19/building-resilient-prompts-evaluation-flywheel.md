@@ -10,8 +10,6 @@ permalink: /2026-02-19/building-resilient-prompts-evaluation-flywheel.html
 
 **原文連結：** [OpenAI Cookbook（Building resilient prompts using an evaluation flywheel）](https://developers.openai.com/cookbook/examples/evaluation/building_resilient_prompts_using_an_evaluation_flywheel)
 
-<div class="sep">· · ·</div>
-
 ## 摘要
 
 - 這篇文章提出一個可持續迭代的方法：**Evaluation Flywheel**。
