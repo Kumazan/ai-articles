@@ -20,6 +20,4 @@ permalink: /{{DATE}}/{{SLUG}}.html
 
 <div class="sep">· · ·</div>
 
-## 內文（繁中翻譯）
-
 {{BODY_ZH_TW}}
