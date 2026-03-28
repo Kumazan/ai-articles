@@ -8,6 +8,7 @@
 - 偏好執行流程（特別是中大型改動）：先用 subagent（First Principles + Plan Mode）出 Plan → 我先 review 回報 → 你確認後再實作 → 最後開 PR。 (Set 2026-02-19)
 - 對既有工作分支的正常開發節奏，Kuma 偏好直接 commit + push，不用每次先詢問。 (Set 2026-02-19)
 - GitHub PR 合併偏好：使用 squash merge，並在合併後刪除分支（delete branch）。 (Set 2026-02-19)
+- `gh pr create` 規則：所有 PR 建立指令必須加上 `--reviewer @copilot`，自動觸發 Copilot code review。 (Set 2026-03-28)
 - 股市分析偏好：每次做股市/盤勢分析時，優先使用 `stock-analysis` skill（搭配目前盤前/盤後分析框架）。 (Set 2026-02-24)
 - 股市報告流程偏好：先 `stock-analysis`（決策/信心/風險），再 `stock-market-pro`（價格/基本面/圖表佐證）；結論以 `stock-analysis` 為主。 (Set 2026-02-24)
 - 財經新聞分析報告格式（Set 2026-02-25）：Kuma 貼財經新聞時，自動用「資深交易員」框架輸出完整報告。結構：⏱️ 時間框架（前置判斷）→ 📋 交易核心 → 🔍 背後意義 → 📊 投資策略（看多標的＋看空/迴避標的，各含利多/風險/觀點/工具）→ 風險情境（🟢🟡🔴）→ 整體判斷 → ⏰ 催化劑時間線（條列）→ 📌 相關個股清單（一行一個，美股優先，台股僅直接相關）→ 💰 估值參考（1-2個最高優先標的）。風格：直接有觀點、結論先行、美股為主＋台股供應鏈。
@@ -27,6 +28,7 @@
 - Uber Eats 優惠碼回報偏好（Set 2026-03-02）：每月 1 號主動搜尋一次「非新用戶、非青少年」可用碼；回覆格式固定為【`優惠code`】 - 優惠內容。
 - Google Workspace CLI 偏好（Set 2026-03-09）：改用 `gws` 作為 Google Workspace 主力工具；`gog` 已卸載，不再依賴。
 - OpenClaw 遠端 Gateway 固定做法（Set 2026-03-09）：Mac mini 走 Tailscale Serve + `gateway.trustedProxies: ["127.0.0.1", "::1"]` + device pairing；常駐背景服務用 `openclaw gateway install/start`（LaunchAgent）。新裝置若看到 `pairing required`，在 Mac 上跑 `openclaw devices list` → `openclaw devices approve <requestId>`。
+- OpenClaw 更新方式（Set 2026-03-28）：**永遠用 `npm update -g openclaw`**，不要用 `openclaw update`（會在重啟後掉連線、拿不到結果、讓人很煩）。更新後用 `openclaw --version` 確認版本。
 - OpenClaw / AI agent 情報偏好（Set 2026-03-10）：Kuma 偏好「實用技巧／實戰流程／踩坑修法」類型的整理，價值高於單純新功能列表；訂閱模式為「每日更新，但只有有料才推」+「每週整理」。
 - STARLUX / COSMILE 亞洲－歐洲／美洲線獎勵票速記（Set 2026-03-11）：經濟艙單程 50,000 哩／來回 100,000 哩；豪華經濟艙單程 60,000 哩／來回 120,000 哩；商務艙單程 90,000 哩／來回 180,000 哩。共通：改票免手續費、退票 USD 50、未登機（2024-06-01 含後）USD 100。之後 Kuma 問星宇長程哩程兌換時可直接用這組基準先估值。
 
@@ -62,17 +64,14 @@ Source: user message 2026-02-09.
 
 ## Projects
 - pokopia-zh：寶可夢 Pokopia 中文整理站，private repo + Cloudflare Pages，方向 `play.kumax.dev/pokopia`，主色百變怪紫。翻譯基準：wiki.52poke.com；專長官方用語已確認為「專長」（共 17 種）；進化機制無練等，棲息地直接招募。 (Updated 2026-03-14)
-- Kuma 報名 4/18 搖滾路跑 肌肉組（HYROX），訓練站：`https://kumazan.github.io/hyrox-training/`。3/18-3/24 出國曼谷。 (Set 2026-03-12)
+- Kuma 報名 4/18 搖滾路跑 肌肉組（HYROX），訓練站：`https://kumazan.github.io/hyrox-training/`。曼谷之旅（3/18-3/24）已結束，回台繼續備賽。 (Set 2026-03-12, Updated 2026-03-28)
 
-## Bangkok Trip 3/18–3/24（進行中）
+## Bangkok Trip 3/18–3/24（已完成）
 - 去程 JX745 3/18 13:25 TPE → 16:30 BKK；回程 JX742 3/24 13:45 BKK → 18:25 TPE
-- 住宿：Silom Serene（3/18–3/22）→ Kimpton Maa-Lai（3/22–3/24，Conf: 64079311）
-- 關鍵訂位：3/19 大城一日遊、3/20 Tingly Thai 烹飪課 13:00、3/21 寺廟半日遊 13:00、3/22 Inddee 生日晚餐 19:30（訂位 RWZTH3HCBYK，訂金已付）、3/22 Ruby's Experience 16:00、3/23 泰拳 13:30、3/23 Copper Beyond Buffet 17:00
-- 小郭 3/22 生日（31 歲），Kimpton 有詢問布置，Copper 已備注
-- TDAC 電子入境卡需在入境前 72h 內填：https://tdac.immigration.go.th
-- 3/22 回程選位開放（13:45 前 48h）
-- 旅平險已附（刷星宇世界卡）。(Set 2026-03-16)
-- 實際狀況更新（2026-03-19）：已抵達，入住 Silom Serene。TDAC 兩人均填妥（Kuma 卡號 BEDA0A1）。3/18 嘗試大麻（Papaya Cake），一口即有感，約 10 分鐘起效。3/19 大城一日遊完成，含邦芭茵夏宮、樹根佛頭、炭烤大蝦市場午餐。
+- 住宿：Silom Serene（3/18–3/22）→ Kimpton Maa-Lai（3/22–3/24）
+- 亮點：大城一日遊（邦芭茵夏宮、樹根佛頭）、Tingly Thai 烹飪課、3/21 寺廟半日遊
+- 3/22 小郭 31 歲生日：Ruby's Experience 16:00 + Inddee 晚餐 19:30（RWZTH3HCBYK）
+- 3/24 回程，已安全返台。(Completed 2026-03-24)
 
 ## Fitness / Health
 - 跑步實測基準（2026-03-12）：16 分鐘跑 1.86K，配速 ~8'34"/km，心率 169 avg / 194 max。策略：保守配速、跑走交替、控心率。
@@ -85,6 +84,12 @@ Source: user message 2026-02-09.
 
 - **iOS Safari 慣性滾動失效**：`overflow-x: hidden` 同時設在 `html` + `body` 上，iOS 會把 body 當獨立 scroll container，慣性滾動死掉。解法：只設在 `body`，`html` 不動。(2026-03-18)
 - **Jekyll theme viewport 覆蓋**：theme 自己輸出 `<meta viewport>` 沒有 `maximum-scale`，後加的第二個 meta 被瀏覽器忽略。唯一有效做法是用 JS 在 `head-custom.html` 裡直接 `querySelector` 修改第一個 meta 的 content。(2026-03-18)
+
+## AI Industry Highlights（2026-03 重要動態）
+- **Nvidia GTC（3/16）**：Jensen Huang 稱 OpenClaw 為「人類史上最受歡迎開源專案」，Nvidia 推出 OpenClaw 專屬隱私/安全工具組，Peter Steinberger 被 OpenAI 挖角。
+- **Claude Dispatch（3/20）**：Anthropic 新功能，手機遠端控制桌面 Claude，持久對話，Max 訂閱已開放。
+- **OpenAI GPT-5.4（3/5）**：百萬 token context，OSWorld-V 得分 75%（略超人類基準 72.4%），標誌 AI 從聊天轉向自主數位工作者。
+- **Meta + Manus**：收購後 AI agents 整合進 Ads Manager、Instagram、WhatsApp Business。
 
 ## Tools & Techniques
 - claude.ai 用量監控：用 `openclaw browser navigate` + `openclaw browser evaluate` 打 `/api/organizations/.../subscription_details`，比直接 CDP 簡單，且 Cloudflare cookie 正確。(2026-03-14)
