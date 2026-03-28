@@ -1,0 +1,153 @@
+/* ==========================================================================
+   ai-articles 共用元件
+   可用於 Jekyll markdown 文章（內嵌 HTML）或特輯 HTML 文章
+   ========================================================================== */
+
+/* ---------- 回首頁按鈕 ---------- */
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "IBM Plex Sans TC", "Noto Sans TC", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  color: var(--muted, #665f57);
+  text-decoration: none;
+  border: 1px solid var(--line, rgba(23,20,17,.14));
+  border-radius: 999px;
+  padding: 7px 16px;
+  background: rgba(255,255,255,.5);
+  backdrop-filter: blur(8px);
+  transition: color .2s, border-color .2s;
+}
+.back-home:hover {
+  color: var(--accent, #b6432f);
+  border-color: currentColor;
+}
+
+/* ---------- 首字大寫 ---------- */
+.dropcap::first-letter {
+  float: left;
+  font-size: 4.4rem;
+  line-height: .88;
+  padding-right: 12px;
+  padding-top: 10px;
+  color: var(--accent, #c44b2b);
+  font-weight: 900;
+}
+
+/* ---------- 數據卡片 ---------- */
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 28px 0 12px;
+}
+.data-card {
+  padding: 18px;
+  border: 1px solid var(--line, rgba(23,20,17,.14));
+  border-radius: 18px;
+  background: rgba(255,255,255,.5);
+}
+.data-card .eyebrow {
+  font-family: "IBM Plex Sans TC", "Noto Sans TC", sans-serif;
+  font-size: 12px;
+  color: var(--muted, #665f57);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+.data-card .num {
+  margin: 8px 0 6px;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 900;
+}
+.data-card p {
+  margin: 0;
+  font-size: .95rem;
+  color: var(--muted, #665f57);
+  line-height: 1.75;
+}
+
+/* ---------- Callout ---------- */
+.callout {
+  margin: 34px 0;
+  padding: 22px 24px;
+  border: 1px solid var(--line, rgba(23,20,17,.14));
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255,255,255,.66), rgba(255,255,255,.38));
+}
+.callout-title {
+  margin: 0 0 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: var(--accent-2, #004d47);
+  font-weight: 700;
+}
+.callout p:last-child { margin-bottom: 0; }
+
+/* ---------- 時間軸 ---------- */
+.timeline {
+  margin: 30px 0;
+  padding-left: 0;
+  list-style: none;
+  border-left: 1px solid var(--line, rgba(23,20,17,.14));
+}
+.timeline li {
+  position: relative;
+  margin-left: 18px;
+  padding: 0 0 24px 18px;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent, #c44b2b);
+  box-shadow: 0 0 0 5px rgba(182,67,47,.12);
+}
+.timeline .date {
+  display: block;
+  font-family: "IBM Plex Sans TC", "Noto Sans TC", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent, #c44b2b);
+  margin-bottom: 6px;
+}
+
+/* ---------- Checklist ---------- */
+.checklist {
+  margin: 18px 0 28px;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.checklist li {
+  padding: 14px 16px 14px 44px;
+  position: relative;
+  border-radius: 16px;
+  background: rgba(255,255,255,.42);
+  border: 1px solid rgba(23,20,17,.09);
+}
+.checklist li::before {
+  content: "\2197";
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  font-size: 18px;
+  color: var(--accent, #c44b2b);
+  font-weight: 700;
+}
+
+/* ---------- RWD ---------- */
+@media (max-width: 720px) {
+  .data-grid { grid-template-columns: 1fr; }
+}
