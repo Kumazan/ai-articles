@@ -1,15 +1,14 @@
 ---
 title: "{{TITLE}}"
 date: {{DATE}}
+author: {{AUTHOR}}
 layout: post
 permalink: /{{DATE}}/{{SLUG}}.html
 ---
 
 <div class="hero-badge">AI News · {{DATE}}</div>
 
-# {{TITLE}}
-
-**原文連結：** {{SOURCE_URL}}
+**原文連結：** [{{SOURCE_URL}}]({{SOURCE_URL}})
 
 <div class="sep">· · ·</div>
 
