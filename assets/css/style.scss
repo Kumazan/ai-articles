@@ -261,12 +261,20 @@ pre {
   font-weight: 500 !important;
 }
 
-/* Sidebar is position:fixed by theme; allow scroll when TOC overflows */
+/* Sidebar: theme uses position:fixed; ensure it stays on top and scrollable */
 @media print, screen and (min-width: 961px) {
   header {
-    max-height: 100vh;
+    top: 24px !important;
+    max-height: calc(100vh - 48px);
     overflow-y: auto;
     padding-bottom: 24px;
+    z-index: 10;
+  }
+
+  /* Hide theme footer to avoid overlapping fixed sidebar */
+  footer {
+    position: relative;
+    z-index: 1;
   }
 }
 
