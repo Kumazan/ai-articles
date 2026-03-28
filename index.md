@@ -4,6 +4,10 @@
 
 ## 文章列表
 
+### 2026-03-29
+
+#### ・ [OpenAI Model Spec 的哲學與機制：他們如何決定 ChatGPT 的行為邊界](./2026-03-29/openai-model-spec-approach.html)
+
 ### 2026-03-13
 
 #### ・ [兩個月 21,000 顆星：Vercel 的 agent-browser 為什麼讓 AI 工程師瘋狂？](./2026-03-13/vercel-agent-browser-why-ai-engineers-care.html)
