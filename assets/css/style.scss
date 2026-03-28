@@ -269,13 +269,12 @@ pre {
     max-height: calc(100vh - 48px);
     overflow-y: auto;
     padding-bottom: 24px;
-    z-index: 10;
   }
 
-  /* Hide theme footer to avoid overlapping fixed sidebar */
+  /* Push footer to right column so it doesn't overlap fixed sidebar */
   footer {
-    position: relative;
-    z-index: 1;
+    margin-left: 290px !important;
+    width: 560px !important;
   }
 }
 
