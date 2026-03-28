@@ -10,8 +10,6 @@ permalink: /2026-03-29/openai-model-spec-approach.html
 
 **原文連結：** [https://openai.com/index/our-approach-to-the-model-spec/](https://openai.com/index/our-approach-to-the-model-spec/)
 
-<div class="sep">· · ·</div>
-
 ## 摘要
 
 - OpenAI 的 Model Spec 是一份公開的行為規範文件，定義模型應如何遵從指令、解決衝突、尊重用戶自由，並讓外部人士能公開審視與辯論
@@ -19,6 +17,8 @@ permalink: /2026-03-29/openai-model-spec-approach.html
 - Model Spec 是「介面（interface），而非實作（implementation）」——它描述期望行為，而不是訓練細節，主要受眾是人類（研究者、政策制定者、公眾），而非模型本身
 - OpenAI 與 Anthropic 方法截然不同：前者偏行為規範（像判例法），後者（Claude Constitution）偏哲學論文，且 Anthropic 會直接把 Constitution 餵給模型學習
 - 文章同時揭露了爭議背景：OpenAI 曾簽署國防部合約（Anthropic 因紅線拒絕），後因批評而修訂；Model Spec 明確寫明模型不應被用於「大規模國內監控」
+
+<div class="sep">· · ·</div>
 
 ## 內文（繁中翻譯）
 
