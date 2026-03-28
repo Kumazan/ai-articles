@@ -21,7 +21,6 @@ permalink: /2026-02-15/personal-panopticon-claude-code.html
 
 <div class="sep">· · ·</div>
 
-## 內文（繁中翻譯）
 
 ### 凌晨四點的不可思議
 

@@ -19,7 +19,6 @@ permalink: /2026-02-19/building-resilient-prompts-evaluation-flywheel.html
 
 <div class="sep">· · ·</div>
 
-## 內文（繁中翻譯）
 
 ## Overview
 

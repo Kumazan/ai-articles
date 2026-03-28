@@ -19,7 +19,6 @@ permalink: /2026-02-19/lessons-building-claude-code-prompt-caching.html
 
 <div class="sep">· · ·</div>
 
-## 內文（繁中翻譯）
 
 工程界常說「快取主宰一切（Cache Rules Everything Around Me）」，這條定律同樣適用於 AI agents。
 
