@@ -261,12 +261,12 @@ pre {
   font-weight: 500 !important;
 }
 
-/* Make sidebar sticky on desktop for TOC visibility */
+/* Sidebar is position:fixed by theme; allow scroll when TOC overflows */
 @media print, screen and (min-width: 961px) {
   header {
-    position: sticky !important;
-    top: 24px;
-    align-self: start;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 24px;
   }
 }
 
