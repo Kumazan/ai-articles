@@ -6,6 +6,8 @@
 
 ### 2026-03-30
 
+#### ・ [OpenAI 收購 Astral：uv、Ruff 背後的公司將加入 Codex 生態](./2026-03-30/openai-acquires-astral-uv-ruff.html)
+
 #### ・ [衡量 AGI 進展：Google DeepMind 的認知分類框架](./2026-03-30/deepmind-measuring-agi-cognitive-framework.html)
 
 ### 2026-03-29
