@@ -50,6 +50,12 @@
       while (footer.firstChild) {
         sidebarFooter.appendChild(footer.firstChild);
       }
+      var maintained = sidebarFooter.querySelectorAll('p');
+      maintained.forEach(function(p) {
+        if (p.textContent.indexOf('Kumazan') !== -1) {
+          p.textContent = p.textContent.replace('Kumazan', 'Kuma');
+        }
+      });
       header.appendChild(sidebarFooter);
     }
   });
