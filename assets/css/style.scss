@@ -260,7 +260,7 @@ pre {
 @media print, screen and (min-width: 961px) {
   header {
     top: 24px !important;
-    max-height: calc(100vh - 48px);
+    height: calc(100vh - 48px);
     overflow-y: auto;
     padding-bottom: 24px;
     display: flex;
