@@ -1,6 +1,6 @@
 # AI News & Articles
 
-歡迎來到 Kuma 的 AI 翻譯文章專區。
+歡迎來到 Kuma 的 AI 翻譯文章專區
 
 ## 文章列表
 
