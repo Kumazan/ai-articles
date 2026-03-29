@@ -25,13 +25,11 @@ html {
 html {
   width: 100%;
   scroll-behavior: smooth;
-  /* Do NOT set overflow-x: hidden on html — iOS treats body as a
-     separate scroll container, killing momentum/inertial scroll */
 }
 
 body {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -41,8 +39,6 @@ body {
   font-size: 16px !important;
   line-height: 1.8 !important;
   -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
 }
 
 /* Disable double-tap-to-zoom globally — eliminates 300ms touch delay
