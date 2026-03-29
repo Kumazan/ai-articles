@@ -6,6 +6,8 @@
 
 ### 2026-03-29
 
+#### ・ [我如何使用 Obsidian：Obsidian 創辦人的 Vault 系統全解](./2026-03-29/how-i-use-obsidian-vault-steph-ango.html)
+
 #### ・ [當 AI 成為你的應聲蟲：Stanford 大規模研究發現 11 款 LLM 普遍過度肯定用戶](./2026-03-29/stanford-ai-sycophancy-personal-advice.html)
 
 #### ・ [別再叫它記憶：每一篇「AI + Obsidian」教學的根本問題](./2026-03-29/stop-calling-it-memory-obsidian.html)
