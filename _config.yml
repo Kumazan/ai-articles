@@ -1,1 +1,6 @@
 theme: jekyll-theme-minimal
+url: https://kumazan.github.io
+baseurl: /ai-articles
+title: AI Articles
+description: AI 領域精選文章翻譯
+locale: zh-TW

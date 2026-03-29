@@ -1,6 +1,7 @@
 ---
 title: "建構 Claude Code 學到的教訓：Prompt Caching 就是一切"
 date: 2026-02-19
+description: "Anthropic 分享 Claude Code 的 prompt caching 架構心得：前綴匹配、快取命中率監控，以及常見的快取失效陷阱。"
 layout: post
 permalink: /2026-02-19/lessons-building-claude-code-prompt-caching.html
 ---

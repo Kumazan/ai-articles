@@ -2,6 +2,7 @@
 title: "用 Evaluation Flywheel 打造更穩健的 Prompt"
 date: 2026-02-19
 author: OpenAI Cookbook
+description: "OpenAI Cookbook 提出 Evaluation Flywheel 方法：透過分析、量測、改進的迭代循環，系統化打造穩健的 prompt。"
 layout: post
 permalink: /2026-02-19/building-resilient-prompts-evaluation-flywheel.html
 ---

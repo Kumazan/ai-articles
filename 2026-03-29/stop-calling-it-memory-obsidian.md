@@ -2,6 +2,7 @@
 title: "別再叫它記憶：每一篇「AI + Obsidian」教學的根本問題"
 date: 2026-03-29
 author: Jonathan Edwards
+description: "為什麼用 Obsidian markdown 當 AI 記憶系統是根本性的誤解——資料庫存知識、markdown 存指令，別搞混。"
 layout: post
 permalink: /2026-03-29/stop-calling-it-memory-obsidian.html
 ---

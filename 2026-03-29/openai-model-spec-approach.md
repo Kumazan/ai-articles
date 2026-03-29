@@ -2,6 +2,7 @@
 title: "OpenAI Model Spec 的哲學與機制：他們如何決定 ChatGPT 的行為邊界"
 date: 2026-03-29
 author: OpenAI Research
+description: "深入解析 OpenAI Model Spec 的哲學與機制：指令鏈架構、不可覆寫紅線，以及與 Anthropic Constitution 的差異。"
 layout: post
 permalink: /2026-03-29/openai-model-spec-approach.html
 ---

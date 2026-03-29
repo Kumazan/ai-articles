@@ -2,6 +2,7 @@
 title: "OpenAI 如何監控內部 Coding Agent 的錯位行為"
 date: 2026-03-29
 author: OpenAI Safety Team
+description: "OpenAI 用 GPT-5.4 驅動的即時監控系統，偵測內部 coding agent 的錯位行為，五個月內分析數千萬條軌跡。"
 layout: post
 permalink: /2026-03-29/openai-monitoring-coding-agents-misalignment.html
 ---

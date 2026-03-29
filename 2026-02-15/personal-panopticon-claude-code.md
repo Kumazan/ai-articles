@@ -2,6 +2,7 @@
 title: "個人全景監獄：用 Claude Code 管理整個人生"
 date: 2026-02-15
 author: Molly Cantillon
+description: "用 Claude Code 建立 8 個平行 agent 全面自動化生活，從一夜打造千萬人使用的工具到父母學會命令列的真實故事。"
 layout: post
 permalink: /2026-02-15/personal-panopticon-claude-code.html
 ---

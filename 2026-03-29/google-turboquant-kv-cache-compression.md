@@ -2,6 +2,7 @@
 title: "Google TurboQuant：用極致壓縮重新定義 AI 效率"
 date: 2026-03-29
 author: Clinton Stark / Stark Insider
+description: "Google TurboQuant 將 LLM 的 KV Cache 壓縮 6 倍，零精度損失、免重訓練，社群已推出三種開源實作。"
 layout: post
 permalink: /2026-03-29/google-turboquant-kv-cache-compression.html
 ---
