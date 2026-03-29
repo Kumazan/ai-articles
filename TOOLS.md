@@ -39,6 +39,11 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - 亞洲區來回：商務 60,000 哩 / 經濟 35,000 哩 / 頭等 100,000 哩。
 - 商務艙貴賓室：僅限本人使用，不可攜伴（不論現金票或哩程票，除非具備 Explorer 以上身分）。
 
+### Discord Gotchas
+- 指令 silent fail 根本原因：`commands.useAccessGroups` 預設 `true`，guild 若沒設 `users` allowlist → 所有人都是 unauthorized sender，`/` 指令被靜默忽略
+- 修法：在 `guilds.<guildId>.users` 加入 Discord user ID（Kuma: `"662155611232010251"`）
+- `autoThreadName: "generated"`（v2026.3.24 新功能）：auto thread 改用 LLM 異步 rename，產生更精簡的標題（預設是取訊息第一行）
+
 ### Bird (X/Twitter CLI)
 - Installed via: `npm i -g @steipete/bird` (v0.8.0, deprecated but functional)
 - Auth: env vars `AUTH_TOKEN` + `CT0` from OpenClaw browser profile
