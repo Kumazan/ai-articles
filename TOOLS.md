@@ -52,10 +52,17 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - Installed via: `bun install -g https://github.com/tobi/qmd`
 - Author: Tobi Lütke (Shopify founder)
 - PATH: `$HOME/.bun/bin` (added to ~/.zshrc)
-- Collection: `workspace` → `/Users/kumax/.openclaw/workspace` (`**/*.md`, 426 files)
-- Commands: `qmd search "query"` (BM25, instant), `qmd vsearch` (vector, slow cold start), `qmd get "file"` (retrieve)
+- Collections:
+  - `workspace` → `/Users/kumax/.openclaw/workspace` (`**/*.md`, 426 files)
+  - `obsidian` → `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Kuma` (`**/*.md`, 31 files)
+- Commands:
+  - `qmd search "query"` — BM25 關鍵字搜尋（快，需精確詞）
+  - `qmd query "query"` — 語義搜尋 + reranker（跨語言，稍慢但強）
+  - `qmd get "file"` — 取得特定檔案內容
 - Reindex: `qmd update` / `qmd embed` (for vectors)
-- Use `qmd search` as default; `memory_search` for memory-specific recall
+- Reranker model: Qwen3 reranker 0.6B（已下載到 ~/.cache/qmd/models/）
+- 使用策略: 知道確切詞 → `qmd search`；語意/跨語言 → `qmd query`；記憶相關 → `memory_search`
+- 上次 embed: 2026-03-29（1150 chunks, workspace + obsidian）
 
 ### auto-skill (自進化知識系統)
 - Installed via: `git clone https://github.com/toolsai/auto-skill` → `skills/auto-skill/`

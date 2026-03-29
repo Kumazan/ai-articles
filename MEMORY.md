@@ -1,7 +1,11 @@
 # MEMORY.md
 
 ## Top Rules（最高優先）
-- **任何 repo 開發改動前，必先讀該 repo 的 CLAUDE.md**（如果存在）。這是 Kuma 常用 CC 自行開發的前提，違反此規則視為任務失敗。(Set 2026-03-20)
+- **飯店房價與房況驗證（必讀）**：
+  - 嚴禁誤報：飯店網頁顯示「已售罄」時，頁面顯示的價格通常是其他日期或參考起價，絕對不能當作搜尋日期的價格。
+  - 必備檢查：必須確認頁面不含「無空房」紅字警告，且價格確實對應指定日期。
+  - 回報格式：若無房，必須明確回報「❌ 已售罄」或「❌ 該日期不接受預訂」。 (Set 2026-03-29)
+- **機票票價邏輯 (星宇官網)**：官網搜尋結果中，回程顯示的價格通常是「在去程基礎上的加價差額」，並非獨立票價。計算總價時需加總兩段金額。 (Set 2026-03-29)
 
 ## Kuma / Preferences
 - Prefers Traditional Chinese (zh-tw); casual tone. (See USER.md)
@@ -80,6 +84,9 @@ Source: user message 2026-02-09.
 - **Meta + Manus**：收購後 AI agents 整合進 Ads Manager、Instagram、WhatsApp Business。
 
 ## Tools & Techniques
+- qmd Obsidian 整合（2026-03-29）：`obsidian` collection 已加入 qmd，31 個筆記 + 1150 chunks 向量嵌入。用 `qmd query` 做語義搜尋（跨語言）。bundled obsidian skill 已 disable，改用官方 obsidian-cli（需 app 在跑）。learn skill 已加 `qmd update` 步驟。
+
+
 - claude.ai 用量監控：用 `openclaw browser navigate` + `openclaw browser evaluate` 打 `/api/organizations/.../subscription_details`，比直接 CDP 簡單，且 Cloudflare cookie 正確。(2026-03-14)
 - OpenClaw gateway 維護：升級後若 embed token 異常，用 `openclaw gateway install --force` + bootstrap 修復。目前版本 2026.3.8，pid 80538。(2026-03-19)
 

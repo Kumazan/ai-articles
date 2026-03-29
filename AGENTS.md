@@ -42,6 +42,16 @@ Don't ask permission. Just do it.
 
 Kuma 的跨裝置筆記，iCloud 同步。完成重要設定或架構變更時，更新對應筆記。新專案加到 `Projects/`。
 
+**Obsidian Skill 選用規則（2026-03-29）：**
+- 使用 `obsidian-cli` skill（官方 CLI，需要 Obsidian app 在跑）
+- bundled `obsidian` skill 已 disable（舊的 npm 第三方工具，功能較弱）
+- Obsidian app 在 Mac mini 上常駐，官方 CLI 隨時可用
+
+**Obsidian + qmd 整合（2026-03-29）：**
+- qmd 已加 `obsidian` collection，索引 31 個 vault 筆記
+- 搜尋時 workspace + Obsidian 雙邊覆蓋，用 `qmd query` 做語義搜尋（跨語言）
+- 更新 Obsidian 筆記後記得跑 `qmd update` 同步索引
+
 ## Memory
 
 You wake up fresh each session. These files are your continuity:
@@ -124,6 +134,14 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - 給出未驗證的直連並聲稱「已確認」
 - 猜測 URL slug（如 `/hotel/jp/guessed-name.html`）
 - 把 WAF challenge 當作「頁面存在」的證據
+
+## Channel Context
+
+頻道 topic 含 `📓` 時，表示有對應的 Obsidian 筆記。用 `obsidian-cli` 讀取上下文：
+- 指向檔案 → `obsidian-cli print "{路徑}"`
+- 指向資料夾 → 先 `obsidian-cli list "{路徑}"` 看結構，再讀重要筆記
+
+進入頻道時自動讀取，不需要問使用者。
 
 ## Safety
 
