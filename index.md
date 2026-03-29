@@ -6,6 +6,8 @@
 
 ### 2026-03-29
 
+#### ・ [別再叫它記憶：每一篇「AI + Obsidian」教學的根本問題](./2026-03-29/stop-calling-it-memory-obsidian.html)
+
 #### ・ [Google TurboQuant：用極致壓縮重新定義 AI 效率](./2026-03-29/google-turboquant-kv-cache-compression.html)
 
 #### ・ [OpenAI 如何監控內部 Coding Agent 的錯位行為](./2026-03-29/openai-monitoring-coding-agents-misalignment.html)
