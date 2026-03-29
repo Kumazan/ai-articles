@@ -263,6 +263,8 @@ pre {
     max-height: calc(100vh - 48px);
     overflow-y: auto;
     padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Hide original footer — content moved to sidebar via JS */
@@ -273,7 +275,7 @@ pre {
 
 /* Sidebar footer */
 .sidebar-footer {
-  margin-top: 24px;
+  margin-top: auto;
   padding-top: 16px;
   border-top: 1px solid var(--faint);
   font-size: 0.75rem;
