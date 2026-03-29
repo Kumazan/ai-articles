@@ -4,6 +4,10 @@
 
 ## 文章列表
 
+### 2026-03-30
+
+#### ・ [衡量 AGI 進展：Google DeepMind 的認知分類框架](./2026-03-30/deepmind-measuring-agi-cognitive-framework.html)
+
 ### 2026-03-29
 
 #### ・ [當 AI 成為你的應聲蟲：Stanford 大規模研究發現 11 款 LLM 普遍過度肯定用戶](./2026-03-29/stanford-ai-sycophancy-personal-advice.html)
