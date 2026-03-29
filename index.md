@@ -6,6 +6,8 @@
 
 ### 2026-03-29
 
+#### ・ [OpenAI 如何監控內部 Coding Agent 的錯位行為](./2026-03-29/openai-monitoring-coding-agents-misalignment.html)
+
 #### ・ [OpenAI Model Spec 的哲學與機制：他們如何決定 ChatGPT 的行為邊界](./2026-03-29/openai-model-spec-approach.html)
 
 ### 2026-03-13
