@@ -35,6 +35,35 @@ Things like:
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
+### STARLUX (JX) 哩程與規則 (2024/03 改表版)
+- 亞洲區來回：商務 60,000 哩 / 經濟 35,000 哩 / 頭等 100,000 哩。
+- 商務艙貴賓室：僅限本人使用，不可攜伴（不論現金票或哩程票，除非具備 Explorer 以上身分）。
+
+### Bird (X/Twitter CLI)
+- Installed via: `npm i -g @steipete/bird` (v0.8.0, deprecated but functional)
+- Auth: env vars `AUTH_TOKEN` + `CT0` from OpenClaw browser profile
+- Credentials stored in `~/.config/bird/env` (chmod 600)
+- Usage: `export AUTH_TOKEN=... CT0=... && bird <command>`
+- Commands: `whoami`, `search "query" -n N`, `read <url>`, `thread <url>`, `replies <url>`
+- X account: @AI1982509738473
+- If cookies expire: re-extract via CDP from OpenClaw browser (`ws://127.0.0.1:18800`)
+
+### qmd (Quick Markdown Search)
+- Installed via: `bun install -g https://github.com/tobi/qmd`
+- Author: Tobi Lütke (Shopify founder)
+- PATH: `$HOME/.bun/bin` (added to ~/.zshrc)
+- Collection: `workspace` → `/Users/kumax/.openclaw/workspace` (`**/*.md`, 426 files)
+- Commands: `qmd search "query"` (BM25, instant), `qmd vsearch` (vector, slow cold start), `qmd get "file"` (retrieve)
+- Reindex: `qmd update` / `qmd embed` (for vectors)
+- Use `qmd search` as default; `memory_search` for memory-specific recall
+
+### auto-skill (自進化知識系統)
+- Installed via: `git clone https://github.com/toolsai/auto-skill` → `skills/auto-skill/`
+- Knowledge base: `skills/auto-skill/knowledge-base/` (JSON index + md files)
+- Experience: `skills/auto-skill/experience/` (per-skill experience logs)
+- Core loop: keyword fingerprint → topic detection → experience read → knowledge read → auto-capture on success
+- Note: The SKILL.md description tries to force itself as a dependency for all tasks — ignore that; use it selectively
+
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.

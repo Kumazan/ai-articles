@@ -9,6 +9,7 @@
 - 對既有工作分支的正常開發節奏，Kuma 偏好直接 commit + push，不用每次先詢問。 (Set 2026-02-19)
 - GitHub PR 合併偏好：使用 squash merge，並在合併後刪除分支（delete branch）。 (Set 2026-02-19)
 - `gh pr create` 規則：所有 PR 建立指令必須加上 `--reviewer @copilot`，自動觸發 Copilot code review。 (Set 2026-03-28)
+- Copilot Review Loop（Set 2026-03-29）：PR 建立後自動進入 review loop，最多 3 輪。每輪流程：background polling 等回覆（間隔 60s，不要 sleep 空等燒 token）→ 讀取未 resolve 的 comments → 修 code + commit + push → 回覆每個 comment（`gh api .../comments/{id}/replies`）→ resolve thread（GraphQL `resolveReviewThread`）→ re-add reviewer（`gh pr edit --add-reviewer @copilot`）。退出條件：新 review 的 comments = 0 或第 3 輪。
 - 股市分析偏好：每次做股市/盤勢分析時，優先使用 `stock-analysis` skill（搭配目前盤前/盤後分析框架）。 (Set 2026-02-24)
 - 股市報告流程偏好：先 `stock-analysis`（決策/信心/風險），再 `stock-market-pro`（價格/基本面/圖表佐證）；結論以 `stock-analysis` 為主。 (Set 2026-02-24)
 - 財經新聞分析報告格式（Set 2026-02-25）：Kuma 貼財經新聞時，自動用「資深交易員」框架輸出完整報告。結構：⏱️ 時間框架（前置判斷）→ 📋 交易核心 → 🔍 背後意義 → 📊 投資策略（看多標的＋看空/迴避標的，各含利多/風險/觀點/工具）→ 風險情境（🟢🟡🔴）→ 整體判斷 → ⏰ 催化劑時間線（條列）→ 📌 相關個股清單（一行一個，美股優先，台股僅直接相關）→ 💰 估值參考（1-2個最高優先標的）。風格：直接有觀點、結論先行、美股為主＋台股供應鏈。
@@ -30,7 +31,7 @@
 - OpenClaw 遠端 Gateway 固定做法（Set 2026-03-09）：Mac mini 走 Tailscale Serve + `gateway.trustedProxies: ["127.0.0.1", "::1"]` + device pairing；常駐背景服務用 `openclaw gateway install/start`（LaunchAgent）。新裝置若看到 `pairing required`，在 Mac 上跑 `openclaw devices list` → `openclaw devices approve <requestId>`。
 - OpenClaw 更新方式（Set 2026-03-28）：**永遠用 `npm update -g openclaw`**，不要用 `openclaw update`（會在重啟後掉連線、拿不到結果、讓人很煩）。更新後用 `openclaw --version` 確認版本。
 - OpenClaw / AI agent 情報偏好（Set 2026-03-10）：Kuma 偏好「實用技巧／實戰流程／踩坑修法」類型的整理，價值高於單純新功能列表；訂閱模式為「每日更新，但只有有料才推」+「每週整理」。
-- STARLUX / COSMILE 亞洲－歐洲／美洲線獎勵票速記（Set 2026-03-11）：經濟艙單程 50,000 哩／來回 100,000 哩；豪華經濟艙單程 60,000 哩／來回 120,000 哩；商務艙單程 90,000 哩／來回 180,000 哩。共通：改票免手續費、退票 USD 50、未登機（2024-06-01 含後）USD 100。之後 Kuma 問星宇長程哩程兌換時可直接用這組基準先估值。
+- STARLUX 哩程兌換速記 → 已歸檔至 Obsidian `Projects/STARLUX 哩程兌換.md`
 
 ## Infrastructure
 - Linode (Akamai) VPS used for OpenClaw gateway:
@@ -64,21 +65,8 @@ Source: user message 2026-02-09.
 
 ## Projects
 - pokopia-zh：寶可夢 Pokopia 中文整理站，private repo + Cloudflare Pages，方向 `play.kumax.dev/pokopia`，主色百變怪紫。翻譯基準：wiki.52poke.com；專長官方用語已確認為「專長」（共 17 種）；進化機制無練等，棲息地直接招募。 (Updated 2026-03-14)
-- Kuma 報名 4/18 搖滾路跑 肌肉組（HYROX），訓練站：`https://kumazan.github.io/hyrox-training/`。曼谷之旅（3/18-3/24）已結束，回台繼續備賽。 (Set 2026-03-12, Updated 2026-03-28)
-
-## Bangkok Trip 3/18–3/24（已完成）
-- 去程 JX745 3/18 13:25 TPE → 16:30 BKK；回程 JX742 3/24 13:45 BKK → 18:25 TPE
-- 住宿：Silom Serene（3/18–3/22）→ Kimpton Maa-Lai（3/22–3/24）
-- 亮點：大城一日遊（邦芭茵夏宮、樹根佛頭）、Tingly Thai 烹飪課、3/21 寺廟半日遊
-- 3/22 小郭 31 歲生日：Ruby's Experience 16:00 + Inddee 晚餐 19:30（RWZTH3HCBYK）
-- 3/24 回程，已安全返台。(Completed 2026-03-24)
-
-## Fitness / Health
-- 跑步實測基準（2026-03-12）：16 分鐘跑 1.86K，配速 ~8'34"/km，心率 169 avg / 194 max。策略：保守配速、跑走交替、控心率。
-- 農夫走路 25kg×2 可走 ~40 步，非主要弱項；主攻跑步/波比跳前進/弓箭步。
-- 上斜啞鈴臥推 24kg 為 12 下工作重量，目標 4 組。
-- World Gym 啞鈴以 2kg 為級距（24/26/28kg），不要建議 25/27.5kg。
-- Kuma 曾被啞鈴夾傷小拇指（2026-03-12），短期避免重握力訓練。
+- 搖滾路跑 肌肉組（HYROX）備賽：4/18 比賽，訓練細節 → Obsidian `Projects/搖滾路跑肌肉組.md`
+- Bangkok 曼谷之旅（3/18–3/24）：已完成，詳情 → Obsidian `Projects/2026 曼谷慶生之旅/`
 
 ## Web / CSS Lessons
 
@@ -99,7 +87,14 @@ Source: user message 2026-02-09.
 - Kanban API: 間歇性 500 error（missing ./331.js），非關鍵。(Since ~2026-03-01)
 
 ## Messaging / Platform Quirks
-- **Telegram Markdown bug**：冒號後緊接 backtick code block，Telegram 解析器會靜默吃掉後半段。修法：code 另起一行獨立傳，不接在行尾冒號後。(2026-03-17)
+- **Telegram MarkdownV2 冒號+backtick bug**（2026-03-17，confirmed 2026-03-28）：冒號後緊接 backtick，MarkdownV2 解析器誤判格式邊界，靜默吃掉後半段。根本原因是 MarkdownV2 對特殊字元極敏感。
+  - 方向 1（已執行，2026-03-28 實測有效）：
+    - code block 前後要有換行（不能緊貼在同一行），不需要完整空行
+    - inline code 正常行內使用，沒問題
+    - 2026-03-28 實測確認：緊貼文字的 code block 也能正常顯示
+    - 不用「→」代替冒號（Kuma 偏好空行，不用箭頭）
+    - Kuma 在對話中親眼確認格式正確顯示（2026-03-28 verified）
+  - 方向 2（已查，2026-03-28）：OpenClaw **已經在用 HTML parse_mode**（官方文件確認）。不需要開 issue。問題根源是 Markdown → HTML 轉換層遇到特殊字元組合可能產出不合法 HTML，Telegram 拒絕後退回純文字。方向 1 依然有效，寫乾淨的 Markdown 能減少轉換層踩雷機率。
 
 ## Archived Index
 - 2026-02-23 清理歸檔（Projects / Model Config / Bangkok Travel）：`memory/archive/longterm-archive-2026-02-23.md`
