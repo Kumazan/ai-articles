@@ -45,7 +45,9 @@ body {
   overflow-y: scroll;
 }
 
-a, button {
+/* Disable double-tap-to-zoom globally — eliminates 300ms touch delay
+   and prevents accidental zoom during swipe on all elements */
+html {
   touch-action: manipulation;
 }
 

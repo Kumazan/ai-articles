@@ -2,13 +2,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/components.css' | relative_url }}">
 <script>
-  // Theme outputs viewport without maximum-scale; override it to prevent iOS text zoom
-  (function() {
-    var vp = document.querySelector('meta[name="viewport"]');
-    if (vp) {
-      vp.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
-    }
-  })();
 
   // Auto-generate sticky TOC from h2/h3 headings in article
   document.addEventListener('DOMContentLoaded', function() {
