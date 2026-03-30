@@ -6,6 +6,8 @@
 
 ### 2026-03-30
 
+#### ・ [分分秒秒：我用 Claude Code 即時破解 LiteLLM PyPI 供應鏈攻擊](./2026-03-30/litellm-supply-chain-attack-claude-code.html)
+
 #### ・ [認知黑暗森林：AI 時代，你的每一個想法都在餵養吃掉你的怪物](./2026-03-30/cognitive-dark-forest.html)
 
 #### ・ [OpenAI 收購 Astral：uv、Ruff 背後的公司將加入 Codex 生態](./2026-03-30/openai-acquires-astral-uv-ruff.html)
