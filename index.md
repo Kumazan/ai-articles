@@ -4,6 +4,10 @@
 
 ## 文章列表
 
+### 2026-03-31
+
+#### ・ [AI 代理可能讓自由軟體再次重要：當「能不能被代理改造」成為新採購標準](./2026-03-31/ai-agents-could-make-free-software-matter-again.html)
+
 ### 2026-03-30
 
 #### ・ [Copilot 悄悄在你的 PR 裡塞廣告：AI 工具的「腐化」時刻到了嗎？](./2026-03-30/copilot-ad-in-pr.html)
