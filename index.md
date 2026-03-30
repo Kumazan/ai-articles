@@ -6,6 +6,8 @@
 
 ### 2026-03-30
 
+#### ・ [Copilot 悄悄在你的 PR 裡塞廣告：AI 工具的「腐化」時刻到了嗎？](./2026-03-30/copilot-ad-in-pr.html)
+
 #### ・ [你打字之前，Cloudflare 已讀完你的 React 狀態：我解密了那支程式](./2026-03-30/chatgpt-cloudflare-turnstile-react-state.html)
 
 #### ・ [分分秒秒：我用 Claude Code 即時破解 LiteLLM PyPI 供應鏈攻擊](./2026-03-30/litellm-supply-chain-attack-claude-code.html)
