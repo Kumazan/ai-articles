@@ -39,6 +39,17 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - 亞洲區來回：商務 60,000 哩 / 經濟 35,000 哩 / 頭等 100,000 哩。
 - 商務艙貴賓室：僅限本人使用，不可攜伴（不論現金票或哩程票，除非具備 Explorer 以上身分）。
 
+### 縮寫速記
+- **cc oet** = Claude Code (opus + extended thinking)
+- **cc** = Claude Code
+
+### Cron Job Gotchas
+
+- **Isolated session 無 message tool**：Cron job 預設跑在 isolated session，該 session **沒有 message tool**。任何在 payload 裡叫代理人用 message tool 發 Discord/Telegram 的指令都會靜默失敗。
+  - 正確做法：在 cron job 的 `delivery` 設定裡指定 `mode: "announce"` + `channel: "discord"` 或 `"telegram"` + `to: "<channel_id>"`，讓 OpenClaw 本身負責推送，不依賴 isolated session 的工具。
+  - 修復後 payload 裡可以移除「用 message tool 發送」的指令，讓 delivery 統一處理。
+  (Set 2026-03-30)
+
 ### Discord Gotchas
 - 指令 silent fail 根本原因：`commands.useAccessGroups` 預設 `true`，guild 若沒設 `users` allowlist → 所有人都是 unauthorized sender，`/` 指令被靜默忽略
 - 修法：在 `guilds.<guildId>.users` 加入 Discord user ID（Kuma: `"662155611232010251"`）
