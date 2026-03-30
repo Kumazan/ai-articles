@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Deep Research Extractor",
+  "version": "1.0",
+  "description": "自動讀取 ChatGPT Deep Research 報告並複製到剪貼簿或傳送到 OpenClaw",
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://connector_openai_deep_research.web-sandbox.oaiusercontent.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://connector_openai_deep_research.web-sandbox.oaiusercontent.com/*"],
+      "js": ["iframe_reader.js"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "clipboardWrite",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Deep Research Extractor"
+  }
+}

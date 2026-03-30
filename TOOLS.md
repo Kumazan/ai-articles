@@ -55,6 +55,27 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - 修法：在 `guilds.<guildId>.users` 加入 Discord user ID（Kuma: `"662155611232010251"`）
 - `autoThreadName: "generated"`（v2026.3.24 新功能）：auto thread 改用 LLM 異步 rename，產生更精簡的標題（預設是取訊息第一行）
 
+### ChatGPT Deep Research 擷取
+
+- Deep Research 報告在 cross-origin iframe（`connector_openai_deep_research.web-sandbox.oaiusercontent.com`），CDP / evaluate / peekaboo click 全部無效
+- **正式解法（推薦）**：Chrome Extension 已建立，位於 `workspace/tools/chatgpt-dr-extractor/`
+  - `all_frames: true` 讓 `iframe_reader.js` 注入 iframe 讀取 `document.body.innerText`
+  - 安裝：`chrome://extensions/` → 開發人員模式 → 載入未封裝項目 → 選該資料夾
+  - Deep Research 完成後頁面右下角出現「📋 複製研究報告」按鈕，點一下即可
+- **臨時解法（已驗證）**：用 `openclaw browser evaluate` 在父頁面 dispatch MouseEvent 到 iframe 中的「匯出」按鈕座標 → `pbpaste` → python3 Big5 decode
+  - iframe 位置：`getBoundingClientRect()` 取得（通常 left:92, top:292）
+  - 匯出按鈕在 iframe 截圖的約 (178, 203)，`aria-label="匯出"`
+  - decode 範例：`raw.decode('big5', errors='replace')`，並清除 `?entity?` / `?cite?` 標記
+- **peekaboo 截圖 OCR**：備用方案，解析度低、準確率差，不推薦
+
+### peekaboo (macOS UI Automation)
+
+- `peekaboo click` 的坑：click 會打到**最前景視窗**，不是 focus 的視窗。OpenClaw browser 視窗在不同 Space 時完全無法操作
+- 截圖方式：用 `--pid <PID>` 或 `--mode screen` 截全螢幕最可靠；OpenClaw browser 的 Chrome PID 通常是 25116（`ps aux | grep "remote-debugging-port=18800"` 確認）
+- 截圖檔案大需壓縮才能送 image tool：`sips -s format jpeg -s formatOptions 60 input.png --out output.jpg`
+- Screen Recording 權限要授權給 **node**（不是 peekaboo 本身），因為 OpenClaw gateway 是 node process
+- Accessibility 權限：授權給 node 或 Terminal 均可
+
 ### Bird (X/Twitter CLI)
 - Installed via: `npm i -g @steipete/bird` (v0.8.0, deprecated but functional)
 - Auth: env vars `AUTH_TOKEN` + `CT0` from OpenClaw browser profile

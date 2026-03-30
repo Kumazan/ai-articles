@@ -85,6 +85,7 @@ Source: user message 2026-02-09.
 
 ## Skills
 - **deep-research skill**（2026-03-30 建立）：同時對 ChatGPT / Gemini / Claude 三平台送 Deep Research，背景 cron 輪詢，完成後回報各家摘要＋整合報告。State file 存在 `~/workspace/deep-research/`。**使用規則**：收到主題先起草 prompt 給 Kuma 確認再發。各平台擷取細節在 TOOLS.md `## deep-research Skill Gotchas`。
+- **ChatGPT Deep Research 擷取解法**（2026-03-30 確認）：iframe 是 cross-origin sandbox，唯一正式解法是 Chrome Extension（`workspace/tools/chatgpt-dr-extractor/`）。臨時解法：MouseEvent dispatch → pbpaste → Big5 decode。下次執行 deep-research 前，優先確認 Extension 已安裝。
 
 ## Tools & Techniques
 - qmd Obsidian 整合（2026-03-29）：`obsidian` collection 已加入 qmd，31 個筆記 + 1150 chunks 向量嵌入。用 `qmd query` 做語義搜尋（跨語言）。bundled obsidian skill 已 disable，改用官方 obsidian-cli（需 app 在跑）。learn skill 已加 `qmd update` 步驟。
