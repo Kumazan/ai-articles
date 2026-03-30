@@ -6,6 +6,8 @@
 
 ### 2026-03-30
 
+#### ・ [你打字之前，Cloudflare 已讀完你的 React 狀態：我解密了那支程式](./2026-03-30/chatgpt-cloudflare-turnstile-react-state.html)
+
 #### ・ [分分秒秒：我用 Claude Code 即時破解 LiteLLM PyPI 供應鏈攻擊](./2026-03-30/litellm-supply-chain-attack-claude-code.html)
 
 #### ・ [認知黑暗森林：AI 時代，你的每一個想法都在餵養吃掉你的怪物](./2026-03-30/cognitive-dark-forest.html)
