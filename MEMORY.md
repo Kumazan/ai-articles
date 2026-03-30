@@ -83,6 +83,9 @@ Source: user message 2026-02-09.
 - **OpenAI GPT-5.4（3/5）**：百萬 token context，OSWorld-V 得分 75%（略超人類基準 72.4%），標誌 AI 從聊天轉向自主數位工作者。
 - **Meta + Manus**：收購後 AI agents 整合進 Ads Manager、Instagram、WhatsApp Business。
 
+## Skills
+- **deep-research skill**（2026-03-30 建立）：同時對 ChatGPT / Gemini / Claude 三平台送 Deep Research，背景 cron 輪詢，完成後回報各家摘要＋整合報告。State file 存在 `~/workspace/deep-research/`。**使用規則**：收到主題先起草 prompt 給 Kuma 確認再發。各平台擷取細節在 TOOLS.md `## deep-research Skill Gotchas`。
+
 ## Tools & Techniques
 - qmd Obsidian 整合（2026-03-29）：`obsidian` collection 已加入 qmd，31 個筆記 + 1150 chunks 向量嵌入。用 `qmd query` 做語義搜尋（跨語言）。bundled obsidian skill 已 disable，改用官方 obsidian-cli（需 app 在跑）。learn skill 已加 `qmd update` 步驟。
 

@@ -87,6 +87,15 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - Core loop: keyword fingerprint → topic detection → experience read → knowledge read → auto-capture on success
 - Note: The SKILL.md description tries to force itself as a dependency for all tasks — ignore that; use it selectively
 
+### deep-research Skill Gotchas（2026-03-30）
+
+- ChatGPT Deep Research 送出後有**兩個 tab**：`connector_openai_deep_research`（iframe，不可監控/截圖）和真正的 `chatgpt.com/c/<id>` conversation tab（才是要 polling 的那個）
+- ChatGPT 直通 URL：`https://chatgpt.com/deep-research`（不用手動選 Research 模式）
+- Gemini 報告擷取：`分享及匯出 → 複製內容` → `pbpaste` 取 bytes → `result.stdout.decode('utf-8', errors='replace')`（不能直接讀 str，會亂碼）
+- Gemini 勿點「建立網頁」（會把報告變成 SPA iframe，要找 HTML source 才能讀文字）；直接用「複製內容」
+- Claude artifact 是 isolated iframe 無法跨 origin 讀。要先**點開 Document 卡片**展開右側 panel，才會出現 split Copy button：左半邊直接複製全文，右半邊 ∨ 展開 Download 選單（點左半邊！）
+- `openclaw browser status` 出現 `unknown method: browser.request`：browser plugin 未啟用，在 `plugins.entries` 加 `"browser": {"enabled": true}` 並 restart gateway
+
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.

@@ -255,6 +255,15 @@ Read and follow `HEARTBEAT.md` strictly. Don't just reply `HEARTBEAT_OK` — use
 
 Track checks in `memory/heartbeat-state.json`.
 
+## deep-research Skill 使用規則
+
+收到研究主題後，**不要直接發送**。流程：
+
+1. 起草完整 prompt（含年份、範圍、語言），給 Kuma 看
+2. 等確認 OK → 才同時發送三個平台（ChatGPT / Gemini / Claude）
+
+原因：發前沒確認容易寫錯年份或研究範圍，研究跑了 10-30 分鐘才發現問題。
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
