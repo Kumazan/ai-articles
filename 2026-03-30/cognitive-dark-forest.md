@@ -1,5 +1,6 @@
 ---
 title: "認知黑暗森林：AI 時代，你的每一個想法都在餵養吃掉你的怪物"
+description: "AI 時代，公開你的想法可能正在餵養吃掉你的怪物。借用《黑暗森林》理論，探討 AI 如何將整個網路變成吸收創新者的認知黑洞。"
 date: 2026-03-30
 author: Tomaž Kovačič (ryelang.org)
 layout: post

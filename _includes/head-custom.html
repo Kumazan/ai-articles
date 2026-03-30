@@ -1,7 +1,13 @@
 {% assign og_image = page.image | default: "/assets/og-default.png" | absolute_url %}
+{% assign og_description = page.description | default: site.description %}
+<meta name="description" content="{{ og_description }}">
+<meta property="og:description" content="{{ og_description }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
 <meta property="og:image" content="{{ og_image }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{{ og_image }}">
+<meta name="twitter:description" content="{{ og_description }}">
+<meta name="twitter:title" content="{{ page.title | default: site.title }}">
 
 <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
 
