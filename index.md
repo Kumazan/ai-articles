@@ -6,6 +6,8 @@
 
 ### 2026-03-30
 
+#### ・ [認知黑暗森林：AI 時代，你的每一個想法都在餵養吃掉你的怪物](./2026-03-30/cognitive-dark-forest.html)
+
 #### ・ [OpenAI 收購 Astral：uv、Ruff 背後的公司將加入 Codex 生態](./2026-03-30/openai-acquires-astral-uv-ruff.html)
 
 #### ・ [衡量 AGI 進展：Google DeepMind 的認知分類框架](./2026-03-30/deepmind-measuring-agi-cognitive-framework.html)
