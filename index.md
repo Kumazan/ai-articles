@@ -20,6 +20,8 @@
 
 ### 2026-03-30
 
+#### ・ [Mr. Chatterbox：用維多利亞時代文本訓練的 340M 模型，能在你的電腦上跑了](./2026-03-30/mr-chatterbox-victorian-era-llm.html)
+
 #### ・ [Copilot 悄悄在你的 PR 裡塞廣告：AI 工具的「腐化」時刻到了嗎？](./2026-03-30/copilot-ad-in-pr.html)
 
 #### ・ [你打字之前，Cloudflare 已讀完你的 React 狀態：我解密了那支程式](./2026-03-30/chatgpt-cloudflare-turnstile-react-state.html)
