@@ -120,4 +120,4 @@ Read the above instructions EXACTLY as they are
 
 如果把最近 agent 圈的趨勢一起看，這篇其實跟 coding agent 很像。coding agent 在拼的是 harness、review loop、memory、tooling；voice agent 拼的則是 context semantics、audio pipeline、turn-taking、tool discipline。兩邊表面不同，本質卻很接近：**模型本身只是核心零件，真正把產品做成的，是外圍那一整層系統設計。**
 
-對 Kuma 這種會真的拿 agent 來做事的人來說，這篇比「又有新模型打贏 benchmark」更值得看，因為它給的是能直接轉成產品判斷與工程決策的經驗值。簡單講：如果你現在還把 voice agent 當成加一個麥克風按鈕就好，那大概還在 demo 階段；如果你開始思考 context 分塊、VAD 誤判、tool schema、跨端音訊一致性，才是真的進到產品階段。
+對真的在拿 agent 來做事的人來說，這篇比「又有新模型打贏 benchmark」更值得看，因為它給的是能直接轉成產品判斷與工程決策的經驗值。簡單講：如果你現在還把 voice agent 當成加一個麥克風按鈕就好，那大概還在 demo 階段；如果你開始思考 context 分塊、VAD 誤判、tool schema、跨端音訊一致性，才是真的進到產品階段。
