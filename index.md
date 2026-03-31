@@ -6,6 +6,8 @@
 
 ### 2026-03-31
 
+#### ・ [gstack、Superpowers、CE 不是在打架：一張圖看懂 AI 開發流程的三個分層](./2026-03-31/gstack-superpowers-ce-ai-dev-workflow-layers.html)
+
 #### ・ [Claude Code 創辦人點名 15 個被低估的功能：從寫程式助手走向可持續運作的開發系統](./2026-03-31/claude-code-underrated-features-boris-cherny.html)
 
 #### ・ [AI 代理可能讓自由軟體再次重要：當「能不能被代理改造」成為新採購標準](./2026-03-31/ai-agents-could-make-free-software-matter-again.html)
