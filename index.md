@@ -6,6 +6,8 @@
 
 ### 2026-03-31
 
+#### ・ [AI 時代科技圈最後 4 種工作？其實更值得看的是 coding agent 基礎設施之戰](./2026-03-31/last-4-jobs-in-tech-agent-harness-race.html)
+
 #### ・ [gstack、Superpowers、CE 不是在打架：一張圖看懂 AI 開發流程的三個分層](./2026-03-31/gstack-superpowers-ce-ai-dev-workflow-layers.html)
 
 #### ・ [Claude Code 創辦人點名 15 個被低估的功能：從寫程式助手走向可持續運作的開發系統](./2026-03-31/claude-code-underrated-features-boris-cherny.html)
