@@ -1,0 +1,4 @@
+[     606ms] [ERROR] Not signed in with the identity provider. @ https://www.agoda.com/zh-tw/dormy-inn-ikebukuro-hot-spring/hotel/tokyo-jp.html?checkIn=2026-06-25&los=3&rooms=1&adults=2&children=0&currency=TWD:0
+[    2285ms] [ERROR] Attestation check for Attribution Reporting on https://www.facebook.com failed. @ https://www.agoda.com/zh-tw/dormy-inn-ikebukuro-hot-spring/hotel/tokyo-jp.html?checkIn=2026-06-25&los=3&rooms=1&adults=2&children=0&currency=TWD&ds=HGsju%2BdwWLxtxXSA:0
+[    3398ms] [WARNING] [Meta Pixel] - Duplicate Pixel ID: 446731502144130. @ https://connect.facebook.net/en_US/fbevents.js:175
+[    8634ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://www.agoda.com/zh-tw/dormy-inn-ikebukuro-hot-spring/hotel/tokyo-jp.html?checkIn=2026-06-25&los=3&rooms=1&adults=2&children=0&currency=TWD:49

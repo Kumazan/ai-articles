@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(gem*)",
-      "Bash(mkdir*)"
+      "Bash(mkdir*)",
+      "Bash(rm*)",
+      "Bash(qmd*)"
     ]
   }
 }

@@ -1,0 +1,4 @@
+[     956ms] [ERROR] Not signed in with the identity provider. @ https://www.agoda.com/zh-tw/hotel-gracery-shinjuku/hotel/tokyo-jp.html?adults=2&children=0&rooms=1&checkIn=2026-06-25&los=3&currencyCode=TWD:0
+[    3532ms] [WARNING] [Meta Pixel] - Duplicate Pixel ID: 446731502144130. @ https://connect.facebook.net/en_US/fbevents.js:175
+[    4459ms] [ERROR] Attestation check for Attribution Reporting on https://www.facebook.com failed. @ https://www.agoda.com/zh-tw/hotel-gracery-shinjuku/hotel/tokyo-jp.html?adults=2&children=0&rooms=1&checkIn=2026-06-25&los=3&currencyCode=TWD&ds=ryYvC8WdNnqtXp32:0
+[   13477ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://www.agoda.com/zh-tw/hotel-gracery-shinjuku/hotel/tokyo-jp.html?adults=2&children=0&rooms=1&checkIn=2026-06-25&los=3&currencyCode=TWD:49

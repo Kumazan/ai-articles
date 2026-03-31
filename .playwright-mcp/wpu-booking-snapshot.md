@@ -1,0 +1,2073 @@
+- generic [active] [ref=e1]:
+  - link "跳至主頁" [ref=e3] [cursor=pointer]:
+    - /url: "#basiclayout"
+    - generic [ref=e5]: 跳至主頁
+  - banner [ref=e9]:
+    - generic [ref=e10]:
+      - navigation [ref=e11]:
+        - link "Booking.com" [ref=e15] [cursor=pointer]:
+          - /url: https://www.booking.com/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+          - img [ref=e16]
+        - generic [ref=e18]:
+          - button "價格為新臺幣" [ref=e20] [cursor=pointer]:
+            - generic [ref=e21]: TWD
+          - button "所選語言為繁體中文" [ref=e23] [cursor=pointer]
+          - link "顧客支援服務" [ref=e28] [cursor=pointer]:
+            - /url: https://secure.booking.com/help.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d&source=header&src=profile_contact_cs
+            - img [ref=e31]
+          - link "將您的住宿註冊上線" [ref=e33] [cursor=pointer]:
+            - /url: https://join.booking.com/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&lang=zh-tw&sid=732eeb16769713240c374abc00097a1d&utm_medium=frontend&utm_source=topbar
+            - generic [ref=e34]: 將您的住宿註冊上線
+          - link "註冊帳戶" [ref=e35] [cursor=pointer]:
+            - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=zh-tw&aid=304142&bkng_action=hotel&prompt=signin&state=UqUC-MxhLiJwYQgzaPs5HUSCAl5thOgaN3cmvbw5yz2_vbb6qtvfAOqlItp29yW5606e6HpoHbpoHMyZI4qzO_ytKHuIokpAem16xN2UMlgCsPys_iMxnrzSZ_n0tT7mddmPdhoUpQWOBTDr2zUgmaF2qMB-krd3tzQqqtIrIXO7pNLzf9YkKDp6L2m5TPGzG6bOq7b9XEqaT_9lwA5F1zhlX6Ppfkv2rAaS1TIAPv-cO0XdcM811SEqspCr8Q_DxhglJwnK5hmyPu-nPMzmxHgduu2gd68nsmMAfFFMxfwUolwSJBYEsMdnc4FDpt-6ZixkYgs-uINH9ZpfUk_gc-bdtDfrO7LPj7qO3bIuPyQf-u4-EUgC2IGGFTEEgBVm3JubM5r7kb8%3D*eyJpZCI6InRyYXZlbGxlcl9oZWFkZXIifQ%3D%3D
+            - generic [ref=e36]: 註冊
+          - link "登入" [ref=e38] [cursor=pointer]:
+            - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=zh-tw&aid=304142&bkng_action=hotel&prompt=signin&state=UqUC-MxhLiJwYQgzaPs5HUSCAl5thOgaN3cmvbw5yz2_vbb6qtvfAOqlItp29yW5606e6HpoHbpoHMyZI4qzO_ytKHuIokpAem16xN2UMlgCsPys_iMxnrzSZ_n0tT7mddmPdhoUpQWOBTDr2zUgmaF2qMB-krd3tzQqqtIrIXO7pNLzf9YkKDp6L2m5TPGzG6bOq7b9XEqaT_9lwA5F1zhlX6Ppfkv2rAaS1TIAPv-cO0XdcM811SEqspCr8Q_DxhglJwnK5hmyPu-nPMzmxHgduu2gd68nsmMAfFFMxfwUolwSJBYEsMdnc4FDpt-6ZixkYgs-uINH9ZpfUk_gc-bdtDfrO7LPj7qO3bIuPyQf-u4-EUgC2IGGFTEEgBVm3JubM5r7kb8%3D*eyJpZCI6InRyYXZlbGxlcl9oZWFkZXIifQ%3D%3D
+            - generic [ref=e39]: 登入
+      - navigation "想找什麼呢？" [ref=e40]:
+        - menubar [ref=e42]:
+          - menuitem "住宿" [ref=e43] [cursor=pointer]:
+            - generic [ref=e44]:
+              - img [ref=e46]
+              - generic [ref=e48]: 住宿
+          - menuitem "航班" [ref=e49] [cursor=pointer]:
+            - generic [ref=e50]:
+              - img [ref=e52]
+              - generic [ref=e54]: 航班
+          - menuitem "機票 + 飯店" [ref=e55] [cursor=pointer]:
+            - generic [ref=e56]:
+              - img [ref=e58]
+              - generic [ref=e60]: 機票 + 飯店
+          - menuitem "租車" [ref=e61] [cursor=pointer]:
+            - generic [ref=e62]:
+              - img [ref=e64]
+              - generic [ref=e66]: 租車
+          - menuitem "景點／活動" [ref=e67] [cursor=pointer]:
+            - generic [ref=e68]:
+              - img [ref=e70]
+              - generic [ref=e72]: 景點／活動
+          - menuitem "機場計程車" [ref=e73] [cursor=pointer]:
+            - generic [ref=e74]:
+              - img [ref=e76]
+              - generic [ref=e78]: 機場計程車
+  - region "搜尋住宿" [ref=e84]:
+    - generic [ref=e85]:
+      - generic [ref=e91]:
+        - img [ref=e94]
+        - combobox "你要去哪裡？" [ref=e96]: 東京
+        - button "清除" [ref=e99] [cursor=pointer]:
+          - img "清除" [ref=e100]:
+            - img [ref=e101]
+      - button "6 月 25 日（四） — 6 月 28 日（日）" [ref=e105] [cursor=pointer]:
+        - generic [ref=e106]:
+          - img [ref=e108]
+          - generic [ref=e110]: 6 月 25 日（四）
+          - generic [ref=e111]: —
+          - generic [ref=e112]: 6 月 28 日（日）
+      - button "旅客和房間數。目前已選擇：2 位成人 · 0 位孩童 · 1 間房" [ref=e115] [cursor=pointer]:
+        - generic [ref=e116]:
+          - img [ref=e118]
+          - text: 2 位成人 · 0 位孩童 · 1 間房
+        - img [ref=e121]
+      - button "搜尋" [ref=e124] [cursor=pointer]:
+        - generic [ref=e125]: 搜尋
+  - generic [ref=e127]:
+    - navigation "Breadcrumbs" [ref=e131]:
+      - list [ref=e132]:
+        - listitem [ref=e133]:
+          - link "首頁" [ref=e134] [cursor=pointer]:
+            - /url: https://www.booking.com/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE
+            - generic [ref=e135]: 首頁
+          - img [ref=e137]
+        - listitem [ref=e139]:
+          - link "飯店" [ref=e140] [cursor=pointer]:
+            - /url: https://www.booking.com/hotel/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE
+            - generic [ref=e141]: 飯店
+          - img [ref=e143]
+        - listitem [ref=e145]:
+          - link "日本" [ref=e146] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&dest_id=106&dest_type=country
+            - generic [ref=e147]: 日本
+          - img [ref=e149]
+        - listitem [ref=e151]:
+          - link "東京都" [ref=e152] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&dest_id=4720&dest_type=region
+            - generic [ref=e153]: 東京都
+          - img [ref=e155]
+        - listitem [ref=e157]:
+          - link "東京" [ref=e158] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&dest_id=-246227&dest_type=city
+            - generic [ref=e159]: 東京
+          - img [ref=e161]
+        - listitem [ref=e163]:
+          - link "新宿區" [ref=e164] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&dest_id=316&dest_type=district
+            - generic [ref=e165]: 新宿區
+          - img [ref=e167]
+        - listitem [ref=e169]:
+          - heading "WPÜ HOTEL Shinjuku (飯店)（日本）優惠" [level=1] [ref=e171]:
+            - generic [ref=e172]: WPÜ HOTEL Shinjuku (飯店)（日本）優惠
+    - generic [ref=e173]:
+      - main [ref=e174]:
+        - generic [ref=e175]:
+          - generic [ref=e177]:
+            - navigation "前往此頁面各區塊的連結" [ref=e181]:
+              - list [ref=e183]:
+                - listitem [ref=e184]:
+                  - link "總覽" [ref=e185] [cursor=pointer]:
+                    - /url: "#hotelTmpl"
+                    - generic [ref=e187]: 總覽
+                - listitem [ref=e188]:
+                  - link "資訊 & 房價" [ref=e189] [cursor=pointer]:
+                    - /url: "#availability"
+                    - generic [ref=e191]: 資訊 & 房價
+                - listitem [ref=e192]:
+                  - link "設施" [ref=e193] [cursor=pointer]:
+                    - /url: "#hp_facilities_box"
+                    - generic [ref=e195]: 設施
+                - listitem [ref=e196]:
+                  - link "住宿規定" [ref=e197] [cursor=pointer]:
+                    - /url: "#policies"
+                    - generic [ref=e199]: 住宿規定
+                - listitem [ref=e200]:
+                  - link "重要／法律資訊" [ref=e201] [cursor=pointer]:
+                    - /url: "#important_info"
+                    - generic [ref=e203]: 重要／法律資訊
+                - listitem [ref=e204]:
+                  - link "住客評語 （4,498）" [ref=e205] [cursor=pointer]:
+                    - /url: "#blockdisplay4"
+                    - generic [ref=e207]: 住客評語 （4,498）
+            - generic [ref=e209]:
+              - generic [ref=e210]:
+                - button "將此項目儲存到旅程清單" [ref=e218] [cursor=pointer]:
+                  - img [ref=e2708]
+                - button "分享此住宿" [ref=e227] [cursor=pointer]:
+                  - img [ref=e230]
+                - button "現在就預訂" [ref=e232] [cursor=pointer]:
+                  - generic [ref=e233]: 現在就預訂
+                - button "買貴退差價" [ref=e237] [cursor=pointer]:
+                  - img [ref=e240]
+                  - generic [ref=e242]: 買貴退差價
+              - generic [ref=e244]:
+                - generic [ref=e247]:
+                  - button "評分為 3 顆星，滿分為 5" [ref=e249] [cursor=pointer]:
+                    - img "評分為 3 顆星，滿分為 5" [ref=e250]:
+                      - generic [ref=e251]:
+                        - img [ref=e253]
+                        - img [ref=e256]
+                      - generic [ref=e258]:
+                        - img [ref=e260]
+                        - img [ref=e263]
+                      - generic [ref=e265]:
+                        - img [ref=e267]
+                        - img [ref=e270]
+                  - button [ref=e273] [cursor=pointer]:
+                    - img [ref=e275]
+                - heading "WPÜ HOTEL Shinjuku" [level=2] [ref=e278]
+              - generic [ref=e283]:
+                - link "WPÜ HOTEL Shinjuku, 東京 - 查看位置" [ref=e284] [cursor=pointer]:
+                  - /url: "#map_opened-map_trigger_header_pin"
+                  - img [ref=e287]
+                - generic [ref=e289]:
+                  - button "東京都, 東京, 7-10-5 Nishi-Shinjuku, 日本" [ref=e291] [cursor=pointer]:
+                    - generic [ref=e292]:
+                      - text: 東京都, 東京, 7-10-5 Nishi-Shinjuku, 日本
+                      - generic [ref=e293]:
+                        - generic [ref=e294]:
+                          - text: 位置絕佳—獲評 9.5/10！
+                          - generic [ref=e295]: （分數彙整自 4440 則評語）
+                        - generic [ref=e296]: 由顧客於實際入住WPÜ HOTEL Shinjuku後評定。
+                  - text: –
+                  - link "地理位置超棒－顯示地圖" [ref=e297] [cursor=pointer]:
+                    - /url: "#map_opened-map_trigger_header"
+                  - text: –
+                  - button "附近地鐵/火車站" [ref=e2711] [cursor=pointer]:
+                    - generic [ref=e2712]:
+                      - text: 附近地鐵/火車站
+                      - generic [ref=e2713]: 200 公尺 步行，從 Shinjuku-Nishiguchi Station 站
+            - generic "WPÜ HOTEL Shinjuku相片集" [ref=e301]:
+              - region "WPÜ HOTEL Shinjuku的相簿" [ref=e303]:
+                - generic [ref=e306]:
+                  - generic [ref=e307]:
+                    - button "東京的住宿－WPÜ HOTEL Shinjuku，相簿中的一張相片" [ref=e309] [cursor=pointer]:
+                      - img "東京的住宿－WPÜ HOTEL Shinjuku，相簿中的一張相片" [ref=e311]
+                    - generic [ref=e312]:
+                      - button "飯店所在的建築" [ref=e314] [cursor=pointer]:
+                        - img "飯店所在的建築" [ref=e316]
+                      - button "入住WPÜ HOTEL Shinjuku的旅客" [ref=e318] [cursor=pointer]:
+                        - img "入住WPÜ HOTEL Shinjuku的旅客" [ref=e320]
+                  - generic [ref=e321]:
+                    - button "WPÜ HOTEL Shinjuku休息區" [ref=e323] [cursor=pointer]:
+                      - img "WPÜ HOTEL Shinjuku休息區" [ref=e325]
+                    - button "WPÜ HOTEL Shinjuku休息區" [ref=e327] [cursor=pointer]:
+                      - img "WPÜ HOTEL Shinjuku休息區" [ref=e329]
+                    - button "入住WPÜ HOTEL Shinjuku的旅客" [ref=e331] [cursor=pointer]:
+                      - img "入住WPÜ HOTEL Shinjuku的旅客" [ref=e333]
+                    - button "入住WPÜ HOTEL Shinjuku的旅客" [ref=e335] [cursor=pointer]:
+                      - img "入住WPÜ HOTEL Shinjuku的旅客" [ref=e337]
+                    - generic [ref=e338]:
+                      - button "WPÜ HOTEL Shinjuku電視和／或娛樂中心 +25 張相片" [ref=e339] [cursor=pointer]:
+                        - img "WPÜ HOTEL Shinjuku電視和／或娛樂中心 +25 張相片" [ref=e341]
+                      - generic: +25 張相片
+            - generic [ref=e343]:
+              - generic [ref=e346]:
+                - link "分數8.7分 評比很棒" [ref=e348] [cursor=pointer]:
+                  - /url: "#blockdisplay4"
+                  - generic [ref=e351]:
+                    - generic [ref=e352]: 分數8.7分
+                    - generic [ref=e353]: "8.7"
+                    - generic [ref=e354]: 評比很棒
+                    - generic [ref=e355]:
+                      - generic [ref=e356]: 很棒
+                      - generic [ref=e357]: 4,498 則評語
+                - separator [ref=e358]
+                - generic [ref=e360]:
+                  - heading "入住這間住宿的旅客喜歡：" [level=3] [ref=e361]
+                  - generic [ref=e362]:
+                    - region "入住這間住宿的旅客喜歡：" [ref=e363]:
+                      - group [ref=e364]:
+                        - generic [ref=e366]:
+                          - generic [ref=e369]: 「一切都很好，員工也很和善，用心協助需求。打掃也很乾淨。這是一家很用心優秀的飯店，這是我第一次來 El Paso ，讓我對這裡的印象很好。下次來還會來入住這裡」
+                          - generic [ref=e371]:
+                            - generic [ref=e2714]: S
+                            - generic [ref=e375]:
+                              - text: Shu
+                              - img "臺灣" [ref=e376]
+                              - generic [ref=e377]: 臺灣
+                      - group [ref=e378]:
+                        - generic [ref=e380]:
+                          - generic [ref=e383]: 「前台24小時專人服務 天天打掃整理房間 提供簡易早餐」
+                          - generic [ref=e385]:
+                            - generic [ref=e387]: 俊
+                            - generic [ref=e389]:
+                              - text: 俊傑
+                              - img "臺灣" [ref=e390]
+                              - generic [ref=e391]: 臺灣
+                      - group [ref=e392]:
+                        - generic [ref=e394]:
+                          - generic [ref=e397]: 「房間很舒適！位置超好」
+                          - generic [ref=e403]:
+                            - text: Tsai
+                            - img "臺灣" [ref=e404]
+                            - generic [ref=e405]: 臺灣
+                      - group [ref=e406]:
+                        - generic [ref=e408]:
+                          - generic [ref=e411]: 「住宿地點在新宿鬧區，附近就有全家和藥妝店，走路一下下就是拉麵一級戰區，覺得很方便！」
+                          - generic [ref=e417]:
+                            - text: Christine
+                            - img "臺灣" [ref=e418]
+                            - generic [ref=e419]: 臺灣
+                      - group [ref=e420]:
+                        - generic [ref=e422]:
+                          - generic [ref=e425]: 「服務人員超親切，早晚餐都好好吃！」
+                          - generic [ref=e431]:
+                            - text: Lifen
+                            - img "臺灣" [ref=e432]
+                            - generic [ref=e433]: 臺灣
+                      - group [ref=e434]:
+                        - generic [ref=e436]:
+                          - generic [ref=e439]: 「離新宿鬧區很近，房間稍小一點，對於獨旅一個人有夠用」
+                          - generic [ref=e441]:
+                            - generic [ref=e443]: 親
+                            - generic [ref=e445]:
+                              - text: 親梅
+                              - img "臺灣" [ref=e446]
+                              - generic [ref=e447]: 臺灣
+                      - group [ref=e448]:
+                        - generic [ref=e450]:
+                          - generic [ref=e453]: 「2026.01.18當天很幸運,辦理入住時遇到櫃台人員也是台灣人,他人超級Nice,很有耐心地幫我們解答,他推薦的拉麵店都很好吃哦!!(謝謝你) 住宿地點超級棒!對於 冰淇淋腳...」
+                          - generic [ref=e459]:
+                            - text: Niko
+                            - img "臺灣" [ref=e460]
+                            - generic [ref=e461]: 臺灣
+                      - group [ref=e462]:
+                        - generic [ref=e464]:
+                          - generic [ref=e467]: 「有休息區，免費的茶水、麵包」
+                          - generic [ref=e473]:
+                            - text: Hsiuchi
+                            - img "臺灣" [ref=e474]
+                            - generic [ref=e475]: 臺灣
+                      - group [ref=e476]:
+                        - generic [ref=e478]:
+                          - generic [ref=e481]: 「離車站近 很方便」
+                          - generic [ref=e487]:
+                            - text: 施
+                            - img "臺灣" [ref=e488]
+                            - generic [ref=e489]: 臺灣
+                      - group [ref=e490]:
+                        - generic [ref=e492]:
+                          - generic [ref=e495]: 「有免費咖啡與麵包，很讚」
+                          - generic [ref=e501]:
+                            - text: Li
+                            - img "臺灣" [ref=e502]
+                            - generic [ref=e503]: 臺灣
+                    - button "下一個" [ref=e504] [cursor=pointer]:
+                      - img [ref=e507]
+                - separator [ref=e509]
+                - generic [ref=e510]:
+                  - paragraph [ref=e511]: 員工素質
+                  - generic "分數9.5分" [ref=e513]: "9.5"
+              - button "於地圖上顯示" [ref=e2715] [cursor=pointer]:
+                - generic [ref=e2717]:
+                  - generic [ref=e2718]:
+                    - generic:
+                      - generic:
+                        - img
+                      - img [ref=e2719]
+                  - button "於地圖上顯示" [ref=e2721]:
+                    - generic [ref=e2722]: 於地圖上顯示
+          - generic [ref=e520]:
+            - generic [ref=e521]:
+              - generic [ref=e522]:
+                - generic [ref=e524]:
+                  - paragraph [ref=e525]:
+                    - text: 您在WPÜ HOTEL Shinjuku有機會享有 Genius 折扣。請
+                    - link "登入" [ref=e526] [cursor=pointer]:
+                      - /url: https://account.booking.com/auth/oauth2?lang=zh-tw&state=UsgC-MxhLiJwYQhfBBpVE1BsbS0-fjQvm0EMy67zjlQ7C_d3WSrQpBCy4dVAhlToczVEaH2mgzVKQxKKWYQnT-L49266F6obL4p1OYy5qXQMFzfAetsnfUeXDeNiNjvVEgW9hH7sZAa1wRZVDcfaU_Q_wP22KyJUwNsCzCySnCuC1YxKblKwvxYfrNRvhxSQiO3sPclAOWk_ZyxFMplsSU1myXVOPs0QVpJS_LG57XjsSi_TrhXMs8iFSdj3f3IZzYfFqLEdF3VxLpggG89E8-EVLPI-6vj_weyJzEjfibWwSKKEdQPwM2Eu54iN0I72Pv-sObZ9KEQWXsfo9qdX5MrXFobiFdBO-5HaFLc0yySKgpJS2ovUYCiPloSpukVNkZuYXGKWqKWgI9kDUKPLgUnlTYddil4juJ2wlv8-_bEci1MxGWUEu9U_bA&client_id=vO1Kblk7xX9tUn2cpZLS&aid=304142&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&dt=1774960657&bkng_action=hotel&response_type=sso
+                    - text: 查看所選日期是否適用 Genius 折扣。
+                  - paragraph [ref=e527]: 這間住宿是否適用 Genius 折扣，需視建立訂單的日期、住房日期及其他可用優惠而定。
+                  - generic [ref=e528]:
+                    - generic [ref=e529]:
+                      - paragraph [ref=e530]: WPÜ HOTEL Shinjuku 地理位置很好，位於東京，有空調客房、共用休息室、WiFi（免費）和餐廳。附近的人氣景點包括新宿站、 Shinjuku Subnade Shopping Mall 和 Lumine EST Shopping Mall 。這間住宿全面禁菸，距離 Studio Alta 400 公尺。 WPÜ HOTEL Shinjuku 的所有客房均備有電熱水壺。私人衛浴備有沖洗座、免費盥洗用品和吹風機。這間住宿的每間客房都有寢具和毛巾。 櫃台服務人員會講英語和日語，可全天候為住客提供協助。 WPÜ HOTEL Shinjuku 附近的人氣景點包括 Yaso Saijo Monument、 Shinjuku SanPark Shopping Mall 和 Nakamuraya Salon Museum of Art。東京羽田機場距離住宿 22 公里。
+                      - paragraph [ref=e531]: 情侶特別喜歡這個位置－並給他們的雙人旅行住宿體驗 9.6 分。
+                      - paragraph [ref=e532]: 住宿簡介中的距離資訊由 © OpenStreetMap 提供
+                    - button "顯示更多" [ref=e533] [cursor=pointer]:
+                      - generic [ref=e534]: 顯示更多
+                - generic [ref=e538]:
+                  - heading "熱門設施" [level=3] [ref=e539]:
+                    - generic [ref=e540]: 熱門設施
+                  - list [ref=e541]:
+                    - listitem [ref=e542]:
+                      - generic [ref=e543]:
+                        - img [ref=e545]
+                        - generic [ref=e550]: 禁菸客房
+                    - listitem [ref=e551]:
+                      - generic [ref=e552]:
+                        - img [ref=e554]
+                        - generic [ref=e559]: 免費無線網路
+                    - listitem [ref=e560]:
+                      - generic [ref=e561]:
+                        - img [ref=e563]
+                        - generic [ref=e568]: 餐廳
+                    - listitem [ref=e569]:
+                      - generic [ref=e570]:
+                        - img [ref=e572]
+                        - generic [ref=e577]: 24 小時接待櫃檯
+                    - listitem [ref=e578]:
+                      - generic [ref=e579]:
+                        - img [ref=e581]
+                        - generic [ref=e586]: 洗衣
+                    - listitem [ref=e587]:
+                      - generic [ref=e588]:
+                        - img [ref=e590]
+                        - generic [ref=e595]: 電梯
+                    - listitem [ref=e596]:
+                      - generic [ref=e597]:
+                        - img [ref=e599]
+                        - generic [ref=e604]: 每日清潔服務
+                    - listitem [ref=e605]:
+                      - generic [ref=e606]:
+                        - img [ref=e608]
+                        - generic [ref=e613]: 暖氣
+                    - listitem [ref=e614]:
+                      - generic [ref=e615]:
+                        - img [ref=e617]
+                        - generic [ref=e622]: 行李寄存
+                    - listitem [ref=e623]:
+                      - generic [ref=e624]:
+                        - img [ref=e626]
+                        - generic [ref=e631]: 所有客房都有咖啡／沏茶設施
+              - generic [ref=e635]:
+                - heading "住宿特色" [level=3] [ref=e636]
+                - generic [ref=e637]:
+                  - generic [ref=e638]:
+                    - heading "入住 3 晚的最佳選擇！" [level=4] [ref=e639]
+                    - paragraph [ref=e640]:
+                      - img [ref=e642]
+                      - generic [ref=e644]: 位置便利：位於顧客評分高達 9.5 的便利地帶
+                  - generic:
+                    - list
+                  - button "現在就預訂" [ref=e646] [cursor=pointer]:
+                    - generic [ref=e647]: 現在就預訂
+            - separator [ref=e648]
+            - generic [ref=e658]:
+              - generic [ref=e660]:
+                - heading "登入省一筆" [level=3] [ref=e661]
+                - generic [ref=e662]: 您在這間住宿有機會省 10% 或更多—登入查看
+                - generic [ref=e664]:
+                  - link "登入 Booking.com。" [ref=e665] [cursor=pointer]:
+                    - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=zh-tw&aid=304142&bkng_action=hotel&prompt=signin&state=UqUC-MxhLiJwYQgzaPs5HUSCAl5thOgaN3cmvbw5yz2_vbb6qtvfAOqlItp29yW5606e6HpoHbpoHMyZI4qzO_ytKHuIokpAem16xN2UMlgCsPys_iMxnrzSZ_n0tT7mddmPdhoUpQWOBTDr2zUgmaF2qMB-krd3tzQqqtIrIXO7pNLzf9YkKDp6L2m5TPGzG6bOq7b9XEqaT_9lwA5F1zhlX6Ppfkv2rAaS1TIAPv-cO0XdcM811SEqspCr8Q_DxhglJwnK5hmyPu-nPMzmxHgduu2gd68nsmMAfFFMxfwUolwSJBYEsMdnc4FDpt-6ZixkYgs-uINH9ZpfUk_gc-bdtDfrO7LPj7qO3bIuPyQf-u4-EUgC2IGGFTEEgBVm3JubM5r7kb8%3D*eyJpZCI6Im1lcmNoX3BsYXRmb3JtX3Byb3BlcnR5X3BhZ2VfY3RhIn0%3D
+                    - generic [ref=e666]: 登入
+                  - link "建立 Booking.com 帳戶。" [ref=e667] [cursor=pointer]:
+                    - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=zh-tw&aid=304142&bkng_action=hotel&prompt=signin&state=UqUC-MxhLiJwYQgzaPs5HUSCAl5thOgaN3cmvbw5yz2_vbb6qtvfAOqlItp29yW5606e6HpoHbpoHMyZI4qzO_ytKHuIokpAem16xN2UMlgCsPys_iMxnrzSZ_n0tT7mddmPdhoUpQWOBTDr2zUgmaF2qMB-krd3tzQqqtIrIXO7pNLzf9YkKDp6L2m5TPGzG6bOq7b9XEqaT_9lwA5F1zhlX6Ppfkv2rAaS1TIAPv-cO0XdcM811SEqspCr8Q_DxhglJwnK5hmyPu-nPMzmxHgduu2gd68nsmMAfFFMxfwUolwSJBYEsMdnc4FDpt-6ZixkYgs-uINH9ZpfUk_gc-bdtDfrO7LPj7qO3bIuPyQf-u4-EUgC2IGGFTEEgBVm3JubM5r7kb8%3D*eyJpZCI6Im1lcmNoX3BsYXRmb3JtX3Byb3BlcnR5X3BhZ2VfY3RhIn0%3D
+                    - generic [ref=e668]: 建立帳戶
+              - img "登入省一筆" [ref=e672]
+            - generic [ref=e674]:
+              - generic [ref=e675]:
+                - heading "空房情況" [level=2] [ref=e676]
+                - button "買貴退差價" [ref=e680] [cursor=pointer]:
+                  - img [ref=e683]
+                  - generic [ref=e685]: 買貴退差價
+              - generic [ref=e688]:
+                - generic [ref=e689]: 價格已轉換至 TWD
+                - button [ref=e691] [cursor=pointer]:
+                  - img [ref=e694]
+              - region "搜尋住宿" [ref=e698]:
+                - generic [ref=e699]:
+                  - generic [ref=e701]:
+                    - img [ref=e703] [cursor=pointer]
+                    - button "6 月 25 日（四）" [ref=e705] [cursor=pointer]:
+                      - generic [ref=e706]: 6 月 25 日（四）
+                    - generic [ref=e707] [cursor=pointer]: —
+                    - button "6 月 28 日（日）" [ref=e708] [cursor=pointer]:
+                      - generic [ref=e709]: 6 月 28 日（日）
+                  - button "旅客和房間數。目前已選擇：2 位成人 · 0 位孩童 · 1 間房" [ref=e712] [cursor=pointer]:
+                    - generic [ref=e713]:
+                      - img [ref=e715]
+                      - text: 2 位成人 · 0 位孩童 · 1 間房
+                    - img [ref=e718]
+                  - button "更改搜尋條件" [ref=e721] [cursor=pointer]:
+                    - generic [ref=e722]: 更改搜尋條件
+              - generic [ref=e728]:
+                - generic [ref=e731] [cursor=pointer]: 可免費取消
+                - generic [ref=e732]:
+                  - table "請選擇您想預訂的房型與客房數量。" [ref=e734]:
+                    - caption [ref=e735]: 請選擇您想預訂的房型與客房數量。
+                    - rowgroup [ref=e736]:
+                      - row "客房類型 住客人數 3 晚房價 預訂須知 選擇客房" [ref=e737]:
+                        - columnheader "客房類型" [ref=e738]
+                        - columnheader "住客人數" [ref=e739]
+                        - columnheader "3 晚房價" [ref=e740]: 3 晚房價
+                        - columnheader "預訂須知" [ref=e743]
+                        - columnheader "選擇客房" [ref=e744]
+                    - rowgroup [ref=e745]:
+                      - 'row "雙人房 1 張雙人床 空調 房內衛浴 免費 WiFi 包含的設施與服務 最多人數: 2 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e746]':
+                        - rowheader "雙人房 1 張雙人床 空調 房內衛浴 免費 WiFi 包含的設施與服務" [ref=e747]:
+                          - generic [ref=e748]:
+                            - link "雙人房" [ref=e750] [cursor=pointer]:
+                              - /url: "#RD989503702"
+                            - list [ref=e753]:
+                              - listitem [ref=e754]:
+                                - generic [ref=e755]:
+                                  - text: 1 張雙人床
+                                  - generic [ref=e756]: 녌
+                            - generic [ref=e758]:
+                              - list [ref=e759]:
+                                - listitem [ref=e760]:
+                                  - generic [ref=e761]:
+                                    - img [ref=e762]
+                                    - text: 空調
+                                - listitem [ref=e764]:
+                                  - generic [ref=e765]:
+                                    - img [ref=e766]
+                                    - text: 房內衛浴
+                                - listitem [ref=e768]:
+                                  - generic [ref=e769]:
+                                    - img [ref=e770]
+                                    - text: 免費 WiFi
+                              - separator [ref=e772]
+                              - list "包含的設施與服務" [ref=e773]:
+                                - listitem [ref=e774]:
+                                  - generic [ref=e776]:
+                                    - img [ref=e777]
+                                    - text: 免費盥洗用品
+                                - listitem [ref=e779]:
+                                  - generic [ref=e781]:
+                                    - img [ref=e782]
+                                    - text: 浴袍
+                                - listitem [ref=e784]:
+                                  - generic [ref=e786]:
+                                    - img [ref=e787]
+                                    - text: 保險箱
+                                - listitem [ref=e789]:
+                                  - generic [ref=e791]:
+                                    - img [ref=e792]
+                                    - text: 沖洗座
+                                - listitem [ref=e794]:
+                                  - generic [ref=e796]:
+                                    - img [ref=e797]
+                                    - text: 廁所
+                                - listitem [ref=e799]:
+                                  - generic [ref=e801]:
+                                    - img [ref=e802]
+                                    - text: 浴缸或淋浴
+                                - listitem [ref=e804]:
+                                  - generic [ref=e806]:
+                                    - img [ref=e807]
+                                    - text: 毛巾
+                                - listitem [ref=e809]:
+                                  - generic [ref=e811]:
+                                    - img [ref=e812]
+                                    - text: 床單
+                                - listitem [ref=e814]:
+                                  - generic [ref=e816]:
+                                    - img [ref=e817]
+                                    - text: 電視
+                                - listitem [ref=e819]:
+                                  - generic [ref=e821]:
+                                    - img [ref=e822]
+                                    - text: 拖鞋
+                                - listitem [ref=e824]:
+                                  - generic [ref=e826]:
+                                    - img [ref=e827]
+                                    - text: 冰箱
+                                - listitem [ref=e829]:
+                                  - generic [ref=e831]:
+                                    - img [ref=e832]
+                                    - text: 茶／咖啡沖泡設備
+                                - listitem [ref=e834]:
+                                  - generic [ref=e836]:
+                                    - img [ref=e837]
+                                    - text: 暖氣
+                                - listitem [ref=e839]:
+                                  - generic [ref=e841]:
+                                    - img [ref=e842]
+                                    - text: 吹風機
+                                - listitem [ref=e844]:
+                                  - generic [ref=e846]:
+                                    - img [ref=e847]
+                                    - text: 電熱水壺
+                                - listitem [ref=e849]:
+                                  - generic [ref=e851]:
+                                    - img [ref=e852]
+                                    - text: 可搭電梯上樓
+                                - listitem [ref=e854]:
+                                  - generic [ref=e856]:
+                                    - img [ref=e857]
+                                    - text: 衛生紙
+                        - 'cell "最多人數: 2" [ref=e859]':
+                          - generic [ref=e861]:
+                            - generic [ref=e862]:
+                              - generic [ref=e863]: "1"
+                              - generic [ref=e864]: "1"
+                            - generic [ref=e865]: "最多人數: 2"
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e866]:
+                          - generic [ref=e867]:
+                            - generic [ref=e868]:
+                              - generic [ref=e869]:
+                                - generic [ref=e871]: TWD 19,445
+                                - generic [ref=e872]:
+                                  - generic [ref=e873]:
+                                    - text: TWD 17,854
+                                    - img [ref=e875]
+                                  - generic [ref=e878]: 原價 TWD 19,445 目前價格 TWD 17,854
+                              - generic [ref=e879]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e883]:
+                              - generic [ref=e885]: 8% OFF
+                        - cell "若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e886]:
+                          - generic [ref=e887]:
+                            - list [ref=e888]:
+                              - listitem [ref=e889]:
+                                - img [ref=e890]
+                                - generic [ref=e893]:
+                                  - text: 若行程有變
+                                  - strong [ref=e894]: 可更改日期
+                              - listitem [ref=e895]:
+                                - generic [ref=e896]:
+                                  - img [ref=e898]
+                                  - strong [ref=e905]: 不可退款
+                              - listitem [ref=e906]:
+                                - generic [ref=e907]:
+                                  - generic [ref=e909]: •
+                                  - generic [ref=e912]: 線上付款
+                              - listitem [ref=e913]:
+                                - img [ref=e914]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e917]:
+                                  - img [ref=e918]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e928] [cursor=pointer]:
+                              - img [ref=e930]
+                        - cell "選擇客房 0" [ref=e932]:
+                          - generic [ref=e933]:
+                            - generic [ref=e934]: 選擇客房
+                            - combobox "選擇客房" [ref=e935]:
+                              - option "0" [selected]
+                              - option "1 (TWD 17,854)"
+                              - option "2 (TWD 35,707)"
+                              - option "3 (TWD 53,561)"
+                              - option "4 (TWD 71,415)"
+                              - option "5 (TWD 89,269)"
+                              - option "6 (TWD 107,122)"
+                              - option "7 (TWD 124,976)"
+                              - option "8 (TWD 142,830)"
+                              - option "9 (TWD 160,683)"
+                              - option "10 (TWD 178,537)"
+                      - 'row "最多人數: 2 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e936]':
+                        - 'cell "最多人數: 2" [ref=e937]':
+                          - generic [ref=e939]:
+                            - generic [ref=e940]:
+                              - generic [ref=e941]: "1"
+                              - generic [ref=e942]: "1"
+                            - generic [ref=e943]: "最多人數: 2"
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e944]:
+                          - generic [ref=e945]:
+                            - generic [ref=e946]:
+                              - generic [ref=e947]:
+                                - generic [ref=e949]: TWD 21,389
+                                - generic [ref=e950]:
+                                  - generic [ref=e951]:
+                                    - text: TWD 19,639
+                                    - img [ref=e953]
+                                  - generic [ref=e956]: 原價 TWD 21,389 目前價格 TWD 19,639
+                              - generic [ref=e957]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e961]:
+                              - generic [ref=e963]: 8% OFF
+                        - cell "2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e964]:
+                          - generic [ref=e965]:
+                            - list [ref=e966]:
+                              - listitem [ref=e967]:
+                                - generic [ref=e968]:
+                                  - img [ref=e970]
+                                  - generic [ref=e975]:
+                                    - text: 2026年6月23日前（不含當日）可
+                                    - strong [ref=e976]: 免費取消
+                              - listitem [ref=e977]:
+                                - generic [ref=e978]:
+                                  - generic [ref=e980]: •
+                                  - generic [ref=e983]: 2026年6月21日前（不含）無需付款
+                              - listitem [ref=e984]:
+                                - img [ref=e985]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e988]:
+                                  - img [ref=e989]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e999] [cursor=pointer]:
+                              - img [ref=e1001]
+                        - cell "選擇客房 0" [ref=e1003]:
+                          - generic [ref=e1004]:
+                            - generic [ref=e1005]: 選擇客房
+                            - combobox "選擇客房" [ref=e1006]:
+                              - option "0" [selected]
+                              - option "1 (TWD 19,639)"
+                              - option "2 (TWD 39,278)"
+                              - option "3 (TWD 58,917)"
+                              - option "4 (TWD 78,556)"
+                              - option "5 (TWD 98,195)"
+                              - option "6 (TWD 117,834)"
+                              - option "7 (TWD 137,474)"
+                              - option "8 (TWD 157,113)"
+                              - option "9 (TWD 176,752)"
+                              - option "10 (TWD 196,391)"
+                      - 'row "最多人數: 1 限 1 人入住 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e1007]':
+                        - 'cell "最多人數: 1 限 1 人入住" [ref=e1008]':
+                          - generic [ref=e1010]:
+                            - generic [ref=e1012]: "1"
+                            - generic [ref=e1013]: "最多人數: 1"
+                          - generic [ref=e1016]: 限 1 人入住
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1017]:
+                          - generic [ref=e1018]:
+                            - generic [ref=e1019]:
+                              - generic [ref=e1020]:
+                                - generic [ref=e1022]: TWD 17,496
+                                - generic [ref=e1023]:
+                                  - generic [ref=e1024]:
+                                    - text: TWD 16,065
+                                    - img [ref=e1026]
+                                  - generic [ref=e1029]: 原價 TWD 17,496 目前價格 TWD 16,065
+                              - generic [ref=e1030]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1034]:
+                              - generic [ref=e1036]: 8% OFF
+                        - cell "若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e1037]:
+                          - generic [ref=e1038]:
+                            - list [ref=e1039]:
+                              - listitem [ref=e1040]:
+                                - img [ref=e1041]
+                                - generic [ref=e1044]:
+                                  - text: 若行程有變
+                                  - strong [ref=e1045]: 可更改日期
+                              - listitem [ref=e1046]:
+                                - generic [ref=e1047]:
+                                  - img [ref=e1049]
+                                  - strong [ref=e1056]: 不可退款
+                              - listitem [ref=e1057]:
+                                - generic [ref=e1058]:
+                                  - generic [ref=e1060]: •
+                                  - generic [ref=e1063]: 線上付款
+                              - listitem [ref=e1064]:
+                                - img [ref=e1065]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e1068]:
+                                  - img [ref=e1069]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e1079] [cursor=pointer]:
+                              - img [ref=e1081]
+                        - cell "選擇客房 0" [ref=e1083]:
+                          - generic [ref=e1084]:
+                            - generic [ref=e1085]: 選擇客房
+                            - combobox "選擇客房" [ref=e1086]:
+                              - option "0" [selected]
+                              - option "1 (TWD 16,065)"
+                              - option "2 (TWD 32,129)"
+                              - option "3 (TWD 48,194)"
+                              - option "4 (TWD 64,259)"
+                              - option "5 (TWD 80,323)"
+                              - option "6 (TWD 96,388)"
+                              - option "7 (TWD 112,453)"
+                              - option "8 (TWD 128,517)"
+                              - option "9 (TWD 144,582)"
+                              - option "10 (TWD 160,646)"
+                      - 'row "最多人數: 1 限 1 人入住 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e1087]':
+                        - 'cell "最多人數: 1 限 1 人入住" [ref=e1088]':
+                          - generic [ref=e1090]:
+                            - generic [ref=e1092]: "1"
+                            - generic [ref=e1093]: "最多人數: 1"
+                          - generic [ref=e1096]: 限 1 人入住
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1097]:
+                          - generic [ref=e1098]:
+                            - generic [ref=e1099]:
+                              - generic [ref=e1100]:
+                                - generic [ref=e1102]: TWD 19,246
+                                - generic [ref=e1103]:
+                                  - generic [ref=e1104]:
+                                    - text: TWD 17,671
+                                    - img [ref=e1106]
+                                  - generic [ref=e1109]: 原價 TWD 19,246 目前價格 TWD 17,671
+                              - generic [ref=e1110]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1114]:
+                              - generic [ref=e1116]: 8% OFF
+                        - cell "2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e1117]:
+                          - generic [ref=e1118]:
+                            - list [ref=e1119]:
+                              - listitem [ref=e1120]:
+                                - generic [ref=e1121]:
+                                  - img [ref=e1123]
+                                  - generic [ref=e1128]:
+                                    - text: 2026年6月23日前（不含當日）可
+                                    - strong [ref=e1129]: 免費取消
+                              - listitem [ref=e1130]:
+                                - generic [ref=e1131]:
+                                  - generic [ref=e1133]: •
+                                  - generic [ref=e1136]: 2026年6月21日前（不含）無需付款
+                              - listitem [ref=e1137]:
+                                - img [ref=e1138]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e1141]:
+                                  - img [ref=e1142]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e1152] [cursor=pointer]:
+                              - img [ref=e1154]
+                        - cell "選擇客房 0" [ref=e1156]:
+                          - generic [ref=e1157]:
+                            - generic [ref=e1158]: 選擇客房
+                            - combobox "選擇客房" [ref=e1159]:
+                              - option "0" [selected]
+                              - option "1 (TWD 17,671)"
+                              - option "2 (TWD 35,342)"
+                              - option "3 (TWD 53,013)"
+                              - option "4 (TWD 70,684)"
+                              - option "5 (TWD 88,356)"
+                              - option "6 (TWD 106,027)"
+                              - option "7 (TWD 123,698)"
+                              - option "8 (TWD 141,369)"
+                              - option "9 (TWD 159,040)"
+                              - option "10 (TWD 176,711)"
+                      - 'row "標準雙床房 2 張單人床 16 m² 空調 房內衛浴 免費 WiFi 顯示更多設施 最多人數: 2 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e1160]':
+                        - rowheader "標準雙床房 2 張單人床 16 m² 空調 房內衛浴 免費 WiFi 顯示更多設施" [ref=e1161]:
+                          - generic [ref=e1162]:
+                            - link "標準雙床房" [ref=e1164] [cursor=pointer]:
+                              - /url: "#RD989503704"
+                            - list [ref=e1167]:
+                              - listitem [ref=e1168]:
+                                - generic [ref=e1169]:
+                                  - text: 2 張單人床
+                                  - generic [ref=e1170]: 녍
+                            - generic [ref=e1172]:
+                              - list [ref=e1173]:
+                                - listitem [ref=e1174]:
+                                  - generic [ref=e1175]:
+                                    - img [ref=e1176]
+                                    - text: 16 m²
+                                - listitem [ref=e1178]:
+                                  - generic [ref=e1179]:
+                                    - img [ref=e1180]
+                                    - text: 空調
+                                - listitem [ref=e1182]:
+                                  - generic [ref=e1183]:
+                                    - img [ref=e1184]
+                                    - text: 房內衛浴
+                                - listitem [ref=e1186]:
+                                  - generic [ref=e1187]:
+                                    - img [ref=e1188]
+                                    - text: 免費 WiFi
+                              - button "顯示更多設施" [ref=e1190] [cursor=pointer]: 查看更多
+                        - 'cell "最多人數: 2" [ref=e1191]':
+                          - generic [ref=e1193]:
+                            - generic [ref=e1194]:
+                              - generic [ref=e1195]: "1"
+                              - generic [ref=e1196]: "1"
+                            - generic [ref=e1197]: "最多人數: 2"
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1198]:
+                          - generic [ref=e1199]:
+                            - generic [ref=e1200]:
+                              - generic [ref=e1201]:
+                                - generic [ref=e1203]: TWD 20,891
+                                - generic [ref=e1204]:
+                                  - generic [ref=e1205]:
+                                    - text: TWD 19,182
+                                    - img [ref=e1207]
+                                  - generic [ref=e1210]: 原價 TWD 20,891 目前價格 TWD 19,182
+                              - generic [ref=e1211]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1215]:
+                              - generic [ref=e1217]: 8% OFF
+                        - cell "若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e1218]:
+                          - generic [ref=e1219]:
+                            - list [ref=e1220]:
+                              - listitem [ref=e1221]:
+                                - img [ref=e1222]
+                                - generic [ref=e1225]:
+                                  - text: 若行程有變
+                                  - strong [ref=e1226]: 可更改日期
+                              - listitem [ref=e1227]:
+                                - generic [ref=e1228]:
+                                  - img [ref=e1230]
+                                  - strong [ref=e1237]: 不可退款
+                              - listitem [ref=e1238]:
+                                - generic [ref=e1239]:
+                                  - generic [ref=e1241]: •
+                                  - generic [ref=e1244]: 線上付款
+                              - listitem [ref=e1245]:
+                                - img [ref=e1246]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e1249]:
+                                  - img [ref=e1250]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e1260] [cursor=pointer]:
+                              - img [ref=e1262]
+                        - cell "選擇客房 0" [ref=e1264]:
+                          - generic [ref=e1265]:
+                            - generic [ref=e1266]: 選擇客房
+                            - combobox "選擇客房" [ref=e1267]:
+                              - option "0" [selected]
+                              - option "1 (TWD 19,182)"
+                              - option "2 (TWD 38,363)"
+                              - option "3 (TWD 57,545)"
+                              - option "4 (TWD 76,727)"
+                              - option "5 (TWD 95,908)"
+                              - option "6 (TWD 115,090)"
+                              - option "7 (TWD 134,272)"
+                              - option "8 (TWD 153,453)"
+                              - option "9 (TWD 172,635)"
+                              - option "10 (TWD 191,817)"
+                      - 'row "最多人數: 2 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e1268]':
+                        - 'cell "最多人數: 2" [ref=e1269]':
+                          - generic [ref=e1271]:
+                            - generic [ref=e1272]:
+                              - generic [ref=e1273]: "1"
+                              - generic [ref=e1274]: "1"
+                            - generic [ref=e1275]: "最多人數: 2"
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1276]:
+                          - generic [ref=e1277]:
+                            - generic [ref=e1278]:
+                              - generic [ref=e1279]:
+                                - generic [ref=e1281]: TWD 22,980
+                                - generic [ref=e1282]:
+                                  - generic [ref=e1283]:
+                                    - text: TWD 21,100
+                                    - img [ref=e1285]
+                                  - generic [ref=e1288]: 原價 TWD 22,980 目前價格 TWD 21,100
+                              - generic [ref=e1289]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1293]:
+                              - generic [ref=e1295]: 8% OFF
+                        - cell "2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e1296]:
+                          - generic [ref=e1297]:
+                            - list [ref=e1298]:
+                              - listitem [ref=e1299]:
+                                - generic [ref=e1300]:
+                                  - img [ref=e1302]
+                                  - generic [ref=e1307]:
+                                    - text: 2026年6月23日前（不含當日）可
+                                    - strong [ref=e1308]: 免費取消
+                              - listitem [ref=e1309]:
+                                - generic [ref=e1310]:
+                                  - generic [ref=e1312]: •
+                                  - generic [ref=e1315]: 2026年6月21日前（不含）無需付款
+                              - listitem [ref=e1316]:
+                                - img [ref=e1317]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e1320]:
+                                  - img [ref=e1321]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e1331] [cursor=pointer]:
+                              - img [ref=e1333]
+                        - cell "選擇客房 0" [ref=e1335]:
+                          - generic [ref=e1336]:
+                            - generic [ref=e1337]: 選擇客房
+                            - combobox "選擇客房" [ref=e1338]:
+                              - option "0" [selected]
+                              - option "1 (TWD 21,100)"
+                              - option "2 (TWD 42,200)"
+                              - option "3 (TWD 63,299)"
+                              - option "4 (TWD 84,399)"
+                              - option "5 (TWD 105,499)"
+                              - option "6 (TWD 126,599)"
+                              - option "7 (TWD 147,699)"
+                              - option "8 (TWD 168,799)"
+                              - option "9 (TWD 189,898)"
+                              - option "10 (TWD 210,998)"
+                      - 'row "最多人數: 1 限 1 人入住 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e1339]':
+                        - 'cell "最多人數: 1 限 1 人入住" [ref=e1340]':
+                          - generic [ref=e1342]:
+                            - generic [ref=e1344]: "1"
+                            - generic [ref=e1345]: "最多人數: 1"
+                          - generic [ref=e1348]: 限 1 人入住
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1349]:
+                          - generic [ref=e1350]:
+                            - generic [ref=e1351]:
+                              - generic [ref=e1352]:
+                                - generic [ref=e1354]: TWD 15,628
+                                - generic [ref=e1355]:
+                                  - generic [ref=e1356]:
+                                    - text: TWD 14,349
+                                    - img [ref=e1358]
+                                  - generic [ref=e1361]: 原價 TWD 15,628 目前價格 TWD 14,349
+                              - generic [ref=e1362]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1366]:
+                              - generic [ref=e1368]: 8% OFF
+                        - cell "若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e1369]:
+                          - generic [ref=e1370]:
+                            - list [ref=e1371]:
+                              - listitem [ref=e1372]:
+                                - img [ref=e1373]
+                                - generic [ref=e1376]:
+                                  - text: 若行程有變
+                                  - strong [ref=e1377]: 可更改日期
+                              - listitem [ref=e1378]:
+                                - generic [ref=e1379]:
+                                  - img [ref=e1381]
+                                  - strong [ref=e1388]: 不可退款
+                              - listitem [ref=e1389]:
+                                - generic [ref=e1390]:
+                                  - generic [ref=e1392]: •
+                                  - generic [ref=e1395]: 線上付款
+                              - listitem [ref=e1396]:
+                                - img [ref=e1397]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e1400]:
+                                  - img [ref=e1401]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e1411] [cursor=pointer]:
+                              - img [ref=e1413]
+                        - cell "選擇客房 0" [ref=e1415]:
+                          - generic [ref=e1416]:
+                            - generic [ref=e1417]: 選擇客房
+                            - combobox "選擇客房" [ref=e1418]:
+                              - option "0" [selected]
+                              - option "1 (TWD 14,349)"
+                              - option "2 (TWD 28,699)"
+                              - option "3 (TWD 43,048)"
+                              - option "4 (TWD 57,397)"
+                              - option "5 (TWD 71,747)"
+                              - option "6 (TWD 86,096)"
+                              - option "7 (TWD 100,446)"
+                              - option "8 (TWD 114,795)"
+                              - option "9 (TWD 129,144)"
+                              - option "10 (TWD 143,494)"
+                      - 'row "最多人數: 1 限 1 人入住 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e1419]':
+                        - 'cell "最多人數: 1 限 1 人入住" [ref=e1420]':
+                          - generic [ref=e1422]:
+                            - generic [ref=e1424]: "1"
+                            - generic [ref=e1425]: "最多人數: 1"
+                          - generic [ref=e1428]: 限 1 人入住
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1429]:
+                          - generic [ref=e1430]:
+                            - generic [ref=e1431]:
+                              - generic [ref=e1432]:
+                                - generic [ref=e1434]: TWD 17,191
+                                - generic [ref=e1435]:
+                                  - generic [ref=e1436]:
+                                    - text: TWD 15,784
+                                    - img [ref=e1438]
+                                  - generic [ref=e1441]: 原價 TWD 17,191 目前價格 TWD 15,784
+                              - generic [ref=e1442]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1446]:
+                              - generic [ref=e1448]: 8% OFF
+                        - cell "2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e1449]:
+                          - generic [ref=e1450]:
+                            - list [ref=e1451]:
+                              - listitem [ref=e1452]:
+                                - generic [ref=e1453]:
+                                  - img [ref=e1455]
+                                  - generic [ref=e1460]:
+                                    - text: 2026年6月23日前（不含當日）可
+                                    - strong [ref=e1461]: 免費取消
+                              - listitem [ref=e1462]:
+                                - generic [ref=e1463]:
+                                  - generic [ref=e1465]: •
+                                  - generic [ref=e1468]: 2026年6月21日前（不含）無需付款
+                              - listitem [ref=e1469]:
+                                - img [ref=e1470]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e1473]:
+                                  - img [ref=e1474]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e1484] [cursor=pointer]:
+                              - img [ref=e1486]
+                        - cell "選擇客房 0" [ref=e1488]:
+                          - generic [ref=e1489]:
+                            - generic [ref=e1490]: 選擇客房
+                            - combobox "選擇客房" [ref=e1491]:
+                              - option "0" [selected]
+                              - option "1 (TWD 15,784)"
+                              - option "2 (TWD 31,569)"
+                              - option "3 (TWD 47,353)"
+                              - option "4 (TWD 63,137)"
+                              - option "5 (TWD 78,921)"
+                              - option "6 (TWD 94,706)"
+                              - option "7 (TWD 110,490)"
+                              - option "8 (TWD 126,274)"
+                              - option "9 (TWD 142,059)"
+                              - option "10 (TWD 157,843)"
+                      - 'row "單人房 1 張單人床 空調 房內衛浴 免費 WiFi 顯示更多設施 最多人數: 1 限 1 人入住 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e1492]':
+                        - rowheader "單人房 1 張單人床 空調 房內衛浴 免費 WiFi 顯示更多設施" [ref=e1493]:
+                          - generic [ref=e1494]:
+                            - link "單人房" [ref=e1496] [cursor=pointer]:
+                              - /url: "#RD989503701"
+                            - list [ref=e1499]:
+                              - listitem [ref=e1500]:
+                                - generic [ref=e1501]:
+                                  - text: 1 張單人床
+                                  - generic [ref=e1502]: 끉
+                            - generic [ref=e1504]:
+                              - list [ref=e1505]:
+                                - listitem [ref=e1506]:
+                                  - generic [ref=e1507]:
+                                    - img [ref=e1508]
+                                    - text: 空調
+                                - listitem [ref=e1510]:
+                                  - generic [ref=e1511]:
+                                    - img [ref=e1512]
+                                    - text: 房內衛浴
+                                - listitem [ref=e1514]:
+                                  - generic [ref=e1515]:
+                                    - img [ref=e1516]
+                                    - text: 免費 WiFi
+                              - button "顯示更多設施" [ref=e1518] [cursor=pointer]: 查看更多
+                        - 'cell "最多人數: 1 限 1 人入住" [ref=e1519]':
+                          - generic [ref=e1521]:
+                            - generic [ref=e1523]: "1"
+                            - generic [ref=e1524]: "最多人數: 1"
+                          - generic [ref=e1527]: 限 1 人入住
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1528]:
+                          - generic [ref=e1529]:
+                            - generic [ref=e1530]:
+                              - generic [ref=e1531]:
+                                - generic [ref=e1533]: TWD 13,700
+                                - generic [ref=e1534]:
+                                  - generic [ref=e1535]:
+                                    - text: TWD 12,579
+                                    - img [ref=e1537]
+                                  - generic [ref=e1540]: 原價 TWD 13,700 目前價格 TWD 12,579
+                              - generic [ref=e1541]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1545]:
+                              - generic [ref=e1547]: 8% OFF
+                        - cell "若行程有變可更改日期 不可退款 線上付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e1548]:
+                          - generic [ref=e1549]:
+                            - list [ref=e1550]:
+                              - listitem [ref=e1551]:
+                                - img [ref=e1552]
+                                - generic [ref=e1555]:
+                                  - text: 若行程有變
+                                  - strong [ref=e1556]: 可更改日期
+                              - listitem [ref=e1557]:
+                                - generic [ref=e1558]:
+                                  - img [ref=e1560]
+                                  - strong [ref=e1567]: 不可退款
+                              - listitem [ref=e1568]:
+                                - generic [ref=e1569]:
+                                  - generic [ref=e1571]: •
+                                  - generic [ref=e1574]: 線上付款
+                              - listitem [ref=e1575]:
+                                - img [ref=e1576]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e1579]:
+                                  - img [ref=e1580]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e1590] [cursor=pointer]:
+                              - img [ref=e1592]
+                        - cell "選擇客房 0" [ref=e1594]:
+                          - generic [ref=e1595]:
+                            - generic [ref=e1596]: 選擇客房
+                            - combobox "選擇客房" [ref=e1597]:
+                              - option "0" [selected]
+                              - option "1 (TWD 12,579)"
+                              - option "2 (TWD 25,157)"
+                              - option "3 (TWD 37,736)"
+                              - option "4 (TWD 50,315)"
+                              - option "5 (TWD 62,894)"
+                              - option "6 (TWD 75,472)"
+                              - option "7 (TWD 88,051)"
+                              - option "8 (TWD 100,630)"
+                              - option "9 (TWD 113,209)"
+                              - option "10 (TWD 125,787)"
+                      - 'row "最多人數: 1 限 1 人入住 可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。. 2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊 選擇客房 0" [ref=e1598]':
+                        - 'cell "最多人數: 1 限 1 人入住" [ref=e1599]':
+                          - generic [ref=e1601]:
+                            - generic [ref=e1603]: "1"
+                            - generic [ref=e1604]: "最多人數: 1"
+                          - generic [ref=e1607]: 限 1 人入住
+                        - cell "可能產生額外費用 8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1608]:
+                          - generic [ref=e1609]:
+                            - generic [ref=e1610]:
+                              - generic [ref=e1611]:
+                                - generic [ref=e1613]: TWD 15,070
+                                - generic [ref=e1614]:
+                                  - generic [ref=e1615]:
+                                    - text: TWD 13,837
+                                    - img [ref=e1617]
+                                  - generic [ref=e1620]: 原價 TWD 15,070 目前價格 TWD 13,837
+                              - generic [ref=e1621]: 可能產生額外費用
+                            - generic "8% OFF. 若您採線上付款，Booking.com 將會支付該價格中的部分費用，因此您可享有較低的價格。." [ref=e1625]:
+                              - generic [ref=e1627]: 8% OFF
+                        - cell "2026年6月23日前（不含當日）可免費取消 2026年6月21日前（不含）無需付款 登入帳戶可能會有 Genius 折扣。 查看餐食、取消、訂金政策資訊" [ref=e1628]:
+                          - generic [ref=e1629]:
+                            - list [ref=e1630]:
+                              - listitem [ref=e1631]:
+                                - generic [ref=e1632]:
+                                  - img [ref=e1634]
+                                  - generic [ref=e1639]:
+                                    - text: 2026年6月23日前（不含當日）可
+                                    - strong [ref=e1640]: 免費取消
+                              - listitem [ref=e1641]:
+                                - generic [ref=e1642]:
+                                  - generic [ref=e1644]: •
+                                  - generic [ref=e1647]: 2026年6月21日前（不含）無需付款
+                              - listitem [ref=e1648]:
+                                - img [ref=e1649]
+                                - generic "登入帳戶可能會有 Genius 折扣。" [ref=e1652]:
+                                  - img [ref=e1653]
+                                  - text: 方案—有機會享折扣
+                            - button "查看餐食、取消、訂金政策資訊" [ref=e1663] [cursor=pointer]:
+                              - img [ref=e1665]
+                        - cell "選擇客房 0" [ref=e1667]:
+                          - generic [ref=e1668]:
+                            - generic [ref=e1669]: 選擇客房
+                            - combobox "選擇客房" [ref=e1670]:
+                              - option "0" [selected]
+                              - option "1 (TWD 13,837)"
+                              - option "2 (TWD 27,673)"
+                              - option "3 (TWD 41,510)"
+                              - option "4 (TWD 55,346)"
+                              - option "5 (TWD 69,183)"
+                              - option "6 (TWD 83,020)"
+                              - option "7 (TWD 96,856)"
+                              - option "8 (TWD 110,693)"
+                              - option "9 (TWD 124,530)"
+                              - option "10 (TWD 138,366)"
+                  - generic [ref=e1673]:
+                    - button "現在就預訂" [ref=e1675] [cursor=pointer]:
+                      - generic [ref=e1676]: 現在就預訂
+                    - list [ref=e1678]:
+                      - listitem [ref=e1679]: 此步驟還不會收費
+            - generic [ref=e1701]:
+              - generic [ref=e1703]:
+                - generic [ref=e1704]:
+                  - heading "住客評語" [level=2] [ref=e1706]
+                  - button "查看客房供應情況" [ref=e1708] [cursor=pointer]:
+                    - generic [ref=e1709]: 查看客房供應情況
+                - generic [ref=e2725]:
+                  - button "分數8.7分 評比很棒" [ref=e2726] [cursor=pointer]:
+                    - generic [ref=e2727]:
+                      - generic [ref=e2728]: 分數8.7分
+                      - generic [ref=e2729]: "8.7"
+                      - generic [ref=e2730]: 評比很棒
+                      - generic [ref=e2731]:
+                        - generic [ref=e2732]: 很棒
+                        - generic [ref=e2733]: · 4,498 則評語
+                  - button "閱讀所有評語" [ref=e2734] [cursor=pointer]:
+                    - generic [ref=e2735]: 閱讀所有評語
+                - group "評分項目" [ref=e2737]:
+                  - heading "各項目評分：" [level=3] [ref=e2739]
+                  - generic [ref=e2740]:
+                    - generic "平均分數，滿分為10分" [ref=e2742]:
+                      - generic [ref=e2743]:
+                        - generic [ref=e2744]:
+                          - generic [ref=e2747]: 員工素質
+                          - generic [ref=e2749]: "9.5"
+                        - meter "員工素質" [ref=e2750]
+                    - generic "平均分數，滿分為10分" [ref=e2753]:
+                      - generic [ref=e2754]:
+                        - generic [ref=e2755]:
+                          - generic [ref=e2758]: 設施
+                          - generic [ref=e2760]: "8.8"
+                        - meter "設施" [ref=e2761]
+                    - generic "平均分數，滿分為10分" [ref=e2764]:
+                      - generic [ref=e2765]:
+                        - generic [ref=e2766]:
+                          - generic [ref=e2769]: 清潔程度
+                          - generic [ref=e2771]: "9.0"
+                        - meter "清潔程度" [ref=e2772]
+                    - generic "平均分數，滿分為10分" [ref=e2775]:
+                      - generic [ref=e2776]:
+                        - generic [ref=e2777]:
+                          - generic [ref=e2780]: 舒適程度
+                          - generic [ref=e2782]: "9.0"
+                        - meter "舒適程度" [ref=e2783]
+                    - generic "平均分數，滿分為10分" [ref=e2786]:
+                      - generic [ref=e2787]:
+                        - generic [ref=e2788]:
+                          - generic [ref=e2791]: 性價比
+                          - generic [ref=e2793]: "8.6"
+                        - meter "性價比" [ref=e2794]
+                    - generic "平均分數，滿分為10分" [ref=e2797]:
+                      - generic [ref=e2798]:
+                        - generic [ref=e2799]:
+                          - generic [ref=e2802]: 住宿地點
+                          - generic [ref=e2804]: "9.5"
+                        - meter "住宿地點" [ref=e2805]
+                    - generic "平均分數，滿分為10分" [ref=e2808]:
+                      - generic [ref=e2809]:
+                        - generic [ref=e2810]:
+                          - generic [ref=e2813]: 免費 WiFi
+                          - generic [ref=e2815]: "8.8"
+                        - meter "免費 WiFi" [ref=e2816]
+                - group "選擇主題以瀏覽相關評語：" [ref=e2819]:
+                  - heading "選擇主題以瀏覽相關評語：" [level=3] [ref=e2822]
+                  - group "選擇主題以瀏覽相關評語：" [ref=e2824]:
+                    - button "地點" [ref=e2825]:
+                      - checkbox "地點" [ref=e2826]
+                      - generic [ref=e2827] [cursor=pointer]:
+                        - img [ref=e2829]
+                        - generic [ref=e2831]: 地點
+                    - button "客房" [ref=e2832]:
+                      - checkbox "客房" [ref=e2833]
+                      - generic [ref=e2834] [cursor=pointer]:
+                        - img [ref=e2836]
+                        - generic [ref=e2838]: 客房
+                    - button "清潔" [ref=e2839]:
+                      - checkbox "清潔" [ref=e2840]
+                      - generic [ref=e2841] [cursor=pointer]:
+                        - img [ref=e2843]
+                        - generic [ref=e2845]: 清潔
+                    - button "早餐" [ref=e2846]:
+                      - checkbox "早餐" [ref=e2847]
+                      - generic [ref=e2848] [cursor=pointer]:
+                        - img [ref=e2850]
+                        - generic [ref=e2852]: 早餐
+                    - button "咖啡" [ref=e2853]:
+                      - checkbox "咖啡" [ref=e2854]
+                      - generic [ref=e2855] [cursor=pointer]:
+                        - img [ref=e2857]
+                        - generic [ref=e2859]: 咖啡
+                - generic [ref=e2861]:
+                  - generic [ref=e2862]:
+                    - heading "看看住客最喜歡什麼：" [level=3] [ref=e2863]
+                    - generic [ref=e2864]:
+                      - region "看看住客最喜歡什麼：" [ref=e2865]:
+                        - group [ref=e2866]:
+                          - generic [ref=e2868]:
+                            - generic [ref=e2873]:
+                              - generic [ref=e2874]: Shu
+                              - generic [ref=e2875]:
+                                - img "臺灣" [ref=e2876]
+                                - generic [ref=e2877]: 臺灣
+                            - generic [ref=e2880]: 「一切都很好，員工也很和善，用心協助需求。打掃也很乾淨。這是一家很用心優秀的飯店，這是我第一次來 El Paso ，讓我對這裡的印象很好。下次來還會來入住這裡」
+                            - button "閱讀 Shu 的完整評語" [ref=e2882] [cursor=pointer]: 閱讀更多
+                        - group [ref=e2883]:
+                          - generic [ref=e2885]:
+                            - generic [ref=e2887]:
+                              - generic [ref=e2889]: 俊
+                              - generic [ref=e2890]:
+                                - generic [ref=e2891]: 俊傑
+                                - generic [ref=e2892]:
+                                  - img "臺灣" [ref=e2893]
+                                  - generic [ref=e2894]: 臺灣
+                            - generic [ref=e2897]: 「前台24小時專人服務 天天打掃整理房間 提供簡易早餐」
+                            - button "閱讀 俊傑 的完整評語" [ref=e2899] [cursor=pointer]: 閱讀更多
+                        - group [ref=e2900]:
+                          - generic [ref=e2902]:
+                            - generic [ref=e2907]:
+                              - generic [ref=e2908]: Tsai
+                              - generic [ref=e2909]:
+                                - img "臺灣" [ref=e2910]
+                                - generic [ref=e2911]: 臺灣
+                            - generic [ref=e2914]: 「房間很舒適！位置超好」
+                            - button "閱讀 Tsai 的完整評語" [ref=e2916] [cursor=pointer]: 閱讀更多
+                        - group [ref=e2917]:
+                          - generic [ref=e2919]:
+                            - generic [ref=e2924]:
+                              - generic [ref=e2925]: Christine
+                              - generic [ref=e2926]:
+                                - img "臺灣" [ref=e2927]
+                                - generic [ref=e2928]: 臺灣
+                            - generic [ref=e2931]: 「住宿地點在新宿鬧區，附近就有全家和藥妝店，走路一下下就是拉麵一級戰區，覺得很方便！」
+                            - button "閱讀 Christine 的完整評語" [ref=e2933] [cursor=pointer]: 閱讀更多
+                        - group [ref=e2934]:
+                          - generic [ref=e2936]:
+                            - generic [ref=e2941]:
+                              - generic [ref=e2942]: Lifen
+                              - generic [ref=e2943]:
+                                - img "臺灣" [ref=e2944]
+                                - generic [ref=e2945]: 臺灣
+                            - generic [ref=e2948]: 「服務人員超親切，早晚餐都好好吃！」
+                            - button "閱讀 Lifen 的完整評語" [ref=e2950] [cursor=pointer]: 閱讀更多
+                        - group [ref=e2951]:
+                          - generic [ref=e2953]:
+                            - generic [ref=e2955]:
+                              - generic [ref=e2957]: 親
+                              - generic [ref=e2958]:
+                                - generic [ref=e2959]: 親梅
+                                - generic [ref=e2960]:
+                                  - img "臺灣" [ref=e2961]
+                                  - generic [ref=e2962]: 臺灣
+                            - generic [ref=e2965]: 「離新宿鬧區很近，房間稍小一點，對於獨旅一個人有夠用」
+                            - button "閱讀 親梅 的完整評語" [ref=e2967] [cursor=pointer]: 閱讀更多
+                        - group [ref=e2968]:
+                          - generic [ref=e2970]:
+                            - generic [ref=e2975]:
+                              - generic [ref=e2976]: Niko
+                              - generic [ref=e2977]:
+                                - img "臺灣" [ref=e2978]
+                                - generic [ref=e2979]: 臺灣
+                            - generic [ref=e2982]: 「2026.01.18當天很幸運,辦理入住時遇到櫃台人員也是台灣人,他人超級Nice,很有耐心地幫我們解答,他推薦的拉麵店都很好吃哦!!(謝謝你) 住宿地點超級棒!對於 冰淇淋腳 很友善! 飯店後面那條很多餐廳.超市,想逛的店距離也很近 房間空間也很大,隔音很棒,早餐睡過頭沒吃到 結論:我跟朋友下次會再次選擇住這裡 住宿評分:100/100」
+                            - button "閱讀 Niko 的完整評語" [ref=e2984] [cursor=pointer]: 閱讀更多
+                        - group [ref=e2985]:
+                          - generic [ref=e2987]:
+                            - generic [ref=e2992]:
+                              - generic [ref=e2993]: Hsiuchi
+                              - generic [ref=e2994]:
+                                - img "臺灣" [ref=e2995]
+                                - generic [ref=e2996]: 臺灣
+                            - generic [ref=e2999]: 「有休息區，免費的茶水、麵包」
+                            - button "閱讀 Hsiuchi 的完整評語" [ref=e3001] [cursor=pointer]: 閱讀更多
+                        - group [ref=e3002]:
+                          - generic [ref=e3004]:
+                            - generic [ref=e3009]:
+                              - generic [ref=e3010]: 施
+                              - generic [ref=e3011]:
+                                - img "臺灣" [ref=e3012]
+                                - generic [ref=e3013]: 臺灣
+                            - generic [ref=e3016]: 「離車站近 很方便」
+                            - button "閱讀 施 的完整評語" [ref=e3018] [cursor=pointer]: 閱讀更多
+                        - group [ref=e3019]:
+                          - generic [ref=e3021]:
+                            - generic [ref=e3026]:
+                              - generic [ref=e3027]: Li
+                              - generic [ref=e3028]:
+                                - img "臺灣" [ref=e3029]
+                                - generic [ref=e3030]: 臺灣
+                            - generic [ref=e3033]: 「有免費咖啡與麵包，很讚」
+                            - button "閱讀 Li 的完整評語" [ref=e3035] [cursor=pointer]: 閱讀更多
+                      - button "下一個" [ref=e3036] [cursor=pointer]:
+                        - img [ref=e3039]
+                  - button "閱讀所有評語" [ref=e3041] [cursor=pointer]:
+                    - generic [ref=e3042]: 閱讀所有評語
+              - generic [ref=e3047]:
+                - generic [ref=e3048]:
+                  - heading "旅客提問" [level=2] [ref=e3050]:
+                    - generic [ref=e3051]: 旅客提問
+                  - button "查看客房供應情況" [ref=e3053] [cursor=pointer]:
+                    - generic [ref=e3054]: 查看客房供應情況
+                - generic [ref=e3056]:
+                  - generic [ref=e3057]:
+                    - list [ref=e3059]:
+                      - listitem [ref=e3060]:
+                        - button "住宿有供應早餐嗎？" [ref=e3061] [cursor=pointer]:
+                          - generic [ref=e3062]:
+                            - img [ref=e3065]
+                            - generic [ref=e3067]: 住宿有供應早餐嗎？
+                            - img [ref=e3070]
+                      - listitem [ref=e3072]:
+                        - button "可以停車嗎？" [ref=e3073] [cursor=pointer]:
+                          - generic [ref=e3074]:
+                            - img [ref=e3077]
+                            - generic [ref=e3079]: 可以停車嗎？
+                            - img [ref=e3082]
+                      - listitem [ref=e3084]:
+                        - button "有提供機場接駁服務嗎？" [ref=e3085] [cursor=pointer]:
+                          - generic [ref=e3086]:
+                            - img [ref=e3089]
+                            - generic [ref=e3091]: 有提供機場接駁服務嗎？
+                            - img [ref=e3094]
+                      - listitem [ref=e3096]:
+                        - button "餐廳有開放嗎？" [ref=e3097] [cursor=pointer]:
+                          - generic [ref=e3098]:
+                            - img [ref=e3101]
+                            - generic [ref=e3103]: 餐廳有開放嗎？
+                            - img [ref=e3106]
+                      - listitem [ref=e3108]:
+                        - button "有 SPA 嗎？" [ref=e3109] [cursor=pointer]:
+                          - generic [ref=e3110]:
+                            - img [ref=e3113]
+                            - generic [ref=e3115]: 有 SPA 嗎？
+                            - img [ref=e3118]
+                      - listitem [ref=e3120]:
+                        - button "請問貴住宿的 WiFi 政策是？" [ref=e3121] [cursor=pointer]:
+                          - generic [ref=e3122]:
+                            - img [ref=e3125]
+                            - generic [ref=e3127]: 請問貴住宿的 WiFi 政策是？
+                            - img [ref=e3130]
+                      - listitem [ref=e3132]:
+                        - button "可以帶寵物嗎？" [ref=e3133] [cursor=pointer]:
+                          - generic [ref=e3134]:
+                            - img [ref=e3137]
+                            - generic [ref=e3139]: 可以帶寵物嗎？
+                            - img [ref=e3142]
+                      - listitem [ref=e3144]:
+                        - button "有附私人衛浴的客房嗎？" [ref=e3145] [cursor=pointer]:
+                          - generic [ref=e3146]:
+                            - img [ref=e3149]
+                            - generic [ref=e3151]: 有附私人衛浴的客房嗎？
+                            - img [ref=e3154]
+                      - listitem [ref=e3156]:
+                        - button "有游泳池嗎？" [ref=e3157] [cursor=pointer]:
+                          - generic [ref=e3158]:
+                            - img [ref=e3161]
+                            - generic [ref=e3163]: 有游泳池嗎？
+                            - img [ref=e3166]
+                      - listitem [ref=e3168]:
+                        - button "有健身房嗎？" [ref=e3169] [cursor=pointer]:
+                          - generic [ref=e3170]:
+                            - img [ref=e3173]
+                            - generic [ref=e3175]: 有健身房嗎？
+                            - img [ref=e3178]
+                    - generic [ref=e3181]:
+                      - heading "想看看其他問題嗎？" [level=3] [ref=e3182]
+                      - button "提出問題" [ref=e3183] [cursor=pointer]:
+                        - generic [ref=e3184]: 提出問題
+                      - paragraph [ref=e3185]: 大部分的問題，我們都有立即的回答
+                  - button "查看其他問題（20 則）" [ref=e3188] [cursor=pointer]:
+                    - generic [ref=e3189]: 查看其他問題（20 則）
+              - generic [ref=e2079]:
+                - generic [ref=e2080]:
+                  - heading "飯店周圍地區" [level=2] [ref=e2082]:
+                    - generic [ref=e2083]: 飯店周圍地區
+                  - button "查看客房供應情況" [ref=e2085] [cursor=pointer]:
+                    - generic [ref=e2086]: 查看客房供應情況
+                - generic [ref=e2087]:
+                  - generic [ref=e3190]:
+                    - button "住客喜歡在住宿附近散步！" [ref=e3192] [cursor=pointer]:
+                      - generic [ref=e3194]: 住客喜歡在住宿附近散步！
+                    - link "地理位置超棒－顯示地圖" [ref=e3196] [cursor=pointer]:
+                      - /url: "#map_opened-hotel_surroundings"
+                      - generic [ref=e3197]: 地理位置超棒－顯示地圖
+                  - generic [ref=e2088]:
+                    - generic [ref=e3198]:
+                      - generic [ref=e3199]:
+                        - generic [ref=e3200]:
+                          - img [ref=e3202]
+                          - heading "附近有什麼？" [level=3] [ref=e3204]:
+                            - generic [ref=e3205]: 附近有什麼？
+                        - list [ref=e3206]:
+                          - listitem [ref=e3207]:
+                            - listitem [ref=e3209]:
+                              - generic [ref=e3210]:
+                                - generic [ref=e3211]: Seiji Togo Memorial Sompo Japan Nipponkoa Museum of Art
+                                - generic [ref=e3213]: 350 公尺
+                          - listitem [ref=e3214]:
+                            - listitem [ref=e3216]:
+                              - generic [ref=e3217]:
+                                - generic [ref=e3218]: Yaso Saijo Monument
+                                - generic [ref=e3220]: 400 公尺
+                          - listitem [ref=e3221]:
+                            - listitem [ref=e3223]:
+                              - generic [ref=e3224]:
+                                - generic [ref=e3225]: Yaso Saijo Monument
+                                - generic [ref=e3227]: 400 公尺
+                          - listitem [ref=e3228]:
+                            - listitem [ref=e3230]:
+                              - generic [ref=e3231]:
+                                - generic [ref=e3232]: Mode Gakuen Cocoon Tower
+                                - generic [ref=e3234]: 450 公尺
+                          - listitem [ref=e3235]:
+                            - listitem [ref=e3237]:
+                              - generic [ref=e3238]:
+                                - generic [ref=e3239]: Nakamuraya Salon Museum of Art
+                                - generic [ref=e3241]: 450 公尺
+                          - listitem [ref=e3242]:
+                            - listitem [ref=e3244]:
+                              - generic [ref=e3245]:
+                                - generic [ref=e3246]: Samurai Museum
+                                - generic [ref=e3248]: 650 公尺
+                          - listitem [ref=e3249]:
+                            - listitem [ref=e3251]:
+                              - generic [ref=e3252]:
+                                - generic [ref=e3253]: Memorial Museum for Soldiers, Detainees in Siberia, and Postwar Repatriates
+                                - generic [ref=e3255]: 650 公尺
+                          - listitem [ref=e3256]:
+                            - listitem [ref=e3258]:
+                              - generic [ref=e3259]:
+                                - generic [ref=e3260]: Okubo Park
+                                - generic [ref=e3262]: 800 公尺
+                          - listitem [ref=e3263]:
+                            - listitem [ref=e3265]:
+                              - generic [ref=e3266]:
+                                - generic [ref=e3267]: JR Shinjuku Mraina Tower
+                                - generic [ref=e3269]: 800 公尺
+                          - listitem [ref=e3270]:
+                            - listitem [ref=e3272]:
+                              - generic [ref=e3273]:
+                                - generic [ref=e3274]: Korea Museum
+                                - generic [ref=e3276]: 900 公尺
+                      - generic [ref=e3277]:
+                        - generic [ref=e3278]:
+                          - img [ref=e3280]
+                          - heading "餐廳 & 咖啡店" [level=3] [ref=e3282]:
+                            - generic [ref=e3283]: 餐廳 & 咖啡店
+                        - list [ref=e3284]:
+                          - listitem [ref=e3285]:
+                            - listitem [ref=e3287]:
+                              - generic [ref=e3288]:
+                                - generic [ref=e3289]: 餐廳 シティーク
+                                - generic [ref=e3291]: 50 公尺
+                          - listitem [ref=e3292]:
+                            - listitem [ref=e3294]:
+                              - generic [ref=e3295]:
+                                - generic [ref=e3296]: 餐廳 Rokkasen
+                                - generic [ref=e3298]: 100 公尺
+                          - listitem [ref=e3299]:
+                            - listitem [ref=e3301]:
+                              - generic [ref=e3302]:
+                                - generic [ref=e3303]: 餐廳 新宿いかセンター
+                                - generic [ref=e3305]: 150 公尺
+                      - generic [ref=e3306]:
+                        - generic [ref=e3307]:
+                          - img [ref=e3309]
+                          - heading "熱門景點" [level=3] [ref=e3311]:
+                            - generic [ref=e3312]: 熱門景點
+                        - list [ref=e3313]:
+                          - listitem [ref=e3314]:
+                            - listitem [ref=e3316]:
+                              - generic [ref=e3317]:
+                                - generic [ref=e3318]: Bunka Gakuen Costume Museum
+                                - generic [ref=e3320]: 1.1 公里
+                          - listitem [ref=e3321]:
+                            - listitem [ref=e3323]:
+                              - generic [ref=e3324]:
+                                - generic [ref=e3325]: Shinjuku Central Park
+                                - generic [ref=e3327]: 1.1 公里
+                          - listitem [ref=e3328]:
+                            - listitem [ref=e3330]:
+                              - generic [ref=e3331]:
+                                - generic [ref=e3332]: Koizumi Yakumo Memorial Park
+                                - generic [ref=e3334]: 1.2 公里
+                          - listitem [ref=e3335]:
+                            - listitem [ref=e3337]:
+                              - generic [ref=e3338]:
+                                - generic [ref=e3339]: Shinjuku Gyoen National Garden
+                                - generic [ref=e3341]: 1.7 公里
+                          - listitem [ref=e3342]:
+                            - listitem [ref=e3344]:
+                              - generic [ref=e3345]:
+                                - generic [ref=e3346]: Yotsuya Okido Mark
+                                - generic [ref=e3348]: 1.8 公里
+                          - listitem [ref=e3349]:
+                            - listitem [ref=e3351]:
+                              - generic [ref=e3352]:
+                                - generic [ref=e3353]: Intercommunication Center
+                                - generic [ref=e3355]: 2 公里
+                          - listitem [ref=e3356]:
+                            - listitem [ref=e3358]:
+                              - generic [ref=e3359]:
+                                - generic [ref=e3360]: Shibuya Kuritsu Honcho Park
+                                - generic [ref=e3362]: 2 公里
+                          - listitem [ref=e3363]:
+                            - listitem [ref=e3365]:
+                              - generic [ref=e3366]:
+                                - generic [ref=e3367]: Statistical Museum
+                                - generic [ref=e3369]: 2.2 公里
+                          - listitem [ref=e3370]:
+                            - listitem [ref=e3372]:
+                              - generic [ref=e3373]:
+                                - generic [ref=e3374]: Kanda Josui Park
+                                - generic [ref=e3376]: 2.2 公里
+                          - listitem [ref=e3377]:
+                            - listitem [ref=e3379]:
+                              - generic [ref=e3380]:
+                                - generic [ref=e3381]: Meiji Jingu Homotsuden
+                                - generic [ref=e3383]: 2.4 公里
+                      - generic [ref=e3384]:
+                        - generic [ref=e3385]:
+                          - img [ref=e3387]
+                          - heading "自然美景" [level=3] [ref=e3389]:
+                            - generic [ref=e3390]: 自然美景
+                        - list [ref=e3391]:
+                          - listitem [ref=e3392]:
+                            - listitem [ref=e3394]:
+                              - generic [ref=e3395]:
+                                - generic [ref=e3396]: 湖泊 Shinobazu Pond
+                                - generic [ref=e3398]: 7 公里
+                      - generic [ref=e3399]:
+                        - generic [ref=e3400]:
+                          - img [ref=e3402]
+                          - heading "大眾運輸" [level=3] [ref=e3404]:
+                            - generic [ref=e3405]: 大眾運輸
+                        - list [ref=e3406]:
+                          - listitem [ref=e3407]:
+                            - listitem [ref=e3409]:
+                              - generic [ref=e3410]:
+                                - generic [ref=e3411]: 火車 Shinjuku-Nishiguchi Station
+                                - generic [ref=e3413]: 200 公尺
+                          - listitem [ref=e3414]:
+                            - listitem [ref=e3416]:
+                              - generic [ref=e3417]:
+                                - generic [ref=e3418]: 地鐵 Shinjuku-nishiguchi
+                                - generic [ref=e3420]: 200 公尺
+                          - listitem [ref=e3421]:
+                            - listitem [ref=e3423]:
+                              - generic [ref=e3424]:
+                                - generic [ref=e3425]: 火車 Seibu-Shinjuku Station
+                                - generic [ref=e3427]: 350 公尺
+                          - listitem [ref=e3428]:
+                            - listitem [ref=e3430]:
+                              - generic [ref=e3431]:
+                                - generic [ref=e3432]: 地鐵 Nishi-Shinjuku Station
+                                - generic [ref=e3434]: 550 公尺
+                      - generic [ref=e3435]:
+                        - generic [ref=e3436]:
+                          - img [ref=e3438]
+                          - heading "附近機場" [level=3] [ref=e3440]:
+                            - generic [ref=e3441]: 附近機場
+                        - list [ref=e3442]:
+                          - listitem [ref=e3443]:
+                            - listitem [ref=e3445]:
+                              - generic [ref=e3446]:
+                                - generic [ref=e3447]: Tokyo Haneda Airport
+                                - generic [ref=e3449]: 19 公里
+                          - listitem [ref=e3450]:
+                            - listitem [ref=e3452]:
+                              - generic [ref=e3453]:
+                                - generic [ref=e3454]: Narita International Airport
+                                - generic [ref=e3456]: 69 公里
+                    - generic [ref=e3457]: 顯示的為預估最短步行或開車距離，實際距離可能有差異。
+              - generic [ref=e2111]:
+                - generic [ref=e2113]:
+                  - heading "餐廳" [level=2] [ref=e2114]:
+                    - generic [ref=e2115]: 餐廳
+                  - generic [ref=e2116]: 館內設有 1 間餐廳
+                - region [ref=e2119]:
+                  - group [ref=e2120]:
+                    - generic [ref=e2121]:
+                      - generic [ref=e2123]: WPU CAFE&DINER （ダブルピーユー カフェアンドダイナー）
+                      - list [ref=e2124]:
+                        - listitem [ref=e2125]:
+                          - generic [ref=e2126]:
+                            - generic [ref=e2127]: 料理菜式
+                            - generic [ref=e2128]: 異國料理
+                        - listitem [ref=e2129]:
+                          - generic [ref=e2130]:
+                            - generic [ref=e2131]: 服務項目
+                            - generic [ref=e2132]: 午餐 • 晚餐
+                        - listitem [ref=e2133]:
+                          - generic [ref=e2134]:
+                            - generic [ref=e2135]: 餐廳類型
+                            - generic [ref=e2136]: 現代
+              - generic [ref=e2140]:
+                - generic [ref=e2141]:
+                  - generic [ref=e2142]:
+                    - heading "設施與服務" [level=2] [ref=e2143]:
+                      - generic [ref=e2144]: 設施與服務
+                    - generic [ref=e2145]: 設施佳！評分：8.8
+                  - button "查看客房供應情況" [ref=e2147] [cursor=pointer]:
+                    - generic [ref=e2148]: 查看客房供應情況
+                - generic [ref=e2152]:
+                  - heading "熱門設施" [level=3] [ref=e2153]:
+                    - generic [ref=e2154]: 熱門設施
+                  - list [ref=e2155]:
+                    - listitem [ref=e2156]:
+                      - generic [ref=e2157]:
+                        - img [ref=e2159]
+                        - generic [ref=e2164]: 禁菸客房
+                    - listitem [ref=e2165]:
+                      - generic [ref=e2166]:
+                        - img [ref=e2168]
+                        - generic [ref=e2173]: 免費無線網路
+                    - listitem [ref=e2174]:
+                      - generic [ref=e2175]:
+                        - img [ref=e2177]
+                        - generic [ref=e2182]: 餐廳
+                    - listitem [ref=e2183]:
+                      - generic [ref=e2184]:
+                        - img [ref=e2186]
+                        - generic [ref=e2191]: 24 小時接待櫃檯
+                    - listitem [ref=e2192]:
+                      - generic [ref=e2193]:
+                        - img [ref=e2195]
+                        - generic [ref=e2200]: 洗衣
+                    - listitem [ref=e2201]:
+                      - generic [ref=e2202]:
+                        - img [ref=e2204]
+                        - generic [ref=e2209]: 電梯
+                    - listitem [ref=e2210]:
+                      - generic [ref=e2211]:
+                        - img [ref=e2213]
+                        - generic [ref=e2218]: 每日清潔服務
+                    - listitem [ref=e2219]:
+                      - generic [ref=e2220]:
+                        - img [ref=e2222]
+                        - generic [ref=e2227]: 暖氣
+                    - listitem [ref=e2228]:
+                      - generic [ref=e2229]:
+                        - img [ref=e2231]
+                        - generic [ref=e2236]: 行李寄存
+                    - listitem [ref=e2237]:
+                      - generic [ref=e2238]:
+                        - img [ref=e2240]
+                        - generic [ref=e2245]: 所有客房都有咖啡／沏茶設施
+              - region "含有 2 個問題的問卷" [ref=e3459]:
+                - generic [ref=e3463]:
+                  - button "關閉問卷" [ref=e3465] [cursor=pointer]:
+                    - img [ref=e3468]
+                  - heading "您對本站還滿意嗎？" [level=3] [ref=e3470]:
+                    - generic [ref=e3471]: 您對本站還滿意嗎？
+                  - generic [ref=e3472]:
+                    - img [ref=e3474]
+                    - generic [ref=e3475]:
+                      - generic [ref=e3476]:
+                        - generic "問題 1（共 2 題）" [ref=e3477]: 第 1 題（共 2 題）
+                        - generic [ref=e3478]: 在這間住宿選擇我需要的住宿類型很簡單
+                      - group "請選擇您對以下敘述的同意程度。此為5分制，1分為最同意，5分為最不同意。" [ref=e3480]:
+                        - generic [ref=e3481]:
+                          - radio "非常同意" [ref=e3482]
+                          - generic [ref=e3486] [cursor=pointer]: 非常同意
+                        - generic [ref=e3487]:
+                          - radio "同意" [ref=e3488]
+                          - generic [ref=e3492] [cursor=pointer]: 同意
+                        - generic [ref=e3493]:
+                          - radio "普通" [ref=e3494]
+                          - generic [ref=e3498] [cursor=pointer]: 普通
+                        - generic [ref=e3499]:
+                          - radio "不同意" [ref=e3500]
+                          - generic [ref=e3504] [cursor=pointer]: 不同意
+                        - generic [ref=e3505]:
+                          - radio "非常不同意" [ref=e3506]
+                          - generic [ref=e3510] [cursor=pointer]: 非常不同意
+              - generic [ref=e2249]:
+                - generic [ref=e2250]:
+                  - generic [ref=e2251]:
+                    - heading "住宿規定" [level=2] [ref=e2252]:
+                      - generic [ref=e2253]: 住宿規定
+                    - generic [ref=e2254]: 您可向WPÜ HOTEL Shinjuku提出特別要求，在下個步驟填寫即可！
+                  - button "查看客房供應情況" [ref=e2256] [cursor=pointer]:
+                    - generic [ref=e2257]: 查看客房供應情況
+                - generic [ref=e2259]:
+                  - generic [ref=e2260]:
+                    - generic [ref=e2262]:
+                      - img [ref=e2264]
+                      - generic [ref=e2266]: 入住時間
+                    - generic [ref=e2267]:
+                      - generic [ref=e2268]: 下午3:00 後
+                      - generic [ref=e2269]: 您需提前告知住宿您的抵達時間。
+                  - separator [ref=e2270]
+                  - generic [ref=e2271]:
+                    - generic [ref=e2273]:
+                      - img [ref=e2275]
+                      - generic [ref=e2277]: 退房時間
+                    - generic [ref=e2279]: 上午11:00 前
+                  - separator [ref=e2280]
+                  - generic [ref=e2281]:
+                    - generic [ref=e2283]:
+                      - img [ref=e2285]
+                      - generic [ref=e2287]: 預訂取消/ 預付政策
+                    - generic [ref=e2289]:
+                      - text: 取消和預付款政策根據住宿類型而有所不同。選擇時請先確認每個選項適用的
+                      - link "條件" [ref=e2290] [cursor=pointer]:
+                        - /url: "#availability_target"
+                      - text: 為何。
+                  - separator [ref=e2291]
+                  - generic [ref=e2292]:
+                    - generic [ref=e2294]:
+                      - img [ref=e2296]
+                      - generic [ref=e2298]: 孩童加床選項
+                    - generic [ref=e2300]:
+                      - generic [ref=e2301]:
+                        - heading "孩童政策" [level=3] [ref=e2302]
+                        - paragraph [ref=e2303]: 歡迎任何年齡的孩童入住
+                        - paragraph [ref=e2304]: 在此住宿，6 歲（含）以上的孩童將依成人價格收費。
+                        - paragraph [ref=e2305]: 搜尋時請加入同行孩童人數及年齡，以查看正確的房價及入住資訊。
+                      - heading "嬰兒床與加床政策" [level=3] [ref=e2306]
+                      - paragraph [ref=e2307]: 此住宿無法提供嬰兒床或加床。
+                  - separator [ref=e2308]
+                  - generic [ref=e2309]:
+                    - generic [ref=e2311]:
+                      - img [ref=e2313]
+                      - generic [ref=e2315]: 年齡限制
+                    - generic [ref=e2317]: 須年滿 18 歲才能辦理入住
+                  - separator [ref=e2318]
+                  - generic [ref=e2319]:
+                    - generic [ref=e2321]:
+                      - img [ref=e2323]
+                      - generic [ref=e2325]: 寵物
+                    - generic [ref=e2327]: 不允許攜帶寵物入住。
+                  - separator [ref=e2328]
+                  - generic [ref=e2329]:
+                    - generic [ref=e2331]:
+                      - img [ref=e2333]
+                      - generic [ref=e2335]: 接受的付款方式
+                    - generic [ref=e2337]:
+                      - img "Visa 卡" [ref=e2339]
+                      - img "萬事達卡" [ref=e2341]
+                      - img "大來卡" [ref=e2343]
+                      - img "JCB 卡" [ref=e2345]
+                      - img "Discover 卡" [ref=e2347]
+                      - generic [ref=e2349]: 現金
+              - generic [ref=e2353]:
+                - generic [ref=e2354]:
+                  - generic [ref=e2355]:
+                    - heading "注意事項" [level=2] [ref=e2356]:
+                      - generic [ref=e2357]: 注意事項
+                    - generic [ref=e2358]: 此住宿的顧客須知
+                  - button "查看客房供應情況" [ref=e2360] [cursor=pointer]:
+                    - generic [ref=e2361]: 查看客房供應情況
+                - generic [ref=e2364]:
+                  - paragraph [ref=e2365]: 請提前告知WPÜ HOTEL Shinjuku您預計抵達的時間。您可以在訂房時使用特殊要求方框通知對方，或透過確認函上提供的聯絡資料直接與住宿處聯繫。
+                  - paragraph [ref=e2366]: 每人每晚住宿稅費不包含在房價內，需於住宿處另外支付。
+            - generic [ref=e3513]:
+              - heading "WPÜ HOTEL Shinjuku常見問答" [level=2] [ref=e3515]
+              - generic [ref=e3516]:
+                - generic [ref=e3518]:
+                  - button "我可以預訂WPÜ HOTEL Shinjuku的哪種房型？" [ref=e3521] [cursor=pointer]:
+                    - heading "我可以預訂WPÜ HOTEL Shinjuku的哪種房型？" [level=3] [ref=e3523]
+                    - img [ref=e3525]
+                  - separator [ref=e3527]
+                  - button "WPÜ HOTEL Shinjuku的入住及退房時間分別是？" [ref=e3530] [cursor=pointer]:
+                    - heading "WPÜ HOTEL Shinjuku的入住及退房時間分別是？" [level=3] [ref=e3532]
+                    - img [ref=e3534]
+                  - separator [ref=e3536]
+                  - button "入住WPÜ HOTEL Shinjuku需要花多少錢？" [ref=e3539] [cursor=pointer]:
+                    - heading "入住WPÜ HOTEL Shinjuku需要花多少錢？" [level=3] [ref=e3541]
+                    - img [ref=e3543]
+                - generic [ref=e3546]:
+                  - button "WPÜ HOTEL Shinjuku內設有餐廳嗎？" [ref=e3549] [cursor=pointer]:
+                    - heading "WPÜ HOTEL Shinjuku內設有餐廳嗎？" [level=3] [ref=e3551]
+                    - img [ref=e3553]
+                  - separator [ref=e3555]
+                  - button "WPÜ HOTEL Shinjuku有什麼好玩的？" [ref=e3558] [cursor=pointer]:
+                    - heading "WPÜ HOTEL Shinjuku有什麼好玩的？" [level=3] [ref=e3560]
+                    - img [ref=e3562]
+                  - separator [ref=e3564]
+                  - button "WPÜ HOTEL Shinjuku距離東京的中心多遠？" [ref=e3567] [cursor=pointer]:
+                    - heading "WPÜ HOTEL Shinjuku距離東京的中心多遠？" [level=3] [ref=e3569]
+                    - img [ref=e3571]
+      - button "東京之最 按此查看更多東京著名地標附近的飯店和住宿" [ref=e2451] [cursor=pointer]:
+        - generic [ref=e2453]:
+          - generic [ref=e2455]: 東京之最
+          - generic [ref=e2456]: 按此查看更多東京著名地標附近的飯店和住宿
+        - img [ref=e2458]
+      - generic [ref=e2461]:
+        - heading "不論您到哪裡旅行，我們為您提供所需的協助！" [level=4] [ref=e2462]
+        - paragraph [ref=e2463]: 在日本也有客服人員，Booking.com 在全球 10 個國家設有客服中心，能提供您即時的協助！歡迎與我們聯繫！
+  - contentinfo [ref=e2464]:
+    - contentinfo [ref=e2468]:
+      - navigation "常用連結" [ref=e2471]:
+        - list [ref=e2472]:
+          - listitem [ref=e2473]:
+            - link "國家" [ref=e2474] [cursor=pointer]:
+              - /url: https://www.booking.com/country.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+              - generic [ref=e2476]: 國家
+            - text: .
+          - listitem [ref=e2477]:
+            - link "區域" [ref=e2478] [cursor=pointer]:
+              - /url: https://www.booking.com/region.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+              - generic [ref=e2480]: 區域
+            - text: .
+          - listitem [ref=e2481]:
+            - link "城市" [ref=e2482] [cursor=pointer]:
+              - /url: https://www.booking.com/city.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+              - generic [ref=e2484]: 城市
+            - text: .
+          - listitem [ref=e2485]:
+            - link "區" [ref=e2486] [cursor=pointer]:
+              - /url: https://www.booking.com/district.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+              - generic [ref=e2488]: 區
+            - text: .
+          - listitem [ref=e2489]:
+            - link "機場" [ref=e2490] [cursor=pointer]:
+              - /url: https://www.booking.com/airport.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+              - generic [ref=e2492]: 機場
+            - text: .
+          - listitem [ref=e2493]:
+            - link "飯店" [ref=e2494] [cursor=pointer]:
+              - /url: https://www.booking.com/hotel/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+              - generic [ref=e2496]: 飯店
+            - text: .
+          - listitem [ref=e2497]:
+            - link "主要景點" [ref=e2498] [cursor=pointer]:
+              - /url: https://www.booking.com/landmark.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+              - generic [ref=e2500]: 主要景點
+            - text: .
+          - listitem:
+            - link:
+              - /url: https://www.booking.com/booking-home/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+            - text: .
+          - listitem:
+            - link:
+              - /url: https://www.booking.com/apartments/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+            - text: .
+          - listitem:
+            - link:
+              - /url: https://www.booking.com/resorts/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+            - text: .
+          - listitem:
+            - link:
+              - /url: https://www.booking.com/villas/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+            - text: .
+          - listitem:
+            - link:
+              - /url: https://www.booking.com/hostels/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+            - text: .
+          - listitem:
+            - link:
+              - /url: https://www.booking.com/bed-and-breakfast/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+            - text: .
+          - listitem:
+            - link:
+              - /url: https://www.booking.com/guest-house/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+            - text: .
+          - listitem [ref=e2501]:
+            - link "各種特色住宿" [ref=e2502] [cursor=pointer]:
+              - /url: https://www.booking.com/accommodations.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+              - generic [ref=e2504]: 各種特色住宿
+            - text: .
+          - listitem [ref=e2505]:
+            - link "探索月租住宿" [ref=e2506] [cursor=pointer]:
+              - /url: https://www.booking.com/extended-stays/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+              - generic [ref=e2508]: 探索月租住宿
+      - generic [ref=e2510]:
+        - generic [ref=e2511]:
+          - heading "支援服務" [level=3] [ref=e2513]
+          - list [ref=e2514]:
+            - listitem [ref=e2515]:
+              - link "管理您的旅程" [ref=e2517] [cursor=pointer]:
+                - /url: https://secure.booking.com/content/cs.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2518]: 管理您的旅程
+            - listitem [ref=e2519]:
+              - link "聯絡客服" [ref=e2521] [cursor=pointer]:
+                - /url: https://secure.booking.com/help.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2522]: 聯絡客服
+            - listitem [ref=e2523]:
+              - link "安全資源中心" [ref=e2525] [cursor=pointer]:
+                - /url: https://www.booking.com/trust_and_safety.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2526]: 安全資源中心
+        - generic [ref=e2527]:
+          - heading "探索" [level=3] [ref=e2529]
+          - list [ref=e2530]:
+            - listitem [ref=e2531]:
+              - link "Genius 常客獎勵計畫" [ref=e2533] [cursor=pointer]:
+                - /url: https://www.booking.com/genius.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2534]: Genius 常客獎勵計畫
+            - listitem [ref=e2535]:
+              - link "季節和假期優惠" [ref=e2537] [cursor=pointer]:
+                - /url: https://www.booking.com/deals/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2538]: 季節和假期優惠
+            - listitem [ref=e2539]:
+              - link "旅遊文章" [ref=e2541] [cursor=pointer]:
+                - /url: https://www.booking.com/articles.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2542]: 旅遊文章
+            - listitem [ref=e2543]:
+              - link "Booking.com 企業差旅服務" [ref=e2545] [cursor=pointer]:
+                - /url: https://business.booking.com/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2546]: Booking.com 企業差旅服務
+            - listitem [ref=e2547]:
+              - link "Traveller Review Awards" [ref=e2549] [cursor=pointer]:
+                - /url: https://www.booking.com/traveller-awards/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2550]: Traveller Review Awards
+            - listitem [ref=e2551]:
+              - link "租車服務" [ref=e2553] [cursor=pointer]:
+                - /url: https://www.booking.com/cars/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2554]: 租車服務
+            - listitem [ref=e2555]:
+              - link "訂機票" [ref=e2557] [cursor=pointer]:
+                - /url: https://booking.com/pxgo?lang=zh-tw&token=UmFuZG9tSVYkc2RlIyh9YXYkRVs_GG8E7j4ArIeJPd_njBrBqXYthmqQ3YlH482J3ybK-a4uYgs7XPBAsPD7mV-TXfleEEuoDg2b8eX9kifJovRgFArA45DQ-mIVpjeE68__zItBp0LJ8ztAtVkcaCCPI7M1ZOS5g-_MTD4VDL00ELzOmY9lSdEpQvQCYVQXf2_e-FBlwikpdPWKtUnei9bAVuOdKfaGuzPIOxxcdGHi-NS0_EQ3BRUzXGtz1DNyXwbFGo38E96UdF1E9M1r0RQIX80PTuJsU22h_bu_Mj8wH1bIHayAasGPPhrXWhzy-VbC1fFbMdhehC-BbpnqvObtzJG8Q74Z9ZJdbDq4AmrD9SQdgUxWd1PXYIUvjZ23Lbyhoqbabnc0zJRw4KDGyVwZflsBpSO49Rp2z1_B5YkJbaop-EjFlgIOwLtyuls2KQFrBcazxmXe6TAjVmlfoDuFDaaWAlZkONG5Xt6f1yad2Ap8SZ9p6kcsKc_NcmUqv4akwXF-nx_FsIquYu2A0IQlT8sOf1soIP990eJXyms&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&url=https%3A%2F%2Fbooking.kayak.com%2Fin%3Fsid%3D732eeb16769713240c374abc00097a1d%26mc%3DTWD%26bdclc%3Dzh-tw%26p%3Dfooter_link%26a%3Dbdc%252Ffooter_link&aid=304142
+                - generic [ref=e2558]: 訂機票
+            - listitem [ref=e2559]:
+              - link "餐廳訂位" [ref=e2561] [cursor=pointer]:
+                - /url: https://www.opentable.com/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&ref=16087
+                - generic [ref=e2562]: 餐廳訂位
+            - listitem [ref=e2563]:
+              - link "Booking.com 旅遊服務合作夥伴" [ref=e2565] [cursor=pointer]:
+                - /url: https://www.booking.com/affiliate-program/v2/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d&utm_campaign=booking-footer&utm_content=travel-agents-link&utm_medium=referral&utm_source=booking.com
+                - generic [ref=e2566]: Booking.com 旅遊服務合作夥伴
+        - generic [ref=e2567]:
+          - heading "條款與條件" [level=3] [ref=e2569]
+          - list [ref=e2570]:
+            - listitem [ref=e2571]:
+              - link "隱私權聲明" [ref=e2573] [cursor=pointer]:
+                - /url: https://www.booking.com/content/privacy.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2574]: 隱私權聲明
+            - listitem [ref=e2575]:
+              - link "服務條款" [ref=e2577] [cursor=pointer]:
+                - /url: https://www.booking.com/content/terms.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2578]: 服務條款
+            - listitem [ref=e2579]:
+              - link "無障礙聲明" [ref=e2581] [cursor=pointer]:
+                - /url: https://www.booking.com/content/accessibility_statement.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2582]: 無障礙聲明
+            - listitem [ref=e2583]:
+              - link "合作夥伴爭議解決中心" [ref=e2585] [cursor=pointer]:
+                - /url: https://secure.booking.com/content/complaints.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2586]: 合作夥伴爭議解決中心
+            - listitem [ref=e2587]:
+              - link "現代奴役聲明" [ref=e2589] [cursor=pointer]:
+                - /url: https://www.bookingholdings.com/modern-slavery-statement/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE
+                - generic [ref=e2590]: 現代奴役聲明
+            - listitem [ref=e2591]:
+              - link "人權聲明" [ref=e2593] [cursor=pointer]:
+                - /url: https://www.bookingholdings.com/about/compliance-and-ethics/human-rights/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE
+                - generic [ref=e2594]: 人權聲明
+        - generic [ref=e2595]:
+          - heading "合作夥伴" [level=3] [ref=e2597]
+          - list [ref=e2598]:
+            - listitem [ref=e2599]:
+              - link "登入後台" [ref=e2601] [cursor=pointer]:
+                - /url: https://admin.booking.com/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d&utm_campaign=login_footer_v0&utm_medium=frontend&utm_source=extranet_login_footer
+                - generic [ref=e2602]: 登入後台
+            - listitem [ref=e2603]:
+              - link "合作夥伴支援中心" [ref=e2605] [cursor=pointer]:
+                - /url: https://partner.booking.com/zh-tw?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d&utm_campaign=footer_list&utm_medium=frontend_footer&utm_source=booking.com
+                - generic [ref=e2606]: 合作夥伴支援中心
+            - listitem [ref=e2607]:
+              - link "將您的住宿註冊上線" [ref=e2609] [cursor=pointer]:
+                - /url: https://join.booking.com/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&lang=zh-tw&sid=732eeb16769713240c374abc00097a1d&utm_medium=frontend&utm_source=footer_menu
+                - generic [ref=e2610]: 將您的住宿註冊上線
+            - listitem [ref=e2611]:
+              - link "加入聯盟行銷" [ref=e2613] [cursor=pointer]:
+                - /url: https://www.booking.com/affiliate-program/v2/index.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d&utm_campaign=booking-footer&utm_content=become-an-affiliate-link&utm_medium=referral&utm_source=booking.com
+                - generic [ref=e2614]: 加入聯盟行銷
+        - generic [ref=e2615]:
+          - heading "關於" [level=3] [ref=e2617]
+          - list [ref=e2618]:
+            - listitem [ref=e2619]:
+              - link "關於 Booking.com" [ref=e2621] [cursor=pointer]:
+                - /url: https://www.booking.com/content/about.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2622]: 關於 Booking.com
+            - listitem [ref=e2623]:
+              - link "我們如何運作" [ref=e2625] [cursor=pointer]:
+                - /url: https://www.booking.com/content/how_we_work.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2626]: 我們如何運作
+            - listitem [ref=e2627]:
+              - link "永續發展" [ref=e2629] [cursor=pointer]:
+                - /url: https://sustainability.booking.com/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE
+                - generic [ref=e2630]: 永續發展
+            - listitem [ref=e2631]:
+              - link "媒體中心" [ref=e2633] [cursor=pointer]:
+                - /url: https://news.booking.com/zh-tw
+                - generic [ref=e2634]: 媒體中心
+            - listitem [ref=e2635]:
+              - link "職缺專區" [ref=e2637] [cursor=pointer]:
+                - /url: https://careers.booking.com/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE
+                - generic [ref=e2638]: 職缺專區
+            - listitem [ref=e2639]:
+              - link "投資人關係" [ref=e2641] [cursor=pointer]:
+                - /url: https://www.bookingholdings.com/?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE
+                - generic [ref=e2642]: 投資人關係
+            - listitem [ref=e2643]:
+              - link "其他問題" [ref=e2645] [cursor=pointer]:
+                - /url: https://www.booking.com/content/contact-us.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2646]: 其他問題
+            - listitem [ref=e2647]:
+              - link "內容準則與檢舉" [ref=e2649] [cursor=pointer]:
+                - /url: https://www.booking.com/content-moderation-policy/overview-page.zh-tw.html?aid=304142&label=gen173nr-10CAsodUIMd3B1LXNoaW5qdWt1SDBYBGjnAYgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCj4CvzgbAAgHSAiQ2NTEyNTllZS1kZGQzLTQwOGUtYWI3Yy1hY2Q2MWU5OWIzNTnYAgHgAgE&sid=732eeb16769713240c374abc00097a1d
+                - generic [ref=e2650]: 內容準則與檢舉
+      - generic [ref=e2652]:
+        - generic [ref=e2653]:
+          - button "所選語言為繁體中文" [ref=e2655] [cursor=pointer]
+          - button "價格為新臺幣" [ref=e2660] [cursor=pointer]:
+            - generic [ref=e2661]: TWD
+        - separator [ref=e2662]
+        - generic [ref=e2663]:
+          - generic [ref=e2665]: Booking.com 隸屬全球線上旅遊服務領導品牌 Booking Holdings Inc.。
+          - generic [ref=e2666]: Copyright © 1996–2026 Booking.com™。版權所有。
+        - generic [ref=e2667]:
+          - img "Booking.com" [ref=e2668]:
+            - img [ref=e2669]
+          - img "Priceline.com" [ref=e2671]:
+            - img [ref=e2672]
+          - img "Kayak" [ref=e2675]:
+            - img [ref=e2676]
+          - img "Agoda" [ref=e2690]:
+            - img [ref=e2691]
+          - img "OpenTable" [ref=e2699]:
+            - img [ref=e2700]
+  - text: 끖 낝 끲 낝 넌

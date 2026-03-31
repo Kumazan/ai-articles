@@ -1,0 +1,491 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e4]:
+    - navigation [ref=e6]:
+      - link "Agoda" [ref=e8] [cursor=pointer]:
+        - /url: /?cid=-1
+        - img "Agoda" [ref=e9]
+  - generic [ref=e11]:
+    - generic [ref=e16]:
+      - generic [ref=e18] [cursor=pointer]:
+        - generic [ref=e20]: 
+        - generic [ref=e21]:
+          - combobox "輸入目的地或住宿名稱" [ref=e22]: 格拉斯麗新宿酒店
+          - generic [ref=e23]: 輸入住宿名稱或關鍵字查詢，使用上下鍵或Tab鍵移動，並按「Enter」來選擇
+      - button "入住日期 2026年6月25日 週四" [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]:
+          - generic [ref=e27]: 
+          - generic [ref=e29]:
+            - generic [ref=e30]: 2026年6月25日
+            - generic [ref=e31]: 週四
+      - button "退房日期 2026年6月28日 週日" [ref=e32] [cursor=pointer]:
+        - generic [ref=e33]:
+          - generic [ref=e35]: 
+          - generic [ref=e37]:
+            - generic [ref=e38]: 2026年6月28日
+            - generic [ref=e39]: 週日
+      - button "住客人數和房間數 2位大人 1間客房" [ref=e40] [cursor=pointer]:
+        - generic [ref=e41]:
+          - generic [ref=e43]: 
+          - generic [ref=e45]:
+            - generic [ref=e46]: 2位大人
+            - generic [ref=e47]: 1間客房
+            - generic [ref=e49]: 
+      - button "更新" [ref=e51] [cursor=pointer]:
+        - generic [ref=e53]: 更新
+    - generic [ref=e54]:
+      - navigation "導航列":
+        - list
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - generic [ref=e60] [cursor=pointer]:
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e61]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e62]
+            - button "查看所有照片" [ref=e66]:
+              - generic [ref=e67]:
+                - img [ref=e68]
+                - generic [ref=e70]: 查看所有照片
+          - generic [ref=e72]:
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e75] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e76]
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e79] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e80]
+            - generic [ref=e82] [cursor=pointer]:
+              - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e83]:
+                - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e84]
+              - button "我的最愛" [ref=e87]:
+                - generic:
+                  - alert: 已從口袋清單刪除
+                - img [ref=e90]
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e94] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e95]
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e98] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e99]
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e102] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e103]
+        - navigation "住宿資訊" [ref=e106]:
+          - generic [ref=e110]:
+            - generic:
+              - button [disabled]:
+                - img
+            - generic "資訊選單" [ref=e111]:
+              - link "簡介" [ref=e113] [cursor=pointer]:
+                - generic [ref=e114]: 簡介
+            - generic:
+              - button [disabled]:
+                - img
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e120]:
+              - button " 2024 " [ref=e122] [cursor=pointer]:
+                - generic [ref=e123]: 
+                - text: "2024"
+                - generic [ref=e124]: 
+              - tooltip "tooltip 2024年Agoda旅人鑑賞優勝。" [ref=e125]:
+                - generic [ref=e126]: tooltip
+                - paragraph [ref=e127]: 2024年Agoda旅人鑑賞優勝。
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - heading "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [level=1] [ref=e130]
+                - generic "滿分5顆星，住宿獲得4顆星" [ref=e132]:
+                  - generic [ref=e133]:
+                    - button "滿分5顆星，住宿獲得4顆星" [ref=e135]:
+                      - generic [ref=e136]:
+                        - generic [ref=e137]: 滿分5顆星，住宿獲得4顆星
+                        - img [ref=e138]
+                        - img [ref=e140]
+                        - img [ref=e142]
+                        - img [ref=e144]
+                    - tooltip "tooltip 所有星級的標示皆可作為您判斷舒適度、設施服務與備品完善度的參考指標，資料由住宿方提供。" [ref=e146]:
+                      - generic [ref=e147]: tooltip
+                      - paragraph [ref=e148]: 所有星級的標示皆可作為您判斷舒適度、設施服務與備品完善度的參考指標，資料由住宿方提供。
+              - generic [ref=e149] [cursor=pointer]:
+                - text: 1-19-1 Kabukicho, 新宿, 東京, 日本, 160-8466
+                - button "查看地圖&週邊景點" [ref=e150]:
+                  - generic [ref=e151]: "- 查看地圖&週邊景點"
+          - generic [ref=e153]:
+            - heading "重點設施" [level=2] [ref=e155]
+            - generic [ref=e156]:
+              - generic [ref=e158]:
+                - generic [ref=e161]:
+                  - img "絕佳地點" [ref=e163]
+                  - img [ref=e165]
+                - generic [ref=e167]:
+                  - paragraph [ref=e168]:
+                    - button "絕佳地點" [ref=e169] [cursor=pointer]:
+                      - paragraph [ref=e171]: 絕佳地點
+                    - text: "- 距離JR新宿與地鐵步行可達，位置在歌舞伎町商圈、交通樞紐與轉乘點附近，外出購物、覓食與逛街都很方便。"
+                  - generic [ref=e172]: 這家旅館的性價比高,地理位置也方便。停車位充足,設施與服務也很出色。Wi-Fi連接良好。
+              - generic [ref=e174]:
+                - generic [ref=e177]:
+                  - img "浴室維護良好" [ref=e179]
+                  - img [ref=e181]
+                - generic [ref=e183]:
+                  - paragraph [ref=e184]:
+                    - button "浴室維護良好" [ref=e185] [cursor=pointer]:
+                      - paragraph [ref=e187]: 浴室維護良好
+                    - text: "- 浴室普遍較大且多為乾濕分離，浴缸空間足以泡澡，洗澡與泡澡體驗獲多數好評。"
+                  - generic [ref=e188]: 房間部分因選擇標準單人房雖較小，但浴室可以泡澡且乾濕分離，且環境維護乾淨，所以整體而言是舒適的住宿體驗！
+              - generic [ref=e190]:
+                - generic [ref=e193]:
+                  - img "景觀優美" [ref=e195]
+                  - img [ref=e197]
+                - paragraph [ref=e200]:
+                  - button "景觀優美" [ref=e201] [cursor=pointer]:
+                    - paragraph [ref=e203]: 景觀優美
+                  - text: "- 高樓層房間景觀與夜景表現佳，多則評論稱高樓層視野漂亮且值得一訪。"
+              - generic [ref=e205]:
+                - generic [ref=e208]:
+                  - generic [ref=e210]:
+                    - img "抵達機場便利性"
+                  - img [ref=e212]
+                - generic [ref=e214]:
+                  - paragraph [ref=e215]:
+                    - button "抵達機場便利性" [ref=e216] [cursor=pointer]:
+                      - paragraph [ref=e218]: 抵達機場便利性
+                    - text: "- 從成田/羽田機場搭利木津巴士可直達或快速抵達飯店附近，機場接駁交通被多則評論視為方便選項。"
+                  - generic [ref=e219]: 地理位置超方便，來回機場可直接在歌舞伎町塔1F。
+              - generic [ref=e221]:
+                - generic [ref=e224]:
+                  - img "美食餐飲佳" [ref=e226]
+                  - img [ref=e228]
+                - generic [ref=e230]:
+                  - paragraph [ref=e231]:
+                    - button "美食餐飲佳" [ref=e232] [cursor=pointer]:
+                      - paragraph [ref=e234]: 美食餐飲佳
+                  - generic [ref=e235]: 晚上周遭還是能找到食物，對於晚回的旅客滿方便的
+          - generic [ref=e237]:
+            - heading "設施與服務" [level=2] [ref=e239]
+            - list [ref=e240]:
+              - listitem [ref=e241]:
+                - img [ref=e243]
+                - paragraph [ref=e245]: 免費Wi-Fi
+              - listitem [ref=e246]:
+                - img [ref=e248]
+                - paragraph [ref=e250]: 停車場
+              - listitem [ref=e251]:
+                - img [ref=e253]
+                - paragraph [ref=e255]: 24小時櫃台服務
+              - listitem [ref=e256]:
+                - img [ref=e258]
+                - paragraph [ref=e260]: 餐廳
+              - listitem [ref=e261]:
+                - img [ref=e263]
+                - paragraph [ref=e265]: 酒吧
+              - listitem [ref=e266]:
+                - img [ref=e268]
+                - paragraph [ref=e270]: 按摩
+              - listitem [ref=e271]:
+                - img [ref=e273]
+                - paragraph [ref=e275]: 接駁服務
+              - listitem [ref=e276]:
+                - img [ref=e278]
+                - paragraph [ref=e280]: 可寄放行李
+          - generic [ref=e281]:
+            - heading "關於我們" [level=2] [ref=e282]
+            - generic [ref=e283]: 入住格拉斯麗新宿酒店，享受獨特的哥吉拉主題體驗，露台上有哥吉拉的頭部以及主題房間。輕鬆前往東京充滿活力的新宿娛樂區和文化景點。位於東京新宿的格拉斯麗新宿酒店為旅客提供舒適和刺激。享受按摩、酒吧的雞尾酒和咖啡店的簡餐。客房提供免費Wi-Fi、空調和壯麗的城市景觀。距離東京都廳舍和新宿黃金街的夜生活僅幾步之遙，是完美的城市逃逸地。 [特定內容由生成式AI支援，可能存在不準確的情況。]
+            - button "查看更多 關於我們" [ref=e284] [cursor=pointer]:
+              - generic [ref=e285]: 查看更多
+        - generic [ref=e286]:
+          - generic [ref=e288]:
+            - generic [ref=e290]:
+              - button "住宿評鑑分數8.7（總分10分） 很讚 28,637 篇評鑑" [ref=e292] [cursor=pointer]:
+                - generic [ref=e295]:
+                  - generic [ref=e296]: 住宿評鑑分數8.7（總分10分） 很讚 28,637 篇評鑑
+                  - generic [ref=e297]:
+                    - heading [level=2] [ref=e300]:
+                      - generic [ref=e301]: "8.7"
+                      - generic [ref=e302]: 很讚
+                    - paragraph [ref=e303]:
+                      - generic [ref=e304]:
+                        - img [ref=e305]
+                        - paragraph [ref=e308]: 28,637 篇評鑑
+              - generic [ref=e309]:
+                - button
+            - generic [ref=e311]:
+              - generic [ref=e314]: "9.2"
+              - generic [ref=e317]: "8.9"
+              - generic [ref=e320]: "8.9"
+              - generic [ref=e323]: "8.7"
+              - generic [ref=e324]:
+                - button "顯示評論詳情" [ref=e326] [cursor=pointer]:
+                  - img "顯示評論詳情" [ref=e327]
+                - generic [ref=e331]:
+                  - paragraph [ref=e333]: 根據28,637篇已驗證評鑑
+                  - generic [ref=e336]:
+                    - paragraph [ref=e343]: "9.2"
+                    - paragraph [ref=e350]: "8.9"
+                    - paragraph [ref=e357]: "8.9"
+                    - paragraph [ref=e364]: "8.7"
+                    - paragraph [ref=e371]: "8.5"
+                    - paragraph [ref=e378]: "8.5"
+                    - paragraph [ref=e385]: "8.4"
+          - region "評論摘要輪播" [ref=e388]:
+            - generic [ref=e389]:
+              - generic [ref=e390]:
+                - group "第1張（共5張）" [ref=e394]:
+                  - generic [ref=e396]: "\"這間飯店已經是我第二次入住，每次來都一樣讓人安心，也會想再回來。\""
+                - group "第2張（共5張）" [ref=e400]:
+                  - generic [ref=e402]: "\"房間整潔, 衛浴設備完善, 尤其交通非常便利, 購物相當方便, 餐廳選擇也相當多\""
+                - group "第3張（共5張）" [ref=e406]:
+                  - generic [ref=e408]: "\"早餐可依各人需求購買餐券，7-11、family mart和Lawson都在走路5分鐘之內。\""
+                - group "第4張（共5張）" [ref=e412]:
+                  - generic [ref=e414]: "\"地點在新宿的正中心, 人潮最多的地方,車站走過來約10分鐘左右很好找, 房間不大但是浴室很舒適, 推薦!!\""
+                - group "第5張（共5張）" [ref=e418]:
+                  - generic [ref=e420]: "\"已飯點來說真的很讚，加入會員可以到12點才退房非常棒，員工的表現也都很好，浴室很大，馬桶也是大的(有住過別的小的懂得懂)\""
+              - button "下一則評論" [ref=e422] [cursor=pointer]:
+                - img [ref=e423]
+          - generic [ref=e425]:
+            - generic [ref=e427]:
+              - generic:
+                - button "週邊大眾運輸" [ref=e428]:
+                  - img "交通選項" [ref=e429]
+                - tooltip "tooltip 週邊大眾運輸 • 距西部新宿站約0.18公里 • 距地下鐵 新宿西口站約0.34公里" [ref=e431]:
+                  - generic [ref=e432]: tooltip
+                  - paragraph [ref=e433]: 週邊大眾運輸
+                  - list [ref=e434]:
+                    - listitem [ref=e435]:
+                      - generic [ref=e436]:
+                        - paragraph [ref=e437]: •
+                        - paragraph [ref=e438]: 距西部新宿站約0.18公里
+                    - listitem [ref=e439]:
+                      - generic [ref=e440]:
+                        - paragraph [ref=e441]: •
+                        - paragraph [ref=e442]: 距地下鐵 新宿西口站約0.34公里
+              - button "查看地圖&週邊景點" [ref=e443]
+            - generic [ref=e445]:
+              - heading "9.2 超棒" [level=3] [ref=e448]:
+                - generic [ref=e449]: "9.2"
+                - generic [ref=e450]: 超棒
+              - paragraph [ref=e451]: 位置得分
+            - generic [ref=e452]:
+              - generic [ref=e453]:
+                - generic [ref=e454]: 
+                - generic [ref=e455]: 地點超優 - （位於市中心）
+              - generic [ref=e456]:
+                - generic [ref=e457]: 
+                - generic [ref=e458]: 熱門區域
+            - generic [ref=e459]:
+              - img [ref=e460]
+              - generic [ref=e462]:
+                - generic [ref=e463]: 超適合步行
+                - generic [ref=e464]:
+                  - button "關於步行的更多資訊" [ref=e466] [cursor=pointer]:
+                    - img [ref=e467]
+                    - generic [ref=e469]: 關於步行的更多資訊
+                  - tooltip "tooltip 共有460個地點可步行抵達！" [ref=e470]:
+                    - generic [ref=e471]: tooltip
+                    - paragraph [ref=e472]: 共有460個地點可步行抵達！
+            - generic [ref=e474]:
+              - generic [ref=e476]: 
+              - generic [ref=e477]: 停車服務
+              - generic [ref=e478]: 有提供
+            - generic [ref=e482]:
+              - generic [ref=e483]:
+                - heading "可步行抵達的地點" [level=6] [ref=e485]
+                - generic [ref=e486]:
+                  - generic [ref=e487]:
+                    - img [ref=e489]
+                    - generic [ref=e491]: Godzilla Head
+                  - generic [ref=e493]: 20公尺
+                - generic [ref=e494]:
+                  - generic [ref=e495]:
+                    - img [ref=e497]
+                    - generic [ref=e499]: TOHO Cinemas Shinjuku
+                  - generic [ref=e501]: 40公尺
+                - generic [ref=e502]:
+                  - generic [ref=e503]:
+                    - img [ref=e505]
+                    - generic [ref=e507]: Finlando桑拿
+                  - generic [ref=e509]: 90公尺
+                - generic [ref=e510]:
+                  - generic [ref=e511]:
+                    - img [ref=e513]
+                    - generic [ref=e515]: 東京武士博物館
+                  - generic [ref=e517]: 130公尺
+                - generic [ref=e518]:
+                  - generic [ref=e519]:
+                    - img [ref=e521]
+                    - generic [ref=e523]: Robot Restaurant
+                  - generic [ref=e525]: 130公尺
+              - generic [ref=e526]:
+                - heading "人氣景點" [level=6] [ref=e528]
+                - generic [ref=e529]:
+                  - generic [ref=e530]:
+                    - img [ref=e532]
+                    - generic [ref=e534]: 東京都廳
+                  - generic [ref=e536]: 1.1公里
+                - generic [ref=e537]:
+                  - generic [ref=e538]:
+                    - img [ref=e540]
+                    - generic [ref=e542]: 新宿禦苑公園
+                  - generic [ref=e544]: 1.3公里
+                - generic [ref=e545]:
+                  - generic [ref=e546]:
+                    - img [ref=e548]
+                    - generic [ref=e550]: 明治神宮
+                  - generic [ref=e552]: 2.1公里
+                - generic [ref=e553]:
+                  - generic [ref=e554]:
+                    - img [ref=e556]
+                    - generic [ref=e558]: 澀谷隧道
+                  - generic [ref=e560]: 4.0公里
+                - generic [ref=e561]:
+                  - generic [ref=e562]:
+                    - img [ref=e564]
+                    - generic [ref=e566]: 東京塔
+                  - generic [ref=e568]: 5.7公里
+              - generic [ref=e569]:
+                - heading "距離最近的景點" [level=6] [ref=e571]
+                - generic [ref=e572]:
+                  - generic [ref=e573]:
+                    - img [ref=e575]
+                    - generic [ref=e577]: Ohkubo Hospital
+                  - generic [ref=e579]: 170公尺
+                - generic [ref=e580]:
+                  - generic [ref=e581]:
+                    - img [ref=e583]
+                    - generic [ref=e585]: Kabukicho Ichibangai
+                  - generic [ref=e587]: 180公尺
+                - generic [ref=e588]:
+                  - generic [ref=e589]:
+                    - img [ref=e591]
+                    - generic [ref=e593]: Thermae Yu
+                  - generic [ref=e595]: 190公尺
+                - generic [ref=e596]:
+                  - generic [ref=e597]:
+                    - img [ref=e599]
+                    - generic [ref=e601]: Shinjuku Fu- (Shinjuku Nagatani Hall)
+                  - generic [ref=e603]: 210公尺
+                - generic [ref=e604]:
+                  - generic [ref=e605]:
+                    - img [ref=e607]
+                    - generic [ref=e609]: Akagi Shrine
+                  - generic [ref=e611]: 210公尺
+            - button "查看鄰近景點" [ref=e614] [cursor=pointer]:
+              - generic [ref=e616]: 查看鄰近景點
+    - generic [ref=e621]:
+      - generic [ref=e669]:
+        - separator [ref=e693]
+        - separator [ref=e710]
+        - separator [ref=e727]
+        - separator [ref=e744]
+      - generic [ref=e766]:
+        - separator [ref=e787]
+        - separator [ref=e803]
+  - contentinfo [ref=e814]:
+    - generic [ref=e817]:
+      - generic [ref=e818]:
+        - heading "客服中心" [level=2] [ref=e819]
+        - list [ref=e820]:
+          - listitem [ref=e821]:
+            - link "服務中心" [ref=e822] [cursor=pointer]:
+              - /url: /zh-tw/info/contact.html
+              - paragraph [ref=e823]: 服務中心
+          - listitem [ref=e824]:
+            - link "常見問題" [ref=e825] [cursor=pointer]:
+              - /url: /zh-tw/info/contact.html
+              - paragraph [ref=e826]: 常見問題
+          - listitem [ref=e827]:
+            - link "隱私權政策" [ref=e828] [cursor=pointer]:
+              - /url: /zh-tw/info/privacy.html
+              - paragraph [ref=e829]: 隱私權政策
+          - listitem [ref=e830]:
+            - link "Cookie政策" [ref=e831] [cursor=pointer]:
+              - /url: /zh-tw/info/privacy.html#cookies
+              - paragraph [ref=e832]: Cookie政策
+          - listitem [ref=e833]:
+            - link "服務條款" [ref=e834] [cursor=pointer]:
+              - /url: /zh-tw/info/termsofuse.html
+              - paragraph [ref=e835]: 服務條款
+          - listitem [ref=e836]:
+            - link "數位服務法（歐盟）" [ref=e837] [cursor=pointer]:
+              - /url: /zh-tw/info/eu-digital-services-act.html
+              - paragraph [ref=e838]: 數位服務法（歐盟）
+          - listitem [ref=e839]:
+            - link "內容指南與回報" [ref=e840] [cursor=pointer]:
+              - /url: /zh-tw/info/eu-digital-services-act.html#CM
+              - paragraph [ref=e841]: 內容指南與回報
+          - listitem [ref=e842]:
+            - link "現代奴役法聲明書" [ref=e843] [cursor=pointer]:
+              - /url: //www.bookingholdings.com/modern-slavery-statement/
+              - paragraph [ref=e844]: 現代奴役法聲明書
+      - generic [ref=e845]:
+        - heading "公司" [level=2] [ref=e846]
+        - list [ref=e847]:
+          - listitem [ref=e848]:
+            - link "關於我們" [ref=e849] [cursor=pointer]:
+              - /url: /zh-tw/about-agoda
+              - paragraph [ref=e850]: 關於我們
+          - listitem [ref=e851]:
+            - link "職缺情報" [ref=e852] [cursor=pointer]:
+              - /url: //careersatagoda.com
+              - paragraph [ref=e853]: 職缺情報
+          - listitem [ref=e854]:
+            - link "新聞報導" [ref=e855] [cursor=pointer]:
+              - /url: //mediaroom.agoda.com
+              - paragraph [ref=e856]: 新聞報導
+          - listitem [ref=e857]:
+            - link "旅遊部落格" [ref=e858] [cursor=pointer]:
+              - /url: /zh-tw/blog
+              - paragraph [ref=e859]: 旅遊部落格
+          - listitem [ref=e860]:
+            - link "PointsMAX" [ref=e861] [cursor=pointer]:
+              - /url: //www.agoda.com/zh-tw/pointsmax.html
+              - paragraph [ref=e862]: PointsMAX
+      - generic [ref=e863]:
+        - heading "目的地" [level=2] [ref=e864]
+        - list [ref=e865]:
+          - listitem [ref=e866]:
+            - link "國家/地區" [ref=e867] [cursor=pointer]:
+              - /url: //www.agoda.com/zh-tw/world.html
+              - paragraph [ref=e868]: 國家/地區
+          - listitem [ref=e869]:
+            - link "所有航線" [ref=e870] [cursor=pointer]:
+              - /url: //www.agoda.com/zh-tw/flights/world.html
+              - paragraph [ref=e871]: 所有航線
+      - generic [ref=e872]:
+        - heading "成為合作夥伴" [level=2] [ref=e873]
+        - list [ref=e874]:
+          - listitem [ref=e875]:
+            - link "YCS夥伴平台" [ref=e876] [cursor=pointer]:
+              - /url: ////ycs.agoda.com/zh-tw
+              - paragraph [ref=e877]: YCS夥伴平台
+          - listitem [ref=e878]:
+            - link "Partner Hub" [ref=e879] [cursor=pointer]:
+              - /url: //partnerhub.agoda.com/
+              - paragraph [ref=e880]: Partner Hub
+          - listitem [ref=e881]:
+            - link "供應商招募" [ref=e882] [cursor=pointer]:
+              - /url: //partnerhub.agoda.com/advertising-solutions/
+              - paragraph [ref=e883]: 供應商招募
+          - listitem [ref=e884]:
+            - link "行銷夥伴" [ref=e885] [cursor=pointer]:
+              - /url: ////partners.agoda.com/zh-tw/index.html
+              - paragraph [ref=e886]: 行銷夥伴
+          - listitem [ref=e887]:
+            - link "Agoda API文件" [ref=e888] [cursor=pointer]:
+              - /url: //developer.agoda.com/
+              - paragraph [ref=e889]: Agoda API文件
+      - generic [ref=e890]:
+        - heading "行動訂房神器" [level=2] [ref=e891]
+        - list [ref=e892]:
+          - listitem [ref=e893]:
+            - link "iOS免費下載" [ref=e894] [cursor=pointer]:
+              - /url: //app.appsflyer.com/id440676901?pid=direct&c=hotel_page_footer&af_siteid=1716632&site_id=1716632&af_sub1=desktop
+              - paragraph [ref=e895]: iOS免費下載
+          - listitem [ref=e896]:
+            - link "Android免費下載" [ref=e897] [cursor=pointer]:
+              - /url: //app.appsflyer.com/com.agoda.mobile.consumer?pid=direct&c=hotel_page_footer&af_siteid=1716632&site_id=1716632&af_sub1=desktop
+              - paragraph [ref=e898]: Android免費下載
+    - generic [ref=e900]:
+      - paragraph [ref=e901]: 本網站內容由© 2005–2026 Agoda Company Pte. Ltd.保留所有權利。
+      - paragraph [ref=e902]: Agoda.com隸屬於全球線上旅遊相關事業的領導品牌Booking Holdings集團。
+      - generic [ref=e904]:
+        - img "Agoda logo" [ref=e906]
+        - img "Priceline logo" [ref=e908]
+        - img "Kayak logo" [ref=e910]
+        - generic [ref=e911]:
+          - img "Booking.com logo"
+        - img "Open Table logo" [ref=e913]

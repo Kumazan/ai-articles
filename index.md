@@ -6,6 +6,8 @@
 
 ### 2026-03-31
 
+#### ・ [2026 年 3 月 LLM 版圖回顧：GPT-5.4 並列第一，但真正的故事在別處](./2026-03-31/march-2026-llm-releases-recap.html)
+
 #### ・ [中國 LLM 版圖 2026：模型、產品與生態系統正在重新排序](./2026-03-31/china-llm-landscape-2026.html)
 
 #### ・ [Anthropic 史上最大規模資料外洩：待發布的 Claude Mythos 完整曝光，Capybara 新 tier 確認存在](./2026-03-31/anthropic-claude-mythos-capybara-leak.html)

@@ -1,0 +1,7250 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e4]:
+    - generic [ref=e914]:
+      - navigation [ref=e916]:
+        - link "Agoda logo Home link" [ref=e918] [cursor=pointer]:
+          - /url: /zh-tw/
+          - generic [ref=e919]:
+            - img "Primary Logo" [ref=e922]
+            - img "Site secondary logo" [ref=e923]
+        - generic [ref=e924]:
+          - generic [ref=e926]:
+            - generic [ref=e929] [cursor=pointer]: 省更多！
+            - link "機票+住宿" [ref=e930] [cursor=pointer]:
+              - /url: /zh-tw/packages
+          - link "搜好房" [ref=e933] [cursor=pointer]:
+            - /url: /zh-tw/
+          - generic [ref=e935]:
+            - generic [ref=e938] [cursor=pointer]: 新!
+            - generic [ref=e941]:
+              - button "交通" [ref=e942]:
+                - generic [ref=e943]:
+                  - generic [ref=e944] [cursor=pointer]: 交通
+                  - img [ref=e946]
+              - paragraph
+          - button "其他旅程服務選單" [ref=e952] [cursor=pointer]:
+            - img [ref=e953]
+      - generic [ref=e955]:
+        - generic [ref=e956]:
+          - button "刊登家中空房" [ref=e959] [cursor=pointer]:
+            - generic [ref=e961]: 刊登家中空房
+          - generic [ref=e962]:
+            - button "顯示語言為繁體中文 (台灣)" [ref=e964]:
+              - img "繁體中文 (台灣)" [ref=e966] [cursor=pointer]
+              - generic [ref=e967]: 選擇語言
+            - button "價格顯示為新臺幣" [ref=e969]:
+              - generic [ref=e972] [cursor=pointer]: NT$
+              - generic [ref=e973]: 選擇您的幣別
+          - generic [ref=e974]:
+            - button "A咖登入" [ref=e977] [cursor=pointer]:
+              - generic [ref=e979]: A咖登入
+            - button "我是新朋友" [ref=e982] [cursor=pointer]:
+              - generic [ref=e984]: 我是新朋友
+        - button "主選單" [ref=e989] [cursor=pointer]:
+          - img [ref=e992]
+  - generic [ref=e11]:
+    - generic [ref=e16]:
+      - generic [ref=e18] [cursor=pointer]:
+        - generic [ref=e20]: 
+        - generic [ref=e21]:
+          - combobox "輸入目的地或住宿名稱" [ref=e22]: 格拉斯麗新宿酒店
+          - generic [ref=e23]: 輸入住宿名稱或關鍵字查詢，使用上下鍵或Tab鍵移動，並按「Enter」來選擇
+      - button "入住日期 2026年6月25日 週四" [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]:
+          - generic [ref=e27]: 
+          - generic [ref=e29]:
+            - generic [ref=e30]: 2026年6月25日
+            - generic [ref=e31]: 週四
+      - button "退房日期 2026年6月28日 週日" [ref=e32] [cursor=pointer]:
+        - generic [ref=e33]:
+          - generic [ref=e35]: 
+          - generic [ref=e37]:
+            - generic [ref=e38]: 2026年6月28日
+            - generic [ref=e39]: 週日
+      - button "住客人數和房間數 2位大人 1間客房" [ref=e40] [cursor=pointer]:
+        - generic [ref=e41]:
+          - generic [ref=e43]: 
+          - generic [ref=e45]:
+            - generic [ref=e46]: 2位大人
+            - generic [ref=e47]: 1間客房
+            - generic [ref=e49]: 
+      - button "更新" [ref=e51] [cursor=pointer]:
+        - generic [ref=e53]: 更新
+    - generic [ref=e54]:
+      - navigation "導航列" [ref=e994]:
+        - list [ref=e995]:
+          - listitem [ref=e996]:
+            - link "首頁" [ref=e998] [cursor=pointer]:
+              - /url: /zh-tw/?cid=-1&ckuid=dc065de3-1bc5-48a5-a26b-bb524c2d0689
+              - generic [ref=e999]: 首頁
+          - listitem [ref=e1000]:
+            - generic [ref=e1001]:
+              - link "日本住宿" [ref=e1002] [cursor=pointer]:
+                - /url: /zh-tw/country/japan.html?cid=-1&ckuid=dc065de3-1bc5-48a5-a26b-bb524c2d0689
+                - generic [ref=e1003]: 日本住宿
+              - generic [ref=e1004]: (145,961)
+          - listitem [ref=e1005]:
+            - generic [ref=e1006]:
+              - link "東京住宿" [ref=e1007] [cursor=pointer]:
+                - /url: /zh-tw/city/tokyo-jp.html?cid=-1&ckuid=dc065de3-1bc5-48a5-a26b-bb524c2d0689
+                - generic [ref=e1008]: 東京住宿
+              - generic [ref=e1009]: (12,486)
+          - listitem [ref=e1010]:
+            - paragraph [ref=e1012]: 預訂格拉斯麗新宿酒店
+      - link "查看東京全部12,486間住宿" [ref=e1015] [cursor=pointer]:
+        - /url: /zh-tw/search?cid=-1&aid=130243&city=5085&checkIn=2026-06-25&checkOut=2026-06-28&los=3&rooms=1&adults=2&children=0&childages=&travellerType=1&selectedproperty=706347&utm_medium=&utm_source=&utm_campaign=&utm_content=&utm_term=
+        - generic [ref=e1016]: 查看東京全部12,486間住宿
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - generic [ref=e60] [cursor=pointer]:
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e61]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e62]
+            - button "查看所有照片" [ref=e66]:
+              - generic [ref=e67]:
+                - img [ref=e68]
+                - generic [ref=e70]: 查看所有照片
+          - generic [ref=e72]:
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e75] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e76]
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e79] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e80]
+            - generic [ref=e82] [cursor=pointer]:
+              - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e83]:
+                - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e84]
+              - button "我的最愛" [ref=e87]:
+                - generic:
+                  - alert: 已從口袋清單刪除
+                - img [ref=e90]
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e94] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e95]
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e98] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e99]
+            - button "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e102] [cursor=pointer]:
+              - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [ref=e103]
+        - navigation "住宿資訊" [ref=e106]:
+          - generic [ref=e108]:
+            - generic [ref=e110]:
+              - generic:
+                - button [disabled]:
+                  - img
+              - generic "資訊選單" [ref=e111]:
+                - link "簡介" [ref=e113] [cursor=pointer]:
+                  - generic [ref=e114]: 簡介
+                - link "房型" [ref=e1018] [cursor=pointer]:
+                  - generic [ref=e1019]: 房型
+                - link "旅遊好去處" [ref=e1021] [cursor=pointer]:
+                  - generic [ref=e1022]: 旅遊好去處
+                - link "設施與服務" [ref=e1024] [cursor=pointer]:
+                  - generic [ref=e1025]: 設施與服務
+                - link "住宿評鑑" [ref=e1027] [cursor=pointer]:
+                  - generic [ref=e1028]: 住宿評鑑
+                - link "地點" [ref=e1030] [cursor=pointer]:
+                  - generic [ref=e1031]: 地點
+                - link "政策" [ref=e1033] [cursor=pointer]:
+                  - generic [ref=e1034]: 政策
+              - generic:
+                - button [disabled]:
+                  - img
+            - generic [ref=e1036]:
+              - generic [ref=e1038]: 自 NT$ 4,424
+              - button "自 NT$4,424 查看本間最便宜房型" [ref=e1040] [cursor=pointer]:
+                - generic [ref=e1042]: 查看本間最便宜房型
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e1044]:
+              - button " 2024 " [ref=e1046] [cursor=pointer]:
+                - generic [ref=e1047]: 
+                - text: "2024"
+                - generic [ref=e1048]: 
+              - tooltip "tooltip 2024年Agoda旅人鑑賞優勝。" [ref=e1049]:
+                - generic [ref=e1050]: tooltip
+                - paragraph [ref=e1051]: 2024年Agoda旅人鑑賞優勝。
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - heading "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)" [level=1] [ref=e130]
+                - generic "滿分5顆星，住宿獲得4顆星" [ref=e132]:
+                  - generic [ref=e133]:
+                    - button "滿分5顆星，住宿獲得4顆星" [ref=e135]:
+                      - generic [ref=e136]:
+                        - generic [ref=e137]: 滿分5顆星，住宿獲得4顆星
+                        - img [ref=e138]
+                        - img [ref=e140]
+                        - img [ref=e142]
+                        - img [ref=e144]
+                    - tooltip "tooltip 所有星級的標示皆可作為您判斷舒適度、設施服務與備品完善度的參考指標，資料由住宿方提供。" [ref=e146]:
+                      - generic [ref=e147]: tooltip
+                      - paragraph [ref=e148]: 所有星級的標示皆可作為您判斷舒適度、設施服務與備品完善度的參考指標，資料由住宿方提供。
+              - generic [ref=e149] [cursor=pointer]:
+                - text: 1-19-1 Kabukicho, 新宿, 東京, 日本, 160-8466
+                - button "查看地圖&週邊景點" [ref=e150]:
+                  - generic [ref=e151]: "- 查看地圖&週邊景點"
+          - generic [ref=e153]:
+            - heading "重點設施" [level=2] [ref=e155]
+            - generic [ref=e156]:
+              - generic [ref=e158]:
+                - generic [ref=e161]:
+                  - img "絕佳地點" [ref=e163]
+                  - img [ref=e165]
+                - generic [ref=e167]:
+                  - paragraph [ref=e168]:
+                    - button "絕佳地點" [ref=e169] [cursor=pointer]:
+                      - paragraph [ref=e171]: 絕佳地點
+                    - text: "- 距離JR新宿與地鐵步行可達，位置在歌舞伎町商圈、交通樞紐與轉乘點附近，外出購物、覓食與逛街都很方便。"
+                  - generic [ref=e172]: 這家旅館的性價比高,地理位置也方便。停車位充足,設施與服務也很出色。Wi-Fi連接良好。
+              - generic [ref=e174]:
+                - generic [ref=e177]:
+                  - img "浴室維護良好" [ref=e179]
+                  - img [ref=e181]
+                - generic [ref=e183]:
+                  - paragraph [ref=e184]:
+                    - button "浴室維護良好" [ref=e185] [cursor=pointer]:
+                      - paragraph [ref=e187]: 浴室維護良好
+                    - text: "- 浴室普遍較大且多為乾濕分離，浴缸空間足以泡澡，洗澡與泡澡體驗獲多數好評。"
+                  - generic [ref=e188]: 房間部分因選擇標準單人房雖較小，但浴室可以泡澡且乾濕分離，且環境維護乾淨，所以整體而言是舒適的住宿體驗！
+              - generic [ref=e190]:
+                - generic [ref=e193]:
+                  - img "景觀優美" [ref=e195]
+                  - img [ref=e197]
+                - paragraph [ref=e200]:
+                  - button "景觀優美" [ref=e201] [cursor=pointer]:
+                    - paragraph [ref=e203]: 景觀優美
+                  - text: "- 高樓層房間景觀與夜景表現佳，多則評論稱高樓層視野漂亮且值得一訪。"
+              - generic [ref=e205]:
+                - generic [ref=e208]:
+                  - img "抵達機場便利性" [ref=e1052]
+                  - img [ref=e212]
+                - generic [ref=e214]:
+                  - paragraph [ref=e215]:
+                    - button "抵達機場便利性" [ref=e216] [cursor=pointer]:
+                      - paragraph [ref=e218]: 抵達機場便利性
+                    - text: "- 從成田/羽田機場搭利木津巴士可直達或快速抵達飯店附近，機場接駁交通被多則評論視為方便選項。"
+                  - generic [ref=e219]: 地理位置超方便，來回機場可直接在歌舞伎町塔1F。
+              - generic [ref=e221]:
+                - generic [ref=e224]:
+                  - img "美食餐飲佳" [ref=e226]
+                  - img [ref=e228]
+                - generic [ref=e230]:
+                  - paragraph [ref=e231]:
+                    - button "美食餐飲佳" [ref=e232] [cursor=pointer]:
+                      - paragraph [ref=e234]: 美食餐飲佳
+                  - generic [ref=e235]: 晚上周遭還是能找到食物，對於晚回的旅客滿方便的
+          - generic [ref=e237]:
+            - heading "設施與服務" [level=2] [ref=e239]
+            - list [ref=e240]:
+              - listitem [ref=e241]:
+                - img [ref=e243]
+                - paragraph [ref=e245]: 免費Wi-Fi
+              - listitem [ref=e246]:
+                - img [ref=e248]
+                - paragraph [ref=e250]: 停車場
+              - listitem [ref=e251]:
+                - img [ref=e253]
+                - paragraph [ref=e255]: 24小時櫃台服務
+              - listitem [ref=e256]:
+                - img [ref=e258]
+                - paragraph [ref=e260]: 餐廳
+              - listitem [ref=e261]:
+                - img [ref=e263]
+                - paragraph [ref=e265]: 酒吧
+              - listitem [ref=e266]:
+                - img [ref=e268]
+                - paragraph [ref=e270]: 按摩
+              - listitem [ref=e271]:
+                - img [ref=e273]
+                - paragraph [ref=e275]: 接駁服務
+              - listitem [ref=e276]:
+                - img [ref=e278]
+                - paragraph [ref=e280]: 可寄放行李
+          - generic [ref=e281]:
+            - heading "關於我們" [level=2] [ref=e282]
+            - generic [ref=e283]: 入住格拉斯麗新宿酒店，享受獨特的哥吉拉主題體驗，露台上有哥吉拉的頭部以及主題房間。輕鬆前往東京充滿活力的新宿娛樂區和文化景點。位於東京新宿的格拉斯麗新宿酒店為旅客提供舒適和刺激。享受按摩、酒吧的雞尾酒和咖啡店的簡餐。客房提供免費Wi-Fi、空調和壯麗的城市景觀。距離東京都廳舍和新宿黃金街的夜生活僅幾步之遙，是完美的城市逃逸地。 [特定內容由生成式AI支援，可能存在不準確的情況。]
+            - button "查看更多 關於我們" [ref=e284] [cursor=pointer]:
+              - generic [ref=e285]: 查看更多
+          - article [ref=e1054]:
+            - generic [ref=e1055]:
+              - heading "這間住宿好搶手！" [level=4] [ref=e1056]
+              - paragraph [ref=e1057]: 今天已經有61位旅人預訂
+        - generic [ref=e286]:
+          - generic [ref=e288]:
+            - generic [ref=e290]:
+              - button "住宿評鑑分數8.7（總分10分） 很讚 28,637 篇評鑑" [ref=e292] [cursor=pointer]:
+                - generic [ref=e295]:
+                  - generic [ref=e296]: 住宿評鑑分數8.7（總分10分） 很讚 28,637 篇評鑑
+                  - generic [ref=e297]:
+                    - heading [level=2] [ref=e300]:
+                      - generic [ref=e301]: "8.7"
+                      - generic [ref=e302]: 很讚
+                    - paragraph [ref=e303]:
+                      - generic [ref=e304]:
+                        - img [ref=e305]
+                        - paragraph [ref=e308]: 28,637 篇評鑑
+              - button "查看所有評鑑" [ref=e1058] [cursor=pointer]:
+                - generic [ref=e1059]: 查看所有評鑑
+            - generic [ref=e311]:
+              - generic [ref=e314]: 位置 9.2
+              - generic [ref=e317]: 整體狀況及整潔度 8.9
+              - generic [ref=e320]: 服務 8.9
+              - generic [ref=e1062]: 設施與設備 8.5
+              - generic [ref=e324]:
+                - button "顯示評論詳情" [ref=e326] [cursor=pointer]:
+                  - img "顯示評論詳情" [ref=e327]
+                - generic [ref=e331]:
+                  - paragraph [ref=e333]: 根據28,637篇已驗證評鑑
+                  - generic [ref=e336]:
+                    - generic [ref=e1067]:
+                      - generic [ref=e1068]: 位置
+                      - paragraph [ref=e1070]: "9.2"
+                    - generic [ref=e1075]:
+                      - generic [ref=e1076]: 整體狀況及整潔度
+                      - paragraph [ref=e1078]: "8.9"
+                    - generic [ref=e1083]:
+                      - generic [ref=e1084]: 服務
+                      - paragraph [ref=e1086]: "8.9"
+                    - generic [ref=e369]:
+                      - generic [ref=e1087]: 設施與設備
+                      - paragraph [ref=e371]: "8.5"
+                    - generic [ref=e376]:
+                      - generic [ref=e1088]: 客房舒適度
+                      - paragraph [ref=e378]: "8.5"
+                    - generic [ref=e1093]:
+                      - generic [ref=e1094]: CP值
+                      - paragraph [ref=e1096]: "8.4"
+          - region "評論摘要輪播" [ref=e388]:
+            - generic [ref=e389]:
+              - generic [ref=e390]:
+                - group "第1張（共5張）" [ref=e394]:
+                  - generic [ref=e396]: "\"這間飯店已經是我第二次入住，每次來都一樣讓人安心，也會想再回來。\""
+                - group "第2張（共5張）" [ref=e400]:
+                  - generic [ref=e402]: "\"房間整潔, 衛浴設備完善, 尤其交通非常便利, 購物相當方便, 餐廳選擇也相當多\""
+                - group "第3張（共5張）" [ref=e406]:
+                  - generic [ref=e408]: "\"早餐可依各人需求購買餐券，7-11、family mart和Lawson都在走路5分鐘之內。\""
+                - group "第4張（共5張）" [ref=e412]:
+                  - generic [ref=e414]: "\"地點在新宿的正中心, 人潮最多的地方,車站走過來約10分鐘左右很好找, 房間不大但是浴室很舒適, 推薦!!\""
+                - group "第5張（共5張）" [ref=e418]:
+                  - generic [ref=e420]: "\"已飯點來說真的很讚，加入會員可以到12點才退房非常棒，員工的表現也都很好，浴室很大，馬桶也是大的(有住過別的小的懂得懂)\""
+              - button "下一則評論" [ref=e422] [cursor=pointer]:
+                - img [ref=e423]
+          - generic [ref=e425]:
+            - generic [ref=e427]:
+              - generic:
+                - button "週邊大眾運輸" [ref=e428]:
+                  - img "交通選項" [ref=e429]
+                - tooltip "tooltip 週邊大眾運輸 • 距西部新宿站約0.18公里 • 距地下鐵 新宿西口站約0.34公里" [ref=e431]:
+                  - generic [ref=e432]: tooltip
+                  - paragraph [ref=e433]: 週邊大眾運輸
+                  - list [ref=e434]:
+                    - listitem [ref=e435]:
+                      - generic [ref=e436]:
+                        - paragraph [ref=e437]: •
+                        - paragraph [ref=e438]: 距西部新宿站約0.18公里
+                    - listitem [ref=e439]:
+                      - generic [ref=e440]:
+                        - paragraph [ref=e441]: •
+                        - paragraph [ref=e442]: 距地下鐵 新宿西口站約0.34公里
+              - button "查看地圖&週邊景點" [ref=e443]
+            - generic [ref=e445]:
+              - heading "9.2 超棒" [level=3] [ref=e448]:
+                - generic [ref=e449]: "9.2"
+                - generic [ref=e450]: 超棒
+              - paragraph [ref=e451]: 位置得分
+            - generic [ref=e452]:
+              - generic [ref=e453]:
+                - generic [ref=e454]: 
+                - generic [ref=e455]: 地點超優 - （位於市中心）
+              - generic [ref=e456]:
+                - generic [ref=e457]: 
+                - generic [ref=e458]: 熱門區域
+            - generic [ref=e459]:
+              - img [ref=e460]
+              - generic [ref=e462]:
+                - generic [ref=e463]: 超適合步行
+                - generic [ref=e464]:
+                  - button "關於步行的更多資訊" [ref=e466] [cursor=pointer]:
+                    - img [ref=e467]
+                    - generic [ref=e469]: 關於步行的更多資訊
+                  - tooltip "tooltip 共有460個地點可步行抵達！" [ref=e470]:
+                    - generic [ref=e471]: tooltip
+                    - paragraph [ref=e472]: 共有460個地點可步行抵達！
+            - generic [ref=e474]:
+              - generic [ref=e476]: 
+              - generic [ref=e477]: 停車服務
+              - generic [ref=e478]: 有提供
+            - generic [ref=e482]:
+              - generic [ref=e483]:
+                - heading "可步行抵達的地點" [level=6] [ref=e485]
+                - generic [ref=e486]:
+                  - generic [ref=e487]:
+                    - img [ref=e489]
+                    - generic [ref=e491]: Godzilla Head
+                  - generic [ref=e493]: 20公尺
+                - generic [ref=e494]:
+                  - generic [ref=e495]:
+                    - img [ref=e497]
+                    - generic [ref=e499]: TOHO Cinemas Shinjuku
+                  - generic [ref=e501]: 40公尺
+                - generic [ref=e502]:
+                  - generic [ref=e503]:
+                    - img [ref=e505]
+                    - generic [ref=e507]: Finlando桑拿
+                  - generic [ref=e509]: 90公尺
+                - generic [ref=e510]:
+                  - generic [ref=e511]:
+                    - img [ref=e513]
+                    - generic [ref=e515]: 東京武士博物館
+                  - generic [ref=e517]: 130公尺
+                - generic [ref=e518]:
+                  - generic [ref=e519]:
+                    - img [ref=e521]
+                    - generic [ref=e523]: Robot Restaurant
+                  - generic [ref=e525]: 130公尺
+              - generic [ref=e526]:
+                - heading "人氣景點" [level=6] [ref=e528]
+                - generic [ref=e529]:
+                  - generic [ref=e530]:
+                    - img [ref=e532]
+                    - generic [ref=e534]: 東京都廳
+                  - generic [ref=e536]: 1.1公里
+                - generic [ref=e537]:
+                  - generic [ref=e538]:
+                    - img [ref=e540]
+                    - generic [ref=e542]: 新宿禦苑公園
+                  - generic [ref=e544]: 1.3公里
+                - generic [ref=e545]:
+                  - generic [ref=e546]:
+                    - img [ref=e548]
+                    - generic [ref=e550]: 明治神宮
+                  - generic [ref=e552]: 2.1公里
+                - generic [ref=e553]:
+                  - generic [ref=e554]:
+                    - img [ref=e556]
+                    - generic [ref=e558]: 澀谷隧道
+                  - generic [ref=e560]: 4.0公里
+                - generic [ref=e561]:
+                  - generic [ref=e562]:
+                    - img [ref=e564]
+                    - generic [ref=e566]: 東京塔
+                  - generic [ref=e568]: 5.7公里
+              - generic [ref=e569]:
+                - heading "距離最近的景點" [level=6] [ref=e571]
+                - generic [ref=e572]:
+                  - generic [ref=e573]:
+                    - img [ref=e575]
+                    - generic [ref=e577]: Ohkubo Hospital
+                  - generic [ref=e579]: 170公尺
+                - generic [ref=e580]:
+                  - generic [ref=e581]:
+                    - img [ref=e583]
+                    - generic [ref=e585]: Kabukicho Ichibangai
+                  - generic [ref=e587]: 180公尺
+                - generic [ref=e588]:
+                  - generic [ref=e589]:
+                    - img [ref=e591]
+                    - generic [ref=e593]: Thermae Yu
+                  - generic [ref=e595]: 190公尺
+                - generic [ref=e596]:
+                  - generic [ref=e597]:
+                    - img [ref=e599]
+                    - generic [ref=e601]: Shinjuku Fu- (Shinjuku Nagatani Hall)
+                  - generic [ref=e603]: 210公尺
+                - generic [ref=e604]:
+                  - generic [ref=e605]:
+                    - img [ref=e607]
+                    - generic [ref=e609]: Akagi Shrine
+                  - generic [ref=e611]: 210公尺
+            - button "查看鄰近景點" [ref=e614] [cursor=pointer]:
+              - generic [ref=e616]: 查看鄰近景點
+    - generic [ref=e620]:
+      - generic [ref=e1099]:
+        - generic [ref=e1100]:
+          - heading "客房選擇" [level=3] [ref=e1102]
+          - generic [ref=e1105]:
+            - img [ref=e1106]
+            - button "本站價格保證！" [ref=e1108] [cursor=pointer]:
+              - generic [ref=e1109]: 本站價格保證！
+        - generic [ref=e1110]:
+          - generic [ref=e1113]:
+            - generic [ref=e1114]:
+              - generic [ref=e1115]:
+                - img [ref=e1116]
+                - heading "顯示特定房型" [level=5] [ref=e1119]
+              - button "清除所有房型篩選" [ref=e1120] [cursor=pointer]:
+                - generic [ref=e1121]: 清除所有條件
+            - generic [ref=e1122]: "Tip: 您的行程離現在還有一陣子，可以訂能免費取消的專案以防計畫有變喔！"
+            - group "顯示特定房型" [ref=e1123]:
+              - button "附早餐 (37)" [ref=e1125] [cursor=pointer]:
+                - img [ref=e1126]
+                - generic [ref=e1128]: 附早餐 (37)
+              - generic [ref=e1129]:
+                - button "免費取消 (60)" [ref=e1132] [cursor=pointer]:
+                  - img [ref=e1133]
+                  - generic [ref=e1135]: 免費取消 (60)
+                - tooltip "tooltip 計畫還有可能會變動？沒關係，我們提供可免費取消的訂房專案，讓你安心訂房無負擔。" [ref=e1136]:
+                  - generic [ref=e1137]: tooltip
+                  - paragraph [ref=e1138]: 計畫還有可能會變動？沒關係，我們提供可免費取消的訂房專案，讓你安心訂房無負擔。
+              - button "延後扣款 (38)" [ref=e1140] [cursor=pointer]:
+                - img [ref=e1141]
+                - generic [ref=e1143]: 延後扣款 (38)
+              - generic [ref=e1144]:
+                - button "到店付款 (21)" [ref=e1147] [cursor=pointer]:
+                  - img [ref=e1148]
+                  - generic [ref=e1150]: 到店付款 (21)
+                - tooltip "tooltip 本月預算有限，又怕手腳太慢價格上漲？別擔心，選擇「到店付款」的訂房專案，今天先把房間訂下來，入住時再把錢直接付給住宿就可以了。" [ref=e1151]:
+                  - generic [ref=e1152]: tooltip
+                  - paragraph [ref=e1153]: 本月預算有限，又怕手腳太慢價格上漲？別擔心，選擇「到店付款」的訂房專案，今天先把房間訂下來，入住時再把錢直接付給住宿就可以了。
+              - button "禁菸房 (19)" [ref=e1155] [cursor=pointer]:
+                - img [ref=e1156]
+                - generic [ref=e1158]: 禁菸房 (19)
+              - button "兩床 (27)" [ref=e1160] [cursor=pointer]:
+                - img [ref=e1161]
+                - generic [ref=e1163]: 兩床 (27)
+              - button "大床 (12)" [ref=e1165] [cursor=pointer]:
+                - img [ref=e1166]
+                - generic [ref=e1168]: 大床 (12)
+              - button "市景 (64)" [ref=e1170] [cursor=pointer]:
+                - img [ref=e1171]
+                - generic [ref=e1173]: 市景 (64)
+          - generic [ref=e1174]:
+            - heading "我們現有11種房型，共68個訂房專案：  價格不包含稅金和附加費用" [level=3] [ref=e1175]:
+              - generic [ref=e1178]:
+                - text: 我們現有11種房型，
+                - generic [ref=e1179]: 共68個訂房專案：
+              - generic [ref=e1182]:
+                - generic [ref=e1183]: 
+                - text: 價格不包含稅金和附加費用
+            - alert [ref=e1185]:
+              - img [ref=e1187]
+              - paragraph [ref=e1191]:
+                - generic [ref=e1192]: 手腳要快！此住宿的4種房型在您選的日期已完售！
+          - generic [ref=e1194]:
+            - generic [ref=e1195]:
+              - generic [ref=e1196]:
+                - heading "標準雙人房－禁菸 (Standard Double - Non-Smoking) 精選推薦" [level=4] [ref=e1198]:
+                  - button "標準雙人房－禁菸 (Standard Double - Non-Smoking) 精選推薦" [ref=e1199] [cursor=pointer]:
+                    - paragraph [ref=e1200]:
+                      - generic [ref=e1202]:
+                        - generic [ref=e1203]: 標準雙人房－禁菸 (Standard Double - Non-Smoking)
+                        - generic [ref=e1204]:
+                          - img [ref=e1206]
+                          - paragraph [ref=e1208]: 精選推薦
+                - generic [ref=e1211]:
+                  - generic [ref=e1212]:
+                    - img [ref=e1213]
+                    - paragraph [ref=e1216]: "8.7"
+                  - generic [ref=e1217]:
+                    - heading "很讚" [level=5] [ref=e1219]
+                    - paragraph [ref=e1220]: 客房舒適度
+              - generic [ref=e1222]:
+                - generic [ref=e1223]:
+                  - paragraph [ref=e1224]: 房型摘要
+                  - generic [ref=e1226]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) 標準雙人房－禁菸 (Standard Double - Non-Smoking)" [ref=e1230] [cursor=pointer]
+                    - generic [ref=e1233]:
+                      - button "room-image" [ref=e1235] [cursor=pointer]:
+                        - img "room-image" [ref=e1237]
+                      - button "room-image" [ref=e1239] [cursor=pointer]:
+                        - img "room-image" [ref=e1241]
+                  - generic [ref=e1242]:
+                    - button "查看房間照片&設施" [ref=e1244] [cursor=pointer]:
+                      - generic [ref=e1245]: 查看房間照片&設施
+                    - list [ref=e1246]:
+                      - listitem:
+                        - generic [ref=e1247]:
+                          - generic [ref=e1248]: 
+                          - generic [ref=e1249]: 免費Wi-Fi
+                      - listitem [ref=e1250]:
+                        - generic [ref=e1251]:
+                          - generic [ref=e1252]: 
+                          - generic [ref=e1253]: 客房面積：18平方公尺/194平方英尺
+                      - listitem [ref=e1254]:
+                        - generic [ref=e1255]:
+                          - generic [ref=e1256]: 
+                          - generic [ref=e1257]: 景觀： 市景
+                      - listitem [ref=e1258]:
+                        - generic [ref=e1259]:
+                          - generic [ref=e1260]: 
+                          - generic [ref=e1261]: 1張雙人床
+                      - listitem [ref=e1262]:
+                        - generic [ref=e1263]:
+                          - generic [ref=e1264]: 
+                          - generic [ref=e1265]: 獨立淋浴間/浴缸
+                      - listitem [ref=e1266]:
+                        - generic [ref=e1267]:
+                          - generic [ref=e1268]: 
+                          - generic [ref=e1269]: 窗戶
+                      - listitem [ref=e1270]:
+                        - generic [ref=e1271]:
+                          - generic [ref=e1272]: 
+                          - generic [ref=e1273]: 遮光窗簾
+                      - listitem [ref=e1274]:
+                        - generic [ref=e1275]:
+                          - generic [ref=e1276]: 
+                          - generic [ref=e1277]: Mini Bar
+                      - listitem [ref=e1278]:
+                        - generic [ref=e1279]:
+                          - generic [ref=e1280]: 
+                          - generic [ref=e1281]: 專用衛浴
+                      - listitem [ref=e1282]:
+                        - generic [ref=e1283]:
+                          - generic [ref=e1284]: 
+                          - generic [ref=e1285]: 衣櫥
+                      - listitem [ref=e1286]:
+                        - button "看看所有設施與服務" [ref=e1288] [cursor=pointer]:
+                          - generic [ref=e1289]:
+                            - img [ref=e1290]
+                            - text: 看看所有設施與服務
+                - generic [ref=e1293]:
+                  - generic [ref=e1295]:
+                    - generic [ref=e1296]:
+                      - generic [ref=e1299]:
+                        - generic [ref=e1301]: 最低價房型熱賣中
+                        - tooltip "tooltip 真會挑！格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)最低價的房型就是這間啦" [ref=e1302]:
+                          - generic [ref=e1303]: tooltip
+                          - paragraph [ref=e1304]: 真會挑！格拉斯麗新宿酒店 (Hotel Gracery Shinjuku)最低價的房型就是這間啦
+                      - generic [ref=e1305]:
+                        - generic [ref=e1306]:
+                          - generic [ref=e1307]:
+                            - generic [ref=e1309] [cursor=pointer]:
+                              - img [ref=e1310]
+                              - paragraph [ref=e1312]: 可提供美味早餐（NT$ 1,004 / 每人）
+                              - img [ref=e1313]
+                            - generic [ref=e1316]:
+                              - paragraph [ref=e1317]: 美味早餐
+                              - progressbar [ref=e1318]
+                              - status [ref=e1319]
+                              - generic [ref=e1320]: 65%的住客都說讚(根據住客評鑑)
+                          - generic [ref=e1321]:
+                            - generic [ref=e1323] [cursor=pointer]:
+                              - img [ref=e1324]
+                              - paragraph [ref=e1326]: 2026年6月22日 星期一前可免費取消
+                              - img [ref=e1327]
+                            - tooltip "tooltip 訂房零風險！2026年6月22日 星期一前可免費取消。 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e1329]:
+                              - generic [ref=e1330]: tooltip
+                              - generic [ref=e1331]:
+                                - paragraph:
+                                  - generic [ref=e1332]:
+                                    - text: 訂房零風險！
+                                    - text: 2026年6月22日 星期一前可免費取消。
+                                    - text: 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                          - generic [ref=e1333]:
+                            - img [ref=e1334]
+                            - paragraph [ref=e1336]: 可延至2026年6月20日 星期六扣款
+                          - generic [ref=e1337]:
+                            - img [ref=e1338]
+                            - paragraph [ref=e1340]: 快速入住服務
+                          - generic [ref=e1341]:
+                            - img [ref=e1342]
+                            - paragraph [ref=e1344]: 免費Wi-Fi
+                        - generic [ref=e1345]:
+                          - text: 其他回饋和折扣
+                          - generic [ref=e1347]:
+                            - generic [ref=e1351] [cursor=pointer]:
+                              - img [ref=e1353]
+                              - text: 現金回饋：$ 201
+                            - tooltip "tooltip 賺取$ 201現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e1355]:
+                              - generic [ref=e1356]: tooltip
+                              - generic [ref=e1357]:
+                                - generic:
+                                  - generic:
+                                    - generic: 賺取$ 201現金回饋至您的信用卡/Debit卡！
+                                    - generic:
+                                      - img [ref=e1359]
+                                      - generic [ref=e1361]: 退房後60天可兌換現金回饋
+                                    - generic:
+                                      - img [ref=e1363]
+                                      - generic [ref=e1365]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e1367]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e1369] [cursor=pointer]:
+                        - generic [ref=e1370]:
+                          - img [ref=e1371]
+                          - generic [ref=e1373]:
+                            - generic [ref=e1374]: 
+                            - generic [ref=e1375]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e1376]:
+                        - generic [ref=e1377]: tooltip
+                        - generic [ref=e1379]:
+                          - generic [ref=e1380]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e1381]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e1385]:
+                      - generic [ref=e1387]:
+                        - generic [ref=e1388]: 
+                        - generic [ref=e1389]: 好會找！
+                        - text: 這間目前最便宜
+                      - generic [ref=e1391]:
+                        - generic [ref=e1394]: "1"
+                        - generic [ref=e1395]:
+                          - img "consolidated-applied-discount-badge" [ref=e1396]
+                          - generic [ref=e1398]: 已套用NT$ 201
+                      - generic [ref=e1399]:
+                        - generic [ref=e1401]:
+                          - paragraph [ref=e1402]:
+                            - generic [ref=e1403]: 27折
+                          - generic [ref=e1405]:
+                            - generic [ref=e1407]:
+                              - generic [ref=e1408]: 原始價格：NT$ 16,330
+                              - text: NT$ 16,330
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e1409]:
+                              - generic [ref=e1410]: tooltip
+                              - paragraph [ref=e1411]: 此房型去年的最高售價
+                        - generic [ref=e1412]:
+                          - generic [ref=e1415]:
+                            - generic [ref=e1417]:
+                              - generic [ref=e1418]: 原始價格：NT$ 4,491
+                              - text: NT$ 4,491
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e1419]:
+                              - generic [ref=e1420]: tooltip
+                              - paragraph [ref=e1421]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e1422]: 現金回饋後價格
+                          - generic [ref=e1425]:
+                            - generic [ref=e1427]:
+                              - generic [ref=e1428]: NT$
+                              - generic [ref=e1429]: 4,424
+                            - generic [ref=e1430]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e1434]: "1"
+                    - generic [ref=e1437]:
+                      - button "退房" [ref=e1439] [cursor=pointer]:
+                        - generic [ref=e1440]: 立即預訂
+                      - generic [ref=e1443]:
+                        - strong [ref=e1444]: 安心預訂！
+                        - paragraph [ref=e1445]: 可免費取消
+                      - paragraph [ref=e1447]: 本站最後1間
+                  - generic [ref=e1449]:
+                    - generic [ref=e1451]:
+                      - generic [ref=e1452]:
+                        - generic [ref=e1453]:
+                          - generic [ref=e1455] [cursor=pointer]:
+                            - img [ref=e1456]
+                            - paragraph [ref=e1458]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e1459]
+                          - generic [ref=e1462]:
+                            - paragraph [ref=e1463]: 美味早餐
+                            - progressbar [ref=e1464]
+                            - status [ref=e1465]
+                            - generic [ref=e1466]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e1467]:
+                          - generic [ref=e1469] [cursor=pointer]:
+                            - img [ref=e1470]
+                            - paragraph [ref=e1472]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e1473]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e1475]:
+                            - generic [ref=e1476]: tooltip
+                            - generic [ref=e1477]:
+                              - paragraph:
+                                - generic [ref=e1478]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e1479]:
+                          - img [ref=e1480]
+                          - paragraph [ref=e1482]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e1483]:
+                          - img [ref=e1484]
+                          - paragraph [ref=e1486]: 快速入住服務
+                        - generic [ref=e1487]:
+                          - img [ref=e1488]
+                          - paragraph [ref=e1490]: 免費Wi-Fi
+                      - generic [ref=e1491]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e1493]:
+                          - generic [ref=e1497] [cursor=pointer]:
+                            - img [ref=e1499]
+                            - text: 現金回饋：$ 587
+                          - tooltip "tooltip 賺取$ 587現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e1501]:
+                            - generic [ref=e1502]: tooltip
+                            - generic [ref=e1503]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 587現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e1505]
+                                    - generic [ref=e1507]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e1509]
+                                    - generic [ref=e1511]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e1514]:
+                          - generic [ref=e1515]: 
+                          - paragraph [ref=e1518]: 【期間限定】 減價4%！
+                    - generic [ref=e1520]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e1522] [cursor=pointer]:
+                        - generic [ref=e1523]:
+                          - img [ref=e1524]
+                          - generic [ref=e1526]:
+                            - generic [ref=e1527]: 
+                            - generic [ref=e1528]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e1529]:
+                        - generic [ref=e1530]: tooltip
+                        - generic [ref=e1532]:
+                          - generic [ref=e1533]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e1534]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e1538]:
+                      - generic [ref=e1540]:
+                        - generic [ref=e1543]: "1"
+                        - generic [ref=e1544]:
+                          - img "consolidated-applied-discount-badge" [ref=e1545]
+                          - generic [ref=e1547]: 已套用NT$ 587
+                      - generic [ref=e1548]:
+                        - generic [ref=e1550]:
+                          - paragraph [ref=e1551]:
+                            - generic [ref=e1552]: 27折
+                          - generic [ref=e1554]:
+                            - generic [ref=e1556]:
+                              - generic [ref=e1557]: 原始價格：NT$ 16,330
+                              - text: NT$ 16,330
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e1558]:
+                              - generic [ref=e1559]: tooltip
+                              - paragraph [ref=e1560]: 此房型去年的最高售價
+                        - generic [ref=e1561]:
+                          - generic [ref=e1564]:
+                            - generic [ref=e1566]:
+                              - generic [ref=e1567]: 原始價格：NT$ 4,672
+                              - text: NT$ 4,672
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e1568]:
+                              - generic [ref=e1569]: tooltip
+                              - paragraph [ref=e1570]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e1571]: 現金回饋後價格
+                          - generic [ref=e1574]:
+                            - generic [ref=e1576]:
+                              - generic [ref=e1577]: NT$
+                              - generic [ref=e1578]: 4,476
+                            - generic [ref=e1579]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e1583]: "1"
+                    - generic [ref=e1586]:
+                      - button "退房" [ref=e1588] [cursor=pointer]:
+                        - generic [ref=e1589]: 立即預訂
+                      - generic [ref=e1592]:
+                        - strong [ref=e1593]: 安心預訂！
+                        - paragraph [ref=e1594]: 可免費取消
+                      - paragraph [ref=e1596]: 訂房只需2分鐘
+                      - paragraph [ref=e1598]: <<即將完售>>
+                  - generic [ref=e1600]:
+                    - generic [ref=e1603]:
+                      - generic [ref=e1604]:
+                        - generic [ref=e1606] [cursor=pointer]:
+                          - img [ref=e1607]
+                          - paragraph [ref=e1609]: 可提供美味早餐（NT$ 1,004 / 每人）
+                          - img [ref=e1610]
+                        - generic [ref=e1613]:
+                          - paragraph [ref=e1614]: 美味早餐
+                          - progressbar [ref=e1615]
+                          - status [ref=e1616]
+                          - generic [ref=e1617]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e1618]:
+                        - generic [ref=e1620] [cursor=pointer]:
+                          - img [ref=e1621]
+                          - paragraph [ref=e1623]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e1624]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e1626]:
+                          - generic [ref=e1627]: tooltip
+                          - generic [ref=e1628]:
+                            - paragraph:
+                              - generic [ref=e1629]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e1630]:
+                        - img [ref=e1631]
+                        - paragraph [ref=e1633]: 到店付款
+                      - generic [ref=e1634]:
+                        - img [ref=e1635]
+                        - paragraph [ref=e1637]: 快速入住服務
+                      - generic [ref=e1638]:
+                        - img [ref=e1639]
+                        - paragraph [ref=e1641]: 免費Wi-Fi
+                    - generic [ref=e1643]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e1645] [cursor=pointer]:
+                        - generic [ref=e1646]:
+                          - img [ref=e1647]
+                          - generic [ref=e1649]:
+                            - generic [ref=e1650]: 
+                            - generic [ref=e1651]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e1652]:
+                        - generic [ref=e1653]: tooltip
+                        - generic [ref=e1655]:
+                          - generic [ref=e1656]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e1657]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e1662]:
+                      - generic [ref=e1664]:
+                        - paragraph [ref=e1665]:
+                          - generic [ref=e1666]: 3折
+                        - generic [ref=e1668]:
+                          - generic [ref=e1670]:
+                            - generic [ref=e1671]: 原始價格：NT$ 16,330
+                            - text: NT$ 16,330
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e1672]:
+                            - generic [ref=e1673]: tooltip
+                            - paragraph [ref=e1674]: 此房型去年的最高售價
+                      - generic [ref=e1676]:
+                        - generic [ref=e1678]:
+                          - generic [ref=e1679]: NT$
+                          - generic [ref=e1680]: 4,870
+                        - generic [ref=e1681]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e1685]: "1"
+                    - generic [ref=e1688]:
+                      - button "退房" [ref=e1690] [cursor=pointer]:
+                        - generic [ref=e1691]: 立即預訂
+                      - generic [ref=e1694]:
+                        - strong [ref=e1695]: 安心預訂！
+                        - paragraph [ref=e1696]: 可免費取消
+                      - paragraph [ref=e1698]: 訂房只需2分鐘
+                      - paragraph [ref=e1700]: 本站剩5間！
+                  - generic [ref=e1702]:
+                    - generic [ref=e1704]:
+                      - generic [ref=e1705]:
+                        - generic [ref=e1706]:
+                          - generic [ref=e1708] [cursor=pointer]:
+                            - img [ref=e1709]
+                            - paragraph [ref=e1711]: 附美味早餐
+                            - img [ref=e1712]
+                          - generic [ref=e1715]:
+                            - paragraph [ref=e1716]: 美味早餐
+                            - progressbar [ref=e1717]
+                            - status [ref=e1718]
+                            - generic [ref=e1719]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e1720]:
+                          - generic [ref=e1722] [cursor=pointer]:
+                            - img [ref=e1723]
+                            - paragraph [ref=e1725]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e1726]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e1728]:
+                            - generic [ref=e1729]: tooltip
+                            - generic [ref=e1730]:
+                              - paragraph:
+                                - generic [ref=e1731]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e1732]:
+                          - img [ref=e1733]
+                          - paragraph [ref=e1735]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e1736]:
+                          - img [ref=e1737]
+                          - paragraph [ref=e1739]: 快速入住服務
+                        - generic [ref=e1740]:
+                          - img [ref=e1741]
+                          - paragraph [ref=e1743]: 免費Wi-Fi
+                      - generic [ref=e1744]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e1746]:
+                          - generic [ref=e1750] [cursor=pointer]:
+                            - img [ref=e1752]
+                            - text: 現金回饋：$ 789
+                          - tooltip "tooltip 賺取$ 789現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e1754]:
+                            - generic [ref=e1755]: tooltip
+                            - generic [ref=e1756]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 789現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e1758]
+                                    - generic [ref=e1760]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e1762]
+                                    - generic [ref=e1764]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e1767]:
+                          - generic [ref=e1768]: 
+                          - paragraph [ref=e1771]: 【期間限定】 減價4%！
+                    - generic [ref=e1773]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e1775] [cursor=pointer]:
+                        - generic [ref=e1776]:
+                          - img [ref=e1777]
+                          - generic [ref=e1779]:
+                            - generic [ref=e1780]: 
+                            - generic [ref=e1781]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e1782]:
+                        - generic [ref=e1783]: tooltip
+                        - generic [ref=e1785]:
+                          - generic [ref=e1786]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e1787]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e1791]:
+                      - generic [ref=e1793]:
+                        - generic [ref=e1796]: "1"
+                        - generic [ref=e1797]:
+                          - img "consolidated-applied-discount-badge" [ref=e1798]
+                          - generic [ref=e1800]: 已套用NT$ 789
+                      - generic [ref=e1801]:
+                        - generic [ref=e1803]:
+                          - paragraph [ref=e1804]:
+                            - generic [ref=e1805]: 36折
+                          - generic [ref=e1807]:
+                            - generic [ref=e1809]:
+                              - generic [ref=e1810]: 原始價格：NT$ 16,330
+                              - text: NT$ 16,330
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e1811]:
+                              - generic [ref=e1812]: tooltip
+                              - paragraph [ref=e1813]: 此房型去年的最高售價
+                        - generic [ref=e1814]:
+                          - generic [ref=e1817]:
+                            - generic [ref=e1819]:
+                              - generic [ref=e1820]: 原始價格：NT$ 6,212
+                              - text: NT$ 6,212
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e1821]:
+                              - generic [ref=e1822]: tooltip
+                              - paragraph [ref=e1823]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e1824]: 現金回饋後價格
+                          - generic [ref=e1827]:
+                            - generic [ref=e1829]:
+                              - generic [ref=e1830]: NT$
+                              - generic [ref=e1831]: 5,949
+                            - generic [ref=e1832]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e1836]: "1"
+                    - generic [ref=e1839]:
+                      - button "退房" [ref=e1841] [cursor=pointer]:
+                        - generic [ref=e1842]: 立即預訂
+                      - generic [ref=e1845]:
+                        - strong [ref=e1846]: 安心預訂！
+                        - paragraph [ref=e1847]: 可免費取消
+                      - paragraph [ref=e1849]: 訂房只需2分鐘
+                      - paragraph [ref=e1851]: <<即將完售>>
+                  - generic [ref=e1853]:
+                    - generic [ref=e1855]:
+                      - generic [ref=e1856]:
+                        - generic [ref=e1857]:
+                          - generic [ref=e1859] [cursor=pointer]:
+                            - img [ref=e1860]
+                            - paragraph [ref=e1862]: 附美味早餐
+                            - img [ref=e1863]
+                          - generic [ref=e1866]:
+                            - paragraph [ref=e1867]: 美味早餐
+                            - progressbar [ref=e1868]
+                            - status [ref=e1869]
+                            - generic [ref=e1870]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e1871]:
+                          - generic [ref=e1873] [cursor=pointer]:
+                            - img [ref=e1874]
+                            - paragraph [ref=e1876]: 2026年4月2日 星期四前可免費取消
+                            - img [ref=e1877]
+                          - tooltip "tooltip 訂房零風險！2026年4月2日 星期四前可免費取消。 在入住日期前84天內取消預訂，須支付訂單金額的61%作為取消費用。 在入住日期前1天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e1879]:
+                            - generic [ref=e1880]: tooltip
+                            - generic [ref=e1881]:
+                              - paragraph:
+                                - generic [ref=e1882]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年4月2日 星期四前可免費取消。
+                                  - text: 在入住日期前84天內取消預訂，須支付訂單金額的61%作為取消費用。 在入住日期前1天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e1883]:
+                          - img [ref=e1884]
+                          - paragraph [ref=e1886]: 預訂後立即付款
+                        - generic [ref=e1887]:
+                          - img [ref=e1888]
+                          - paragraph [ref=e1890]: 快速入住服務
+                        - generic [ref=e1891]:
+                          - img [ref=e1892]
+                          - paragraph [ref=e1894]: 免費Wi-Fi
+                      - generic [ref=e1895]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e1897]:
+                          - generic [ref=e1901] [cursor=pointer]:
+                            - img [ref=e1903]
+                            - text: 現金回饋：$ 280
+                          - tooltip "tooltip 賺取$ 280現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e1905]:
+                            - generic [ref=e1906]: tooltip
+                            - generic [ref=e1907]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 280現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e1909]
+                                    - generic [ref=e1911]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e1913]
+                                    - generic [ref=e1915]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e1917]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e1919] [cursor=pointer]:
+                        - generic [ref=e1920]:
+                          - img [ref=e1921]
+                          - generic [ref=e1923]:
+                            - generic [ref=e1924]: 
+                            - generic [ref=e1925]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e1926]:
+                        - generic [ref=e1927]: tooltip
+                        - generic [ref=e1929]:
+                          - generic [ref=e1930]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e1931]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e1935]:
+                      - generic [ref=e1937]:
+                        - generic [ref=e1940]: "1"
+                        - generic [ref=e1941]:
+                          - img "consolidated-applied-discount-badge" [ref=e1942]
+                          - generic [ref=e1944]: 已套用NT$ 280
+                      - generic [ref=e1945]:
+                        - generic [ref=e1947]:
+                          - paragraph [ref=e1948]:
+                            - generic [ref=e1949]: 38折
+                          - generic [ref=e1951]:
+                            - generic [ref=e1953]:
+                              - generic [ref=e1954]: 原始價格：NT$ 16,330
+                              - text: NT$ 16,330
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e1955]:
+                              - generic [ref=e1956]: tooltip
+                              - paragraph [ref=e1957]: 此房型去年的最高售價
+                        - generic [ref=e1958]:
+                          - generic [ref=e1961]:
+                            - generic [ref=e1963]:
+                              - generic [ref=e1964]: 原始價格：NT$ 6,235
+                              - text: NT$ 6,235
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e1965]:
+                              - generic [ref=e1966]: tooltip
+                              - paragraph [ref=e1967]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e1968]: 現金回饋後價格
+                          - generic [ref=e1971]:
+                            - generic [ref=e1973]:
+                              - generic [ref=e1974]: NT$
+                              - generic [ref=e1975]: 6,141
+                            - generic [ref=e1976]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e1980]: "1"
+                    - generic [ref=e1983]:
+                      - button "退房" [ref=e1985] [cursor=pointer]:
+                        - generic [ref=e1986]: 立即預訂
+                      - generic [ref=e1988]:
+                        - strong [ref=e1989]: 安心預訂！
+                        - paragraph [ref=e1990]: 可免費取消
+                      - paragraph [ref=e1992]: 訂房只需2分鐘
+                      - paragraph [ref=e1994]: 本站最後1間
+              - button "顯示另外5個" [ref=e1995] [cursor=pointer]:
+                - generic [ref=e1996]:
+                  - img [ref=e1997]
+                  - paragraph [ref=e1999]: 顯示另外5個
+            - generic [ref=e2000]:
+              - generic [ref=e2001]: 我們與各大訂房網攜手合作，以提供旅人最優惠的價格。
+              - generic [ref=e2002]: 
+              - text: 最低價格已通過驗證並獲得合作網站背書
+              - img "Priceline.com" [ref=e2004]
+              - img "Yokoso" [ref=e2006]
+            - generic [ref=e2007]:
+              - generic [ref=e2008]:
+                - heading "高級雙人間- 禁煙 (Superior Double Room - Non-Smoking)" [level=4] [ref=e2010]:
+                  - button "高級雙人間- 禁煙 (Superior Double Room - Non-Smoking)" [ref=e2011] [cursor=pointer]:
+                    - paragraph [ref=e2012]:
+                      - generic [ref=e2015]: 高級雙人間- 禁煙 (Superior Double Room - Non-Smoking)
+                - generic [ref=e2018]:
+                  - generic [ref=e2019]:
+                    - img [ref=e2020]
+                    - paragraph [ref=e2023]: "8.8"
+                  - generic [ref=e2024]:
+                    - heading "很讚" [level=5] [ref=e2026]
+                    - paragraph [ref=e2027]: 客房舒適度
+              - generic [ref=e2029]:
+                - generic [ref=e2030]:
+                  - paragraph [ref=e2031]: 房型摘要
+                  - generic [ref=e2033]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) 高級雙人間- 禁煙 (Superior Double Room - Non-Smoking)" [ref=e2037] [cursor=pointer]
+                    - generic [ref=e2040]:
+                      - button "room-image" [ref=e2042] [cursor=pointer]:
+                        - img "room-image" [ref=e2044]
+                      - button "room-image" [ref=e2046] [cursor=pointer]:
+                        - img "room-image" [ref=e2048]
+                  - generic [ref=e2049]:
+                    - button "查看房間照片&設施" [ref=e2051] [cursor=pointer]:
+                      - generic [ref=e2052]: 查看房間照片&設施
+                    - list [ref=e2053]:
+                      - listitem:
+                        - generic [ref=e2054]:
+                          - generic [ref=e2055]: 
+                          - generic [ref=e2056]: 免費Wi-Fi
+                      - listitem [ref=e2057]:
+                        - generic [ref=e2058]:
+                          - generic [ref=e2059]: 
+                          - generic [ref=e2060]: 客房面積：20平方公尺/215平方英尺
+                      - listitem [ref=e2061]:
+                        - generic [ref=e2062]:
+                          - generic [ref=e2063]: 
+                          - generic [ref=e2064]: 景觀： 市景
+                      - listitem [ref=e2065]:
+                        - generic [ref=e2066]:
+                          - generic [ref=e2067]: 
+                          - generic [ref=e2068]: 1張大床
+                      - listitem [ref=e2069]:
+                        - generic [ref=e2070]:
+                          - generic [ref=e2071]: 
+                          - generic [ref=e2072]: 獨立淋浴間/浴缸
+                      - listitem [ref=e2073]:
+                        - generic [ref=e2074]:
+                          - generic [ref=e2075]: 
+                          - generic [ref=e2076]: 窗戶
+                      - listitem [ref=e2077]:
+                        - generic [ref=e2078]:
+                          - generic [ref=e2079]: 
+                          - generic [ref=e2080]: 遮光窗簾
+                      - listitem [ref=e2081]:
+                        - generic [ref=e2082]:
+                          - generic [ref=e2083]: 
+                          - generic [ref=e2084]: 專用衛浴
+                      - listitem [ref=e2085]:
+                        - generic [ref=e2086]:
+                          - generic [ref=e2087]: 
+                          - generic [ref=e2088]: 衣櫥
+                      - listitem [ref=e2089]:
+                        - generic [ref=e2090]:
+                          - generic [ref=e2091]: 
+                          - generic [ref=e2092]: 獨立空調
+                      - listitem [ref=e2093]:
+                        - button "看看所有設施與服務" [ref=e2095] [cursor=pointer]:
+                          - generic [ref=e2096]:
+                            - img [ref=e2097]
+                            - text: 看看所有設施與服務
+                - generic [ref=e2100]:
+                  - generic [ref=e2102]:
+                    - generic [ref=e2104]:
+                      - generic [ref=e2105]:
+                        - generic [ref=e2106]:
+                          - generic [ref=e2108] [cursor=pointer]:
+                            - img [ref=e2109]
+                            - paragraph [ref=e2111]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e2112]
+                          - generic [ref=e2115]:
+                            - paragraph [ref=e2116]: 美味早餐
+                            - progressbar [ref=e2117]
+                            - status [ref=e2118]
+                            - generic [ref=e2119]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e2120]:
+                          - generic [ref=e2122] [cursor=pointer]:
+                            - img [ref=e2123]
+                            - paragraph [ref=e2125]: 2026年6月22日 星期一前可免費取消
+                            - img [ref=e2126]
+                          - tooltip "tooltip 訂房零風險！2026年6月22日 星期一前可免費取消。 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e2128]:
+                            - generic [ref=e2129]: tooltip
+                            - generic [ref=e2130]:
+                              - paragraph:
+                                - generic [ref=e2131]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月22日 星期一前可免費取消。
+                                  - text: 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e2132]:
+                          - img [ref=e2133]
+                          - paragraph [ref=e2135]: 可延至2026年6月20日 星期六扣款
+                        - generic [ref=e2136]:
+                          - img [ref=e2137]
+                          - paragraph [ref=e2139]: 快速入住服務
+                        - generic [ref=e2140]:
+                          - img [ref=e2141]
+                          - paragraph [ref=e2143]: 免費Wi-Fi
+                      - generic [ref=e2144]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e2146]:
+                          - generic [ref=e2150] [cursor=pointer]:
+                            - img [ref=e2152]
+                            - text: 現金回饋：$ 252
+                          - tooltip "tooltip 賺取$ 252現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e2154]:
+                            - generic [ref=e2155]: tooltip
+                            - generic [ref=e2156]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 252現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e2158]
+                                    - generic [ref=e2160]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e2162]
+                                    - generic [ref=e2164]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e2166]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e2168] [cursor=pointer]:
+                        - generic [ref=e2169]:
+                          - img [ref=e2170]
+                          - generic [ref=e2172]:
+                            - generic [ref=e2173]: 
+                            - generic [ref=e2174]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e2175]:
+                        - generic [ref=e2176]: tooltip
+                        - generic [ref=e2178]:
+                          - generic [ref=e2179]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e2180]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e2184]:
+                      - generic [ref=e2186]:
+                        - generic [ref=e2189]: "1"
+                        - generic [ref=e2190]:
+                          - img "consolidated-applied-discount-badge" [ref=e2191]
+                          - generic [ref=e2193]: 已套用NT$ 252
+                      - generic [ref=e2194]:
+                        - generic [ref=e2196]:
+                          - paragraph [ref=e2197]:
+                            - generic [ref=e2198]: 48折
+                          - generic [ref=e2200]:
+                            - generic [ref=e2202]:
+                              - generic [ref=e2203]: 原始價格：NT$ 11,453
+                              - text: NT$ 11,453
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e2204]:
+                              - generic [ref=e2205]: tooltip
+                              - paragraph [ref=e2206]: 此房型去年的最高售價
+                        - generic [ref=e2207]:
+                          - generic [ref=e2210]:
+                            - generic [ref=e2212]:
+                              - generic [ref=e2213]: 原始價格：NT$ 5,589
+                              - text: NT$ 5,589
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e2214]:
+                              - generic [ref=e2215]: tooltip
+                              - paragraph [ref=e2216]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e2217]: 現金回饋後價格
+                          - generic [ref=e2220]:
+                            - generic [ref=e2222]:
+                              - generic [ref=e2223]: NT$
+                              - generic [ref=e2224]: 5,506
+                            - generic [ref=e2225]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e2229]: "1"
+                    - generic [ref=e2232]:
+                      - button "退房" [ref=e2234] [cursor=pointer]:
+                        - generic [ref=e2235]: 立即預訂
+                      - generic [ref=e2238]:
+                        - strong [ref=e2239]: 安心預訂！
+                        - paragraph [ref=e2240]: 可免費取消
+                      - paragraph [ref=e2242]: 本站最後1間
+                  - generic [ref=e2244]:
+                    - generic [ref=e2246]:
+                      - generic [ref=e2247]:
+                        - generic [ref=e2248]:
+                          - generic [ref=e2250] [cursor=pointer]:
+                            - img [ref=e2251]
+                            - paragraph [ref=e2253]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e2254]
+                          - generic [ref=e2257]:
+                            - paragraph [ref=e2258]: 美味早餐
+                            - progressbar [ref=e2259]
+                            - status [ref=e2260]
+                            - generic [ref=e2261]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e2262]:
+                          - generic [ref=e2264] [cursor=pointer]:
+                            - img [ref=e2265]
+                            - paragraph [ref=e2267]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e2268]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e2270]:
+                            - generic [ref=e2271]: tooltip
+                            - generic [ref=e2272]:
+                              - paragraph:
+                                - generic [ref=e2273]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e2274]:
+                          - img [ref=e2275]
+                          - paragraph [ref=e2277]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e2278]:
+                          - img [ref=e2279]
+                          - paragraph [ref=e2281]: 快速入住服務
+                        - generic [ref=e2282]:
+                          - img [ref=e2283]
+                          - paragraph [ref=e2285]: 免費Wi-Fi
+                      - generic [ref=e2286]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e2288]:
+                          - generic [ref=e2292] [cursor=pointer]:
+                            - img [ref=e2294]
+                            - text: 現金回饋：$ 742
+                          - tooltip "tooltip 賺取$ 742現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e2296]:
+                            - generic [ref=e2297]: tooltip
+                            - generic [ref=e2298]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 742現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e2300]
+                                    - generic [ref=e2302]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e2304]
+                                    - generic [ref=e2306]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e2309]:
+                          - generic [ref=e2310]: 
+                          - paragraph [ref=e2313]: 【期間限定】 減價6%！
+                    - generic [ref=e2315]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e2317] [cursor=pointer]:
+                        - generic [ref=e2318]:
+                          - img [ref=e2319]
+                          - generic [ref=e2321]:
+                            - generic [ref=e2322]: 
+                            - generic [ref=e2323]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e2324]:
+                        - generic [ref=e2325]: tooltip
+                        - generic [ref=e2327]:
+                          - generic [ref=e2328]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e2329]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e2333]:
+                      - generic [ref=e2335]:
+                        - generic [ref=e2338]: "1"
+                        - generic [ref=e2339]:
+                          - img "consolidated-applied-discount-badge" [ref=e2340]
+                          - generic [ref=e2342]: 已套用NT$ 742
+                      - generic [ref=e2343]:
+                        - generic [ref=e2345]:
+                          - paragraph [ref=e2346]:
+                            - generic [ref=e2347]: 49折
+                          - generic [ref=e2349]:
+                            - generic [ref=e2351]:
+                              - generic [ref=e2352]: 原始價格：NT$ 11,453
+                              - text: NT$ 11,453
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e2353]:
+                              - generic [ref=e2354]: tooltip
+                              - paragraph [ref=e2355]: 此房型去年的最高售價
+                        - generic [ref=e2356]:
+                          - generic [ref=e2359]:
+                            - generic [ref=e2361]:
+                              - generic [ref=e2362]: 原始價格：NT$ 5,847
+                              - text: NT$ 5,847
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e2363]:
+                              - generic [ref=e2364]: tooltip
+                              - paragraph [ref=e2365]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e2366]: 現金回饋後價格
+                          - generic [ref=e2369]:
+                            - generic [ref=e2371]:
+                              - generic [ref=e2372]: NT$
+                              - generic [ref=e2373]: 5,600
+                            - generic [ref=e2374]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e2378]: "1"
+                    - generic [ref=e2381]:
+                      - button "退房" [ref=e2383] [cursor=pointer]:
+                        - generic [ref=e2384]: 立即預訂
+                      - generic [ref=e2387]:
+                        - strong [ref=e2388]: 安心預訂！
+                        - paragraph [ref=e2389]: 可免費取消
+                      - paragraph [ref=e2391]: 訂房只需2分鐘
+                      - paragraph [ref=e2393]: 本站剩5間！
+                  - generic [ref=e2395]:
+                    - generic [ref=e2398]:
+                      - generic [ref=e2399]:
+                        - generic [ref=e2401] [cursor=pointer]:
+                          - img [ref=e2402]
+                          - paragraph [ref=e2404]: 可提供美味早餐（NT$ 1,004 / 每人）
+                          - img [ref=e2405]
+                        - generic [ref=e2408]:
+                          - paragraph [ref=e2409]: 美味早餐
+                          - progressbar [ref=e2410]
+                          - status [ref=e2411]
+                          - generic [ref=e2412]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e2413]:
+                        - generic [ref=e2415] [cursor=pointer]:
+                          - img [ref=e2416]
+                          - paragraph [ref=e2418]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e2419]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e2421]:
+                          - generic [ref=e2422]: tooltip
+                          - generic [ref=e2423]:
+                            - paragraph:
+                              - generic [ref=e2424]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e2425]:
+                        - img [ref=e2426]
+                        - paragraph [ref=e2428]: 到店付款
+                      - generic [ref=e2429]:
+                        - img [ref=e2430]
+                        - paragraph [ref=e2432]: 快速入住服務
+                      - generic [ref=e2433]:
+                        - img [ref=e2434]
+                        - paragraph [ref=e2436]: 免費Wi-Fi
+                    - generic [ref=e2438]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e2440] [cursor=pointer]:
+                        - generic [ref=e2441]:
+                          - img [ref=e2442]
+                          - generic [ref=e2444]:
+                            - generic [ref=e2445]: 
+                            - generic [ref=e2446]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e2447]:
+                        - generic [ref=e2448]: tooltip
+                        - generic [ref=e2450]:
+                          - generic [ref=e2451]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e2452]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e2457]:
+                      - generic [ref=e2459]:
+                        - paragraph [ref=e2460]:
+                          - generic [ref=e2461]: 54折
+                        - generic [ref=e2463]:
+                          - generic [ref=e2465]:
+                            - generic [ref=e2466]: 原始價格：NT$ 11,453
+                            - text: NT$ 11,453
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e2467]:
+                            - generic [ref=e2468]: tooltip
+                            - paragraph [ref=e2469]: 此房型去年的最高售價
+                      - generic [ref=e2471]:
+                        - generic [ref=e2473]:
+                          - generic [ref=e2474]: NT$
+                          - generic [ref=e2475]: 6,191
+                        - generic [ref=e2476]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e2480]: "1"
+                    - generic [ref=e2483]:
+                      - button "退房" [ref=e2485] [cursor=pointer]:
+                        - generic [ref=e2486]: 立即預訂
+                      - generic [ref=e2489]:
+                        - strong [ref=e2490]: 安心預訂！
+                        - paragraph [ref=e2491]: 可免費取消
+                      - paragraph [ref=e2493]: 訂房只需2分鐘
+                      - paragraph [ref=e2495]: 本站剩5間！
+                  - generic [ref=e2497]:
+                    - generic [ref=e2499]:
+                      - generic [ref=e2500]:
+                        - generic [ref=e2501]:
+                          - generic [ref=e2503] [cursor=pointer]:
+                            - img [ref=e2504]
+                            - paragraph [ref=e2506]: 附美味早餐
+                            - img [ref=e2507]
+                          - generic [ref=e2510]:
+                            - paragraph [ref=e2511]: 美味早餐
+                            - progressbar [ref=e2512]
+                            - status [ref=e2513]
+                            - generic [ref=e2514]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e2515]:
+                          - generic [ref=e2517] [cursor=pointer]:
+                            - img [ref=e2518]
+                            - paragraph [ref=e2520]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e2521]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e2523]:
+                            - generic [ref=e2524]: tooltip
+                            - generic [ref=e2525]:
+                              - paragraph:
+                                - generic [ref=e2526]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e2527]:
+                          - img [ref=e2528]
+                          - paragraph [ref=e2530]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e2531]:
+                          - img [ref=e2532]
+                          - paragraph [ref=e2534]: 快速入住服務
+                        - generic [ref=e2535]:
+                          - img [ref=e2536]
+                          - paragraph [ref=e2538]: 免費Wi-Fi
+                      - generic [ref=e2539]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e2541]:
+                          - generic [ref=e2545] [cursor=pointer]:
+                            - img [ref=e2547]
+                            - text: 現金回饋：$ 945
+                          - tooltip "tooltip 賺取$ 945現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e2549]:
+                            - generic [ref=e2550]: tooltip
+                            - generic [ref=e2551]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 945現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e2553]
+                                    - generic [ref=e2555]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e2557]
+                                    - generic [ref=e2559]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e2562]:
+                          - generic [ref=e2563]: 
+                          - paragraph [ref=e2566]: 【期間限定】 減價6%！
+                    - generic [ref=e2568]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e2570] [cursor=pointer]:
+                        - generic [ref=e2571]:
+                          - img [ref=e2572]
+                          - generic [ref=e2574]:
+                            - generic [ref=e2575]: 
+                            - generic [ref=e2576]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e2577]:
+                        - generic [ref=e2578]: tooltip
+                        - generic [ref=e2580]:
+                          - generic [ref=e2581]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e2582]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e2586]:
+                      - generic [ref=e2588]:
+                        - generic [ref=e2591]: "1"
+                        - generic [ref=e2592]:
+                          - img "consolidated-applied-discount-badge" [ref=e2593]
+                          - generic [ref=e2595]: 已套用NT$ 945
+                      - generic [ref=e2596]:
+                        - generic [ref=e2598]:
+                          - paragraph [ref=e2599]:
+                            - generic [ref=e2600]: 62折
+                          - generic [ref=e2602]:
+                            - generic [ref=e2604]:
+                              - generic [ref=e2605]: 原始價格：NT$ 11,453
+                              - text: NT$ 11,453
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e2606]:
+                              - generic [ref=e2607]: tooltip
+                              - paragraph [ref=e2608]: 此房型去年的最高售價
+                        - generic [ref=e2609]:
+                          - generic [ref=e2612]:
+                            - generic [ref=e2614]:
+                              - generic [ref=e2615]: 原始價格：NT$ 7,444
+                              - text: NT$ 7,444
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e2616]:
+                              - generic [ref=e2617]: tooltip
+                              - paragraph [ref=e2618]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e2619]: 現金回饋後價格
+                          - generic [ref=e2622]:
+                            - generic [ref=e2624]:
+                              - generic [ref=e2625]: NT$
+                              - generic [ref=e2626]: 7,129
+                            - generic [ref=e2627]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e2631]: "1"
+                    - generic [ref=e2634]:
+                      - button "退房" [ref=e2636] [cursor=pointer]:
+                        - generic [ref=e2637]: 立即預訂
+                      - generic [ref=e2640]:
+                        - strong [ref=e2641]: 安心預訂！
+                        - paragraph [ref=e2642]: 可免費取消
+                      - paragraph [ref=e2644]: 訂房只需2分鐘
+                      - paragraph [ref=e2646]: 本站剩5間！
+                  - generic [ref=e2648]:
+                    - generic [ref=e2650]:
+                      - generic [ref=e2651]:
+                        - generic [ref=e2652]:
+                          - generic [ref=e2654] [cursor=pointer]:
+                            - img [ref=e2655]
+                            - paragraph [ref=e2657]: 附美味早餐
+                            - img [ref=e2658]
+                          - generic [ref=e2661]:
+                            - paragraph [ref=e2662]: 美味早餐
+                            - progressbar [ref=e2663]
+                            - status [ref=e2664]
+                            - generic [ref=e2665]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e2666]:
+                          - generic [ref=e2668] [cursor=pointer]:
+                            - img [ref=e2669]
+                            - paragraph [ref=e2671]: 2026年6月21日 星期日前可免費取消
+                            - img [ref=e2672]
+                          - tooltip "tooltip 訂房零風險！2026年6月21日 星期日前可免費取消。 在入住日期前4天內取消預訂，須支付訂單金額的21%作為取消費用。 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e2674]:
+                            - generic [ref=e2675]: tooltip
+                            - generic [ref=e2676]:
+                              - paragraph:
+                                - generic [ref=e2677]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月21日 星期日前可免費取消。
+                                  - text: 在入住日期前4天內取消預訂，須支付訂單金額的21%作為取消費用。 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e2678]:
+                          - img [ref=e2679]
+                          - paragraph [ref=e2681]: 可延至2026年6月19日 星期五扣款
+                        - generic [ref=e2682]:
+                          - img [ref=e2683]
+                          - paragraph [ref=e2685]: 快速入住服務
+                        - generic [ref=e2686]:
+                          - img [ref=e2687]
+                          - paragraph [ref=e2689]: 免費Wi-Fi
+                      - generic [ref=e2690]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e2692]:
+                          - generic [ref=e2696] [cursor=pointer]:
+                            - img [ref=e2698]
+                            - text: 現金回饋：$ 336
+                          - tooltip "tooltip 賺取$ 336現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e2700]:
+                            - generic [ref=e2701]: tooltip
+                            - generic [ref=e2702]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 336現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e2704]
+                                    - generic [ref=e2706]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e2708]
+                                    - generic [ref=e2710]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e2712]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e2714] [cursor=pointer]:
+                        - generic [ref=e2715]:
+                          - img [ref=e2716]
+                          - generic [ref=e2718]:
+                            - generic [ref=e2719]: 
+                            - generic [ref=e2720]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e2721]:
+                        - generic [ref=e2722]: tooltip
+                        - generic [ref=e2724]:
+                          - generic [ref=e2725]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e2726]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e2730]:
+                      - generic [ref=e2732]:
+                        - generic [ref=e2735]: "1"
+                        - generic [ref=e2736]:
+                          - img "consolidated-applied-discount-badge" [ref=e2737]
+                          - generic [ref=e2739]: 已套用NT$ 336
+                      - generic [ref=e2740]:
+                        - generic [ref=e2742]:
+                          - paragraph [ref=e2743]:
+                            - generic [ref=e2744]: 68折
+                          - generic [ref=e2746]:
+                            - generic [ref=e2748]:
+                              - generic [ref=e2749]: 原始價格：NT$ 11,453
+                              - text: NT$ 11,453
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e2750]:
+                              - generic [ref=e2751]: tooltip
+                              - paragraph [ref=e2752]: 此房型去年的最高售價
+                        - generic [ref=e2753]:
+                          - generic [ref=e2756]:
+                            - generic [ref=e2758]:
+                              - generic [ref=e2759]: 原始價格：NT$ 7,882
+                              - text: NT$ 7,882
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e2760]:
+                              - generic [ref=e2761]: tooltip
+                              - paragraph [ref=e2762]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e2763]: 現金回饋後價格
+                          - generic [ref=e2766]:
+                            - generic [ref=e2768]:
+                              - generic [ref=e2769]: NT$
+                              - generic [ref=e2770]: 7,770
+                            - generic [ref=e2771]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e2775]: "1"
+                    - generic [ref=e2778]:
+                      - button "退房" [ref=e2780] [cursor=pointer]:
+                        - generic [ref=e2781]: 立即預訂
+                      - generic [ref=e2784]:
+                        - strong [ref=e2785]: 安心預訂！
+                        - paragraph [ref=e2786]: 可免費取消
+                      - paragraph [ref=e2788]: 訂房只需2分鐘
+                      - paragraph [ref=e2790]: 本站最後1間
+              - button "顯示另外5個" [ref=e2791] [cursor=pointer]:
+                - generic [ref=e2792]:
+                  - img [ref=e2793]
+                  - paragraph [ref=e2795]: 顯示另外5個
+            - generic [ref=e2798]:
+              - generic [ref=e2800]:
+                - img "Room" [ref=e2804]
+                - heading "Room" [level=5] [ref=e2806]
+              - generic [ref=e2809]:
+                - generic [ref=e2814]: 已售完
+                - generic [ref=e2817]: 這間住宿非常搶手 - 有空房的時候趕緊下訂，才不會再次空手而回。
+            - generic [ref=e2818]:
+              - generic [ref=e2819]:
+                - heading "雙床房－禁菸 (Twin Room - Non Smoking)" [level=4] [ref=e2821]:
+                  - button "雙床房－禁菸 (Twin Room - Non Smoking)" [ref=e2822] [cursor=pointer]:
+                    - paragraph [ref=e2823]:
+                      - generic [ref=e2826]: 雙床房－禁菸 (Twin Room - Non Smoking)
+                - generic [ref=e2829]:
+                  - generic [ref=e2830]:
+                    - img [ref=e2831]
+                    - paragraph [ref=e2834]: "8.9"
+                  - generic [ref=e2835]:
+                    - heading "很讚" [level=5] [ref=e2837]
+                    - paragraph [ref=e2838]: 客房舒適度
+              - generic [ref=e2840]:
+                - generic [ref=e2841]:
+                  - paragraph [ref=e2842]: 房型摘要
+                  - generic [ref=e2844]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) 雙床房－禁菸 (Twin Room - Non Smoking)" [ref=e2848] [cursor=pointer]
+                    - generic [ref=e2851]:
+                      - button "room-image" [ref=e2853] [cursor=pointer]:
+                        - img "room-image" [ref=e2855]
+                      - button "room-image" [ref=e2857] [cursor=pointer]:
+                        - img "room-image" [ref=e2859]
+                  - generic [ref=e2860]:
+                    - button "查看房間照片&設施" [ref=e2862] [cursor=pointer]:
+                      - generic [ref=e2863]: 查看房間照片&設施
+                    - list [ref=e2864]:
+                      - listitem:
+                        - generic [ref=e2865]:
+                          - generic [ref=e2866]: 
+                          - generic [ref=e2867]: 免費Wi-Fi
+                      - listitem [ref=e2868]:
+                        - generic [ref=e2869]:
+                          - generic [ref=e2870]: 
+                          - generic [ref=e2871]: 客房面積：25平方公尺/269平方英尺
+                      - listitem [ref=e2872]:
+                        - generic [ref=e2873]:
+                          - generic [ref=e2874]: 
+                          - generic [ref=e2875]: 景觀： 市景
+                      - listitem [ref=e2876]:
+                        - generic [ref=e2877]:
+                          - generic [ref=e2878]: 
+                          - generic [ref=e2879]: 2張單人床
+                      - listitem [ref=e2880]:
+                        - generic [ref=e2881]:
+                          - generic [ref=e2882]: 
+                          - generic [ref=e2883]: 獨立淋浴間/浴缸
+                      - listitem [ref=e2884]:
+                        - generic [ref=e2885]:
+                          - generic [ref=e2886]: 
+                          - generic [ref=e2887]: 窗戶
+                      - listitem [ref=e2888]:
+                        - generic [ref=e2889]:
+                          - generic [ref=e2890]: 
+                          - generic [ref=e2891]: 遮光窗簾
+                      - listitem [ref=e2892]:
+                        - generic [ref=e2893]:
+                          - generic [ref=e2894]: 
+                          - generic [ref=e2895]: Mini Bar
+                      - listitem [ref=e2896]:
+                        - generic [ref=e2897]:
+                          - generic [ref=e2898]: 
+                          - generic [ref=e2899]: 高樓層
+                      - listitem [ref=e2900]:
+                        - generic [ref=e2901]:
+                          - generic [ref=e2902]: 
+                          - generic [ref=e2903]: 專用衛浴
+                      - listitem [ref=e2904]:
+                        - button "看看所有設施與服務" [ref=e2906] [cursor=pointer]:
+                          - generic [ref=e2907]:
+                            - img [ref=e2908]
+                            - text: 看看所有設施與服務
+                - generic [ref=e2911]:
+                  - generic [ref=e2913]:
+                    - generic [ref=e2915]:
+                      - generic [ref=e2916]:
+                        - generic [ref=e2917]:
+                          - generic [ref=e2919] [cursor=pointer]:
+                            - img [ref=e2920]
+                            - paragraph [ref=e2922]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e2923]
+                          - generic [ref=e2926]:
+                            - paragraph [ref=e2927]: 美味早餐
+                            - progressbar [ref=e2928]
+                            - status [ref=e2929]
+                            - generic [ref=e2930]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e2931]:
+                          - generic [ref=e2933] [cursor=pointer]:
+                            - img [ref=e2934]
+                            - paragraph [ref=e2936]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e2937]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e2939]:
+                            - generic [ref=e2940]: tooltip
+                            - generic [ref=e2941]:
+                              - paragraph:
+                                - generic [ref=e2942]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e2943]:
+                          - img [ref=e2944]
+                          - paragraph [ref=e2946]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e2947]:
+                          - img [ref=e2948]
+                          - paragraph [ref=e2950]: 快速入住服務
+                        - generic [ref=e2951]:
+                          - img [ref=e2952]
+                          - paragraph [ref=e2954]: 免費Wi-Fi
+                      - generic [ref=e2955]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e2957]:
+                          - generic [ref=e2961] [cursor=pointer]:
+                            - img [ref=e2963]
+                            - text: 現金回饋：$ 770
+                          - tooltip "tooltip 賺取$ 770現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e2965]:
+                            - generic [ref=e2966]: tooltip
+                            - generic [ref=e2967]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 770現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e2969]
+                                    - generic [ref=e2971]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e2973]
+                                    - generic [ref=e2975]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e2978]:
+                          - generic [ref=e2979]: 
+                          - paragraph [ref=e2982]: 【期間限定】 減價6%！
+                    - generic [ref=e2984]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e2986] [cursor=pointer]:
+                        - generic [ref=e2987]:
+                          - img [ref=e2988]
+                          - generic [ref=e2990]:
+                            - generic [ref=e2991]: 
+                            - generic [ref=e2992]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e2993]:
+                        - generic [ref=e2994]: tooltip
+                        - generic [ref=e2996]:
+                          - generic [ref=e2997]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e2998]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e3002]:
+                      - generic [ref=e3004]:
+                        - generic [ref=e3007]: "1"
+                        - generic [ref=e3008]:
+                          - img "consolidated-applied-discount-badge" [ref=e3009]
+                          - generic [ref=e3011]: 已套用NT$ 770
+                      - generic [ref=e3012]:
+                        - generic [ref=e3014]:
+                          - paragraph [ref=e3015]:
+                            - generic [ref=e3016]: 41折
+                          - generic [ref=e3018]:
+                            - generic [ref=e3020]:
+                              - generic [ref=e3021]: 原始價格：NT$ 14,266
+                              - text: NT$ 14,266
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e3022]:
+                              - generic [ref=e3023]: tooltip
+                              - paragraph [ref=e3024]: 此房型去年的最高售價
+                        - generic [ref=e3025]:
+                          - generic [ref=e3028]:
+                            - generic [ref=e3030]:
+                              - generic [ref=e3031]: 原始價格：NT$ 6,068
+                              - text: NT$ 6,068
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e3032]:
+                              - generic [ref=e3033]: tooltip
+                              - paragraph [ref=e3034]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e3035]: 現金回饋後價格
+                          - generic [ref=e3038]:
+                            - generic [ref=e3040]:
+                              - generic [ref=e3041]: NT$
+                              - generic [ref=e3042]: 5,812
+                            - generic [ref=e3043]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e3047]: "1"
+                    - generic [ref=e3050]:
+                      - button "退房" [ref=e3052] [cursor=pointer]:
+                        - generic [ref=e3053]: 立即預訂
+                      - generic [ref=e3056]:
+                        - strong [ref=e3057]: 安心預訂！
+                        - paragraph [ref=e3058]: 可免費取消
+                      - paragraph [ref=e3060]: <<即將完售>>
+                  - generic [ref=e3062]:
+                    - generic [ref=e3064]:
+                      - generic [ref=e3065]:
+                        - generic [ref=e3066]:
+                          - generic [ref=e3068] [cursor=pointer]:
+                            - img [ref=e3069]
+                            - paragraph [ref=e3071]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e3072]
+                          - generic [ref=e3075]:
+                            - paragraph [ref=e3076]: 美味早餐
+                            - progressbar [ref=e3077]
+                            - status [ref=e3078]
+                            - generic [ref=e3079]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e3080]:
+                          - generic [ref=e3082] [cursor=pointer]:
+                            - img [ref=e3083]
+                            - paragraph [ref=e3085]: 2026年6月21日 星期日前可免費取消
+                            - img [ref=e3086]
+                          - tooltip "tooltip 訂房零風險！2026年6月21日 星期日前可免費取消。 在入住日期前4天內取消預訂，須支付訂單金額的29%作為取消費用。 在入住日期前2天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e3088]:
+                            - generic [ref=e3089]: tooltip
+                            - generic [ref=e3090]:
+                              - paragraph:
+                                - generic [ref=e3091]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月21日 星期日前可免費取消。
+                                  - text: 在入住日期前4天內取消預訂，須支付訂單金額的29%作為取消費用。 在入住日期前2天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e3092]:
+                          - img [ref=e3093]
+                          - paragraph [ref=e3095]: 可延至2026年6月19日 星期五扣款
+                        - generic [ref=e3096]:
+                          - img [ref=e3097]
+                          - paragraph [ref=e3099]: 快速入住服務
+                        - generic [ref=e3100]:
+                          - img [ref=e3101]
+                          - paragraph [ref=e3103]: 免費Wi-Fi
+                      - generic [ref=e3104]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e3106]:
+                          - generic [ref=e3110] [cursor=pointer]:
+                            - img [ref=e3112]
+                            - text: 現金回饋：$ 268
+                          - tooltip "tooltip 賺取$ 268現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e3114]:
+                            - generic [ref=e3115]: tooltip
+                            - generic [ref=e3116]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 268現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e3118]
+                                    - generic [ref=e3120]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e3122]
+                                    - generic [ref=e3124]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e3126]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e3128] [cursor=pointer]:
+                        - generic [ref=e3129]:
+                          - img [ref=e3130]
+                          - generic [ref=e3132]:
+                            - generic [ref=e3133]: 
+                            - generic [ref=e3134]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e3135]:
+                        - generic [ref=e3136]: tooltip
+                        - generic [ref=e3138]:
+                          - generic [ref=e3139]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e3140]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e3144]:
+                      - generic [ref=e3146]:
+                        - generic [ref=e3149]: "1"
+                        - generic [ref=e3150]:
+                          - img "consolidated-applied-discount-badge" [ref=e3151]
+                          - generic [ref=e3153]: 已套用NT$ 268
+                      - generic [ref=e3154]:
+                        - generic [ref=e3156]:
+                          - paragraph [ref=e3157]:
+                            - generic [ref=e3158]: 43折
+                          - generic [ref=e3160]:
+                            - generic [ref=e3162]:
+                              - generic [ref=e3163]: 原始價格：NT$ 14,266
+                              - text: NT$ 14,266
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e3164]:
+                              - generic [ref=e3165]: tooltip
+                              - paragraph [ref=e3166]: 此房型去年的最高售價
+                        - generic [ref=e3167]:
+                          - generic [ref=e3170]:
+                            - generic [ref=e3172]:
+                              - generic [ref=e3173]: 原始價格：NT$ 6,285
+                              - text: NT$ 6,285
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e3174]:
+                              - generic [ref=e3175]: tooltip
+                              - paragraph [ref=e3176]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e3177]: 現金回饋後價格
+                          - generic [ref=e3180]:
+                            - generic [ref=e3182]:
+                              - generic [ref=e3183]: NT$
+                              - generic [ref=e3184]: 6,196
+                            - generic [ref=e3185]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e3189]: "1"
+                    - generic [ref=e3192]:
+                      - button "退房" [ref=e3194] [cursor=pointer]:
+                        - generic [ref=e3195]: 立即預訂
+                      - generic [ref=e3198]:
+                        - strong [ref=e3199]: 安心預訂！
+                        - paragraph [ref=e3200]: 可免費取消
+                      - paragraph [ref=e3202]: 訂房只需2分鐘
+                      - paragraph [ref=e3204]: 本站最後1間
+                  - generic [ref=e3206]:
+                    - generic [ref=e3209]:
+                      - generic [ref=e3210]:
+                        - generic [ref=e3212] [cursor=pointer]:
+                          - img [ref=e3213]
+                          - paragraph [ref=e3215]: 可提供美味早餐（NT$ 1,004 / 每人）
+                          - img [ref=e3216]
+                        - generic [ref=e3219]:
+                          - paragraph [ref=e3220]: 美味早餐
+                          - progressbar [ref=e3221]
+                          - status [ref=e3222]
+                          - generic [ref=e3223]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e3224]:
+                        - generic [ref=e3226] [cursor=pointer]:
+                          - img [ref=e3227]
+                          - paragraph [ref=e3229]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e3230]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e3232]:
+                          - generic [ref=e3233]: tooltip
+                          - generic [ref=e3234]:
+                            - paragraph:
+                              - generic [ref=e3235]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e3236]:
+                        - img [ref=e3237]
+                        - paragraph [ref=e3239]: 到店付款
+                      - generic [ref=e3240]:
+                        - img [ref=e3241]
+                        - paragraph [ref=e3243]: 快速入住服務
+                      - generic [ref=e3244]:
+                        - img [ref=e3245]
+                        - paragraph [ref=e3247]: 免費Wi-Fi
+                    - generic [ref=e3249]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e3251] [cursor=pointer]:
+                        - generic [ref=e3252]:
+                          - img [ref=e3253]
+                          - generic [ref=e3255]:
+                            - generic [ref=e3256]: 
+                            - generic [ref=e3257]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e3258]:
+                        - generic [ref=e3259]: tooltip
+                        - generic [ref=e3261]:
+                          - generic [ref=e3262]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e3263]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e3268]:
+                      - generic [ref=e3270]:
+                        - paragraph [ref=e3271]:
+                          - generic [ref=e3272]: 45折
+                        - generic [ref=e3274]:
+                          - generic [ref=e3276]:
+                            - generic [ref=e3277]: 原始價格：NT$ 14,266
+                            - text: NT$ 14,266
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e3278]:
+                            - generic [ref=e3279]: tooltip
+                            - paragraph [ref=e3280]: 此房型去年的最高售價
+                      - generic [ref=e3282]:
+                        - generic [ref=e3284]:
+                          - generic [ref=e3285]: NT$
+                          - generic [ref=e3286]: 6,425
+                        - generic [ref=e3287]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e3291]: "1"
+                    - generic [ref=e3294]:
+                      - button "退房" [ref=e3296] [cursor=pointer]:
+                        - generic [ref=e3297]: 立即預訂
+                      - generic [ref=e3300]:
+                        - strong [ref=e3301]: 安心預訂！
+                        - paragraph [ref=e3302]: 可免費取消
+                      - paragraph [ref=e3304]: 訂房只需2分鐘
+                      - paragraph [ref=e3306]: 本站剩5間！
+                  - generic [ref=e3308]:
+                    - generic [ref=e3310]:
+                      - generic [ref=e3311]:
+                        - generic [ref=e3312]:
+                          - generic [ref=e3314] [cursor=pointer]:
+                            - img [ref=e3315]
+                            - paragraph [ref=e3317]: 附美味早餐
+                            - img [ref=e3318]
+                          - generic [ref=e3321]:
+                            - paragraph [ref=e3322]: 美味早餐
+                            - progressbar [ref=e3323]
+                            - status [ref=e3324]
+                            - generic [ref=e3325]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e3326]:
+                          - generic [ref=e3328] [cursor=pointer]:
+                            - img [ref=e3329]
+                            - paragraph [ref=e3331]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e3332]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e3334]:
+                            - generic [ref=e3335]: tooltip
+                            - generic [ref=e3336]:
+                              - paragraph:
+                                - generic [ref=e3337]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e3338]:
+                          - img [ref=e3339]
+                          - paragraph [ref=e3341]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e3342]:
+                          - img [ref=e3343]
+                          - paragraph [ref=e3345]: 快速入住服務
+                        - generic [ref=e3346]:
+                          - img [ref=e3347]
+                          - paragraph [ref=e3349]: 免費Wi-Fi
+                      - generic [ref=e3350]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e3352]:
+                          - generic [ref=e3356] [cursor=pointer]:
+                            - img [ref=e3358]
+                            - text: 現金回饋：$ 972
+                          - tooltip "tooltip 賺取$ 972現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e3360]:
+                            - generic [ref=e3361]: tooltip
+                            - generic [ref=e3362]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 972現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e3364]
+                                    - generic [ref=e3366]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e3368]
+                                    - generic [ref=e3370]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e3373]:
+                          - generic [ref=e3374]: 
+                          - paragraph [ref=e3377]: 【期間限定】 減價6%！
+                    - generic [ref=e3379]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e3381] [cursor=pointer]:
+                        - generic [ref=e3382]:
+                          - img [ref=e3383]
+                          - generic [ref=e3385]:
+                            - generic [ref=e3386]: 
+                            - generic [ref=e3387]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e3388]:
+                        - generic [ref=e3389]: tooltip
+                        - generic [ref=e3391]:
+                          - generic [ref=e3392]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e3393]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e3397]:
+                      - generic [ref=e3399]:
+                        - generic [ref=e3402]: "1"
+                        - generic [ref=e3403]:
+                          - img "consolidated-applied-discount-badge" [ref=e3404]
+                          - generic [ref=e3406]: 已套用NT$ 972
+                      - generic [ref=e3407]:
+                        - generic [ref=e3409]:
+                          - paragraph [ref=e3410]:
+                            - generic [ref=e3411]: 51折
+                          - generic [ref=e3413]:
+                            - generic [ref=e3415]:
+                              - generic [ref=e3416]: 原始價格：NT$ 14,266
+                              - text: NT$ 14,266
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e3417]:
+                              - generic [ref=e3418]: tooltip
+                              - paragraph [ref=e3419]: 此房型去年的最高售價
+                        - generic [ref=e3420]:
+                          - generic [ref=e3423]:
+                            - generic [ref=e3425]:
+                              - generic [ref=e3426]: 原始價格：NT$ 7,661
+                              - text: NT$ 7,661
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e3427]:
+                              - generic [ref=e3428]: tooltip
+                              - paragraph [ref=e3429]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e3430]: 現金回饋後價格
+                          - generic [ref=e3433]:
+                            - generic [ref=e3435]:
+                              - generic [ref=e3436]: NT$
+                              - generic [ref=e3437]: 7,337
+                            - generic [ref=e3438]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e3442]: "1"
+                    - generic [ref=e3445]:
+                      - button "退房" [ref=e3447] [cursor=pointer]:
+                        - generic [ref=e3448]: 立即預訂
+                      - generic [ref=e3451]:
+                        - strong [ref=e3452]: 安心預訂！
+                        - paragraph [ref=e3453]: 可免費取消
+                      - paragraph [ref=e3455]: 訂房只需2分鐘
+                      - paragraph [ref=e3457]: <<即將完售>>
+                  - generic [ref=e3459]:
+                    - generic [ref=e3461]:
+                      - generic [ref=e3462]:
+                        - generic [ref=e3463]:
+                          - generic [ref=e3465] [cursor=pointer]:
+                            - img [ref=e3466]
+                            - paragraph [ref=e3468]: 附美味早餐
+                            - img [ref=e3469]
+                          - generic [ref=e3472]:
+                            - paragraph [ref=e3473]: 美味早餐
+                            - progressbar [ref=e3474]
+                            - status [ref=e3475]
+                            - generic [ref=e3476]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e3477]:
+                          - generic [ref=e3479] [cursor=pointer]:
+                            - img [ref=e3480]
+                            - paragraph [ref=e3482]: 2026年6月21日 星期日前可免費取消
+                            - img [ref=e3483]
+                          - tooltip "tooltip 訂房零風險！2026年6月21日 星期日前可免費取消。 在入住日期前4天內取消預訂，須支付訂單金額的30%作為取消費用。 在入住日期前2天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e3485]:
+                            - generic [ref=e3486]: tooltip
+                            - generic [ref=e3487]:
+                              - paragraph:
+                                - generic [ref=e3488]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月21日 星期日前可免費取消。
+                                  - text: 在入住日期前4天內取消預訂，須支付訂單金額的30%作為取消費用。 在入住日期前2天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e3489]:
+                          - img [ref=e3490]
+                          - paragraph [ref=e3492]: 可延至2026年6月19日 星期五扣款
+                        - generic [ref=e3493]:
+                          - img [ref=e3494]
+                          - paragraph [ref=e3496]: 快速入住服務
+                        - generic [ref=e3497]:
+                          - img [ref=e3498]
+                          - paragraph [ref=e3500]: 免費Wi-Fi
+                      - generic [ref=e3501]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e3503]:
+                          - generic [ref=e3507] [cursor=pointer]:
+                            - img [ref=e3509]
+                            - text: 現金回饋：$ 338
+                          - tooltip "tooltip 賺取$ 338現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e3511]:
+                            - generic [ref=e3512]: tooltip
+                            - generic [ref=e3513]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 338現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e3515]
+                                    - generic [ref=e3517]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e3519]
+                                    - generic [ref=e3521]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e3523]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e3525] [cursor=pointer]:
+                        - generic [ref=e3526]:
+                          - img [ref=e3527]
+                          - generic [ref=e3529]:
+                            - generic [ref=e3530]: 
+                            - generic [ref=e3531]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e3532]:
+                        - generic [ref=e3533]: tooltip
+                        - generic [ref=e3535]:
+                          - generic [ref=e3536]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e3537]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e3541]:
+                      - generic [ref=e3543]:
+                        - generic [ref=e3546]: "1"
+                        - generic [ref=e3547]:
+                          - img "consolidated-applied-discount-badge" [ref=e3548]
+                          - generic [ref=e3550]: 已套用NT$ 338
+                      - generic [ref=e3551]:
+                        - generic [ref=e3553]:
+                          - paragraph [ref=e3554]:
+                            - generic [ref=e3555]: 55折
+                          - generic [ref=e3557]:
+                            - generic [ref=e3559]:
+                              - generic [ref=e3560]: 原始價格：NT$ 14,266
+                              - text: NT$ 14,266
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e3561]:
+                              - generic [ref=e3562]: tooltip
+                              - paragraph [ref=e3563]: 此房型去年的最高售價
+                        - generic [ref=e3564]:
+                          - generic [ref=e3567]:
+                            - generic [ref=e3569]:
+                              - generic [ref=e3570]: 原始價格：NT$ 7,934
+                              - text: NT$ 7,934
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e3571]:
+                              - generic [ref=e3572]: tooltip
+                              - paragraph [ref=e3573]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e3574]: 現金回饋後價格
+                          - generic [ref=e3577]:
+                            - generic [ref=e3579]:
+                              - generic [ref=e3580]: NT$
+                              - generic [ref=e3581]: 7,822
+                            - generic [ref=e3582]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e3586]: "1"
+                    - generic [ref=e3589]:
+                      - button "退房" [ref=e3591] [cursor=pointer]:
+                        - generic [ref=e3592]: 立即預訂
+                      - generic [ref=e3595]:
+                        - strong [ref=e3596]: 安心預訂！
+                        - paragraph [ref=e3597]: 可免費取消
+                      - paragraph [ref=e3599]: 訂房只需2分鐘
+                      - paragraph [ref=e3601]: 本站最後1間
+              - button "顯示另外5個" [ref=e3602] [cursor=pointer]:
+                - generic [ref=e3603]:
+                  - img [ref=e3604]
+                  - paragraph [ref=e3606]: 顯示另外5個
+            - generic [ref=e3607]:
+              - generic [ref=e3608]:
+                - heading "標準雙人房 - 禁菸/可使用Lounge (Standard Double - Non-Smoking, Lounge access)" [level=4] [ref=e3610]:
+                  - button "標準雙人房 - 禁菸/可使用Lounge (Standard Double - Non-Smoking, Lounge access)" [ref=e3611] [cursor=pointer]:
+                    - paragraph [ref=e3612]:
+                      - generic [ref=e3615]: 標準雙人房 - 禁菸/可使用Lounge (Standard Double - Non-Smoking, Lounge access)
+                - generic [ref=e3618]:
+                  - generic [ref=e3619]:
+                    - img [ref=e3620]
+                    - paragraph [ref=e3623]: "9.1"
+                  - generic [ref=e3624]:
+                    - heading "超棒" [level=5] [ref=e3626]
+                    - paragraph [ref=e3627]: 客房舒適度
+              - generic [ref=e3629]:
+                - generic [ref=e3630]:
+                  - paragraph [ref=e3631]: 房型摘要
+                  - generic [ref=e3633]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) 標準雙人房 - 禁菸/可使用Lounge (Standard Double - Non-Smoking, Lounge access)" [ref=e3637] [cursor=pointer]
+                    - generic [ref=e3640]:
+                      - button "room-image" [ref=e3642] [cursor=pointer]:
+                        - img "room-image" [ref=e3644]
+                      - button "room-image" [ref=e3646] [cursor=pointer]:
+                        - img "room-image" [ref=e3648]
+                  - generic [ref=e3649]:
+                    - button "查看房間照片&設施" [ref=e3651] [cursor=pointer]:
+                      - generic [ref=e3652]: 查看房間照片&設施
+                    - list [ref=e3653]:
+                      - listitem:
+                        - generic [ref=e3654]:
+                          - generic [ref=e3655]: 
+                          - generic [ref=e3656]: 免費Wi-Fi
+                      - listitem [ref=e3657]:
+                        - generic [ref=e3658]:
+                          - generic [ref=e3659]: 
+                          - generic [ref=e3660]: 客房面積：18平方公尺/194平方英尺
+                      - listitem [ref=e3661]:
+                        - generic [ref=e3662]:
+                          - generic [ref=e3663]: 
+                          - generic [ref=e3664]: 景觀： 市景
+                      - listitem [ref=e3665]:
+                        - generic [ref=e3666]:
+                          - generic [ref=e3667]: 
+                          - generic [ref=e3668]: 1張雙人床
+                      - listitem [ref=e3669]:
+                        - generic [ref=e3670]:
+                          - generic [ref=e3671]: 
+                          - generic [ref=e3672]: 獨立淋浴間/浴缸
+                      - listitem [ref=e3673]:
+                        - generic [ref=e3674]:
+                          - generic [ref=e3675]: 
+                          - generic [ref=e3676]: 遮光窗簾
+                      - listitem [ref=e3677]:
+                        - generic [ref=e3678]:
+                          - generic [ref=e3679]: 
+                          - generic [ref=e3680]: 禁菸房
+                      - listitem [ref=e3681]:
+                        - generic [ref=e3682]:
+                          - generic [ref=e3683]: 
+                          - generic [ref=e3684]: 專用衛浴
+                      - listitem [ref=e3685]:
+                        - generic [ref=e3686]:
+                          - generic [ref=e3687]: 
+                          - generic [ref=e3688]: 衣櫥
+                      - listitem [ref=e3689]:
+                        - generic [ref=e3690]:
+                          - generic [ref=e3691]: 
+                          - generic [ref=e3692]: 獨立空調
+                      - listitem [ref=e3693]:
+                        - button "看看所有設施與服務" [ref=e3695] [cursor=pointer]:
+                          - generic [ref=e3696]:
+                            - img [ref=e3697]
+                            - text: 看看所有設施與服務
+                - generic [ref=e3700]:
+                  - generic [ref=e3702]:
+                    - generic [ref=e3704]:
+                      - button "Room Only - Lounge access plan" [ref=e3707] [cursor=pointer]:
+                        - generic [ref=e3708]:
+                          - text: Room Only - Lounge access plan
+                          - img [ref=e3709]
+                      - generic [ref=e3711]:
+                        - generic [ref=e3712]:
+                          - generic [ref=e3714] [cursor=pointer]:
+                            - img [ref=e3715]
+                            - paragraph [ref=e3717]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e3718]
+                          - generic [ref=e3721]:
+                            - paragraph [ref=e3722]: 美味早餐
+                            - progressbar [ref=e3723]
+                            - status [ref=e3724]
+                            - generic [ref=e3725]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e3726]:
+                          - generic [ref=e3728] [cursor=pointer]:
+                            - img [ref=e3729]
+                            - paragraph [ref=e3731]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e3732]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e3734]:
+                            - generic [ref=e3735]: tooltip
+                            - generic [ref=e3736]:
+                              - paragraph:
+                                - generic [ref=e3737]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e3738]:
+                          - img [ref=e3739]
+                          - paragraph [ref=e3741]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e3742]:
+                          - img [ref=e3743]
+                          - paragraph [ref=e3745]: 快速入住服務
+                        - generic [ref=e3746]:
+                          - img [ref=e3747]
+                          - paragraph [ref=e3749]: 免費Wi-Fi
+                      - generic [ref=e3750]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e3752]:
+                          - generic [ref=e3756] [cursor=pointer]:
+                            - img [ref=e3758]
+                            - text: 現金回饋：$ 787
+                          - tooltip "tooltip 賺取$ 787現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e3760]:
+                            - generic [ref=e3761]: tooltip
+                            - generic [ref=e3762]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 787現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e3764]
+                                    - generic [ref=e3766]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e3768]
+                                    - generic [ref=e3770]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e3773]:
+                          - generic [ref=e3774]: 
+                          - paragraph [ref=e3777]: 【期間限定】 減價4%！
+                    - generic [ref=e3779]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e3781] [cursor=pointer]:
+                        - generic [ref=e3782]:
+                          - img [ref=e3783]
+                          - generic [ref=e3785]:
+                            - generic [ref=e3786]: 
+                            - generic [ref=e3787]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e3788]:
+                        - generic [ref=e3789]: tooltip
+                        - generic [ref=e3791]:
+                          - generic [ref=e3792]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e3793]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e3797]:
+                      - generic [ref=e3799]:
+                        - generic [ref=e3802]: "1"
+                        - generic [ref=e3803]:
+                          - img "consolidated-applied-discount-badge" [ref=e3804]
+                          - generic [ref=e3806]: 已套用NT$ 787
+                      - generic [ref=e3807]:
+                        - generic [ref=e3809]:
+                          - paragraph [ref=e3810]:
+                            - generic [ref=e3811]: 44折
+                          - generic [ref=e3813]:
+                            - generic [ref=e3815]:
+                              - generic [ref=e3816]: 原始價格：NT$ 13,479
+                              - text: NT$ 13,479
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e3817]:
+                              - generic [ref=e3818]: tooltip
+                              - paragraph [ref=e3819]: 此房型去年的最高售價
+                        - generic [ref=e3820]:
+                          - generic [ref=e3823]:
+                            - generic [ref=e3825]:
+                              - generic [ref=e3826]: 原始價格：NT$ 6,201
+                              - text: NT$ 6,201
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e3827]:
+                              - generic [ref=e3828]: tooltip
+                              - paragraph [ref=e3829]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e3830]: 現金回饋後價格
+                          - generic [ref=e3833]:
+                            - generic [ref=e3835]:
+                              - generic [ref=e3836]: NT$
+                              - generic [ref=e3837]: 5,939
+                            - generic [ref=e3838]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e3842]: "1"
+                    - generic [ref=e3845]:
+                      - button "退房" [ref=e3847] [cursor=pointer]:
+                        - generic [ref=e3848]: 立即預訂
+                      - generic [ref=e3851]:
+                        - strong [ref=e3852]: 安心預訂！
+                        - paragraph [ref=e3853]: 可免費取消
+                      - paragraph [ref=e3855]: 本站剩5間！
+                  - generic [ref=e3857]:
+                    - generic [ref=e3860]:
+                      - generic [ref=e3861]:
+                        - generic [ref=e3863] [cursor=pointer]:
+                          - img [ref=e3864]
+                          - paragraph [ref=e3866]: 可提供美味早餐（NT$ 1,004 / 每人）
+                          - img [ref=e3867]
+                        - generic [ref=e3870]:
+                          - paragraph [ref=e3871]: 美味早餐
+                          - progressbar [ref=e3872]
+                          - status [ref=e3873]
+                          - generic [ref=e3874]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e3875]:
+                        - generic [ref=e3877] [cursor=pointer]:
+                          - img [ref=e3878]
+                          - paragraph [ref=e3880]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e3881]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e3883]:
+                          - generic [ref=e3884]: tooltip
+                          - generic [ref=e3885]:
+                            - paragraph:
+                              - generic [ref=e3886]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e3887]:
+                        - img [ref=e3888]
+                        - paragraph [ref=e3890]: 到店付款
+                      - generic [ref=e3891]:
+                        - img [ref=e3892]
+                        - paragraph [ref=e3894]: 快速入住服務
+                      - generic [ref=e3895]:
+                        - img [ref=e3896]
+                        - paragraph [ref=e3898]: 免費Wi-Fi
+                    - generic [ref=e3900]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e3902] [cursor=pointer]:
+                        - generic [ref=e3903]:
+                          - img [ref=e3904]
+                          - generic [ref=e3906]:
+                            - generic [ref=e3907]: 
+                            - generic [ref=e3908]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e3909]:
+                        - generic [ref=e3910]: tooltip
+                        - generic [ref=e3912]:
+                          - generic [ref=e3913]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e3914]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e3919]:
+                      - generic [ref=e3921]:
+                        - paragraph [ref=e3922]:
+                          - generic [ref=e3923]: 48折
+                        - generic [ref=e3925]:
+                          - generic [ref=e3927]:
+                            - generic [ref=e3928]: 原始價格：NT$ 13,479
+                            - text: NT$ 13,479
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e3929]:
+                            - generic [ref=e3930]: tooltip
+                            - paragraph [ref=e3931]: 此房型去年的最高售價
+                      - generic [ref=e3933]:
+                        - generic [ref=e3935]:
+                          - generic [ref=e3936]: NT$
+                          - generic [ref=e3937]: 6,459
+                        - generic [ref=e3938]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e3942]: "1"
+                    - generic [ref=e3945]:
+                      - button "退房" [ref=e3947] [cursor=pointer]:
+                        - generic [ref=e3948]: 立即預訂
+                      - generic [ref=e3951]:
+                        - strong [ref=e3952]: 安心預訂！
+                        - paragraph [ref=e3953]: 可免費取消
+                      - paragraph [ref=e3955]: 訂房只需2分鐘
+                      - paragraph [ref=e3957]: 本站剩5間！
+                  - generic [ref=e3959]:
+                    - generic [ref=e3961]:
+                      - button "Breakfast included - Lounge access plan" [ref=e3964] [cursor=pointer]:
+                        - generic [ref=e3965]:
+                          - text: Breakfast included - Lounge access plan
+                          - img [ref=e3966]
+                      - generic [ref=e3968]:
+                        - generic [ref=e3969]:
+                          - generic [ref=e3971] [cursor=pointer]:
+                            - img [ref=e3972]
+                            - paragraph [ref=e3974]: 附美味早餐
+                            - img [ref=e3975]
+                          - generic [ref=e3978]:
+                            - paragraph [ref=e3979]: 美味早餐
+                            - progressbar [ref=e3980]
+                            - status [ref=e3981]
+                            - generic [ref=e3982]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e3983]:
+                          - generic [ref=e3985] [cursor=pointer]:
+                            - img [ref=e3986]
+                            - paragraph [ref=e3988]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e3989]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e3991]:
+                            - generic [ref=e3992]: tooltip
+                            - generic [ref=e3993]:
+                              - paragraph:
+                                - generic [ref=e3994]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e3995]:
+                          - img [ref=e3996]
+                          - paragraph [ref=e3998]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e3999]:
+                          - img [ref=e4000]
+                          - paragraph [ref=e4002]: 快速入住服務
+                        - generic [ref=e4003]:
+                          - img [ref=e4004]
+                          - paragraph [ref=e4006]: 免費Wi-Fi
+                      - generic [ref=e4007]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e4009]:
+                          - generic [ref=e4013] [cursor=pointer]:
+                            - img [ref=e4015]
+                            - text: 現金回饋：$ 981
+                          - tooltip "tooltip 賺取$ 981現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e4017]:
+                            - generic [ref=e4018]: tooltip
+                            - generic [ref=e4019]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 981現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e4021]
+                                    - generic [ref=e4023]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e4025]
+                                    - generic [ref=e4027]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e4030]:
+                          - generic [ref=e4031]: 
+                          - paragraph [ref=e4034]: 【期間限定】 減價4%！
+                    - generic [ref=e4036]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e4038] [cursor=pointer]:
+                        - generic [ref=e4039]:
+                          - img [ref=e4040]
+                          - generic [ref=e4042]:
+                            - generic [ref=e4043]: 
+                            - generic [ref=e4044]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e4045]:
+                        - generic [ref=e4046]: tooltip
+                        - generic [ref=e4048]:
+                          - generic [ref=e4049]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e4050]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e4054]:
+                      - generic [ref=e4056]:
+                        - generic [ref=e4059]: "1"
+                        - generic [ref=e4060]:
+                          - img "consolidated-applied-discount-badge" [ref=e4061]
+                          - generic [ref=e4063]: 已套用NT$ 981
+                      - generic [ref=e4064]:
+                        - generic [ref=e4066]:
+                          - paragraph [ref=e4067]:
+                            - generic [ref=e4068]: 55折
+                          - generic [ref=e4070]:
+                            - generic [ref=e4072]:
+                              - generic [ref=e4073]: 原始價格：NT$ 13,479
+                              - text: NT$ 13,479
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e4074]:
+                              - generic [ref=e4075]: tooltip
+                              - paragraph [ref=e4076]: 此房型去年的最高售價
+                        - generic [ref=e4077]:
+                          - generic [ref=e4080]:
+                            - generic [ref=e4082]:
+                              - generic [ref=e4083]: 原始價格：NT$ 7,730
+                              - text: NT$ 7,730
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e4084]:
+                              - generic [ref=e4085]: tooltip
+                              - paragraph [ref=e4086]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e4087]: 現金回饋後價格
+                          - generic [ref=e4090]:
+                            - generic [ref=e4092]:
+                              - generic [ref=e4093]: NT$
+                              - generic [ref=e4094]: 7,403
+                            - generic [ref=e4095]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e4099]: "1"
+                    - generic [ref=e4102]:
+                      - button "退房" [ref=e4104] [cursor=pointer]:
+                        - generic [ref=e4105]: 立即預訂
+                      - generic [ref=e4108]:
+                        - strong [ref=e4109]: 安心預訂！
+                        - paragraph [ref=e4110]: 可免費取消
+                      - paragraph [ref=e4112]: 訂房只需2分鐘
+                      - paragraph [ref=e4114]: 本站剩5間！
+              - button "顯示另外5個" [ref=e4115] [cursor=pointer]:
+                - generic [ref=e4116]:
+                  - img [ref=e4117]
+                  - paragraph [ref=e4119]: 顯示另外5個
+            - generic [ref=e4120]:
+              - heading "Comfort Room Double Bed Non Smoking" [level=4] [ref=e4123]:
+                - button "Comfort Room Double Bed Non Smoking" [ref=e4124] [cursor=pointer]:
+                  - paragraph [ref=e4125]:
+                    - generic [ref=e4128]: Comfort Room Double Bed Non Smoking
+              - generic [ref=e4130]:
+                - generic [ref=e4131]:
+                  - paragraph [ref=e4132]: 房型摘要
+                  - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) Comfort Room Double Bed Non Smoking" [ref=e4138] [cursor=pointer]
+                  - generic [ref=e4140]:
+                    - button "查看房間照片&設施" [ref=e4142] [cursor=pointer]:
+                      - generic [ref=e4143]: 查看房間照片&設施
+                    - list [ref=e4144]:
+                      - listitem [ref=e4145]:
+                        - generic [ref=e4146]:
+                          - generic [ref=e4147]: 
+                          - generic [ref=e4148]: 1張大床
+                      - listitem [ref=e4149]:
+                        - generic [ref=e4150]:
+                          - generic [ref=e4151]: 
+                          - generic [ref=e4152]: 窗戶
+                      - listitem [ref=e4153]:
+                        - generic [ref=e4154]:
+                          - generic [ref=e4155]: 
+                          - generic [ref=e4156]: 空調
+                      - listitem [ref=e4157]:
+                        - generic [ref=e4158]:
+                          - generic [ref=e4159]: 
+                          - generic [ref=e4160]: 淋浴設備
+                      - listitem [ref=e4161]:
+                        - button "看看所有設施與服務" [ref=e4163] [cursor=pointer]:
+                          - generic [ref=e4164]:
+                            - img [ref=e4165]
+                            - text: 看看所有設施與服務
+                - generic [ref=e4168]:
+                  - generic [ref=e4170]:
+                    - generic [ref=e4172]:
+                      - generic [ref=e4173]:
+                        - generic [ref=e4174]:
+                          - generic [ref=e4176] [cursor=pointer]:
+                            - img [ref=e4177]
+                            - paragraph [ref=e4179]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e4180]
+                          - generic [ref=e4183]:
+                            - paragraph [ref=e4184]: 美味早餐
+                            - progressbar [ref=e4185]
+                            - status [ref=e4186]
+                            - generic [ref=e4187]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e4188]:
+                          - generic [ref=e4190] [cursor=pointer]:
+                            - img [ref=e4191]
+                            - paragraph [ref=e4193]: 2026年6月21日 星期日前可免費取消
+                            - img [ref=e4194]
+                          - tooltip "tooltip 訂房零風險！2026年6月21日 星期日前可免費取消。 在入住日期前4天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e4196]:
+                            - generic [ref=e4197]: tooltip
+                            - generic [ref=e4198]:
+                              - paragraph:
+                                - generic [ref=e4199]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月21日 星期日前可免費取消。
+                                  - text: 在入住日期前4天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e4200]:
+                          - img [ref=e4201]
+                          - paragraph [ref=e4203]: 可延至2026年6月19日 星期五扣款
+                        - generic [ref=e4204]:
+                          - img [ref=e4205]
+                          - paragraph [ref=e4207]: 快速入住服務
+                        - generic [ref=e4208]:
+                          - img [ref=e4209]
+                          - paragraph [ref=e4211]: 免費Wi-Fi
+                      - generic [ref=e4212]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e4214]:
+                          - generic [ref=e4218] [cursor=pointer]:
+                            - img [ref=e4220]
+                            - text: 現金回饋：$ 273
+                          - tooltip "tooltip 賺取$ 273現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e4222]:
+                            - generic [ref=e4223]: tooltip
+                            - generic [ref=e4224]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 273現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e4226]
+                                    - generic [ref=e4228]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e4230]
+                                    - generic [ref=e4232]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e4234]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e4236] [cursor=pointer]:
+                        - generic [ref=e4237]:
+                          - img [ref=e4238]
+                          - generic [ref=e4240]:
+                            - generic [ref=e4241]: 
+                            - generic [ref=e4242]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e4243]:
+                        - generic [ref=e4244]: tooltip
+                        - generic [ref=e4246]:
+                          - generic [ref=e4247]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e4248]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e4252]:
+                      - generic [ref=e4254]:
+                        - generic [ref=e4257]: "1"
+                        - generic [ref=e4258]:
+                          - img "consolidated-applied-discount-badge" [ref=e4259]
+                          - generic [ref=e4261]: 已套用NT$ 273
+                      - generic [ref=e4263]:
+                        - generic [ref=e4266]:
+                          - generic [ref=e4268]:
+                            - generic [ref=e4269]: 原始價格：NT$ 6,076
+                            - text: NT$ 6,076
+                          - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e4270]:
+                            - generic [ref=e4271]: tooltip
+                            - paragraph [ref=e4272]: 這是尚未套用現金回饋的價格
+                        - generic [ref=e4273]: 現金回饋後價格
+                        - generic [ref=e4276]:
+                          - generic [ref=e4278]:
+                            - generic [ref=e4279]: NT$
+                            - generic [ref=e4280]: 5,985
+                          - generic [ref=e4281]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e4285]: "1"
+                    - generic [ref=e4288]:
+                      - button "退房" [ref=e4290] [cursor=pointer]:
+                        - generic [ref=e4291]: 立即預訂
+                      - generic [ref=e4294]:
+                        - strong [ref=e4295]: 安心預訂！
+                        - paragraph [ref=e4296]: 可免費取消
+                      - paragraph [ref=e4298]: 本站最後1間
+                  - generic [ref=e4300]:
+                    - generic [ref=e4302]:
+                      - generic [ref=e4303]:
+                        - generic [ref=e4304]:
+                          - generic [ref=e4306] [cursor=pointer]:
+                            - img [ref=e4307]
+                            - paragraph [ref=e4309]: 附美味早餐
+                            - img [ref=e4310]
+                          - generic [ref=e4313]:
+                            - paragraph [ref=e4314]: 美味早餐
+                            - progressbar [ref=e4315]
+                            - status [ref=e4316]
+                            - generic [ref=e4317]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e4318]:
+                          - generic [ref=e4320] [cursor=pointer]:
+                            - img [ref=e4321]
+                            - paragraph [ref=e4323]: 2026年6月21日 星期日前可免費取消
+                            - img [ref=e4324]
+                          - tooltip "tooltip 訂房零風險！2026年6月21日 星期日前可免費取消。 在入住日期前4天內取消預訂，須支付訂單金額的7%作為取消費用。 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e4326]:
+                            - generic [ref=e4327]: tooltip
+                            - generic [ref=e4328]:
+                              - paragraph:
+                                - generic [ref=e4329]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月21日 星期日前可免費取消。
+                                  - text: 在入住日期前4天內取消預訂，須支付訂單金額的7%作為取消費用。 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e4330]:
+                          - img [ref=e4331]
+                          - paragraph [ref=e4333]: 可延至2026年6月19日 星期五扣款
+                        - generic [ref=e4334]:
+                          - img [ref=e4335]
+                          - paragraph [ref=e4337]: 快速入住服務
+                        - generic [ref=e4338]:
+                          - img [ref=e4339]
+                          - paragraph [ref=e4341]: 免費Wi-Fi
+                      - generic [ref=e4342]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e4344]:
+                          - generic [ref=e4348] [cursor=pointer]:
+                            - img [ref=e4350]
+                            - text: 現金回饋：$ 330
+                          - tooltip "tooltip 賺取$ 330現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e4352]:
+                            - generic [ref=e4353]: tooltip
+                            - generic [ref=e4354]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 330現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e4356]
+                                    - generic [ref=e4358]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e4360]
+                                    - generic [ref=e4362]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e4364]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e4366] [cursor=pointer]:
+                        - generic [ref=e4367]:
+                          - img [ref=e4368]
+                          - generic [ref=e4370]:
+                            - generic [ref=e4371]: 
+                            - generic [ref=e4372]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e4373]:
+                        - generic [ref=e4374]: tooltip
+                        - generic [ref=e4376]:
+                          - generic [ref=e4377]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e4378]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e4382]:
+                      - generic [ref=e4384]:
+                        - generic [ref=e4387]: "1"
+                        - generic [ref=e4388]:
+                          - img "consolidated-applied-discount-badge" [ref=e4389]
+                          - generic [ref=e4391]: 已套用NT$ 330
+                      - generic [ref=e4393]:
+                        - generic [ref=e4396]:
+                          - generic [ref=e4398]:
+                            - generic [ref=e4399]: 原始價格：NT$ 7,745
+                            - text: NT$ 7,745
+                          - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e4400]:
+                            - generic [ref=e4401]: tooltip
+                            - paragraph [ref=e4402]: 這是尚未套用現金回饋的價格
+                        - generic [ref=e4403]: 現金回饋後價格
+                        - generic [ref=e4406]:
+                          - generic [ref=e4408]:
+                            - generic [ref=e4409]: NT$
+                            - generic [ref=e4410]: 7,635
+                          - generic [ref=e4411]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e4415]: "1"
+                    - generic [ref=e4418]:
+                      - button "退房" [ref=e4420] [cursor=pointer]:
+                        - generic [ref=e4421]: 立即預訂
+                      - generic [ref=e4424]:
+                        - strong [ref=e4425]: 安心預訂！
+                        - paragraph [ref=e4426]: 可免費取消
+                      - paragraph [ref=e4428]: 訂房只需2分鐘
+                      - paragraph [ref=e4430]: 本站最後1間
+            - generic [ref=e4431]:
+              - generic [ref=e4432]:
+                - heading "標準房(兩床/最高樓層/哥吉拉樓層) (Standard Twin on the Highest Floor (Godzilla Floor))" [level=4] [ref=e4434]:
+                  - button "標準房(兩床/最高樓層/哥吉拉樓層) (Standard Twin on the Highest Floor (Godzilla Floor))" [ref=e4435] [cursor=pointer]:
+                    - paragraph [ref=e4436]:
+                      - generic [ref=e4439]: 標準房(兩床/最高樓層/哥吉拉樓層) (Standard Twin on the Highest Floor (Godzilla Floor))
+                - generic [ref=e4442]:
+                  - generic [ref=e4443]:
+                    - img [ref=e4444]
+                    - paragraph [ref=e4447]: "9"
+                  - generic [ref=e4448]:
+                    - heading "很讚" [level=5] [ref=e4450]
+                    - paragraph [ref=e4451]: 客房舒適度
+              - generic [ref=e4453]:
+                - generic [ref=e4454]:
+                  - paragraph [ref=e4455]: 房型摘要
+                  - generic [ref=e4457]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) 標準房(兩床/最高樓層/哥吉拉樓層) (Standard Twin on the Highest Floor (Godzilla Floor))" [ref=e4461] [cursor=pointer]
+                    - generic [ref=e4464]:
+                      - button "room-image" [ref=e4466] [cursor=pointer]:
+                        - img "room-image" [ref=e4468]
+                      - button "room-image" [ref=e4470] [cursor=pointer]:
+                        - img "room-image" [ref=e4472]
+                  - generic [ref=e4473]:
+                    - button "查看房間照片&設施" [ref=e4475] [cursor=pointer]:
+                      - generic [ref=e4476]: 查看房間照片&設施
+                    - list [ref=e4477]:
+                      - listitem:
+                        - generic [ref=e4478]:
+                          - generic [ref=e4479]: 
+                          - generic [ref=e4480]: 免費Wi-Fi
+                      - listitem [ref=e4481]:
+                        - generic [ref=e4482]:
+                          - generic [ref=e4483]: 
+                          - generic [ref=e4484]: 客房面積：25平方公尺/269平方英尺
+                      - listitem [ref=e4485]:
+                        - generic [ref=e4486]:
+                          - generic [ref=e4487]: 
+                          - generic [ref=e4488]: 景觀： 市景
+                      - listitem [ref=e4489]:
+                        - generic [ref=e4490]:
+                          - generic [ref=e4491]: 
+                          - generic [ref=e4492]: 2張單人床
+                      - listitem [ref=e4493]:
+                        - generic [ref=e4494]:
+                          - generic [ref=e4495]: 
+                          - generic [ref=e4496]: 獨立淋浴間/浴缸
+                      - listitem [ref=e4497]:
+                        - generic [ref=e4498]:
+                          - generic [ref=e4499]: 
+                          - generic [ref=e4500]: 遮光窗簾
+                      - listitem [ref=e4501]:
+                        - generic [ref=e4502]:
+                          - generic [ref=e4503]: 
+                          - generic [ref=e4504]: 高樓層
+                      - listitem [ref=e4505]:
+                        - generic [ref=e4506]:
+                          - generic [ref=e4507]: 
+                          - generic [ref=e4508]: 禁菸房
+                      - listitem [ref=e4509]:
+                        - generic [ref=e4510]:
+                          - generic [ref=e4511]: 
+                          - generic [ref=e4512]: 專用衛浴
+                      - listitem [ref=e4513]:
+                        - generic [ref=e4514]:
+                          - generic [ref=e4515]: 
+                          - generic [ref=e4516]: 獨立空調
+                      - listitem [ref=e4517]:
+                        - button "看看所有設施與服務" [ref=e4519] [cursor=pointer]:
+                          - generic [ref=e4520]:
+                            - img [ref=e4521]
+                            - text: 看看所有設施與服務
+                - generic [ref=e4524]:
+                  - generic [ref=e4526]:
+                    - generic [ref=e4528]:
+                      - generic [ref=e4529]:
+                        - generic [ref=e4530]:
+                          - generic [ref=e4532] [cursor=pointer]:
+                            - img [ref=e4533]
+                            - paragraph [ref=e4535]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e4536]
+                          - generic [ref=e4539]:
+                            - paragraph [ref=e4540]: 美味早餐
+                            - progressbar [ref=e4541]
+                            - status [ref=e4542]
+                            - generic [ref=e4543]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e4544]:
+                          - generic [ref=e4546] [cursor=pointer]:
+                            - img [ref=e4547]
+                            - paragraph [ref=e4549]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e4550]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e4552]:
+                            - generic [ref=e4553]: tooltip
+                            - generic [ref=e4554]:
+                              - paragraph:
+                                - generic [ref=e4555]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e4556]:
+                          - img [ref=e4557]
+                          - paragraph [ref=e4559]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e4560]:
+                          - img [ref=e4561]
+                          - paragraph [ref=e4563]: 快速入住服務
+                        - generic [ref=e4564]:
+                          - img [ref=e4565]
+                          - paragraph [ref=e4567]: 免費Wi-Fi
+                      - generic [ref=e4568]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e4570]:
+                          - generic [ref=e4574] [cursor=pointer]:
+                            - img [ref=e4576]
+                            - text: 現金回饋：$ 904
+                          - tooltip "tooltip 賺取$ 904現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e4578]:
+                            - generic [ref=e4579]: tooltip
+                            - generic [ref=e4580]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 904現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e4582]
+                                    - generic [ref=e4584]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e4586]
+                                    - generic [ref=e4588]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e4591]:
+                          - generic [ref=e4592]: 
+                          - paragraph [ref=e4595]: 【期間限定】 減價6%！
+                    - generic [ref=e4597]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e4599] [cursor=pointer]:
+                        - generic [ref=e4600]:
+                          - img [ref=e4601]
+                          - generic [ref=e4603]:
+                            - generic [ref=e4604]: 
+                            - generic [ref=e4605]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e4606]:
+                        - generic [ref=e4607]: tooltip
+                        - generic [ref=e4609]:
+                          - generic [ref=e4610]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e4611]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e4615]:
+                      - generic [ref=e4617]:
+                        - generic [ref=e4620]: "1"
+                        - generic [ref=e4621]:
+                          - img "consolidated-applied-discount-badge" [ref=e4622]
+                          - generic [ref=e4624]: 已套用NT$ 904
+                      - generic [ref=e4625]:
+                        - generic [ref=e4627]:
+                          - paragraph [ref=e4628]:
+                            - generic [ref=e4629]: 48折
+                          - generic [ref=e4631]:
+                            - generic [ref=e4633]:
+                              - generic [ref=e4634]: 原始價格：NT$ 14,163
+                              - text: NT$ 14,163
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e4635]:
+                              - generic [ref=e4636]: tooltip
+                              - paragraph [ref=e4637]: 此房型去年的最高售價
+                        - generic [ref=e4638]:
+                          - generic [ref=e4641]:
+                            - generic [ref=e4643]:
+                              - generic [ref=e4644]: 原始價格：NT$ 7,129
+                              - text: NT$ 7,129
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e4645]:
+                              - generic [ref=e4646]: tooltip
+                              - paragraph [ref=e4647]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e4648]: 現金回饋後價格
+                          - generic [ref=e4651]:
+                            - generic [ref=e4653]:
+                              - generic [ref=e4654]: NT$
+                              - generic [ref=e4655]: 6,828
+                            - generic [ref=e4656]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e4660]: "1"
+                    - generic [ref=e4663]:
+                      - button "退房" [ref=e4665] [cursor=pointer]:
+                        - generic [ref=e4666]: 立即預訂
+                      - generic [ref=e4669]:
+                        - strong [ref=e4670]: 安心預訂！
+                        - paragraph [ref=e4671]: 可免費取消
+                      - paragraph [ref=e4673]: 本站剩3間！
+                  - generic [ref=e4675]:
+                    - generic [ref=e4678]:
+                      - generic [ref=e4679]:
+                        - generic [ref=e4681] [cursor=pointer]:
+                          - img [ref=e4682]
+                          - paragraph [ref=e4684]: 可提供美味早餐（NT$ 1,004 / 每人）
+                          - img [ref=e4685]
+                        - generic [ref=e4688]:
+                          - paragraph [ref=e4689]: 美味早餐
+                          - progressbar [ref=e4690]
+                          - status [ref=e4691]
+                          - generic [ref=e4692]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e4693]:
+                        - generic [ref=e4695] [cursor=pointer]:
+                          - img [ref=e4696]
+                          - paragraph [ref=e4698]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e4699]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e4701]:
+                          - generic [ref=e4702]: tooltip
+                          - generic [ref=e4703]:
+                            - paragraph:
+                              - generic [ref=e4704]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e4705]:
+                        - img [ref=e4706]
+                        - paragraph [ref=e4708]: 到店付款
+                      - generic [ref=e4709]:
+                        - img [ref=e4710]
+                        - paragraph [ref=e4712]: 快速入住服務
+                      - generic [ref=e4713]:
+                        - img [ref=e4714]
+                        - paragraph [ref=e4716]: 免費Wi-Fi
+                    - generic [ref=e4718]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e4720] [cursor=pointer]:
+                        - generic [ref=e4721]:
+                          - img [ref=e4722]
+                          - generic [ref=e4724]:
+                            - generic [ref=e4725]: 
+                            - generic [ref=e4726]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e4727]:
+                        - generic [ref=e4728]: tooltip
+                        - generic [ref=e4730]:
+                          - generic [ref=e4731]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e4732]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e4737]:
+                      - generic [ref=e4739]:
+                        - paragraph [ref=e4740]:
+                          - generic [ref=e4741]: 53折
+                        - generic [ref=e4743]:
+                          - generic [ref=e4745]:
+                            - generic [ref=e4746]: 原始價格：NT$ 14,163
+                            - text: NT$ 14,163
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e4747]:
+                            - generic [ref=e4748]: tooltip
+                            - paragraph [ref=e4749]: 此房型去年的最高售價
+                      - generic [ref=e4751]:
+                        - generic [ref=e4753]:
+                          - generic [ref=e4754]: NT$
+                          - generic [ref=e4755]: 7,546
+                        - generic [ref=e4756]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e4760]: "1"
+                    - generic [ref=e4763]:
+                      - button "退房" [ref=e4765] [cursor=pointer]:
+                        - generic [ref=e4766]: 立即預訂
+                      - generic [ref=e4769]:
+                        - strong [ref=e4770]: 安心預訂！
+                        - paragraph [ref=e4771]: 可免費取消
+                      - paragraph [ref=e4773]: 訂房只需2分鐘
+                      - paragraph [ref=e4775]: 本站剩3間！
+                  - generic [ref=e4777]:
+                    - generic [ref=e4779]:
+                      - generic [ref=e4780]:
+                        - generic [ref=e4781]:
+                          - generic [ref=e4783] [cursor=pointer]:
+                            - img [ref=e4784]
+                            - paragraph [ref=e4786]: 附美味早餐
+                            - img [ref=e4787]
+                          - generic [ref=e4790]:
+                            - paragraph [ref=e4791]: 美味早餐
+                            - progressbar [ref=e4792]
+                            - status [ref=e4793]
+                            - generic [ref=e4794]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e4795]:
+                          - generic [ref=e4797] [cursor=pointer]:
+                            - img [ref=e4798]
+                            - paragraph [ref=e4800]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e4801]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e4803]:
+                            - generic [ref=e4804]: tooltip
+                            - generic [ref=e4805]:
+                              - paragraph:
+                                - generic [ref=e4806]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e4807]:
+                          - img [ref=e4808]
+                          - paragraph [ref=e4810]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e4811]:
+                          - img [ref=e4812]
+                          - paragraph [ref=e4814]: 快速入住服務
+                        - generic [ref=e4815]:
+                          - img [ref=e4816]
+                          - paragraph [ref=e4818]: 免費Wi-Fi
+                      - generic [ref=e4819]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e4821]:
+                          - generic [ref=e4825] [cursor=pointer]:
+                            - img [ref=e4827]
+                            - text: 現金回饋：$ 1,107
+                          - tooltip "tooltip 賺取$ 1,107現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e4829]:
+                            - generic [ref=e4830]: tooltip
+                            - generic [ref=e4831]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 1,107現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e4833]
+                                    - generic [ref=e4835]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e4837]
+                                    - generic [ref=e4839]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e4842]:
+                          - generic [ref=e4843]: 
+                          - paragraph [ref=e4846]: 【期間限定】 減價6%！
+                    - generic [ref=e4848]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e4850] [cursor=pointer]:
+                        - generic [ref=e4851]:
+                          - img [ref=e4852]
+                          - generic [ref=e4854]:
+                            - generic [ref=e4855]: 
+                            - generic [ref=e4856]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e4857]:
+                        - generic [ref=e4858]: tooltip
+                        - generic [ref=e4860]:
+                          - generic [ref=e4861]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e4862]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e4866]:
+                      - generic [ref=e4868]:
+                        - generic [ref=e4871]: "1"
+                        - generic [ref=e4872]:
+                          - img "consolidated-applied-discount-badge" [ref=e4873]
+                          - generic [ref=e4875]: 已套用NT$ 1,107
+                      - generic [ref=e4876]:
+                        - generic [ref=e4878]:
+                          - paragraph [ref=e4879]:
+                            - generic [ref=e4880]: 59折
+                          - generic [ref=e4882]:
+                            - generic [ref=e4884]:
+                              - generic [ref=e4885]: 原始價格：NT$ 14,163
+                              - text: NT$ 14,163
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e4886]:
+                              - generic [ref=e4887]: tooltip
+                              - paragraph [ref=e4888]: 此房型去年的最高售價
+                        - generic [ref=e4889]:
+                          - generic [ref=e4892]:
+                            - generic [ref=e4894]:
+                              - generic [ref=e4895]: 原始價格：NT$ 8,725
+                              - text: NT$ 8,725
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e4896]:
+                              - generic [ref=e4897]: tooltip
+                              - paragraph [ref=e4898]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e4899]: 現金回饋後價格
+                          - generic [ref=e4902]:
+                            - generic [ref=e4904]:
+                              - generic [ref=e4905]: NT$
+                              - generic [ref=e4906]: 8,356
+                            - generic [ref=e4907]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e4911]: "1"
+                    - generic [ref=e4914]:
+                      - button "退房" [ref=e4916] [cursor=pointer]:
+                        - generic [ref=e4917]: 立即預訂
+                      - generic [ref=e4920]:
+                        - strong [ref=e4921]: 安心預訂！
+                        - paragraph [ref=e4922]: 可免費取消
+                      - paragraph [ref=e4924]: 訂房只需2分鐘
+                      - paragraph [ref=e4926]: 本站剩3間！
+                  - generic [ref=e4928]:
+                    - generic [ref=e4931]:
+                      - generic [ref=e4932]:
+                        - generic [ref=e4934] [cursor=pointer]:
+                          - img [ref=e4935]
+                          - paragraph [ref=e4937]: 附美味早餐
+                          - img [ref=e4938]
+                        - generic [ref=e4941]:
+                          - paragraph [ref=e4942]: 美味早餐
+                          - progressbar [ref=e4943]
+                          - status [ref=e4944]
+                          - generic [ref=e4945]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e4946]:
+                        - generic [ref=e4948] [cursor=pointer]:
+                          - img [ref=e4949]
+                          - paragraph [ref=e4951]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e4952]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e4954]:
+                          - generic [ref=e4955]: tooltip
+                          - generic [ref=e4956]:
+                            - paragraph:
+                              - generic [ref=e4957]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e4958]:
+                        - img [ref=e4959]
+                        - paragraph [ref=e4961]: 到店付款
+                      - generic [ref=e4962]:
+                        - img [ref=e4963]
+                        - paragraph [ref=e4965]: 快速入住服務
+                      - generic [ref=e4966]:
+                        - img [ref=e4967]
+                        - paragraph [ref=e4969]: 免費Wi-Fi
+                    - generic [ref=e4971]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e4973] [cursor=pointer]:
+                        - generic [ref=e4974]:
+                          - img [ref=e4975]
+                          - generic [ref=e4977]:
+                            - generic [ref=e4978]: 
+                            - generic [ref=e4979]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e4980]:
+                        - generic [ref=e4981]: tooltip
+                        - generic [ref=e4983]:
+                          - generic [ref=e4984]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e4985]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e4990]:
+                      - generic [ref=e4992]:
+                        - paragraph [ref=e4993]:
+                          - generic [ref=e4994]: 65折
+                        - generic [ref=e4996]:
+                          - generic [ref=e4998]:
+                            - generic [ref=e4999]: 原始價格：NT$ 14,163
+                            - text: NT$ 14,163
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e5000]:
+                            - generic [ref=e5001]: tooltip
+                            - paragraph [ref=e5002]: 此房型去年的最高售價
+                      - generic [ref=e5004]:
+                        - generic [ref=e5006]:
+                          - generic [ref=e5007]: NT$
+                          - generic [ref=e5008]: 9,232
+                        - generic [ref=e5009]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e5013]: "1"
+                    - generic [ref=e5016]:
+                      - button "退房" [ref=e5018] [cursor=pointer]:
+                        - generic [ref=e5019]: 立即預訂
+                      - generic [ref=e5022]:
+                        - strong [ref=e5023]: 安心預訂！
+                        - paragraph [ref=e5024]: 可免費取消
+                      - paragraph [ref=e5026]: 訂房只需2分鐘
+                      - paragraph [ref=e5028]: 本站剩3間！
+              - button "顯示另外2個" [ref=e5029] [cursor=pointer]:
+                - generic [ref=e5030]:
+                  - img [ref=e5031]
+                  - paragraph [ref=e5033]: 顯示另外2個
+            - generic [ref=e5034]:
+              - heading "單人房－禁菸 (Single Room - Non-Smoking)" [level=4] [ref=e5037]:
+                - button "單人房－禁菸 (Single Room - Non-Smoking)" [ref=e5038] [cursor=pointer]:
+                  - paragraph [ref=e5039]:
+                    - generic [ref=e5042]: 單人房－禁菸 (Single Room - Non-Smoking)
+              - generic [ref=e5044]:
+                - generic [ref=e5045]:
+                  - paragraph [ref=e5046]: 房型摘要
+                  - generic [ref=e5048]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) 單人房－禁菸 (Single Room - Non-Smoking)" [ref=e5052] [cursor=pointer]
+                    - generic [ref=e5055]:
+                      - button "room-image" [ref=e5057] [cursor=pointer]:
+                        - img "room-image" [ref=e5059]
+                      - button "room-image" [ref=e5061] [cursor=pointer]:
+                        - img "room-image" [ref=e5063]
+                  - generic [ref=e5064]:
+                    - button "查看房間照片&設施" [ref=e5066] [cursor=pointer]:
+                      - generic [ref=e5067]: 查看房間照片&設施
+                    - list [ref=e5068]:
+                      - listitem [ref=e5069]:
+                        - generic [ref=e5070]:
+                          - generic [ref=e5071]: 
+                          - generic [ref=e5072]: 客房面積：18平方公尺/194平方英尺
+                      - listitem [ref=e5073]:
+                        - generic [ref=e5074]:
+                          - generic [ref=e5075]: 
+                          - generic [ref=e5076]: 景觀： 戶外景觀
+                      - listitem [ref=e5077]:
+                        - generic [ref=e5078]:
+                          - generic [ref=e5079]: 
+                          - generic [ref=e5080]: 1張單人床
+                      - listitem [ref=e5081]:
+                        - generic [ref=e5082]:
+                          - generic [ref=e5083]: 
+                          - generic [ref=e5084]: 按摩浴缸
+                      - listitem [ref=e5085]:
+                        - generic [ref=e5086]:
+                          - generic [ref=e5087]: 
+                          - generic [ref=e5088]: 遮光窗簾
+                      - listitem [ref=e5089]:
+                        - generic [ref=e5090]:
+                          - generic [ref=e5091]: 
+                          - generic [ref=e5092]: 禁菸房
+                      - listitem [ref=e5093]:
+                        - generic [ref=e5094]:
+                          - generic [ref=e5095]: 
+                          - generic [ref=e5096]: 專用衛浴
+                      - listitem [ref=e5097]:
+                        - generic [ref=e5098]:
+                          - generic [ref=e5099]: 
+                          - generic [ref=e5100]: 免費有線上網
+                      - listitem [ref=e5101]:
+                        - generic [ref=e5102]:
+                          - generic [ref=e5103]: 
+                          - generic [ref=e5104]: 獨立空調
+                      - listitem [ref=e5105]:
+                        - generic [ref=e5106]:
+                          - generic [ref=e5107]: 
+                          - generic [ref=e5108]: 免費茶包
+                      - listitem [ref=e5109]:
+                        - button "看看所有設施與服務" [ref=e5111] [cursor=pointer]:
+                          - generic [ref=e5112]:
+                            - img [ref=e5113]
+                            - text: 看看所有設施與服務
+                - generic [ref=e5118]:
+                  - generic [ref=e5120]:
+                    - generic [ref=e5121]:
+                      - generic [ref=e5122]:
+                        - generic [ref=e5124] [cursor=pointer]:
+                          - img [ref=e5125]
+                          - paragraph [ref=e5127]: 2026年6月19日 星期五前可免費取消
+                          - img [ref=e5128]
+                        - tooltip "tooltip 訂房零風險！2026年6月19日 星期五前可免費取消。 在入住日期前6天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e5130]:
+                          - generic [ref=e5131]: tooltip
+                          - generic [ref=e5132]:
+                            - paragraph:
+                              - generic [ref=e5133]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月19日 星期五前可免費取消。
+                                - text: 在入住日期前6天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e5134]:
+                        - img [ref=e5135]
+                        - paragraph [ref=e5137]: 可延至2026年6月17日 星期三扣款
+                      - generic [ref=e5138]:
+                        - img [ref=e5139]
+                        - paragraph [ref=e5141]: 快速入住服務
+                      - generic [ref=e5142]:
+                        - img [ref=e5143]
+                        - paragraph [ref=e5145]: 免費Wi-Fi
+                    - generic [ref=e5146]:
+                      - text: 其他回饋和折扣
+                      - generic [ref=e5148]:
+                        - generic [ref=e5152] [cursor=pointer]:
+                          - img [ref=e5154]
+                          - text: 現金回饋：$ 264
+                        - tooltip "tooltip 賺取$ 264現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e5156]:
+                          - generic [ref=e5157]: tooltip
+                          - generic [ref=e5158]:
+                            - generic:
+                              - generic:
+                                - generic: 賺取$ 264現金回饋至您的信用卡/Debit卡！
+                                - generic:
+                                  - img [ref=e5160]
+                                  - generic [ref=e5162]: 退房後60天可兌換現金回饋
+                                - generic:
+                                  - img [ref=e5164]
+                                  - generic [ref=e5166]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                  - generic [ref=e5168]:
+                    - button "客房人數限制資訊：2位大人。" [ref=e5170] [cursor=pointer]:
+                      - generic [ref=e5171]:
+                        - img [ref=e5172]
+                        - generic [ref=e5174]:
+                          - generic [ref=e5175]: 
+                          - generic [ref=e5176]: 
+                    - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e5177]:
+                      - generic [ref=e5178]: tooltip
+                      - generic [ref=e5180]:
+                        - generic [ref=e5181]: 此優惠專案可容納你的團體人數
+                        - generic [ref=e5182]: 此專案包含1房，可入住2位大人。
+                  - generic [ref=e5186]:
+                    - generic [ref=e5188]:
+                      - generic [ref=e5191]: "1"
+                      - generic [ref=e5192]:
+                        - img "consolidated-applied-discount-badge" [ref=e5193]
+                        - generic [ref=e5195]: 已套用NT$ 264
+                    - generic [ref=e5197]:
+                      - generic [ref=e5200]:
+                        - generic [ref=e5202]:
+                          - generic [ref=e5203]: 原始價格：NT$ 7,097
+                          - text: NT$ 7,097
+                        - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e5204]:
+                          - generic [ref=e5205]: tooltip
+                          - paragraph [ref=e5206]: 這是尚未套用現金回饋的價格
+                      - generic [ref=e5207]: 現金回饋後價格
+                      - generic [ref=e5210]:
+                        - generic [ref=e5212]:
+                          - generic [ref=e5213]: NT$
+                          - generic [ref=e5214]: 7,009
+                        - generic [ref=e5215]: 每晚價格（不含稅及其他費用）
+                  - generic [ref=e5219]: "1"
+                  - generic [ref=e5222]:
+                    - button "退房" [ref=e5224] [cursor=pointer]:
+                      - generic [ref=e5225]: 立即預訂
+                    - generic [ref=e5228]:
+                      - strong [ref=e5229]: 安心預訂！
+                      - paragraph [ref=e5230]: 可免費取消
+                    - paragraph [ref=e5232]: 本站最後1間
+            - generic [ref=e5233]:
+              - generic [ref=e5234]:
+                - heading "豪華雙床間- 禁煙 (Deluxe Twin Room - Non Smoking)" [level=4] [ref=e5236]:
+                  - button "豪華雙床間- 禁煙 (Deluxe Twin Room - Non Smoking)" [ref=e5237] [cursor=pointer]:
+                    - paragraph [ref=e5238]:
+                      - generic [ref=e5241]: 豪華雙床間- 禁煙 (Deluxe Twin Room - Non Smoking)
+                - generic [ref=e5244]:
+                  - generic [ref=e5245]:
+                    - img [ref=e5246]
+                    - paragraph [ref=e5249]: "9.2"
+                  - generic [ref=e5250]:
+                    - heading "超棒" [level=5] [ref=e5252]
+                    - paragraph [ref=e5253]: 客房舒適度
+              - generic [ref=e5255]:
+                - generic [ref=e5256]:
+                  - paragraph [ref=e5257]: 房型摘要
+                  - generic [ref=e5259]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) 豪華雙床間- 禁煙 (Deluxe Twin Room - Non Smoking)" [ref=e5263] [cursor=pointer]
+                    - generic [ref=e5266]:
+                      - button "room-image" [ref=e5268] [cursor=pointer]:
+                        - img "room-image" [ref=e5270]
+                      - button "room-image" [ref=e5272] [cursor=pointer]:
+                        - img "room-image" [ref=e5274]
+                  - generic [ref=e5275]:
+                    - button "查看房間照片&設施" [ref=e5277] [cursor=pointer]:
+                      - generic [ref=e5278]: 查看房間照片&設施
+                    - list [ref=e5279]:
+                      - listitem:
+                        - generic [ref=e5280]:
+                          - generic [ref=e5281]: 
+                          - generic [ref=e5282]: 免費Wi-Fi
+                      - listitem [ref=e5283]:
+                        - generic [ref=e5284]:
+                          - generic [ref=e5285]: 
+                          - generic [ref=e5286]: 客房面積：32平方公尺/344平方英尺
+                      - listitem [ref=e5287]:
+                        - generic [ref=e5288]:
+                          - generic [ref=e5289]: 
+                          - generic [ref=e5290]: 景觀： 市景
+                      - listitem [ref=e5291]:
+                        - generic [ref=e5292]:
+                          - generic [ref=e5293]: 
+                          - generic [ref=e5294]: 2張單人床
+                      - listitem [ref=e5295]:
+                        - generic [ref=e5296]:
+                          - generic [ref=e5297]: 
+                          - generic [ref=e5298]: 獨立淋浴間/浴缸
+                      - listitem [ref=e5299]:
+                        - generic [ref=e5300]:
+                          - generic [ref=e5301]: 
+                          - generic [ref=e5302]: 遮光窗簾
+                      - listitem [ref=e5303]:
+                        - generic [ref=e5304]:
+                          - generic [ref=e5305]: 
+                          - generic [ref=e5306]: 高樓層
+                      - listitem [ref=e5307]:
+                        - generic [ref=e5308]:
+                          - generic [ref=e5309]: 
+                          - generic [ref=e5310]: 專用衛浴
+                      - listitem [ref=e5311]:
+                        - generic [ref=e5312]:
+                          - generic [ref=e5313]: 
+                          - generic [ref=e5314]: 獨立空調
+                      - listitem [ref=e5315]:
+                        - generic [ref=e5316]:
+                          - generic [ref=e5317]: 
+                          - generic [ref=e5318]: 免費即溶咖啡
+                      - listitem [ref=e5319]:
+                        - button "看看所有設施與服務" [ref=e5321] [cursor=pointer]:
+                          - generic [ref=e5322]:
+                            - img [ref=e5323]
+                            - text: 看看所有設施與服務
+                - generic [ref=e5326]:
+                  - generic [ref=e5328]:
+                    - generic [ref=e5330]:
+                      - generic [ref=e5331]:
+                        - generic [ref=e5332]:
+                          - generic [ref=e5334] [cursor=pointer]:
+                            - img [ref=e5335]
+                            - paragraph [ref=e5337]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e5338]
+                          - generic [ref=e5341]:
+                            - paragraph [ref=e5342]: 美味早餐
+                            - progressbar [ref=e5343]
+                            - status [ref=e5344]
+                            - generic [ref=e5345]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e5346]:
+                          - generic [ref=e5348] [cursor=pointer]:
+                            - img [ref=e5349]
+                            - paragraph [ref=e5351]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e5352]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e5354]:
+                            - generic [ref=e5355]: tooltip
+                            - generic [ref=e5356]:
+                              - paragraph:
+                                - generic [ref=e5357]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e5358]:
+                          - img [ref=e5359]
+                          - paragraph [ref=e5361]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e5362]:
+                          - img [ref=e5363]
+                          - paragraph [ref=e5365]: 快速入住服務
+                        - generic [ref=e5366]:
+                          - img [ref=e5367]
+                          - paragraph [ref=e5369]: 免費Wi-Fi
+                      - generic [ref=e5370]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e5372]:
+                          - generic [ref=e5376] [cursor=pointer]:
+                            - img [ref=e5378]
+                            - text: 現金回饋：$ 931
+                          - tooltip "tooltip 賺取$ 931現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e5380]:
+                            - generic [ref=e5381]: tooltip
+                            - generic [ref=e5382]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 931現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e5384]
+                                    - generic [ref=e5386]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e5388]
+                                    - generic [ref=e5390]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e5393]:
+                          - generic [ref=e5394]: 
+                          - paragraph [ref=e5397]: 【期間限定】 減價13%！
+                    - generic [ref=e5399]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e5401] [cursor=pointer]:
+                        - generic [ref=e5402]:
+                          - img [ref=e5403]
+                          - generic [ref=e5405]:
+                            - generic [ref=e5406]: 
+                            - generic [ref=e5407]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e5408]:
+                        - generic [ref=e5409]: tooltip
+                        - generic [ref=e5411]:
+                          - generic [ref=e5412]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e5413]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e5417]:
+                      - generic [ref=e5419]:
+                        - generic [ref=e5422]: "1"
+                        - generic [ref=e5423]:
+                          - img "consolidated-applied-discount-badge" [ref=e5424]
+                          - generic [ref=e5426]: 已套用NT$ 931
+                      - generic [ref=e5427]:
+                        - generic [ref=e5429]:
+                          - paragraph [ref=e5430]:
+                            - generic [ref=e5431]: 45折
+                          - generic [ref=e5433]:
+                            - generic [ref=e5435]:
+                              - generic [ref=e5436]: 原始價格：NT$ 15,540
+                              - text: NT$ 15,540
+                            - tooltip "tooltip 住宿載入的房型售價" [ref=e5437]:
+                              - generic [ref=e5438]: tooltip
+                              - paragraph [ref=e5439]: 住宿載入的房型售價
+                        - generic [ref=e5440]:
+                          - generic [ref=e5443]:
+                            - generic [ref=e5445]:
+                              - generic [ref=e5446]: 原始價格：NT$ 7,340
+                              - text: NT$ 7,340
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e5447]:
+                              - generic [ref=e5448]: tooltip
+                              - paragraph [ref=e5449]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e5450]: 現金回饋後價格
+                          - generic [ref=e5453]:
+                            - generic [ref=e5455]:
+                              - generic [ref=e5456]: NT$
+                              - generic [ref=e5457]: 7,030
+                            - generic [ref=e5458]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e5462]: "1"
+                    - generic [ref=e5465]:
+                      - button "退房" [ref=e5467] [cursor=pointer]:
+                        - generic [ref=e5468]: 立即預訂
+                      - generic [ref=e5471]:
+                        - strong [ref=e5472]: 安心預訂！
+                        - paragraph [ref=e5473]: 可免費取消
+                      - paragraph [ref=e5475]: 本站剩2間！
+                  - generic [ref=e5477]:
+                    - generic [ref=e5479]:
+                      - generic [ref=e5480]:
+                        - generic [ref=e5481]:
+                          - generic [ref=e5483] [cursor=pointer]:
+                            - img [ref=e5484]
+                            - paragraph [ref=e5486]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e5487]
+                          - generic [ref=e5490]:
+                            - paragraph [ref=e5491]: 美味早餐
+                            - progressbar [ref=e5492]
+                            - status [ref=e5493]
+                            - generic [ref=e5494]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e5495]:
+                          - generic [ref=e5497] [cursor=pointer]:
+                            - img [ref=e5498]
+                            - paragraph [ref=e5500]: 2026年6月22日 星期一前可免費取消
+                            - img [ref=e5501]
+                          - tooltip "tooltip 訂房零風險！2026年6月22日 星期一前可免費取消。 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e5503]:
+                            - generic [ref=e5504]: tooltip
+                            - generic [ref=e5505]:
+                              - paragraph:
+                                - generic [ref=e5506]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月22日 星期一前可免費取消。
+                                  - text: 在入住日期前3天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e5507]:
+                          - img [ref=e5508]
+                          - paragraph [ref=e5510]: 可延至2026年6月20日 星期六扣款
+                        - generic [ref=e5511]:
+                          - img [ref=e5512]
+                          - paragraph [ref=e5514]: 快速入住服務
+                        - generic [ref=e5515]:
+                          - img [ref=e5516]
+                          - paragraph [ref=e5518]: 免費Wi-Fi
+                      - generic [ref=e5519]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e5521]:
+                          - generic [ref=e5525] [cursor=pointer]:
+                            - img [ref=e5527]
+                            - text: 現金回饋：$ 336
+                          - tooltip "tooltip 賺取$ 336現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e5529]:
+                            - generic [ref=e5530]: tooltip
+                            - generic [ref=e5531]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 336現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e5533]
+                                    - generic [ref=e5535]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e5537]
+                                    - generic [ref=e5539]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e5541]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e5543] [cursor=pointer]:
+                        - generic [ref=e5544]:
+                          - img [ref=e5545]
+                          - generic [ref=e5547]:
+                            - generic [ref=e5548]: 
+                            - generic [ref=e5549]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e5550]:
+                        - generic [ref=e5551]: tooltip
+                        - generic [ref=e5553]:
+                          - generic [ref=e5554]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e5555]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e5559]:
+                      - generic [ref=e5561]:
+                        - generic [ref=e5564]: "1"
+                        - generic [ref=e5565]:
+                          - img "consolidated-applied-discount-badge" [ref=e5566]
+                          - generic [ref=e5568]: 已套用NT$ 336
+                      - generic [ref=e5569]:
+                        - generic [ref=e5571]:
+                          - paragraph [ref=e5572]:
+                            - generic [ref=e5573]: 48折
+                          - generic [ref=e5575]:
+                            - generic [ref=e5577]:
+                              - generic [ref=e5578]: 原始價格：NT$ 15,487
+                              - text: NT$ 15,487
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e5579]:
+                              - generic [ref=e5580]: tooltip
+                              - paragraph [ref=e5581]: 此房型去年的最高售價
+                        - generic [ref=e5582]:
+                          - generic [ref=e5585]:
+                            - generic [ref=e5587]:
+                              - generic [ref=e5588]: 原始價格：NT$ 7,476
+                              - text: NT$ 7,476
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e5589]:
+                              - generic [ref=e5590]: tooltip
+                              - paragraph [ref=e5591]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e5592]: 現金回饋後價格
+                          - generic [ref=e5595]:
+                            - generic [ref=e5597]:
+                              - generic [ref=e5598]: NT$
+                              - generic [ref=e5599]: 7,363
+                            - generic [ref=e5600]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e5604]: "1"
+                    - generic [ref=e5607]:
+                      - button "退房" [ref=e5609] [cursor=pointer]:
+                        - generic [ref=e5610]: 立即預訂
+                      - generic [ref=e5613]:
+                        - strong [ref=e5614]: 安心預訂！
+                        - paragraph [ref=e5615]: 可免費取消
+                      - paragraph [ref=e5617]: 訂房只需2分鐘
+                      - paragraph [ref=e5619]: 本站最後1間
+                  - generic [ref=e5621]:
+                    - generic [ref=e5623]:
+                      - generic [ref=e5624]:
+                        - generic [ref=e5625]:
+                          - generic [ref=e5627] [cursor=pointer]:
+                            - img [ref=e5628]
+                            - paragraph [ref=e5630]: 附美味早餐
+                            - img [ref=e5631]
+                          - generic [ref=e5634]:
+                            - paragraph [ref=e5635]: 美味早餐
+                            - progressbar [ref=e5636]
+                            - status [ref=e5637]
+                            - generic [ref=e5638]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e5639]:
+                          - generic [ref=e5641] [cursor=pointer]:
+                            - img [ref=e5642]
+                            - paragraph [ref=e5644]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e5645]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e5647]:
+                            - generic [ref=e5648]: tooltip
+                            - generic [ref=e5649]:
+                              - paragraph:
+                                - generic [ref=e5650]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e5651]:
+                          - img [ref=e5652]
+                          - paragraph [ref=e5654]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e5655]:
+                          - img [ref=e5656]
+                          - paragraph [ref=e5658]: 快速入住服務
+                        - generic [ref=e5659]:
+                          - img [ref=e5660]
+                          - paragraph [ref=e5662]: 免費Wi-Fi
+                      - generic [ref=e5663]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e5665]:
+                          - generic [ref=e5669] [cursor=pointer]:
+                            - img [ref=e5671]
+                            - text: 現金回饋：$ 1,126
+                          - tooltip "tooltip 賺取$ 1,126現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e5673]:
+                            - generic [ref=e5674]: tooltip
+                            - generic [ref=e5675]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 1,126現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e5677]
+                                    - generic [ref=e5679]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e5681]
+                                    - generic [ref=e5683]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e5686]:
+                          - generic [ref=e5687]: 
+                          - paragraph [ref=e5690]: 【期間限定】 減價13%！
+                    - generic [ref=e5692]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e5694] [cursor=pointer]:
+                        - generic [ref=e5695]:
+                          - img [ref=e5696]
+                          - generic [ref=e5698]:
+                            - generic [ref=e5699]: 
+                            - generic [ref=e5700]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e5701]:
+                        - generic [ref=e5702]: tooltip
+                        - generic [ref=e5704]:
+                          - generic [ref=e5705]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e5706]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e5710]:
+                      - generic [ref=e5712]:
+                        - generic [ref=e5715]: "1"
+                        - generic [ref=e5716]:
+                          - img "consolidated-applied-discount-badge" [ref=e5717]
+                          - generic [ref=e5719]: 已套用NT$ 1,126
+                      - generic [ref=e5720]:
+                        - generic [ref=e5722]:
+                          - paragraph [ref=e5723]:
+                            - generic [ref=e5724]: 55折
+                          - generic [ref=e5726]:
+                            - generic [ref=e5728]:
+                              - generic [ref=e5729]: 原始價格：NT$ 15,540
+                              - text: NT$ 15,540
+                            - tooltip "tooltip 住宿載入的房型售價" [ref=e5730]:
+                              - generic [ref=e5731]: tooltip
+                              - paragraph [ref=e5732]: 住宿載入的房型售價
+                        - generic [ref=e5733]:
+                          - generic [ref=e5736]:
+                            - generic [ref=e5738]:
+                              - generic [ref=e5739]: 原始價格：NT$ 8,878
+                              - text: NT$ 8,878
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e5740]:
+                              - generic [ref=e5741]: tooltip
+                              - paragraph [ref=e5742]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e5743]: 現金回饋後價格
+                          - generic [ref=e5746]:
+                            - generic [ref=e5748]:
+                              - generic [ref=e5749]: NT$
+                              - generic [ref=e5750]: 8,502
+                            - generic [ref=e5751]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e5755]: "1"
+                    - generic [ref=e5758]:
+                      - button "退房" [ref=e5760] [cursor=pointer]:
+                        - generic [ref=e5761]: 立即預訂
+                      - generic [ref=e5764]:
+                        - strong [ref=e5765]: 安心預訂！
+                        - paragraph [ref=e5766]: 可免費取消
+                      - paragraph [ref=e5768]: 訂房只需2分鐘
+                      - paragraph [ref=e5770]: 本站剩2間！
+                  - generic [ref=e5772]:
+                    - generic [ref=e5775]:
+                      - generic [ref=e5776]:
+                        - generic [ref=e5778] [cursor=pointer]:
+                          - img [ref=e5779]
+                          - paragraph [ref=e5781]: 可提供美味早餐（NT$ 1,004 / 每人）
+                          - img [ref=e5782]
+                        - generic [ref=e5785]:
+                          - paragraph [ref=e5786]: 美味早餐
+                          - progressbar [ref=e5787]
+                          - status [ref=e5788]
+                          - generic [ref=e5789]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e5790]:
+                        - generic [ref=e5792] [cursor=pointer]:
+                          - img [ref=e5793]
+                          - paragraph [ref=e5795]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e5796]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e5798]:
+                          - generic [ref=e5799]: tooltip
+                          - generic [ref=e5800]:
+                            - paragraph:
+                              - generic [ref=e5801]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e5802]:
+                        - img [ref=e5803]
+                        - paragraph [ref=e5805]: 到店付款
+                      - generic [ref=e5806]:
+                        - img [ref=e5807]
+                        - paragraph [ref=e5809]: 快速入住服務
+                      - generic [ref=e5810]:
+                        - img [ref=e5811]
+                        - paragraph [ref=e5813]: 免費Wi-Fi
+                    - generic [ref=e5815]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e5817] [cursor=pointer]:
+                        - generic [ref=e5818]:
+                          - img [ref=e5819]
+                          - generic [ref=e5821]:
+                            - generic [ref=e5822]: 
+                            - generic [ref=e5823]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e5824]:
+                        - generic [ref=e5825]: tooltip
+                        - generic [ref=e5827]:
+                          - generic [ref=e5828]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e5829]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e5834]:
+                      - generic [ref=e5836]:
+                        - paragraph [ref=e5837]:
+                          - generic [ref=e5838]: 75折
+                        - generic [ref=e5840]:
+                          - generic [ref=e5842]:
+                            - generic [ref=e5843]: 原始價格：NT$ 15,487
+                            - text: NT$ 15,487
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e5844]:
+                            - generic [ref=e5845]: tooltip
+                            - paragraph [ref=e5846]: 此房型去年的最高售價
+                      - generic [ref=e5848]:
+                        - generic [ref=e5850]:
+                          - generic [ref=e5851]: NT$
+                          - generic [ref=e5852]: 11,653
+                        - generic [ref=e5853]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e5857]: "1"
+                    - generic [ref=e5860]:
+                      - button "退房" [ref=e5862] [cursor=pointer]:
+                        - generic [ref=e5863]: 立即預訂
+                      - generic [ref=e5866]:
+                        - strong [ref=e5867]: 安心預訂！
+                        - paragraph [ref=e5868]: 可免費取消
+                      - paragraph [ref=e5870]: 訂房只需2分鐘
+                      - paragraph [ref=e5872]: 本站剩2間！
+                  - generic [ref=e5874]:
+                    - generic [ref=e5877]:
+                      - generic [ref=e5878]:
+                        - generic [ref=e5880] [cursor=pointer]:
+                          - img [ref=e5881]
+                          - paragraph [ref=e5883]: 附美味早餐
+                          - img [ref=e5884]
+                        - generic [ref=e5887]:
+                          - paragraph [ref=e5888]: 美味早餐
+                          - progressbar [ref=e5889]
+                          - status [ref=e5890]
+                          - generic [ref=e5891]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e5892]:
+                        - generic [ref=e5894] [cursor=pointer]:
+                          - img [ref=e5895]
+                          - paragraph [ref=e5897]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e5898]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e5900]:
+                          - generic [ref=e5901]: tooltip
+                          - generic [ref=e5902]:
+                            - paragraph:
+                              - generic [ref=e5903]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e5904]:
+                        - img [ref=e5905]
+                        - paragraph [ref=e5907]: 到店付款
+                      - generic [ref=e5908]:
+                        - img [ref=e5909]
+                        - paragraph [ref=e5911]: 快速入住服務
+                      - generic [ref=e5912]:
+                        - img [ref=e5913]
+                        - paragraph [ref=e5915]: 免費Wi-Fi
+                    - generic [ref=e5917]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e5919] [cursor=pointer]:
+                        - generic [ref=e5920]:
+                          - img [ref=e5921]
+                          - generic [ref=e5923]:
+                            - generic [ref=e5924]: 
+                            - generic [ref=e5925]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e5926]:
+                        - generic [ref=e5927]: tooltip
+                        - generic [ref=e5929]:
+                          - generic [ref=e5930]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e5931]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e5936]:
+                      - generic [ref=e5938]:
+                        - paragraph [ref=e5939]:
+                          - generic [ref=e5940]: 91折
+                        - generic [ref=e5942]:
+                          - generic [ref=e5944]:
+                            - generic [ref=e5945]: 原始價格：NT$ 15,487
+                            - text: NT$ 15,487
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e5946]:
+                            - generic [ref=e5947]: tooltip
+                            - paragraph [ref=e5948]: 此房型去年的最高售價
+                      - generic [ref=e5950]:
+                        - generic [ref=e5952]:
+                          - generic [ref=e5953]: NT$
+                          - generic [ref=e5954]: 14,091
+                        - generic [ref=e5955]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e5959]: "1"
+                    - generic [ref=e5962]:
+                      - button "退房" [ref=e5964] [cursor=pointer]:
+                        - generic [ref=e5965]: 立即預訂
+                      - generic [ref=e5968]:
+                        - strong [ref=e5969]: 安心預訂！
+                        - paragraph [ref=e5970]: 可免費取消
+                      - paragraph [ref=e5972]: 訂房只需2分鐘
+                      - paragraph [ref=e5974]: 本站剩2間！
+              - button "顯示另外2個" [ref=e5975] [cursor=pointer]:
+                - generic [ref=e5976]:
+                  - img [ref=e5977]
+                  - paragraph [ref=e5979]: 顯示另外2個
+            - generic [ref=e5980]:
+              - generic [ref=e5981]:
+                - heading "標準房 (兩床) - 禁菸/可使用Lounge (Standard Twin - Non-Smoking, Lounge access)" [level=4] [ref=e5983]:
+                  - button "標準房 (兩床) - 禁菸/可使用Lounge (Standard Twin - Non-Smoking, Lounge access)" [ref=e5984] [cursor=pointer]:
+                    - paragraph [ref=e5985]:
+                      - generic [ref=e5988]: 標準房 (兩床) - 禁菸/可使用Lounge (Standard Twin - Non-Smoking, Lounge access)
+                - generic [ref=e5991]:
+                  - generic [ref=e5992]:
+                    - img [ref=e5993]
+                    - paragraph [ref=e5996]: "9.6"
+                  - generic [ref=e5997]:
+                    - heading "超棒" [level=5] [ref=e5999]
+                    - paragraph [ref=e6000]: 客房舒適度
+              - generic [ref=e6002]:
+                - generic [ref=e6003]:
+                  - paragraph [ref=e6004]: 房型摘要
+                  - generic [ref=e6006]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) 標準房 (兩床) - 禁菸/可使用Lounge (Standard Twin - Non-Smoking, Lounge access)" [ref=e6010] [cursor=pointer]
+                    - generic [ref=e6013]:
+                      - button "room-image" [ref=e6015] [cursor=pointer]:
+                        - img "room-image" [ref=e6017]
+                      - button "room-image" [ref=e6019] [cursor=pointer]:
+                        - img "room-image" [ref=e6021]
+                  - generic [ref=e6022]:
+                    - button "查看房間照片&設施" [ref=e6024] [cursor=pointer]:
+                      - generic [ref=e6025]: 查看房間照片&設施
+                    - list [ref=e6026]:
+                      - listitem:
+                        - generic [ref=e6027]:
+                          - generic [ref=e6028]: 
+                          - generic [ref=e6029]: 免費Wi-Fi
+                      - listitem [ref=e6030]:
+                        - generic [ref=e6031]:
+                          - generic [ref=e6032]: 
+                          - generic [ref=e6033]: 客房面積：25平方公尺/269平方英尺
+                      - listitem [ref=e6034]:
+                        - generic [ref=e6035]:
+                          - generic [ref=e6036]: 
+                          - generic [ref=e6037]: 景觀： 市景
+                      - listitem [ref=e6038]:
+                        - generic [ref=e6039]:
+                          - generic [ref=e6040]: 
+                          - generic [ref=e6041]: 2張單人床
+                      - listitem [ref=e6042]:
+                        - generic [ref=e6043]:
+                          - generic [ref=e6044]: 
+                          - generic [ref=e6045]: 獨立淋浴間/浴缸
+                      - listitem [ref=e6046]:
+                        - generic [ref=e6047]:
+                          - generic [ref=e6048]: 
+                          - generic [ref=e6049]: 遮光窗簾
+                      - listitem [ref=e6050]:
+                        - generic [ref=e6051]:
+                          - generic [ref=e6052]: 
+                          - generic [ref=e6053]: 高樓層
+                      - listitem [ref=e6054]:
+                        - generic [ref=e6055]:
+                          - generic [ref=e6056]: 
+                          - generic [ref=e6057]: 禁菸房
+                      - listitem [ref=e6058]:
+                        - generic [ref=e6059]:
+                          - generic [ref=e6060]: 
+                          - generic [ref=e6061]: 專用衛浴
+                      - listitem [ref=e6062]:
+                        - generic [ref=e6063]:
+                          - generic [ref=e6064]: 
+                          - generic [ref=e6065]: 獨立空調
+                      - listitem [ref=e6066]:
+                        - button "看看所有設施與服務" [ref=e6068] [cursor=pointer]:
+                          - generic [ref=e6069]:
+                            - img [ref=e6070]
+                            - text: 看看所有設施與服務
+                - generic [ref=e6073]:
+                  - generic [ref=e6075]:
+                    - generic [ref=e6077]:
+                      - button "Room Only - Lounge access plan" [ref=e6080] [cursor=pointer]:
+                        - generic [ref=e6081]:
+                          - text: Room Only - Lounge access plan
+                          - img [ref=e6082]
+                      - generic [ref=e6084]:
+                        - generic [ref=e6085]:
+                          - generic [ref=e6087] [cursor=pointer]:
+                            - img [ref=e6088]
+                            - paragraph [ref=e6090]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e6091]
+                          - generic [ref=e6094]:
+                            - paragraph [ref=e6095]: 美味早餐
+                            - progressbar [ref=e6096]
+                            - status [ref=e6097]
+                            - generic [ref=e6098]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e6099]:
+                          - generic [ref=e6101] [cursor=pointer]:
+                            - img [ref=e6102]
+                            - paragraph [ref=e6104]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e6105]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e6107]:
+                            - generic [ref=e6108]: tooltip
+                            - generic [ref=e6109]:
+                              - paragraph:
+                                - generic [ref=e6110]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e6111]:
+                          - img [ref=e6112]
+                          - paragraph [ref=e6114]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e6115]:
+                          - img [ref=e6116]
+                          - paragraph [ref=e6118]: 快速入住服務
+                        - generic [ref=e6119]:
+                          - img [ref=e6120]
+                          - paragraph [ref=e6122]: 免費Wi-Fi
+                      - generic [ref=e6123]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e6125]:
+                          - generic [ref=e6129] [cursor=pointer]:
+                            - img [ref=e6131]
+                            - text: 現金回饋：$ 972
+                          - tooltip "tooltip 賺取$ 972現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e6133]:
+                            - generic [ref=e6134]: tooltip
+                            - generic [ref=e6135]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 972現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e6137]
+                                    - generic [ref=e6139]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e6141]
+                                    - generic [ref=e6143]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e6146]:
+                          - generic [ref=e6147]: 
+                          - paragraph [ref=e6150]: 【期間限定】 減價6%！
+                    - generic [ref=e6152]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e6154] [cursor=pointer]:
+                        - generic [ref=e6155]:
+                          - img [ref=e6156]
+                          - generic [ref=e6158]:
+                            - generic [ref=e6159]: 
+                            - generic [ref=e6160]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e6161]:
+                        - generic [ref=e6162]: tooltip
+                        - generic [ref=e6164]:
+                          - generic [ref=e6165]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e6166]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e6170]:
+                      - generic [ref=e6171]:
+                        - generic [ref=e6172]:
+                          - text: 難得優惠！
+                          - generic [ref=e6173]: 
+                        - generic [ref=e6174]: 本站上個月以來最低價
+                      - generic [ref=e6178]:
+                        - generic [ref=e6181]: "1"
+                        - generic [ref=e6182]:
+                          - img "consolidated-applied-discount-badge" [ref=e6183]
+                          - generic [ref=e6185]: 已套用NT$ 972
+                      - generic [ref=e6186]:
+                        - generic [ref=e6188]:
+                          - paragraph [ref=e6189]:
+                            - generic [ref=e6190]: 56折
+                          - generic [ref=e6192]:
+                            - generic [ref=e6194]:
+                              - generic [ref=e6195]: 原始價格：NT$ 13,074
+                              - text: NT$ 13,074
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e6196]:
+                              - generic [ref=e6197]: tooltip
+                              - paragraph [ref=e6198]: 此房型去年的最高售價
+                        - generic [ref=e6199]:
+                          - generic [ref=e6202]:
+                            - generic [ref=e6204]:
+                              - generic [ref=e6205]: 原始價格：NT$ 7,661
+                              - text: NT$ 7,661
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e6206]:
+                              - generic [ref=e6207]: tooltip
+                              - paragraph [ref=e6208]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e6209]: 現金回饋後價格
+                          - generic [ref=e6212]:
+                            - generic [ref=e6214]:
+                              - generic [ref=e6215]: NT$
+                              - generic [ref=e6216]: 7,337
+                            - generic [ref=e6217]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e6221]: "1"
+                    - generic [ref=e6224]:
+                      - button "退房" [ref=e6226] [cursor=pointer]:
+                        - generic [ref=e6227]: 立即預訂
+                      - generic [ref=e6230]:
+                        - strong [ref=e6231]: 安心預訂！
+                        - paragraph [ref=e6232]: 可免費取消
+                      - paragraph [ref=e6234]: 本站剩5間！
+                  - generic [ref=e6236]:
+                    - generic [ref=e6239]:
+                      - generic [ref=e6240]:
+                        - generic [ref=e6242] [cursor=pointer]:
+                          - img [ref=e6243]
+                          - paragraph [ref=e6245]: 可提供美味早餐（NT$ 1,004 / 每人）
+                          - img [ref=e6246]
+                        - generic [ref=e6249]:
+                          - paragraph [ref=e6250]: 美味早餐
+                          - progressbar [ref=e6251]
+                          - status [ref=e6252]
+                          - generic [ref=e6253]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e6254]:
+                        - generic [ref=e6256] [cursor=pointer]:
+                          - img [ref=e6257]
+                          - paragraph [ref=e6259]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e6260]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e6262]:
+                          - generic [ref=e6263]: tooltip
+                          - generic [ref=e6264]:
+                            - paragraph:
+                              - generic [ref=e6265]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e6266]:
+                        - img [ref=e6267]
+                        - paragraph [ref=e6269]: 到店付款
+                      - generic [ref=e6270]:
+                        - img [ref=e6271]
+                        - paragraph [ref=e6273]: 快速入住服務
+                      - generic [ref=e6274]:
+                        - img [ref=e6275]
+                        - paragraph [ref=e6277]: 免費Wi-Fi
+                    - generic [ref=e6279]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e6281] [cursor=pointer]:
+                        - generic [ref=e6282]:
+                          - img [ref=e6283]
+                          - generic [ref=e6285]:
+                            - generic [ref=e6286]: 
+                            - generic [ref=e6287]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e6288]:
+                        - generic [ref=e6289]: tooltip
+                        - generic [ref=e6291]:
+                          - generic [ref=e6292]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e6293]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e6298]:
+                      - generic [ref=e6300]:
+                        - paragraph [ref=e6301]:
+                          - generic [ref=e6302]: 62折
+                        - generic [ref=e6304]:
+                          - generic [ref=e6306]:
+                            - generic [ref=e6307]: 原始價格：NT$ 13,074
+                            - text: NT$ 13,074
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e6308]:
+                            - generic [ref=e6309]: tooltip
+                            - paragraph [ref=e6310]: 此房型去年的最高售價
+                      - generic [ref=e6312]:
+                        - generic [ref=e6314]:
+                          - generic [ref=e6315]: NT$
+                          - generic [ref=e6316]: 8,108
+                        - generic [ref=e6317]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e6321]: "1"
+                    - generic [ref=e6324]:
+                      - button "退房" [ref=e6326] [cursor=pointer]:
+                        - generic [ref=e6327]: 立即預訂
+                      - generic [ref=e6330]:
+                        - strong [ref=e6331]: 安心預訂！
+                        - paragraph [ref=e6332]: 可免費取消
+                      - paragraph [ref=e6334]: 訂房只需2分鐘
+                      - paragraph [ref=e6336]: 本站剩5間！
+                  - generic [ref=e6338]:
+                    - generic [ref=e6340]:
+                      - button "Breakfast included - Lounge access plan" [ref=e6343] [cursor=pointer]:
+                        - generic [ref=e6344]:
+                          - text: Breakfast included - Lounge access plan
+                          - img [ref=e6345]
+                      - generic [ref=e6347]:
+                        - generic [ref=e6348]:
+                          - generic [ref=e6350] [cursor=pointer]:
+                            - img [ref=e6351]
+                            - paragraph [ref=e6353]: 附美味早餐
+                            - img [ref=e6354]
+                          - generic [ref=e6357]:
+                            - paragraph [ref=e6358]: 美味早餐
+                            - progressbar [ref=e6359]
+                            - status [ref=e6360]
+                            - generic [ref=e6361]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e6362]:
+                          - generic [ref=e6364] [cursor=pointer]:
+                            - img [ref=e6365]
+                            - paragraph [ref=e6367]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e6368]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e6370]:
+                            - generic [ref=e6371]: tooltip
+                            - generic [ref=e6372]:
+                              - paragraph:
+                                - generic [ref=e6373]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e6374]:
+                          - img [ref=e6375]
+                          - paragraph [ref=e6377]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e6378]:
+                          - img [ref=e6379]
+                          - paragraph [ref=e6381]: 快速入住服務
+                        - generic [ref=e6382]:
+                          - img [ref=e6383]
+                          - paragraph [ref=e6385]: 免費Wi-Fi
+                      - generic [ref=e6386]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e6388]:
+                          - generic [ref=e6392] [cursor=pointer]:
+                            - img [ref=e6394]
+                            - text: 現金回饋：$ 1,174
+                          - tooltip "tooltip 賺取$ 1,174現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e6396]:
+                            - generic [ref=e6397]: tooltip
+                            - generic [ref=e6398]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 1,174現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e6400]
+                                    - generic [ref=e6402]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e6404]
+                                    - generic [ref=e6406]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e6409]:
+                          - generic [ref=e6410]: 
+                          - paragraph [ref=e6413]: 【期間限定】 減價6%！
+                    - generic [ref=e6415]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e6417] [cursor=pointer]:
+                        - generic [ref=e6418]:
+                          - img [ref=e6419]
+                          - generic [ref=e6421]:
+                            - generic [ref=e6422]: 
+                            - generic [ref=e6423]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e6424]:
+                        - generic [ref=e6425]: tooltip
+                        - generic [ref=e6427]:
+                          - generic [ref=e6428]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e6429]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e6433]:
+                      - generic [ref=e6435]:
+                        - generic [ref=e6438]: "1"
+                        - generic [ref=e6439]:
+                          - img "consolidated-applied-discount-badge" [ref=e6440]
+                          - generic [ref=e6442]: 已套用NT$ 1,174
+                      - generic [ref=e6443]:
+                        - generic [ref=e6445]:
+                          - paragraph [ref=e6446]:
+                            - generic [ref=e6447]: 68折
+                          - generic [ref=e6449]:
+                            - generic [ref=e6451]:
+                              - generic [ref=e6452]: 原始價格：NT$ 13,074
+                              - text: NT$ 13,074
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e6453]:
+                              - generic [ref=e6454]: tooltip
+                              - paragraph [ref=e6455]: 此房型去年的最高售價
+                        - generic [ref=e6456]:
+                          - generic [ref=e6459]:
+                            - generic [ref=e6461]:
+                              - generic [ref=e6462]: 原始價格：NT$ 9,256
+                              - text: NT$ 9,256
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e6463]:
+                              - generic [ref=e6464]: tooltip
+                              - paragraph [ref=e6465]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e6466]: 現金回饋後價格
+                          - generic [ref=e6469]:
+                            - generic [ref=e6471]:
+                              - generic [ref=e6472]: NT$
+                              - generic [ref=e6473]: 8,864
+                            - generic [ref=e6474]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e6478]: "1"
+                    - generic [ref=e6481]:
+                      - button "退房" [ref=e6483] [cursor=pointer]:
+                        - generic [ref=e6484]: 立即預訂
+                      - generic [ref=e6487]:
+                        - strong [ref=e6488]: 安心預訂！
+                        - paragraph [ref=e6489]: 可免費取消
+                      - paragraph [ref=e6491]: 訂房只需2分鐘
+                      - paragraph [ref=e6493]: 本站剩5間！
+              - button "顯示另外1項優惠" [ref=e6494] [cursor=pointer]:
+                - generic [ref=e6495]:
+                  - img [ref=e6496]
+                  - paragraph [ref=e6498]: 顯示另外1項優惠
+            - generic [ref=e6499]:
+              - heading "Comfort Room Twin Beds Non Smoking" [level=4] [ref=e6502]:
+                - button "Comfort Room Twin Beds Non Smoking" [ref=e6503] [cursor=pointer]:
+                  - paragraph [ref=e6504]:
+                    - generic [ref=e6507]: Comfort Room Twin Beds Non Smoking
+              - generic [ref=e6509]:
+                - generic [ref=e6510]:
+                  - paragraph [ref=e6511]: 房型摘要
+                  - generic [ref=e6513]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) Comfort Room Twin Beds Non Smoking" [ref=e6517] [cursor=pointer]
+                    - generic [ref=e6520]:
+                      - button "room-image" [ref=e6522] [cursor=pointer]:
+                        - img "room-image" [ref=e6524]
+                      - button "room-image" [ref=e6526] [cursor=pointer]:
+                        - img "room-image" [ref=e6528]
+                  - generic [ref=e6529]:
+                    - button "查看房間照片&設施" [ref=e6531] [cursor=pointer]:
+                      - generic [ref=e6532]: 查看房間照片&設施
+                    - list [ref=e6533]:
+                      - listitem [ref=e6534]:
+                        - generic [ref=e6535]:
+                          - generic [ref=e6536]: 
+                          - generic [ref=e6537]: 2張雙人床
+                      - listitem [ref=e6538]:
+                        - generic [ref=e6539]:
+                          - generic [ref=e6540]: 
+                          - generic [ref=e6541]: 窗戶
+                      - listitem [ref=e6542]:
+                        - generic [ref=e6543]:
+                          - generic [ref=e6544]: 
+                          - generic [ref=e6545]: 空調
+                      - listitem [ref=e6546]:
+                        - generic [ref=e6547]:
+                          - generic [ref=e6548]: 
+                          - generic [ref=e6549]: 淋浴設備
+                      - listitem [ref=e6550]:
+                        - button "看看所有設施與服務" [ref=e6552] [cursor=pointer]:
+                          - generic [ref=e6553]:
+                            - img [ref=e6554]
+                            - text: 看看所有設施與服務
+                - generic [ref=e6559]:
+                  - generic [ref=e6561]:
+                    - generic [ref=e6562]:
+                      - generic [ref=e6563]:
+                        - generic [ref=e6565] [cursor=pointer]:
+                          - img [ref=e6566]
+                          - paragraph [ref=e6568]: 2026年6月21日 星期日前可免費取消
+                          - img [ref=e6569]
+                        - tooltip "tooltip 訂房零風險！2026年6月21日 星期日前可免費取消。 在入住日期前4天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e6571]:
+                          - generic [ref=e6572]: tooltip
+                          - generic [ref=e6573]:
+                            - paragraph:
+                              - generic [ref=e6574]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月21日 星期日前可免費取消。
+                                - text: 在入住日期前4天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e6575]:
+                        - img [ref=e6576]
+                        - paragraph [ref=e6578]: 可延至2026年6月19日 星期五扣款
+                      - generic [ref=e6579]:
+                        - img [ref=e6580]
+                        - paragraph [ref=e6582]: 快速入住服務
+                      - generic [ref=e6583]:
+                        - img [ref=e6584]
+                        - paragraph [ref=e6586]: 免費Wi-Fi
+                    - generic [ref=e6587]:
+                      - text: 其他回饋和折扣
+                      - generic [ref=e6589]:
+                        - generic [ref=e6593] [cursor=pointer]:
+                          - img [ref=e6595]
+                          - text: 現金回饋：$ 338
+                        - tooltip "tooltip 賺取$ 338現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e6597]:
+                          - generic [ref=e6598]: tooltip
+                          - generic [ref=e6599]:
+                            - generic:
+                              - generic:
+                                - generic: 賺取$ 338現金回饋至您的信用卡/Debit卡！
+                                - generic:
+                                  - img [ref=e6601]
+                                  - generic [ref=e6603]: 退房後60天可兌換現金回饋
+                                - generic:
+                                  - img [ref=e6605]
+                                  - generic [ref=e6607]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                  - generic [ref=e6609]:
+                    - button "客房人數限制資訊：2位大人。" [ref=e6611] [cursor=pointer]:
+                      - generic [ref=e6612]:
+                        - img [ref=e6613]
+                        - generic [ref=e6615]:
+                          - generic [ref=e6616]: 
+                          - generic [ref=e6617]: 
+                    - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e6618]:
+                      - generic [ref=e6619]: tooltip
+                      - generic [ref=e6621]:
+                        - generic [ref=e6622]: 此優惠專案可容納你的團體人數
+                        - generic [ref=e6623]: 此專案包含1房，可入住2位大人。
+                  - generic [ref=e6627]:
+                    - generic [ref=e6629]:
+                      - generic [ref=e6632]: "1"
+                      - generic [ref=e6633]:
+                        - img "consolidated-applied-discount-badge" [ref=e6634]
+                        - generic [ref=e6636]: 已套用NT$ 338
+                    - generic [ref=e6638]:
+                      - generic [ref=e6641]:
+                        - generic [ref=e6643]:
+                          - generic [ref=e6644]: 原始價格：NT$ 7,520
+                          - text: NT$ 7,520
+                        - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e6645]:
+                          - generic [ref=e6646]: tooltip
+                          - paragraph [ref=e6647]: 這是尚未套用現金回饋的價格
+                      - generic [ref=e6648]: 現金回饋後價格
+                      - generic [ref=e6651]:
+                        - generic [ref=e6653]:
+                          - generic [ref=e6654]: NT$
+                          - generic [ref=e6655]: 7,407
+                        - generic [ref=e6656]: 每晚價格（不含稅及其他費用）
+                  - generic [ref=e6660]: "1"
+                  - generic [ref=e6663]:
+                    - button "退房" [ref=e6665] [cursor=pointer]:
+                      - generic [ref=e6666]: 立即預訂
+                    - generic [ref=e6669]:
+                      - strong [ref=e6670]: 安心預訂！
+                      - paragraph [ref=e6671]: 可免費取消
+                    - paragraph [ref=e6673]: 本站最後1間
+            - generic [ref=e6674]:
+              - generic [ref=e6675]:
+                - heading "三人房－禁菸 (Triple Room - Non Smoking)" [level=4] [ref=e6677]:
+                  - button "三人房－禁菸 (Triple Room - Non Smoking)" [ref=e6678] [cursor=pointer]:
+                    - paragraph [ref=e6679]:
+                      - generic [ref=e6682]: 三人房－禁菸 (Triple Room - Non Smoking)
+                - generic [ref=e6685]:
+                  - generic [ref=e6686]:
+                    - img [ref=e6687]
+                    - paragraph [ref=e6690]: "8.8"
+                  - generic [ref=e6691]:
+                    - heading "很讚" [level=5] [ref=e6693]
+                    - paragraph [ref=e6694]: 客房舒適度
+              - generic [ref=e6696]:
+                - generic [ref=e6697]:
+                  - paragraph [ref=e6698]: 房型摘要
+                  - generic [ref=e6700]:
+                    - img "格拉斯麗新宿酒店 (Hotel Gracery Shinjuku) 三人房－禁菸 (Triple Room - Non Smoking)" [ref=e6704] [cursor=pointer]
+                    - generic [ref=e6707]:
+                      - button "room-image" [ref=e6709] [cursor=pointer]:
+                        - img "room-image" [ref=e6711]
+                      - button "room-image" [ref=e6713] [cursor=pointer]:
+                        - img "room-image" [ref=e6715]
+                  - generic [ref=e6716]:
+                    - button "查看房間照片&設施" [ref=e6718] [cursor=pointer]:
+                      - generic [ref=e6719]: 查看房間照片&設施
+                    - list [ref=e6720]:
+                      - listitem:
+                        - generic [ref=e6721]:
+                          - generic [ref=e6722]: 
+                          - generic [ref=e6723]: 免費Wi-Fi
+                      - listitem [ref=e6724]:
+                        - generic [ref=e6725]:
+                          - generic [ref=e6726]: 
+                          - generic [ref=e6727]: 客房面積：28平方公尺/301平方英尺
+                      - listitem [ref=e6728]:
+                        - generic [ref=e6729]:
+                          - generic [ref=e6730]: 
+                          - generic [ref=e6731]: 景觀： 市景
+                      - listitem [ref=e6732]:
+                        - generic [ref=e6733]:
+                          - generic [ref=e6734]: 
+                          - generic [ref=e6735]: 3張單人床
+                      - listitem [ref=e6736]:
+                        - generic [ref=e6737]:
+                          - generic [ref=e6738]: 
+                          - generic [ref=e6739]: 獨立淋浴間/浴缸
+                      - listitem [ref=e6740]:
+                        - generic [ref=e6741]:
+                          - generic [ref=e6742]: 
+                          - generic [ref=e6743]: 窗戶
+                      - listitem [ref=e6744]:
+                        - generic [ref=e6745]:
+                          - generic [ref=e6746]: 
+                          - generic [ref=e6747]: 遮光窗簾
+                      - listitem [ref=e6748]:
+                        - generic [ref=e6749]:
+                          - generic [ref=e6750]: 
+                          - generic [ref=e6751]: 高樓層
+                      - listitem [ref=e6752]:
+                        - generic [ref=e6753]:
+                          - generic [ref=e6754]: 
+                          - generic [ref=e6755]: 專用衛浴
+                      - listitem [ref=e6756]:
+                        - generic [ref=e6757]:
+                          - generic [ref=e6758]: 
+                          - generic [ref=e6759]: 獨立空調
+                      - listitem [ref=e6760]:
+                        - button "看看所有設施與服務" [ref=e6762] [cursor=pointer]:
+                          - generic [ref=e6763]:
+                            - img [ref=e6764]
+                            - text: 看看所有設施與服務
+                - generic [ref=e6767]:
+                  - generic [ref=e6769]:
+                    - generic [ref=e6771]:
+                      - generic [ref=e6772]:
+                        - generic [ref=e6773]:
+                          - generic [ref=e6775] [cursor=pointer]:
+                            - img [ref=e6776]
+                            - paragraph [ref=e6778]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e6779]
+                          - generic [ref=e6782]:
+                            - paragraph [ref=e6783]: 美味早餐
+                            - progressbar [ref=e6784]
+                            - status [ref=e6785]
+                            - generic [ref=e6786]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e6787]:
+                          - generic [ref=e6789] [cursor=pointer]:
+                            - img [ref=e6790]
+                            - paragraph [ref=e6792]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e6793]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e6795]:
+                            - generic [ref=e6796]: tooltip
+                            - generic [ref=e6797]:
+                              - paragraph:
+                                - generic [ref=e6798]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e6799]:
+                          - img [ref=e6800]
+                          - paragraph [ref=e6802]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e6803]:
+                          - img [ref=e6804]
+                          - paragraph [ref=e6806]: 快速入住服務
+                        - generic [ref=e6807]:
+                          - img [ref=e6808]
+                          - paragraph [ref=e6810]: 免費Wi-Fi
+                      - generic [ref=e6811]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e6813]:
+                          - generic [ref=e6817] [cursor=pointer]:
+                            - img [ref=e6819]
+                            - text: 現金回饋：$ 1,045
+                          - tooltip "tooltip 賺取$ 1,045現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e6821]:
+                            - generic [ref=e6822]: tooltip
+                            - generic [ref=e6823]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 1,045現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e6825]
+                                    - generic [ref=e6827]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e6829]
+                                    - generic [ref=e6831]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e6834]:
+                          - generic [ref=e6835]: 
+                          - paragraph [ref=e6838]: 【期間限定】 減價13%！
+                    - generic [ref=e6840]:
+                      - button "客房人數限制資訊：3位大人。 點擊以了解更多詳情" [ref=e6842] [cursor=pointer]:
+                        - generic [ref=e6843]:
+                          - img [ref=e6844]
+                          - generic [ref=e6846]:
+                            - generic [ref=e6847]: 
+                            - generic [ref=e6848]: 
+                            - generic [ref=e6849]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住3位大人。" [ref=e6850]:
+                        - generic [ref=e6851]: tooltip
+                        - generic [ref=e6853]:
+                          - generic [ref=e6854]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e6855]: 此專案包含1房，可入住3位大人。
+                    - generic [ref=e6859]:
+                      - generic [ref=e6861]:
+                        - generic [ref=e6864]: "1"
+                        - generic [ref=e6865]:
+                          - img "consolidated-applied-discount-badge" [ref=e6866]
+                          - generic [ref=e6868]: 已套用NT$ 1,045
+                      - generic [ref=e6869]:
+                        - generic [ref=e6871]:
+                          - paragraph [ref=e6872]:
+                            - generic [ref=e6873]: 51折
+                          - generic [ref=e6875]:
+                            - generic [ref=e6877]:
+                              - generic [ref=e6878]: 原始價格：NT$ 15,375
+                              - text: NT$ 15,375
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e6879]:
+                              - generic [ref=e6880]: tooltip
+                              - paragraph [ref=e6881]: 此房型去年的最高售價
+                        - generic [ref=e6882]:
+                          - generic [ref=e6885]:
+                            - generic [ref=e6887]:
+                              - generic [ref=e6888]: 原始價格：NT$ 8,243
+                              - text: NT$ 8,243
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e6889]:
+                              - generic [ref=e6890]: tooltip
+                              - paragraph [ref=e6891]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e6892]: 現金回饋後價格
+                          - generic [ref=e6895]:
+                            - generic [ref=e6897]:
+                              - generic [ref=e6898]: NT$
+                              - generic [ref=e6899]: 7,894
+                            - generic [ref=e6900]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e6904]: "1"
+                    - generic [ref=e6907]:
+                      - button "退房" [ref=e6909] [cursor=pointer]:
+                        - generic [ref=e6910]: 立即預訂
+                      - generic [ref=e6913]:
+                        - strong [ref=e6914]: 安心預訂！
+                        - paragraph [ref=e6915]: 可免費取消
+                      - paragraph [ref=e6917]: 本站最後1間
+                  - generic [ref=e6919]:
+                    - generic [ref=e6921]:
+                      - generic [ref=e6922]:
+                        - generic [ref=e6923]:
+                          - generic [ref=e6925] [cursor=pointer]:
+                            - img [ref=e6926]
+                            - paragraph [ref=e6928]: 可提供美味早餐（NT$ 1,004 / 每人）
+                            - img [ref=e6929]
+                          - generic [ref=e6932]:
+                            - paragraph [ref=e6933]: 美味早餐
+                            - progressbar [ref=e6934]
+                            - status [ref=e6935]
+                            - generic [ref=e6936]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e6937]:
+                          - generic [ref=e6939] [cursor=pointer]:
+                            - img [ref=e6940]
+                            - paragraph [ref=e6942]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e6943]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e6945]:
+                            - generic [ref=e6946]: tooltip
+                            - generic [ref=e6947]:
+                              - paragraph:
+                                - generic [ref=e6948]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付全額房費。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e6949]:
+                          - img [ref=e6950]
+                          - paragraph [ref=e6952]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e6953]:
+                          - img [ref=e6954]
+                          - paragraph [ref=e6956]: 快速入住服務
+                        - generic [ref=e6957]:
+                          - img [ref=e6958]
+                          - paragraph [ref=e6960]: 免費Wi-Fi
+                      - generic [ref=e6961]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e6963]:
+                          - generic [ref=e6967] [cursor=pointer]:
+                            - img [ref=e6969]
+                            - text: 現金回饋：$ 352
+                          - tooltip "tooltip 賺取$ 352現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e6971]:
+                            - generic [ref=e6972]: tooltip
+                            - generic [ref=e6973]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 352現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e6975]
+                                    - generic [ref=e6977]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e6979]
+                                    - generic [ref=e6981]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                    - generic [ref=e6983]:
+                      - button "客房人數限制資訊：2位大人。" [ref=e6985] [cursor=pointer]:
+                        - generic [ref=e6986]:
+                          - img [ref=e6987]
+                          - generic [ref=e6989]:
+                            - generic [ref=e6990]: 
+                            - generic [ref=e6991]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e6992]:
+                        - generic [ref=e6993]: tooltip
+                        - generic [ref=e6995]:
+                          - generic [ref=e6996]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e6997]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e7001]:
+                      - generic [ref=e7003]:
+                        - generic [ref=e7006]: "1"
+                        - generic [ref=e7007]:
+                          - img "consolidated-applied-discount-badge" [ref=e7008]
+                          - generic [ref=e7010]: 已套用NT$ 352
+                      - generic [ref=e7011]:
+                        - generic [ref=e7013]:
+                          - paragraph [ref=e7014]:
+                            - generic [ref=e7015]: 53折
+                          - generic [ref=e7017]:
+                            - generic [ref=e7019]:
+                              - generic [ref=e7020]: 原始價格：NT$ 15,375
+                              - text: NT$ 15,375
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e7021]:
+                              - generic [ref=e7022]: tooltip
+                              - paragraph [ref=e7023]: 此房型去年的最高售價
+                        - generic [ref=e7024]:
+                          - generic [ref=e7027]:
+                            - generic [ref=e7029]:
+                              - generic [ref=e7030]: 原始價格：NT$ 8,262
+                              - text: NT$ 8,262
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e7031]:
+                              - generic [ref=e7032]: tooltip
+                              - paragraph [ref=e7033]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e7034]: 現金回饋後價格
+                          - generic [ref=e7037]:
+                            - generic [ref=e7039]:
+                              - generic [ref=e7040]: NT$
+                              - generic [ref=e7041]: 8,144
+                            - generic [ref=e7042]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e7046]: "1"
+                    - generic [ref=e7049]:
+                      - button "退房" [ref=e7051] [cursor=pointer]:
+                        - generic [ref=e7052]: 立即預訂
+                      - generic [ref=e7055]:
+                        - strong [ref=e7056]: 安心預訂！
+                        - paragraph [ref=e7057]: 可免費取消
+                      - paragraph [ref=e7059]: 訂房只需2分鐘
+                      - paragraph [ref=e7061]: 本站最後1間
+                  - generic [ref=e7063]:
+                    - generic [ref=e7065]:
+                      - generic [ref=e7066]:
+                        - generic [ref=e7067]:
+                          - generic [ref=e7069] [cursor=pointer]:
+                            - img [ref=e7070]
+                            - paragraph [ref=e7072]: 附美味早餐
+                            - img [ref=e7073]
+                          - generic [ref=e7076]:
+                            - paragraph [ref=e7077]: 美味早餐
+                            - progressbar [ref=e7078]
+                            - status [ref=e7079]
+                            - generic [ref=e7080]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e7081]:
+                          - generic [ref=e7083] [cursor=pointer]:
+                            - img [ref=e7084]
+                            - paragraph [ref=e7086]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e7087]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e7089]:
+                            - generic [ref=e7090]: tooltip
+                            - generic [ref=e7091]:
+                              - paragraph:
+                                - generic [ref=e7092]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e7093]:
+                          - img [ref=e7094]
+                          - paragraph [ref=e7096]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e7097]:
+                          - img [ref=e7098]
+                          - paragraph [ref=e7100]: 快速入住服務
+                        - generic [ref=e7101]:
+                          - img [ref=e7102]
+                          - paragraph [ref=e7104]: 免費Wi-Fi
+                      - generic [ref=e7105]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e7107]:
+                          - generic [ref=e7111] [cursor=pointer]:
+                            - img [ref=e7113]
+                            - text: 現金回饋：$ 1,239
+                          - tooltip "tooltip 賺取$ 1,239現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e7115]:
+                            - generic [ref=e7116]: tooltip
+                            - generic [ref=e7117]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 1,239現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e7119]
+                                    - generic [ref=e7121]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e7123]
+                                    - generic [ref=e7125]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e7128]:
+                          - generic [ref=e7129]: 
+                          - paragraph [ref=e7132]: 【期間限定】 減價13%！
+                    - generic [ref=e7134]:
+                      - button "客房人數限制資訊：2位大人。 點擊以了解更多詳情" [ref=e7136] [cursor=pointer]:
+                        - generic [ref=e7137]:
+                          - img [ref=e7138]
+                          - generic [ref=e7140]:
+                            - generic [ref=e7141]: 
+                            - generic [ref=e7142]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住2位大人。" [ref=e7143]:
+                        - generic [ref=e7144]: tooltip
+                        - generic [ref=e7146]:
+                          - generic [ref=e7147]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e7148]: 此專案包含1房，可入住2位大人。
+                    - generic [ref=e7152]:
+                      - generic [ref=e7154]:
+                        - generic [ref=e7157]: "1"
+                        - generic [ref=e7158]:
+                          - img "consolidated-applied-discount-badge" [ref=e7159]
+                          - generic [ref=e7161]: 已套用NT$ 1,239
+                      - generic [ref=e7162]:
+                        - generic [ref=e7164]:
+                          - paragraph [ref=e7165]:
+                            - generic [ref=e7166]: 61折
+                          - generic [ref=e7168]:
+                            - generic [ref=e7170]:
+                              - generic [ref=e7171]: 原始價格：NT$ 15,375
+                              - text: NT$ 15,375
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e7172]:
+                              - generic [ref=e7173]: tooltip
+                              - paragraph [ref=e7174]: 此房型去年的最高售價
+                        - generic [ref=e7175]:
+                          - generic [ref=e7178]:
+                            - generic [ref=e7180]:
+                              - generic [ref=e7181]: 原始價格：NT$ 9,770
+                              - text: NT$ 9,770
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e7182]:
+                              - generic [ref=e7183]: tooltip
+                              - paragraph [ref=e7184]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e7185]: 現金回饋後價格
+                          - generic [ref=e7188]:
+                            - generic [ref=e7190]:
+                              - generic [ref=e7191]: NT$
+                              - generic [ref=e7192]: 9,357
+                            - generic [ref=e7193]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e7197]: "1"
+                    - generic [ref=e7200]:
+                      - button "退房" [ref=e7202] [cursor=pointer]:
+                        - generic [ref=e7203]: 立即預訂
+                      - generic [ref=e7206]:
+                        - strong [ref=e7207]: 安心預訂！
+                        - paragraph [ref=e7208]: 可免費取消
+                      - paragraph [ref=e7210]: 訂房只需2分鐘
+                      - paragraph [ref=e7212]: 本站最後1間
+                  - generic [ref=e7214]:
+                    - generic [ref=e7216]:
+                      - generic [ref=e7217]:
+                        - generic [ref=e7218]:
+                          - generic [ref=e7220] [cursor=pointer]:
+                            - img [ref=e7221]
+                            - paragraph [ref=e7223]: 附美味早餐
+                            - img [ref=e7224]
+                          - generic [ref=e7227]:
+                            - paragraph [ref=e7228]: 美味早餐
+                            - progressbar [ref=e7229]
+                            - status [ref=e7230]
+                            - generic [ref=e7231]: 65%的住客都說讚(根據住客評鑑)
+                        - generic [ref=e7232]:
+                          - generic [ref=e7234] [cursor=pointer]:
+                            - img [ref=e7235]
+                            - paragraph [ref=e7237]: 2026年6月24日 星期三前可免費取消
+                            - img [ref=e7238]
+                          - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e7240]:
+                            - generic [ref=e7241]: tooltip
+                            - generic [ref=e7242]:
+                              - paragraph:
+                                - generic [ref=e7243]:
+                                  - text: 訂房零風險！
+                                  - text: 2026年6月24日 星期三前可免費取消。
+                                  - text: 在入住日期前1天內取消預訂，須支付第1晚房費作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                        - generic [ref=e7244]:
+                          - img [ref=e7245]
+                          - paragraph [ref=e7247]: 可延至2026年6月22日 星期一扣款
+                        - generic [ref=e7248]:
+                          - img [ref=e7249]
+                          - paragraph [ref=e7251]: 快速入住服務
+                        - generic [ref=e7252]:
+                          - img [ref=e7253]
+                          - paragraph [ref=e7255]: 免費Wi-Fi
+                      - generic [ref=e7256]:
+                        - text: 其他回饋和折扣
+                        - generic [ref=e7258]:
+                          - generic [ref=e7262] [cursor=pointer]:
+                            - img [ref=e7264]
+                            - text: 現金回饋：$ 1,338
+                          - tooltip "tooltip 賺取$ 1,338現金回饋至您的信用卡/Debit卡！ 退房後60天可兌換現金回饋 在有效日期前申請現金回饋至您所選的信用卡/Debit卡" [ref=e7266]:
+                            - generic [ref=e7267]: tooltip
+                            - generic [ref=e7268]:
+                              - generic:
+                                - generic:
+                                  - generic: 賺取$ 1,338現金回饋至您的信用卡/Debit卡！
+                                  - generic:
+                                    - img [ref=e7270]
+                                    - generic [ref=e7272]: 退房後60天可兌換現金回饋
+                                  - generic:
+                                    - img [ref=e7274]
+                                    - generic [ref=e7276]: 在有效日期前申請現金回饋至您所選的信用卡/Debit卡
+                        - generic [ref=e7279]:
+                          - generic [ref=e7280]: 
+                          - paragraph [ref=e7283]: 【期間限定】 減價13%！
+                    - generic [ref=e7285]:
+                      - button "客房人數限制資訊：3位大人。 點擊以了解更多詳情" [ref=e7287] [cursor=pointer]:
+                        - generic [ref=e7288]:
+                          - img [ref=e7289]
+                          - generic [ref=e7291]:
+                            - generic [ref=e7292]: 
+                            - generic [ref=e7293]: 
+                            - generic [ref=e7294]: 
+                          - text: 探索更多
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住3位大人。" [ref=e7295]:
+                        - generic [ref=e7296]: tooltip
+                        - generic [ref=e7298]:
+                          - generic [ref=e7299]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e7300]: 此專案包含1房，可入住3位大人。
+                    - generic [ref=e7304]:
+                      - generic [ref=e7306]:
+                        - generic [ref=e7309]: "1"
+                        - generic [ref=e7310]:
+                          - img "consolidated-applied-discount-badge" [ref=e7311]
+                          - generic [ref=e7313]: 已套用NT$ 1,338
+                      - generic [ref=e7314]:
+                        - generic [ref=e7316]:
+                          - paragraph [ref=e7317]:
+                            - generic [ref=e7318]: 66折
+                          - generic [ref=e7320]:
+                            - generic [ref=e7322]:
+                              - generic [ref=e7323]: 原始價格：NT$ 15,375
+                              - text: NT$ 15,375
+                            - tooltip "tooltip 此房型去年的最高售價" [ref=e7324]:
+                              - generic [ref=e7325]: tooltip
+                              - paragraph [ref=e7326]: 此房型去年的最高售價
+                        - generic [ref=e7327]:
+                          - generic [ref=e7330]:
+                            - generic [ref=e7332]:
+                              - generic [ref=e7333]: 原始價格：NT$ 10,543
+                              - text: NT$ 10,543
+                            - tooltip "tooltip 這是尚未套用現金回饋的價格" [ref=e7334]:
+                              - generic [ref=e7335]: tooltip
+                              - paragraph [ref=e7336]: 這是尚未套用現金回饋的價格
+                          - generic [ref=e7337]: 現金回饋後價格
+                          - generic [ref=e7340]:
+                            - generic [ref=e7342]:
+                              - generic [ref=e7343]: NT$
+                              - generic [ref=e7344]: 10,097
+                            - generic [ref=e7345]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e7349]: "1"
+                    - generic [ref=e7352]:
+                      - button "退房" [ref=e7354] [cursor=pointer]:
+                        - generic [ref=e7355]: 立即預訂
+                      - generic [ref=e7358]:
+                        - strong [ref=e7359]: 安心預訂！
+                        - paragraph [ref=e7360]: 可免費取消
+                      - paragraph [ref=e7362]: 訂房只需2分鐘
+                      - paragraph [ref=e7364]: 本站最後1間
+                  - generic [ref=e7366]:
+                    - generic [ref=e7369]:
+                      - generic [ref=e7370]:
+                        - generic [ref=e7372] [cursor=pointer]:
+                          - img [ref=e7373]
+                          - paragraph [ref=e7375]: 可提供美味早餐（NT$ 1,004 / 每人）
+                          - img [ref=e7376]
+                        - generic [ref=e7379]:
+                          - paragraph [ref=e7380]: 美味早餐
+                          - progressbar [ref=e7381]
+                          - status [ref=e7382]
+                          - generic [ref=e7383]: 65%的住客都說讚(根據住客評鑑)
+                      - generic [ref=e7384]:
+                        - generic [ref=e7386] [cursor=pointer]:
+                          - img [ref=e7387]
+                          - paragraph [ref=e7389]: 2026年6月24日 星期三前可免費取消
+                          - img [ref=e7390]
+                        - tooltip "tooltip 訂房零風險！2026年6月24日 星期三前可免費取消。 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。" [ref=e7392]:
+                          - generic [ref=e7393]: tooltip
+                          - generic [ref=e7394]:
+                            - paragraph:
+                              - generic [ref=e7395]:
+                                - text: 訂房零風險！
+                                - text: 2026年6月24日 星期三前可免費取消。
+                                - text: 在入住日期前1天內取消預訂，須支付訂單金額的34%作為取消費用。 任何在入住日期取消的訂單均須支付訂單金額的100%作為取消費用。 若未如期入住（No-Show），須支付訂單金額的100%作為取消費用（根據住宿政策）。
+                      - generic [ref=e7396]:
+                        - img [ref=e7397]
+                        - paragraph [ref=e7399]: 到店付款
+                      - generic [ref=e7400]:
+                        - img [ref=e7401]
+                        - paragraph [ref=e7403]: 快速入住服務
+                      - generic [ref=e7404]:
+                        - img [ref=e7405]
+                        - paragraph [ref=e7407]: 免費Wi-Fi
+                    - generic [ref=e7409]:
+                      - button "客房人數限制資訊：3位大人。" [ref=e7411] [cursor=pointer]:
+                        - generic [ref=e7412]:
+                          - img [ref=e7413]
+                          - generic [ref=e7415]:
+                            - generic [ref=e7416]: 
+                            - generic [ref=e7417]: 
+                            - generic [ref=e7418]: 
+                      - tooltip "tooltip 此優惠專案可容納你的團體人數 此專案包含1房，可入住3位大人。" [ref=e7419]:
+                        - generic [ref=e7420]: tooltip
+                        - generic [ref=e7422]:
+                          - generic [ref=e7423]: 此優惠專案可容納你的團體人數
+                          - generic [ref=e7424]: 此專案包含1房，可入住3位大人。
+                    - generic [ref=e7429]:
+                      - generic [ref=e7431]:
+                        - paragraph [ref=e7432]:
+                          - generic [ref=e7433]: 85折
+                        - generic [ref=e7435]:
+                          - generic [ref=e7437]:
+                            - generic [ref=e7438]: 原始價格：NT$ 15,375
+                            - text: NT$ 15,375
+                          - tooltip "tooltip 此房型去年的最高售價" [ref=e7439]:
+                            - generic [ref=e7440]: tooltip
+                            - paragraph [ref=e7441]: 此房型去年的最高售價
+                      - generic [ref=e7443]:
+                        - generic [ref=e7445]:
+                          - generic [ref=e7446]: NT$
+                          - generic [ref=e7447]: 13,084
+                        - generic [ref=e7448]: 每晚價格（不含稅及其他費用）
+                    - generic [ref=e7452]: "1"
+                    - generic [ref=e7455]:
+                      - button "退房" [ref=e7457] [cursor=pointer]:
+                        - generic [ref=e7458]: 立即預訂
+                      - generic [ref=e7461]:
+                        - strong [ref=e7462]: 安心預訂！
+                        - paragraph [ref=e7463]: 可免費取消
+                      - paragraph [ref=e7465]: 訂房只需2分鐘
+                      - paragraph [ref=e7467]: 本站最後1間
+              - button "顯示另外4個" [ref=e7468] [cursor=pointer]:
+                - generic [ref=e7469]:
+                  - img [ref=e7470]
+                  - paragraph [ref=e7472]: 顯示另外4個
+            - generic [ref=e7473]:
+              - generic [ref=e7475]:
+                - generic [ref=e7477]:
+                  - img "標準雙人房(最高樓層/哥吉拉樓層) (Standard Double on the Highest Floor (Godzilla Floor))" [ref=e7481]
+                  - heading "標準雙人房(最高樓層/哥吉拉樓層) (Standard Double on the Highest Floor (Godzilla Floor))" [level=5] [ref=e7483]
+                - generic [ref=e7486]:
+                  - generic [ref=e7491]:
+                    - text: 最近一筆成交價：
+                    - generic [ref=e7492]: NT$ 4,711
+                  - generic [ref=e7495]: 這間住宿非常搶手 - 有空房的時候趕緊下訂，才不會再次空手而回。
+              - generic [ref=e7497]:
+                - generic [ref=e7499]:
+                  - img "Room" [ref=e7503]
+                  - heading "Room" [level=5] [ref=e7505]
+                - generic [ref=e7508]:
+                  - generic [ref=e7513]: 已售完
+                  - generic [ref=e7516]: 這間住宿非常搶手 - 有空房的時候趕緊下訂，才不會再次空手而回。
+              - generic [ref=e7518]:
+                - generic [ref=e7520]:
+                  - img "Room" [ref=e7524]
+                  - heading "Room" [level=5] [ref=e7526]
+                - generic [ref=e7529]:
+                  - generic [ref=e7534]: 已售完
+                  - generic [ref=e7537]: 這間住宿非常搶手 - 有空房的時候趕緊下訂，才不會再次空手而回。
+      - generic [ref=e7538]:
+        - generic [ref=e7542]:
+          - generic [ref=e7543]:
+            - generic [ref=e7546]:
+              - heading "東京必玩熱門景點" [level=3] [ref=e7547]
+              - generic [ref=e7550]: 享低至95折
+            - generic [ref=e7552]:
+              - generic [ref=e7553]:
+                - generic:
+                  - button [disabled]:
+                    - img
+                - generic [ref=e7554]:
+                  - button "全部" [pressed] [ref=e7558] [cursor=pointer]:
+                    - generic [ref=e7560]: 全部
+                  - button "住宿附近" [ref=e7564] [cursor=pointer]:
+                    - img [ref=e7565]
+                    - generic [ref=e7568]: 住宿附近
+                  - button "景點" [ref=e7572] [cursor=pointer]:
+                    - img [ref=e7573]
+                    - generic [ref=e7576]: 景點
+                  - button "交通接駁" [ref=e7580] [cursor=pointer]:
+                    - img [ref=e7581]
+                    - generic [ref=e7584]: 交通接駁
+                  - button "行程" [ref=e7588] [cursor=pointer]:
+                    - img [ref=e7589]
+                    - generic [ref=e7592]: 行程
+                  - button "Sim卡和Wi-Fi" [ref=e7596] [cursor=pointer]:
+                    - img [ref=e7597]
+                    - generic [ref=e7600]: Sim卡和Wi-Fi
+                  - button "活動體驗" [ref=e7604] [cursor=pointer]:
+                    - img [ref=e7605]
+                    - generic [ref=e7608]: 活動體驗
+                  - button "美食" [ref=e7612] [cursor=pointer]:
+                    - img [ref=e7613]
+                    - generic [ref=e7616]: 美食
+                  - button "旅遊必備" [ref=e7620] [cursor=pointer]:
+                    - img [ref=e7621]
+                    - generic [ref=e7624]: 旅遊必備
+                - generic:
+                  - button [disabled]:
+                    - img
+              - region "Carousel of activities with page control below" [ref=e7625]:
+                - generic [ref=e7626]:
+                  - generic [ref=e7627]:
+                    - generic [ref=e7631]:
+                      - paragraph [ref=e7632]: 周邊吃喝玩樂
+                      - button "查看全部 周邊吃喝玩樂" [ref=e7634] [cursor=pointer]:
+                        - generic [ref=e7636]: 查看全部
+                      - img "popular things to do" [ref=e7638]
+                    - 'button "過去24小時有11人訂購 activity-image 景點 Sanrio Puroland Tokyo Ticket 3121人已預訂 確認狀態 原始價格: NT$ 723 NT$ 629" [ref=e7641] [cursor=pointer]':
+                      - generic [ref=e7642]:
+                        - generic [ref=e7643]:
+                          - generic [ref=e7646]: 過去24小時有11人訂購
+                          - img "activity-image" [ref=e7647]
+                        - generic [ref=e7648]:
+                          - generic [ref=e7649]:
+                            - generic [ref=e7650]: 景點
+                            - paragraph [ref=e7651]: Sanrio Puroland Tokyo Ticket
+                            - generic [ref=e7655]: 3121人已預訂
+                            - button "確認狀態" [ref=e7660]:
+                              - img "確認狀態" [ref=e7661]
+                          - generic [ref=e7664]:
+                            - generic [ref=e7665]:
+                              - generic [ref=e7666]: "原始價格: NT$ 723"
+                              - generic [ref=e7667]: NT$ 723
+                            - generic [ref=e7668]:
+                              - generic [ref=e7669]: NT$
+                              - generic [ref=e7670]: "629"
+                    - 'button "activity-image 景點 Fuji-Q Highland Ticket 1255人已預訂 確認狀態 原始價格: NT$ 983 NT$ 915" [ref=e7673] [cursor=pointer]':
+                      - generic [ref=e7674]:
+                        - img "activity-image" [ref=e7676]
+                        - generic [ref=e7677]:
+                          - generic [ref=e7678]:
+                            - generic [ref=e7679]: 景點
+                            - paragraph [ref=e7680]: Fuji-Q Highland Ticket
+                            - generic [ref=e7684]: 1255人已預訂
+                            - button "確認狀態" [ref=e7689]:
+                              - img "確認狀態" [ref=e7690]
+                          - generic [ref=e7693]:
+                            - generic [ref=e7694]:
+                              - generic [ref=e7695]: "原始價格: NT$ 983"
+                              - generic [ref=e7696]: NT$ 983
+                            - generic [ref=e7697]:
+                              - generic [ref=e7698]: NT$
+                              - generic [ref=e7699]: "915"
+                    - 'button "activity-image 交通接駁 Osaka Metro Pass 30人已預訂 確認狀態 原始價格: NT$ 206 NT$ 188" [ref=e7702] [cursor=pointer]':
+                      - generic [ref=e7703]:
+                        - img "activity-image" [ref=e7705]
+                        - generic [ref=e7706]:
+                          - generic [ref=e7707]:
+                            - generic [ref=e7708]: 交通接駁
+                            - paragraph [ref=e7709]: Osaka Metro Pass
+                            - generic [ref=e7713]: 30人已預訂
+                            - button "確認狀態" [ref=e7718]:
+                              - img "確認狀態" [ref=e7719]
+                          - generic [ref=e7722]:
+                            - generic [ref=e7723]:
+                              - generic [ref=e7724]: "原始價格: NT$ 206"
+                              - generic [ref=e7725]: NT$ 206
+                            - generic [ref=e7726]:
+                              - generic [ref=e7727]: NT$
+                              - generic [ref=e7728]: "188"
+                    - 'button "activity-image 景點 Echizen Matsushima Aquarium 26人已預訂 確認狀態 原始價格: NT$ 396 NT$ 373" [ref=e7731] [cursor=pointer]':
+                      - generic [ref=e7732]:
+                        - img "activity-image" [ref=e7734]
+                        - generic [ref=e7735]:
+                          - generic [ref=e7736]:
+                            - generic [ref=e7737]: 景點
+                            - paragraph [ref=e7738]: Echizen Matsushima Aquarium
+                            - generic [ref=e7742]: 26人已預訂
+                            - button "確認狀態" [ref=e7747]:
+                              - img "確認狀態" [ref=e7748]
+                          - generic [ref=e7751]:
+                            - generic [ref=e7752]:
+                              - generic [ref=e7753]: "原始價格: NT$ 396"
+                              - generic [ref=e7754]: NT$ 396
+                            - generic [ref=e7755]:
+                              - generic [ref=e7756]: NT$
+                              - generic [ref=e7757]: "373"
+                    - 'button "activity-image 行程 東京富士山網紅打卡景點一日遊｜山中湖平野之濱逆富士・忍野八海・新倉山淺間公園・河口湖大石公園（可選9人精品團・飯店接送） 確認狀態 免費取消 原始價格: NT$ 1,563 NT$ 1,269" [ref=e7760] [cursor=pointer]':
+                      - generic [ref=e7761]:
+                        - img "activity-image" [ref=e7763]
+                        - generic [ref=e7764]:
+                          - generic [ref=e7765]:
+                            - generic [ref=e7766]: 行程
+                            - paragraph [ref=e7767]: 東京富士山網紅打卡景點一日遊｜山中湖平野之濱逆富士・忍野八海・新倉山淺間公園・河口湖大石公園（可選9人精品團・飯店接送）
+                            - generic [ref=e7768]:
+                              - button "確認狀態" [ref=e7772]:
+                                - img "確認狀態" [ref=e7773]
+                              - generic [ref=e7776]: 免費取消
+                          - generic [ref=e7778]:
+                            - generic [ref=e7779]:
+                              - generic [ref=e7780]: "原始價格: NT$ 1,563"
+                              - generic [ref=e7781]: NT$ 1,563
+                            - generic [ref=e7782]:
+                              - generic [ref=e7783]: NT$
+                              - generic [ref=e7784]: 1,269
+                    - button [ref=e7787] [cursor=pointer]:
+                      - generic [ref=e7788]:
+                        - img [ref=e7790]
+                        - generic [ref=e7791]:
+                          - generic [ref=e7792]:
+                            - generic [ref=e7793]: 景點
+                            - paragraph [ref=e7794]: 東京哈利波特製片廠之旅門票
+                            - generic [ref=e7795]:
+                              - img [ref=e7796]
+                              - paragraph [ref=e7798]: "4.8"
+                              - generic [ref=e7799]: (5137)
+                              - generic [ref=e7800]: •
+                              - generic [ref=e7803]: 3723人已預訂
+                            - button [ref=e7808]:
+                              - img [ref=e7809]
+                          - generic [ref=e7813]:
+                            - generic [ref=e7814]: NT$
+                            - generic [ref=e7815]: 1,263
+                    - button [ref=e7818] [cursor=pointer]:
+                      - generic [ref=e7819]:
+                        - img [ref=e7821]
+                        - generic [ref=e7822]:
+                          - generic [ref=e7823]:
+                            - generic [ref=e7824]: 景點
+                            - paragraph [ref=e7825]: Fukui Prefectural Dinosaur Museum
+                            - generic [ref=e7829]: 22人已預訂
+                            - button [ref=e7834]:
+                              - img [ref=e7835]
+                          - generic [ref=e7838]:
+                            - generic [ref=e7839]:
+                              - generic [ref=e7840]: "原始價格: NT$ 100"
+                              - generic [ref=e7841]: NT$ 100
+                            - generic [ref=e7842]:
+                              - generic [ref=e7843]: NT$
+                              - generic [ref=e7844]: "97"
+                    - button [ref=e7847] [cursor=pointer]:
+                      - generic [ref=e7848]:
+                        - img [ref=e7850]
+                        - generic [ref=e7851]:
+                          - generic [ref=e7852]:
+                            - generic [ref=e7853]: 景點
+                            - paragraph [ref=e7854]: Kobe Nunobiki Herb Garden
+                            - button [ref=e7859]:
+                              - img [ref=e7860]
+                          - generic [ref=e7863]:
+                            - generic [ref=e7864]:
+                              - generic [ref=e7865]: "原始價格: NT$ 281"
+                              - generic [ref=e7866]: NT$ 281
+                            - generic [ref=e7867]:
+                              - generic [ref=e7868]: NT$
+                              - generic [ref=e7869]: "190"
+                    - button [ref=e7872] [cursor=pointer]:
+                      - generic [ref=e7873]:
+                        - img [ref=e7875]
+                        - generic [ref=e7876]:
+                          - generic [ref=e7877]:
+                            - generic [ref=e7878]: 吃吃喝喝
+                            - generic [ref=e7879]:
+                              - button [ref=e7883]:
+                                - img [ref=e7884]
+                              - generic [ref=e7887]: 免費取消
+                          - generic [ref=e7889]:
+                            - generic [ref=e7890]:
+                              - generic [ref=e7891]: "原始價格: NT$ 1,333"
+                              - generic [ref=e7892]: NT$ 1,333
+                            - generic [ref=e7893]:
+                              - generic [ref=e7894]: NT$
+                              - generic [ref=e7895]: 1,234
+                    - button [ref=e7898] [cursor=pointer]:
+                      - generic [ref=e7899]:
+                        - img [ref=e7901]
+                        - generic [ref=e7902]:
+                          - generic [ref=e7903]:
+                            - generic [ref=e7904]: 景點
+                            - paragraph [ref=e7905]: Abeno Observatory/HARUKAS 300 (Observatory)
+                            - generic [ref=e7909]: 72人已預訂
+                            - button [ref=e7914]:
+                              - img [ref=e7915]
+                          - generic [ref=e7918]:
+                            - generic [ref=e7919]:
+                              - generic [ref=e7920]: "原始價格: NT$ 327"
+                              - generic [ref=e7921]: NT$ 327
+                            - generic [ref=e7922]:
+                              - generic [ref=e7923]: NT$
+                              - generic [ref=e7924]: "298"
+                  - button "「東京熱門活動體驗」下一個" [ref=e7926] [cursor=pointer]:
+                    - img [ref=e7927]
+          - generic [ref=e7929]:
+            - heading "正在為旅行找機票？" [level=3] [ref=e7933]
+            - generic [ref=e7936]:
+              - img [ref=e7938]
+              - generic [ref=e7940]:
+                - generic [ref=e7941]:
+                  - generic [ref=e7942]:
+                    - generic [ref=e7943]:
+                      - img [ref=e7944]
+                      - generic [ref=e7946]: Trip Savings
+                    - generic [ref=e7948]: 享低至92折
+                  - generic [ref=e7949]:
+                    - paragraph [ref=e7950]: 預訂到東京的機票
+                    - generic [ref=e7951]: 最超值的機票優惠，無隱藏價格
+                  - generic [ref=e7953] [cursor=pointer]:
+                    - generic [ref=e7956]: 6月25日
+                    - generic [ref=e7959]: · 2位乘客
+                    - generic [ref=e7962]: · 單程
+                    - generic [ref=e7964]:
+                      - generic [ref=e7966]: · 經濟艙
+                      - img [ref=e7967]
+                - button "立即搜尋本次旅程航班" [ref=e7970] [cursor=pointer]:
+                  - generic [ref=e7972]: 立即搜尋
+          - generic [ref=e7973]:
+            - generic [ref=e7975]:
+              - heading "安排前往住宿的交通" [level=3] [ref=e7977]
+              - paragraph [ref=e7979]: 提前預訂接駁，旅行更輕鬆
+            - generic [ref=e7980]:
+              - generic [ref=e7982]:
+                - img "Airport Transfer" [ref=e7983]
+                - paragraph [ref=e7984]: 預訂機場接送
+                - generic [ref=e7985]: 前往住宿飯店，安心免煩惱
+                - generic [ref=e7987]:
+                  - generic [ref=e7988] [cursor=pointer]:
+                    - generic [ref=e7991]: 6月25日
+                    - generic [ref=e7993]:
+                      - generic [ref=e7995]: · 2位大人
+                      - img [ref=e7996]
+                  - button "搜尋機場接送" [ref=e7999] [cursor=pointer]:
+                    - generic [ref=e8001]: 搜出好價
+              - generic [ref=e8003]:
+                - img "Car Picture" [ref=e8004]
+                - paragraph [ref=e8005]: 租車
+                - generic [ref=e8006]: 為您的旅行尋找理想車款
+                - generic [ref=e8008]:
+                  - generic [ref=e8011] [cursor=pointer]:
+                    - generic [ref=e8013]: 6月25日 - 6月28日
+                    - img [ref=e8014]
+                  - button "搜尋租車服務" [ref=e8017] [cursor=pointer]:
+                    - generic [ref=e8019]: 搜出好價
+        - generic [ref=e8020]:
+          - heading "常見問答" [level=3] [ref=e8021]
+          - generic [ref=e8025]:
+            - heading "格拉斯麗新宿酒店提供乾洗服務嗎？" [level=4] [ref=e8027]:
+              - button "格拉斯麗新宿酒店提供乾洗服務嗎？" [ref=e8028] [cursor=pointer]:
+                - paragraph [ref=e8031]: 格拉斯麗新宿酒店提供乾洗服務嗎？
+                - img [ref=e8033]
+            - heading "格拉斯麗新宿酒店有幾間客房？" [level=4] [ref=e8036]:
+              - button "格拉斯麗新宿酒店有幾間客房？" [ref=e8037] [cursor=pointer]:
+                - paragraph [ref=e8040]: 格拉斯麗新宿酒店有幾間客房？
+                - img [ref=e8042]
+            - heading "住客通常在格拉斯麗新宿酒店住宿多久？" [level=4] [ref=e8045]:
+              - button "住客通常在格拉斯麗新宿酒店住宿多久？" [ref=e8046] [cursor=pointer]:
+                - paragraph [ref=e8049]: 住客通常在格拉斯麗新宿酒店住宿多久？
+                - img [ref=e8051]
+            - heading "過去一個月格拉斯麗新宿酒店的平均房價是多少？" [level=4] [ref=e8054]:
+              - button "過去一個月格拉斯麗新宿酒店的平均房價是多少？" [ref=e8055] [cursor=pointer]:
+                - paragraph [ref=e8058]: 過去一個月格拉斯麗新宿酒店的平均房價是多少？
+                - img [ref=e8060]
+            - heading "已驗證顧客對格拉斯麗新宿酒店的景色有什麼共同評論？" [level=4] [ref=e8063]:
+              - button "已驗證顧客對格拉斯麗新宿酒店的景色有什麼共同評論？" [ref=e8064] [cursor=pointer]:
+                - paragraph [ref=e8067]: 已驗證顧客對格拉斯麗新宿酒店的景色有什麼共同評論？
+                - img [ref=e8069]
+            - button "顯示更多常見問答" [ref=e8071] [cursor=pointer]:
+              - generic [ref=e8072]:
+                - img [ref=e8073]
+                - text: 顯示更多
+        - generic [ref=e8077]:
+          - generic [ref=e8079]:
+            - generic [ref=e8081]:
+              - img "關於格拉斯麗新宿酒店" [ref=e8082]
+              - heading "關於 格拉斯麗新宿酒店" [level=2] [ref=e8084]:
+                - text: 關於
+                - generic [ref=e8085]: 格拉斯麗新宿酒店
+            - generic [ref=e8086]:
+              - paragraph [ref=e8088]:
+                - heading "格拉斯麗新宿酒店 - 東京, 日本" [level=4] [ref=e8089]
+                - text: 格拉斯麗新宿酒店位於日本東京，是一家四星級酒店。這家酒店於2015年建成，擁有970間客房，為您提供舒適的住宿環境。酒店的入住時間為下午2點，退房時間為上午11點。從酒店到機場的交通時間約為60分鐘。請注意，這家酒店不允許兒童免費入住，可能會有額外的費用。格拉斯麗新宿酒店將為您提供一個舒適便利的住宿體驗。
+                - heading "格拉斯麗新宿酒店豪華娛樂設施" [level=4] [ref=e8090]
+                - text: 格拉斯麗新宿酒店提供一系列豪華娛樂設施，讓您享受一個充滿活力的住宿體驗。酒店內設有多間精品店，為您提供購物的絕佳機會。無論您是尋找時尚的服飾、精緻的首飾還是特色紀念品，這些精品店都能滿足您的需求。在這裡，您可以輕鬆尋找到獨特的禮物和紀念品，為您的旅程增添美好回憶。 此外，酒店還設有禮品店，供應各式各樣的禮品和紀念品。無論您是想為家人朋友帶回特別的禮物，還是想為自己留下一個美好的紀念，這裡都能滿足您的需求。禮品店提供的商品種類繁多，包括當地特色商品、精美工藝品以及獨特的手工藝品。您可以在這裡尋找到一個獨特而珍貴的禮物，讓您的旅程更加難忘。格拉斯麗新宿酒店的豪華娛樂設施將為您的住宿體驗增添無限樂趣和驚喜。
+                - heading "方便設施一應俱全的格拉斯麗新宿酒店" [level=4] [ref=e8091]
+                - text: 格拉斯麗新宿酒店提供了一系列方便設施，為您的旅程帶來便利與舒適。酒店內設有洗衣服務和乾洗服務，讓您輕鬆解決旅途中的衣物問題。保險箱提供了安全的存放空間，讓您放心保管貴重物品。酒店的禮賓服務隨時為您提供協助和建議，讓您的旅程更加順利。公共區域提供免費Wi-Fi，讓您隨時保持聯繫和上網。酒店設有指定區域供吸煙，為吸煙者提供舒適的環境。所有客房均提供免費Wi-Fi，讓您輕鬆享受網絡連接。酒店還提供行李寄存、自動販賣機和便利店，讓您隨時滿足各種需求。每日客房清潔和自助洗衣房服務，讓您的住宿更加方便。
+                - heading "便利的交通設施 - 格拉斯麗新宿酒店" [level=4] [ref=e8092]
+                - text: 格拉斯麗新宿酒店提供一系列便利的交通設施，讓您輕鬆暢遊東京。酒店內設有停車場，方便您自駕前來。此外，酒店還提供計程車服務，讓您隨時隨地都能輕鬆叫車。如果您需要購買景點門票或其他交通票券，酒店也提供售票服務，讓您省去排隊購票的麻煩。格拉斯麗新宿酒店的停車場位於酒店內，方便客人自行停車，但需支付停車費用。無論您是自駕或搭乘計程車，格拉斯麗新宿酒店的交通設施都能滿足您的需求。
+                - heading "品味美食的樂園 - 格拉斯麗新宿酒店的餐飲設施" [level=4] [ref=e8093]
+                - text: 格拉斯麗新宿酒店提供多樣化的餐飲設施，讓您享受美食的樂趣。酒店內設有咖啡廳和餐廳，為您提供不同的用餐選擇。無論您是想輕鬆享用一杯香濃的咖啡，還是想品嚐精緻的料理，這裡都能滿足您的需求。 酒店的咖啡廳提供舒適的環境，讓您可以放鬆身心，品味著一杯香氣撲鼻的咖啡。您可以在這裡與朋友聚會，或是在早晨享用美味的早餐。而酒店的餐廳則提供多種精緻的料理選擇，讓您品嚐到來自世界各地的美食。無論您是喜歡西式料理還是亞洲美食，這裡都能滿足您的味蕾。每天都有專業的客房服務團隊提供日常清潔，讓您的用餐體驗更加舒適和便利。不論您是商務旅行還是休閒度假，格拉斯麗新宿酒店的餐飲設施將為您帶來一個愉快的用餐體驗。
+                - heading "格拉斯麗新宿酒店多樣房型選擇，滿足您的不同需求" [level=4] [ref=e8094]
+                - text: 在格拉斯麗新宿酒店，您可以根據個人或團體的需求選擇多種房型，包括舒適的標準雙人房（非吸煙），提供18平方米的空間與一張雙人床，適合輕鬆入住。若需雙人或家庭出行，經典的雙人房（非吸煙）與豪華雙人房（帶陽台，最高樓層）皆提供不同的空間與氛圍，讓您享受自在的住宿體驗。喜歡多人同行的旅客，也可以選擇三人房或雙床房，部分房型更在最高樓層，讓您一邊欣賞東京的繁華景色，一邊享受專屬的私密空間。透過 Agoda 預訂這些房型，不僅能享有最優惠的價格，還能體驗快速、便利的預訂流程，讓您的東京之旅更加輕鬆愉快。
+                - heading "東京新宿的繁華之都" [level=4] [ref=e8095]
+                - text: 東京的新宿區是一個充滿活力和繁華的地方，被譽為日本的繁華之都。這個區域擁有無數的購物中心、餐廳、夜店和娛樂場所，為遊客提供了無盡的娛樂和購物選擇。無論您是想要品嚐地道的日本美食、購物時尚的時裝、還是享受夜生活的熱情，新宿都能滿足您的需求。 新宿還擁有許多著名的景點和文化地標。您可以參觀新宿御苑，這是一個美麗的皇家花園，擁有優雅的景致和壯麗的櫻花。如果您對日本的歷史和文化感興趣，不妨前往東京國立博物館，這裡展示了豐富的藝術品和文物。此外，您還可以在新宿歌舞伎町體驗到日本的劇場表演和夜生活文化。 格拉斯麗新宿酒店位於這個繁華區域的心臟地帶，為遊客提供了便利的交通和舒適的住宿。無論您是來東京旅遊還是商務出差，這家酒店都是您的理想選擇。您可以輕鬆前往附近的購物中心、餐廳和景點，同時享受酒店豪華的設施和舒適的客房。
+                - heading "從東京附近的機場到格拉斯麗新宿酒店的交通指南" [level=4] [ref=e8096]
+                - text: 格拉斯麗新宿酒店位於東京繁華的新宿區，提供便利的交通連接，讓您輕鬆抵達。如果您從東京附近的機場抵達，以下是幾種常見的交通方式供您選擇。 成田國際機場是東京最主要的機場之一，距離格拉斯麗新宿酒店約有一小時的車程。您可以選擇搭乘成田快速鐵路（成田エクスプレス）到達新宿站，然後步行約10分鐘即可到達酒店。另一個選擇是搭乘機場巴士（成田エクスプレスバス）到新宿站西口，然後步行約5分鐘即可到達酒店。 如果您從羽田國際機場出發，您可以選擇搭乘京急電鐵到新宿站，然後步行約15分鐘即可到達酒店。另外，您也可以搭乘機場巴士（羽田エアポートリムジンバス）到新宿站西口，然後步行約5分鐘即可到達酒店。 無論您從哪個機場出發，抵達格拉斯麗新宿酒店都非常方便。酒店位於新宿區的中心地帶，周圍有眾多的交通選擇，讓您輕鬆暢遊東京的各個景點和商業區。
+                - heading "格拉斯麗新宿酒店周邊的地標和景點" [level=4] [ref=e8097]
+                - text: 格拉斯麗新宿酒店位於東京，周邊有許多著名的地標和景點。您可以輕鬆步行到新宿禦苑公園，這個美麗的公園是放鬆和休閒的理想場所。在這裡，您可以漫步於綠樹成蔭的小徑上，欣賞美麗的花園和噴泉。另外，東京都廳也是一個必訪的地方，這座摩天大樓提供了壯觀的城市全景，您可以俯瞰整個東京市的美景。 如果您對日本的歷史和文化感興趣，您可以參觀位於附近的武士博物館和靖國神社。武士博物館展示了豐富的武士文物和劍術表演，讓您深入了解日本的武士文化。而靖國神社是一個重要的神社，供奉著日本的英靈和犧牲者，是一個寧靜祥和的地方。 此外，您還可以參觀東京都廳和青梅街，這裡有許多傳統的小酒館和餐廳，讓您品嚐地道的日本美食。最後，如果您對佛教文化感興趣，您可以參觀全國寺和寺院，如全國寺和寺院和慈照院寺。這些寺廟提供了一個寧靜的環境，讓您放鬆身心，感受日本的宗教氛圍。無論您是尋找自然風光，還是追尋日本的歷史和文化，格拉斯麗新宿酒店周邊地區都能滿足您的需求。
+                - heading "格拉斯麗新宿酒店周邊的公共交通站點" [level=4] [ref=e8098]
+                - text: 格拉斯麗新宿酒店位於東京市中心，附近提供多個公共交通站點，方便您輕鬆暢遊城市。酒店周邊的交通站點包括四谷站、Shimo-Ochiai Station、地下鐵神樂坂站、四谷三丁目站和東新宿站，都是便利的選擇。您可以輕鬆搭乘地鐵或火車到達各個景點和商業區。此外，曙橋站、西早稻田站、新宿站和西新宿站也位於酒店附近，讓您在探索東京時更加便利。不論您是前往觀光景點、購物中心還是商務會議，這些交通站點都能提供便捷的出行方式，讓您的旅程更加順暢。
+                - heading "格拉斯麗新宿酒店周邊餐廳" [level=4] [ref=e8099]
+                - text: 格拉斯麗新宿酒店位於東京市中心，周圍有眾多美食餐廳可供選擇。您可以品嚐到著名的牛かつ專門店「牛かつもと村 新宿南口店」，或是享用美味的炸餃子於「餃寶餃子新宿店」。如果您喜愛天婦羅，「天婦羅新宿つな八總本店」將是您的不二之選。此外，「壽司三味 東新宿店」提供新鮮美味的壽司，而「鍋ぞう 新宿三丁目店」則提供豐富的火鍋料理。如果您想要輕鬆用餐，「Subway 新宿西口店」提供各式美味的三明治。此外，還有「たからの蔵」、「たすく」和「ばいせん小葉坂一」等餐廳供您選擇。不論您喜歡什麼風味，這些餐廳都能滿足您的味蕾。
+                - heading "周邊購物勝地" [level=4] [ref=e8100]
+                - text: 格拉斯麗新宿酒店周圍有許多購物勝地，包括Puppet House玩具模型店、Yamashita Shikki Ten、Yuka Sasahara Gallery、iTerrace Ochiaiminaminagasaki、Journal Standard服飾店、Flags、Iidabashi Sakura Terrace、Mylord、Sakuraya電器商店和Insadong。這些地方提供了各種各樣的購物選擇，從玩具模型到藝術品、時尚服飾到電子產品，應有盡有。遊客們可以在這些購物勝地尋找到獨特的禮品和紀念品，並享受購物的樂趣。無論您是購物愛好者還是尋找特別禮物的人，這些購物勝地都會滿足您的需求。
+                - heading "格拉斯麗新宿酒店的房價相較於東京市的平均房價" [level=4] [ref=e8101]
+                - text: 格拉斯麗新宿酒店位於東京市，提供舒適且豪華的住宿體驗。這家酒店的平均房價為$193，相對於東京市的平均房價$145，價格略高，但物超所值。格拉斯麗新宿酒店提供各式各樣的房型選擇，從標準客房到套房，滿足不同旅客的需求。無論您是商務旅行還是休閒度假，這裡都是您的理想選擇。酒店設施一應俱全，包括健身中心、餐廳和免費無線網絡。無論您是在這裡度過一個晚上還是長期居住，格拉斯麗新宿酒店都能為您提供舒適和便利的住宿環境。
+                - heading "格拉斯麗新宿酒店：友善、乾淨、絕佳地點的推薦" [level=4] [ref=e8102]
+                - text: 格拉斯麗新宿酒店擁有乾淨、友善且絕佳的地點，附近有豐富的美食和購物選擇。所有員工都非常友善，酒店非常乾淨且安靜。絕對會推薦給所有來東京旅遊的人。我會再次入住這裡。這家酒店的地點非常棒，房間乾淨，員工友善且服務周到。整體環境乾淨，員工友善，地點完美。我喜歡這家酒店，方便舒適，強烈推薦再次入住。員工友善且非常樂於助人，房間乾淨且現代化。
+                - heading "客戶評價盛讚的格拉斯麗新宿酒店" [level=4] [ref=e8103]
+                - text: 格拉斯麗新宿酒店在東京的客戶評價相當正面，綜合評分高達8.7分。這家酒店以其出色的性價比獲得8.3分，讓您在旅途中感受到物超所值。酒店提供的設施也獲得8.5分的高評價，讓您在入住期間享受到便利舒適的服務。客人對於餐飲方面的評價為7.2分，可能因為酒店周圍有眾多美食選擇，讓您能品嚐到各種風味美食。酒店的清潔度獲得了8.9分的高分，讓您住宿期間感到舒適整潔。這家酒店的地理位置獲得了9.2分的高評價，方便您探索東京的各個景點。客人對於酒店的舒適程度給予了8.5分的好評，讓您在旅途中得到充分的休息。而酒店的員工表現也獲得了8.9分的高評價，為您提供優質的服務。格拉斯麗新宿酒店的客戶評價可謂是一致好評，為您的旅程增添美好回憶。
+              - button "顯示更多關於格拉斯麗新宿酒店的內容" [ref=e8104] [cursor=pointer]: 全部展開
+          - generic [ref=e8107]:
+            - generic [ref=e8108]:
+              - heading "設施與服務" [level=3] [ref=e8113]
+              - generic [ref=e8115]:
+                - paragraph [ref=e8118]:
+                  - generic [ref=e8119]: 很讚
+                  - text: "8.5"
+                - paragraph [ref=e8120]: 設施&服務
+            - generic [ref=e8121]:
+              - heading "最多人討論的服務與設施" [level=4] [ref=e8122]
+              - list [ref=e8123]:
+                - listitem [ref=e8124]:
+                  - group "項目" [ref=e8125]:
+                    - button "客房清潔 查看相關評鑑 205人" [ref=e8126] [cursor=pointer]:
+                      - generic [ref=e8127]: 
+                      - heading "客房清潔" [level=5] [ref=e8129]
+                      - paragraph [ref=e8131]: 查看相關評鑑
+                      - paragraph [ref=e8133]: 205人
+                - listitem [ref=e8134]:
+                  - group "項目" [ref=e8135]:
+                    - button "早餐 查看相關評鑑 35人" [ref=e8136] [cursor=pointer]:
+                      - generic [ref=e8137]: 
+                      - heading "早餐" [level=5] [ref=e8139]
+                      - paragraph [ref=e8141]: 查看相關評鑑
+                      - paragraph [ref=e8143]: 35人
+                - listitem [ref=e8144]:
+                  - group "項目" [ref=e8145]:
+                    - button "餐飲 查看相關評鑑 32人" [ref=e8146] [cursor=pointer]:
+                      - generic [ref=e8147]: 
+                      - heading "餐飲" [level=5] [ref=e8149]
+                      - paragraph [ref=e8151]: 查看相關評鑑
+                      - paragraph [ref=e8153]: 32人
+                - listitem [ref=e8154]:
+                  - group "項目" [ref=e8155]:
+                    - button "網路 查看相關評鑑 28人" [ref=e8156] [cursor=pointer]:
+                      - generic [ref=e8157]: 
+                      - heading "網路" [level=5] [ref=e8159]
+                      - paragraph [ref=e8161]: 查看相關評鑑
+                      - paragraph [ref=e8163]: 28人
+            - generic [ref=e8164]:
+              - generic [ref=e8165]:
+                - heading "可使用語言" [level=5] [ref=e8166]
+                - list [ref=e8167]:
+                  - listitem [ref=e8168]:
+                    - generic [ref=e8170]:
+                      - img "中文" [ref=e8171]
+                      - generic [ref=e8174]: 中文
+                  - listitem [ref=e8175]:
+                    - generic [ref=e8177]:
+                      - img "英語" [ref=e8178]
+                      - generic [ref=e8181]: 英語
+                  - listitem [ref=e8182]:
+                    - generic [ref=e8184]:
+                      - img "日語" [ref=e8185]
+                      - generic [ref=e8188]: 日語
+                  - listitem [ref=e8189]:
+                    - generic [ref=e8191]:
+                      - img "廣東話" [ref=e8192]
+                      - generic [ref=e8195]: 廣東話
+                  - listitem [ref=e8196]:
+                    - generic [ref=e8198]:
+                      - img "韓語" [ref=e8199]
+                      - generic [ref=e8202]: 韓語
+              - generic [ref=e8204]:
+                - heading "友善設施" [level=5] [ref=e8205]
+                - list [ref=e8206]:
+                  - listitem [ref=e8207]:
+                    - generic [ref=e8209]:
+                      - img "無障礙友善餐廳/休息室(館內)" [ref=e8210]:
+                        - generic [ref=e8211]: 
+                      - generic [ref=e8213]: 無障礙友善餐廳/休息室(館內)
+                  - listitem [ref=e8214]:
+                    - generic [ref=e8216]:
+                      - img "輪椅友善設施" [ref=e8217]:
+                        - generic [ref=e8218]: 
+                      - generic [ref=e8220]: 輪椅友善設施
+              - generic [ref=e8222]:
+                - heading "網路服務" [level=5] [ref=e8223]
+                - list [ref=e8224]:
+                  - listitem [ref=e8225]:
+                    - generic [ref=e8227]:
+                      - img "公共區域Wi-Fi" [ref=e8228]:
+                        - generic [ref=e8229]: 
+                      - generic [ref=e8231]: 公共區域Wi-Fi
+                  - listitem [ref=e8232]:
+                    - generic [ref=e8234]:
+                      - img "房內免費Wi-Fi" [ref=e8235]:
+                        - generic [ref=e8236]: 
+                      - generic [ref=e8238]: 房內免費Wi-Fi
+                  - listitem [ref=e8239]:
+                    - generic [ref=e8241]:
+                      - img "網路" [ref=e8242]:
+                        - generic [ref=e8243]: 
+                      - generic [ref=e8245]: 網路
+                  - listitem [ref=e8246]:
+                    - generic [ref=e8248]:
+                      - img "網路(有線)" [ref=e8249]:
+                        - generic [ref=e8250]: 
+                      - generic [ref=e8252]: 網路(有線)
+                  - listitem [ref=e8253]:
+                    - generic [ref=e8255]:
+                      - img "網路服務" [ref=e8256]:
+                        - generic [ref=e8257]: 
+                      - generic [ref=e8259]: 網路服務
+              - generic [ref=e8261]:
+                - heading "休閒娛樂設施" [level=5] [ref=e8262]
+                - list [ref=e8263]:
+                  - listitem [ref=e8264]:
+                    - generic [ref=e8266]:
+                      - img "附設娛樂設施" [ref=e8267]:
+                        - generic [ref=e8268]: 
+                      - generic [ref=e8270]: 附設娛樂設施
+                  - listitem [ref=e8271]:
+                    - generic [ref=e8273]:
+                      - img "按摩" [ref=e8274]:
+                        - generic [ref=e8275]: 
+                      - generic [ref=e8277]: 按摩
+                  - listitem [ref=e8278]:
+                    - generic [ref=e8280]:
+                      - img "旅遊行程" [ref=e8281]:
+                        - generic [ref=e8282]: 
+                      - generic [ref=e8284]: 旅遊行程
+                  - listitem [ref=e8285]:
+                    - generic [ref=e8287]:
+                      - img "票劵代售服務" [ref=e8288]:
+                        - generic [ref=e8289]: 
+                      - generic [ref=e8291]: 票劵代售服務
+              - generic [ref=e8293]:
+                - heading "衛生安全" [level=5] [ref=e8294]
+                - list [ref=e8295]:
+                  - listitem [ref=e8296]:
+                    - generic [ref=e8298]:
+                      - img "1公尺以上人際距離" [ref=e8299]:
+                        - generic [ref=e8300]: 
+                      - generic [ref=e8302]: 1公尺以上人際距離
+                  - listitem [ref=e8303]:
+                    - generic [ref=e8305]:
+                      - img "公共區域透明屏障" [ref=e8306]:
+                        - generic [ref=e8307]: 
+                      - generic [ref=e8309]: 公共區域透明屏障
+                  - listitem [ref=e8310]:
+                    - generic [ref=e8312]:
+                      - img "住客及員工體溫測量" [ref=e8313]:
+                        - generic [ref=e8314]: 
+                      - generic [ref=e8316]: 住客及員工體溫測量
+                  - listitem [ref=e8317]:
+                    - generic [ref=e8319]:
+                      - img "床單和衣物熱水清洗" [ref=e8320]:
+                        - generic [ref=e8321]: 
+                      - generic [ref=e8323]: 床單和衣物熱水清洗
+                  - listitem [ref=e8324]:
+                    - generic [ref=e8326]:
+                      - img "每日消毒" [ref=e8327]:
+                        - generic [ref=e8328]: 
+                      - generic [ref=e8330]: 每日消毒
+                  - listitem [ref=e8331]:
+                    - generic [ref=e8333]:
+                      - img "每位客人入住前客房消毒" [ref=e8334]:
+                        - generic [ref=e8335]: 
+                      - generic [ref=e8337]: 每位客人入住前客房消毒
+                  - listitem [ref=e8338]:
+                    - generic [ref=e8340]:
+                      - img "所有客房每日消毒" [ref=e8341]:
+                        - generic [ref=e8342]: 
+                      - generic [ref=e8344]: 所有客房每日消毒
+                  - listitem [ref=e8345]:
+                    - generic [ref=e8347]:
+                      - img "客房消毒後關閉客房" [ref=e8348]:
+                        - generic [ref=e8349]: 
+                      - generic [ref=e8351]: 客房消毒後關閉客房
+                  - listitem [ref=e8352]:
+                    - generic [ref=e8354]:
+                      - img "員工皆受安全訓練" [ref=e8355]:
+                        - generic [ref=e8356]: 
+                      - generic [ref=e8358]: 員工皆受安全訓練
+                  - listitem [ref=e8359]:
+                    - generic [ref=e8361]:
+                      - img "員工臉部遮罩" [ref=e8362]:
+                        - generic [ref=e8363]: 
+                      - generic [ref=e8365]: 員工臉部遮罩
+                  - listitem [ref=e8366]:
+                    - generic [ref=e8368]:
+                      - img "乾洗手" [ref=e8369]:
+                        - generic [ref=e8370]: 
+                      - generic [ref=e8372]: 乾洗手
+                  - listitem [ref=e8373]:
+                    - generic [ref=e8375]:
+                      - img "專業消毒服務" [ref=e8376]:
+                        - generic [ref=e8377]: 
+                      - generic [ref=e8379]: 專業消毒服務
+                  - listitem [ref=e8380]:
+                    - generic [ref=e8382]:
+                      - img "無現金支付（Cashless payment）服務" [ref=e8383]:
+                        - generic [ref=e8384]: 
+                      - generic [ref=e8386]: 無現金支付（Cashless payment）服務
+              - generic [ref=e8388]:
+                - heading "餐飲服務" [level=5] [ref=e8389]
+                - list [ref=e8390]:
+                  - listitem [ref=e8391]:
+                    - generic [ref=e8393]:
+                      - img "24小時送餐服務" [ref=e8394]:
+                        - generic [ref=e8395]: 
+                      - generic [ref=e8397]: 24小時送餐服務
+                  - listitem [ref=e8398]:
+                    - generic [ref=e8400]:
+                      - img "早餐服務" [ref=e8401]:
+                        - generic [ref=e8402]: 
+                      - generic [ref=e8404]: 早餐服務
+                  - listitem [ref=e8405]:
+                    - generic [ref=e8407]:
+                      - img "自動販賣機" [ref=e8408]:
+                        - generic [ref=e8409]: 
+                      - generic [ref=e8411]: 自動販賣機
+                  - listitem [ref=e8412]:
+                    - generic [ref=e8414]:
+                      - img "咖啡店" [ref=e8415]:
+                        - generic [ref=e8416]: 
+                      - generic [ref=e8418]: 咖啡店
+                  - listitem [ref=e8419]:
+                    - generic [ref=e8421]:
+                      - img "附設餐廳沙拉" [ref=e8422]:
+                        - generic [ref=e8423]: 
+                      - generic [ref=e8425]: 附設餐廳沙拉
+                  - listitem [ref=e8426]:
+                    - generic [ref=e8428]:
+                      - img "附設餐廳咖啡/茶" [ref=e8429]:
+                        - generic [ref=e8430]: 
+                      - generic [ref=e8432]: 附設餐廳咖啡/茶
+                  - listitem [ref=e8433]:
+                    - generic [ref=e8435]:
+                      - img "附設餐廳甜點" [ref=e8436]:
+                        - generic [ref=e8437]: 
+                      - generic [ref=e8439]: 附設餐廳甜點
+                  - listitem [ref=e8440]:
+                    - generic [ref=e8442]:
+                      - img "附設餐廳湯品" [ref=e8443]:
+                        - generic [ref=e8444]: 
+                      - generic [ref=e8446]: 附設餐廳湯品
+                  - listitem [ref=e8447]:
+                    - generic [ref=e8449]:
+                      - img "酒吧" [ref=e8450]:
+                        - generic [ref=e8451]: 
+                      - generic [ref=e8453]: 酒吧
+                  - listitem [ref=e8454]:
+                    - generic [ref=e8456]:
+                      - img "酒精飲品" [ref=e8457]:
+                        - generic [ref=e8458]: 
+                      - generic [ref=e8460]: 酒精飲品
+                  - listitem [ref=e8461]:
+                    - generic [ref=e8463]:
+                      - img "瓶裝水" [ref=e8464]:
+                        - generic [ref=e8465]: 
+                      - generic [ref=e8467]: 瓶裝水
+                  - listitem [ref=e8468]:
+                    - generic [ref=e8470]:
+                      - img "餐廳" [ref=e8471]:
+                        - generic [ref=e8472]: 
+                      - generic [ref=e8474]: 餐廳
+              - generic [ref=e8476]:
+                - heading "服務與便利設施" [level=5] [ref=e8477]
+                - list [ref=e8478]:
+                  - listitem [ref=e8479]:
+                    - generic [ref=e8481]:
+                      - img "公共區域空調" [ref=e8482]:
+                        - generic [ref=e8483]: 
+                      - generic [ref=e8485]: 公共區域空調
+                  - listitem [ref=e8486]:
+                    - generic [ref=e8488]:
+                      - img "公共區域暖氣" [ref=e8489]:
+                        - generic [ref=e8490]: 
+                      - generic [ref=e8492]: 公共區域暖氣
+                  - listitem [ref=e8493]:
+                    - generic [ref=e8495]:
+                      - img "可寄放行李" [ref=e8496]:
+                        - generic [ref=e8497]: 
+                      - generic [ref=e8499]: 可寄放行李
+                  - listitem [ref=e8500]:
+                    - generic [ref=e8502]:
+                      - img "外幣兌換" [ref=e8503]:
+                        - generic [ref=e8504]: 
+                      - generic [ref=e8506]: 外幣兌換
+                  - listitem [ref=e8507]:
+                    - generic [ref=e8509]:
+                      - img "全館禁止吸菸" [ref=e8510]:
+                        - generic [ref=e8511]: 
+                      - generic [ref=e8513]: 全館禁止吸菸
+                  - listitem [ref=e8514]:
+                    - generic [ref=e8516]:
+                      - img "自助洗衣設備" [ref=e8517]:
+                        - generic [ref=e8518]: 
+                      - generic [ref=e8520]: 自助洗衣設備
+                  - listitem [ref=e8521]:
+                    - generic [ref=e8523]:
+                      - img "吸菸區" [ref=e8524]:
+                        - generic [ref=e8525]: 
+                      - generic [ref=e8527]: 吸菸區
+                  - listitem [ref=e8528]:
+                    - generic [ref=e8530]:
+                      - img "每日客房清潔服務" [ref=e8531]:
+                        - generic [ref=e8532]: 
+                      - generic [ref=e8534]: 每日客房清潔服務
+                  - listitem [ref=e8535]:
+                    - generic [ref=e8537]:
+                      - img "便利商店" [ref=e8538]:
+                        - generic [ref=e8539]: 
+                      - generic [ref=e8541]: 便利商店
+                  - listitem [ref=e8542]:
+                    - generic [ref=e8544]:
+                      - img "保險箱" [ref=e8545]:
+                        - generic [ref=e8546]: 
+                      - generic [ref=e8548]: 保險箱
+                  - listitem [ref=e8549]:
+                    - generic [ref=e8551]:
+                      - img "紀念禮品店" [ref=e8552]:
+                        - generic [ref=e8553]: 
+                      - generic [ref=e8555]: 紀念禮品店
+                  - listitem [ref=e8556]:
+                    - generic [ref=e8558]:
+                      - img "美容服務" [ref=e8559]:
+                        - generic [ref=e8560]: 
+                      - generic [ref=e8562]: 美容服務
+                  - listitem [ref=e8563]:
+                    - generic [ref=e8565]:
+                      - img "送洗服務" [ref=e8566]:
+                        - generic [ref=e8567]: 
+                      - generic [ref=e8569]: 送洗服務
+                  - listitem [ref=e8570]:
+                    - generic [ref=e8572]:
+                      - img "乾洗服務" [ref=e8573]:
+                        - generic [ref=e8574]: 
+                      - generic [ref=e8576]: 乾洗服務
+                  - listitem [ref=e8577]:
+                    - generic [ref=e8579]:
+                      - img "商店" [ref=e8580]:
+                        - generic [ref=e8581]: 
+                      - generic [ref=e8583]: 商店
+                  - listitem [ref=e8584]:
+                    - generic [ref=e8586]:
+                      - img "商務中心內有影印機/傳真機" [ref=e8587]:
+                        - generic [ref=e8588]: 
+                      - generic [ref=e8590]: 商務中心內有影印機/傳真機
+                  - listitem [ref=e8591]:
+                    - generic [ref=e8593]:
+                      - img "寄物櫃" [ref=e8594]:
+                        - generic [ref=e8595]: 
+                      - generic [ref=e8597]: 寄物櫃
+                  - listitem [ref=e8598]:
+                    - generic [ref=e8600]:
+                      - img "提款機" [ref=e8601]:
+                        - generic [ref=e8602]: 
+                      - generic [ref=e8604]: 提款機
+                  - listitem [ref=e8605]:
+                    - generic [ref=e8607]:
+                      - img "無障礙友善設施" [ref=e8608]:
+                        - generic [ref=e8609]: 
+                      - generic [ref=e8611]: 無障礙友善設施
+                  - listitem [ref=e8612]:
+                    - generic [ref=e8614]:
+                      - img "郵寄服務" [ref=e8615]:
+                        - generic [ref=e8616]: 
+                      - generic [ref=e8618]: 郵寄服務
+                  - listitem [ref=e8619]:
+                    - generic [ref=e8621]:
+                      - img "開立發票" [ref=e8622]:
+                        - generic [ref=e8623]: 
+                      - generic [ref=e8625]: 開立發票
+                  - listitem [ref=e8626]:
+                    - generic [ref=e8628]:
+                      - img "電梯" [ref=e8629]:
+                        - generic [ref=e8630]: 
+                      - generic [ref=e8632]: 電梯
+                  - listitem [ref=e8633]:
+                    - generic [ref=e8635]:
+                      - img "熨燙服務" [ref=e8636]:
+                        - generic [ref=e8637]: 
+                      - generic [ref=e8639]: 熨燙服務
+                  - listitem [ref=e8640]:
+                    - generic [ref=e8642]:
+                      - img "禮賓服務" [ref=e8643]:
+                        - generic [ref=e8644]: 
+                      - generic [ref=e8646]: 禮賓服務
+                  - listitem [ref=e8647]:
+                    - generic [ref=e8649]:
+                      - img "露台" [ref=e8650]:
+                        - generic [ref=e8651]: 
+                      - generic [ref=e8653]: 露台
+              - generic [ref=e8655]:
+                - heading "接待設施" [level=5] [ref=e8656]
+                - list [ref=e8657]:
+                  - listitem [ref=e8658]:
+                    - generic [ref=e8660]:
+                      - img "24小時保全" [ref=e8661]:
+                        - generic [ref=e8662]: 
+                      - generic [ref=e8664]: 24小時保全
+                  - listitem [ref=e8665]:
+                    - generic [ref=e8667]:
+                      - img "24小時皆可入住" [ref=e8668]:
+                        - generic [ref=e8669]: 
+                      - generic [ref=e8671]: 24小時皆可入住
+                  - listitem [ref=e8672]:
+                    - generic [ref=e8674]:
+                      - img "24小時櫃台服務" [ref=e8675]:
+                        - generic [ref=e8676]: 
+                      - generic [ref=e8678]: 24小時櫃台服務
+                  - listitem [ref=e8679]:
+                    - generic [ref=e8681]:
+                      - img "公共區域監視器" [ref=e8682]:
+                        - generic [ref=e8683]: 
+                      - generic [ref=e8685]: 公共區域監視器
+                  - listitem [ref=e8686]:
+                    - generic [ref=e8688]:
+                      - img "可帶寵物" [ref=e8689]:
+                        - generic [ref=e8690]: 
+                      - generic [ref=e8692]:
+                        - generic [ref=e8693]: 不提供可帶寵物
+                        - text: 可帶寵物
+                  - listitem [ref=e8694]:
+                    - generic [ref=e8696]:
+                      - img "安全/保全設施" [ref=e8697]:
+                        - generic [ref=e8698]: 
+                      - generic [ref=e8700]: 安全/保全設施
+                  - listitem [ref=e8701]:
+                    - generic [ref=e8703]:
+                      - img "住宿外部監視器" [ref=e8704]:
+                        - generic [ref=e8705]: 
+                      - generic [ref=e8707]: 住宿外部監視器
+                  - listitem [ref=e8708]:
+                    - generic [ref=e8710]:
+                      - img "快速入住/退房服務" [ref=e8711]:
+                        - generic [ref=e8712]: 
+                      - generic [ref=e8714]: 快速入住/退房服務
+                  - listitem [ref=e8715]:
+                    - generic [ref=e8717]:
+                      - img "無線對講機" [ref=e8718]:
+                        - generic [ref=e8719]: 
+                      - generic [ref=e8721]: 無線對講機
+                  - listitem [ref=e8722]:
+                    - generic [ref=e8724]:
+                      - img "滅火器" [ref=e8725]:
+                        - generic [ref=e8726]: 
+                      - generic [ref=e8728]: 滅火器
+                  - listitem [ref=e8729]:
+                    - generic [ref=e8731]:
+                      - img "煙霧警報器" [ref=e8732]:
+                        - generic [ref=e8733]: 
+                      - generic [ref=e8735]: 煙霧警報器
+                  - listitem [ref=e8736]:
+                    - generic [ref=e8738]:
+                      - img "禁菸房" [ref=e8739]:
+                        - generic [ref=e8740]: 
+                      - generic [ref=e8742]: 禁菸房
+                  - listitem [ref=e8743]:
+                    - generic [ref=e8745]:
+                      - img "歡迎服務型寵物入住" [ref=e8746]:
+                        - generic [ref=e8747]: 
+                      - generic [ref=e8749]: 歡迎服務型寵物入住
+              - generic [ref=e8751]:
+                - heading "交通服務/設施" [level=5] [ref=e8752]
+                - list [ref=e8753]:
+                  - listitem [ref=e8754]:
+                    - generic [ref=e8756]:
+                      - img "代客叫車服務" [ref=e8757]:
+                        - generic [ref=e8758]: 
+                      - generic [ref=e8760]: 代客叫車服務
+                  - listitem [ref=e8761]:
+                    - generic [ref=e8763]:
+                      - img "停車場(付費)" [ref=e8764]:
+                        - generic [ref=e8765]: 
+                      - generic [ref=e8767]: 停車場(付費)
+                  - listitem [ref=e8768]:
+                    - generic [ref=e8770]:
+                      - img "停車場(館內)" [ref=e8771]:
+                        - generic [ref=e8772]: 
+                      - generic [ref=e8774]: 停車場(館內)
+                  - listitem [ref=e8775]:
+                    - generic [ref=e8777]:
+                      - img "停車場(館外)" [ref=e8778]:
+                        - generic [ref=e8779]: 
+                      - generic [ref=e8781]: 停車場(館外)
+                  - listitem [ref=e8782]:
+                    - generic [ref=e8784]:
+                      - img "接駁服務" [ref=e8785]:
+                        - generic [ref=e8786]: 
+                      - generic [ref=e8788]: 接駁服務
+                  - listitem [ref=e8789]:
+                    - generic [ref=e8791]:
+                      - img "腳踏車停放區" [ref=e8792]:
+                        - generic [ref=e8793]: 
+                      - generic [ref=e8795]: 腳踏車停放區
+              - generic [ref=e8797]:
+                - heading "所有客房均提供" [level=5] [ref=e8798]
+                - list [ref=e8799]:
+                  - listitem [ref=e8800]:
+                    - generic [ref=e8802]:
+                      - img "冰箱" [ref=e8803]:
+                        - generic [ref=e8804]: 
+                      - generic [ref=e8806]: 冰箱
+                  - listitem [ref=e8807]:
+                    - generic [ref=e8809]:
+                      - img "免費瓶裝水" [ref=e8810]:
+                        - generic [ref=e8811]: 
+                      - generic [ref=e8813]:
+                        - generic [ref=e8814]: 不提供免費瓶裝水
+                        - text: 免費瓶裝水
+                  - listitem [ref=e8815]:
+                    - generic [ref=e8817]:
+                      - img "空調" [ref=e8818]:
+                        - generic [ref=e8819]: 
+                      - generic [ref=e8821]: 空調
+                  - listitem [ref=e8822]:
+                    - generic [ref=e8824]:
+                      - img "浴巾" [ref=e8825]:
+                        - generic [ref=e8826]: 
+                      - generic [ref=e8828]: 浴巾
+                  - listitem [ref=e8829]:
+                    - generic [ref=e8831]:
+                      - img "浴缸" [ref=e8832]:
+                        - generic [ref=e8833]: 
+                      - generic [ref=e8835]: 浴缸
+                  - listitem [ref=e8836]:
+                    - generic [ref=e8838]:
+                      - img "暖氣" [ref=e8839]:
+                        - generic [ref=e8840]: 
+                      - generic [ref=e8842]: 暖氣
+                  - listitem [ref=e8843]:
+                    - generic [ref=e8845]:
+                      - img "禁菸房" [ref=e8846]:
+                        - generic [ref=e8847]: 
+                      - generic [ref=e8849]: 禁菸房
+                  - listitem [ref=e8850]:
+                    - generic [ref=e8852]:
+                      - img "電視" [ref=e8853]:
+                        - generic [ref=e8854]: 
+                      - generic [ref=e8856]: 電視
+            - generic [ref=e8858]:
+              - heading "餐飲" [level=4] [ref=e8862]
+              - generic [ref=e8865]:
+                - generic [ref=e8866]:
+                  - generic [ref=e8867]: 早餐選項
+                  - list [ref=e8868]:
+                    - listitem [ref=e8869]:
+                      - generic [ref=e8870]: 美式
+                - generic [ref=e8871]:
+                  - generic [ref=e8872]: 建築內餐廳
+                  - generic [ref=e8873]:
+                    - generic [ref=e8874]:
+                      - heading "ボンサルーテカブキ" [level=5] [ref=e8875]
+                      - list [ref=e8876]:
+                        - listitem [ref=e8877]:
+                          - generic [ref=e8881]: 無其他資訊
+                    - generic [ref=e8883]:
+                      - heading "ボンジュール" [level=5] [ref=e8884]
+                      - list [ref=e8885]:
+                        - listitem [ref=e8886]:
+                          - generic [ref=e8890]: 無其他資訊
+          - generic [ref=e8893]:
+            - generic [ref=e8894]:
+              - generic [ref=e8897]:
+                - heading "位置得分" [level=3] [ref=e8899]
+                - generic [ref=e8900]: 1-19-1 Kabukicho, 新宿, 東京, 日本, 160-8466
+              - generic [ref=e8902]:
+                - paragraph [ref=e8905]:
+                  - generic [ref=e8906]: 超棒
+                  - text: "9.2"
+                - paragraph [ref=e8907]: 位置得分
+            - generic [ref=e8908]:
+              - generic [ref=e8909]:
+                - heading "附近機場" [level=5] [ref=e8910]
+                - list [ref=e8911]:
+                  - listitem [ref=e8912]:
+                    - generic [ref=e8914]:
+                      - img "羽田機場 (HND)" [ref=e8915]:
+                        - generic [ref=e8916]: 
+                      - generic [ref=e8918]:
+                        - text: 羽田機場 (HND)
+                        - generic [ref=e8920]:
+                          - text: 17.7公里
+                          - text: 34分鐘車程
+                  - listitem [ref=e8922]:
+                    - generic [ref=e8924]:
+                      - img "成田國際機場 (NRT)" [ref=e8925]:
+                        - generic [ref=e8926]: 
+                      - generic [ref=e8928]:
+                        - text: 成田國際機場 (NRT)
+                        - generic [ref=e8930]:
+                          - text: 63.0公里
+                          - text: 車程1.1小時
+              - generic [ref=e8933]:
+                - heading "大眾運輸" [level=5] [ref=e8934]
+                - list [ref=e8935]:
+                  - listitem [ref=e8936]:
+                    - generic [ref=e8938]:
+                      - img "西部新宿站" [ref=e8939]:
+                        - generic [ref=e8940]: 
+                      - generic [ref=e8942]:
+                        - text: 西部新宿站
+                        - generic [ref=e8944]:
+                          - text: 180公尺
+                          - text: 5分鐘步程
+                  - listitem [ref=e8946]:
+                    - generic [ref=e8948]:
+                      - img "地下鐵 新宿西口站" [ref=e8949]:
+                        - generic [ref=e8950]: 
+                      - generic [ref=e8952]:
+                        - text: 地下鐵 新宿西口站
+                        - generic [ref=e8954]:
+                          - text: 340公尺
+                          - text: 6分鐘步程
+              - generic [ref=e8957]:
+                - heading "醫院與診所" [level=5] [ref=e8958]
+                - list [ref=e8959]:
+                  - listitem [ref=e8960]:
+                    - generic [ref=e8962]:
+                      - img "Ohkubo Hospital" [ref=e8963]:
+                        - generic [ref=e8964]: 
+                      - generic [ref=e8966]:
+                        - text: Ohkubo Hospital
+                        - generic [ref=e8968]: 170公尺
+              - generic [ref=e8970]:
+                - heading "逛街購物" [level=5] [ref=e8971]
+                - list [ref=e8972]:
+                  - listitem [ref=e8973]:
+                    - generic [ref=e8975]:
+                      - img "阿美橫丁商店街" [ref=e8976]:
+                        - generic [ref=e8977]: 
+                      - generic [ref=e8979]:
+                        - text: 阿美橫丁商店街
+                        - generic [ref=e8981]: 6.8公里
+              - generic [ref=e8983]:
+                - heading "便利商店" [level=5] [ref=e8984]
+                - list [ref=e8985]:
+                  - listitem [ref=e8986]:
+                    - generic [ref=e8988]:
+                      - img "位於住宿內" [ref=e8989]
+                      - generic [ref=e8991]: 位於住宿內
+              - generic [ref=e8993]:
+                - heading "提款機" [level=5] [ref=e8994]
+                - list [ref=e8995]:
+                  - listitem [ref=e8996]:
+                    - generic [ref=e8998]:
+                      - img "現場設有提款機" [ref=e8999]
+                      - generic [ref=e9001]: 現場設有提款機
+            - heading "週邊景點" [level=4] [ref=e9006]
+            - generic [ref=e9009]:
+              - generic [ref=e9010]:
+                - heading "人氣景點" [level=5] [ref=e9011]
+                - list [ref=e9012]:
+                  - listitem [ref=e9013]:
+                    - generic [ref=e9015]:
+                      - img "東京都廳" [ref=e9016]:
+                        - generic [ref=e9017]: 
+                      - generic [ref=e9019]:
+                        - text: 東京都廳
+                        - generic [ref=e9020]: 1.1公里
+                  - listitem [ref=e9021]:
+                    - generic [ref=e9023]:
+                      - img "新宿禦苑公園" [ref=e9024]:
+                        - generic [ref=e9025]: 
+                      - generic [ref=e9027]:
+                        - text: 新宿禦苑公園
+                        - generic [ref=e9028]: 1.3公里
+                  - listitem [ref=e9029]:
+                    - generic [ref=e9031]:
+                      - img "明治神宮" [ref=e9032]:
+                        - generic [ref=e9033]: 
+                      - generic [ref=e9035]:
+                        - text: 明治神宮
+                        - generic [ref=e9036]: 2.1公里
+                  - listitem [ref=e9037]:
+                    - generic [ref=e9039]:
+                      - img "澀谷隧道" [ref=e9040]:
+                        - generic [ref=e9041]: 
+                      - generic [ref=e9043]:
+                        - text: 澀谷隧道
+                        - generic [ref=e9044]: 4.0公里
+                  - listitem [ref=e9045]:
+                    - generic [ref=e9047]:
+                      - img "東京塔" [ref=e9048]:
+                        - generic [ref=e9049]: 
+                      - generic [ref=e9051]:
+                        - text: 東京塔
+                        - generic [ref=e9052]: 5.7公里
+                  - listitem [ref=e9053]:
+                    - generic [ref=e9055]:
+                      - img "銀座" [ref=e9056]:
+                        - generic [ref=e9057]: 
+                      - generic [ref=e9059]:
+                        - text: 銀座
+                        - generic [ref=e9060]: 6.5公里
+                  - listitem [ref=e9061]:
+                    - generic [ref=e9063]:
+                      - img "上野公園" [ref=e9064]:
+                        - generic [ref=e9065]: 
+                      - generic [ref=e9067]:
+                        - text: 上野公園
+                        - generic [ref=e9068]: 6.9公里
+                  - listitem [ref=e9069]:
+                    - generic [ref=e9071]:
+                      - img "淺草" [ref=e9072]:
+                        - generic [ref=e9073]: 
+                      - generic [ref=e9075]:
+                        - text: 淺草
+                        - generic [ref=e9076]: 8.8公里
+                  - listitem [ref=e9077]:
+                    - generic [ref=e9079]:
+                      - img "淺草寺" [ref=e9080]:
+                        - generic [ref=e9081]: 
+                      - generic [ref=e9083]:
+                        - text: 淺草寺
+                        - generic [ref=e9084]: 8.8公里
+                  - listitem [ref=e9085]:
+                    - generic [ref=e9087]:
+                      - img "東京晴空塔" [ref=e9088]:
+                        - generic [ref=e9089]: 
+                      - generic [ref=e9091]:
+                        - text: 東京晴空塔
+                        - generic [ref=e9092]: 10.0公里
+              - generic [ref=e9094]:
+                - heading "附近景點" [level=5] [ref=e9095]
+                - list [ref=e9096]:
+                  - listitem [ref=e9097]:
+                    - generic [ref=e9099]:
+                      - img "Godzilla Head" [ref=e9100]:
+                        - generic [ref=e9101]: 
+                      - generic [ref=e9103]:
+                        - text: Godzilla Head
+                        - generic [ref=e9104]: 20公尺
+                  - listitem [ref=e9105]:
+                    - generic [ref=e9107]:
+                      - img "TOHO Cinemas Shinjuku" [ref=e9108]:
+                        - generic [ref=e9109]: 
+                      - generic [ref=e9111]:
+                        - text: TOHO Cinemas Shinjuku
+                        - generic [ref=e9112]: 40公尺
+                  - listitem [ref=e9113]:
+                    - generic [ref=e9115]:
+                      - img "Finlando桑拿" [ref=e9116]:
+                        - generic [ref=e9117]: 
+                      - generic [ref=e9119]:
+                        - text: Finlando桑拿
+                        - generic [ref=e9120]: 90公尺
+                  - listitem [ref=e9121]:
+                    - generic [ref=e9123]:
+                      - img "東京武士博物館" [ref=e9124]:
+                        - generic [ref=e9125]: 
+                      - generic [ref=e9127]:
+                        - text: 東京武士博物館
+                        - generic [ref=e9128]: 130公尺
+                  - listitem [ref=e9129]:
+                    - generic [ref=e9131]:
+                      - img "Robot Restaurant" [ref=e9132]:
+                        - generic [ref=e9133]: 
+                      - generic [ref=e9135]:
+                        - text: Robot Restaurant
+                        - generic [ref=e9136]: 130公尺
+                  - listitem [ref=e9137]:
+                    - generic [ref=e9139]:
+                      - img "歌舞伎町" [ref=e9140]:
+                        - generic [ref=e9141]: 
+                      - generic [ref=e9143]:
+                        - text: 歌舞伎町
+                        - generic [ref=e9144]: 140公尺
+                  - listitem [ref=e9145]:
+                    - generic [ref=e9147]:
+                      - img "Green Plaza女性三溫暖" [ref=e9148]:
+                        - generic [ref=e9149]: 
+                      - generic [ref=e9151]:
+                        - text: Green Plaza女性三溫暖
+                        - generic [ref=e9152]: 150公尺
+                  - listitem [ref=e9153]:
+                    - generic [ref=e9155]:
+                      - img "Garam酒吧" [ref=e9156]:
+                        - generic [ref=e9157]: 
+                      - generic [ref=e9159]:
+                        - text: Garam酒吧
+                        - generic [ref=e9160]: 170公尺
+                  - listitem [ref=e9161]:
+                    - generic [ref=e9163]:
+                      - img "Aprecio" [ref=e9164]:
+                        - generic [ref=e9165]: 
+                      - generic [ref=e9167]:
+                        - text: Aprecio
+                        - generic [ref=e9168]: 170公尺
+                  - listitem [ref=e9169]:
+                    - generic [ref=e9171]:
+                      - img "Ohkubo Hospital" [ref=e9172]:
+                        - generic [ref=e9173]: 
+                      - generic [ref=e9175]:
+                        - text: Ohkubo Hospital
+                        - generic [ref=e9176]: 170公尺
+            - generic [ref=e9178]: 顯示距離為地圖上點對點直線距離，實際旅程可能會有所差異。
+          - generic [ref=e9180]:
+            - heading "住宿規定" [level=3] [ref=e9186]
+            - generic [ref=e9187]:
+              - heading "兒童與加床收費標準" [level=5] [ref=e9188]
+              - paragraph [ref=e9189]: 【提醒您】加床規定依房型而異，請查看各房型的人數限制瞭解詳細規定。
+              - paragraph [ref=e9190]: 歡迎兒童入住。
+            - generic [ref=e9191]:
+              - heading "其他規定" [level=5] [ref=e9192]
+              - list [ref=e9193]:
+                - listitem [ref=e9194]: 請注意：若單筆預訂超過五間客房，可能會需要遵守其他相關規定以及符合額外的要求。
+            - generic [ref=e9195]:
+              - heading "其他實用資訊" [level=4] [ref=e9199]
+              - generic [ref=e9202]:
+                - generic [ref=e9203]:
+                  - heading "入住與退房時間" [level=5] [ref=e9204]
+                  - list [ref=e9205]:
+                    - listitem [ref=e9206]:
+                      - generic [ref=e9208]:
+                        - img "[object Object]" [ref=e9209]:
+                          - generic [ref=e9210]: 
+                        - generic [ref=e9214]: "最早可辦理入住的時間: 14:00"
+                    - listitem [ref=e9215]:
+                      - generic [ref=e9217]:
+                        - img "[object Object]" [ref=e9218]:
+                          - generic [ref=e9219]: 
+                        - generic [ref=e9223]: "最晚可辦理退房的時間: 11:00"
+                    - listitem [ref=e9224]:
+                      - generic [ref=e9226]:
+                        - img "[object Object]" [ref=e9227]:
+                          - generic [ref=e9228]: 
+                        - generic [ref=e9232]: "前台服務時間至: 00:00"
+                - generic [ref=e9234]:
+                  - heading "交通資訊與服務" [level=5] [ref=e9235]
+                  - list [ref=e9236]:
+                    - listitem [ref=e9237]:
+                      - generic [ref=e9239]:
+                        - img "[object Object]" [ref=e9240]:
+                          - generic [ref=e9241]: 
+                        - generic [ref=e9245]: "到達機場時間（分鐘）: 60"
+                - generic [ref=e9247]:
+                  - heading "其他實用資訊" [level=5] [ref=e9248]
+                  - list [ref=e9249]:
+                    - listitem [ref=e9250]:
+                      - generic [ref=e9252]:
+                        - img "[object Object]" [ref=e9253]:
+                          - generic [ref=e9254]: 
+                        - generic [ref=e9258]: "早餐收費（適用未附早餐房價）: 5000 JPY"
+                - generic [ref=e9260]:
+                  - heading "住宿概況" [level=5] [ref=e9261]
+                  - list [ref=e9262]:
+                    - listitem [ref=e9263]:
+                      - generic [ref=e9265]:
+                        - img "[object Object]" [ref=e9266]:
+                          - generic [ref=e9267]: 
+                        - generic [ref=e9271]: "建築完工年份: 2015"
+                    - listitem [ref=e9272]:
+                      - generic [ref=e9274]:
+                        - img "[object Object]" [ref=e9275]:
+                          - generic [ref=e9276]: 
+                        - generic [ref=e9280]: "樓層總數: 30"
+                    - listitem [ref=e9281]:
+                      - generic [ref=e9283]:
+                        - img "[object Object]" [ref=e9284]:
+                          - generic [ref=e9285]: 
+                        - generic [ref=e9289]: "客房室內電壓: 100"
+                    - listitem [ref=e9290]:
+                      - generic [ref=e9292]:
+                        - img "[object Object]" [ref=e9293]:
+                          - generic [ref=e9294]: 
+                        - generic [ref=e9298]: "客房總數: 970"
+                    - listitem [ref=e9299]:
+                      - generic [ref=e9301]:
+                        - img "[object Object]" [ref=e9302]:
+                          - generic [ref=e9303]: 
+                        - generic [ref=e9307]: "禁菸房/禁菸樓層: yes"
+                    - listitem [ref=e9308]:
+                      - generic [ref=e9310]:
+                        - img "[object Object]" [ref=e9311]:
+                          - generic [ref=e9312]: 
+                        - generic [ref=e9316]: "餐廳總數: 15"
+                - generic [ref=e9318]:
+                  - heading "停車服務" [level=5] [ref=e9319]
+                  - list [ref=e9320]:
+                    - listitem [ref=e9321]:
+                      - generic [ref=e9323]:
+                        - img "[object Object]" [ref=e9324]:
+                          - generic [ref=e9325]: 
+                        - generic [ref=e9329]: "每日停車費: 2400 JPY"
+            - generic [ref=e9331]:
+              - heading "住宿公告" [level=4] [ref=e9335]
+              - paragraph [ref=e9338]: 於臨時期間，8樓的「Gojira Head」露台將暫停開放。
+              - paragraph [ref=e9339]:
+                - text: 【關於夜間本館大門上鎖】
+                - text: 本館自動門於凌晨0:00至早上6:00期間上鎖。
+                - text: 持有房卡之住客可將房卡感應於門旁感應器以開啟自動門。
+                - text: 如尚未辦理入住或需要協助，請使用對講機聯繫櫃檯人員。
+        - generic [ref=e9340]:
+          - generic [ref=e9343]:
+            - generic [ref=e9344]:
+              - heading "格拉斯麗新宿酒店的真實住客評鑑" [level=2] [ref=e9345]
+              - generic [ref=e9346]:
+                - button "看這間" [ref=e9348] [cursor=pointer]:
+                  - img [ref=e9349]
+                  - generic [ref=e9351]: 看這間
+                - tooltip "tooltip Agoda的每一篇住宿評鑑都是由真實住客在退房後才遞交上傳，我們堅持提供客觀公正的住宿評鑑，確保資訊的可靠性、可信度以及真實性，進而做為每個人的最佳訂房參考，幫助所有人能快速找到符合需求的住宿。" [ref=e9352]:
+                  - generic [ref=e9353]: tooltip
+                  - paragraph [ref=e9354]: Agoda的每一篇住宿評鑑都是由真實住客在退房後才遞交上傳，我們堅持提供客觀公正的住宿評鑑，確保資訊的可靠性、可信度以及真實性，進而做為每個人的最佳訂房參考，幫助所有人能快速找到符合需求的住宿。
+            - generic [ref=e9355]:
+              - paragraph [ref=e9356]: 最佳訂房攻略，來自旅人真心話｜
+              - generic [ref=e9357]:
+                - img "Agoda logo"
+          - generic [ref=e9358]:
+            - generic:
+              - button [disabled]:
+                - img
+            - tablist "評鑑" [ref=e9359]:
+              - tab "AGODA評鑑 (28,334)" [selected] [ref=e9361] [cursor=pointer]:
+                - paragraph [ref=e9362]: AGODA評鑑 (28,334)
+              - tab "BOOKING.COM評鑑 (11,770)" [ref=e9365] [cursor=pointer]:
+                - paragraph [ref=e9366]: BOOKING.COM評鑑 (11,770)
+              - tab "其他評鑑（3,673）" [ref=e9368] [cursor=pointer]:
+                - paragraph [ref=e9369]: 其他評鑑（3,673）
+            - generic:
+              - button [disabled]:
+                - img
+          - tabpanel "AGODA評鑑 (28,334)" [ref=e9370]:
+            - generic [ref=e9371]:
+              - generic [ref=e9373]:
+                - generic [ref=e9375]:
+                  - generic [ref=e9378]:
+                    - generic [ref=e9379]: 
+                    - generic [ref=e9381]: "8.7"
+                  - generic [ref=e9382]:
+                    - generic [ref=e9383]:
+                      - paragraph [ref=e9384]: 很讚
+                      - generic [ref=e9385]:
+                        - button "更多評分說明" [ref=e9387] [cursor=pointer]:
+                          - img [ref=e9388]
+                        - generic [ref=e9392]:
+                          - heading "近期評分趨勢" [level=3] [ref=e9393]
+                          - paragraph [ref=e9394]: 住宿最新10筆已認證評鑑的評分
+                          - list [ref=e9395]:
+                            - listitem [ref=e9396]:
+                              - generic [ref=e9398]: "5.2"
+                            - listitem [ref=e9399]:
+                              - generic [ref=e9401]: "6.8"
+                            - listitem [ref=e9402]:
+                              - generic [ref=e9404]: "8.0"
+                            - listitem [ref=e9405]:
+                              - generic [ref=e9407]: "7.2"
+                            - listitem [ref=e9408]:
+                              - generic [ref=e9410]: "8.8"
+                            - listitem [ref=e9411]:
+                              - generic [ref=e9413]: "9.2"
+                            - listitem [ref=e9414]:
+                              - generic [ref=e9416]: "10"
+                            - listitem [ref=e9417]:
+                              - generic [ref=e9419]: "9.2"
+                            - listitem [ref=e9420]:
+                              - generic [ref=e9422]: "8.4"
+                            - listitem [ref=e9423]:
+                              - generic [ref=e9425]: "8.0"
+                          - generic [ref=e9426]:
+                            - img [ref=e9429]
+                            - paragraph [ref=e9432]: 最新
+                    - generic [ref=e9433]:
+                      - img [ref=e9434]
+                      - link "得分自 28,334 篇評鑑" [ref=e9437] [cursor=pointer]:
+                        - /url: /zh-tw/hotel-gracery-shinjuku/reviews/tokyo-jp.html?adults=2&children=0&rooms=1&checkIn=2026-06-25&los=3&currencyCode=TWD&ds=ryYvC8WdNnqtXp32
+                        - generic [ref=e9438]: 得分自 28,334 篇評鑑
+                - generic [ref=e9439]:
+                  - list [ref=e9441]:
+                    - listitem [ref=e9442]:
+                      - progressbar "位置得分9.2分（滿分10），且在東京表現高分" [ref=e9443]
+                      - status [ref=e9444]: 位置得分9.2分（滿分10），且在東京表現高分
+                      - generic [ref=e9445]:
+                        - generic [ref=e9446]: 位置
+                        - generic [ref=e9447]: "9.2"
+                    - listitem [ref=e9448]:
+                      - progressbar "整體狀況及整潔度得分8.9分（滿分10），且在東京表現高分" [ref=e9449]
+                      - status [ref=e9450]: 整體狀況及整潔度得分8.9分（滿分10），且在東京表現高分
+                      - generic [ref=e9451]:
+                        - generic [ref=e9452]: 整體狀況及整潔度
+                        - generic [ref=e9453]: "8.9"
+                    - listitem [ref=e9454]:
+                      - progressbar "服務得分8.9分（滿分10），且在東京表現高分" [ref=e9455]
+                      - status [ref=e9456]: 服務得分8.9分（滿分10），且在東京表現高分
+                      - generic [ref=e9457]:
+                        - generic [ref=e9458]: 服務
+                        - generic [ref=e9459]: "8.9"
+                    - listitem [ref=e9460]:
+                      - progressbar "設施與設備得分8.5分（滿分10），且在東京表現高分" [ref=e9461]
+                      - status [ref=e9462]: 設施與設備得分8.5分（滿分10），且在東京表現高分
+                      - generic [ref=e9463]:
+                        - generic [ref=e9464]: 設施與設備
+                        - generic [ref=e9465]: "8.5"
+                    - listitem [ref=e9466]:
+                      - progressbar "客房舒適度得分8.5分（滿分10），且在東京表現高分" [ref=e9467]
+                      - status [ref=e9468]: 客房舒適度得分8.5分（滿分10），且在東京表現高分
+                      - generic [ref=e9469]:
+                        - generic [ref=e9470]: 客房舒適度
+                        - generic [ref=e9471]: "8.5"
+                    - listitem [ref=e9472]:
+                      - progressbar "CP值得分8.4分（滿分10），且在東京表現高分" [ref=e9473]
+                      - status [ref=e9474]: CP值得分8.4分（滿分10），且在東京表現高分
+                      - generic [ref=e9475]:
+                        - generic [ref=e9476]: CP值
+                        - generic [ref=e9477]: "8.4"
+                  - generic [ref=e9478]:
+                    - img "東京住宿中高分組" [ref=e9479]
+                    - generic [ref=e9480]: 東京住宿中高分組
+                - region "按評分篩選評鑑" [ref=e9481]:
+                  - generic [ref=e9484]:
+                    - heading "評分" [level=3] [ref=e9485]
+                    - group [ref=e9486]:
+                      - generic [ref=e9487] [cursor=pointer]:
+                        - checkbox "得分9+（超棒） (5,186)" [ref=e9490]
+                        - generic [ref=e9491]: 得分9+（超棒） (5,186)
+                      - generic [ref=e9492] [cursor=pointer]:
+                        - checkbox "得分8-9（很讚） (2,009)" [ref=e9495]
+                        - generic [ref=e9496]: 得分8-9（很讚） (2,009)
+                      - generic [ref=e9497] [cursor=pointer]:
+                        - checkbox "得分7-8（很好） (1,951)" [ref=e9500]
+                        - generic [ref=e9501]: 得分7-8（很好） (1,951)
+                      - generic [ref=e9502] [cursor=pointer]:
+                        - checkbox "得分6-7（不錯喔） (430)" [ref=e9505]
+                        - generic [ref=e9506]: 得分6-7（不錯喔） (430)
+                      - generic [ref=e9507] [cursor=pointer]:
+                        - checkbox "得分<6（低於預期） (573)" [ref=e9510]
+                        - generic [ref=e9511]: 得分<6（低於預期） (573)
+              - generic [ref=e9512]:
+                - generic [ref=e9513]:
+                  - heading "評鑑內容" [level=3] [ref=e9514]
+                  - paragraph [ref=e9515]: 由OpenAI提供
+                - generic [ref=e9517]:
+                  - generic [ref=e9518]:
+                    - generic [ref=e9519]:
+                      - img "值得推薦" [ref=e9520]
+                      - paragraph [ref=e9522]: 這家酒店位於新宿車站和購物中心附近，員工以出色的服務聞名，包括行李寄存協助。舒適的客房配有乾淨的浴室和舒適的床，提供日式和西式早餐選擇。客人還可享受免費Wi-Fi和可負擔得起的洗衣設施。酒店距離地鐵站僅有五分鐘的步行路程，是探索城市的理想基地。
+                    - generic [ref=e9523]:
+                      - img "有待改進" [ref=e9524]
+                      - paragraph [ref=e9526]: 房間很小，如同東京酒店的慣例，被各種客人所注意。
+                  - generic [ref=e9527]:
+                    - paragraph [ref=e9528]: 您覺得此評論摘要有幫助嗎？
+                    - group "您覺得此評論摘要有幫助嗎？" [ref=e9529]:
+                      - button "是" [ref=e9530] [cursor=pointer]:
+                        - generic [ref=e9531]: 是
+                      - separator [ref=e9533]
+                      - button "否" [ref=e9534] [cursor=pointer]:
+                        - generic [ref=e9535]: 否
+              - generic [ref=e9536]:
+                - region "按類型篩選評鑑" [ref=e9537]:
+                  - generic [ref=e9540]:
+                    - group "住客類型" [ref=e9541]:
+                      - generic: 住客類型
+                    - generic [ref=e9542]:
+                      - generic [ref=e9543]:
+                        - generic:
+                          - paragraph: 住客類型
+                        - combobox "住客類型" [ref=e9545]:
+                          - option "所有住宿評鑑 (28,334)" [selected]
+                          - option "商務旅客 (1,126)"
+                          - option "情侶/夫妻 (12,355)"
+                          - option "單人旅遊 (4,236)"
+                          - option "家庭(嬰幼兒隨行) (1,725)"
+                          - option "家庭(未成年兒童隨行) (1,916)"
+                          - option "團體旅客 (3,277)"
+                      - generic:
+                        - img
+                  - generic [ref=e9548]:
+                    - group "房型" [ref=e9549]:
+                      - generic: 房型
+                    - generic [ref=e9550]:
+                      - generic [ref=e9551]:
+                        - generic:
+                          - paragraph: 房型
+                        - combobox "房型" [ref=e9553]:
+                          - option "所有房型" [selected]
+                          - option "標準雙人房－禁菸"
+                          - option "雙床房－禁菸"
+                          - option "三人房－禁菸"
+                          - option "高級雙人間- 禁煙"
+                          - option "豪華雙床間- 禁煙"
+                          - option "標準房(兩床/最高樓層/哥吉拉樓層)"
+                          - option "標準雙人房(最高樓層/哥吉拉樓層)"
+                          - option "三人房(最高樓層/哥吉拉樓層)"
+                          - option "標準雙人房 - 禁菸/可使用Lounge"
+                          - option "標準房 (兩床) - 禁菸/可使用Lounge"
+                      - generic:
+                        - img
+                  - generic [ref=e9556]:
+                    - group "語言" [ref=e9557]:
+                      - generic: 語言
+                    - generic [ref=e9558]:
+                      - generic [ref=e9559]:
+                        - generic:
+                          - paragraph: Select your country
+                        - combobox "Select your country" [ref=e9561]:
+                          - option "Select your country"
+                          - option "所有語言" [selected]
+                          - option "English"
+                          - option "繁體中文 (香港)"
+                          - option "한국어"
+                          - option "繁體中文 (台灣)"
+                          - option "日本語"
+                          - option "ภาษาไทย"
+                          - option "English / United Kingdom"
+                          - option "עברית"
+                          - option "English / Australia"
+                          - option "Français"
+                          - option "Español"
+                          - option "Tiếng Việt"
+                          - option "English / Canada"
+                          - option "Deutsch"
+                          - option "Nederlands"
+                          - option "Svenska"
+                          - option "Português (PT)"
+                          - option "Español / México"
+                          - option "Norsk"
+                          - option "Dansk"
+                          - option "Türkçe"
+                          - option "English / New Zealand"
+                          - option "Język polski"
+                          - option "Ελληνικά"
+                      - generic:
+                        - img
+                - generic "按關鍵字篩選評鑑" [ref=e9562]:
+                  - heading "依關鍵字篩選評鑑：" [level=3] [ref=e9564]
+                  - generic [ref=e9566]:
+                    - button "All Reviews, Mentioned in 0 reviews" [pressed] [ref=e9569] [cursor=pointer]:
+                      - generic [ref=e9571]: All Reviews
+                    - generic [ref=e9573]:
+                      - button "位置, Mentioned in 1,398 reviews" [ref=e9576] [cursor=pointer]:
+                        - img [ref=e9577]
+                        - generic [ref=e9580]: 位置 (1,398)
+                      - generic [ref=e9582]:
+                        - paragraph [ref=e9583]: 位置
+                        - generic [ref=e9584]: Mentioned in 1,398 reviews
+                        - generic [ref=e9585]:
+                          - generic [ref=e9586]:
+                            - progressbar "sentiment-positive-indicator" [ref=e9587]
+                            - status [ref=e9588]: sentiment-positive-indicator
+                            - generic [ref=e9589]:
+                              - img [ref=e9590]
+                              - generic [ref=e9592]: 91% Positive
+                          - generic [ref=e9593]:
+                            - progressbar "sentiment-negative-indicator" [ref=e9594]
+                            - status [ref=e9595]: sentiment-negative-indicator
+                            - generic [ref=e9596]:
+                              - img [ref=e9597]
+                              - generic [ref=e9599]: 8% Unfavourable
+                    - generic [ref=e9601]:
+                      - button "客房面積, Mentioned in 643 reviews" [ref=e9604] [cursor=pointer]:
+                        - generic [ref=e9606]: 客房面積 (643)
+                      - generic [ref=e9608]:
+                        - paragraph [ref=e9609]: 客房面積
+                        - generic [ref=e9610]: Mentioned in 643 reviews
+                        - generic [ref=e9611]:
+                          - generic [ref=e9612]:
+                            - progressbar "sentiment-positive-indicator" [ref=e9613]
+                            - status [ref=e9614]: sentiment-positive-indicator
+                            - generic [ref=e9615]:
+                              - img [ref=e9616]
+                              - generic [ref=e9618]: 28% Positive
+                          - generic [ref=e9619]:
+                            - progressbar "sentiment-negative-indicator" [ref=e9620]
+                            - status [ref=e9621]: sentiment-negative-indicator
+                            - generic [ref=e9622]:
+                              - img [ref=e9623]
+                              - generic [ref=e9625]: 71% Unfavourable
+                    - generic [ref=e9627]:
+                      - button "整潔度, Mentioned in 621 reviews" [ref=e9630] [cursor=pointer]:
+                        - img [ref=e9631]
+                        - generic [ref=e9634]: 整潔度 (621)
+                      - generic [ref=e9636]:
+                        - paragraph [ref=e9637]: 整潔度
+                        - generic [ref=e9638]: Mentioned in 621 reviews
+                        - generic [ref=e9639]:
+                          - generic [ref=e9640]:
+                            - progressbar "sentiment-positive-indicator" [ref=e9641]
+                            - status [ref=e9642]: sentiment-positive-indicator
+                            - generic [ref=e9643]:
+                              - img [ref=e9644]
+                              - generic [ref=e9646]: 79% Positive
+                          - generic [ref=e9647]:
+                            - progressbar "sentiment-negative-indicator" [ref=e9648]
+                            - status [ref=e9649]: sentiment-negative-indicator
+                            - generic [ref=e9650]:
+                              - img [ref=e9651]
+                              - generic [ref=e9653]: 20% Unfavourable
+                    - generic [ref=e9655]:
+                      - button "服務, Mentioned in 553 reviews" [ref=e9658] [cursor=pointer]:
+                        - img [ref=e9659]
+                        - generic [ref=e9662]: 服務 (553)
+                      - generic [ref=e9664]:
+                        - paragraph [ref=e9665]: 服務
+                        - generic [ref=e9666]: Mentioned in 553 reviews
+                        - generic [ref=e9667]:
+                          - generic [ref=e9668]:
+                            - progressbar "sentiment-positive-indicator" [ref=e9669]
+                            - status [ref=e9670]: sentiment-positive-indicator
+                            - generic [ref=e9671]:
+                              - img [ref=e9672]
+                              - generic [ref=e9674]: 80% Positive
+                          - generic [ref=e9675]:
+                            - progressbar "sentiment-negative-indicator" [ref=e9676]
+                            - status [ref=e9677]: sentiment-negative-indicator
+                            - generic [ref=e9678]:
+                              - img [ref=e9679]
+                              - generic [ref=e9681]: 19% Unfavourable
+                    - generic [ref=e9683]:
+                      - button "衛浴, Mentioned in 287 reviews" [ref=e9686] [cursor=pointer]:
+                        - img [ref=e9687]
+                        - generic [ref=e9690]: 衛浴 (287)
+                      - generic [ref=e9692]:
+                        - paragraph [ref=e9693]: 衛浴
+                        - generic [ref=e9694]: Mentioned in 287 reviews
+                        - generic [ref=e9695]:
+                          - generic [ref=e9696]:
+                            - progressbar "sentiment-positive-indicator" [ref=e9697]
+                            - status [ref=e9698]: sentiment-positive-indicator
+                            - generic [ref=e9699]:
+                              - img [ref=e9700]
+                              - generic [ref=e9702]: 90% Positive
+                          - generic [ref=e9703]:
+                            - progressbar "sentiment-negative-indicator" [ref=e9704]
+                            - status [ref=e9705]: sentiment-negative-indicator
+                            - generic [ref=e9706]:
+                              - img [ref=e9707]
+                              - generic [ref=e9709]: 9% Unfavourable
+                    - generic [ref=e9711]:
+                      - button "客房舒適度, Mentioned in 197 reviews" [ref=e9714] [cursor=pointer]:
+                        - generic [ref=e9716]: 客房舒適度 (197)
+                      - generic [ref=e9718]:
+                        - paragraph [ref=e9719]: 客房舒適度
+                        - generic [ref=e9720]: Mentioned in 197 reviews
+                        - generic [ref=e9721]:
+                          - generic [ref=e9722]:
+                            - progressbar "sentiment-positive-indicator" [ref=e9723]
+                            - status [ref=e9724]: sentiment-positive-indicator
+                            - generic [ref=e9725]:
+                              - img [ref=e9726]
+                              - generic [ref=e9728]: 72% Positive
+                          - generic [ref=e9729]:
+                            - progressbar "sentiment-negative-indicator" [ref=e9730]
+                            - status [ref=e9731]: sentiment-negative-indicator
+                            - generic [ref=e9732]:
+                              - img [ref=e9733]
+                              - generic [ref=e9735]: 27% Unfavourable
+                    - generic [ref=e9737]:
+                      - button "CP值, Mentioned in 175 reviews" [ref=e9740] [cursor=pointer]:
+                        - generic [ref=e9742]: CP值 (175)
+                      - generic [ref=e9744]:
+                        - paragraph [ref=e9745]: CP值
+                        - generic [ref=e9746]: Mentioned in 175 reviews
+                        - generic [ref=e9747]:
+                          - generic [ref=e9748]:
+                            - progressbar "sentiment-positive-indicator" [ref=e9749]
+                            - status [ref=e9750]: sentiment-positive-indicator
+                            - generic [ref=e9751]:
+                              - img [ref=e9752]
+                              - generic [ref=e9754]: 59% Positive
+                          - generic [ref=e9755]:
+                            - progressbar "sentiment-negative-indicator" [ref=e9756]
+                            - status [ref=e9757]: sentiment-negative-indicator
+                            - generic [ref=e9758]:
+                              - img [ref=e9759]
+                              - generic [ref=e9761]: 40% Unfavourable
+                    - generic [ref=e9763]:
+                      - button "夜生活, Mentioned in 130 reviews" [ref=e9766] [cursor=pointer]:
+                        - generic [ref=e9768]: 夜生活 (130)
+                      - generic [ref=e9770]:
+                        - paragraph [ref=e9771]: 夜生活
+                        - generic [ref=e9772]: Mentioned in 130 reviews
+                        - generic [ref=e9773]:
+                          - generic [ref=e9774]:
+                            - progressbar "sentiment-positive-indicator" [ref=e9775]
+                            - status [ref=e9776]: sentiment-positive-indicator
+                            - generic [ref=e9777]:
+                              - img [ref=e9778]
+                              - generic [ref=e9780]: 74% Positive
+                          - generic [ref=e9781]:
+                            - progressbar "sentiment-negative-indicator" [ref=e9782]
+                            - status [ref=e9783]: sentiment-negative-indicator
+                            - generic [ref=e9784]:
+                              - img [ref=e9785]
+                              - generic [ref=e9787]: 25% Unfavourable
+                    - generic [ref=e9789]:
+                      - button "入住, Mentioned in 129 reviews" [ref=e9792] [cursor=pointer]:
+                        - generic [ref=e9794]: 入住 (129)
+                      - generic [ref=e9796]:
+                        - paragraph [ref=e9797]: 入住
+                        - generic [ref=e9798]: Mentioned in 129 reviews
+                        - generic [ref=e9799]:
+                          - generic [ref=e9800]:
+                            - progressbar "sentiment-positive-indicator" [ref=e9801]
+                            - status [ref=e9802]: sentiment-positive-indicator
+                            - generic [ref=e9803]:
+                              - img [ref=e9804]
+                              - generic [ref=e9806]: 67% Positive
+                          - generic [ref=e9807]:
+                            - progressbar "sentiment-negative-indicator" [ref=e9808]
+                            - status [ref=e9809]: sentiment-negative-indicator
+                            - generic [ref=e9810]:
+                              - img [ref=e9811]
+                              - generic [ref=e9813]: 32% Unfavourable
+                    - button "+ 11 more" [ref=e9815] [cursor=pointer]:
+                      - generic [ref=e9817]: + 11 more
+                - generic [ref=e9818]:
+                  - generic [ref=e9819]: 共10,148篇真實住客評價
+                  - generic [ref=e9820]:
+                    - generic [ref=e9821]: 自訂排序
+                    - combobox "自訂排序" [ref=e9822]:
+                      - option "最新評鑑"
+                      - option "評分(由高至低)"
+                      - option "評分(由低至高)"
+                      - option "最有參考價值" [selected]
+            - generic [ref=e9824]:
+              - navigation "評鑑分頁" [ref=e9825]:
+                - list [ref=e9826]:
+                  - listitem [ref=e9827]:
+                    - button "評鑑上一頁" [disabled] [ref=e9828]:
+                      - img [ref=e9829]
+                  - listitem [ref=e9831]:
+                    - button "評鑑頁面 1" [disabled] [ref=e9832] [cursor=pointer]:
+                      - paragraph [ref=e9833]: "1"
+                  - listitem [ref=e9834]:
+                    - button "前往評鑑頁面 2" [ref=e9835] [cursor=pointer]:
+                      - paragraph [ref=e9836]: "2"
+                  - listitem [ref=e9837]:
+                    - button "前往評鑑頁面 3" [ref=e9838] [cursor=pointer]:
+                      - paragraph [ref=e9839]: "3"
+                  - listitem [ref=e9840]:
+                    - button "前往評鑑頁面 4" [ref=e9841] [cursor=pointer]:
+                      - paragraph [ref=e9842]: "4"
+                  - listitem [ref=e9843]:
+                    - button "前往評鑑頁面 5" [ref=e9844] [cursor=pointer]:
+                      - paragraph [ref=e9845]: "5"
+                  - listitem [ref=e9846]:
+                    - button "往前跳幾頁" [ref=e9847] [cursor=pointer]:
+                      - img [ref=e9848]
+                  - listitem [ref=e9850]:
+                    - button "前往評鑑頁面 2030" [ref=e9851] [cursor=pointer]:
+                      - paragraph [ref=e9852]: "2030"
+                  - listitem [ref=e9853]:
+                    - button "評鑑下一頁" [ref=e9854] [cursor=pointer]:
+                      - img [ref=e9855]
+              - generic [ref=e9857]: 已更改評鑑頁面 1
+            - list [ref=e9858]:
+              - listitem [ref=e9859]:
+                - group "查看評論" [ref=e9860]:
+                  - generic [ref=e9862]:
+                    - generic [ref=e9863]:
+                      - generic [ref=e9864]: "10.0"
+                      - generic [ref=e9865]: 超棒
+                    - generic [ref=e9866]:
+                      - strong [ref=e9868]: Yu-Wen
+                      - text: （來自台灣）
+                    - generic [ref=e9869]:
+                      - generic [ref=e9870]: 
+                      - text: 家庭(未成年兒童隨行)
+                    - generic [ref=e9871]:
+                      - generic [ref=e9872]: 
+                      - text: 標準雙人房－禁菸
+                    - generic [ref=e9873]:
+                      - generic [ref=e9874]: 
+                      - text: 入住4晚（2026年1月）
+                  - generic [ref=e9875]:
+                    - generic [ref=e9876]:
+                      - generic [ref=e9877]:
+                        - heading "“超棒”" [level=4] [ref=e9878]
+                        - paragraph [ref=e9879]: 地理位置非常好，位於交通樞紐處，附近吃宵夜和逛街去搭車都很方便。 早餐可依各人需求購買餐券，7-11、family mart和Lawson都在走路5分鐘之內。 雙人房要注意靠窗位置會有出風口吹到窗簾再往下吹到床上，2大1小擠一張雙人床會稍嫌不舒適。
+                        - button "User generated content image 1" [ref=e9881] [cursor=pointer]:
+                          - img "User generated content image 1" [ref=e9882]
+                      - generic [ref=e9885]: 評鑑日期：2026年2月1日
+                    - generic [ref=e9887]:
+                      - text: 你覺得這篇評鑑是否有參考價值？
+                      - generic [ref=e9888]:
+                        - button "Yu-Wen, 評鑑日期：2026年2月1日 你覺得這篇評鑑是否有參考價值？ 有" [ref=e9889] [cursor=pointer]: 有
+                        - text: "|"
+                        - button "Yu-Wen, 評鑑日期：2026年2月1日 你覺得這篇評鑑是否有參考價值？ 沒有" [ref=e9890] [cursor=pointer]: 沒有
+              - listitem [ref=e9891]:
+                - group "查看評論" [ref=e9892]:
+                  - generic [ref=e9894]:
+                    - generic [ref=e9895]:
+                      - generic [ref=e9896]: "10.0"
+                      - generic [ref=e9897]: 超棒
+                    - generic [ref=e9898]:
+                      - strong [ref=e9900]: 萱
+                      - text: （來自台灣）
+                    - generic [ref=e9901]:
+                      - generic [ref=e9902]: 
+                      - text: 雙人同行
+                    - generic [ref=e9903]:
+                      - generic [ref=e9904]: 
+                      - text: 豪華雙床間- 禁煙
+                    - generic [ref=e9905]:
+                      - generic [ref=e9906]: 
+                      - text: 入住5晚（2025年2月）
+                  - generic [ref=e9907]:
+                    - generic [ref=e9908]:
+                      - generic [ref=e9909]:
+                        - heading "“乾淨 友善 熱鬧”" [level=4] [ref=e9910]
+                        - paragraph [ref=e9911]: 豪華雙床房，乾淨又大間隔音也不錯，行李箱29寸2個打開還有很大的空間，甚至在開一個26寸也不是問題～床也很乾淨很舒服，單人床也很大張，一個人睡很棒，不管情侶夫妻，一人睡一張床互不干擾，非常棒的，飯店大廳在8樓，一下樓就什麼都有，便利商店(羅森、7-11)吃的玩的也都非常多，很熱鬧，但缺點就是晚上的人比較多樣，什麼人都有，有帶小朋友或是比較保守一點的長輩要多注意一下。下次再去新宿會在選擇哥吉拉飯店。
+                      - generic [ref=e9914]: 評鑑日期：2025年2月25日
+                    - generic [ref=e9916]:
+                      - text: 你覺得這篇評鑑是否有參考價值？
+                      - generic [ref=e9917]:
+                        - button "萱, 評鑑日期：2025年2月25日 你覺得這篇評鑑是否有參考價值？ 有" [ref=e9918] [cursor=pointer]: 有
+                        - text: "|"
+                        - button "萱, 評鑑日期：2025年2月25日 你覺得這篇評鑑是否有參考價值？ 沒有" [ref=e9919] [cursor=pointer]: 沒有
+              - listitem [ref=e9920]:
+                - group "查看評論" [ref=e9921]:
+                  - generic [ref=e9923]:
+                    - generic [ref=e9924]:
+                      - generic [ref=e9925]: "10.0"
+                      - generic [ref=e9926]: 超棒
+                    - generic [ref=e9927]:
+                      - strong [ref=e9929]: Ting
+                      - text: （來自台灣）
+                    - generic [ref=e9930]:
+                      - generic [ref=e9931]: 
+                      - text: 雙人同行
+                    - generic [ref=e9932]:
+                      - generic [ref=e9933]: 
+                      - text: 標準雙人房－禁菸
+                    - generic [ref=e9934]:
+                      - generic [ref=e9935]: 
+                      - text: 入住1晚（2024年12月）
+                  - generic [ref=e9936]:
+                    - generic [ref=e9937]:
+                      - generic [ref=e9938]:
+                        - heading "“乾淨舒適，高樓層風景很棒！備品很用心”" [level=4] [ref=e9939]
+                        - paragraph [ref=e9940]: 原本看到評價很擔心房間很小、髒亂，結果25、29行李箱都能打開，浴室很大、浴缸也很適合泡澡，服務人員很親切，喜歡哥吉拉的朋友一定要來朝聖！唯一小缺點是從車站推行李箱過來有點累😆
+                      - generic [ref=e9943]: 評鑑日期：2024年12月21日
+                    - generic [ref=e9945]:
+                      - text: 1位旅人覺得這篇評鑑有參考價值，你怎麼看？
+                      - generic [ref=e9946]:
+                        - button "Ting, 評鑑日期：2024年12月21日 你覺得這篇評鑑是否有參考價值？ 有" [ref=e9947] [cursor=pointer]: 有
+                        - text: "|"
+                        - button "Ting, 評鑑日期：2024年12月21日 你覺得這篇評鑑是否有參考價值？ 沒有" [ref=e9948] [cursor=pointer]: 沒有
+              - listitem [ref=e9949]:
+                - group "查看評論" [ref=e9950]:
+                  - generic [ref=e9952]:
+                    - generic [ref=e9953]:
+                      - generic [ref=e9954]: "10.0"
+                      - generic [ref=e9955]: 超棒
+                    - generic [ref=e9956]:
+                      - strong [ref=e9958]: 建璋
+                      - text: （來自台灣）
+                    - generic [ref=e9959]:
+                      - generic [ref=e9960]: 
+                      - text: 單人旅遊
+                    - generic [ref=e9961]:
+                      - generic [ref=e9962]: 
+                      - text: 雙床房－禁菸
+                    - generic [ref=e9963]:
+                      - generic [ref=e9964]: 
+                      - text: 入住2晚（2024年10月）
+                  - generic [ref=e9965]:
+                    - generic [ref=e9966]:
+                      - generic [ref=e9967]:
+                        - heading "“超棒”" [level=4] [ref=e9968]
+                        - paragraph [ref=e9969]: 飯店地點就在新宿歌舞妓町內,距離新宿車站不遠,旁邊有很多餐廳,晚上11點以後周圍環境是亂了點,但飯店是在8樓以上,隔音也很好 不會吵鬧,整體住宿體驗很好,房間在東京算大的,環境很乾淨,早餐的品項多,而且可以選擇二個時段用餐。
+                      - generic [ref=e9972]: 評鑑日期：2024年10月31日
+                    - generic [ref=e9974]:
+                      - text: 你覺得這篇評鑑是否有參考價值？
+                      - generic [ref=e9975]:
+                        - button "建璋, 評鑑日期：2024年10月31日 你覺得這篇評鑑是否有參考價值？ 有" [ref=e9976] [cursor=pointer]: 有
+                        - text: "|"
+                        - button "建璋, 評鑑日期：2024年10月31日 你覺得這篇評鑑是否有參考價值？ 沒有" [ref=e9977] [cursor=pointer]: 沒有
+              - listitem [ref=e9978]:
+                - group "查看評論" [ref=e9979]:
+                  - generic [ref=e9981]:
+                    - generic [ref=e9982]:
+                      - generic [ref=e9983]: "8.0"
+                      - generic [ref=e9984]: 很讚
+                    - generic [ref=e9985]:
+                      - strong [ref=e9987]: Wei-ti
+                      - text: （來自台灣）
+                    - generic [ref=e9988]:
+                      - generic [ref=e9989]: 
+                      - text: 雙人同行
+                    - generic [ref=e9990]:
+                      - generic [ref=e9991]: 
+                      - text: 雙床房－禁菸
+                    - generic [ref=e9992]:
+                      - generic [ref=e9993]: 
+                      - text: 入住5晚（2026年3月）
+                  - generic [ref=e9994]:
+                    - generic [ref=e9995]:
+                      - generic [ref=e9996]:
+                        - heading "“空間蠻大的，房內裝潢照明比較昏暗”" [level=4] [ref=e9997]
+                        - paragraph [ref=e9998]: 空間蠻大，燈光比較昏暗，房內裝潢有點年代感，可能因為很多深色木作，窗簾上下拉開有點問題，地點很熱鬧，但是晚上如果單身女性會需要多注意一點，因為比起銀座區，這裡晚上有些好像是在拉客人的店家！
+                      - generic [ref=e10001]: 評鑑日期：2026年3月14日
+                    - generic [ref=e10003]:
+                      - text: 你覺得這篇評鑑是否有參考價值？
+                      - generic [ref=e10004]:
+                        - button "Wei-ti, 評鑑日期：2026年3月14日 你覺得這篇評鑑是否有參考價值？ 有" [ref=e10005] [cursor=pointer]: 有
+                        - text: "|"
+                        - button "Wei-ti, 評鑑日期：2026年3月14日 你覺得這篇評鑑是否有參考價值？ 沒有" [ref=e10006] [cursor=pointer]: 沒有
+            - generic [ref=e10008]:
+              - navigation "評鑑分頁" [ref=e10009]:
+                - list [ref=e10010]:
+                  - listitem [ref=e10011]:
+                    - button "評鑑上一頁" [disabled] [ref=e10012]:
+                      - img [ref=e10013]
+                  - listitem [ref=e10015]:
+                    - button "評鑑頁面 1" [disabled] [ref=e10016] [cursor=pointer]:
+                      - paragraph [ref=e10017]: "1"
+                  - listitem [ref=e10018]:
+                    - button "前往評鑑頁面 2" [ref=e10019] [cursor=pointer]:
+                      - paragraph [ref=e10020]: "2"
+                  - listitem [ref=e10021]:
+                    - button "前往評鑑頁面 3" [ref=e10022] [cursor=pointer]:
+                      - paragraph [ref=e10023]: "3"
+                  - listitem [ref=e10024]:
+                    - button "前往評鑑頁面 4" [ref=e10025] [cursor=pointer]:
+                      - paragraph [ref=e10026]: "4"
+                  - listitem [ref=e10027]:
+                    - button "前往評鑑頁面 5" [ref=e10028] [cursor=pointer]:
+                      - paragraph [ref=e10029]: "5"
+                  - listitem [ref=e10030]:
+                    - button "往前跳幾頁" [ref=e10031] [cursor=pointer]:
+                      - img [ref=e10032]
+                  - listitem [ref=e10034]:
+                    - button "前往評鑑頁面 2030" [ref=e10035] [cursor=pointer]:
+                      - paragraph [ref=e10036]: "2030"
+                  - listitem [ref=e10037]:
+                    - button "評鑑下一頁" [ref=e10038] [cursor=pointer]:
+                      - img [ref=e10039]
+              - generic [ref=e10041]: 已更改評鑑頁面 1
+      - region "優惠" [ref=e10043]:
+        - heading "千金難買早知道，訂房要快別遲到！" [level=2] [ref=e10044]
+        - generic [ref=e10045]:
+          - generic [ref=e10046]:
+            - link "返回搜尋結果" [ref=e10047] [cursor=pointer]:
+              - /url: /zh-tw/search?cid=-1&aid=130243&city=5085&checkIn=2026-06-25T00%3A00%3A00&checkOut=2026-06-28T00%3A00%3A00&los=3&rooms=1&adults=2&children=0&travellerType=-1&selectedproperty=706347&utm_medium=&utm_source=&utm_campaign=&utm_content=&utm_term=
+              - generic [ref=e10048]: 返回搜尋結果
+            - separator [ref=e10049]
+          - button "關閉" [ref=e10050] [cursor=pointer]:
+            - generic [ref=e10052]: 關閉
+    - generic [ref=e10060]:
+      - heading "熱門景點" [level=2] [ref=e10062]
+      - complementary [ref=e10064]:
+        - article [ref=e10065]:
+          - list [ref=e10066]:
+            - listitem [ref=e10067]:
+              - link "台灣" [ref=e10069] [cursor=pointer]:
+                - /url: /zh-tw/country/taiwan.html
+                - heading "台灣" [level=4] [ref=e10071]
+            - listitem [ref=e10072]:
+              - link "中國香港" [ref=e10074] [cursor=pointer]:
+                - /url: /zh-tw/country/hong-kong-sar-china.html
+                - heading "中國香港" [level=4] [ref=e10076]
+            - listitem [ref=e10077]:
+              - link "中國" [ref=e10079] [cursor=pointer]:
+                - /url: /zh-tw/country/china.html
+                - heading "中國" [level=4] [ref=e10081]
+            - listitem [ref=e10082]:
+              - link "越南" [ref=e10084] [cursor=pointer]:
+                - /url: /zh-tw/country/vietnam.html
+                - heading "越南" [level=4] [ref=e10086]
+            - listitem [ref=e10087]:
+              - link "美國" [ref=e10089] [cursor=pointer]:
+                - /url: /zh-tw/country/united-states.html
+                - heading "美國" [level=4] [ref=e10091]
+            - listitem [ref=e10092]:
+              - link "泰國" [ref=e10094] [cursor=pointer]:
+                - /url: /zh-tw/country/thailand.html
+                - heading "泰國" [level=4] [ref=e10096]
+            - listitem [ref=e10097]:
+              - link "馬來西亞" [ref=e10099] [cursor=pointer]:
+                - /url: /zh-tw/country/malaysia.html
+                - heading "馬來西亞" [level=4] [ref=e10101]
+            - listitem [ref=e10102]:
+              - link "澳洲" [ref=e10104] [cursor=pointer]:
+                - /url: /zh-tw/country/australia.html
+                - heading "澳洲" [level=4] [ref=e10106]
+    - generic [ref=e10108]:
+      - heading "熱門城市" [level=2] [ref=e10110]
+      - region "熱門城市輪播" [ref=e10111]:
+        - generic [ref=e10112]:
+          - generic [ref=e10113]:
+            - region "第1張（共15張）" [ref=e10114]:
+              - link "新加坡" [ref=e10115] [cursor=pointer]:
+                - /url: /zh-tw/city/singapore-sg.html
+                - generic [ref=e10116]:
+                  - img "新加坡" [ref=e10117]
+                  - generic [ref=e10118]:
+                    - paragraph [ref=e10119]: 新加坡
+                    - paragraph [ref=e10120]: 新加坡
+            - region "第2張（共15張）" [ref=e10121]:
+              - link "雪梨" [ref=e10122] [cursor=pointer]:
+                - /url: /zh-tw/city/sydney-au.html
+                - generic [ref=e10123]:
+                  - img "雪梨" [ref=e10124]
+                  - generic [ref=e10125]:
+                    - paragraph [ref=e10126]: 雪梨
+                    - paragraph [ref=e10127]: 澳洲
+            - region "第3張（共15張）" [ref=e10128]:
+              - link "濟州" [ref=e10129] [cursor=pointer]:
+                - /url: /zh-tw/city/jeju-kr.html
+                - generic [ref=e10130]:
+                  - img "濟州" [ref=e10131]
+                  - generic [ref=e10132]:
+                    - paragraph [ref=e10133]: 濟州
+                    - paragraph [ref=e10134]: 韓國
+            - region "第4張（共15張）" [ref=e10135]:
+              - link "芭達雅" [ref=e10136] [cursor=pointer]:
+                - /url: /zh-tw/city/pattaya-th.html
+                - generic [ref=e10137]:
+                  - img "芭達雅" [ref=e10138]
+                  - generic [ref=e10139]:
+                    - paragraph [ref=e10140]: 芭達雅
+                    - paragraph [ref=e10141]: 泰國
+            - region "第5張（共15張）" [ref=e10142]:
+              - link "峇里島" [ref=e10143] [cursor=pointer]:
+                - /url: /zh-tw/city/bali-id.html
+                - generic [ref=e10144]:
+                  - img "峇里島" [ref=e10145]
+                  - generic [ref=e10146]:
+                    - paragraph [ref=e10147]: 峇里島
+                    - paragraph [ref=e10148]: 印尼
+            - region [ref=e10149]:
+              - link [ref=e10150] [cursor=pointer]:
+                - /url: /zh-tw/city/yokohama-jp.html
+                - generic [ref=e10151]:
+                  - img [ref=e10152]
+                  - generic [ref=e10153]:
+                    - paragraph [ref=e10154]: 橫濱
+                    - paragraph [ref=e10155]: 日本
+            - region [ref=e10156]:
+              - link [ref=e10157] [cursor=pointer]:
+                - /url: /zh-tw/city/las-vegas-nv-us.html
+                - generic [ref=e10158]:
+                  - img [ref=e10159]
+                  - generic [ref=e10160]:
+                    - paragraph [ref=e10161]: 拉斯維加斯(NV)
+                    - paragraph [ref=e10162]: 美國
+            - region [ref=e10163]:
+              - link [ref=e10164] [cursor=pointer]:
+                - /url: /zh-tw/city/ho-chi-minh-city-vn.html
+                - generic [ref=e10165]:
+                  - img [ref=e10166]
+                  - generic [ref=e10167]:
+                    - paragraph [ref=e10168]: 胡志明市
+                    - paragraph [ref=e10169]: 越南
+            - region [ref=e10170]:
+              - link [ref=e10171] [cursor=pointer]:
+                - /url: /zh-tw/city/shanghai-cn.html
+                - generic [ref=e10172]:
+                  - img [ref=e10173]
+                  - generic [ref=e10174]:
+                    - paragraph [ref=e10175]: 上海
+                    - paragraph [ref=e10176]: 中國
+            - region [ref=e10177]:
+              - link [ref=e10178] [cursor=pointer]:
+                - /url: /zh-tw/city/busan-kr.html
+                - generic [ref=e10179]:
+                  - img [ref=e10180]
+                  - generic [ref=e10181]:
+                    - paragraph [ref=e10182]: 釜山
+                    - paragraph [ref=e10183]: 韓國
+            - region [ref=e10184]:
+              - link [ref=e10185] [cursor=pointer]:
+                - /url: /zh-tw/city/osaka-jp.html
+                - generic [ref=e10186]:
+                  - img [ref=e10187]
+                  - generic [ref=e10188]:
+                    - paragraph [ref=e10189]: 大阪
+                    - paragraph [ref=e10190]: 日本
+            - region [ref=e10191]:
+              - link [ref=e10192] [cursor=pointer]:
+                - /url: /zh-tw/city/nha-trang-vn.html
+                - generic [ref=e10193]:
+                  - img [ref=e10194]
+                  - generic [ref=e10195]:
+                    - paragraph [ref=e10196]: 芽莊
+                    - paragraph [ref=e10197]: 越南
+            - region [ref=e10198]:
+              - link [ref=e10199] [cursor=pointer]:
+                - /url: /zh-tw/city/taipei-tw.html
+                - generic [ref=e10200]:
+                  - img [ref=e10201]
+                  - generic [ref=e10202]:
+                    - paragraph [ref=e10203]: 台北市
+                    - paragraph [ref=e10204]: 台灣
+            - region [ref=e10205]:
+              - link [ref=e10206] [cursor=pointer]:
+                - /url: /zh-tw/city/kuala-lumpur-my.html
+                - generic [ref=e10207]:
+                  - img [ref=e10208]
+                  - generic [ref=e10209]:
+                    - paragraph [ref=e10210]: 吉隆坡
+                    - paragraph [ref=e10211]: 馬來西亞
+            - region [ref=e10212]:
+              - link [ref=e10213] [cursor=pointer]:
+                - /url: /zh-tw/city/tokyo-jp.html
+                - generic [ref=e10214]:
+                  - img [ref=e10215]
+                  - generic [ref=e10216]:
+                    - paragraph [ref=e10217]: 東京
+                    - paragraph [ref=e10218]: 日本
+          - button "熱門城市下一頁" [ref=e10220] [cursor=pointer]:
+            - img [ref=e10221]
+  - contentinfo [ref=e814]:
+    - generic [ref=e817]:
+      - generic [ref=e818]:
+        - heading "客服中心" [level=2] [ref=e819]
+        - list [ref=e820]:
+          - listitem [ref=e821]:
+            - link "服務中心" [ref=e822] [cursor=pointer]:
+              - /url: /zh-tw/info/contact.html
+              - paragraph [ref=e823]: 服務中心
+          - listitem [ref=e824]:
+            - link "常見問題" [ref=e825] [cursor=pointer]:
+              - /url: /zh-tw/info/contact.html
+              - paragraph [ref=e826]: 常見問題
+          - listitem [ref=e827]:
+            - link "隱私權政策" [ref=e828] [cursor=pointer]:
+              - /url: /zh-tw/info/privacy.html
+              - paragraph [ref=e829]: 隱私權政策
+          - listitem [ref=e830]:
+            - link "Cookie政策" [ref=e831] [cursor=pointer]:
+              - /url: /zh-tw/info/privacy.html#cookies
+              - paragraph [ref=e832]: Cookie政策
+          - listitem [ref=e833]:
+            - link "服務條款" [ref=e834] [cursor=pointer]:
+              - /url: /zh-tw/info/termsofuse.html
+              - paragraph [ref=e835]: 服務條款
+          - listitem [ref=e836]:
+            - link "數位服務法（歐盟）" [ref=e837] [cursor=pointer]:
+              - /url: /zh-tw/info/eu-digital-services-act.html
+              - paragraph [ref=e838]: 數位服務法（歐盟）
+          - listitem [ref=e839]:
+            - link "內容指南與回報" [ref=e840] [cursor=pointer]:
+              - /url: /zh-tw/info/eu-digital-services-act.html#CM
+              - paragraph [ref=e841]: 內容指南與回報
+          - listitem [ref=e842]:
+            - link "現代奴役法聲明書" [ref=e843] [cursor=pointer]:
+              - /url: //www.bookingholdings.com/modern-slavery-statement/
+              - paragraph [ref=e844]: 現代奴役法聲明書
+      - generic [ref=e845]:
+        - heading "公司" [level=2] [ref=e846]
+        - list [ref=e847]:
+          - listitem [ref=e848]:
+            - link "關於我們" [ref=e849] [cursor=pointer]:
+              - /url: /zh-tw/about-agoda
+              - paragraph [ref=e850]: 關於我們
+          - listitem [ref=e851]:
+            - link "職缺情報" [ref=e852] [cursor=pointer]:
+              - /url: //careersatagoda.com
+              - paragraph [ref=e853]: 職缺情報
+          - listitem [ref=e854]:
+            - link "新聞報導" [ref=e855] [cursor=pointer]:
+              - /url: //mediaroom.agoda.com
+              - paragraph [ref=e856]: 新聞報導
+          - listitem [ref=e857]:
+            - link "旅遊部落格" [ref=e858] [cursor=pointer]:
+              - /url: /zh-tw/blog
+              - paragraph [ref=e859]: 旅遊部落格
+          - listitem [ref=e860]:
+            - link "PointsMAX" [ref=e861] [cursor=pointer]:
+              - /url: //www.agoda.com/zh-tw/pointsmax.html
+              - paragraph [ref=e862]: PointsMAX
+      - generic [ref=e863]:
+        - heading "目的地" [level=2] [ref=e864]
+        - list [ref=e865]:
+          - listitem [ref=e866]:
+            - link "國家/地區" [ref=e867] [cursor=pointer]:
+              - /url: //www.agoda.com/zh-tw/world.html
+              - paragraph [ref=e868]: 國家/地區
+          - listitem [ref=e869]:
+            - link "所有航線" [ref=e870] [cursor=pointer]:
+              - /url: //www.agoda.com/zh-tw/flights/world.html
+              - paragraph [ref=e871]: 所有航線
+      - generic [ref=e872]:
+        - heading "成為合作夥伴" [level=2] [ref=e873]
+        - list [ref=e874]:
+          - listitem [ref=e875]:
+            - link "YCS夥伴平台" [ref=e876] [cursor=pointer]:
+              - /url: ////ycs.agoda.com/zh-tw
+              - paragraph [ref=e877]: YCS夥伴平台
+          - listitem [ref=e878]:
+            - link "Partner Hub" [ref=e879] [cursor=pointer]:
+              - /url: //partnerhub.agoda.com/
+              - paragraph [ref=e880]: Partner Hub
+          - listitem [ref=e881]:
+            - link "供應商招募" [ref=e882] [cursor=pointer]:
+              - /url: //partnerhub.agoda.com/advertising-solutions/
+              - paragraph [ref=e883]: 供應商招募
+          - listitem [ref=e884]:
+            - link "行銷夥伴" [ref=e885] [cursor=pointer]:
+              - /url: ////partners.agoda.com/zh-tw/index.html
+              - paragraph [ref=e886]: 行銷夥伴
+          - listitem [ref=e887]:
+            - link "Agoda API文件" [ref=e888] [cursor=pointer]:
+              - /url: //developer.agoda.com/
+              - paragraph [ref=e889]: Agoda API文件
+      - generic [ref=e890]:
+        - heading "行動訂房神器" [level=2] [ref=e891]
+        - list [ref=e892]:
+          - listitem [ref=e893]:
+            - link "iOS免費下載" [ref=e894] [cursor=pointer]:
+              - /url: //app.appsflyer.com/id440676901?pid=direct&c=hotel_page_footer&af_siteid=1716632&site_id=1716632&af_sub1=desktop
+              - paragraph [ref=e895]: iOS免費下載
+          - listitem [ref=e896]:
+            - link "Android免費下載" [ref=e897] [cursor=pointer]:
+              - /url: //app.appsflyer.com/com.agoda.mobile.consumer?pid=direct&c=hotel_page_footer&af_siteid=1716632&site_id=1716632&af_sub1=desktop
+              - paragraph [ref=e898]: Android免費下載
+    - generic [ref=e900]:
+      - paragraph [ref=e901]: 本網站內容由© 2005–2026 Agoda Company Pte. Ltd.保留所有權利。
+      - paragraph [ref=e902]: Agoda.com隸屬於全球線上旅遊相關事業的領導品牌Booking Holdings集團。
+      - generic [ref=e904]:
+        - img "Agoda logo" [ref=e906]
+        - img "Priceline logo" [ref=e908]
+        - img "Kayak logo" [ref=e910]
+        - img "Booking.com logo" [ref=e10223]
+        - img "Open Table logo" [ref=e913]
