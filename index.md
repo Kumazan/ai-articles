@@ -6,6 +6,8 @@
 
 ### 2026-03-31
 
+#### ・ [Perplexity 把語音代理做到每月數百萬次會話後，學到的 4 個硬道理](./2026-03-31/perplexity-realtime-voice-agent-lessons.html)
+
 #### ・ [AI 時代科技圈最後 4 種工作？其實更值得看的是 coding agent 基礎設施之戰](./2026-03-31/last-4-jobs-in-tech-agent-harness-race.html)
 
 #### ・ [gstack、Superpowers、CE 不是在打架：一張圖看懂 AI 開發流程的三個分層](./2026-03-31/gstack-superpowers-ce-ai-dev-workflow-layers.html)
