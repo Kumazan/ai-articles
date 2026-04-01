@@ -6,7 +6,7 @@
 
 ### 2026-04-02
 
-#### ・ [長時間運行應用開發的 Harness 設計](./2026-03-24/harness-design-long-running-apps.html)
+#### ・ [長時間運行應用開發的 Harness 設計](./2026-04-02/harness-design-long-running-apps.html)
 
 ### 2026-04-01
 

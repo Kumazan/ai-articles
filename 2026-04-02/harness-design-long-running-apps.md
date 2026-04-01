@@ -1,13 +1,13 @@
 ---
 title: "長時間運行應用開發的 Harness 設計"
 description: "Anthropic Labs 工程師分享如何用 GAN 啟發的三代理架構（規劃器 + 生成器 + 評估器）突破 AI 自主編碼的兩大瓶頸：context 焦慮與自我評估膨脹，實現多小時無人介入的全端應用開發。"
-date: 2026-03-24
+date: 2026-04-02
 author: Prithvi Rajasekaran (Anthropic Labs)
 layout: post
-permalink: /2026-03-24/harness-design-long-running-apps.html
+permalink: /2026-04-02/harness-design-long-running-apps.html
 ---
 
-<div class="hero-badge">AI Engineering · 2026-03-24</div>
+<div class="hero-badge">AI Engineering · 2026-04-02</div>
 
 **原文連結：** [Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps)
 
