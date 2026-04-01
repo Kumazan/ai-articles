@@ -6,6 +6,8 @@
 
 ### 2026-04-01
 
+#### ・ [AI 關鍵依賴驚現重大安全漏洞：LiteLLM 供應鏈攻擊暴露雲端密鑰](./2026-04-01/litellm-supply-chain-attack-cloud-secrets.html)
+
 #### ・ [OpenAI 完成史上最大規模融資：1220 億美元、估值 8520 億，IPO 前的最後衝刺](./2026-04-01/openai-122b-funding-round.html)
 
 ### 2026-03-31
