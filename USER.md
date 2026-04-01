@@ -7,10 +7,11 @@ _Learn about the person you're helping. Update this as you go._
 - **Pronouns:** _(optional)_
 - **Timezone:** Asia/Taipei (UTC+8)
 - **Gmail:** bear24ice@gmail.com
-- **Notes:** 偏好使用繁體中文（zh-tw）交流；語氣輕鬆隨意。
+- **Notes:** 偏好使用正體中文（zh-tw）交流；語氣輕鬆隨意。
 - **格式要求：** 標題（`#`/`##`/`**粗體標題**`）前面一定要空一行，不要跟上一段內文黏在一起。
 - **格式要求：** 時間一律使用 24 小時制（例：21:00，不用下午 09:00）。
 - **格式要求：** Telegram 上不要用 markdown 表格，改用文字條列（手機上表格很難看）。
+- **格式要求：** 所有對外 URL（官網、Google Maps、地圖連結等）一律用 Markdown 連結格式 `[名稱](URL)`，不得給純文字網址。Obsidian 筆記內的連結也必須是 Markdown 連結。（規則建立：2026-03-31）
 
 ## Context
 

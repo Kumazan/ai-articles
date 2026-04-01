@@ -1,4 +1,5 @@
 import 'dotenv/config';
+import { fetchActualHighTemps, buildCityQueries } from './actual_weather.js';
 import fs from 'node:fs';
 import path from 'node:path';
 import WebSocket from 'ws';
@@ -403,16 +404,19 @@ async function main() {
           logger.info({ nContracts: contracts.length }, 'weather edge scan: none found');
         }
 
-        // Try to settle past positions using yesterday's forecast as "actual"
-        // (For proper settlement, we use the last known forecast for dates that have passed)
+        // Settle past positions using ACTUAL observed temperatures from Weather Underground
         const now = new Date();
         const todayIso = now.toISOString().slice(0, 10);
-        const actualTemps = new Map<string, number>();
-        for (const fc of tracker.getAllForecasts()) {
-          // If the forecast date is before today, use forecast high as "actual"
-          // (Best proxy we have — real settlement would check Polymarket resolution)
-          if (fc.date < todayIso) {
-            actualTemps.set(`${fc.city}:${fc.date}`, fc.highTemp);
+        const openPositions = paperTrader.portfolio.positions.filter(
+          (p) => !p.settled && p.isoDate < todayIso,
+        );
+        let actualTemps = new Map<string, number>();
+        if (openPositions.length > 0) {
+          const queries = buildCityQueries(
+            openPositions.map((p) => ({ city: p.city, isoDate: p.isoDate })),
+          );
+          if (queries.length > 0) {
+            actualTemps = await fetchActualHighTemps(queries);
           }
         }
         if (actualTemps.size > 0) {

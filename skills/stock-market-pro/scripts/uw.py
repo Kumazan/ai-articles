@@ -100,9 +100,12 @@ async def fetch_advanced_options(ticker):
             if await sent_elem.count() > 0:
                 overview["sentiment"] = await sent_elem.inner_text()
             else: # Fallback if specific emoji not found, try a more general sentiment text
-                general_sentiment_match = await page.locator("text=/\d+% (Bullish|Bearish|Neutral)/").first.inner_text()
-                if general_sentiment_match:
-                    overview["sentiment"] = general_sentiment_match
+                try:
+                    general_sentiment_match = await page.locator("text=/\d+% (Bullish|Bearish|Neutral)/").first.inner_text()
+                    if general_sentiment_match:
+                        overview["sentiment"] = general_sentiment_match
+                except Exception:
+                    pass  # Keep default "N/A"
 
 
             # 2. Live Flow Data (conditional, only for free tickers)

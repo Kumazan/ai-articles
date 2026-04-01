@@ -1,0 +1,7 @@
+[2026-03-28 02:48] 開始執行曼谷每日推薦 cron 任務
+[2026-03-28 02:55] 已讀歷史推薦，確認最近類型依序為米其林餐廳／夜間花市，避免連續同類
+[2026-03-28 02:56] 選點：SEA LIFE Bangkok Ocean World（Siam，室內景點），資料來源含 Tripadvisor/Klook/Traveloka
+[2026-03-28 03:00] 已更新 bangkok/index.html：新增 2026-03-28 推薦卡片並更新 cache bust 版本號為 20260328a
+[2026-03-28 03:01] build 成功：npm run build 完成（Tailwind + app.built.js）
+[2026-03-28 03:02] 已 append 至 memory/bangkok-daily-recs.md
+[2026-03-28 03:03] git 成功：commit 597d17a，push 到 origin/main 完成

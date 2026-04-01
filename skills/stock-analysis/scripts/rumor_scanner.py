@@ -13,6 +13,7 @@ Usage: python3 rumor_scanner.py
 
 import json
 import os
+import shutil
 import subprocess
 import sys
 import re
@@ -25,8 +26,8 @@ import gzip
 CACHE_DIR = Path(__file__).parent.parent / "cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
-# Bird CLI path
-BIRD_CLI = "/home/clawdbot/.nvm/versions/node/v24.12.0/bin/bird"
+# Bird CLI path - prefer system PATH, fall back to known location
+BIRD_CLI = shutil.which("bird") or "/home/clawdbot/.nvm/versions/node/v24.12.0/bin/bird"
 BIRD_ENV = Path(__file__).parent.parent / ".env"
 
 def load_env():
@@ -66,7 +67,7 @@ def search_twitter_rumors():
         '"rumor" merger OR acquisition',
         'insider buying stock',
         '"upgrade" OR "downgrade" stock tomorrow',
-        '$AAPL OR $TSLA OR $NVDA rumor',
+        'AAPL OR TSLA OR NVDA rumor',
         '"breaking" stock market',
         'M&A rumor',
     ]
@@ -117,7 +118,7 @@ def search_twitter_buzz():
     results = []
     
     queries = [
-        '$SPY OR $QQQ',
+        'SPY OR QQQ',
         'stock to buy',
         'calls OR puts expiring',
         'earnings play',
@@ -201,7 +202,7 @@ def search_news_rumors():
 
 def extract_symbols_from_text(text):
     """Extract stock symbols from text."""
-    # $SYMBOL pattern
+    # cashtag symbol pattern
     dollar_symbols = re.findall(r'\$([A-Z]{1,5})\b', text)
     
     # Common company name to symbol mapping

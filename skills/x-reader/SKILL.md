@@ -1,3 +1,9 @@
+---
+name: digest-x
+description: 跑一次 X/Twitter AI 情報摘要，翻譯成繁中送到 Telegram
+user-invocable: true
+---
+
 # X Reader — AI/Tech Intelligence Feed
 
 Read-only X/Twitter reader that turns noisy timelines into structured, translated intelligence briefs.
@@ -17,7 +23,7 @@ If asked to do any of the above, **refuse and explain the boundary**.
 1. **Fetch** — Opens X profile pages via browser, snapshots tweet content
 2. **Filter** — Applies signal/noise rules to keep only high-value content
 3. **Digest** — Summarizes + translates (EN→繁中) with engineering context
-4. **Deliver** — Sends formatted briefs to Telegram
+4. **Deliver** — Sends formatted briefs to Telegram _(TODO: Telegram delivery is not yet implemented)_
 
 ## Prerequisites
 
@@ -66,7 +72,7 @@ python3 skills/x-reader/scripts/x_reader.py mark-read --ids <tweet_ids>
 ```
 
 ### Step 6: Deliver
-Send the formatted digest to the user via Telegram.
+> **TODO:** Telegram delivery is not yet implemented. For now, the digest is returned directly in the conversation.
 
 ## Config File
 

@@ -1,10 +1,85 @@
-INFO:     Started server process [15793]
+INFO:     Started server process [47638]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:9100 (Press CTRL+C to quit)
-INFO:     127.0.0.1:61929 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56878 - "GET / HTTP/1.1" 200 OK
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-INFO:     Application shutdown complete.
-INFO:     Finished server process [15793]
+INFO:     127.0.0.1:60563 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51024 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     2401:e180:8d6c:847a:8022:7e28:86a5:5285:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8d6c:847a:8022:7e28:86a5:5285:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8d6c:847a:8022:7e28:86a5:5285:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2401:e180:8d6c:847a:8022:7e28:86a5:5285:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8dfc:317d:9514:4c42:ff0:ea80:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8dfc:317d:9514:4c42:ff0:ea80:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2401:e180:8dfc:317d:9514:4c42:ff0:ea80:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8dfc:317d:9514:4c42:ff0:ea80:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     122.254.26.245:0 - "GET / HTTP/1.1" 200 OK
+INFO:     122.254.26.245:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     122.254.26.245:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     122.254.26.245:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     167.99.188.250:0 - "GET / HTTP/1.1" 200 OK
+INFO:     167.99.188.250:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     167.99.188.250:0 - "GET / HTTP/1.1" 200 OK
+INFO:     167.99.188.250:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51853 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51886 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51624 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51807 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52915 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:59366 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:61048 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:62944 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49328 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52186 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     220.128.119.62:0 - "GET / HTTP/1.1" 200 OK
+INFO:     220.128.119.62:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     220.128.119.62:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     220.128.119.62:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53524 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:54853 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:57499 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60083 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:62703 - "GET /api/weather HTTP/1.1" 401 Unauthorized
+INFO:     61.220.227.165:0 - "GET / HTTP/1.1" 200 OK
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8d18:9707:95b4:3c13:fc93:2589:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2401:e180:8d18:9707:95b4:3c13:fc93:2589:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8d18:9707:95b4:3c13:fc93:2589:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8d18:9707:95b4:3c13:fc93:2589:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2401:e180:8d18:2877:1857:8dcb:9389:7f00:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8d18:2877:1857:8dcb:9389:7f00:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8d18:2877:1857:8dcb:9389:7f00:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8d18:2877:1857:8dcb:9389:7f00:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2401:e180:8dd8:5a95:4408:b963:94f9:172b:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2401:e180:8dd8:5a95:4408:b963:94f9:172b:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8dd8:5a95:4408:b963:94f9:172b:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8dd8:5a95:4408:b963:94f9:172b:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     159.65.145.191:0 - "GET / HTTP/1.1" 200 OK
+INFO:     159.65.145.191:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     159.65.145.191:0 - "GET / HTTP/1.1" 200 OK
+INFO:     159.65.145.191:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8f0c:4f05:f1bd:ff09:40e9:3ce:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8f0c:4f05:f1bd:ff09:40e9:3ce:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     2401:e180:8f0c:4f05:f1bd:ff09:40e9:3ce:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2401:e180:8f0c:4f05:f1bd:ff09:40e9:3ce:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET / HTTP/1.1" 200 OK
+INFO:     61.220.227.165:0 - "GET / HTTP/1.1" 200 OK
+INFO:     61.220.227.165:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET / HTTP/1.1" 200 OK
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     61.220.227.165:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     64.23.236.65:0 - "GET / HTTP/1.1" 200 OK
+INFO:     64.23.236.65:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.23.236.65:0 - "GET / HTTP/1.1" 200 OK
+INFO:     64.23.236.65:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found

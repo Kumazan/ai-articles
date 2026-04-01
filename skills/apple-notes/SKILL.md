@@ -12,7 +12,8 @@ Use `memo notes` to manage Apple Notes directly from the terminal. Create, view,
 Setup
 - Install (Homebrew): `brew tap antoniorodr/memo && brew install antoniorodr/memo/memo`
 - Manual (pip): `pip install .` (after cloning the repo)
-- macOS-only; if prompted, grant Automation access to Notes.app.
+- macOS-only; you must grant Automation access so the terminal can control Notes.app.
+  Go to **System Settings > Privacy & Security > Automation**, then enable **Notes** under your terminal app (e.g., Terminal, iTerm2, or Warp). If the entry does not appear, run any `memo` command once and macOS will prompt you.
 
 View Notes
 - List all notes: `memo notes`
@@ -40,6 +41,31 @@ Export Notes
 - Export to HTML/Markdown: `memo notes -ex`
   - Exports selected note; uses Mistune for markdown processing.
 
+Examples
+
+1. Search for notes containing "meeting":
+```
+$ memo notes -s "meeting"
+ #  Title                        Folder       Modified
+ 1  Team Meeting Notes           Work         2026-03-15
+ 2  Meeting Agenda Q2            Projects     2026-03-10
+```
+
+2. List all notes in a specific folder:
+```
+$ memo notes -f "Work"
+ #  Title                        Folder       Modified
+ 1  Team Meeting Notes           Work         2026-03-15
+ 2  Project Plan                 Work         2026-03-12
+ 3  TODO List                    Work         2026-03-08
+```
+
+3. Create a quick note:
+```
+$ memo notes -a "Grocery List"
+Note "Grocery List" created in default folder.
+```
+
 Limitations
 - Cannot edit notes containing images or attachments.
 - Interactive prompts may require terminal access.
@@ -47,4 +73,4 @@ Limitations
 Notes
 - macOS-only.
 - Requires Apple Notes.app to be accessible.
-- For automation, grant permissions in System Settings > Privacy & Security > Automation.
+- For automation, grant permissions in **System Settings > Privacy & Security > Automation** -- enable **Notes** under your terminal app (Terminal, iTerm2, etc.).

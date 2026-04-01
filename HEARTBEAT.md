@@ -15,19 +15,11 @@
 - 未來 2 小時內有事件 → 提醒 Kuma（含時間、地點、標題）
 - 未來 24h 有重要事件（會議、航班、訂位）→ 摘要通知
 
-## 看板巡邏（每次心跳都掃）
-- GET http://localhost:3099/api/kanban 掃一輪
-- 「進行中」卡片超過 24h 沒更新 → 提醒 Kuma 或自己處理
-- 「待辦」有小蝦能直接做的 → 自動開工
-- 過期卡片（dueDate < today）→ 通知 Kuma
-
-## 曼谷需求看板回覆巡邏（每次心跳都掃）
-- 抓所有需求：`curl -s 'https://trip.kumax.dev/api/feature-requests?list=1'`
-- 對每個需求抓留言：`curl -s 'https://trip.kumax.dev/api/feature-request-comments?requestId={id}'`
-- 檢查是否有**未回覆的留言**（最後一則留言 author 不是「小蝦」且內容包含 `@小蝦` 或是問句）
-- 如果有需要回覆的 → 用 `curl -X POST` 以 `author: "小蝦"` 回覆（不需 PIN）
-- 回覆要有實質內容：查資料、給建議、回答問題，不要敷衍
-- 如果留言不需要回覆（例如測試、純通知）→ 跳過
+## 📋 GitHub Issues 巡邏（每次心跳都掃）
+- 掃 allowlist repos 的 open issues：`gh issue list -R Kumazan/<repo> --state open`
+- 標記 `todo` 且小蝦能直接做的 → 自動開工
+- 超過 7 天沒更新的 open issue → comment 提醒或通知 Kuma
+- 完成的 issue → `gh issue close` + comment 總結
 
 ## 📰 新聞/資訊即時掃描（每 2-3 次心跳掃一次，用 heartbeat-state.json 追蹤）
 - 用 web_search 搜尋 Kuma 關注的主題：OpenClaw、AI agents、台股重大新聞

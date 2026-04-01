@@ -1,26 +1,51 @@
-# polymarket-bot-v0-ts
+# 🌤️ Polymarket Weather Oracle Bot
 
-v0 goal: wire up reference price feeds + Polymarket CLOB connectivity + paper-trade logging.
+自動化 Polymarket 天氣市場交易 bot，含 paper trading、cross-market arbitrage 掃描、即時天氣預報整合。
 
-## Setup
+## Features
+
+- **Weather Oracle**：整合多來源天氣預報（Open-Meteo、NWS 等），產生機率預測
+- **Paper Trading**：模擬下單系統，追蹤持倉、P&L、勝率
+- **Cross-Market Arbitrage Scanner**：
+  - Jaccard similarity + expiry window 候選生成
+  - Fee-aware executable checker（2% taker + 0.5% buffer）
+  - 5 分鐘掃描循環 + market graph cache
+- **Dashboard**：即時狀態面板（bot.kumax.dev）
+- **Forecast Shift Detection**：偵測 ≥2° 溫度預報偏移
+
+## Tech Stack
+
+- **Runtime**: Node.js + TypeScript (tsx)
+- **Data**: JSONL tick/book/trade logs
+- **Scheduling**: OpenClaw cron (15min autotune, hourly health check)
+
+## Architecture
+
+```
+src/
+  index.ts              # Main bot loop
+  candidate_generator.ts # Cross-market arb candidate generation
+  cross_market_arb.ts    # Fee-aware arb execution checker
+  weather_oracle.ts      # Multi-source weather forecast aggregation
+  weather_market_scraper.ts # Polymarket weather market data
+data/                    # Runtime data (gitignored)
+  paper-portfolio.json
+  paper-trades-*.jsonl
+  ticks-*.jsonl
+```
+
+## Running
 
 ```bash
-cd polymarket-bot-v0-ts
-cp .env.example .env
-# Put your key in /Users/kumax/.openclaw/workspace/.secrets/polymarket.env (already done)
-# Then either paste into .env or source it before running.
-
+npm install
 npm run dev
 ```
 
-## Notes
-- v0 logs external ticks to `./data/ticks-YYYY-MM-DD.jsonl`.
-- Single-market structural arb scanner runs every 30s (configurable).
-- **P0 (cross-market arb)** added 2026-02-13:
-  - `candidate_generator.ts` — heuristic grouping by topic similarity + expiry window
-  - `cross_market_arb.ts` — fee-aware executable check (2% taker + 0.5% buffer)
-  - Market graph cache rebuilt every scan cycle (default 5 min)
-  - Results logged to `./data/cross-arb-YYYY-MM-DD.jsonl`
-  - Buckets: `single_market_arb`, `cross_market_comb_arb`, `signal_only`
-- Next steps (P1): market graph cache with neighbor-only scanning, result bucketing refinement
-- P2: partial fill simulation, leg risk modeling
+## Related
+
+- `polymarket-bot-v0-py` — Python autotune companion
+- `polymarket-strategies` — Strategy research & backtesting
+
+## License
+
+Private project.

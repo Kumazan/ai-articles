@@ -1,6 +1,6 @@
 # Documentation
 
-## Stock Analysis v6.1
+## Stock Analysis v6.2
 
 This folder contains detailed documentation for the Stock Analysis skill.
 

@@ -378,8 +378,8 @@ class HotScanner:
             
             # Search for finance tweets
             searches = [
-                ("stocks", "stock OR $SPY OR $QQQ OR earnings"),
-                ("crypto", "bitcoin OR ethereum OR crypto OR $BTC"),
+                ("stocks", "stock OR SPY OR QQQ OR earnings"),
+                ("crypto", "bitcoin OR ethereum OR crypto OR BTC"),
             ]
             
             for category, query in searches:
@@ -426,7 +426,7 @@ class HotScanner:
     def _extract_tickers(self, text):
         """Extract stock/crypto tickers from text."""
         patterns = [
-            r'\$([A-Z]{1,5})\b',  # $AAPL
+            r'\$([A-Z]{1,5})\b',  # AAPL
             r'\(([A-Z]{2,5})\)',   # (AAPL)
             r'(?:^|\s)([A-Z]{2,4})(?:\s|$|[,.])',  # Standalone caps
         ]

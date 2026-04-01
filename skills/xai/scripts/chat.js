@@ -14,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const API_BASE = 'api.x.ai';
-const DEFAULT_MODEL = 'grok-3';
+const DEFAULT_MODEL = 'grok-4-1-fast-non-reasoning';
 
 function getApiKey() {
   // Check environment variable first
@@ -118,10 +118,7 @@ async function chat(options) {
       { type: 'image_url', image_url: { url: imageUrl } },
       { type: 'text', text: options.prompt || 'Describe this image.' },
     ];
-    // Use vision model if not specified
-    if (options.model === DEFAULT_MODEL) {
-      options.model = 'grok-2-vision-1212';
-    }
+    // All grok-4 models natively support vision — no model switch needed
   } else {
     userContent = options.prompt;
   }
@@ -220,22 +217,22 @@ Usage:
   node chat.js [options] "Your prompt"
 
 Options:
-  --model, -m <model>   Model to use (default: grok-3)
+  --model, -m <model>   Model to use (default: grok-4-1-fast-non-reasoning)
   --system, -s <text>   System prompt
-  --image, -i <path>    Image for vision analysis
+  --image, -i <path>    Image for vision analysis (all models support vision)
   --stream              Stream the response
   --json, -j            Output full JSON response
   --help, -h            Show this help
 
 Models:
-  grok-3               Most capable
-  grok-3-mini          Fast and efficient
-  grok-3-fast          Speed optimized
-  grok-2-vision-1212   Vision/image analysis
+  grok-4.20-0309-reasoning       Flagship, reasoning enabled
+  grok-4.20-0309-non-reasoning   Flagship, no reasoning
+  grok-4-1-fast-reasoning        Fast, reasoning enabled
+  grok-4-1-fast-non-reasoning    Fast, no reasoning (default)
 
 Examples:
   node chat.js "What is quantum computing?"
-  node chat.js -m grok-3-mini "Quick: capital of France?"
+  node chat.js -m grok-4.20-0309-reasoning "Solve this step by step"
   node chat.js -i photo.jpg "What's in this image?"
   node chat.js -s "You are a poet" "Write about the moon"
 `);

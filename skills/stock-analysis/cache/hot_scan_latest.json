@@ -1,134 +1,44 @@
 {
-  "scan_time": "2026-02-14T01:03:36.915110+00:00",
+  "scan_time": "2026-04-01T06:00:16.843439+00:00",
   "top_trending": [
     {
       "symbol": "BTC",
       "mentions": 5,
       "sources": [
-        "Google News Crypto",
-        "CoinGecko Trending"
+        "CoinGecko Trending",
+        "Google News Crypto"
       ],
       "signals": [
-        "\ud83d\ude80 bullish (+4.8%)"
+        "\ud83d\ude80 bullish (+1.1%)"
       ]
     },
     {
-      "symbol": "TAO",
-      "mentions": 3,
+      "symbol": "NVDA",
+      "mentions": 4,
       "sources": [
-        "CoinGecko Movers",
-        "CoinGecko Trending"
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Google News",
+        "Yahoo Most Active"
       ],
       "signals": [
-        "\ud83d\ude80 bullish (+18.7%)",
-        "\ud83d\ude80 pumping (+17.9%)"
+        "\ud83d\udcf0 Goldman Sachs has a message on Nvidia st..."
       ]
     },
     {
-      "symbol": "SOL",
+      "symbol": "ALGO",
       "mentions": 3,
       "sources": [
-        "CoinGecko Movers",
-        "CoinGecko Trending"
+        "CoinGecko Trending",
+        "CoinGecko Movers"
       ],
       "signals": [
-        "\ud83d\ude80 bullish (+9.0%)",
-        "\ud83d\ude80 pumping (+9.0%)"
+        "\ud83d\ude80 bullish (+22.9%)",
+        "\ud83d\ude80 pumping (+23.0%)"
       ]
     },
     {
-      "symbol": "XRP",
-      "mentions": 3,
-      "sources": [
-        "Google News Crypto",
-        "CoinGecko Trending"
-      ],
-      "signals": [
-        "\ud83d\ude80 bullish (+4.5%)"
-      ]
-    },
-    {
-      "symbol": "EPD",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Gainers",
-        "Yahoo Losers",
-        "Yahoo Most Active"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "RIME",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Gainers",
-        "Yahoo Losers",
-        "Yahoo Most Active"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "CRWD",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Gainers",
-        "Yahoo Losers",
-        "Yahoo Most Active"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "MSTR",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Gainers",
-        "Yahoo Losers",
-        "Yahoo Most Active"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "NET",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Gainers",
-        "Yahoo Losers",
-        "Yahoo Most Active"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "EMAT",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Gainers",
-        "Yahoo Losers",
-        "Yahoo Most Active"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "TPH",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Gainers",
-        "Yahoo Losers",
-        "Yahoo Most Active"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "RIVN",
-      "mentions": 3,
-      "sources": [
-        "Yahoo Gainers",
-        "Yahoo Losers",
-        "Yahoo Most Active"
-      ],
-      "signals": []
-    },
-    {
-      "symbol": "MGA",
+      "symbol": "NKE",
       "mentions": 3,
       "sources": [
         "Yahoo Gainers",
@@ -148,7 +58,7 @@
       "signals": []
     },
     {
-      "symbol": "IRON",
+      "symbol": "TSLA",
       "mentions": 3,
       "sources": [
         "Yahoo Gainers",
@@ -158,7 +68,7 @@
       "signals": []
     },
     {
-      "symbol": "BFAM",
+      "symbol": "BA",
       "mentions": 3,
       "sources": [
         "Yahoo Gainers",
@@ -168,7 +78,7 @@
       "signals": []
     },
     {
-      "symbol": "FBIN",
+      "symbol": "APLS",
       "mentions": 3,
       "sources": [
         "Yahoo Gainers",
@@ -178,7 +88,7 @@
       "signals": []
     },
     {
-      "symbol": "PINS",
+      "symbol": "CNTA",
       "mentions": 3,
       "sources": [
         "Yahoo Gainers",
@@ -188,7 +98,7 @@
       "signals": []
     },
     {
-      "symbol": "CALY",
+      "symbol": "FLY",
       "mentions": 3,
       "sources": [
         "Yahoo Gainers",
@@ -198,276 +108,261 @@
       "signals": []
     },
     {
-      "symbol": "AMZN",
+      "symbol": "ALKS",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "PRAX",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "BTU",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "SOC",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "VG",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "CEG",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "MKC",
+      "mentions": 3,
+      "sources": [
+        "Yahoo Gainers",
+        "Yahoo Losers",
+        "Yahoo Most Active"
+      ],
+      "signals": []
+    },
+    {
+      "symbol": "SIREN",
       "mentions": 2,
       "sources": [
-        "Google News"
+        "CoinGecko Trending"
       ],
       "signals": [
-        "\ud83d\udcf0 Amazon\u2019s stock just clinched its worst l...",
-        "\ud83d\udcf0 Amazon's Ring ends deal with surveillanc..."
+        "\ud83d\udcc9 bearish (-83.7%)"
+      ]
+    },
+    {
+      "symbol": "EDGE",
+      "mentions": 2,
+      "sources": [
+        "CoinGecko Trending"
+      ],
+      "signals": [
+        "\ud83d\ude80 bullish (+15.7%)"
+      ]
+    },
+    {
+      "symbol": "SOL",
+      "mentions": 2,
+      "sources": [
+        "CoinGecko Trending"
+      ],
+      "signals": [
+        "\ud83d\ude80 bullish (+0.7%)"
       ]
     }
   ],
   "crypto_highlights": [
     {
-      "symbol": "PENGU",
-      "name": "Pudgy Penguins",
-      "rank": 110,
-      "price_change_24h": 7.96,
+      "symbol": "SIREN",
+      "name": "Siren",
+      "rank": 168,
+      "price_change_24h": -83.71,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "TAO",
-      "name": "Bittensor",
-      "rank": 44,
-      "price_change_24h": 18.69,
+      "symbol": "ALGO",
+      "name": "Algorand",
+      "rank": 70,
+      "price_change_24h": 22.85,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "BTC",
-      "name": "Bitcoin",
-      "rank": 1,
-      "price_change_24h": 4.76,
-      "source": "coingecko_trending"
-    },
-    {
-      "symbol": "OM",
-      "name": "MANTRA",
-      "rank": 381,
-      "price_change_24h": 22.82,
-      "source": "coingecko_trending"
-    },
-    {
-      "symbol": "ESP",
-      "name": "Espresso",
-      "rank": 622,
-      "price_change_24h": -13.72,
-      "source": "coingecko_trending"
-    },
-    {
-      "symbol": "AZTEC",
-      "name": "Aztec",
-      "rank": 320,
-      "price_change_24h": 35.88,
+      "symbol": "EDGE",
+      "name": "edgeX",
+      "rank": 161,
+      "price_change_24h": 15.67,
       "source": "coingecko_trending"
     },
     {
       "symbol": "SOL",
       "name": "Solana",
       "rank": 7,
-      "price_change_24h": 9.02,
+      "price_change_24h": 0.68,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "UNI",
-      "name": "Uniswap",
-      "rank": 39,
-      "price_change_24h": 5.82,
+      "symbol": "PENGU",
+      "name": "Pudgy Penguins",
+      "rank": 108,
+      "price_change_24h": 1.61,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "XRP",
-      "name": "XRP",
-      "rank": 4,
-      "price_change_24h": 4.46,
+      "symbol": "KTA",
+      "name": "Keeta",
+      "rank": 279,
+      "price_change_24h": -9.6,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "AAVE",
-      "name": "Aave",
-      "rank": 42,
-      "price_change_24h": 5.87,
+      "symbol": "VVV",
+      "name": "Venice Token",
+      "rank": 125,
+      "price_change_24h": 11.74,
       "source": "coingecko_trending"
     },
     {
-      "symbol": "ZEC",
-      "name": "Zcash",
-      "price": 276.78,
-      "change_24h": 18.94,
-      "volume": 492612872,
+      "symbol": "TAO",
+      "name": "Bittensor",
+      "rank": 35,
+      "price_change_24h": 0.36,
+      "source": "coingecko_trending"
+    },
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price_change_24h": 1.09,
+      "source": "coingecko_trending"
+    },
+    {
+      "symbol": "FET",
+      "name": "Artificial Superintelligence Alliance",
+      "rank": 96,
+      "price_change_24h": 2.05,
+      "source": "coingecko_trending"
+    },
+    {
+      "symbol": "STABLE",
+      "name": "\u200b\u200bStable",
+      "price": 0.02851249,
+      "change_24h": 18.53,
+      "volume": 50396845,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "NIGHT",
-      "name": "Midnight",
-      "price": 0.057451,
-      "change_24h": 14.03,
-      "volume": 14617125,
+      "symbol": "RAIN",
+      "name": "Rain",
+      "price": 0.00803694,
+      "change_24h": 7.64,
+      "volume": 28052875,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "PI",
-      "name": "Pi Network",
-      "price": 0.153654,
-      "change_24h": 13.97,
-      "volume": 34947395,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "PIPPIN",
-      "name": "pippin",
-      "price": 0.584597,
-      "change_24h": 13.52,
-      "volume": 67576950,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "JUP",
-      "name": "Jupiter",
-      "price": 0.15516,
-      "change_24h": 12.88,
-      "volume": 54021567,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "HBAR",
-      "name": "Hedera",
-      "price": 0.104032,
-      "change_24h": 12.48,
-      "volume": 117116373,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "BCH",
-      "name": "Bitcoin Cash",
-      "price": 563.82,
-      "change_24h": 12.02,
-      "volume": 416573838,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "PUMP",
-      "name": "Pump.fun",
-      "price": 0.0021105,
-      "change_24h": 10.24,
-      "volume": 105599447,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "ATOM",
-      "name": "Cosmos Hub",
-      "price": 2.12,
-      "change_24h": 8.28,
-      "volume": 40280372,
+      "symbol": "HASH",
+      "name": "Provenance Blockchain",
+      "price": 0.01137239,
+      "change_24h": 7.22,
+      "volume": 56922,
       "source": "coingecko_movers"
     },
     {
       "symbol": "ONDO",
       "name": "Ondo",
-      "price": 0.268294,
-      "change_24h": 8.08,
-      "volume": 41611583,
+      "price": 0.277958,
+      "change_24h": 6.19,
+      "volume": 83595894,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "MYX",
-      "name": "MYX Finance",
-      "price": 2.88,
-      "change_24h": -8.0,
-      "volume": 19350835,
+      "symbol": "ZEC",
+      "name": "Zcash",
+      "price": 245.72,
+      "change_24h": 6.05,
+      "volume": 530319864,
       "source": "coingecko_movers"
     },
     {
       "symbol": "MORPHO",
       "name": "Morpho",
-      "price": 1.19,
-      "change_24h": 7.79,
-      "volume": 20914564,
+      "price": 1.58,
+      "change_24h": 5.93,
+      "volume": 9708341,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "CRO",
-      "name": "Cronos",
-      "price": 0.081961,
-      "change_24h": 7.18,
-      "volume": 18753927,
+      "symbol": "JUP",
+      "name": "Jupiter",
+      "price": 0.161688,
+      "change_24h": 5.07,
+      "volume": 24348483,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "XLM",
-      "name": "Stellar",
-      "price": 0.165946,
-      "change_24h": 7.09,
-      "volume": 113313166,
+      "symbol": "HBAR",
+      "name": "Hedera",
+      "price": 0.090319,
+      "change_24h": 4.33,
+      "volume": 107630048,
       "source": "coingecko_movers"
     },
     {
       "symbol": "RENDER",
       "name": "Render",
-      "price": 1.39,
-      "change_24h": 6.79,
-      "volume": 52369698,
+      "price": 1.78,
+      "change_24h": 4.1,
+      "volume": 65567015,
       "source": "coingecko_movers"
     },
     {
-      "symbol": "NEAR",
-      "name": "NEAR Protocol",
-      "price": 1.024,
-      "change_24h": 6.64,
-      "volume": 136338534,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "POL",
-      "name": "POL (ex-MATIC)",
-      "price": 0.10142,
-      "change_24h": 6.59,
-      "volume": 95668623,
-      "source": "coingecko_movers"
-    },
-    {
-      "symbol": "FIL",
-      "name": "Filecoin",
-      "price": 0.96013,
-      "change_24h": 6.49,
-      "volume": 82061033,
+      "symbol": "JST",
+      "name": "JUST",
+      "price": 0.061256,
+      "change_24h": 3.79,
+      "volume": 30775588,
       "source": "coingecko_movers"
     }
   ],
   "stock_highlights": [
     {
-      "symbol": "EPD",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "RIME",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "CRWD",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "MSTR",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "NET",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "EMAT",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "TPH",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "RIVN",
-      "category": "gainers",
-      "source": "yahoo_gainers"
-    },
-    {
-      "symbol": "MGA",
+      "symbol": "NKE",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
@@ -477,27 +372,67 @@
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "IRON",
+      "symbol": "TSLA",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "BFAM",
+      "symbol": "BA",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "FBIN",
+      "symbol": "APLS",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "PINS",
+      "symbol": "CNTA",
       "category": "gainers",
       "source": "yahoo_gainers"
     },
     {
-      "symbol": "CALY",
+      "symbol": "FLY",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "ALKS",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "PRAX",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "BTU",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "SOC",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "VG",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "CEG",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "MKC",
+      "category": "gainers",
+      "source": "yahoo_gainers"
+    },
+    {
+      "symbol": "NVDA",
       "category": "gainers",
       "source": "yahoo_gainers"
     }
@@ -505,42 +440,34 @@
   "social_buzz": [],
   "breaking_news": [
     {
-      "title": "Amazon\u2019s stock just clinched its worst losing streak in nearly 20 years. It\u2019s giving investors AWS d\u00e9j\u00e0 vu. - MarketWatch",
+      "title": "NFL demands prediction markets to stop manipulable trading - New York Post",
       "tickers": [
-        "AMZN",
-        "AWS"
+        "NFL"
       ]
     },
     {
-      "title": "Amazon's Ring ends deal with surveillance firm after backlash - BBC",
+      "title": "Nike Guides for Sales Declines Ahead as Turnaround Plan Hits Snags - WSJ",
       "tickers": [
-        "AMZN",
-        "BBC"
+        "WSJ"
       ]
     },
     {
-      "title": "Valentine\u2019s Day sticker shock: Chocolate prices are spiking - CNN",
+      "title": "America Now Has an EV Rust Belt. High Gas Prices Won\u2019t Rescue It. - WSJ",
       "tickers": [
-        "CNN"
+        "EV",
+        "WSJ"
       ]
     },
     {
-      "title": "Rivian Surges 30% On Upgrades As Attention Turns To Its New Tesla Model Y Competitor - Investor's Business Daily",
+      "title": "Dow Jones Futures Rise, UAE Willing To Help Force Hormuz Open; Trump To Speak To Nation On Iran - Investor's Business Daily",
       "tickers": [
-        "TSLA"
+        "UAE"
       ]
     },
     {
-      "title": "How packaging and logistics companies are automating their warehouses - CNBC",
+      "title": "Meta was finally held accountable for harming teens. Now what? - TechCrunch",
       "tickers": [
-        "CNBC"
-      ]
-    },
-    {
-      "title": "The 2027 Toyota Highlander Gets An EV Feature Most Teslas Don't Have - InsideEVs",
-      "tickers": [
-        "TSLA",
-        "EV"
+        "META"
       ]
     }
   ]

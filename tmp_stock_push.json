@@ -1,0 +1,1387 @@
+{
+  "tickers": [
+    "CRM",
+    "MSFT",
+    "AMD",
+    "PANW",
+    "GOOGL",
+    "GOOG",
+    "MA",
+    "META",
+    "ORCL",
+    "ADBE",
+    "PLTR",
+    "ANET"
+  ],
+  "results": [
+    {
+      "ticker": "CRM",
+      "analysis": {
+        "ticker": "CRM",
+        "company_name": "Salesforce, Inc.",
+        "recommendation": "BUY",
+        "confidence": 0.541025641025641,
+        "final_score": 0.541025641025641,
+        "supporting_points": [
+          "Beat by 13.6% - EPS $3.25 vs $2.86 expected",
+          "Strong margin: 23.9%",
+          "Analyst consensus: Buy with 65.0% upside (52 analysts)",
+          "Historical pattern: 3/4 quarters beat expectations, avg reaction +0.5%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.8%, QQQ -0.7% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:31:25.037675",
+        "components": {
+          "earnings_surprise": {
+            "score": 1.0,
+            "actual_eps": 3.25,
+            "expected_eps": 2.86,
+            "surprise_pct": 13.63636363636364,
+            "explanation": "Beat by 13.6%"
+          },
+          "fundamentals": {
+            "score": 0.275,
+            "pe_ratio": 25.11,
+            "operating_margin": 0.239,
+            "revenue_growth_yoy": 0.086,
+            "debt_to_equity": 0.19
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Buy",
+            "price_target": 309.96423,
+            "current_price": 187.8489,
+            "upside_pct": 65.007210582548,
+            "num_analysts": 52
+          },
+          "historical_patterns": {
+            "score": 0.5,
+            "beats_last_4q": 3,
+            "avg_reaction_pct": 0.4558770328187318
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.81,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.8423419538481374,
+            "qqq_trend_10d": -0.6639733352604686,
+            "market_regime": "choppy",
+            "gld_change_5d": 3.0003491395272226,
+            "tlt_change_5d": 0.37976541038865685,
+            "uup_change_5d": 0.22156375964336242,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Technology",
+            "stock_return_1m": -17.656215238247537,
+            "sector_return_1m": -2.963679895438012,
+            "relative_strength": 5.957531130614248,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.3,
+            "rsi_14d": 42.65698238610202,
+            "rsi_status": "neutral",
+            "near_52w_high": false,
+            "near_52w_low": true,
+            "volume_ratio": 1.0186326265149164
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 1.94,
+            "days_to_cover": 1.95,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 187.96,
+      "change": 9.8,
+      "change_pct": 5.5
+    },
+    {
+      "ticker": "MSFT",
+      "analysis": {
+        "ticker": "MSFT",
+        "company_name": "Microsoft Corporation",
+        "recommendation": "BUY",
+        "confidence": 0.5064102564102564,
+        "final_score": 0.5064102564102564,
+        "supporting_points": [
+          "Beat by 34.0% - EPS $5.16 vs $3.85 expected",
+          "Strong margin: 47.1%",
+          "Analyst consensus: Strong Buy with 53.6% upside (53 analysts)",
+          "Historical pattern: 3/4 quarters beat expectations, avg reaction -0.4%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.8%, QQQ -0.6% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:31:30.068793",
+        "components": {
+          "earnings_surprise": {
+            "score": 1.0,
+            "actual_eps": 5.16,
+            "expected_eps": 3.85,
+            "surprise_pct": 34.02597402597402,
+            "explanation": "Beat by 34.0%"
+          },
+          "fundamentals": {
+            "score": 0.275,
+            "pe_ratio": 24.27,
+            "operating_margin": 0.471,
+            "revenue_growth_yoy": 0.167,
+            "debt_to_equity": 0.32
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Strong Buy",
+            "price_target": 595.99567,
+            "current_price": 388.09,
+            "upside_pct": 53.571509186013564,
+            "num_analysts": 53
+          },
+          "historical_patterns": {
+            "score": 0.5,
+            "beats_last_4q": 3,
+            "avg_reaction_pct": -0.441232980756038
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.81,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.8315039188888165,
+            "qqq_trend_10d": -0.6361642925503308,
+            "market_regime": "choppy",
+            "gld_change_5d": 3.0241556207368503,
+            "tlt_change_5d": 0.3804300957249144,
+            "uup_change_5d": 0.22156375964336242,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Technology",
+            "stock_return_1m": -16.516875986314357,
+            "sector_return_1m": -2.936104910303474,
+            "relative_strength": 5.625437949561271,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.0,
+            "rsi_14d": 36.250551239223626,
+            "rsi_status": "neutral",
+            "near_52w_high": false,
+            "near_52w_low": false,
+            "volume_ratio": 0.8924062331451337
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 0.7900001,
+            "days_to_cover": 1.8,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 388.06,
+      "change": 3.58,
+      "change_pct": 0.93
+    },
+    {
+      "ticker": "AMD",
+      "analysis": {
+        "ticker": "AMD",
+        "company_name": "Advanced Micro Devices, Inc.",
+        "recommendation": "BUY",
+        "confidence": 0.4641025641025641,
+        "final_score": 0.4641025641025641,
+        "supporting_points": [
+          "Beat by 15.9% - EPS $1.53 vs $1.32 expected",
+          "Elevated P/E: 81.2x; Strong margin: 17.1%; Strong growth: 34.1% YoY",
+          "Analyst consensus: Buy with 35.2% upside (47 analysts)",
+          "Historical pattern: 2/4 quarters beat expectations, avg reaction -1.9%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.8%, QQQ -0.6% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:31:34.781758",
+        "components": {
+          "earnings_surprise": {
+            "score": 1.0,
+            "actual_eps": 1.53,
+            "expected_eps": 1.32,
+            "surprise_pct": 15.909090909090907,
+            "explanation": "Beat by 15.9%"
+          },
+          "fundamentals": {
+            "score": 0.25,
+            "pe_ratio": 81.16,
+            "operating_margin": 0.171,
+            "revenue_growth_yoy": 0.341,
+            "debt_to_equity": 0.06
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Buy",
+            "price_target": 286.29788,
+            "current_price": 211.82,
+            "upside_pct": 35.16092909073743,
+            "num_analysts": 47
+          },
+          "historical_patterns": {
+            "score": 0.0,
+            "beats_last_4q": 2,
+            "avg_reaction_pct": -1.9028228526639592
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.79,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.8315039188888165,
+            "qqq_trend_10d": -0.6443393126435121,
+            "market_regime": "choppy",
+            "gld_change_5d": 3.0003491395272226,
+            "tlt_change_5d": 0.3853470628918448,
+            "uup_change_5d": 0.22156375964336242,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Technology",
+            "stock_return_1m": -18.403417526971413,
+            "sector_return_1m": -2.925766920071876,
+            "relative_strength": 6.290117439197551,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.0,
+            "rsi_14d": 37.094292498039216,
+            "rsi_status": "neutral",
+            "near_52w_high": false,
+            "near_52w_low": false,
+            "volume_ratio": 0.9312979387874813
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 2.08,
+            "days_to_cover": 0.94,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 212.0,
+      "change": 15.4,
+      "change_pct": 7.83
+    },
+    {
+      "ticker": "PANW",
+      "analysis": {
+        "ticker": "PANW",
+        "company_name": "Palo Alto Networks, Inc.",
+        "recommendation": "BUY",
+        "confidence": 0.4512820512820513,
+        "final_score": 0.4512820512820513,
+        "supporting_points": [
+          "Beat by 9.6% - EPS $1.03 vs $0.94 expected",
+          "Elevated P/E: 92.5x; Strong margin: 15.4%",
+          "Analyst consensus: Buy with 42.5% upside (47 analysts)",
+          "Historical pattern: 3/4 quarters beat expectations, avg reaction -0.7%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.8%, QQQ -0.6% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:31:39.055770",
+        "components": {
+          "earnings_surprise": {
+            "score": 0.7,
+            "actual_eps": 1.03,
+            "expected_eps": 0.94,
+            "surprise_pct": 9.574468085106393,
+            "explanation": "Beat by 9.6%"
+          },
+          "fundamentals": {
+            "score": 0.175,
+            "pe_ratio": 92.5,
+            "operating_margin": 0.154,
+            "revenue_growth_yoy": 0.149,
+            "debt_to_equity": 0.05
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Buy",
+            "price_target": 209.61064,
+            "current_price": 147.08,
+            "upside_pct": 42.514713081316266,
+            "num_analysts": 47
+          },
+          "historical_patterns": {
+            "score": 0.5,
+            "beats_last_4q": 3,
+            "avg_reaction_pct": -0.702120447281709
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.79,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.840895706709546,
+            "qqq_trend_10d": -0.6443393126435121,
+            "market_regime": "choppy",
+            "gld_change_5d": 7.380630448752735,
+            "tlt_change_5d": 0.3853470628918448,
+            "uup_change_5d": 0.22156375964336242,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Technology",
+            "stock_return_1m": -18.370514036087908,
+            "sector_return_1m": -2.9326554079678036,
+            "relative_strength": 6.264122946793069,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.3,
+            "rsi_14d": 33.11596143833877,
+            "rsi_status": "neutral",
+            "near_52w_high": false,
+            "near_52w_low": true,
+            "volume_ratio": 2.016792870385067
+          },
+          "sentiment_analysis": {
+            "score": 0.06666666666666667,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 6.7,
+            "days_to_cover": 7.5,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 147.06,
+      "change": 2.92,
+      "change_pct": 2.03
+    },
+    {
+      "ticker": "GOOGL",
+      "analysis": {
+        "ticker": "GOOGL",
+        "company_name": "Alphabet Inc.",
+        "recommendation": "BUY",
+        "confidence": 0.49487179487179483,
+        "final_score": 0.49487179487179483,
+        "supporting_points": [
+          "Beat by 6.8% - EPS $2.82 vs $2.64 expected",
+          "Strong margin: 31.6%",
+          "Analyst consensus: Strong Buy with 21.9% upside (56 analysts)",
+          "Historical pattern: 3/4 quarters beat expectations, avg reaction -0.3%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.9%, QQQ -0.7% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:31:43.481343",
+        "components": {
+          "earnings_surprise": {
+            "score": 0.7,
+            "actual_eps": 2.82,
+            "expected_eps": 2.64,
+            "surprise_pct": 6.818181818181807,
+            "explanation": "Beat by 6.8%"
+          },
+          "fundamentals": {
+            "score": 0.275,
+            "pe_ratio": 28.6,
+            "operating_margin": 0.316,
+            "revenue_growth_yoy": 0.18,
+            "debt_to_equity": 0.16
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Strong Buy",
+            "price_target": 376.86,
+            "current_price": 309.15,
+            "upside_pct": 21.901989325570128,
+            "num_analysts": 56
+          },
+          "historical_patterns": {
+            "score": 0.5,
+            "beats_last_4q": 3,
+            "avg_reaction_pct": -0.33616445421287783
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.79,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.8531711702273447,
+            "qqq_trend_10d": -0.6656003539114926,
+            "market_regime": "choppy",
+            "gld_change_5d": 2.985053059152813,
+            "tlt_change_5d": 0.40210054200828366,
+            "uup_change_5d": 0.22156375964336242,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Communication Services",
+            "stock_return_1m": -5.742075135799643,
+            "sector_return_1m": -1.0259891908647394,
+            "relative_strength": 5.596623421500204,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.5,
+            "rsi_14d": 24.66481705629053,
+            "rsi_status": "oversold",
+            "near_52w_high": false,
+            "near_52w_low": false,
+            "volume_ratio": 0.8490040147484657
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 1.3099999,
+            "days_to_cover": 2.55,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 309.2,
+      "change": -2.29,
+      "change_pct": -0.74
+    },
+    {
+      "ticker": "GOOG",
+      "analysis": {
+        "ticker": "GOOG",
+        "company_name": "Alphabet Inc.",
+        "recommendation": "BUY",
+        "confidence": 0.4923076923076923,
+        "final_score": 0.4923076923076923,
+        "supporting_points": [
+          "Beat by 6.8% - EPS $2.82 vs $2.64 expected",
+          "Strong margin: 31.6%",
+          "Analyst consensus: Strong Buy with 16.6% upside (18 analysts)",
+          "Historical pattern: 3/4 quarters beat expectations, avg reaction -0.3%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.9%, QQQ -0.7% 10d)"
+        ],
+        "caveats": [
+          "Market conditions can change rapidly"
+        ],
+        "timestamp": "2026-02-24T23:31:47.849141",
+        "components": {
+          "earnings_surprise": {
+            "score": 0.7,
+            "actual_eps": 2.82,
+            "expected_eps": 2.64,
+            "surprise_pct": 6.818181818181807,
+            "explanation": "Beat by 6.8%"
+          },
+          "fundamentals": {
+            "score": 0.275,
+            "pe_ratio": 28.59,
+            "operating_margin": 0.316,
+            "revenue_growth_yoy": 0.18,
+            "debt_to_equity": 0.16
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Strong Buy",
+            "price_target": 360.77777,
+            "current_price": 309.29,
+            "upside_pct": 16.647085259788533,
+            "num_analysts": 18
+          },
+          "historical_patterns": {
+            "score": 0.5,
+            "beats_last_4q": 3,
+            "avg_reaction_pct": -0.34314883337662816
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.79,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.858233035212414,
+            "qqq_trend_10d": -0.6623363348999294,
+            "market_regime": "choppy",
+            "gld_change_5d": 2.961093417364774,
+            "tlt_change_5d": 0.39651888950509573,
+            "uup_change_5d": 0.22156375964336242,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Communication Services",
+            "stock_return_1m": -5.82772114535652,
+            "sector_return_1m": -1.0345409489946662,
+            "relative_strength": 5.633146905417048,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.5,
+            "rsi_14d": 23.349716755471334,
+            "rsi_status": "oversold",
+            "near_52w_high": false,
+            "near_52w_low": false,
+            "volume_ratio": 0.7754519974906194
+          },
+          "sentiment_analysis": {
+            "score": 0.1,
+            "indicators_available": 2,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": null,
+            "days_to_cover": null,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": null
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 309.27,
+      "change": -2.42,
+      "change_pct": -0.78
+    },
+    {
+      "ticker": "MA",
+      "analysis": {
+        "ticker": "MA",
+        "company_name": "Mastercard Incorporated",
+        "recommendation": "BUY",
+        "confidence": 0.5102564102564102,
+        "final_score": 0.5102564102564102,
+        "supporting_points": [
+          "Beat by 12.3% - EPS $4.76 vs $4.24 expected",
+          "Strong margin: 57.7%; High debt: D/E 2.6x",
+          "Analyst consensus: Strong Buy with 33.8% upside (36 analysts)",
+          "Historical pattern: 3/4 quarters beat expectations, avg reaction +0.8%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.9%, QQQ -0.7% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:31:52.190970",
+        "components": {
+          "earnings_surprise": {
+            "score": 1.0,
+            "actual_eps": 4.76,
+            "expected_eps": 4.24,
+            "surprise_pct": 12.264150943396215,
+            "explanation": "Beat by 12.3%"
+          },
+          "fundamentals": {
+            "score": 0.07500000000000001,
+            "pe_ratio": 29.94,
+            "operating_margin": 0.577,
+            "revenue_growth_yoy": 0.176,
+            "debt_to_equity": 2.56
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Strong Buy",
+            "price_target": 662.05554,
+            "current_price": 494.65,
+            "upside_pct": 33.84323056706762,
+            "num_analysts": 36
+          },
+          "historical_patterns": {
+            "score": 0.5,
+            "beats_last_4q": 3,
+            "avg_reaction_pct": 0.7534190342969894
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.76,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.858233035212414,
+            "qqq_trend_10d": -0.6983104159937331,
+            "market_regime": "choppy",
+            "gld_change_5d": 2.9764960442285133,
+            "tlt_change_5d": 0.39651888950509573,
+            "uup_change_5d": 0.22156375964336242,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.09999999999999998,
+            "sector_name": "Financial Services",
+            "stock_return_1m": -5.7342678084151615,
+            "sector_return_1m": -4.701335870043535,
+            "relative_strength": 1.2197103050971896,
+            "sector_trend": "downtrend"
+          },
+          "momentum": {
+            "score": 0.5,
+            "rsi_14d": 22.86848732559008,
+            "rsi_status": "oversold",
+            "near_52w_high": false,
+            "near_52w_low": false,
+            "volume_ratio": 0.9608592177979459
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 0.76,
+            "days_to_cover": 1.65,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 494.65,
+      "change": -1.38,
+      "change_pct": -0.28
+    },
+    {
+      "ticker": "META",
+      "analysis": {
+        "ticker": "META",
+        "company_name": "Meta Platforms, Inc.",
+        "recommendation": "BUY",
+        "confidence": 0.46794871794871795,
+        "final_score": 0.46794871794871795,
+        "supporting_points": [
+          "Beat by 8.0% - EPS $8.88 vs $8.22 expected",
+          "Strong margin: 41.3%; Strong growth: 23.8% YoY",
+          "Analyst consensus: Strong Buy with 35.5% upside (59 analysts)",
+          "Historical pattern: 2/4 quarters beat expectations, avg reaction -1.0%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.9%, QQQ -0.7% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:31:56.964709",
+        "components": {
+          "earnings_surprise": {
+            "score": 0.7,
+            "actual_eps": 8.88,
+            "expected_eps": 8.22,
+            "surprise_pct": 8.029197080291972,
+            "explanation": "Beat by 8.0%"
+          },
+          "fundamentals": {
+            "score": 0.35,
+            "pe_ratio": 27.04,
+            "operating_margin": 0.413,
+            "revenue_growth_yoy": 0.238,
+            "debt_to_equity": 0.39
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Strong Buy",
+            "price_target": 861.301,
+            "current_price": 635.79,
+            "upside_pct": 35.469416002139084,
+            "num_analysts": 59
+          },
+          "historical_patterns": {
+            "score": 0.0,
+            "beats_last_4q": 2,
+            "avg_reaction_pct": -1.0275047402909268
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.76,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.8842390279667158,
+            "qqq_trend_10d": -0.714670437889611,
+            "market_regime": "choppy",
+            "gld_change_5d": 2.993803189589023,
+            "tlt_change_5d": 0.3910394962844089,
+            "uup_change_5d": 0.18463529247198088,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Communication Services",
+            "stock_return_1m": -3.4914080483092755,
+            "sector_return_1m": -1.055917082779388,
+            "relative_strength": 3.306517249554464,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.5,
+            "rsi_14d": 27.193401989615467,
+            "rsi_status": "oversold",
+            "near_52w_high": false,
+            "near_52w_low": false,
+            "volume_ratio": 0.6423546494451406
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 1.48,
+            "days_to_cover": 1.87,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 635.76,
+      "change": -1.49,
+      "change_pct": -0.23
+    },
+    {
+      "ticker": "ORCL",
+      "analysis": {
+        "ticker": "ORCL",
+        "company_name": "Oracle Corporation",
+        "recommendation": "BUY",
+        "confidence": 0.4371794871794872,
+        "final_score": 0.4371794871794872,
+        "supporting_points": [
+          "Beat by 37.8% - EPS $2.26 vs $1.64 expected",
+          "Strong margin: 32.0%; High debt: D/E 4.3x",
+          "Analyst consensus: Buy with 87.2% upside (37 analysts)",
+          "Historical pattern: 2/4 quarters beat expectations, avg reaction +0.2%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.9%, QQQ -0.7% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:32:01.519186",
+        "components": {
+          "earnings_surprise": {
+            "score": 1.0,
+            "actual_eps": 2.26,
+            "expected_eps": 1.64,
+            "surprise_pct": 37.80487804878048,
+            "explanation": "Beat by 37.8%"
+          },
+          "fundamentals": {
+            "score": 0.07500000000000001,
+            "pe_ratio": 27.45,
+            "operating_margin": 0.32,
+            "revenue_growth_yoy": 0.142,
+            "debt_to_equity": 4.33
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Buy",
+            "price_target": 272.89,
+            "current_price": 145.77,
+            "upside_pct": 87.20587226452629,
+            "num_analysts": 37
+          },
+          "historical_patterns": {
+            "score": 0.0,
+            "beats_last_4q": 2,
+            "avg_reaction_pct": 0.18029711107146526
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.76,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.8827927808281246,
+            "qqq_trend_10d": -0.7007659165345421,
+            "market_regime": "choppy",
+            "gld_change_5d": 3.011256836372361,
+            "tlt_change_5d": 0.39651888950509573,
+            "uup_change_5d": 0.18463529247198088,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Technology",
+            "stock_return_1m": -17.71844589116029,
+            "sector_return_1m": -3.0222583344919314,
+            "relative_strength": 5.862651014622454,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.0,
+            "rsi_14d": 44.22827938266625,
+            "rsi_status": "neutral",
+            "near_52w_high": false,
+            "near_52w_low": false,
+            "volume_ratio": 0.699703368310552
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 2.0299999,
+            "days_to_cover": 1.55,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 145.71,
+      "change": 4.4,
+      "change_pct": 3.11
+    },
+    {
+      "ticker": "ADBE",
+      "analysis": {
+        "ticker": "ADBE",
+        "company_name": "Adobe Inc.",
+        "recommendation": "BUY",
+        "confidence": 0.3907407407407407,
+        "final_score": 0.3907407407407407,
+        "supporting_points": [
+          "Strong margin: 36.5%",
+          "Analyst consensus: Buy with 61.0% upside (33 analysts)",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.9%, QQQ -0.7% 10d)",
+          "Sector: Technology sector neutral (-3.0% 1m), stock -14.8% vs sector",
+          "Momentum: Near 52w low"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)",
+          "No recent earnings data available"
+        ],
+        "timestamp": "2026-02-24T23:32:06.661993",
+        "components": {
+          "fundamentals": {
+            "score": 0.26666666666666666,
+            "pe_ratio": 15.39,
+            "operating_margin": 0.365,
+            "revenue_growth_yoy": 0.105,
+            "debt_to_equity": 0.57
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Buy",
+            "price_target": 413.59787,
+            "current_price": 256.94,
+            "upside_pct": 60.970604032069744,
+            "num_analysts": 33
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.81,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.8683479466024392,
+            "qqq_trend_10d": -0.7048584174358905,
+            "market_regime": "choppy",
+            "gld_change_5d": 3.0221711923730825,
+            "tlt_change_5d": 0.3909287153950327,
+            "uup_change_5d": 0.18463529247198088,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Technology",
+            "stock_return_1m": -14.788917133328372,
+            "sector_return_1m": -3.0498333196264693,
+            "relative_strength": 4.849090289019354,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.3,
+            "rsi_14d": 38.968971286306754,
+            "rsi_status": "neutral",
+            "near_52w_high": false,
+            "near_52w_low": true,
+            "volume_ratio": 1.000044141321412
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 2.91,
+            "days_to_cover": 2.51,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 256.55,
+      "change": 9.87,
+      "change_pct": 4.0
+    },
+    {
+      "ticker": "PLTR",
+      "analysis": {
+        "ticker": "PLTR",
+        "company_name": "Palantir Technologies Inc.",
+        "recommendation": "BUY",
+        "confidence": 0.491025641025641,
+        "final_score": 0.491025641025641,
+        "supporting_points": [
+          "Beat by 8.7% - EPS $0.25 vs $0.23 expected",
+          "Elevated P/E: 205.8x; Strong margin: 40.9%; Strong growth: 70.0% YoY",
+          "Analyst consensus: Buy with 46.5% upside (24 analysts)",
+          "Historical pattern: 3/4 quarters beat expectations, avg reaction +0.1%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.9%, QQQ -0.7% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:32:11.113263",
+        "components": {
+          "earnings_surprise": {
+            "score": 0.7,
+            "actual_eps": 0.25,
+            "expected_eps": 0.23,
+            "surprise_pct": 8.69565217391304,
+            "explanation": "Beat by 8.7%"
+          },
+          "fundamentals": {
+            "score": 0.25,
+            "pe_ratio": 205.79,
+            "operating_margin": 0.409,
+            "revenue_growth_yoy": 0.7,
+            "debt_to_equity": 0.03
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Buy",
+            "price_target": 189.92043,
+            "current_price": 129.645,
+            "upside_pct": 46.49267615411315,
+            "num_analysts": 24
+          },
+          "historical_patterns": {
+            "score": 0.5,
+            "beats_last_4q": 3,
+            "avg_reaction_pct": 0.0926756394412737
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.81,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.854617417365936,
+            "qqq_trend_10d": -0.6901353959005518,
+            "market_regime": "choppy",
+            "gld_change_5d": 2.9927110880733925,
+            "tlt_change_5d": 0.37976541038865685,
+            "uup_change_5d": 0.18463529247198088,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Technology",
+            "stock_return_1m": -23.558372873328842,
+            "sector_return_1m": -3.0188088321562607,
+            "relative_strength": 7.803863769837217,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.5,
+            "rsi_14d": 29.002760810336994,
+            "rsi_status": "oversold",
+            "near_52w_high": false,
+            "near_52w_low": false,
+            "volume_ratio": 1.0297926887178288
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 2.0499999,
+            "days_to_cover": 1.17,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 129.6,
+      "change": -1.0,
+      "change_pct": -0.76
+    },
+    {
+      "ticker": "ANET",
+      "analysis": {
+        "ticker": "ANET",
+        "company_name": "Arista Networks, Inc.",
+        "recommendation": "BUY",
+        "confidence": 0.43333333333333335,
+        "final_score": 0.43333333333333335,
+        "supporting_points": [
+          "Beat by 7.9% - EPS $0.82 vs $0.76 expected",
+          "Elevated P/E: 46.7x; Strong margin: 41.5%; Strong growth: 28.9% YoY",
+          "Analyst consensus: Strong Buy with 38.8% upside (24 analysts)",
+          "Historical pattern: 3/4 quarters beat expectations, avg reaction -1.5%",
+          "Market: VIX 20.8 (elevated), Market choppy (SPY -0.9%, QQQ -0.7% 10d)"
+        ],
+        "caveats": [
+          "Short interest data typically ~2 weeks old (FINRA lag)"
+        ],
+        "timestamp": "2026-02-24T23:32:15.392927",
+        "components": {
+          "earnings_surprise": {
+            "score": 0.7,
+            "actual_eps": 0.82,
+            "expected_eps": 0.76,
+            "surprise_pct": 7.894736842105256,
+            "explanation": "Beat by 7.9%"
+          },
+          "fundamentals": {
+            "score": 0.25,
+            "pe_ratio": 46.66,
+            "operating_margin": 0.415,
+            "revenue_growth_yoy": 0.289,
+            "debt_to_equity": 0.0
+          },
+          "analyst_sentiment": {
+            "score": 1.0,
+            "consensus_rating": "Strong Buy",
+            "price_target": 178.0634,
+            "current_price": 128.32,
+            "upside_pct": 38.76511845386534,
+            "num_analysts": 24
+          },
+          "historical_patterns": {
+            "score": 0.5,
+            "beats_last_4q": 3,
+            "avg_reaction_pct": -1.4724852587716777
+          },
+          "market_context": {
+            "score": -0.05,
+            "vix_level": 20.81,
+            "vix_status": "elevated",
+            "spy_trend_10d": -0.8567867880738229,
+            "qqq_trend_10d": -0.6786863750862918,
+            "market_regime": "choppy",
+            "gld_change_5d": 3.0047108864341614,
+            "tlt_change_5d": 0.3866849551712349,
+            "uup_change_5d": 0.18463529247198088,
+            "risk_off_detected": false
+          },
+          "sector_performance": {
+            "score": 0.3,
+            "sector_name": "Technology",
+            "stock_return_1m": -5.856682429829601,
+            "sector_return_1m": -3.0050318563644054,
+            "relative_strength": 1.9489585168375634,
+            "sector_trend": "neutral"
+          },
+          "momentum": {
+            "score": 0.0,
+            "rsi_14d": 40.3817636142087,
+            "rsi_status": "neutral",
+            "near_52w_high": false,
+            "near_52w_low": false,
+            "volume_ratio": 0.9546347123003766
+          },
+          "sentiment_analysis": {
+            "score": 0.13333333333333333,
+            "indicators_available": 3,
+            "fear_greed_value": 40.0611670020121,
+            "fear_greed_status": "fear",
+            "short_interest_pct": 1.23000005,
+            "days_to_cover": 1.62,
+            "vix_structure": "flat",
+            "vix_slope": 0.0,
+            "insider_net_value": null,
+            "put_call_ratio": null,
+            "data_freshness_warnings": [
+              "Short interest data typically ~2 weeks old (FINRA lag)"
+            ]
+          }
+        },
+        "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only."
+      },
+      "price": 128.39,
+      "change": 0.96,
+      "change_pct": 0.75
+    }
+  ],
+  "hot": {
+    "raw": "score\": 360,\n      \"tickers\": [\n        \"WENT\",\n        \"HIMS\"\n      ]\n    },\n    {\n      \"platform\": \"reddit_wsb\",\n      \"title\": \"HIMS YOLO BEFORE EARNINGS WENT ALL IN! \\ud83d\\ude80\",\n      \"score\": 360,\n      \"tickers\": [\n        \"WENT\",\n        \"HIMS\"\n      ]\n    },\n    {\n      \"platform\": \"reddit_wsb\",\n      \"title\": \"Triple downed on $MSFT $405 March 6th calls after being down ~80%\",\n      \"score\": 243,\n      \"tickers\": [\n        \"MSFT\"\n      ]\n    }\n  ],\n  \"breaking_news\": [\n    {\n      \"title\": \"Stock Market Today: Nasdaq Futures Inch Up; Trump's New Tariffs Kick In at 10% \\u2014 Live Updates - WSJ\",\n      \"tickers\": [\n        \"WSJ\"\n      ]\n    },\n    {\n      \"title\": \"Meta and AMD Partner for Longterm AI Infrastructure Agreement - meta.com\",\n      \"tickers\": [\n        \"META\",\n        \"AMD\"\n      ]\n    },\n    {\n      \"title\": \"Fed's Goolsbee calls for a hold on cuts as current rate of inflation is 'not good enough' - CNBC\",\n      \"tickers\": [\n        \"CNBC\"\n      ]\n    }\n  ]\n}\n"
+  },
+  "rumor": {
+    "timestamp": "2026-02-24T15:31:21.108712+00:00",
+    "rumors": [
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "GameStop Insider Buying And Institutional Selling Shape Merger Speculation Risks - simplywall.st",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTzBmZVhnQ2p1aVVsR1owdHhwX1gwWW1OMGxNbFB6UURicmh5TnMwTzFpUTk1cWtqYUdPUmU5UkFfcGtPb05rV0EwWnpwaWdfU2hINUU2T1JmVDVRaG5lRVF6NW02aG52ZXh3TVotRGFuRXVLdWZSUFJuNnk5RlRuZVlEOEJFT3hiNVprUFBETWlLcjRkRFBpd3Z3MVQ2RndwYm1ZcVl5NmJtSnQtUFQzZWJHVEs1SFE4THdRa3N4c9IBxAFBVV95cUxNOU93R2JsTE93M3NxU1VsR1k1YjN0UUItUU1USVhVdkhDdW1DVzRXX05ZY25faVRRZVhreGtCbkJKTms1YlhlNU42OGdvWk92dEg3TzM0RFNENmZGbEZFbWtHVG1VQjNHWlZzWDJfQTVQUzhnZExQcnFfMVR2SzNFc0JWOGRCQ0xBVVpPQXRrMjU5X1h2NldBWnByR1NDMEgxY2Y5ZWQtQUgyTWZHNXRHcEtkYm56ZWphU0gxd29oX2g3YnF4?oc=5",
+        "date": "Tue, 24 Feb 2026 12:39:05 GMT",
+        "query": "insider buying stock",
+        "score": 9,
+        "symbols": [
+          "GME"
+        ]
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Accenture Song/WPP merger rumors swirl, but would it make sense? - The Drum",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRVd5MHd2NzlJZmZTZm5iWlBVQVl0cFlXUFE1am9rMURoWmM2bzFPcElyY2F3aVdlWDZCaVpPWjUtVzd6a1VSMmZrendZeXBCSm0yWktwazJFMlBCOVhDWTdSWDJ5dUJmZ0xMdkVuTVVtTl9MS1BCbFdrLUtCMzAtaFBrR2JRYkxkZTRhM2pxWQ?oc=5",
+        "date": "Tue, 15 Jul 2025 07:00:00 GMT",
+        "query": "merger acquisition rumor",
+        "score": 7,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "As railroad merger rumors swirl, CSX CEO says working with peers is the best way to boost value - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQUldUVGpXWmZ6WHRJLWlhWmFZdGlrUVFCRTJCSUxTbVdVR1VuYVJCeDhJclRqX2FPM1plVzNidHItN3lRYXpObDQwVkcxb3RoUXdlMjdEU3FtSzlZQ3hUQ3ZsY3dubkNMSWFkQUpUTlNWQXhBVkp1anVUdGVSSlhRMGtUMWt0dVpTS05DZFNnbUxOSGVuQ3l3U052dTMzaDBrclNDNlZUeXFEVy1GdnhhRlIyaXRKUHdmcGNtT3JVNkVjMjBWbXc3dW1CVkPSAdIBQVVfeXFMUHJmZUhvVE5VT0k4bEJmZVIxTlJYSmZJLXJTam5iZVVTYlUtelRVM2FEeUJBdWluaVZDR3E4aG1PeGRSN1V5UWJlbFd4MTBRY3BtWnBwUlMxcEZvbWFSdWR0b3FtbUVDN3QyT0sySW5fVEhfdHBvUndTamN2WFdVamk4WWF5VnRrYkdzNkZsOFlKV3BRTGo5b1U5RkRIUC0xaF94TElBVHItcGM5d0hVVEdRVU53WkJRcDF2ZUJPTkppNWJfX1JCbDNaT2FfYkdUZjRB?oc=5",
+        "date": "Wed, 27 Aug 2025 07:00:00 GMT",
+        "query": "merger acquisition rumor",
+        "score": 7,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Eli Lilly acquisition rumors reportedly fuel Abivax rally - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVmxkWXNtVF9Mb1ItclZ6a3p3RVlWTnZSWEhMc3BVT0R0WmhiSjlZeEZCNFp4YklBT0xaSFZQNTlMWHlYWlJjaTFKSEZJS2F2Y0pPVVQyVWZXTENyWkUtMXBDbmI2Uk5JYkZLODNVM0NycUQtTnBZWFExUUQ5dU9HaFdiakZqVFhkU2NLNw?oc=5",
+        "date": "Wed, 10 Dec 2025 08:00:00 GMT",
+        "query": "merger acquisition rumor",
+        "score": 7,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Ferretti S.p.A. Names Altus Capital as Independent Adviser on Takeover Offer - TipRanks",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRHE0SHdmZHJqRTRGeERRYVAxaURpV0YzX3Y3UVFTUmp0RVVCck1id0c5ZG5RLUtsOTB4VTZIdlRwQlhPckN5WHVnaS1xMzgzcjFISi1NUGpsUlp0LTh4MXRsZ1Mza19OMVVmWHpSc0dtMkhLVEFZMnNQUm9JeUtWaGthdjNOTk5EaXlyQ2xWLXlzU2JNMGQxWFZkMWxsUHV1WVpkU0RkTDNfeVdBRDVURDhOeFRzQ2I3UUhYODRJQ1ZlUmt4OGc?oc=5",
+        "date": "Tue, 24 Feb 2026 15:16:32 GMT",
+        "query": "takeover bid company",
+        "score": 5,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "What is a hostile takeover bid? - CNN",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDamhrZzlfTThFeGdFTGE5N0JaSnVXV1REbFJCdHFhTWNId0FyMHNMdmdMMVMwU0ZKM1gyQ3I4dzZwbk1SR1l0VVVFV24tMVFRdkRFTU9vd2N2SmVtSk96ZjY1dEpuQnNWY2p6NXdJTGNsVVdR?oc=5",
+        "date": "Mon, 08 Dec 2025 08:00:00 GMT",
+        "query": "takeover bid company",
+        "score": 5,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Warner Bros takeover bid: Netflix remains endorsed buyer even as WBD acknowledges Paramount’s revised offer - Fortune India",
+        "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPZU5rQ2lxTm85d3ZJVE12VXNsU25PNHlfcFAtWlRrdDlaTGw5UWtJeTFXcTU4NS1GQjlFcWM4RHJUSEpIc283dzZxVlltY3M0Ull6MUdRbTBGTzJERVlCNFdsaEpCZnJ2MHZPeE8teDBYT1ZHQklfMWJSenBvRnNlNlk3Uk1rYlRvSlhjalZ3SEQydG1mYWQ2YURqT1lPRFJMV1NyOFE3RWg0dm5EUzBaaXJSTW1lam5GU2gyR3M5T0JZejdlTmU0WjJ1WS0wRWhiNmNCRzlqaHVISDZPYlA2TTEzdWlURzhBOV9Z0gH4AUFVX3lxTE5kN0M2dVRnWktGMlFmT1V1b245QkNzWGpzNDlEWFhCSTY2SG1HT1Y0al9ndlh2VW55N000OTR4eDBJeGRyczQtYXZLU1RIeGlwOTRNbzdsUFNxOWJvZDRXUFJRRHVKX194eXZWMElYN29FNWp2QlNBQjVBRnlwandYMjFUTVBMcjQyOU5zT0Fyb3dTMUZXNVprSF9UbktBSXZpZkIzNy05T0wwUlFpYkZNZktBY3JEMkZ0SHN3S282OTIxVk9QdDc1X3E3VndmSzR5anNod0R3eGRXZ0NoZk9yaDk4V0ktNWl5TTdUSlFkUWZpenpELW43?oc=5",
+        "date": "Tue, 24 Feb 2026 15:17:54 GMT",
+        "query": "takeover bid company",
+        "score": 5,
+        "symbols": [
+          "NFLX"
+        ]
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "BrewDog founder could keep the ‘punks’ on board in takeover bid - The Times",
+        "link": "https://news.google.com/rss/articles/CBMi0ANBVV95cUxNSmtoc29rV0NrZWVpcUJMdDdsVm9BNWxQbkxIdzA3bzB2Y2RjSkJJY3lUSkpzdXQzSjZHN1FVSWFZRU5YOTVlbmZNSGMySVV6YVVlUmlCWF9KWW5yUkd0NE5FVGtWeFEzWmkzSGFFNXMycVFtOVBwWWR5d3ZyWThWTkZVVjNEbWtLOEQteUNZUEQtTkwyd1pEMnpSa0s2cGs2dXRiR0FVbEp1b0RodkVMeDlGWldZeENwZ1VITXk2X0Rkbm9JZDVSU1VHUHoyRUQtbTFJQ3IzNk9iSVVHRXpYTV8ybkhrQ19rN3FNMWNPUjhxSXFDWlRHWTNKVmFYeFpjd19XQVp2aWEwMmRNSVdLa0ZmRjBtb3drU1B1WHpvem5CRHY3WFpuOWo3amlweHB3cmhiUEh3SWxjTkN0TlhvMWFsdXk1Q2lYemxFYzBnRDZsTmUxSmpoekxPXzJzbUFjclU1RVNXMHJwUXU4OWJkVEJwb1dtb240cW1nQzZIZWo1TURJdjA4ZzdFNjNHRFg5amNTZDlfVmhnNVNwMkQwcnNxY1RsZVpOQ01MSDI0OE5mTzdsX3hKVHFWN01JbzkyS1hwYkNjTjdqRG1NaFRTZw?oc=5",
+        "date": "Sat, 21 Feb 2026 10:30:07 GMT",
+        "query": "takeover bid company",
+        "score": 5,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Insider Buying: Cranswick (LON:CWK) Insider Buys 2 Shares of Stock - MarketBeat",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ1lucFRXTTh3YjV0RVY2WEZOcWRCQS0wREZ0TDczT2VaT0Nvc2pXUURNQW0xeFp5TWFxVDRlYmZ0WC1EV0xwRk9jbXVLZkRZVUdrenBURHJWQ3g4bktrM2pYQ29xY295ZjhLdFJ4REZDS3h1QXJENlVIUWlLMjFUZWY0azdqc0pLamxJRG5QcWhoM1YyMWxQOFJRcDV5bkhkTjBVU050WUdoZEdnTkZVMDlEbEFaTG8?oc=5",
+        "date": "Tue, 24 Feb 2026 14:44:45 GMT",
+        "query": "insider buying stock",
+        "score": 4,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Insider Buying: James Hunt Acquires 10,000 Shares of Kelly Servi - GuruFocus",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQME1qdHRXMHVVWlpzR2VEVkhZU3c3cnFPYlZtMTl2NVl1SGl3Y3ZYU3FmOU1RX0NTTHo3bEdMb2VyRlRLek41UFZSaG1ZM2hYWFFzaW55MVdqamFaWE1vSExvRXZsR1lHUmtacmdzVVJ0d2doU3Z4UlM0cnp4VTBXdlBIM29fMTlhZi1zM1V5T1VmcENXQTNJNjA3ZG1xQ2h2Uml6Y0Fhb3V2UzBnOHZwRW0zdF8?oc=5",
+        "date": "Tue, 24 Feb 2026 14:56:39 GMT",
+        "query": "insider buying stock",
+        "score": 4,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Insider Purchase: Director at $ARDX Buys 333,333 Shares - Quiver Quantitative",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNb0FyZmt0Y0JYWVpaTHJBWlpHRWlZOUU2b192Ulo1VzU0b2h3RUhwWWxUWFRCeVN0a1VBQU5oWHFZV3pWQnVXWGtzeWd3SFR3S0VocXNzOGN6bEdvajZPTVd1MVp4SVhaSk9VLXZvZjZWWGt3TnRnZmdzOWRfUjA1SFdiMUh0QW5tUDZFaVdXUUNfc3VFZkNWY0NR?oc=5",
+        "date": "Tue, 24 Feb 2026 02:16:00 GMT",
+        "query": "insider buying stock",
+        "score": 4,
+        "symbols": [
+          "ARDX"
+        ]
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Reddit (RDDT) Director Buys 50,500 Shares in Major Insider Purchase - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE84VWpfdHUyRGM1VTVRM05rZGZVc1BVWUFOY3N1ekR5dC1QaWJMZjZXeTNCVGFzSHpNMmxqamo1RlBaX3JzV3ZMbHBYa0R4X0RVblk3czBXZU9TTVVWSUl6TVNHTDFGTXRnUUtpa25WZGpTSklUSndCLUFPRmxPLWM?oc=5",
+        "date": "Sun, 22 Feb 2026 15:24:51 GMT",
+        "query": "insider buying stock",
+        "score": 4,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Palantir (PLTR) Called a “Category of One” as Analysts Upgrade the Stock - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcS1GUnltbzNOZGgwODdERktxQllVMldLYm05bjlhbTByRE5lY1h4eGJ1VVdaQV9NaDRneFg0eWFUVmtnel9uNlRObUZOblROYUtydC1jMmNEc1BqYThnbmhndTdjUUZXZlo4NkJTd3MtcDNGb0dVS2QtRlFlcy1qOGp4d0IyUQ?oc=5",
+        "date": "Sun, 22 Feb 2026 16:52:24 GMT",
+        "query": "analyst upgrade stock",
+        "score": 3,
+        "symbols": [
+          "PLTR"
+        ]
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Albemarle Stock (+5.4%): Analyst Upgrades & Lithium Sentiment Shift a Relief Rally - Trefis",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNeHpUMkRUWlVvbTV2S0RlclI5cFVGcGhNOERsenVEMjZxWGpLc1ZnaWtvQzFtX2VpQzNvRG51UG5FcGF0MWFTUFlza1I1UHVsNy1zaFBXbVB0VC1pNUR5Ulo2b2hpVlRUeUpleDdrZWdqWWRYQTZaR3VNdmRiYjBheTJ2Q19LMXBXc0FuQm1qX1hKOXZmZzBVc3BDSDJDcEhnNUtuVGlwQXVNNG5YLUZZQkpQamFNanc0czczVDFKclRRVEpqT3R1NUZhRUlxbWlieGxBWGc1QTRDRlF6?oc=5",
+        "date": "Tue, 24 Feb 2026 07:56:22 GMT",
+        "query": "analyst upgrade stock",
+        "score": 3,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Expro Group (NYSE:XPRO) Reaches New 52-Week High After Analyst Upgrade - MarketBeat",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdHl2VE1idURCWTJQVjVNYzB4UEtXVktRSGhUN0RLOTBIbmFja2RMUFhKbFpnT0JPQ0hkeDFuaHVkZndMeTA1RkR3NEFoN05uWjlVME1oaTk3X01CZHJ4SklBekItelF2YTM2aU1XajRRdVFxbk5uZG1fUURpQ1R5bU9SQWN3TG9JT0pWRng5SmhtY0hfOUdDbDBFVFlhMkZNbEd1SnUtbjd6dkFsNW00QXFwV0Y3ZVJPZVlZQW5R?oc=5",
+        "date": "Tue, 24 Feb 2026 06:35:29 GMT",
+        "query": "analyst upgrade stock",
+        "score": 3,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Alphabet Stock Holds Steady Near $312 Amid AI Spending Surge and Analyst Upgrades - International Business Times AU",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYVdkR2V3dDNkUGo5a1hTZ2hab2JKLVJFbjdHb05FVDRzR0VtSVdjR2Vxd0RFdFgtUkp5OWdZTmZ6ZjV1NXUtd3pvSEZvejVyQmRTT1lULXNXMk8xQl96RnRBa05IUTNNV3BwdHBsd0RJOVN0V0FvNUZkREEzMlJKZy1JM2JxZXU1czB2NW5tRnJueUt0ejU5aFpIU0w3VnpMeDZKTWJjcW1aUUM5RDlFeg?oc=5",
+        "date": "Tue, 24 Feb 2026 14:44:46 GMT",
+        "query": "analyst upgrade stock",
+        "score": 3,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Hims & Hers Health discloses SEC investigation over copycat GLP-1s; stock falls (HIMS:NYSE) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOT1otWC1hX190UnQwTG5lc1p2ZUlSZWxQTnlrRHNXYWdvYjZQSW44RHNpaWY4WERVekdXOXFRNjJDY3dVbDAyNkk4aWlCOEI3RF9QUTFwVWFvbzNFT0c2QkFMR3dQTnNPTjJQTzRPRmlWLW4teTRXdm1oTmNWZjZpWWdPSTQzcWctZlg1TXRhenNvSl9LY1ZzcWNENG1xbWQ2dGxuQWNobnlZaWZZODBHd3FwSWc?oc=5",
+        "date": "Tue, 24 Feb 2026 04:53:03 GMT",
+        "query": "SEC investigation company",
+        "score": 3,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Understanding SEC Investigations - Federal Lawyer",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAxYWRWNXpLY0JaR0owajVpQWRUakw4enlCSThQRHdkVmpjdGZQQmtsVjhzX01weUJrWGM0ZlYxbDcxa1laT1lSUWdCNUhvVWpJUG9mc2FKb3JjT0RXV1NIdjNnYjhScl95UTBRaA?oc=5",
+        "date": "Wed, 04 Feb 2026 08:00:00 GMT",
+        "query": "SEC investigation company",
+        "score": 3,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "Paramount CEO Focused on 'Building' and 'Transforming' Amid WBD M&A Rumors - ADWEEK",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR0FndzBwSEN1UFh1ZE5uVld5YV9JLTZsZExUaVljQ1NpY2lMdHlabGMzZFpWeGtLeUZnZWlCMlY0U0FkXzFnTG51VGllem8tZ3BsNkVfVWZBRUJDVFhjMHFka1lBUnZGWGhzeWc2RkN0NmhRSk9pSmltZmdGZ2htcFVkakVLeFhOYlI5VndaRlFPWTZTSUw0ZGZHRmZ3S1lvQk9hTFo0VFZiTGM?oc=5",
+        "date": "Mon, 10 Nov 2025 08:00:00 GMT",
+        "query": "merger acquisition rumor",
+        "score": 2,
+        "symbols": []
+      },
+      {
+        "source": "google_news",
+        "type": "news_rumor",
+        "title": "WSP downplays M&A rumors, government shutdown - Construction Dive",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLXBGdzR2Q2xDUWpLUjZvZHZNWlhyanQyMWhOLUQ1dENhdkMtS1FGR1pwN01hSWhtQmlrOTNvTlF6Q3hNdzZvemRka3lmbDZ4S2I3UzVUckhOZXg3S280N2pudVB3UVhKMkVTdG5vM2tHNWIyXzZoc0p4d3lVcjcySThycHNXb2pIMjJGa3RabmUzRW0zWlFXUGNSUQ?oc=5",
+        "date": "Fri, 07 Nov 2025 08:00:00 GMT",
+        "query": "merger acquisition rumor",
+        "score": 2,
+        "symbols": []
+      }
+    ],
+    "buzz": [],
+    "symbol_counts": {}
+  }
+}

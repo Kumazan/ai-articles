@@ -3,22 +3,453 @@
     {
       "id": "backlog",
       "title": "💡 Backlog",
-      "cards": []
+      "cards": [
+        {
+          "id": "d881906c-f719-4da0-89a2-b802a9568333",
+          "title": "📈 國會議員交易追蹤 × AI 異常訊號簡報",
+          "description": "## 目標\n參考 Personal Panopticon 文章的 ~/trades 做法，建立每日自動簡報系統。\n\n## Phase 1：資料聚合\n- [ ] 國會議員持股揭露（STOCK Act）— 調查可用 API（Quiver Quant / Capitol Trades / house.gov XML）\n- [ ] 對沖基金 13F filing — SEC EDGAR API\n- [ ] Polymarket 賠率（已有 bot 基礎）\n- [ ] X/Twitter 情緒掃描（已有 bird CLI）\n- [ ] 10-K / 財報摘要（Yahoo Finance via stock-analysis skill）\n\n## Phase 2：交叉比對\n- [ ] 定義「異常訊號」規則（例：議員買入金額 > $15k、同一股票多人同期買入）\n- [ ] 比對議員交易 vs 近期新聞 / 財報 / 法案\n- [ ] 比對 13F 大戶持倉變動 vs 市場事件\n\n## Phase 3：每日簡報\n- [ ] 設計簡報格式（Markdown → Telegram 推送）\n- [ ] Cron job 每日早上 8:00 (UTC+8) 自動執行\n- [ ] 簡報內容：異常交易、持倉變動、相關新聞、Polymarket 相關賠率\n\n## 技術選型\n- 語言：TypeScript（與 polymarket-bot 一致）或 Python script\n- 資料存放：本機 JSON / SQLite\n- 推送：OpenClaw cron → Telegram\n\n## 參考\n- Personal Panopticon by Molly Cantillon\n- 美國 STOCK Act 公開揭露\n- SEC EDGAR 13F API",
+          "priority": "P1",
+          "labels": [
+            "project",
+            "finance",
+            "ai"
+          ],
+          "createdAt": "2026-02-15T09:05:43.101Z",
+          "updatedAt": "2026-02-15T09:05:43.101Z"
+        },
+        {
+          "id": "05f7b6bf-8bad-47f8-bcb8-ce41b8f60359",
+          "title": "[github-pr-autopilot] kanban-app: ignore .next-dev.log in git",
+          "description": "04:00 巡檢發現 kanban-app main workdir 持續出現未追蹤檔 .next-dev.log（另有 tsconfig.tsbuildinfo 已有開啟中的 PR #5 處理）。\n\n候選變更：在 .gitignore 新增 .next-dev.log（small，預估 1 檔 1 行）。\n\n阻塞：依規範需先確認 base repo clean 且避免與既有 PR 重疊。\n\n建議下一步：\n1) 先決策是否在現有 PR #5 一併加入 .next-dev.log，或等 #5 合併後再開新 PR。\n2) 決策後由 autopilot 以 worktree + SDD 流程執行。",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "size:small",
+            "blocked"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-03T20:01:08.086Z",
+          "updatedAt": "2026-03-03T20:01:08.086Z"
+        },
+        {
+          "id": "adcbcbfa-ce05-41da-9522-c59eccb20491",
+          "title": "[github-pr-autopilot][2026-03-05 04:00] kanban-app: handle untracked build artifacts (.next-dev.log, tsconfig.tsbuildinfo)",
+          "description": "04:00 daily scan found a small candidate in Kumazan/kanban-app but auto-PR is blocked.\n\nEvidence:\n- git status --short => ?? .next-dev.log / ?? tsconfig.tsbuildinfo\n- Existing open PRs overlap with same scope: #5 and #4\n\nWhy blocked:\n1) Base repo is not clean (required gate for SDD+worktree protocol).\n2) Scope overlaps active OpenClaw PRs; opening another PR risks duplicate/conflicting fixes.\n\nRecommended next step (needs Kuma decision):\n- Option A: update/rebase existing PR #5 to include .next-dev.log ignore and close duplicate #4\n- Option B: close #4/#5 then let autopilot open a fresh consolidated PR next patrol\n\nSafety: No code changed, no PR opened.",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "blocked",
+            "size:small",
+            "repo:kanban-app"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-04T20:00:42.478Z",
+          "updatedAt": "2026-03-04T20:00:42.478Z"
+        },
+        {
+          "id": "4b6ead74-b1d0-4bb3-b33f-4bfa005a7964",
+          "title": "[trip-bangkok] 封堵 comments API author 偽造漏洞 (Issue #13)",
+          "description": "## TL;DR\ncomments API 的 author 欄位可由 client 任意指定，設成「小蝦」即可繞過 PIN 驗證。需改為 server-side 身份驗證。\n\n## Evidence\n- `functions/api/feature-request-comments.js` 直接信任 client 傳入的 author 字串\n- 已有測試覆蓋 `INVALID_AUTHOR` 拒絕邏輯（batch-a-auth.spec.mjs），但根本問題是 author=小蝦 的 bypass 邏輯\n\n## Proposal A: Service Token\n- Bot 寫入路徑使用內部 service token（env var），不暴露公開 endpoint\n- Trade-off: 簡單直接，但需管理一個新 secret\n\n## Proposal B: Queue-only 寫入\n- 小蝦留言只由 queue consumer 直接寫 DB，移除公開 API 路徑\n- Trade-off: 架構更乾淨但改動較大\n\n## Risks\n- 變更身份驗證邏輯可能影響現有留言功能\n- 需要 migration 稽核既有「小蝦」留言來源\n\n## Acceptance\n- 公開 API 無法以任何 author 值繞過 PIN\n- 小蝦留言只透過驗證過的內部路徑\n- 既有功能（Kuma/Guo 留言）不受影響\n\n## Estimation\n- Medium-Large（auth flow + DB audit）\n\n## Next action\n⚠️ 需要 Kuma 決定 Proposal A 或 B",
+          "priority": "P1",
+          "labels": [
+            "security",
+            "trip-bangkok",
+            "openclaw:autopilot",
+            "needs-decision"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-06T20:05:52.739Z",
+          "updatedAt": "2026-03-06T20:05:52.739Z"
+        },
+        {
+          "id": "168e35a2-257d-4e04-b471-702f50c5b832",
+          "title": "[trip-bangkok] 建立自動化測試 & CI Gate (Issue #18)",
+          "description": "## TL;DR\n目前測試大多手動 smoke 文件，缺乏自動化 CI gate。關鍵路徑（auth、worker 狀態轉移）需機器可重複驗證。\n\n## Evidence\n- 目前有 2 個 spec 檔案（batch-a-auth + tab-hash），10 個測試全 pass\n- 有 CI workflow（ci.yml）跑 build + test\n- 但缺少：worker idempotency 測試、feature-request validation matrix、smoke → 可執行腳本轉換\n\n## Proposal A: 漸進式補測試\n- Phase 1: 把 smoke md 轉成可執行 test（低成本）\n- Phase 2: 補 worker status transition 測試\n- Phase 3: PR required checks\n- Trade-off: 穩扎穩打但耗時\n\n## Proposal B: 一次性測試基建\n- 一次建立完整 test pyramid + mocking + CI gate\n- Trade-off: 初始投入大但長期效益高\n\n## Risks\n- Cloudflare Workers 環境與 Node 差異，需 miniflare 或模擬\n- 測試 AI 相關功能需 mock\n\n## Acceptance\n- smoke 文件轉為可執行腳本\n- CI 有 required checks\n- 關鍵路徑有自動化覆蓋\n\n## Estimation\n- Large（跨多檔案、需設計測試架構）\n\n## Next action\n⚠️ 需要 Kuma 決定 Proposal A 或 B + 優先級",
+          "priority": "P2",
+          "labels": [
+            "testing",
+            "dx",
+            "trip-bangkok",
+            "openclaw:autopilot",
+            "needs-decision"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-06T20:06:08.539Z",
+          "updatedAt": "2026-03-06T20:06:08.539Z"
+        },
+        {
+          "id": "477a272a-1885-4c31-afa0-473b185f42b5",
+          "title": "[github-pr-autopilot] allowlist repo missing locally: polymarket-bond-scanner",
+          "description": "Allowlist 指定 /Users/kumax/.openclaw/workspace/polymarket-bond-scanner，但本地不存在，導致 autopilot 無法掃描。\n\nTL;DR\n- allowlist repo 缺本地 checkout\n- 本輪已跳過，不會自動開 PR\n\nEvidence\n- localPath missing during 2026-03-11 04:00 patrol\n\nProposal A\n- 在 workspace clone repo 並確認預設 branch\n\nProposal B\n- 從 allowlist 移除此 repo（若不再需要 autopilot 管）\n\nRisks\n- allowlist 與實際工作區不同步，後續巡邏會持續跳過\n\nAcceptance\n- repo 可在 workspace 掃描，或 allowlist 已更新\n\nEstimation\n- 5~10 分鐘\n\nNext action requiring Kuma decision\n- 決定要 clone 回來還是移出 allowlist",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "blocker",
+            "allowlist"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-10T20:01:21.292Z",
+          "updatedAt": "2026-03-10T20:01:21.292Z"
+        },
+        {
+          "id": "ed1eb270-7eb1-4cce-b2dc-6023d658c470",
+          "title": "[github-pr-autopilot] kanban-app base workdir not clean",
+          "description": "2026-03-11 04:00 patrol 發現 /Users/kumax/.openclaw/workspace/kanban-app 主工作目錄有未追蹤檔 `.next-dev.log`、`tsconfig.tsbuildinfo`。依規則 base repo 不乾淨時不能直接進入 auto worktree implementation。\n\nTL;DR\n- base repo not clean\n- autopilot 本輪未對 kanban-app 產生實作候選\n\nEvidence\n- git status --porcelain: ?? .next-dev.log / ?? tsconfig.tsbuildinfo\n\nProposal A\n- 將這些檔案加入 .gitignore（若本來就該忽略）\n\nProposal B\n- 清掉暫存產物，恢復 clean base\n\nRisks\n- 若忽略規則不明，autopilot 之後仍會被卡住\n\nAcceptance\n- main workdir clean，可安全建立 worktree\n\nEstimation\n- 5 分鐘\n\nNext action requiring Kuma decision\n- 確認這兩個檔案要 ignore 還是手動清理",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "blocker",
+            "base-clean"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-10T20:01:21.327Z",
+          "updatedAt": "2026-03-10T20:01:21.327Z"
+        },
+        {
+          "id": "8e16df25-5d86-421a-8475-4258a4cc4150",
+          "title": "[github-pr-autopilot] kanban-app base workdir not clean",
+          "description": "Base repo has local/untracked changes, so autonomous worktree implementation is blocked.",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "blocker",
+            "2026-03-12"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-11T20:01:02.124Z",
+          "updatedAt": "2026-03-11T20:01:02.124Z"
+        },
+        {
+          "id": "f53cc3ed-65c7-4525-888b-027d68841f2e",
+          "title": "[github-pr-autopilot] allowlist repo missing locally: polymarket-bond-scanner",
+          "description": "Allowlisted localPath is missing from workspace.",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "blocker",
+            "2026-03-12"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-11T20:01:02.142Z",
+          "updatedAt": "2026-03-11T20:01:02.142Z"
+        },
+        {
+          "id": "aaac4525-998c-414a-b9a8-34d02a17dab9",
+          "title": "[github-pr-autopilot] kanban-app: ignore transient Next.js build artifacts before any auto-PR",
+          "description": "TL;DR\nkanban-app base repo is not clean because transient local files are untracked (`.next-dev.log`, `tsconfig.tsbuildinfo`). Auto-PR protocol requires a clean base repo before worktree-based changes.\n\nEvidence\n- Repo: /Users/kumax/.openclaw/workspace/kanban-app\n- Branch: main\n- git status --porcelain:\n  - ?? .next-dev.log\n  - ?? tsconfig.tsbuildinfo\n- Likely small fix: extend `.gitignore` to ignore transient dev/build artifacts.\n\nProposal A\n- Add `.next-dev.log` and `*.tsbuildinfo` to `.gitignore`.\n- Trade-off: lowest risk, keeps repo clean for future autopilot runs.\n\nProposal B\n- Investigate whether these files should be relocated or generated differently.\n- Trade-off: more precise, but unnecessary if ignore-only is sufficient.\n\nRisks\n- Very low. Only risk is masking a file that should be committed, but these are standard transient outputs.\n\nAcceptance\n- `git status --porcelain` clean on base after cleanup/ignore\n- Worktree can be created safely for future auto-PR tasks\n\nEstimation\n- Small\n\nNext action requiring Kuma decision\n- Confirm whether autopilot may open a tiny hygiene PR for `.gitignore` in this repo on the next patrol.\n",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "repo:kanban-app",
+            "size:small",
+            "blocked:dirty-base"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-12T20:01:23.839Z",
+          "updatedAt": "2026-03-12T20:01:23.839Z"
+        },
+        {
+          "id": "78dd4228-a6be-4aea-861b-90d194f446fb",
+          "title": "[github-pr-autopilot] trip-bangkok: clean base repo or ignore node_modules before autopilot changes",
+          "description": "TL;DR\ntrip-bangkok base repo is not clean because `node_modules/` is untracked in the main workdir. Auto-PR protocol forbids modifying the main workdir directly and requires a clean base before worktree isolation.\n\nEvidence\n- Repo: /Users/kumax/.openclaw/workspace/trip-bangkok\n- Branch: feat/fr_mlj5cmia_0qj7i7-pr-da\n- git status --porcelain:\n  - ?? node_modules/\n\nProposal A\n- Clean local install artifacts or ensure `node_modules/` is gitignored.\n- Trade-off: quick hygiene fix; unlocks future autopilot changes.\n\nProposal B\n- Switch repo back to intended base branch and verify working tree policy for active feature branches.\n- Trade-off: safer if this repo is mid-flight, but needs human confirmation.\n\nRisks\n- Low for ignore/cleanup, medium if branch state is intentionally active and autopilot chooses the wrong base.\n\nAcceptance\n- Base branch agreed and working tree clean\n- Future worktree creation can proceed without ambiguity\n\nEstimation\n- Small for cleanup, medium if branch policy needs clarification\n\nNext action requiring Kuma decision\n- Confirm whether this repo should stay in autopilot allowlist while it is on a non-main feature branch.\n",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "repo:trip-bangkok",
+            "size:small",
+            "blocked:dirty-base"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-12T20:01:23.871Z",
+          "updatedAt": "2026-03-12T20:01:23.871Z"
+        },
+        {
+          "id": "1da85e1e-9e53-47f5-82cd-0d6f2f5bef68",
+          "title": "[github-pr-autopilot] allowlist repo missing locally: polymarket-bond-scanner",
+          "description": "TL;DR\nThe allowlist includes `Kumazan/polymarket-bond-scanner`, but its local path does not exist under `/Users/kumax/.openclaw/workspace`. The patrol scanned local repos only as required, so this repo was skipped.\n\nEvidence\n- Expected path: /Users/kumax/.openclaw/workspace/polymarket-bond-scanner\n- Result: directory missing\n\nProposal A\n- Clone/sync the repo into the workspace and keep it on the intended base branch.\n\nProposal B\n- Remove/disable it from the autopilot allowlist until a local checkout is available.\n\nRisks\n- None to code; only coverage risk because patrol cannot scan a missing repo.\n\nAcceptance\n- Either local checkout exists and scans succeed, or allowlist entry is removed/disabled\n\nEstimation\n- Small\n\nNext action requiring Kuma decision\n- Keep this repo in the allowlist, or disable it until the local checkout is restored?\n",
+          "priority": "P3",
+          "labels": [
+            "github-pr-autopilot",
+            "repo:polymarket-bond-scanner",
+            "blocked:missing-local"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-12T20:01:23.893Z",
+          "updatedAt": "2026-03-12T20:01:23.893Z"
+        },
+        {
+          "id": "0ad20748-4241-4694-ae28-804bc68286e3",
+          "title": "[trip-bangkok] Auth fail-open vs fail-closed：4 tests failing，需 Kuma 決策",
+          "description": "## TL;DR\nPR #34 把 verifyIdentity 改成 fail-open（secrets 缺失時 return true），但 Issue #13 安全建議 fail-closed。目前 4 個 auth 測試失敗，無法 CI pass。需 Kuma 決定設計方向。\n\n## Evidence\n- `npm test` → 4 failed: `verifyIdentity returns null when secrets missing`（得到 true）\n- PR #34: \"allow requests when PIN secrets are not configured\" 故意改成 fail-open\n- Issue #13: audit 建議改成 fail-closed + server-to-server token\n\n## Proposal A: 更新測試以接受 fail-open 行為\n- 優點：tests pass，不破壞現有 UX（Cloudflare Pages 無 secrets 時仍可用）\n- 缺點：測試接受安全上更寬鬆的行為；與 Issue #13 方向相反\n\n## Proposal B: 恢復 fail-closed + 建立 service token for 小蝦 AI 路徑\n- 優點：符合 security best practice；Issue #13 解法\n- 缺點：需部署 secrets 到 Cloudflare，且要重構 callShrimpAI 不暴露 author\n- 估算：medium task（3-5 files, 150+ lines）\n\n## Risk\n- 若選 B：Cloudflare Pages secrets 未設定 → 503，需同步部署\n- 若選 A：安全性維持現狀（Turnstile + rate-limit 保護）\n\n## Acceptance\n- 選 A：npm test 全 pass\n- 選 B：npm test 全 pass + secrets 已配置\n\n## Next Action 需 Kuma 決定\n選 A（接受 fail-open）或選 B（改回 fail-closed + 補 service token）？",
+          "priority": "P1",
+          "labels": [
+            "trip-bangkok",
+            "auth",
+            "security",
+            "openclaw:auto",
+            "needs-decision"
+          ],
+          "assignee": "Kuma",
+          "createdAt": "2026-03-15T20:06:19.534Z",
+          "updatedAt": "2026-03-15T20:06:19.534Z"
+        },
+        {
+          "id": "b1c663e8-fa8d-46f2-a934-23eb0d595863",
+          "title": "[trip-bangkok] 解決 merge 衝突並整合 origin/main (38 commits 落後)",
+          "description": "## TL;DR\n\nLocal `main` 分支目前處於 **未完成 merge 狀態**：有 2 個衝突檔案未解決（`bangkok/index.html`, `bangkok/src/app.js`），且 local 落後 origin/main 38 commits，領先 1 commit。需要 Kuma 手動決策如何整合。\n\n## Evidence\n\n- **MERGE_HEAD**: `58e72f3` (fix: restore .ec input styling)\n- **衝突檔案**: `bangkok/index.html`, `bangkok/src/app.js`（UU 狀態，無 conflict marker，疑似已手動解決但未 commit）\n- **Staged**: 8 files（CLAUDE.md, app.built.js, styles.built.css, input.css, checklist.js, feature-requests.js, package.json, 刪除舊 asset）\n- **Local ahead**: 1 commit (`f823282` feat: daily pick 2026-03-18 — The Bamboo Bar)\n- **Origin ahead**: 38 commits（功能龐大：story modal、checklist 安全性修復、auth、INDDEE、G Bangkok、fact-check 等）\n- Changed files: 10 (> 8 → LARGE 門檻)\n\n## Proposal A：完成當前 merge\n\n- `git add bangkok/index.html bangkok/src/app.js`\n- `git commit` 完成 merge\n- Push 合併結果（需確認衝突已正確解決）\n- **Trade-off**: 快速，但需確認 index.html / app.js 的合併正確性\n\n## Proposal B：Abort merge，重新 rebase\n\n- `git merge --abort`\n- `git rebase origin/main`（可能有更多衝突需逐一解決）\n- **Trade-off**: 歷史更乾淨，但 rebase 複雜度更高\n\n## Risks\n\n- 衝突檔案目前無 conflict marker，但是否真的正確解決未驗證\n- origin 38 commits 含多個 fix（security: escape input, auth verification）— merge 後需測試\n- 不應自動 PR，因涉及 UI 核心邏輯（app.js）\n\n## Acceptance Criteria\n\n- [ ] merge 完成，git status 乾淨\n- [ ] app.js / index.html 功能正常（story modal、checklist、daily pick 都正常）\n- [ ] Push 後 GitHub Actions（如有）通過\n\n## Estimation\n\n30–60 分鐘（需人工 review 衝突）\n\n## Next Action (需要 Kuma 決策)\n\n請選擇：A) 完成當前 merge，B) abort + rebase，或 C) 讓 OpenClaw 嘗試 Plan A（完成 merge）後 report 結果。",
+          "priority": "P1",
+          "labels": [
+            "github-pr-autopilot",
+            "merge-conflict",
+            "size:large",
+            "trip-bangkok"
+          ],
+          "assignee": "Kuma",
+          "createdAt": "2026-03-18T20:02:39.428Z",
+          "updatedAt": "2026-03-18T20:02:39.428Z"
+        },
+        {
+          "id": "5e8db506-3590-4075-aaa4-c4efc3e6a476",
+          "title": "[trip-bangkok] Issue #13: comments API author 偽造漏洞 — 已部分修復，需驗證 + 資料稽核",
+          "description": "## TL;DR\nGitHub Issue #13。原本漏洞是 author=小蝦 可繞過 PIN 驗證，現有程式碼已改為只允許 [Kuma, Guo]，author=小蝦 會得到 INVALID_AUTHOR(400)。\n\n## 現況評估\n- `feature-request-comments.js` 已有 `if (![Kuma, Guo].includes(author))` 檢查 → 小蝦無法從 public API 偽造\n- 測試 `batch-a-auth.spec.mjs` 已涵蓋此路徑（10/10 pass）\n- 但存在問題：verifyIdentity 當 PIN secrets 未設定時 return true（open mode），任何人在無 secret 環境可繞過驗證\n\n## 仍需 Kuma 決定\n1. PIN secrets 是否在 Production Cloudflare Workers 中正確設定？若無，open mode 等同無保護\n2. 對既有資料做稽核：查 DB 中 author=小蝦 且非 AI 自動回覆的留言（可能有歷史偽造資料）\n3. Proposal A: 保持現狀 + 確認 Production secrets 已設定 → 低成本\n   Proposal B: 加入 server-to-server token 驗證 AI 寫入路徑 → 更安全但需額外工程\n\n## Risk\n- 若 KUMA_PIN/GUO_PIN 未設 → 所有留言無需 PIN → medium risk\n- 資料完整性：歷史偽造留言可能已存在\n\n## Next Action (需 Kuma 決定)\n- [ ] 確認 Production Cloudflare Workers 環境變數 KUMA_PIN/GUO_PIN 是否設定\n- [ ] 決定是否要跑 DB 稽核查詢\n- [ ] Proposal A or B？",
+          "priority": "P1",
+          "labels": [
+            "security",
+            "trip-bangkok",
+            "github-issue",
+            "needs-kuma-review"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-20T20:08:25.302Z",
+          "updatedAt": "2026-03-20T20:08:25.302Z"
+        },
+        {
+          "id": "a3a7d104-d769-4ae0-8c52-c904b1dcd9a4",
+          "title": "[trip-bangkok] Issue #18: 建立自動化測試 + CI Gate — Large，需 Kuma 決策",
+          "description": "## TL;DR\nGitHub Issue #18。目前只有 vitest 10 tests (tab-hash + auth)，無 integration/e2e，無 PR required checks。\n\n## Evidence\n- `tests/` 目錄：batch-a-auth.spec.mjs (8 tests) + tab-hash.spec.mjs (2 tests)\n- `tests/feature-requests-smoke.md` 為手動文件，無自動化\n- `.github/workflows/ci.yml` 跑 build + test，但無法 gate PR merge\n\n## Proposal A（最小可行）\n- 新增 GitHub Actions required checks（branch protection）\n- 補 `verifyIdentity` edge case tests（misconfig fail-closed）\n- 補 worker status transition unit tests\n- Est: ~4h，1-2 files\n\n## Proposal B（完整測試金字塔）\n- Unit (vitest) + Integration (wrangler miniflare) + E2E (playwright)\n- 將 smoke.md 轉為可執行腳本\n- Est: ~2-3 days，medium-large scope\n\n## Trade-offs\n- A: 快速有效，覆蓋最高風險路徑\n- B: 更完整但成本高，需 miniflare/Cloudflare Workers 測試環境\n\n## Risk Notes\n- 若直接設 branch protection，舊 PRs 需通過 CI 才能 merge\n- Changed files 預估 >5（config + test files）→ Large\n\n## Next Action (需 Kuma 決定)\n- [ ] 選 Proposal A 或 B？\n- [ ] 是否現在設 branch protection？",
+          "priority": "P2",
+          "labels": [
+            "testing",
+            "ci",
+            "trip-bangkok",
+            "github-issue",
+            "large"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-20T20:08:37.931Z",
+          "updatedAt": "2026-03-20T20:08:37.931Z"
+        },
+        {
+          "id": "3d1aca82-3807-42a9-b0c6-0c9c18f364d8",
+          "title": "[trip-bangkok] stale worktree trip-bangkok-sync-app-js 需清理",
+          "description": "## 問題\nWorktree `/Users/kumax/.openclaw/workspace/tmp/github-pr-autopilot/worktrees/trip-bangkok-sync-app-js` 已 stale。\n\n- 原本 SDD 設計為單檔改動（bangkok/src/app.js），但 diff vs main 已有 10 files, 453 lines changed\n- 包含 CLAUDE.md 刪除、CSS 改動、index.html 大量重構等與 SDD 目標不符的內容\n- 沒有推送到 GitHub，尚未開 PR\n\n## 建議\n- 直接刪除 worktree 與 branch（內容已包含在 main 的其他 commits）\n- 或 Kuma 確認這些變更是否仍需要\n\n## 清理指令（小蝦可執行，但需 Kuma 確認）\n```bash\ngit -C /Users/kumax/.openclaw/workspace/trip-bangkok worktree remove --force /Users/kumax/.openclaw/workspace/tmp/github-pr-autopilot/worktrees/trip-bangkok-sync-app-js\ngit -C /Users/kumax/.openclaw/workspace/trip-bangkok branch -D openclaw/20260318/sync-app-js-story-body\n```",
+          "priority": "P3",
+          "labels": [
+            "housekeeping",
+            "trip-bangkok",
+            "worktree"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-20T20:08:48.630Z",
+          "updatedAt": "2026-03-20T20:08:48.630Z"
+        }
+      ]
     },
     {
       "id": "todo",
       "title": "📋 待辦",
-      "cards": []
+      "cards": [
+        {
+          "id": "19dd7fac-de32-485b-a49e-097e7e2bbf11",
+          "title": "github-pr-autopilot 04:00 daily scan (2026-03-10)",
+          "description": "Cron patrol: scan allowlisted local repos, size candidate changes, open safe auto-PRs or create backlog specs per policy.",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "cron",
+            "2026-03-10"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-09T20:00:44.667Z",
+          "updatedAt": "2026-03-09T20:00:44.667Z"
+        },
+        {
+          "id": "fcfb1049-2b0d-46c9-af21-42d5b89c59e4",
+          "title": "github-pr-autopilot 04:00 daily scan (2026-03-11)",
+          "description": "04:00 自動掃描 allowlist local repos，做 candidate sizing、PR/backlog routing、更新 state.json。",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "cron",
+            "2026-03-11"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-10T20:00:35.429Z",
+          "updatedAt": "2026-03-10T20:00:35.429Z"
+        },
+        {
+          "id": "cb597add-876f-48d2-979d-0ecc28cfbfbf",
+          "title": "[github-pr-autopilot] 04:00 scan (2026-03-12)",
+          "description": "Scan allowlisted local repos, size candidates, run SDD/worktree protocol when safe, and persist state.",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "cron",
+            "2026-03-12"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-11T20:01:01.673Z",
+          "updatedAt": "2026-03-11T20:01:01.673Z"
+        },
+        {
+          "id": "c2caa38f-b21d-486a-a168-c57e75c17aae",
+          "title": "[AutoPilot] 04:00 PR Scan — 2026-03-17",
+          "description": "Daily 04:00 github-pr-autopilot scan. Scanning 7 allowlisted repos + reviewing open PRs.",
+          "priority": "P2",
+          "labels": [
+            "openclaw:auto",
+            "github-pr-autopilot"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-16T20:07:05.531Z",
+          "updatedAt": "2026-03-16T20:07:05.531Z"
+        },
+        {
+          "id": "352f82c2-0129-4c6c-bdde-eeaf17c5bc73",
+          "title": "[PR Autopilot 04:00] 3 個 Stale PR 已請求 Copilot Review",
+          "description": "以下 3 個 CLEAN PR 長期未有 Review，已自動加入 github-copilot 作 reviewer：\n\n- kanban-app PR#6: [OpenClaw] chore: add dev artifacts to .gitignore (12+ 天)\n- polymarket-bot-v0-ts PR#1: [OpenClaw] fix(tsconfig): target Node.js (13+ 天)\n- trip-bangkok PR#33: [OpenClaw] chore: harden .gitignore (13+ 天)\n\n**Next:** 等待 Copilot review 回應，然後合併或修正。",
+          "priority": "P2",
+          "labels": [
+            "openclaw:auto",
+            "review-requested",
+            "stale-pr"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-19T20:05:21.582Z",
+          "updatedAt": "2026-03-19T20:05:21.582Z"
+        }
+      ]
     },
     {
       "id": "ongoing",
       "title": "🔨 進行中",
-      "cards": []
+      "cards": [
+        {
+          "id": "b207f47b-9977-4cb9-82c8-2e98e3618b80",
+          "title": "[AutoPilot] 04:00 PR Scan — 2026-03-16",
+          "description": "Daily 04:00 github-pr-autopilot scan. Checking 7 allowed repos for pending improvements.",
+          "priority": "P2",
+          "labels": [
+            "openclaw:auto",
+            "github-pr-autopilot"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-15T20:00:12.335Z",
+          "updatedAt": "2026-03-15T20:00:12.335Z"
+        },
+        {
+          "id": "589e5eb2-6c47-4a9c-a454-dd4d381566ca",
+          "title": "[trip-bangkok] PR#37 — sync app.js story-body fix",
+          "description": "OpenClaw auto-PR: sync app.js source with the || paragraph fix already deployed in built assets.\nPR: https://github.com/Kumazan/trip-bangkok/pull/37\nSize: Small | Branch: openclaw/20260318/sync-app-js-story-body\nTests: 10/10 pass",
+          "priority": "P2",
+          "labels": [
+            "github-pr",
+            "openclaw:auto",
+            "trip-bangkok"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-17T20:07:28.512Z",
+          "updatedAt": "2026-03-17T20:07:28.512Z"
+        }
+      ]
     },
     {
       "id": "review",
       "title": "👀 審查",
-      "cards": []
+      "cards": [
+        {
+          "id": "1b2db82c-4c88-4364-90c2-5fea678d0c0d",
+          "title": "[OpenClaw PR] ai-articles: add .gitignore",
+          "description": "PR #1 opened by autopilot (04:00 scan).\nhttps://github.com/Kumazan/ai-articles/pull/1\n\nAdds .gitignore for Jekyll/GitHub Pages site (.DS_Store, _site/, .jekyll-cache/, editor files).\n\n✅ Tests passed · size:small · date:20260315",
+          "priority": "P3",
+          "labels": [
+            "openclaw:auto",
+            "size:small",
+            "github-pr"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-14T20:06:20.639Z",
+          "updatedAt": "2026-03-14T20:06:20.639Z"
+        },
+        {
+          "id": "eeed3340-5a72-4517-b82f-1173b22a32b4",
+          "title": "[OpenClaw PR] polymarket-strategies: add .gitignore",
+          "description": "PR #5 opened by autopilot (04:00 scan).\nhttps://github.com/Kumazan/polymarket-strategies/pull/5\n\nAdds .gitignore for static HTML site (macOS, editor, Node/Python patterns).\n\n✅ Tests passed · size:small · date:20260315",
+          "priority": "P3",
+          "labels": [
+            "openclaw:auto",
+            "size:small",
+            "github-pr"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-14T20:06:27.449Z",
+          "updatedAt": "2026-03-14T20:06:27.449Z"
+        },
+        {
+          "id": "fefe4d04-ee21-4061-b3d9-a5a82469c8dc",
+          "title": "[OpenClaw PR] sdd-learn: add .gitignore",
+          "description": "PR #3 opened by autopilot (04:00 scan).\nhttps://github.com/Kumazan/sdd-learn/pull/3\n\nAdds .gitignore for static HTML site (macOS, editor, Node/Python patterns).\n\n✅ Tests passed · size:small · date:20260315",
+          "priority": "P3",
+          "labels": [
+            "openclaw:auto",
+            "size:small",
+            "github-pr"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-14T20:06:27.477Z",
+          "updatedAt": "2026-03-14T20:06:27.477Z"
+        },
+        {
+          "id": "1fd1bc3c-3236-410a-addb-afdc017875fd",
+          "title": "[kanban-app] PR #8: add typecheck script — 待 review",
+          "description": "## PR\nhttps://github.com/Kumazan/kanban-app/pull/8\n\n## 內容\n新增 `\"typecheck\": \"tsc --noEmit\"` 到 package.json scripts。\n\n- Size: Small (2 files: package.json + SDD.md)\n- typecheck exit 0 ✅\n- Labels: openclaw:auto, size:small, date:20260321\n\n## Next\nKuma review + merge",
+          "priority": "P3",
+          "labels": [
+            "kanban-app",
+            "pr",
+            "openclaw:auto"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-20T20:11:23.768Z",
+          "updatedAt": "2026-03-20T20:11:23.768Z"
+        },
+        {
+          "id": "0b4130bc-2484-4067-933a-bc4c6b01d606",
+          "title": "[kanban-app] ESLint bootstrap PR #9",
+          "description": "PR opened: https://github.com/Kumazan/kanban-app/pull/9\n\nAdds ESLint (eslint@9 + eslint-config-next) + lint script + eslint.config.mjs flat config.\nAlso fixes pre-existing no-explicit-any in card-modal.tsx.\n\nTest result: 0 errors, 4 warnings. Copilot review requested.",
+          "priority": "P2",
+          "labels": [
+            "openclaw:auto",
+            "size:small"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-21T20:11:09.899Z",
+          "updatedAt": "2026-03-21T20:11:09.899Z"
+        },
+        {
+          "id": "7dd76c2d-ee47-4531-b88d-fac835fc449a",
+          "title": "[ai-articles] docs: add .github/copilot-instructions.md",
+          "description": "PR #2 — 為 ai-articles 加入 Copilot Instructions，涵蓋 Jekyll 技術棧、frontmatter 規範、文章格式、CSS 設計系統與貢獻流程。\n\nhttps://github.com/Kumazan/ai-articles/pull/2",
+          "priority": "P3",
+          "labels": [
+            "ai-articles",
+            "openclaw:auto"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-22T20:12:17.229Z",
+          "updatedAt": "2026-03-22T20:12:17.229Z"
+        }
+      ]
     },
     {
       "id": "done",
@@ -213,6 +644,104 @@
               "createdAt": "2026-02-14T02:26:26.072Z"
             }
           ]
+        },
+        {
+          "id": "b1dd4662-695e-48a2-a125-97d506230885",
+          "title": "實作 Telegram Bot API 推播通知",
+          "description": "## TL;DR\n`app/api/kanban/notify/route.ts` 中有一個 TODO 註解，Telegram 推播通知的程式碼已寫好但被註解掉。需要啟用並整合環境變數。\n\n## Evidence\n- 檔案：`app/api/kanban/notify/route.ts:19`\n- 目前只有 `console.log`，沒有實際推播\n- 註解中已有完整的 fetch 呼叫範本\n\n## Options\n**A) 直接啟用註解中的程式碼**\n- 加入 `TELEGRAM_BOT_TOKEN` 和 `TELEGRAM_CHAT_ID` 環境變數\n- 取消註解並加入錯誤處理\n- 最簡單但缺乏彈性\n\n**B) 抽象化通知層**\n- 建立 `lib/notify.ts` 統一通知介面\n- 支援多通知管道（Telegram、Webhook、Email）\n- 更有彈性但工程量較大\n\n## Risk\n- 需要正確的 Telegram Bot Token 和 Chat ID\n- 推播失敗不應阻擋 API 回應（需 fire-and-forget 或背景處理）\n- .env 檔案管理需注意安全\n\n## Acceptance Criteria\n- [ ] 卡片狀態變更時，Telegram 收到通知訊息\n- [ ] 環境變數未設定時優雅降級（僅 console.log）\n- [ ] 推播失敗不影響 API 正常回應",
+          "priority": "P2",
+          "labels": [
+            "kanban-app",
+            "feature"
+          ],
+          "createdAt": "2026-02-14T20:02:44.731Z",
+          "updatedAt": "2026-02-15T07:53:57.790Z",
+          "prUrl": "https://github.com/Kumazan/kanban-app/pull/1",
+          "comments": [
+            {
+              "id": "70c60e61-35b2-40bb-b7de-82e743e8ef58",
+              "author": "系統",
+              "text": "[PR_LINK] 已連結 PR：https://github.com/Kumazan/kanban-app/pull/1",
+              "createdAt": "2026-02-15T07:53:57.474Z",
+              "isSystem": true
+            },
+            {
+              "id": "3e038ea3-85b3-4e86-93ae-db529a87d60d",
+              "author": "系統",
+              "text": "[PR_STATUS] merged",
+              "createdAt": "2026-02-15T07:53:57.483Z",
+              "isSystem": true
+            },
+            {
+              "id": "2fffb18f-2d58-4727-b194-a4fbca18398d",
+              "author": "系統",
+              "text": "PR 狀態更新 → 自動移動到「done」",
+              "createdAt": "2026-02-15T07:53:57.790Z",
+              "isSystem": true
+            }
+          ]
+        },
+        {
+          "id": "fcf7a0bb-a070-49a8-8271-c62479e0c141",
+          "title": "[github-pr-autopilot] 2026-02-25 04:00 scan",
+          "description": "Run allowlist-only local repo scan, size candidates, and route PR/backlog per policy.",
+          "priority": "P1",
+          "labels": [
+            "automation",
+            "github-pr-autopilot",
+            "cron",
+            "2026-02-25"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-02-24T20:00:25.496Z",
+          "updatedAt": "2026-02-24T21:00:25.576Z",
+          "comments": [
+            {
+              "id": "e92099a9-22ff-427c-9301-023b05e592dc",
+              "author": "小蝦",
+              "text": "Started 04:00 scan. Enforcing allowlist + local-only policy; checking candidate changes and PR eligibility.",
+              "createdAt": "2026-02-24T20:00:25.724Z"
+            },
+            {
+              "id": "9a12c32f-e5db-4dfe-b1da-a58c2a09c3b9",
+              "author": "小蝦",
+              "text": "Completed 04:00 scan. Enforced allowlist strictly; scanned 7 allowlisted repos (6 present locally, 1 missing path). Found 0 candidate changes, opened 0 PRs, created 0 backlog cards. State persisted to tmp/github-pr-autopilot/state.json.",
+              "createdAt": "2026-02-24T20:00:55.230Z"
+            },
+            {
+              "id": "73be3359-7317-400a-8679-63a3a2f0d44a",
+              "author": "小蝦",
+              "text": "05:00 review：04:00 run 未建立任何 PR（openedPRs=0），因此無 Copilot review/comment 需處理；無需修復、無 commit、無 re-review。",
+              "createdAt": "2026-02-24T21:00:25.553Z"
+            }
+          ]
+        },
+        {
+          "id": "bb08a5ee-0d27-4129-a607-4e5c32527a15",
+          "title": "[PR Autopilot 04:00] trip-bangkok PR#37 已關閉 — 功能被 main 超越",
+          "description": "PR#37 (openclaw/20260318/sync-app-js-story-body) 已自動關閉。\n\n原因：該 PR 修改的 openStory() split-on-|| 邏輯已在 main 分支 line 915 被更完整的版本取代（加入了 .trim()）。PR 目標已達成，無需合併。\n\n**Actions taken:** PR closed with comment.",
+          "priority": "P3",
+          "labels": [
+            "openclaw:auto",
+            "trip-bangkok",
+            "pr-closed"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-19T20:05:14.164Z",
+          "updatedAt": "2026-03-19T20:05:14.164Z"
+        },
+        {
+          "id": "8fafcdd2-5415-4972-b43b-32faee093977",
+          "title": "[PR Autopilot 04:00] 2026-03-24 掃描完成 — polymarket-strategies PR#6 opened",
+          "description": "## 04:00 Daily Scan — 2026-03-24\n\n### ✅ PR Opened\n- **polymarket-strategies PR#6** — `[OpenClaw] chore: add .github/copilot-instructions.md`\n  - Size: Small (2 files, 74 lines)\n  - Branch: `openclaw/20260324/add-copilot-instructions`\n  - URL: https://github.com/Kumazan/polymarket-strategies/pull/6\n\n### 👀 PR Monitoring (existing)\n- kanban-app #9 — @copilot pinged (4th time)\n- ai-articles #2 — @copilot pinged (3rd time)\n- trip-bangkok #33 (18d aging) — @copilot first ping\n- polymarket-bot-v0-ts #1 (17d aging) — @copilot first ping\n- kanban-app #6 (15d aging) — @copilot first ping\n\n### ⏭ No Candidates\n- trip-bangkok: active human dev (daily picks ongoing)\n- kanban-app: 3 PRs already queued (#6/#8/#9)\n- ai-articles: PR#2 just opened yesterday\n- sdd-learn / polymarket-bot-v0-ts: already have copilot-instructions\n\n### Quota\n1/3 used today",
+          "priority": "P2",
+          "labels": [
+            "github-pr-autopilot",
+            "date:20260324"
+          ],
+          "assignee": "小蝦",
+          "createdAt": "2026-03-23T20:07:05.519Z",
+          "updatedAt": "2026-03-23T20:07:05.519Z"
         }
       ]
     },

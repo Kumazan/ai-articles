@@ -1,0 +1,1144 @@
+{
+  "results": [
+    {
+      "ticker": "ADBE",
+      "company_name": "Adobe Inc.",
+      "recommendation": "HOLD",
+      "confidence": 0.3243589743589744,
+      "final_score": 0.3243589743589744,
+      "supporting_points": [
+        "Beat by 1.9% - EPS $5.50 vs $5.40 expected",
+        "Strong margin: 36.5%",
+        "Analyst consensus: Buy with 39.0% upside (33 analysts)",
+        "Historical pattern: 3/4 quarters beat expectations, avg reaction -0.1%",
+        "Market: VIX 31.3 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:35.943001",
+      "components": {
+        "earnings_surprise": {
+          "score": 0.3,
+          "actual_eps": 5.5,
+          "expected_eps": 5.4,
+          "surprise_pct": 1.8518518518518452,
+          "explanation": "Beat by 1.9%"
+        },
+        "fundamentals": {
+          "score": 0.26666666666666666,
+          "pe_ratio": 16.68,
+          "operating_margin": 0.365,
+          "revenue_growth_yoy": 0.105,
+          "debt_to_equity": 0.57
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Buy",
+          "price_target": 387.49637,
+          "current_price": 278.74,
+          "upside_pct": 39.017137834541145,
+          "num_analysts": 33
+        },
+        "historical_patterns": {
+          "score": 0.5,
+          "beats_last_4q": 3,
+          "avg_reaction_pct": -0.10935363332657085
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.3,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.2865303881120362,
+          "qqq_trend_10d": -2.2636435218310607,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.12603640727269314,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.30954477296160265,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Technology",
+          "stock_return_1m": 3.470795158513768,
+          "sector_return_1m": 0.582462034721141,
+          "relative_strength": 5.95883499973598,
+          "sector_trend": "weak"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 64.26897360223455,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.8640514662137007
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 3.0199999,
+          "days_to_cover": 1.99,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 278.77,
+      "rt_change": -4.85,
+      "rt_change_pct": -1.71
+    },
+    {
+      "ticker": "AMD",
+      "company_name": "Advanced Micro Devices, Inc.",
+      "recommendation": "BUY",
+      "confidence": 0.37564102564102564,
+      "final_score": 0.37564102564102564,
+      "supporting_points": [
+        "Beat by 15.9% - EPS $1.53 vs $1.32 expected",
+        "Elevated P/E: 73.4x; Strong margin: 17.1%; Strong growth: 34.1% YoY",
+        "Analyst consensus: Buy with 50.7% upside (46 analysts)",
+        "Historical pattern: 2/4 quarters beat expectations, avg reaction -1.9%",
+        "Market: VIX 31.2 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "Sector Technology is weak despite stock fundamentals",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:26.961815",
+      "components": {
+        "earnings_surprise": {
+          "score": 1.0,
+          "actual_eps": 1.53,
+          "expected_eps": 1.32,
+          "surprise_pct": 15.909090909090907,
+          "explanation": "Beat by 15.9%"
+        },
+        "fundamentals": {
+          "score": 0.25,
+          "pe_ratio": 73.35,
+          "operating_margin": 0.171,
+          "revenue_growth_yoy": 0.341,
+          "debt_to_equity": 0.06
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Buy",
+          "price_target": 289.71738,
+          "current_price": 192.19,
+          "upside_pct": 50.74529371975649,
+          "num_analysts": 46
+        },
+        "historical_patterns": {
+          "score": 0.0,
+          "beats_last_4q": 2,
+          "avg_reaction_pct": -1.9028228526639592
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.23,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.3214456776878336,
+          "qqq_trend_10d": -2.3245109968108335,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.11962832884354979,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.3277500203515356,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": -0.3,
+          "sector_name": "Technology",
+          "stock_return_1m": -0.1778183974228896,
+          "sector_return_1m": 0.5382258359201534,
+          "relative_strength": -0.3303787844351441,
+          "sector_trend": "weak"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 42.63423057055067,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.8734378610164112
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 1.8900000000000001,
+          "days_to_cover": 0.7,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 192.12,
+      "rt_change": -0.31,
+      "rt_change_pct": -0.16
+    },
+    {
+      "ticker": "ANET",
+      "company_name": "Arista Networks, Inc.",
+      "recommendation": "BUY",
+      "confidence": 0.4141025641025641,
+      "final_score": 0.4141025641025641,
+      "supporting_points": [
+        "Beat by 7.9% - EPS $0.82 vs $0.76 expected",
+        "Elevated P/E: 47.6x; Strong margin: 41.5%; Strong growth: 28.9% YoY",
+        "Analyst consensus: Strong Buy with 35.9% upside (24 analysts)",
+        "Historical pattern: 3/4 quarters beat expectations, avg reaction -1.5%",
+        "Market: VIX 31.3 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:36.919932",
+      "components": {
+        "earnings_surprise": {
+          "score": 0.7,
+          "actual_eps": 0.82,
+          "expected_eps": 0.76,
+          "surprise_pct": 7.894736842105256,
+          "explanation": "Beat by 7.9%"
+        },
+        "fundamentals": {
+          "score": 0.25,
+          "pe_ratio": 47.65,
+          "operating_margin": 0.415,
+          "revenue_growth_yoy": 0.289,
+          "debt_to_equity": 0.0
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Strong Buy",
+          "price_target": 178.0634,
+          "current_price": 131.03,
+          "upside_pct": 35.89513851789666,
+          "num_analysts": 24
+        },
+        "historical_patterns": {
+          "score": 0.5,
+          "beats_last_4q": 3,
+          "avg_reaction_pct": -1.4724852587716777
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.3,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.2734415944104276,
+          "qqq_trend_10d": -2.252126696723539,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.11708595795101072,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.30954477296160265,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Technology",
+          "stock_return_1m": 1.8341498748238514,
+          "sector_return_1m": 0.5972111844230978,
+          "relative_strength": 3.071191435565006,
+          "sector_trend": "weak"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 40.13999947374496,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.7488366579691115
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 1.24,
+          "days_to_cover": 1.36,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 131.05,
+      "rt_change": -1.84,
+      "rt_change_pct": -1.38
+    },
+    {
+      "ticker": "CRM",
+      "company_name": "Salesforce, Inc.",
+      "recommendation": "BUY",
+      "confidence": 0.48717948717948717,
+      "final_score": 0.48717948717948717,
+      "supporting_points": [
+        "Beat by 24.9% - EPS $3.81 vs $3.05 expected",
+        "Strong margin: 19.2%",
+        "Analyst consensus: Buy with 39.4% upside (53 analysts)",
+        "Historical pattern: 3/4 quarters beat expectations, avg reaction +2.3%",
+        "Market: VIX 31.2 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:27.160739",
+      "components": {
+        "earnings_surprise": {
+          "score": 1.0,
+          "actual_eps": 3.81,
+          "expected_eps": 3.05,
+          "surprise_pct": 24.918032786885256,
+          "explanation": "Beat by 24.9%"
+        },
+        "fundamentals": {
+          "score": 0.275,
+          "pe_ratio": 25.38,
+          "operating_margin": 0.192,
+          "revenue_growth_yoy": 0.121,
+          "debt_to_equity": 0.3
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Buy",
+          "price_target": 275.98376,
+          "current_price": 197.98,
+          "upside_pct": 39.399818163450874,
+          "num_analysts": 53
+        },
+        "historical_patterns": {
+          "score": 0.5,
+          "beats_last_4q": 3,
+          "avg_reaction_pct": 2.2513322839837038
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.23,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.3214456776878336,
+          "qqq_trend_10d": -2.3245109968108335,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.11962832884354979,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.3277500203515356,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Technology",
+          "stock_return_1m": 4.21645231108363,
+          "sector_return_1m": 0.558791393246757,
+          "relative_strength": 7.545664378588031,
+          "sector_trend": "weak"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 61.37232255035477,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.9647766981832719
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 2.1,
+          "days_to_cover": 1.42,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 198.1,
+      "rt_change": -4.01,
+      "rt_change_pct": -1.98
+    },
+    {
+      "ticker": "GOOG",
+      "company_name": "Alphabet Inc.",
+      "recommendation": "BUY",
+      "confidence": 0.41538461538461535,
+      "final_score": 0.41538461538461535,
+      "supporting_points": [
+        "Beat by 6.8% - EPS $2.82 vs $2.64 expected",
+        "Strong margin: 31.6%",
+        "Analyst consensus: Strong Buy with 21.6% upside (18 analysts)",
+        "Historical pattern: 3/4 quarters beat expectations, avg reaction -0.3%",
+        "Market: VIX 31.2 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:31.705500",
+      "components": {
+        "earnings_surprise": {
+          "score": 0.7,
+          "actual_eps": 2.82,
+          "expected_eps": 2.64,
+          "surprise_pct": 6.818181818181807,
+          "explanation": "Beat by 6.8%"
+        },
+        "fundamentals": {
+          "score": 0.275,
+          "pe_ratio": 27.51,
+          "operating_margin": 0.316,
+          "revenue_growth_yoy": 0.18,
+          "debt_to_equity": 0.16
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Strong Buy",
+          "price_target": 361.22223,
+          "current_price": 297.115,
+          "upside_pct": 21.57657136125743,
+          "num_analysts": 18
+        },
+        "historical_patterns": {
+          "score": 0.5,
+          "beats_last_4q": 3,
+          "avg_reaction_pct": -0.34314883337662816
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.23,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.3090850258339395,
+          "qqq_trend_10d": -2.296547302020555,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.1302867298930405,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.30954477296160265,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Communication Services",
+          "stock_return_1m": -10.281282499131207,
+          "sector_return_1m": -0.3355988234411294,
+          "relative_strength": 30.635633324664337,
+          "sector_trend": "neutral"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 43.57877715048491,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.7870664117341116
+        },
+        "sentiment_analysis": {
+          "score": 0.1,
+          "indicators_available": 2,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": null,
+          "days_to_cover": null,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": null
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 297.26,
+      "rt_change": -0.82,
+      "rt_change_pct": -0.28
+    },
+    {
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "recommendation": "BUY",
+      "confidence": 0.41794871794871796,
+      "final_score": 0.41794871794871796,
+      "supporting_points": [
+        "Beat by 6.8% - EPS $2.82 vs $2.64 expected",
+        "Strong margin: 31.6%",
+        "Analyst consensus: Strong Buy with 26.7% upside (56 analysts)",
+        "Historical pattern: 3/4 quarters beat expectations, avg reaction -0.3%",
+        "Market: VIX 31.2 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:32.003855",
+      "components": {
+        "earnings_surprise": {
+          "score": 0.7,
+          "actual_eps": 2.82,
+          "expected_eps": 2.64,
+          "surprise_pct": 6.818181818181807,
+          "explanation": "Beat by 6.8%"
+        },
+        "fundamentals": {
+          "score": 0.275,
+          "pe_ratio": 27.53,
+          "operating_margin": 0.316,
+          "revenue_growth_yoy": 0.18,
+          "debt_to_equity": 0.16
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Strong Buy",
+          "price_target": 376.94928,
+          "current_price": 297.58,
+          "upside_pct": 26.671577390953694,
+          "num_analysts": 56
+        },
+        "historical_patterns": {
+          "score": 0.5,
+          "beats_last_4q": 3,
+          "avg_reaction_pct": -0.33616445421287783
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.23,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.3214456776878336,
+          "qqq_trend_10d": -2.3245109968108335,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.11962832884354979,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.3277500203515356,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Communication Services",
+          "stock_return_1m": -10.161510539504718,
+          "sector_return_1m": -0.3355988234411294,
+          "relative_strength": 30.278743040013207,
+          "sector_trend": "neutral"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 44.97391429596298,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.7861990351945077
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 1.26,
+          "days_to_cover": 1.89,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 297.59,
+      "rt_change": -0.68,
+      "rt_change_pct": -0.23
+    },
+    {
+      "ticker": "MA",
+      "company_name": "Mastercard Incorporated",
+      "recommendation": "BUY",
+      "confidence": 0.3717948717948718,
+      "final_score": 0.3717948717948718,
+      "supporting_points": [
+        "Beat by 12.3% - EPS $4.76 vs $4.24 expected",
+        "Elevated P/E: 31.1x; Strong margin: 57.7%; High debt: D/E 2.6x",
+        "Analyst consensus: Strong Buy with 29.0% upside (35 analysts)",
+        "Historical pattern: 3/4 quarters beat expectations, avg reaction +0.8%",
+        "Market: VIX 31.2 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "Sector Financial Services is weak despite stock fundamentals",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:32.346531",
+      "components": {
+        "earnings_surprise": {
+          "score": 1.0,
+          "actual_eps": 4.76,
+          "expected_eps": 4.24,
+          "surprise_pct": 12.264150943396215,
+          "explanation": "Beat by 12.3%"
+        },
+        "fundamentals": {
+          "score": -0.024999999999999994,
+          "pe_ratio": 31.11,
+          "operating_margin": 0.577,
+          "revenue_growth_yoy": 0.176,
+          "debt_to_equity": 2.56
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Strong Buy",
+          "price_target": 662.8,
+          "current_price": 513.67,
+          "upside_pct": 29.03225806451613,
+          "num_analysts": 35
+        },
+        "historical_patterns": {
+          "score": 0.5,
+          "beats_last_4q": 3,
+          "avg_reaction_pct": 0.7534190342969894
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.23,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.3258145287741234,
+          "qqq_trend_10d": -2.3097007814371673,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.11962832884354979,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.3277500203515356,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": -0.3,
+          "sector_name": "Financial Services",
+          "stock_return_1m": -6.926205513148067,
+          "sector_return_1m": -7.431035872470428,
+          "relative_strength": 0.9320646047218539,
+          "sector_trend": "weak"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 45.54326111354294,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.787460381599062
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 0.8099999999999999,
+          "days_to_cover": 1.59,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 513.67,
+      "rt_change": -8.67,
+      "rt_change_pct": -1.66
+    },
+    {
+      "ticker": "META",
+      "company_name": "Meta Platforms, Inc.",
+      "recommendation": "BUY",
+      "confidence": 0.391025641025641,
+      "final_score": 0.391025641025641,
+      "supporting_points": [
+        "Beat by 8.0% - EPS $8.88 vs $8.22 expected",
+        "Strong margin: 41.3%; Strong growth: 23.8% YoY",
+        "Analyst consensus: Strong Buy with 36.6% upside (59 analysts)",
+        "Historical pattern: 2/4 quarters beat expectations, avg reaction -1.0%",
+        "Market: VIX 31.2 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:31.141815",
+      "components": {
+        "earnings_surprise": {
+          "score": 0.7,
+          "actual_eps": 8.88,
+          "expected_eps": 8.22,
+          "surprise_pct": 8.029197080291972,
+          "explanation": "Beat by 8.0%"
+        },
+        "fundamentals": {
+          "score": 0.35,
+          "pe_ratio": 26.89,
+          "operating_margin": 0.413,
+          "revenue_growth_yoy": 0.238,
+          "debt_to_equity": 0.39
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Strong Buy",
+          "price_target": 862.2502,
+          "current_price": 631.09,
+          "upside_pct": 36.628721735410146,
+          "num_analysts": 59
+        },
+        "historical_patterns": {
+          "score": 0.0,
+          "beats_last_4q": 2,
+          "avg_reaction_pct": -1.0275047402909268
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.23,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.3214456776878336,
+          "qqq_trend_10d": -2.3245109968108335,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.11962832884354979,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.3277500203515356,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Communication Services",
+          "stock_return_1m": -5.8548887636795435,
+          "sector_return_1m": -0.3355988234411294,
+          "relative_strength": 17.446094427999704,
+          "sector_trend": "neutral"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 46.52406089848366,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.7033870993248306
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 1.24,
+          "days_to_cover": 1.47,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 630.99,
+      "rt_change": -13.88,
+      "rt_change_pct": -2.15
+    },
+    {
+      "ticker": "MSFT",
+      "company_name": "Microsoft Corporation",
+      "recommendation": "BUY",
+      "confidence": 0.48717948717948717,
+      "final_score": 0.48717948717948717,
+      "supporting_points": [
+        "Beat by 34.0% - EPS $5.16 vs $3.85 expected",
+        "Strong margin: 47.1%",
+        "Analyst consensus: Strong Buy with 46.8% upside (53 analysts)",
+        "Historical pattern: 3/4 quarters beat expectations, avg reaction -0.4%",
+        "Market: VIX 31.2 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:26.885882",
+      "components": {
+        "earnings_surprise": {
+          "score": 1.0,
+          "actual_eps": 5.16,
+          "expected_eps": 3.85,
+          "surprise_pct": 34.02597402597402,
+          "explanation": "Beat by 34.0%"
+        },
+        "fundamentals": {
+          "score": 0.275,
+          "pe_ratio": 25.34,
+          "operating_margin": 0.471,
+          "revenue_growth_yoy": 0.167,
+          "debt_to_equity": 0.32
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Strong Buy",
+          "price_target": 594.6217,
+          "current_price": 405.185,
+          "upside_pct": 46.753137455730105,
+          "num_analysts": 53
+        },
+        "historical_patterns": {
+          "score": 0.5,
+          "beats_last_4q": 3,
+          "avg_reaction_pct": -0.44123298075603995
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.23,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.3258145287741234,
+          "qqq_trend_10d": -2.3097007814371673,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.11962832884354979,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.3277500203515356,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Technology",
+          "stock_return_1m": 3.1434058436243215,
+          "sector_return_1m": 0.5382258359201534,
+          "relative_strength": 5.840310207796585,
+          "sector_trend": "weak"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 56.87105451756308,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.9012439595703728
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 0.76,
+          "days_to_cover": 1.29,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 404.96,
+      "rt_change": -4.0,
+      "rt_change_pct": -0.98
+    },
+    {
+      "ticker": "ORCL",
+      "company_name": "Oracle Corporation",
+      "recommendation": "BUY",
+      "confidence": 0.41794871794871796,
+      "final_score": 0.41794871794871796,
+      "supporting_points": [
+        "Beat by 37.8% - EPS $2.26 vs $1.64 expected",
+        "Strong margin: 32.0%; High debt: D/E 4.3x",
+        "Analyst consensus: Buy with 70.9% upside (38 analysts)",
+        "Historical pattern: 2/4 quarters beat expectations, avg reaction +0.2%",
+        "Market: VIX 31.3 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:35.405561",
+      "components": {
+        "earnings_surprise": {
+          "score": 1.0,
+          "actual_eps": 2.26,
+          "expected_eps": 1.64,
+          "surprise_pct": 37.80487804878048,
+          "explanation": "Beat by 37.8%"
+        },
+        "fundamentals": {
+          "score": 0.07500000000000001,
+          "pe_ratio": 27.83,
+          "operating_margin": 0.32,
+          "revenue_growth_yoy": 0.142,
+          "debt_to_equity": 4.33
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Buy",
+          "price_target": 253.07605,
+          "current_price": 148.055,
+          "upside_pct": 70.93380838202019,
+          "num_analysts": 38
+        },
+        "historical_patterns": {
+          "score": 0.0,
+          "beats_last_4q": 2,
+          "avg_reaction_pct": 0.18029711107146526
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.3,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.3214456776878336,
+          "qqq_trend_10d": -2.280080350689835,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.12603640727269314,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.30954477296160265,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Technology",
+          "stock_return_1m": 8.481094160751482,
+          "sector_return_1m": 0.582462034721141,
+          "relative_strength": 14.560767320760885,
+          "sector_trend": "weak"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 43.87870408151664,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.7503772840757722
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 1.97,
+          "days_to_cover": 1.11,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 148.15,
+      "rt_change": -4.81,
+      "rt_change_pct": -3.14
+    },
+    {
+      "ticker": "PANW",
+      "company_name": "Palo Alto Networks, Inc.",
+      "recommendation": "BUY",
+      "confidence": 0.4025641025641026,
+      "final_score": 0.4025641025641026,
+      "supporting_points": [
+        "Beat by 9.6% - EPS $1.03 vs $0.94 expected",
+        "Elevated P/E: 92.0x; Strong margin: 15.4%",
+        "Analyst consensus: Buy with 25.7% upside (49 analysts)",
+        "Historical pattern: 3/4 quarters beat expectations, avg reaction -0.7%",
+        "Market: VIX 31.2 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:27.174585",
+      "components": {
+        "earnings_surprise": {
+          "score": 0.7,
+          "actual_eps": 1.03,
+          "expected_eps": 0.94,
+          "surprise_pct": 9.574468085106393,
+          "explanation": "Beat by 9.6%"
+        },
+        "fundamentals": {
+          "score": 0.175,
+          "pe_ratio": 92.01,
+          "operating_margin": 0.154,
+          "revenue_growth_yoy": 0.149,
+          "debt_to_equity": 0.05
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Buy",
+          "price_target": 208.15714,
+          "current_price": 165.61,
+          "upside_pct": 25.691165992391753,
+          "num_analysts": 49
+        },
+        "historical_patterns": {
+          "score": 0.5,
+          "beats_last_4q": 3,
+          "avg_reaction_pct": -0.702120447281709
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.23,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.325823408552754,
+          "qqq_trend_10d": -2.3097007814371673,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.11962832884354979,
+          "tlt_change_5d": -1.2833406071264555,
+          "uup_change_5d": 0.3277500203515356,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Technology",
+          "stock_return_1m": 6.994247366683272,
+          "sector_return_1m": 0.558791393246757,
+          "relative_strength": 12.516741401553189,
+          "sector_trend": "weak"
+        },
+        "momentum": {
+          "score": 0.0,
+          "rsi_14d": 52.242321936140094,
+          "rsi_status": "neutral",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 0.7706389785964985
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 2.8099999,
+          "days_to_cover": 2.0,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 165.59,
+      "rt_change": 0.54,
+      "rt_change_pct": 0.33
+    },
+    {
+      "ticker": "PLTR",
+      "company_name": "Palantir Technologies Inc.",
+      "recommendation": "BUY",
+      "confidence": 0.3564102564102564,
+      "final_score": 0.3564102564102564,
+      "supporting_points": [
+        "Beat by 8.7% - EPS $0.25 vs $0.23 expected",
+        "Elevated P/E: 244.7x; Strong margin: 40.9%; Strong growth: 70.0% YoY",
+        "Analyst consensus: Buy with 20.9% upside (26 analysts)",
+        "Historical pattern: 3/4 quarters beat expectations, avg reaction +0.1%",
+        "Market: VIX 31.3 (fear), Market choppy (SPY -3.3%, QQQ -2.3% 10d)"
+      ],
+      "caveats": [
+        "Short interest data typically ~2 weeks old (FINRA lag)",
+        "High market volatility (VIX 31)"
+      ],
+      "timestamp": "2026-03-09T22:32:36.504961",
+      "components": {
+        "earnings_surprise": {
+          "score": 0.7,
+          "actual_eps": 0.25,
+          "expected_eps": 0.23,
+          "surprise_pct": 8.69565217391304,
+          "explanation": "Beat by 8.7%"
+        },
+        "fundamentals": {
+          "score": 0.25,
+          "pe_ratio": 244.71,
+          "operating_margin": 0.409,
+          "revenue_growth_yoy": 0.7,
+          "debt_to_equity": 0.03
+        },
+        "analyst_sentiment": {
+          "score": 1.0,
+          "consensus_rating": "Buy",
+          "price_target": 186.41115,
+          "current_price": 154.17,
+          "upside_pct": 20.912726211325168,
+          "num_analysts": 26
+        },
+        "historical_patterns": {
+          "score": 0.5,
+          "beats_last_4q": 3,
+          "avg_reaction_pct": 0.0926756394412737
+        },
+        "market_context": {
+          "score": -0.3,
+          "vix_level": 31.3,
+          "vix_status": "fear",
+          "spy_trend_10d": -3.2850741044166063,
+          "qqq_trend_10d": -2.2619968266979886,
+          "market_regime": "choppy",
+          "gld_change_5d": -0.12603640727269314,
+          "tlt_change_5d": -1.0734642527079317,
+          "uup_change_5d": 0.30954477296160265,
+          "risk_off_detected": false
+        },
+        "sector_performance": {
+          "score": 0.3,
+          "sector_name": "Technology",
+          "stock_return_1m": 18.60496095517371,
+          "sector_return_1m": 0.5972111844230978,
+          "relative_strength": 31.153068529930465,
+          "sector_trend": "weak"
+        },
+        "momentum": {
+          "score": -0.5,
+          "rsi_14d": 75.2593286047122,
+          "rsi_status": "overbought",
+          "near_52w_high": false,
+          "near_52w_low": false,
+          "volume_ratio": 1.1103848722491791
+        },
+        "sentiment_analysis": {
+          "score": 0.13333333333333333,
+          "indicators_available": 3,
+          "fear_greed_value": 20.8902255639098,
+          "fear_greed_status": "extreme fear",
+          "short_interest_pct": 2.35,
+          "days_to_cover": 0.95,
+          "vix_structure": "backwardation",
+          "vix_slope": -5.0,
+          "insider_net_value": null,
+          "put_call_ratio": null,
+          "data_freshness_warnings": [
+            "Short interest data typically ~2 weeks old (FINRA lag)"
+          ]
+        }
+      },
+      "disclaimer": "NOT FINANCIAL ADVICE. For informational purposes only.",
+      "rt_price": 154.24,
+      "rt_change": -2.92,
+      "rt_change_pct": -1.86
+    }
+  ],
+  "rumor_excerpt": "============================================================\n🔮 RUMOR & BUZZ SCANNER\n📅 2026-03-09 14:32:22 UTC\n============================================================\n\n🔍 Scanning for early signals...\n\n  🐦 Twitter rumors...\n    ✅ 0 potential rumors\n  🐦 Twitter buzz...\n    ✅ 0 buzz items\n  📰 News rumors...\n    ✅ 25 news items\n\n============================================================\n🔮 RESULTS\n============================================================\n\n🚨 TOP RUMORS (by potential impact):\n\n   [7] [google_news] N/A\n       As railroad merger rumors swirl, CSX CEO says working with peers is the best way...\n\n   [7] [google_news] N/A\n       Accenture Song/WPP merger rumors swirl, but would it make sense? - The Drum...\n\n   [7] [google_news] AAPL\n       Rumor: Apple May Make A Bold And Expensive AI Acquisition - bgr.com...\n\n   [5] [google_news] N/A\n       Toyota-Affiliated Denso Makes Takeover Bid for Chip Maker Rohm - WSJ...\n\n   [5] [google_news] N/A\n       What is a hostile takeover bid? - CNN...\n\n   [5] [google_news] N/A\n       Rohm shares soar most since 2000 on Denso acquisition bid - The Japan Times...\n\n   [5] [google_news] NFLX\n       Warner Bros. Discovery deems Paramount's "
+}

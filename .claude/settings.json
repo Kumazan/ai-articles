@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(openclaw*)",
+      "Bash(qmd*)",
+      "Bash(openclaw\nimport\nschema\n#\ndef\n\n\n\n\n\nfind_path\\(schema*)"
+    ]
+  }
+}

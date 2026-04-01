@@ -45,7 +45,7 @@ function getApiKey() {
   if (process.env.XAI_API_KEY) return process.env.XAI_API_KEY;
 
   // Try workspace secrets
-  const workspace = process.env.WORKSPACE_DIR || '/root/.openclaw/workspace';
+  const workspace = process.env.WORKSPACE_DIR || path.join(process.env.HOME || '', '.openclaw', 'workspace');
   loadDotEnvFile(path.join(workspace, '.secrets', 'xai.env'));
   if (process.env.XAI_API_KEY) return process.env.XAI_API_KEY;
 

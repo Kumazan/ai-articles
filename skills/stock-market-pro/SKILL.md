@@ -94,6 +94,8 @@ Run:
 python3 scripts/news.py NVDA --max 8
 # or
 python3 scripts/ddg_search.py "NVDA earnings guidance" --kind news --max 8 --out md
+# 指定區域（預設 wt-wt 全球，可用 tw-tzh 台灣、us-en 美國、kr-kr 韓國等）
+python3 scripts/ddg_search.py "台積電法說" --kind news --region tw-tzh --max 8 --out md
 ```
 
 ### B) Options / Flow (browser-first)
@@ -124,8 +126,10 @@ Common URLs:
 
 Check:
 ```bash
-python3 scripts/yf.py --help
+uv run --script scripts/yf.py --help
 ```
+
+> **Note:** `yf.py` 使用 `uv run --script` 自動管理依賴。`news.py` 和 `ddg_search.py` 需要先 `pip3 install -U ddgs`，用 `python3` 執行。`uw.py` 需要 Playwright，用 `python3` 執行。
 
 ## Ticker examples
 - US: `AAPL`, `NVDA`, `TSLA`

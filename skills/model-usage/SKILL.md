@@ -9,11 +9,13 @@ metadata: {"clawdbot":{"emoji":"📊","os":["darwin"],"requires":{"bins":["codex
 ## Overview
 Get per-model usage cost from CodexBar's local cost logs. Supports "current model" (most recent daily entry) or "all models" summaries for Codex or Claude.
 
-TODO: add Linux CLI support guidance once CodexBar CLI install path is documented for Linux.
+**Known limitation:** Linux is not yet supported. CodexBar CLI install path is not documented for Linux.
 
 ## Quick start
 1) Fetch cost JSON via CodexBar CLI or pass a JSON file.
 2) Use the bundled script to summarize by model.
+
+(`{baseDir}` is automatically resolved by OpenClaw to the skill's directory path.)
 
 ```bash
 python {baseDir}/scripts/model_usage.py --provider codex --mode current

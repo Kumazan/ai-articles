@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenClaw 翻譯對照 — gateway/</title>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+  :root { --bg:#0d1117; --sidebar:#161b22; --fg:#e6edf3; --fg2:#8b949e; --accent:#FF5A36; --border:#30363d; --code-bg:#1c2128; --hover:#1f2937; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter','Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--fg); display:flex; height:100vh; overflow:hidden; }
+
+  .sidebar { width:240px; min-width:240px; background:var(--sidebar); border-right:1px solid var(--border); display:flex; flex-direction:column; overflow:hidden; }
+  .sidebar-header { padding:14px 16px; border-bottom:1px solid var(--border); }
+  .sidebar-header h1 { font-size:15px; color:var(--accent); }
+  .sidebar-header p { font-size:11px; color:var(--fg2); margin-top:2px; }
+  .sidebar-list { flex:1; overflow-y:auto; padding:6px 0; }
+  .sidebar-list button { display:block; width:100%; text-align:left; background:none; border:none; color:var(--fg2); padding:7px 16px; font-size:12.5px; cursor:pointer; font-family:inherit; transition:all .12s; border-left:3px solid transparent; }
+  .sidebar-list button:hover { background:var(--hover); color:var(--fg); }
+  .sidebar-list button.active { background:var(--hover); color:var(--accent); border-left-color:var(--accent); font-weight:600; }
+  .sidebar-stats { padding:10px 16px; border-top:1px solid var(--border); font-size:11px; color:var(--fg2); }
+
+  .main { flex:1; display:flex; flex-direction:column; overflow:hidden; }
+  .toolbar { padding:8px 20px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; background:var(--sidebar); }
+  .toolbar .filename { font-size:13px; font-weight:600; color:var(--fg); }
+  .tab-bar { display:flex; gap:0; margin-left:auto; }
+  .tab-bar button { background:none; border:none; border-bottom:2px solid transparent; color:var(--fg2); padding:5px 12px; font-size:12px; cursor:pointer; font-family:inherit; transition:all .12s; }
+  .tab-bar button.active { color:var(--accent); border-bottom-color:var(--accent); }
+  .tab-bar button:hover { color:var(--fg); }
+
+  .view-container { flex:1; display:flex; overflow:hidden; }
+
+  .pane { flex:1; overflow-y:auto; padding:24px 32px; min-width:0; }
+  .pane + .pane { border-left:1px solid var(--border); }
+  .pane-label { font-size:11px; text-transform:uppercase; letter-spacing:.8px; color:var(--fg2); margin-bottom:10px; font-weight:700; position:sticky; top:0; background:var(--bg); padding:4px 0 8px; z-index:1; display:flex; align-items:center; gap:6px; }
+  .pane-label .flag { font-size:14px; }
+
+  .md h1 { font-size:24px; margin:20px 0 12px; padding-bottom:6px; border-bottom:1px solid var(--border); }
+  .md h2 { font-size:19px; margin:24px 0 10px; color:var(--accent); }
+  .md h3 { font-size:15px; margin:16px 0 6px; }
+  .md p { line-height:1.65; margin:6px 0; font-size:14px; }
+  .md a { color:#58a6ff; text-decoration:none; }
+  .md a:hover { text-decoration:underline; }
+  .md code { background:var(--code-bg); padding:1px 5px; border-radius:3px; font-size:12.5px; font-family:'JetBrains Mono','Fira Code',monospace; }
+  .md pre { background:var(--code-bg); padding:14px; border-radius:6px; overflow-x:auto; margin:10px 0; border:1px solid var(--border); font-size:12.5px; }
+  .md pre code { background:none; padding:0; }
+  .md blockquote { border-left:3px solid var(--accent); padding:6px 14px; margin:10px 0; color:var(--fg2); background:rgba(255,90,54,.04); border-radius:0 4px 4px 0; }
+  .md ul, .md ol { padding-left:20px; margin:6px 0; }
+  .md li { line-height:1.65; margin:3px 0; font-size:14px; }
+  .md table { border-collapse:collapse; margin:10px 0; width:100%; }
+  .md th, .md td { border:1px solid var(--border); padding:6px 10px; text-align:left; font-size:12.5px; }
+  .md th { background:var(--code-bg); font-weight:600; }
+  .md hr { border:none; border-top:1px solid var(--border); margin:20px 0; }
+
+  .raw-view { font-family:'JetBrains Mono','Fira Code',monospace; font-size:12.5px; white-space:pre-wrap; word-break:break-word; color:var(--fg2); line-height:1.5; }
+
+  ::-webkit-scrollbar { width:5px; }
+  ::-webkit-scrollbar-track { background:transparent; }
+  ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+
+  .sync-toggle { font-size:11px; color:var(--fg2); display:flex; align-items:center; gap:4px; cursor:pointer; user-select:none; }
+  .sync-toggle input { accent-color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <h1>🦞 OpenClaw i18n</h1>
+    <p>gateway/ 英繁對照</p>
+  </div>
+  <div class="sidebar-list" id="fileList"></div>
+  <div class="sidebar-stats" id="stats"></div>
+</div>
+<div class="main">
+  <div class="toolbar">
+    <span class="filename" id="currentFile">gateway/</span>
+    <label class="sync-toggle"><input type="checkbox" id="syncScroll" checked> 同步捲動</label>
+    <div class="tab-bar">
+      <button class="active" onclick="setView('compare')">🔀 英繁對照</button>
+      <button onclick="setView('tw')">🇹🇼 繁中</button>
+      <button onclick="setView('raw')">📝 原始碼</button>
+    </div>
+  </div>
+  <div class="view-container" id="viewContainer"></div>
+</div>
+<script>
+let enDocs={}, twDocs={};
+let currentFile='', currentView='compare';
+
+async function load() {
+  const [r1,r2] = await Promise.all([
+    fetch('/en-data.json').then(r=>r.json()),
+    fetch('/docs-data.json').then(r=>r.json()),
+  ]);
+  enDocs=r1; twDocs=r2;
+
+  const keys = [...new Set([...Object.keys(enDocs),...Object.keys(twDocs)])].sort();
+  const list = document.getElementById('fileList');
+  keys.forEach(k => {
+    const btn = document.createElement('button');
+    btn.textContent = k.replace('.md','');
+    btn.onclick = () => selectFile(k);
+    btn.id = 'btn-'+CSS.escape(k);
+    list.appendChild(btn);
+  });
+  document.getElementById('stats').textContent = `${keys.length} 個檔案`;
+  if (keys.length) selectFile(keys.find(k=>k==='index.md')||keys[0]);
+}
+
+function selectFile(name) {
+  if (currentFile) {
+    const prev = document.getElementById('btn-'+CSS.escape(currentFile));
+    if (prev) prev.classList.remove('active');
+  }
+  currentFile = name;
+  const btn = document.getElementById('btn-'+CSS.escape(name));
+  if (btn) { btn.classList.add('active'); btn.scrollIntoView({block:'nearest'}); }
+  document.getElementById('currentFile').textContent = 'gateway/' + name;
+  renderView();
+}
+
+function setView(v) {
+  currentView = v;
+  document.querySelectorAll('.tab-bar button').forEach(b => {
+    b.classList.toggle('active',
+      (v==='compare' && b.textContent.includes('對照')) ||
+      (v==='tw' && b.textContent.includes('繁中')) ||
+      (v==='raw' && b.textContent.includes('原始碼'))
+    );
+  });
+  renderView();
+}
+
+function renderMd(md) {
+  return '<div class="md">' + marked.parse((md||'').replace(/^---[\s\S]*?---\n*/,'')) + '</div>';
+}
+
+function renderView() {
+  const c = document.getElementById('viewContainer');
+  const en = enDocs[currentFile]||'';
+  const tw = twDocs[currentFile]||'';
+
+  if (currentView === 'compare') {
+    c.innerHTML = `
+      <div class="pane"><div class="pane-label"><span class="flag">🇺🇸</span> English</div>${renderMd(en)}</div>
+      <div class="pane"><div class="pane-label"><span class="flag">🇹🇼</span> 繁體中文</div>${renderMd(tw)}</div>`;
+  } else if (currentView === 'tw') {
+    c.innerHTML = `<div class="pane"><div class="pane-label"><span class="flag">🇹🇼</span> 繁體中文</div>${renderMd(tw)}</div>`;
+  } else {
+    const d1 = document.createElement('div'); d1.className='pane';
+    d1.innerHTML = `<div class="pane-label"><span class="flag">🇺🇸</span> English</div>`;
+    const r1 = document.createElement('div'); r1.className='raw-view'; r1.textContent=en; d1.appendChild(r1);
+    const d2 = document.createElement('div'); d2.className='pane';
+    d2.innerHTML = `<div class="pane-label"><span class="flag">🇹🇼</span> 繁體中文</div>`;
+    const r2 = document.createElement('div'); r2.className='raw-view'; r2.textContent=tw; d2.appendChild(r2);
+    c.innerHTML = '';
+    c.appendChild(d1); c.appendChild(d2);
+  }
+  setupSyncScroll();
+}
+
+function setupSyncScroll() {
+  const panes = document.querySelectorAll('.pane');
+  if (panes.length < 2) return;
+  let syncing = false;
+  panes.forEach(p => {
+    p.addEventListener('scroll', function() {
+      if (!document.getElementById('syncScroll').checked) return;
+      if (syncing) return;
+      syncing = true;
+      const ratio = this.scrollTop / (this.scrollHeight - this.clientHeight || 1);
+      panes.forEach(other => {
+        if (other !== this) other.scrollTop = ratio * (other.scrollHeight - other.clientHeight);
+      });
+      requestAnimationFrame(() => syncing = false);
+    });
+  });
+}
+
+load();
+</script>
+</body>
+</html>

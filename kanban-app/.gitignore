@@ -1,0 +1,7 @@
+node_modules/
+.next/
+out/
+boards/
+kanban.json
+.env
+.env.local

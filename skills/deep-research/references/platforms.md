@@ -1,158 +1,58 @@
-# Platform UI 操作指南
+# Platform UI Operations — Deep Research
 
-每個平台的具體操作步驟、完成判斷條件。
+## ChatGPT (chatgpt.com)
 
-> **重要**：每次操作前都要先 `openclaw browser snapshot --interactive --compact` 取最新 snapshot 找 ref，不要用記憶中的舊 ref。
+### 送出查詢
+1. 導航到 `https://chatgpt.com`
+2. 在輸入框左側找「深入研究」或「Research」按鈕（或附加功能選單中選 Deep Research）
+3. 輸入 prompt 並送出
 
----
+### 完成判斷
+- Snapshot ARIA tree 中出現完整研究報告段落
+- 不再有「正在研究中」或 loading spinner 文字
 
-## ChatGPT（chatgpt.com）
-
-### 1. 開 Tab 並導航
-
-ChatGPT 有**直通 URL**：
-
-```bash
-openclaw browser tab new
-openclaw browser navigate "https://chatgpt.com/deep-research"
-```
-
-這樣會直接進入 Deep Research 頁面，不需要額外點選。
-
-### 2. 送出 Deep Research 查詢
-
-方法 A（直接輸入，通常 GPT-4o 預設有 Research 工具）：
-
-```bash
-# 找輸入框
-openclaw browser --browser-profile openclaw snapshot --interactive --compact
-# 點輸入框
-openclaw browser --browser-profile openclaw click <textarea-ref>
-# 輸入查詢
-openclaw browser --browser-profile openclaw type <textarea-ref> "<查詢內容>"
-```
-
-接著找並點 Deep Research / Research 按鈕（通常在輸入框附近）：
-
-```bash
-openclaw browser --browser-profile openclaw snapshot --interactive --compact
-# 找 "Research" 或 "Deep research" button/label
-openclaw browser --browser-profile openclaw click <research-button-ref>
-# 確認後送出
-openclaw browser --browser-profile openclaw click <send-button-ref>
-```
-
-### 3. 完成判斷
-
-輪詢時 snapshot 並檢查：
-- **完成信號**：出現含大量文字的回應區塊，且沒有 spinner / loading 動畫
-- **仍在執行**：有 "Researching..." 文字、或 loading indicator、或 "Searching the web" 狀態
-- **抓取方式**：`openclaw browser --browser-profile openclaw snapshot --selector "article" --compact` 或直接 evaluate：
-
-```bash
-openclaw browser --browser-profile openclaw evaluate --fn 'document.querySelector("article")?.innerText?.slice(0, 20000)' 
-```
+### 擷取結果
+- 報告在主 conversation tab（**非** `connector_openai_deep_research` iframe tab）
+- 用 `openclaw browser snapshot` 取 ARIA tree，parse `- text:` 節點
 
 ---
 
-## Gemini（gemini.google.com）
+## Gemini (gemini.google.com)
 
-### 1. 開 Tab 並導航
+### 送出查詢
+1. 導航到 `https://gemini.google.com`
+2. 在 Deep Research 模式下輸入 prompt 並送出
+3. 若跳出確認 outline 步驟：snapshot 確認有 "Confirm" 或 "Start" 按鈕，自動點擊
 
-```bash
-openclaw browser --browser-profile openclaw tab new
-openclaw browser --browser-profile openclaw navigate "https://gemini.google.com"
-```
+### 完成判斷
+- 右側 Canvas 出現研究報告面板
+- 不再有進度條或「正在研究」文字
 
-### 2. 送出 Deep Research 查詢
+### 擷取結果
+1. 找「分享及匯出」按鈕並點擊（在報告面板頂部）
+2. 在下拉選單中找「複製內容」並點擊（見 scripts/extract-results.md）
+3. 用 `pbpaste` 讀取剪貼簿（見 scripts/extract-results.md）
 
-```bash
-# 取 snapshot 找輸入框
-openclaw browser --browser-profile openclaw snapshot --interactive --compact
-# 點輸入框，輸入查詢
-openclaw browser --browser-profile openclaw click <textarea-ref>
-openclaw browser --browser-profile openclaw type <textarea-ref> "<查詢內容>"
-```
-
-找 Deep Research 按鈕（在輸入框附近，通常有 "Deep Research" 或放大鏡＋書本圖示）：
-
-```bash
-openclaw browser --browser-profile openclaw snapshot --interactive --compact
-# 找 deep-research toggle 或 button
-openclaw browser --browser-profile openclaw click <deep-research-ref>
-openclaw browser --browser-profile openclaw click <send-button-ref>
-```
-
-### 3. 確認 Outline（若出現）
-
-Gemini Deep Research 有時會先顯示研究計畫要確認：
-
-```bash
-openclaw browser --browser-profile openclaw snapshot --interactive --compact
-# 找 "Start research" 或 "Confirm" 按鈕
-openclaw browser --browser-profile openclaw click <confirm-ref>
-```
-
-### 4. 完成判斷
-
-```bash
-openclaw browser --browser-profile openclaw evaluate --fn 'document.querySelector("[data-message-id]")?.innerText?.slice(0, 20000)'
-```
-
-- **完成信號**：response 容器存在且 spinner class 消失、有完整段落文字
-- **仍在執行**：有 `mat-progress-spinner` 或 "Researching" 狀態文字
+**注意**：不要點「建立」按鈕，會生成 SPA 網頁 iframe 而非文字報告。
 
 ---
 
-## Claude（claude.ai）
+## Claude (claude.ai)
 
-### 1. 開 Tab 並導航
+### 送出查詢
+1. 導航到 `https://claude.ai`
+2. 選擇 Research 模式
+3. Prompt 末尾加「請直接開始研究，不需要先問釐清問題。」避免 Claude 先確認
+4. 送出查詢
 
-```bash
-openclaw browser --browser-profile openclaw tab new
-openclaw browser --browser-profile openclaw navigate "https://claude.ai/new"
-```
+### 完成判斷
+- 對話出現 Document Artifact 卡片（有「Document」標籤）
+- 不再有 thinking/loading 狀態
 
-### 2. 啟用 Research 模式並送出查詢
+### 擷取結果
+1. 點開對話中的 Document Artifact 卡片（才會展開右側 artifact panel）
+2. 在 snapshot 找 `Copy` button（在 `Close artifact` 附近）
+3. 點 Copy（不是 Copy options）
+4. 用 `pbpaste` 讀取（見 scripts/extract-results.md）
 
-```bash
-# 取 snapshot 找輸入框
-openclaw browser --browser-profile openclaw snapshot --interactive --compact
-# 點輸入框
-openclaw browser --browser-profile openclaw click <textarea-ref>
-# 輸入查詢
-openclaw browser --browser-profile openclaw type <textarea-ref> "<查詢內容>"
-```
-
-找 Research 按鈕（通常在輸入框下方工具列，圖示為書本/放大鏡）：
-
-```bash
-openclaw browser --browser-profile openclaw snapshot --interactive --compact
-# 找 "Research" toggle 或 button
-openclaw browser --browser-profile openclaw click <research-ref>
-openclaw browser --browser-profile openclaw click <send-button-ref>
-```
-
-### 3. 完成判斷
-
-```bash
-openclaw browser --browser-profile openclaw evaluate --fn 'document.querySelector(".font-claude-message")?.innerText?.slice(0, 20000)'
-```
-
-- **完成信號**：`font-claude-message` 有完整回應文字，且沒有 streaming cursor
-- **仍在執行**：有 streaming indicator、或文字還在增加中（短時間內兩次 snapshot 結果不同）
-
----
-
-## 輪詢策略
-
-```
-每 2 分鐘 cron → focus tab → snapshot → 判斷 done/pending
-超過 45 分鐘 → timeout，取現有結果
-```
-
-完成判斷的簡易流程：
-
-```
-snapshot 結果長度 > 1000 字 AND 無 loading spinner → done
-```
+詳細 JS 程式碼見 `scripts/extract-results.md`。

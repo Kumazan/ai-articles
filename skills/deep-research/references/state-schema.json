@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Deep Research State File",
+  "type": "object",
+  "required": ["query", "startTime", "status", "tabIds", "results"],
+  "properties": {
+    "query": {
+      "type": "string",
+      "description": "原始查詢內容"
+    },
+    "startTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp，任務開始時間"
+    },
+    "status": {
+      "type": "object",
+      "description": "各平台狀態",
+      "properties": {
+        "chatgpt": { "type": "string", "enum": ["pending", "done", "timeout", "error"] },
+        "gemini":  { "type": "string", "enum": ["pending", "done", "timeout", "error"] },
+        "claude":  { "type": "string", "enum": ["pending", "done", "timeout", "error"] }
+      },
+      "required": ["chatgpt", "gemini", "claude"]
+    },
+    "tabIds": {
+      "type": "object",
+      "description": "browser targetId for each platform tab",
+      "properties": {
+        "chatgpt": { "type": "string" },
+        "gemini":  { "type": "string" },
+        "claude":  { "type": "string" }
+      },
+      "required": ["chatgpt", "gemini", "claude"]
+    },
+    "conversationLinks": {
+      "type": "object",
+      "description": "各平台對話 URL（含對話 ID）",
+      "properties": {
+        "chatgpt": { "type": "string" },
+        "gemini":  { "type": "string" },
+        "claude":  { "type": "string" }
+      }
+    },
+    "results": {
+      "type": "object",
+      "description": "各平台擷取的研究結果原文",
+      "properties": {
+        "chatgpt": { "type": "string" },
+        "gemini":  { "type": "string" },
+        "claude":  { "type": "string" }
+      },
+      "required": ["chatgpt", "gemini", "claude"]
+    },
+    "reportStatus": {
+      "type": "string",
+      "enum": ["pending", "reported"],
+      "description": "整合報告發送狀態"
+    },
+    "obsidianPath": {
+      "type": "string",
+      "description": "Obsidian 筆記路徑（報告完成後填入）"
+    }
+  }
+}

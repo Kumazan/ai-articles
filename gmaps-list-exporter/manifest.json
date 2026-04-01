@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Google Maps List Exporter",
+  "version": "2.0.0",
+  "description": "Export Google Maps saved lists to CSV/JSON",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/maps/*", "https://www.google.com.tw/maps/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

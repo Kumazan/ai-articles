@@ -58,7 +58,7 @@ def main(argv: List[str]) -> int:
         help="Search type",
     )
     p.add_argument("--max", type=int, default=8, dest="max_results")
-    p.add_argument("--region", default="kr-kr")
+    p.add_argument("--region", default="wt-wt")
     p.add_argument("--safesearch", default="moderate", choices=["on", "moderate", "off"])
     p.add_argument("--timelimit", default=None, help="d|w|m|y (optional)")
     p.add_argument(

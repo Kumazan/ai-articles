@@ -470,7 +470,7 @@ async function refreshWeather(){
     const initData = tg ? tg.initData : '';
     const r = await fetch('api/weather', {cache:'no-store', headers: {'X-Telegram-Init-Data': initData}});
     if(r.status === 401){
-      document.getElementById('statusText').textContent = '未授權（請用 Telegram 打開）';
+      document.getElementById('statusText').innerHTML = '未授權 — <a href="https://t.me/kuma_openclaw_bot/dashboard" style="color:#6cf;text-decoration:underline">請用 Telegram 打開</a>';
       return;
     }
     const w = await r.json();
@@ -629,7 +629,7 @@ async function refresh(){
     const initData = tg ? tg.initData : '';
     const r = await fetch('api/status', {cache:'no-store', headers: {'X-Telegram-Init-Data': initData}});
     if(r.status === 401){
-      document.getElementById('statusText').textContent = '未授權（請用 Telegram 打開）';
+      document.getElementById('statusText').innerHTML = '未授權 — <a href="https://t.me/kuma_openclaw_bot/dashboard" style="color:#6cf;text-decoration:underline">請用 Telegram 打開</a>';
       return;
     }
     const j = await r.json();

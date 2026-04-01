@@ -16,7 +16,7 @@ commands:
 metadata: {"clawdbot":{"emoji":"📈","requires":{"bins":["uv"],"env":[]},"install":[{"id":"uv-brew","kind":"brew","formula":"uv","bins":["uv"],"label":"Install uv (brew)"}]}}
 ---
 
-# Stock Analysis v6.1
+# Stock Analysis v6.2
 
 Analyze US stocks and cryptocurrencies with 8-dimension analysis, portfolio management, watchlists, alerts, dividend analysis, and **viral trend detection**.
 
@@ -42,6 +42,10 @@ Analyze US stocks and cryptocurrencies with 8-dimension analysis, portfolio mana
 - 🆕 **Dividend Analysis** — Yield, payout ratio, growth, safety score
 - 🆕 **Fast Mode** — `--fast` skips slow analyses (insider, news)
 - 🆕 **Improved Performance** — `--no-insider` for faster runs
+
+## Running Scripts: `uv run` vs `python3`
+
+Most scripts use `uv run` to ensure dependencies are available from `pyproject.toml`. The Hot Scanner (`hot_scanner.py`) and Rumor Scanner (`rumor_scanner.py`) use `python3` directly because they rely only on the standard library (no third-party packages). Either invocation works if your environment already has the required packages installed.
 
 ## Quick Commands
 
@@ -234,6 +238,8 @@ BTC, ETH, BNB, SOL, XRP, ADA, DOGE, AVAX, DOT, MATIC, LINK, ATOM, UNI, LTC, BCH,
 |------|----------|
 | Portfolios | `~/.clawdbot/skills/stock-analysis/portfolios.json` |
 | Watchlist | `~/.clawdbot/skills/stock-analysis/watchlist.json` |
+
+> **Note:** The actual storage path may vary by environment (e.g., `~/.openclaw/...` instead of `~/.clawdbot/...`). Check your OpenClaw configuration for the exact location.
 
 ## Limitations
 

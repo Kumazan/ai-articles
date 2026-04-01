@@ -1,6 +1,6 @@
 # Usage Guide
 
-Practical examples for using Stock Analysis v6.0 in real scenarios.
+Practical examples for using Stock Analysis v6.2 in real scenarios.
 
 ## Table of Contents
 

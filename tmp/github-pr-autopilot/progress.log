@@ -1,0 +1,6 @@
+[2026-03-28 02:51:38 +0800] start github-pr-autopilot 04:00 scan
+[2026-03-28 02:51:56 +0800] scanned allowlist repos; kanban-app dirty, polymarket-bond-scanner missing
+[$(date '+%F %T %z')] allowlist enforced strictly
+[$(date '+%F %T %z')] quick repo scan complete
+[$(date '+%F %T %z')] no net-new safe small/medium candidate passed gating; no worktree/SDD/PR opened
+[$(date '+%F %T %z')] wrote state.json for 2026-03-28 04:00 phase

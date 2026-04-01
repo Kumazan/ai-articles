@@ -26,14 +26,24 @@ Always be concrete: name components, states, spacing, typography, and interactio
 This skill bundles data you can cite for inspiration/standards.
 
 - **Design intelligence data**: Read from `skills/ui-ux-pro-max/assets/data/` when you need palettes, patterns, or UI/UX heuristics.
+  > **Note:** The bundled scripts resolve data from `skills/ui-ux-pro-max/data/` (not `assets/data/`). Both directories exist; the scripts use the top-level `data/` directory.
 - **Upstream reference**: If you need more phrasing/examples, consult `skills/ui-ux-pro-max/references/upstream-skill-content.md`.
 
 ## 4) Optional Script (Design System Generator)
-If you need to quickly generate tokens and page-specific overrides, use the bundled script:
+If you need to quickly generate tokens and page-specific overrides, use the bundled script.
+The main CLI entry point is `search.py` (which imports `design_system.py` internally):
 
 ```bash
-python3 skills/ui-ux-pro-max/scripts/design_system.py --help
+python3 skills/ui-ux-pro-max/scripts/search.py --help
 ```
+
+Key flags:
+- `--design-system` / `-ds` — Generate a complete design system recommendation instead of a search.
+- `--format` / `-f` — Output format: `ascii` (default) or `markdown`.
+- `--persist` — Save the generated design system to `design-system/MASTER.md` (creates a hierarchical file structure).
+- `--page <name>` — Create a page-specific override file in `design-system/pages/`. Use with `--persist`.
+- `--project-name` / `-p` — Project name used in the output and file paths.
+- `--output-dir` / `-o` — Output directory for persisted files (defaults to the current directory).
 
 Prefer running it when the user wants a structured token output (ASCII-friendly).
 

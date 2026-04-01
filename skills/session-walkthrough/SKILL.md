@@ -9,6 +9,9 @@ Create a concise but complete walkthrough of a recent session.
 
 ## Workflow
 
+> **Note:** `sessions_list` and `sessions_history` are OpenClaw built-in tools/commands.
+> `sessions_list` retrieves available session IDs; `sessions_history` fetches the full transcript for a given session.
+
 1. Identify the target session with `sessions_list` if the session key is unknown.
 2. Read the transcript with `sessions_history`.
 3. Extract:
@@ -32,6 +35,10 @@ Prefer this structure:
 - 實際修改 / 指令
 - 最終結果
 - 後續 SOP / 建議
+
+## Edge Cases
+
+- **No matching session found:** Inform the user that no session matched their query. Suggest double-checking the session ID, broadening the time range, or running `sessions_list` to review available sessions.
 
 ## Notes
 

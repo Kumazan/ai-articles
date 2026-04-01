@@ -92,6 +92,10 @@
     "chirp": {
       "version": "1.0.1",
       "installedAt": 1771145068694
+    },
+    "mh-obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1774722962829
     }
   }
 }

@@ -22,13 +22,35 @@ description: "Publish AI article translations to the ai-articles GitHub Pages re
    - slug 使用英文關鍵字（lowercase + hyphen）。
 
 4. **寫入文章內容**
-   - 依 `assets/post-template.md` 的格式輸出：
-     - frontmatter（含 permalink）
-     - 文章標題
-     - 原文連結
-     - 分隔線
-     - 摘要
-     - 正文翻譯
+
+   文章固定三段結構，順序不可變：
+
+   ```
+   ## 摘要                        ← 需要 ## 標題
+   （5–7 個重點 bullet）
+
+   <div class="sep">· · ·</div>
+
+   完整翻譯                       ← 不需要額外標題，直接從正文段落開始
+
+   <div class="sep">· · ·</div>
+
+   ## 延伸評論標題（自訂）         ← 需要 ## 標題
+   （評論段落）
+   ```
+
+   其他規則：
+   - frontmatter 必含 `description`：一句話摘要（繁中，50-80 字），用於 Discord 預覽卡片與 SEO；絕對不可省略
+   - frontmatter `author` 欄位填原文作者或來源名稱（如 `author: OpenAI Cookbook`）
+   - 模板中的 `{{PLACEHOLDER}}` 語法僅作為欄位指引，實際文章直接填入，不需保留大括號語法
+   - 檔案格式以 `.md` 為主
+   - ⚠️ **禁止在 body 寫 `# 標題`（H1）**：Jekyll theme 已從 frontmatter `title` 自動渲染頁面標題，再加 H1 會造成標題重複出現兩次。body 從 `<div class="hero-badge">` 開始，接著直接是 `**原文連結：**`，然後 `## 摘要`
+
+   **延伸評論硬規則：**
+   - 文章是公開發佈的，寫給所有讀者看
+   - **禁止**第一人稱（「我覺得」、「我自己」）
+   - **禁止**任何個人名稱（如 Kuma）
+   - 使用通稱：「對開發者來說」、「真的在做 agent 的人」等
 
 5. **更新索引**
    - `index.md` 中：
@@ -39,6 +61,7 @@ description: "Publish AI article translations to the ai-articles GitHub Pages re
 
 6. **提交與發佈**
    - `git add/commit/push` 到 `Kumazan/ai-articles`。
+   - Git push 需要已設定好的認證方式（SSH key 或 GitHub token）。若 push 失敗，提示使用者確認 git remote 的認證設定。
 
 ## 參考檔案
 

@@ -1,0 +1,45 @@
+{
+  "date": "2026-03-31",
+  "scannedRepos": [
+    "Kumazan/trip-bangkok",
+    "Kumazan/ai-articles",
+    "Kumazan/pokopia-zh",
+    "Kumazan/polymarket-strategies"
+  ],
+  "skippedRepos": [],
+  "issuesScanned": 2,
+  "openIssuesFound": [
+    {
+      "repo": "Kumazan/trip-bangkok",
+      "number": 13,
+      "title": "[Audit][Security] 封堵 comments API 的「author=小蝦」可偽造漏洞",
+      "labels": ["audit", "security", "backend", "priority:high"],
+      "note": "Large - 需要 auth 重構，已建 issue"
+    },
+    {
+      "repo": "Kumazan/trip-bangkok",
+      "number": 18,
+      "title": "[Audit][Testing] 建立自動化測試與 CI Gate，覆蓋關鍵路徑",
+      "labels": ["audit", "dx", "testing", "priority:high"],
+      "note": "Large - CI 重構，需規劃"
+    },
+    {
+      "repo": "Kumazan/pokopia-zh",
+      "issues": [7, 9, 16, 17],
+      "note": "Content issues - 需要 domain knowledge，適合手動處理"
+    }
+  ],
+  "directCommits": 1,
+  "openedPRs": [],
+  "createdIssues": [],
+  "testFailures": [],
+  "notes": [
+    "trip-bangkok: npm audit fix 修補 5 個中等 CVE（esbuild 0.24→0.27.4, vitest 2.1→4.1.2），test+build 通過，已 push",
+    "trip-bangkok: duplicate verifyIdentity() 函數存在於 feature-requests.js 和 feature-request-comments.js，邏輯相同但各自 export，不影響 runtime，列入監控",
+    "trip-bangkok: Issue #13 (Security) 和 #18 (Testing) 均為 Large，等人類處理",
+    "ai-articles: 無 package.json，純靜態 Jekyll 站，npm audit 不適用",
+    "pokopia-zh: 無 package.json，純靜態站，AI 內容更新 issues (#7,9,16,17) 需 domain knowledge",
+    "polymarket-strategies: 無 package.json，純靜態站",
+    "stale branches: 已 fetch --prune，remote 殘留 branches 已自動清理"
+  ]
+}

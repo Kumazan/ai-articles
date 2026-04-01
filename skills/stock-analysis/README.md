@@ -1,11 +1,20 @@
-# 📈 Stock Analysis v6.1
+# 📈 Stock Analysis v6.2
 
 > AI-powered stock & crypto analysis with portfolio management, watchlists, dividend analysis, and **viral trend detection**.
 
 [![ClawHub Downloads](https://img.shields.io/badge/ClawHub-1500%2B%20downloads-blue)](https://clawhub.ai)
 [![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-green)](https://openclaw.ai)
 
-## What's New in v6.1
+## What's New in v6.2
+
+- 🔮 **Rumor Scanner** — Early signals before mainstream news
+  - M&A rumors and takeover bids
+  - Insider buying/selling activity
+  - Analyst upgrades/downgrades
+  - Twitter/X "hearing that...", "sources say..." detection
+- 🎯 **Impact Scoring** — Rumors ranked by potential market impact
+
+## What's in v6.1
 
 - 🔥 **Hot Scanner** — Find viral stocks & crypto across multiple sources
 - 🐦 **Twitter/X Integration** — Social sentiment via bird CLI
@@ -192,6 +201,8 @@ Set up a daily cron job for morning reports:
 |------|----------|
 | Portfolios | `~/.clawdbot/skills/stock-analysis/portfolios.json` |
 | Watchlist | `~/.clawdbot/skills/stock-analysis/watchlist.json` |
+
+> **Note:** The actual storage path may vary by environment (e.g., `~/.openclaw/...` instead of `~/.clawdbot/...`). Check your OpenClaw configuration for the exact location.
 
 ## Testing
 
