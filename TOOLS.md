@@ -43,6 +43,17 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - **cc oet** = Claude Code (opus + extended thinking)
 - **cc** = Claude Code
 
+### Obsidian 筆記寫作規則
+
+- **跨筆記一定要加 `[[wikilink]]`**：提到其他筆記、skill、專案時，用 `[[路徑/筆記名]]` 而非純文字
+- 反例：寫「參考 OpenClaw/技能」→ 應改成 `[[OpenClaw/技能]]`
+
+### Edit Tool Gotchas
+
+- **`edits[]` 陣列模式 + 中文 = 失敗**：當 `edits[]` 的 `oldText` 含中文字，JSON 序列化可能轉成 Unicode escape（`\u5f88\u591a...`），導致 match 失敗，工具回傳誤導性錯誤 "Missing required parameters: oldText alias"。
+  - **解法**：含中文的多段修改改用 `Write` 直接覆寫整個檔案，或拆成多次單獨 `Edit`（single-replacement 模式，不用 `edits[]`）。
+  (Set 2026-03-31)
+
 ### Cron Job Gotchas
 
 - **Isolated session 無 message tool**：Cron job 預設跑在 isolated session，該 session **沒有 message tool**。任何在 payload 裡叫代理人用 message tool 發 Discord/Telegram 的指令都會靜默失敗。
@@ -54,6 +65,13 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - 指令 silent fail 根本原因：`commands.useAccessGroups` 預設 `true`，guild 若沒設 `users` allowlist → 所有人都是 unauthorized sender，`/` 指令被靜默忽略
 - 修法：在 `guilds.<guildId>.users` 加入 Discord user ID（Kuma: `"662155611232010251"`）
 - `autoThreadName: "generated"`（v2026.3.24 新功能）：auto thread 改用 LLM 異步 rename，產生更精簡的標題（預設是取訊息第一行）
+- **Discord exec approval DM button UI（v2026.3.31 新功能）**：
+  - 需要 `channels.discord.execApprovals: { enabled: true, approvers: ["<discord-user-id>"] }` 才會發 DM 按鈕
+  - `autoAllowSkills: true` 讓 skill CLI 自動白名單，不需要一筆筆加
+  - `ask: "on-miss"` 只在指令不在白名單時才問
+  - `openclaw browser *` pattern 涵蓋所有 browser 子指令（start/navigate/evaluate 都包）
+  - shell chain（`&&` 串聯）會對每個指令分別觸發審批，要分開跑
+  - 審批 DM 預設只發 Telegram，Discord 需要加 `approvers` 才會收到
 
 ### ChatGPT Deep Research 擷取
 

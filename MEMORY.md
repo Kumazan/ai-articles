@@ -30,11 +30,14 @@
 - Prefers sharing the trip site via the custom domain: https://trip.kumax.dev/bangkok/ (Set 2026-02-10)
 
 - 人物關係備註：小郭（Guo）是 Kuma 的男朋友（男），提及時勿使用女性代稱。 (Set 2026-03-02)
+- Discord 頻道模型分配偏好（Set 2026-03-31）：Default model 改為 `minimax-plus`（MiniMax-M2.7-High-Speed）。`#一般`、`#notifications`、`#2026日本慶生之旅`、`#深度研究` 走 MiniMax；`#stock-台股`、`#pr-autopilot`、`#ai文章摘要`、`#pokopia`、`#fix-something` 走 Sonnet。只有複雜 PR review、架構設計、核心 debug、多檔案重構等高價值／高風險任務才升到 `opus` + thinking max。
+- 開發流程偏好（Set 2026-03-31）：非輕度開發一律走 `cc + oec + remote control`；只有小修、小改、單檔低風險調整可直接在主線處理。
 - Uber Eats 優惠碼回報偏好（Set 2026-03-02）：每月 1 號主動搜尋一次「非新用戶、非青少年」可用碼；回覆格式固定為【`優惠code`】 - 優惠內容。
 - Google Workspace CLI 偏好（Set 2026-03-09）：改用 `gws` 作為 Google Workspace 主力工具；`gog` 已卸載，不再依賴。
 - OpenClaw 遠端 Gateway 固定做法（Set 2026-03-09）：Mac mini 走 Tailscale Serve + `gateway.trustedProxies: ["127.0.0.1", "::1"]` + device pairing；常駐背景服務用 `openclaw gateway install/start`（LaunchAgent）。新裝置若看到 `pairing required`，在 Mac 上跑 `openclaw devices list` → `openclaw devices approve <requestId>`。
 - OpenClaw 更新方式（Set 2026-03-28）：**永遠用 `npm update -g openclaw`**，不要用 `openclaw update`（會在重啟後掉連線、拿不到結果、讓人很煩）。更新後用 `openclaw --version` 確認版本。
 - OpenClaw / AI agent 情報偏好（Set 2026-03-10）：Kuma 偏好「實用技巧／實戰流程／踩坑修法」類型的整理，價值高於單純新功能列表；訂閱模式為「每日更新，但只有有料才推」+「每週整理」。
+- ai-articles Discord 通知偏好（Set 2026-03-31）：**六個 AI 文章翻譯 cron 全部必須完全對齊此格式。** 主文標題固定用 `📰 **{文章標題}**`，禁止寫「AI 文章翻譯：」。主文摘要用精煉條列點，結尾固定 `🔗 {GitHub Pages 連結}` + `📎 原文：{原文連結}`。若附 Kuma 視角，必須在 thread 中以**第二則獨立訊息**發送，且不要寫「🧠 Kuma 個人視角」標題，直接進入四個主題：值得一讀的亮點／批判性分析／跟你的現況／可以做的事。整體仍遵循 `kuma-perspective` skill 的分析結構，不要退化成短評。之後若有新增同類 cron，也必須沿用同一格式。
 - STARLUX 哩程兌換速記 → 已歸檔至 Obsidian `Projects/STARLUX 哩程兌換.md`
 
 ## Infrastructure
@@ -89,7 +92,8 @@ Source: user message 2026-02-09.
 
 ## Tools & Techniques
 - qmd Obsidian 整合（2026-03-29）：`obsidian` collection 已加入 qmd，31 個筆記 + 1150 chunks 向量嵌入。用 `qmd query` 做語義搜尋（跨語言）。bundled obsidian skill 已 disable，改用官方 obsidian-cli（需 app 在跑）。learn skill 已加 `qmd update` 步驟。
-
+- HackMD API 發長篇 Markdown（2026-03-31）：不要用 shell `jq --arg` 直接包多行內容，容易因控制字元/換行造成 JSON parse error。穩定做法是把內容先寫檔，再用 Python `json.dumps`（或等價 JSON serializer）送 API。
+- **Exec Approvals（v2026.3.31，2026-04-01 設定）**：`autoAllowSkills: true` 在 `exec-approvals.json` 的 `defaults`；Discord exec approval DM 按鈕需要 `channels.discord.execApprovals.approvers: ["662155611232010251"]` 否則按鈕不會出現；qmd 路徑在 `~/.bun/bin/`，allowlist pattern 用絕對路徑 `/Users/kumax/.bun/bin/qmd` 而非 `qmd *`（pattern glob matching 有爭議）。
 
 - claude.ai 用量監控：用 `openclaw browser navigate` + `openclaw browser evaluate` 打 `/api/organizations/.../subscription_details`，比直接 CDP 簡單，且 Cloudflare cookie 正確。(2026-03-14)
 - OpenClaw gateway 維護：升級後若 embed token 異常，用 `openclaw gateway install --force` + bootstrap 修復。目前版本 2026.3.8，pid 80538。(2026-03-19)
