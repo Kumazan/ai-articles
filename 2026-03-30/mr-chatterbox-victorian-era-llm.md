@@ -39,7 +39,7 @@ Mr. Chatterbox 的訓練語料共 28,035 本書，過濾後約 29.3 億輸入 to
 
 ## 用 LLM 指令碼在本地執行
 
-Simon 決定用自己写的 [LLM](https://llm.datasette.io/) 框架在本地執行這個模型。
+Simon 決定用自己寫的 [LLM](https://llm.datasette.io/) 框架在本地執行這個模型。
 
 整個過程大部分由 Claude Code 完成——[這是 transcript](https://gisthost.github.io/?7d0f00e152dd80d617b5e501e4ff025b/index.html)。
 

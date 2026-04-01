@@ -1,10 +1,15 @@
 ---
 title: "OpenAI 完成史上最大規模融資：1220 億美元、估值 8520 億，IPO 前的最後衝刺"
 date: 2026-04-01
+author: 綜合報導（CNBC、TechCrunch）
+layout: post
+permalink: /2026-04-01/openai-122b-funding-round.html
 description: "OpenAI 正式宣布完成 1220 億美元的融資，估值衝上 8520 億美元，並透露其每月營收已達 20 億美元。這筆資金將用於晶片、資料中心與 Coding Agent 研發，標誌著 OpenAI 邁向 IPO 與超大應用（Superapp）轉型的關鍵時刻。"
 ---
 
-# OpenAI 完成史上最大規模融資：1220 億美元、估值 8520 億，IPO 前的最後衝刺
+<div class="hero-badge">AI News · 2026-04-01</div>
+
+**原文連結：** 綜合報導
 
 ## 摘要
 
