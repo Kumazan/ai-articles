@@ -9,8 +9,6 @@ permalink: /2026-04-01/claude-dispatch-power-of-interfaces.html
 
 <div class="hero-badge">AI News · 2026-04-01</div>
 
-# Claude Dispatch 與介面的力量：AI 的瓶頸從來不是模型
-
 **原文連結：** [Claude Dispatch and the Power of Interfaces](https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of)
 
 ## 摘要
