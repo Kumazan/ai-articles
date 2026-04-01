@@ -130,3 +130,21 @@ Source: user message 2026-02-09.
 - **評論**：抓3-5則，翻譯+一句話摘要；挑選原則：評分分散、有具體細節、有參考價值
 - **流程**：tabelog_search → detail → reviews(3-5則) → 翻譯 → 回覆 → Kuma說「存」才寫入 Obsidian
 - **Tabelog skill**：`skills/tabelog/SKILL.md`，restaurant-notes skill：`skills/restaurant-notes/SKILL.md`
+
+
+## Discord Topic 格式（2026-04-02）
+
+Kuma 提供標準格式，頻道頂端顯示：
+
+```
+📓 Projects/2026 日本慶生之旅/
+
+目錄：住宿資料/攻略/每日行程/想去的餐廳/機票資訊
+
+行程：6/19 新宿→6/24 河口湖→6/25 新宿→6/28 池袋→6/29 回程
+
+常用技能: hotel-price, weather, tabelog, goplaces, restaurant-notes
+```
+
+- Topic 可用 API PATCH 更新（channel ID: 1487494659012825142）
+- Token 從 `~/.openclaw/openclaw.json` 的 `channels.discord.token` 取得
