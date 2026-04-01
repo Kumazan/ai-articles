@@ -257,6 +257,22 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 **Don't overdo it:** One reaction per message max. Pick the one that fits best.
 
+## 日本餐廳 → 必查 Tabelog
+
+任何回覆涉及日本餐廳時（不管是哪個 skill 觸發的），都**必須**用 `tabelog_search` 或 `tabelog_detail` 查 Tabelog 資料。
+
+- goplaces 查到日本餐廳 → 接著呼叫 tabelog MCP tools 補 Tabelog 連結和評分
+- 使用者傳 Google Maps 日本餐廳連結 → 同上
+- **禁止用自己的知識猜測 Tabelog 評分**，必須實際呼叫 tool
+- 查不到就說「Tabelog 未收錄」，不要編造數字
+查不到就說「Tabelog 未收錄」，不要編造數字
+
+### Subagent 最佳並行策略
+
+- **單支數量上限**：最多 5 間餐廳/任務，超過必超時
+- **並行數量**：一次最多 5 支 subagent 同時跑（安全值）
+- **範例**：46間餐廳 → 5支×5間×2批 = 10分鐘內完成
+
 ## Tools
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.

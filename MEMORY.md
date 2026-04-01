@@ -113,3 +113,20 @@ Source: user message 2026-02-09.
 
 ## Archived Index
 - 2026-02-23 清理歸檔（Projects / Model Config / Bangkok Travel）：`memory/archive/longterm-archive-2026-02-23.md`
+
+## Obsidian 餐廳筆記標準格式（2026-04-02）
+
+- **Skill**：`restaurant-notes`（description 含關鍵字：「存」「寫入」「加到筆記」「想去的餐廳」）
+- **觸發**：Kuma 說「存」等關鍵字才寫入；平常只回覆不主動寫
+- **範本**：`Projects/2026 日本慶生之旅/想去的餐廳/📋 餐廳筆記範本.md`
+- **每次建立前必讀範本**：obsidian vault="Kuma" read path="Projects/...📋 餐廳筆記範本"
+- **格式**：title 無 emoji；H1 可有 emoji；---後直接接 H1 無空行；評分寫連結同行括號；刪「特色」區塊融合進「餐廳介紹」
+- **餐廳介紹**：150-250 字，結合定位/風格/評論亮點
+- **評論**：3-5則，翻譯成繁體中文（30-50字），評分分散（★4.5+ 和 3.5-4.0 都有）
+
+## Tabelog Workflow（2026-04-02）
+
+- **subagent 最佳**：5支×5間，超過必超時；避免15間塞1支
+- **評論**：抓3-5則，翻譯+一句話摘要；挑選原則：評分分散、有具體細節、有參考價值
+- **流程**：tabelog_search → detail → reviews(3-5則) → 翻譯 → 回覆 → Kuma說「存」才寫入 Obsidian
+- **Tabelog skill**：`skills/tabelog/SKILL.md`，restaurant-notes skill：`skills/restaurant-notes/SKILL.md`
