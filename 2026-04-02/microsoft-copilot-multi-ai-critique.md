@@ -53,7 +53,7 @@ permalink: /2026-04-02/microsoft-copilot-multi-ai-critique.html
 
 ## 延伸評論：多模型協作的時代已經到來
 
-從批判到共治：AI 生態的結構性轉變
+### 從批判到共治：AI 生態的結構性轉變
 
 微軟這次發表的「Critique」與「Council」機制，不只是功能上的創新，更揭示了 AI 應用架構的根本性轉向——從「單一超強模型」走向「多元協作網路」。
 
