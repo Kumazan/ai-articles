@@ -6,6 +6,8 @@
 
 ### 2026-04-02
 
+#### ・ [Runway 砸 1000 萬美元投資 AI 新創，想把影片模型變成整個生態系](./2026-04-02/runway-launches-10m-fund-builders-program-early-stage-ai-startups.html)
+
 #### ・ [Mistral Voxtral TTS：把語音做成 AI 的完整輸出層](./2026-04-02/mistral-voxtral-tts-voice-stack.html)
 
 #### ・ [8.1 萬人想要的 AI，是讓生活變好](./2026-04-02/anthropic-81000-people-want-from-ai.html)
