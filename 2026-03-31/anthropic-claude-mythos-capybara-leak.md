@@ -5,9 +5,12 @@ date: 2026-03-31
 author: The Decoder
 layout: post
 permalink: /2026-03-31/anthropic-claude-mythos-capybara-leak.html
+image: /ai-articles/2026-03-31/og-anthropic-claude-mythos-capybara-leak.png
 ---
 
 <div class="hero-badge">獨家新聞 · 2026-03-27</div>
+
+![](/ai-articles/2026-03-31/og-anthropic-claude-mythos-capybara-leak.png)
 
 **原文連結：** [https://the-decoder.com/anthropic-leak-reveals-new-model-claude-mythos-with-dramatically-higher-scores-on-tests-than-any-previous-model/](https://the-decoder.com/anthropic-leak-reveals-new-model-claude-mythos-with-dramatically-higher-scores-on-tests-than-any-previous-model/)
 
