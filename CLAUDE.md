@@ -68,6 +68,11 @@ permalink: /2026-03-29/slug.html
 - **body 不可設 `overflow-y: scroll`** — iOS Safari 會把 body 當 scroll container，失去原生捲動。水平裁切用 `overflow-x: clip`（不建立 scroll container）
 - **`touch-action: manipulation` 必須套在 `html`** — 全域消除 double-tap-to-zoom 延遲
 
+## Jekyll / GitHub Pages Gotchas
+
+- **HTML block breaks Kramdown parsing**: 在 Markdown 裡用 `<div>` 包住 markdown 語法會導致 Kramdown 無法正確解析（link 變成純文字、`<p>` description 消失）。把 markdown heading（`###`）保持為 standalone markdown，不包在任何 HTML wrapper 裡。Wrapper div 只包 pure HTML 元素（如 `<h4 data-*>`）。
+- **Liquid empty-string comparison**: `assign x = ""` + `x != ""` 在某些 Liquid 版本不靠譜。改用 `assign x = nil` + `x == nil` / `x != nil`。
+
 ## Git
 
 - `gh pr create` 必須加 `--reviewer @copilot`
