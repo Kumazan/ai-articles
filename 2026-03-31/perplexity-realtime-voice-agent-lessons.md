@@ -1,6 +1,6 @@
 ---
 title: "Perplexity 把語音代理做到每月數百萬次會話後，學到的 4 個硬道理"
-description: "OpenAI 開發者部落格分享 Perplexity Computer / Comet 用 Realtime API 做語音代理的實戰經驗：context 切塊、音訊標準化、髒環境 VAD，以及工具輸出必須保持 in-distribution。"
+description: "Perplexity 分享語音代理實戰：context 分塊增量、音訊標準化、VAD 抗噪音、工具輸出保持 in-distribution。"
 date: 2026-03-31
 author: OpenAI Developers / Perplexity
 layout: post
@@ -8,7 +8,7 @@ permalink: /2026-03-31/perplexity-realtime-voice-agent-lessons.html
 image: /ai-articles/2026-03-31/og-perplexity-realtime-voice-agent-lessons.png
 ---
 
-<div class="hero-badge">Voice Agents · 2026-03-31</div>
+<div class="hero-badge">AI News · 2026-03-31</div>
 
 ![](/ai-articles/2026-03-31/og-perplexity-realtime-voice-agent-lessons.png)
 
