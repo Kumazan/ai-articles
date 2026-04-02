@@ -8,7 +8,10 @@
 
 #### ・ [PrismML Bonsai：史上第一個商業可用的 1-bit LLM，8B 模型只需 1.15GB](./2026-04-03/prismml-bonsai-1bit-llm-edge-ai.html)
 
-### 2026-04-02
+### 2026-04-03
+#### ・ [PrismML 推出 Bonsai 8B：史上首個商業可用 1-bit LLM，8B 模型僅需 1.15GB 記憶體](./2026-04-03/prismml-bonsai-1bit-llm-edge-ai.md)
+
+## 2026-04-02
 
 #### ・ [Runway 砸 1000 萬美元投資 AI 新創，想把影片模型變成整個生態系](./2026-04-02/runway-launches-10m-fund-builders-program-early-stage-ai-startups.html)
 
