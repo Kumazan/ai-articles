@@ -6,6 +6,8 @@
 
 ### 2026-04-02
 
+#### ・ [Mistral Voxtral TTS：把語音做成 AI 的完整輸出層](./2026-04-02/mistral-voxtral-tts-voice-stack.html)
+
 #### ・ [8.1 萬人想要的 AI，是讓生活變好](./2026-04-02/anthropic-81000-people-want-from-ai.html)
 
 #### ・ [2026 年 4 月 AI 模型版圖：所有重大發布、洩漏與未來走向](./2026-04-02/ai-models-april-2026.html)
