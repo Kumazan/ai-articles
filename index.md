@@ -6,6 +6,8 @@
 
 ### 2026-04-02
 
+#### ・ [2026 年 4 月 AI 模型版圖：所有重大發布、洩漏與未來走向](./2026-04-02/ai-models-april-2026.html)
+
 #### ・ [101 億週下載的代價：Axios npm 供應鏈攻擊完整解析](./2026-04-02/axios-npm-supply-chain-attack-2026.html)
 
 #### ・ [2026 年 Claude Code 原始碼大外洩：意外、失控、還是 AI 史上最成功的公關操作？](./2026-04-02/claude-code-source-leak-2026.html)
