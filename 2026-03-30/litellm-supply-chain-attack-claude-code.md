@@ -5,9 +5,12 @@ date: 2026-03-30
 author: Callum McMahon / FutureSearch
 layout: post
 permalink: /2026-03-30/litellm-supply-chain-attack-claude-code.html
+image: /ai-articles/2026-03-30/og-litellm-supply-chain-attack-claude-code.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>
+
+![](/ai-articles/2026-03-30/og-litellm-supply-chain-attack-claude-code.png)
 
 **原文連結：** [My minute-by-minute response to the LiteLLM malware attack](https://futuresearch.ai/blog/litellm-attack-transcript/)
 
