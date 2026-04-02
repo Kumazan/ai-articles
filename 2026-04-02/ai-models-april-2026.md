@@ -1,6 +1,7 @@
 ---
 title: "2026 年 4 月 AI 模型版圖：所有重大發布、洩漏與未來走向"
 date: 2026-04-02
+author: "RenovateQR Editorial Team"
 description: "2026 年 4 月 AI 模型競爭史上最激烈，Claude Mythos 洩漏、GPT-5.4/GPT-5.5、Gemini 3.1 Pro、Grok 4.20 多代理架構、Llama 4 開源崛起，一文掌握全局。
 ---
 
