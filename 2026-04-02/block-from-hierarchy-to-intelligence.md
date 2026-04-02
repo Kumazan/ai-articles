@@ -4,6 +4,7 @@ title: "從層級到智能：AI 將取代中層管理，Block 正在重寫企業
 date: 2026-04-02
 author: Jack Dorsey & Roelof Botha (Sequoia Capital)
 permalink: /2026-04-02/block-from-hierarchy-to-intelligence.html
+image: /2026-04-02/og-block-from-hierarchy-to-intelligence.png
 description: Jack Dorsey 與 Sequoia Capital 的 Roelof Botha 聯名發文，主張 AI 已能取代企業階層的核心功能——資訊路由。Block 裁員 4000 人後，提出以「公司世界模型」與「客戶世界模型」取代中層管理，重新定義未來組織設計。
 ---
 
