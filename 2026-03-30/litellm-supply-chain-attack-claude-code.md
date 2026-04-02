@@ -1,6 +1,6 @@
 ---
 title: "分分秒秒：我用 Claude Code 即時破解 LiteLLM PyPI 供應鏈攻擊"
-description: "2026年3月24日，一個凍結的筆電揭開了一場 PyPI 供應鏈攻擊——LiteLLM 1.82.8 被植入憑證竊取惡意程式，影響近 47,000 次下載。本文是作者與 Claude Code 的即時對話實錄，記錄從懷疑到確認到公開揭露的完整過程。"
+description: "LiteLLM 1.82.8 被植入惡意程式，46 分鐘近 47,000 次下載。作者與 Claude Code 即時對話實錄，記錄從發現到公開揭露的過程。"
 date: 2026-03-30
 author: Callum McMahon / FutureSearch
 layout: post
