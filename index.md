@@ -8,7 +8,9 @@ title: AI News & Articles
 
 ## 文章列表
 
-{% assign articles = site.pages | where_exp: "item", "item.layout == 'post' or item.layout == 'raw'" | sort: "date" | reverse %}
+{% assign post_articles = site.pages | where: "layout", "post" %}
+{% assign raw_articles = site.pages | where: "layout", "raw" %}
+{% assign articles = post_articles | concat: raw_articles | sort: "date" | reverse %}
 {% assign prev_date = "" %}
 {% for article in articles %}
 {% assign cur_date = article.date | date: "%Y-%m-%d" %}
