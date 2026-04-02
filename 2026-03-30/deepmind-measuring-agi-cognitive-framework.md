@@ -24,9 +24,9 @@ image: /ai-articles/2026-03-30/og-deepmind-measuring-agi-cognitive-framework.png
 
 <div class="sep">· · ·</div>
 
-## 我們距離 AGI 還有多遠？現在有了更精確的量尺
+## 距離 AGI 還有多遠？現在有了更精確的量尺
 
-人工通用智慧（AGI）有潛力加速科學發現，幫助人類解決最棘手的問題。但我們究竟離這個里程碑有多近？目前缺乏系統性的實證工具來回答這個問題。
+人工通用智慧（AGI）有潛力加速科學發現，幫助人類解決最棘手的問題。但究竟離這個里程碑有多近？目前缺乏系統性的實證工具來回答這個問題。
 
 為此，Google DeepMind 在 2026 年 3 月發布了一篇新論文：**《Measuring Progress Toward AGI: A Cognitive Taxonomy》**，以認知科學為基礎，建立了一套評估 AI 系統通用智慧能力的科學框架。
 
