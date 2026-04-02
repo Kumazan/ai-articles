@@ -93,5 +93,8 @@ title: AI News & Articles
     input.focus();
     filter();
   });
+
+  // Initialize on page load
+  filter();
 })();
 </script>
