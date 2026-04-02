@@ -5,9 +5,12 @@ author: Google DeepMind
 description: "Google DeepMind 以認知科學為基礎建立 AGI 評估框架，識別 10 項核心能力，並與 Kaggle 合辦 20 萬美元黑客松。"
 layout: post
 permalink: /2026-03-30/deepmind-measuring-agi-cognitive-framework.html
+image: /2026-03-30/og-deepmind-measuring-agi-cognitive-framework.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>
+
+![](/2026-03-30/og-deepmind-measuring-agi-cognitive-framework.png)
 
 **原文連結：** [Measuring progress toward AGI: A cognitive framework](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/)
 
