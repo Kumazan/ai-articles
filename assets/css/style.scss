@@ -179,6 +179,17 @@ hr {
 ul { padding-left: 1.2rem; }
 li { margin-bottom: 0.4rem; }
 
+/* Article description on index page */
+.article-desc {
+  font-family: var(--sans) !important;
+  font-size: 0.85rem !important;
+  color: var(--muted) !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  margin-top: 0.1rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
 /* Subtle section separation */
 .main-content {
   padding-top: 1rem;
