@@ -5,10 +5,12 @@ layout: post
 permalink: /2026-04-02/runway-launches-10m-fund-builders-program-early-stage-ai-startups.html
 author: "RenovateQR Editorial Team"
 description: "Runway 推出 1000 萬美元基金與 Builders 計畫，押注影片智慧、世界模型與下一代 AI 應用。"
-image: /2026-04-02/og-runway-fund-builders-program.jpg
+image: /ai-articles/2026-04-02/og-runway-launches-10m-fund-builders-program-early-stage-ai-startups.png
 ---
 
 <div class="hero-badge">翻譯轉載</div>
+
+![](/ai-articles/2026-04-02/og-runway-launches-10m-fund-builders-program-early-stage-ai-startups.png)
 
 **原文連結：** [Exclusive: Runway launches $10M fund, Builders program to support early-stage AI startups](https://techcrunch.com/2026/03/31/exclusive-runway-launches-10m-fund-builders-program-to-support-early-stage-ai-startups/)
 
