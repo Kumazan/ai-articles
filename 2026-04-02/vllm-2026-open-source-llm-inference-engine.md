@@ -1,8 +1,8 @@
 ---
 title: "vLLM 2026：成為生產級 AI 推理引擎支柱的開源歷程"
-description: "vLLM 推理引擎從 UC Berkeley 研究專案發展成开源部署標準，74.9K GitHub stars，24 倍吞吐量領先 HuggingFace，Model Runner V2 帶來 56% 吞吐量提升。"
+description: "vLLM 從 UC Berkeley 研究專案發展成开源部署標準，74.9K stars，24 倍吞吐量領先 HuggingFace，MRV2 帶來 56% 吞吐量提升。"
 date: 2026-04-02
-author: Programming Helper
+author: Sarah Chen
 layout: post
 image: /2026-04-02/og-vllm-2026-open-source-llm-inference-engine.png
 permalink: /2026-04-02/vllm-2026-open-source-llm-inference-engine.html
@@ -10,7 +10,6 @@ permalink: /2026-04-02/vllm-2026-open-source-llm-inference-engine.html
 
 <div class="hero-badge">Programming Helper · 2026-04-02</div>
 
-![]()
 **原文連結：** [vLLM 2026: The Open Source LLM Inference Engine Powering Production AI at Scale](https://www.programming-helper.com/tech/vllm-2026-open-source-llm-inference-engine)
 
 ## 摘要
