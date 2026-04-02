@@ -12,7 +12,8 @@
       "Bash(for*)",
       "Bash(cd\nFix:\n\n-\n-\n-\n-\n\nCo-Authored-By:\nEOF\n\\)\"*)",
       "Bash(sed*)",
-      "Bash(cd\nFix:\n\nCo-Authored-By:\nEOF\n\\)\"*)"
+      "Bash(cd\nFix:\n\nCo-Authored-By:\nEOF\n\\)\"*)",
+      "Bash(echo*)"
     ]
   }
 }
