@@ -28,6 +28,8 @@
 
 #### ・ [從層級到智能：AI 將取代中層管理，Block 正在重寫企業組織 2000 年的運作邏輯](./2026-04-02/block-from-hierarchy-to-intelligence.html)
 
+#### ・ [vLLM 2026：成為生產級 AI 推理引擎支柱的開源歷程](./2026-04-02/vllm-2026-open-source-llm-inference-engine.html)
+
 ### 2026-04-01
 
 #### ・ [OpenAI 完成史上最大規模融資：1220 億美元、估值 8520 億，IPO 前的最後衝刺](./2026-04-01/openai-122b-funding-round.html)
