@@ -5,9 +5,12 @@ author: The Batch / deeplearning.ai
 description: "The Batch 本週重點：Claude Opus 4.6 推理能力躍進、xAI 與 SpaceX 合作、AI 診斷超越醫生、標準化 AI 審計框架。"
 layout: post
 permalink: /2026-02-15/claude-opus-xai-spacex-ai-audits.html
+image: /ai-articles/2026-02-15/og-claude-opus-xai-spacex-ai-audits.png
 ---
 
 <div class="hero-badge">AI News · 2026-02-15</div>
+
+![](/ai-articles/2026-02-15/og-claude-opus-xai-spacex-ai-audits.png)
 
 **原文連結：** [The Batch #340（deeplearning.ai）](https://charonhub.deeplearning.ai/issue-340/)
 
