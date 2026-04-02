@@ -5,6 +5,7 @@ date: 2026-04-02
 author: Prithvi Rajasekaran (Anthropic Labs)
 layout: post
 permalink: /2026-04-02/harness-design-long-running-apps.html
+image: /2026-04-02/og-harness-design.png
 ---
 
 <div class="hero-badge">AI Engineering · 2026-04-02</div>

@@ -44,6 +44,8 @@ permalink: /2026-03-29/slug.html
 ---
 ```
 
+- frontmatter `image` 欄位（`/YYYY-MM-DD/og-{slug}.png`）對應 head-custom.html 的 `page.image`，用於 OG/Twitter card 圖片
+
 文章結構（按順序）：
 1. `<div class="hero-badge">AI News · 2026-03-29</div>`
 2. `**原文連結：** [標題](URL)`
