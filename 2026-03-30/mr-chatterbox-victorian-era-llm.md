@@ -5,12 +5,12 @@ date: 2026-03-30
 author: Simon Willison
 layout: post
 permalink: /2026-03-30/mr-chatterbox-victorian-era-llm.html
-image: /2026-03-30/og-mr-chatterbox-victorian-era-llm.png
+image: /ai-articles/2026-03-30/og-mr-chatterbox-victorian-era-llm.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>
 
-![](/2026-03-30/og-mr-chatterbox-victorian-era-llm.png)
+![](/ai-articles/2026-03-30/og-mr-chatterbox-victorian-era-llm.png)
 
 **原文連結：** [https://simonwillison.net/2026/Mar/30/mr-chatterbox/](https://simonwillison.net/2026/Mar/30/mr-chatterbox/)
 
