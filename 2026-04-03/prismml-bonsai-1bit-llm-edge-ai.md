@@ -4,6 +4,7 @@ description: "Caltech 衍生新創 PrismML 推出 1-bit Bonsai 系列 LLM，旗�
 date: 2026-04-03
 author: PrismML
 layout: post
+image: /2026-04-03/og-prismml-bonsai-1bit-llm-edge-ai.png
 permalink: /2026-04-03/prismml-bonsai-1bit-llm-edge-ai.html
 ---
 
