@@ -5,9 +5,12 @@ author: Molly Cantillon
 description: "用 Claude Code 建立 8 個平行 agent 全面自動化生活，從一夜打造千萬人使用的工具到父母學會命令列的真實故事。"
 layout: post
 permalink: /2026-02-15/personal-panopticon-claude-code.html
+image: /ai-articles/2026-02-15/og-personal-panopticon-claude-code.png
 ---
 
 <div class="hero-badge">AI Essay · 2026-02-15</div>
+
+![](/ai-articles/2026-02-15/og-personal-panopticon-claude-code.png)
 
 **原文連結：** [Molly Cantillon on X](https://x.com/mollycantillon/status/2008918474006122936)
 
