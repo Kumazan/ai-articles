@@ -1,10 +1,15 @@
 ---
 title: "Claude Code 原始碼外洩事件詳解：Anthropic 犯了什麼錯？程式碼裡藏了什麼秘密？"
+description: "Anthropic 近期因 npm 包裝錯誤意外外洩了 Claude Code 的完整 TypeScript 原始碼。這篇文章深入剖析了外洩原因、程式碼中揭露的 KAIROS 與 BUDDY 等未發佈功能，以及此事件對 AI 代理安全治理的深遠影響。"
 date: 2026-04-02
 author: AI Articles Publisher
-description: "Anthropic 近期因 npm 包裝錯誤意外外洩了 Claude Code 的完整 TypeScript 原始碼。這篇文章深入剖析了外洩原因、程式碼中揭露的 KAIROS 與 BUDDY 等未發佈功能，以及此事件對 AI 代理安全治理的深遠影響。"
+layout: post
 permalink: /2026-04-02/claude-code-source-leak-deep-dive.html
 ---
+
+<div class="hero-badge">AI News · 2026-04-02</div>
+
+**原文連結：** [https://dev.to/waxell/anthropic-just-leaked-claude-codes-source-heres-what-that-means-for-every-ai-agent-you-run-f7k](https://dev.to/waxell/anthropic-just-leaked-claude-codes-source-heres-what-that-means-for-every-ai-agent-you-run-f7k)
 
 ## 摘要
 
@@ -16,8 +21,6 @@ permalink: /2026-04-02/claude-code-source-leak-deep-dive.html
 *   **社群瘋傳**：GitHub 上出現多個鏡像倉庫，其中 clean-room 改寫版本「claw-code」在 24 小時內突破 10 萬星。
 
 <div class="sep">· · ·</div>
-
-**原文連結：** [https://dev.to/waxell/anthropic-just-leaked-claude-codes-source-heres-what-that-means-for-every-ai-agent-you-run-f7k](https://dev.to/waxell/anthropic-just-leaked-claude-codes-source-heres-what-that-means-for-every-ai-agent-you-run-f7k)
 
 在 AI 領域，2026 年 3 月底無疑是 Anthropic 的「黑色一週」。繼 3 月 26 日因 CMS 配置錯誤導致未發佈模型 Claude Mythos 的相關文件外洩後，不到五天，Anthropic 再次發生重大失誤：這一次，是他們引以為傲的終端 AI 程式助手 —— **Claude Code** 的原始碼被完整攤在陽光下。
 
