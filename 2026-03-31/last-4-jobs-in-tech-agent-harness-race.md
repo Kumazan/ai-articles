@@ -1,6 +1,6 @@
 ---
 title: "AI 時代科技圈最後 4 種工作？其實更值得看的是 coding agent 基礎設施之戰"
-description: "Latent Space 用一篇 AINews 串起 Claude Code、Hermes、Qwen3.5-Omni 與本地推論的最新動向，真正的主線不是模型分數，而是 agent harness、工作流與部署模式正在重寫開發現場。"
+description: "AI coding agent 最新戰況：harness 競賽、本地推論崛起、模型廠商與工具鏈整合，真正的主線是部署與工作流模式的創新。"
 date: 2026-03-31
 author: Latent Space / AINews
 layout: post
