@@ -1,12 +1,16 @@
 ---
 title: 微軟 Copilot 引入多 AI 協作：GPT 與 Claude 相互驗證，向「合議制」進化
 date: '2026-04-02'
+image: /2026-04-02/microsoft-copilot-multi-ai-critique-og.png
 description: 微軟宣布為 Copilot 加入「Critique」功能，由 GPT 生成回答、Claude 進行驗證，打造多 AI 相互把關的協作架構，並支援並行比較不同模型輸出的「Council」模式。
+author: Plus Web3
+layout: post
+permalink: /2026-04-02/microsoft-copilot-multi-ai-critique.html
 ---
 
-<p>原文連結：<a href="https://plus-web3.com/media/latestnews_1000_8381/" target="_blank">微软、Copilotで複数AI連携を実装　GPTとClaudeが相互検証へ進化（Plus Web3）</a></p>
-
 <div class="hero-badge">📰 AI 文章翻譯</div>
+
+**原文連結：**[微軟、Copilotで複数AI連携を実装　GPTとClaudeが相互検証へ進化（Plus Web3）](https://plus-web3.com/media/latestnews_1000_8381/)
 
 ## 摘要
 
@@ -17,7 +21,7 @@ description: 微軟宣布為 Copilot 加入「Critique」功能，由 GPT 生成
 - 潛在挑戰包括：同質化訓練資料導致模型**相互強化錯誤**的風險，以及多模型帶來的延遲與成本增加
 - 功能以「Frontier」先行用戶計畫逐步推廣，象徵生成 AI 從單體性能競賽進入**協調設計**的新階段
 
----
+<div class="sep">· · ·</div>
 
 完整翻譯
 
@@ -45,9 +49,9 @@ description: 微軟宣布為 Copilot 加入「Critique」功能，由 GPT 生成
 
 可以說，生成 AI 正從單體性能競爭，邁向**協作設計**的新階段。
 
----
+<div class="sep">· · ·</div>
 
-## 延伸評論：多模型協作的时代已经到来
+## 延伸評論：多模型協作的時代已經到來
 
 從批判到共治：AI 生態的結構性轉變
 
