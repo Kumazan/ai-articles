@@ -5,9 +5,12 @@ author: 綜合報導（CNBC、TechCrunch）
 layout: post
 permalink: /2026-04-01/openai-122b-funding-round.html
 description: "OpenAI 正式宣布完成 1220 億美元的融資，估值衝上 8520 億美元，並透露其每月營收已達 20 億美元。這筆資金將用於晶片、資料中心與 Coding Agent 研發，標誌著 OpenAI 邁向 IPO 與超大應用（Superapp）轉型的關鍵時刻。"
+image: /ai-articles/2026-04-01/og-openai-122b-funding-round.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-01</div>
+
+![](/ai-articles/2026-04-01/og-openai-122b-funding-round.png)
 
 **原文連結：** 綜合報導
 
