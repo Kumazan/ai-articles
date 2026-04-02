@@ -5,9 +5,12 @@ date: 2026-03-31
 author: Latent Space / AINews
 layout: post
 permalink: /2026-03-31/last-4-jobs-in-tech-agent-harness-race.html
+image: /ai-articles/2026-03-31/og-last-4-jobs-in-tech-agent-harness-race.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-31</div>
+
+![](/ai-articles/2026-03-31/og-last-4-jobs-in-tech-agent-harness-race.png)
 
 **原文連結：** [https://www.latent.space/p/ainews-the-last-4-jobs-in-tech](https://www.latent.space/p/ainews-the-last-4-jobs-in-tech)
 
