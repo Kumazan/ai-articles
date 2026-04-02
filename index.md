@@ -6,6 +6,8 @@
 
 ### 2026-04-02
 
+#### ・ [101 億週下載的代價：Axios npm 供應鏈攻擊完整解析](./2026-04-02/axios-npm-supply-chain-attack-2026.html)
+
 #### ・ [2026 年 Claude Code 原始碼大外洩：意外、失控、還是 AI 史上最成功的公關操作？](./2026-04-02/claude-code-source-leak-2026.html)
 
 #### ・ [長時間運行應用開發的 Harness 設計](./2026-04-02/harness-design-long-running-apps.html)

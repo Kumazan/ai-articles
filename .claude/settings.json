@@ -4,7 +4,8 @@
       "Bash(gem*)",
       "Bash(mkdir*)",
       "Bash(rm*)",
-      "Bash(qmd*)"
+      "Bash(qmd*)",
+      "Bash(openclaw*)"
     ]
   }
 }
