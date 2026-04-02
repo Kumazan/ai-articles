@@ -6,7 +6,10 @@
       "Bash(rm*)",
       "Bash(qmd*)",
       "Bash(openclaw*)",
-      "Bash(cd*)"
+      "Bash(cd*)",
+      "Bash(gh*)",
+      "Bash(cd\nAdd:\n\n-\n-\n\nCo-Authored-By:\nEOF\n\\)\"*)",
+      "Bash(for*)"
     ]
   }
 }

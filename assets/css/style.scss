@@ -123,16 +123,19 @@ h2 {
 
 h3 {
   font-weight: 700 !important;
-  font-size: 1.2rem !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.6rem !important;
+  font-size: 0.9rem !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.3rem !important;
+  color: var(--muted) !important;
+  font-family: var(--mono) !important;
+  letter-spacing: 0.05em;
 }
 
 h4 {
   font-weight: 700 !important;
-  font-size: 1.05rem !important;
-  margin-top: 1.4rem !important;
-  margin-bottom: 0.5rem !important;
+  font-size: 1rem !important;
+  margin-top: 0.6rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
 p, li {
@@ -184,12 +187,12 @@ li { margin-bottom: 0.4rem; }
 /* Article description on index page */
 .article-desc {
   font-family: var(--sans) !important;
-  font-size: 0.85rem !important;
+  font-size: 0.82rem !important;
   color: var(--muted) !important;
   font-weight: 400 !important;
   line-height: 1.5 !important;
-  margin-top: 0.1rem !important;
-  margin-bottom: 0.6rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.3rem !important;
 }
 
 /* Subtle section separation */
