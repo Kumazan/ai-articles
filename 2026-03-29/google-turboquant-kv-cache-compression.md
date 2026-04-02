@@ -18,7 +18,7 @@ image: /ai-articles/2026-03-29/og-google-turboquant-kv-cache-compression.png
 
 - Google 研究論文 TurboQuant 能將 LLM 的 KV Cache 壓縮 6 倍，且不損失任何精度、不需重新訓練模型。
 - 技術核心：把 KV Cache 的數值從 32 bits 壓縮到最低 3 bits，並在速度和記憶體兩方面同時獲益。
-- 論文去年 4 月即發表於 arXiv，本週 Google Research 部落格重新推廣，即將在 ICLR 2026（4 月）正式登場。
+- 論文於 2025 年 4 月發表於 arXiv，本週 Google Research 部落格重新推廣，即將在 ICLR 2026（4 月）正式登場。
 - Google 尚未開源官方程式碼，但社群開發者已從論文推導出 PyTorch、MLX（Apple Silicon）與 llama.cpp 三個實作版本。
 - 對本地端 AI 愛好者、小型企業和 RAG 搜尋架構來說，這是讓 AI 更輕量、更快速落地的重要里程碑。
 

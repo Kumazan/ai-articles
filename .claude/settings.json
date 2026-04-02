@@ -16,7 +16,8 @@
       "Bash(echo*)",
       "Edit(*)",
       "Bash(for\n\ndone*)",
-      "Bash(git*)"
+      "Bash(git*)",
+      "Bash(for\n\n\ndone*)"
     ]
   }
 }
