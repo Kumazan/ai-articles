@@ -2,10 +2,13 @@
 title: "PrismML 推出 Bonsai 8B：史上首個商業可用 1-bit LLM，8B 模型僅需 1.15GB 記憶體"
 date: 2026-04-03
 author: Jon Markman (Forbes)
+image: /2026-04-03/og-prismml-bonsai-1bit-llm-edge-ai.jpg
 description: "加州理工學院數學家團隊 PrismML 推出 Bonsai 8B 模型，透過極致壓縮將 8.2 億參數模型縮小 14 倍，僅需 1.15GB 記憶體即可在 iPhone 上高速運行。這項突破性進展預示著邊緣 AI 時代的到來，且根據「傑文斯悖論」，模型效率提升將帶動更大規模的算力基礎設施需求。"
 ---
 
 <div class="hero-badge">深度分析</div>
+
+![](/ai-articles/2026-04-03/og-prismml-bonsai-1bit-llm-edge-ai.jpg)
 
 **原文連結：** [PrismML Introduces The First Commercially Viable 1-Bit LLM](https://www.forbes.com/sites/jonmarkman/2026/04/02/prismml-introduces-the-first-commercially-viable-1-bit-llm/)
 

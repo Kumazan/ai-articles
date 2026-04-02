@@ -1,0 +1,454 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - link "Workflow" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]: Workflow
+      - navigation [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Tech" [ref=e11] [cursor=pointer]:
+          - /url: /tech
+    - main [ref=e12]:
+      - article [ref=e13]:
+        - navigation "Breadcrumb" [ref=e14]:
+          - list [ref=e15]:
+            - listitem [ref=e16]:
+              - link "Home" [ref=e17] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e18]: /
+            - listitem [ref=e19]:
+              - link "Tech" [ref=e20] [cursor=pointer]:
+                - /url: /tech
+            - listitem [ref=e21]: /
+            - listitem [ref=e22]: "vLLM 2026: The Open Source LLM Inference Engine Powering Production AI at Scale"
+        - generic [ref=e23]:
+          - generic [ref=e24]: Technology
+          - 'heading "vLLM 2026: The Open Source LLM Inference Engine Powering Production AI at Scale" [level=1] [ref=e25]'
+          - generic [ref=e26]:
+            - img "Sarah Chen" [ref=e28]
+            - generic [ref=e29]:
+              - paragraph [ref=e30]: Sarah Chen
+              - generic [ref=e31]:
+                - time [ref=e32]: April 2, 2026
+                - generic [ref=e33]: •
+                - generic [ref=e34]:
+                  - text: 22 min read
+                  - link "Aprendizaje automático e inteligencia artificial" [ref=e35] [cursor=pointer]:
+                    - img [ref=e37]
+                    - text: Aprendizaje automático e inteligencia artificial
+        - insertion [ref=e40]:
+          - iframe [ref=e42]:
+            - generic [active] [ref=f3e1]:
+              - generic [ref=f3e6]:
+                - generic [ref=f3e7]:
+                  - generic "Google Cloud" [ref=f3e9]:
+                    - link "Vertex AI Gen AI" [ref=f3e10] [cursor=pointer]:
+                      - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CDpd4WaLOafvtDuTf7OsPjMezsQmQjqGRhgGflJS27hWLpdSdhyoQASCqu6SOAWCfgYCAvCKgAaTuja8oyAEBqAMByAPLBKoEmAJP0BIeSJAcBdcO0SzyMLMFmFbZFQpkMWuLygPuS6M9MPV98rM2uPCGDu54UewrGJnPWH3ePXoXMDpek6EOUuMmAC34wPeocBs9SDHthKNfR_jTYnc2iRpxNHXbdTotyVVzyG4cM4bdqX0oAAvNVpCATDfSPay1CoQ0_qFbG7A4JEdiYerZuOFsmBlPkZuYSLSEvtm80hiYS0YjEMJOMMWR2YXX5cEaPS7WUhDyop6dzyMvGM5zPcCstmYokOtKeZ5PADkJM3bmYTFCarCnhKn-oA0PHL1d2vaYTq3T9SIOoMEcwUGEMDCBYW9UJLK1VMPuUF3EGfc2w46MGldFfJDtxZQnyVkqcuNidzXXaXILJ_PNky-0MhaYwATQ7_SKsAWIBYC-4OBPgAep6LIvqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB5oGqAeYxbECqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggvCIBhEAEYnwMyCIqCgICAgIAIOg2AQIDAgICAgKiAAqgDSL39wTpYmN_45dPPkwOaCSNodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vdmVydGV4LWFpL7EJcV8D_PgDXKyACgHICwHgCwGiDAOQAQGqDQJUV8gNAeoNEwi4g_nl08-TAxXkL3sHHYzjLJaIDgmwDoqFpcgY2BMMiBQB0BUBmBYByhYCCgD4FgGAFwGyFwQYAVAGuhcCOAGyGAkSAqddGAEiAQDQGAHoGAHCGQIIAQ&gclid=EAIaIQobChMIu_745dPPkwMV5C97Bx2M4yyWEAEYASAAEgJVU_D_BwE&num=1&cid=CAQS0gEABaugfbkYPx8Ngif2bhYCPY362zmcSTyp5V3DyP0pquyWS4bnv5kPcawrJZwJU168dB3KG00Hy9ttzfcBuXz1mh3WUWsS-9BJZld9An4kU8MiXnd89_apmoq3VT-nbw_lnx88c9tg6YI00Uk6bG5vNERDHnHzdWWt62DV2ghziy7fvxbmb2UBWQIF3LL8iQs4fy4sXPpJi_k4j5pFSwHzfCy-OwoFIjX14fQj_elNNQ6tOlRJFMyhox4r1upHu_y8ZWvEQVU5I799O4HlKxhRHT4YAQ&sig=AOD64_0gomYsgnkM-q08zBqQL9zY4_nVYg&client=ca-pub-8251732556629149&rf=1&nb=0&adurl=https://ad.doubleclick.net/searchads/link/click%3Flid%3D58700008735340343%26ds_a_cid%3D96835737%26ds_a_caid%3D21413325820%26ds_a_agid%3D%26ds_a_fiid%3D%26ds_a_lid%3D%26ds_a_extid%3D%26%26ds_e_adid%3D%26ds_e_matchtype%3D%26ds_e_device%3Dc%26ds_e_network%3Dx%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://cloud.google.com/vertex-ai/%3Futm_source%3Dpmax%26utm_medium%3Ddisplay%26utm_campaign%3DCloud-SS-DR-GCP-1713664-GCP-DR-APAC-TW-en-PMAX-Display-PMAX-Prospecting-Vertex_AI%26utm_content%3Dc--x--9198813-21413325820%26utm_term%3D%26gclsrc%3Daw.ds%26gad_source%3D5%26gad_campaignid%3D21409308416
+                  - generic [ref=f3e11]:
+                    - link "Customize foundation models for real time action with Vertex AI. Discover." [ref=f3e13] [cursor=pointer]:
+                      - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CDpd4WaLOafvtDuTf7OsPjMezsQmQjqGRhgGflJS27hWLpdSdhyoQASCqu6SOAWCfgYCAvCKgAaTuja8oyAEBqAMByAPLBKoEmAJP0BIeSJAcBdcO0SzyMLMFmFbZFQpkMWuLygPuS6M9MPV98rM2uPCGDu54UewrGJnPWH3ePXoXMDpek6EOUuMmAC34wPeocBs9SDHthKNfR_jTYnc2iRpxNHXbdTotyVVzyG4cM4bdqX0oAAvNVpCATDfSPay1CoQ0_qFbG7A4JEdiYerZuOFsmBlPkZuYSLSEvtm80hiYS0YjEMJOMMWR2YXX5cEaPS7WUhDyop6dzyMvGM5zPcCstmYokOtKeZ5PADkJM3bmYTFCarCnhKn-oA0PHL1d2vaYTq3T9SIOoMEcwUGEMDCBYW9UJLK1VMPuUF3EGfc2w46MGldFfJDtxZQnyVkqcuNidzXXaXILJ_PNky-0MhaYwATQ7_SKsAWIBYC-4OBPgAep6LIvqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB5oGqAeYxbECqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggvCIBhEAEYnwMyCIqCgICAgIAIOg2AQIDAgICAgKiAAqgDSL39wTpYmN_45dPPkwOaCSNodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vdmVydGV4LWFpL7EJcV8D_PgDXKyACgHICwHgCwGiDAOQAQGqDQJUV8gNAeoNEwi4g_nl08-TAxXkL3sHHYzjLJaIDgmwDoqFpcgY2BMMiBQB0BUBmBYByhYCCgD4FgGAFwGyFwQYAVAGuhcCOAGyGAkSAqddGAEiAQDQGAHoGAHCGQIIAQ&gclid=EAIaIQobChMIu_745dPPkwMV5C97Bx2M4yyWEAEYASAAEgJVU_D_BwE&num=1&cid=CAQS0gEABaugfbkYPx8Ngif2bhYCPY362zmcSTyp5V3DyP0pquyWS4bnv5kPcawrJZwJU168dB3KG00Hy9ttzfcBuXz1mh3WUWsS-9BJZld9An4kU8MiXnd89_apmoq3VT-nbw_lnx88c9tg6YI00Uk6bG5vNERDHnHzdWWt62DV2ghziy7fvxbmb2UBWQIF3LL8iQs4fy4sXPpJi_k4j5pFSwHzfCy-OwoFIjX14fQj_elNNQ6tOlRJFMyhox4r1upHu_y8ZWvEQVU5I799O4HlKxhRHT4YAQ&sig=AOD64_0gomYsgnkM-q08zBqQL9zY4_nVYg&client=ca-pub-8251732556629149&rf=1&nb=7&adurl=https://ad.doubleclick.net/searchads/link/click%3Flid%3D58700008735340343%26ds_a_cid%3D96835737%26ds_a_caid%3D21413325820%26ds_a_agid%3D%26ds_a_fiid%3D%26ds_a_lid%3D%26ds_a_extid%3D%26%26ds_e_adid%3D%26ds_e_matchtype%3D%26ds_e_device%3Dc%26ds_e_network%3Dx%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://cloud.google.com/vertex-ai/%3Futm_source%3Dpmax%26utm_medium%3Ddisplay%26utm_campaign%3DCloud-SS-DR-GCP-1713664-GCP-DR-APAC-TW-en-PMAX-Display-PMAX-Prospecting-Vertex_AI%26utm_content%3Dc--x--9198813-21413325820%26utm_term%3D%26gclsrc%3Daw.ds%26gad_source%3D5%26gad_campaignid%3D21409308416
+                    - link [ref=f3e14] [cursor=pointer]:
+                      - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CDpd4WaLOafvtDuTf7OsPjMezsQmQjqGRhgGflJS27hWLpdSdhyoQASCqu6SOAWCfgYCAvCKgAaTuja8oyAEBqAMByAPLBKoEmAJP0BIeSJAcBdcO0SzyMLMFmFbZFQpkMWuLygPuS6M9MPV98rM2uPCGDu54UewrGJnPWH3ePXoXMDpek6EOUuMmAC34wPeocBs9SDHthKNfR_jTYnc2iRpxNHXbdTotyVVzyG4cM4bdqX0oAAvNVpCATDfSPay1CoQ0_qFbG7A4JEdiYerZuOFsmBlPkZuYSLSEvtm80hiYS0YjEMJOMMWR2YXX5cEaPS7WUhDyop6dzyMvGM5zPcCstmYokOtKeZ5PADkJM3bmYTFCarCnhKn-oA0PHL1d2vaYTq3T9SIOoMEcwUGEMDCBYW9UJLK1VMPuUF3EGfc2w46MGldFfJDtxZQnyVkqcuNidzXXaXILJ_PNky-0MhaYwATQ7_SKsAWIBYC-4OBPgAep6LIvqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB5oGqAeYxbECqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggvCIBhEAEYnwMyCIqCgICAgIAIOg2AQIDAgICAgKiAAqgDSL39wTpYmN_45dPPkwOaCSNodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vdmVydGV4LWFpL7EJcV8D_PgDXKyACgHICwHgCwGiDAOQAQGqDQJUV8gNAeoNEwi4g_nl08-TAxXkL3sHHYzjLJaIDgmwDoqFpcgY2BMMiBQB0BUBmBYByhYCCgD4FgGAFwGyFwQYAVAGuhcCOAGyGAkSAqddGAEiAQDQGAHoGAHCGQIIAQ&gclid=EAIaIQobChMIu_745dPPkwMV5C97Bx2M4yyWEAEYASAAEgJVU_D_BwE&num=1&cid=CAQS0gEABaugfbkYPx8Ngif2bhYCPY362zmcSTyp5V3DyP0pquyWS4bnv5kPcawrJZwJU168dB3KG00Hy9ttzfcBuXz1mh3WUWsS-9BJZld9An4kU8MiXnd89_apmoq3VT-nbw_lnx88c9tg6YI00Uk6bG5vNERDHnHzdWWt62DV2ghziy7fvxbmb2UBWQIF3LL8iQs4fy4sXPpJi_k4j5pFSwHzfCy-OwoFIjX14fQj_elNNQ6tOlRJFMyhox4r1upHu_y8ZWvEQVU5I799O4HlKxhRHT4YAQ&sig=AOD64_0gomYsgnkM-q08zBqQL9zY4_nVYg&client=ca-pub-8251732556629149&rf=1&nb=8&adurl=https://ad.doubleclick.net/searchads/link/click%3Flid%3D58700008735340343%26ds_a_cid%3D96835737%26ds_a_caid%3D21413325820%26ds_a_agid%3D%26ds_a_fiid%3D%26ds_a_lid%3D%26ds_a_extid%3D%26%26ds_e_adid%3D%26ds_e_matchtype%3D%26ds_e_device%3Dc%26ds_e_network%3Dx%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://cloud.google.com/vertex-ai/%3Futm_source%3Dpmax%26utm_medium%3Ddisplay%26utm_campaign%3DCloud-SS-DR-GCP-1713664-GCP-DR-APAC-TW-en-PMAX-Display-PMAX-Prospecting-Vertex_AI%26utm_content%3Dc--x--9198813-21413325820%26utm_term%3D%26gclsrc%3Daw.ds%26gad_source%3D5%26gad_campaignid%3D21409308416
+                      - img [ref=f3e15]
+                - generic "Google Cloud" [ref=f3e17]:
+                  - link "Google Cloud" [ref=f3e18] [cursor=pointer]:
+                    - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CDpd4WaLOafvtDuTf7OsPjMezsQmQjqGRhgGflJS27hWLpdSdhyoQASCqu6SOAWCfgYCAvCKgAaTuja8oyAEBqAMByAPLBKoEmAJP0BIeSJAcBdcO0SzyMLMFmFbZFQpkMWuLygPuS6M9MPV98rM2uPCGDu54UewrGJnPWH3ePXoXMDpek6EOUuMmAC34wPeocBs9SDHthKNfR_jTYnc2iRpxNHXbdTotyVVzyG4cM4bdqX0oAAvNVpCATDfSPay1CoQ0_qFbG7A4JEdiYerZuOFsmBlPkZuYSLSEvtm80hiYS0YjEMJOMMWR2YXX5cEaPS7WUhDyop6dzyMvGM5zPcCstmYokOtKeZ5PADkJM3bmYTFCarCnhKn-oA0PHL1d2vaYTq3T9SIOoMEcwUGEMDCBYW9UJLK1VMPuUF3EGfc2w46MGldFfJDtxZQnyVkqcuNidzXXaXILJ_PNky-0MhaYwATQ7_SKsAWIBYC-4OBPgAep6LIvqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB5oGqAeYxbECqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggvCIBhEAEYnwMyCIqCgICAgIAIOg2AQIDAgICAgKiAAqgDSL39wTpYmN_45dPPkwOaCSNodHRwczovL2Nsb3VkLmdvb2dsZS5jb20vdmVydGV4LWFpL7EJcV8D_PgDXKyACgHICwHgCwGiDAOQAQGqDQJUV8gNAeoNEwi4g_nl08-TAxXkL3sHHYzjLJaIDgmwDoqFpcgY2BMMiBQB0BUBmBYByhYCCgD4FgGAFwGyFwQYAVAGuhcCOAGyGAkSAqddGAEiAQDQGAHoGAHCGQIIAQ&gclid=EAIaIQobChMIu_745dPPkwMV5C97Bx2M4yyWEAEYASAAEgJVU_D_BwE&num=1&cid=CAQS0gEABaugfbkYPx8Ngif2bhYCPY362zmcSTyp5V3DyP0pquyWS4bnv5kPcawrJZwJU168dB3KG00Hy9ttzfcBuXz1mh3WUWsS-9BJZld9An4kU8MiXnd89_apmoq3VT-nbw_lnx88c9tg6YI00Uk6bG5vNERDHnHzdWWt62DV2ghziy7fvxbmb2UBWQIF3LL8iQs4fy4sXPpJi_k4j5pFSwHzfCy-OwoFIjX14fQj_elNNQ6tOlRJFMyhox4r1upHu_y8ZWvEQVU5I799O4HlKxhRHT4YAQ&sig=AOD64_0gomYsgnkM-q08zBqQL9zY4_nVYg&client=ca-pub-8251732556629149&rf=1&nb=1&adurl=https://ad.doubleclick.net/searchads/link/click%3Flid%3D58700008735340343%26ds_a_cid%3D96835737%26ds_a_caid%3D21413325820%26ds_a_agid%3D%26ds_a_fiid%3D%26ds_a_lid%3D%26ds_a_extid%3D%26%26ds_e_adid%3D%26ds_e_matchtype%3D%26ds_e_device%3Dc%26ds_e_network%3Dx%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://cloud.google.com/vertex-ai/%3Futm_source%3Dpmax%26utm_medium%3Ddisplay%26utm_campaign%3DCloud-SS-DR-GCP-1713664-GCP-DR-APAC-TW-en-PMAX-Display-PMAX-Prospecting-Vertex_AI%26utm_content%3Dc--x--9198813-21413325820%26utm_term%3D%26gclsrc%3Daw.ds%26gad_source%3D5%26gad_campaignid%3D21409308416
+              - img [ref=f3e22] [cursor=pointer]
+              - button [ref=f3e24] [cursor=pointer]:
+                - img [ref=f3e25]
+              - iframe
+        - 'img "vLLM 2026: The Open Source LLM Inference Engine Powering Production AI at Scale" [ref=e44]'
+        - article [ref=e45]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]:
+              - text: vLLM has transformed from a promising research project into the backbone of production LLM serving. According to the
+              - link "vLLM GitHub repository" [ref=e48] [cursor=pointer]:
+                - /url: https://github.com/vllm-project/vllm
+              - text: ", the project has accumulated 74.9K stars and 15.1K forks, making it one of the most popular open source AI infrastructure projects. Originally developed at the"
+              - link "Sky Computing Lab" [ref=e49] [cursor=pointer]:
+                - /url: https://sky.cs.berkeley.edu
+              - text: at UC Berkeley, vLLM has evolved into a community-driven project with contributions from both academia and industry. The project's growth mirrors the explosive demand for production-grade LLM inference, as organizations move from experimentation to operational AI systems that can serve millions of requests at reasonable cost.
+            - insertion [ref=e51]:
+              - iframe [ref=e53]:
+                - iframe [ref=f8e3]:
+                  - generic [ref=f46e2] [cursor=pointer]:
+                    - link [ref=f46e4]:
+                      - /url: https://privacy.as.criteo.com/adchoices?cppv=3&cpp=g4MZ9EWMwS_vYc0E-dDAVX8DxOnjlgkLMebIudJwocHJ21tsQdP7t_cGXBKKYgjCxhVH1n0B1vQAHwSN35oUHGDI1WGj3Kuyh5jjewc9ouHMXZ1-3OaHVgRPFWWeRBWxggM9il4G7OKzpDPvx-81sLWBHX8
+                      - img [ref=f46e5]
+                    - img [ref=f46e7]
+                    - generic [ref=f46e8]:
+                      - link [ref=f46e9]:
+                        - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=yU_lunp7gIHLlaT5s9Psvf1L7UO_Fin8G-T21YLr5pPuVgJLNV_pmMpqEj_JWTQjXlJob2s09DqF4cfTgiBKQGvGBbT7EX37fx9-L64V_3q1xu_DwskF3Okm3OoIMpeDwWbD3a_VxX7G8QxYTtUjrDa-nr96OAAL_rCM-Wl0IPbemoIHIkeK6-EN4XOd6ypQUlAADZXu-caOJaptUZ8k_EYgLPEC8DclO5XsT6ygUxtH54XDfZNnIhQr2R4wuVwCzikkllsM6D_vx5HBAQSl-5OyCc4I3rr7BhaSvakI6gEpYqq8kIc3qla37RA1vvSNujEz9NWZFJEIPsByJxWN0xWvmK2pjA93tq_G53otHOKs-aYE9bba0nAveRtYiHweD6o3XwFnD9HEZC9QhpGG8XDv8rGsHQJ93iAK1jjPWXRFASLM0gJdlVQ2jNfzhaYjcWPoqLnEfDhV5iftlz_N8LXH0RglI6C0vSlaL0ug0UZ2RuEww8hXS3xkNri1_wAInyu2iulRXmvLKACBpwOjJZYWNn-WX4YyJkqUqNxrp-Ey0w6XKnst1o1kixc-K0WZ30v8FjXcDYIAuQmZUFv9EqP6KwrbAymHGIK4h8XL2eVsmB2oHVjAxNwOKLxO_48MnCGDuNXSe82PnBENajBJI4kHbRH7lQUKQF1OMCS4by6QOUp9&maxdest=http%3A%2F%2Fwww.booking.com%2F%3Faid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DOv0EID8rAACIY3mlzG3Hsw
+                      - generic [ref=f46e13]:
+                        - link [ref=f46e14]:
+                          - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=jCQKoHp7gIHLlaT5s9Psvf1L7UO_Fin8G-T21YLr5pPuVgJLNV_pmMpqEj_JWTQjXlJob2s09DqF4cfTgiBKQGvGBbT7EX37fx9-L64V_3q1xu_DwskF3Okm3OoIMpeDwWbD3a_VxX7G8QxYTtUjrDa-nr96OAAL_rCM-Wl0IPbemoIHIkeK6-EN4XOd6ypQUlAADZXu-caOJaptUZ8k_EYgLPEC8DclO5XsT6ygUxtH54XDfZNnIhQr2R4wuVwCzikkllsM6D_vx5HBAQSl-5OyCc4I3rr7BhaSvakI6gEpYqq8kIc3qla37RA1vvSNujEz9NWZFJEIPsByJxWN0xWvmK2pjA93tq_G53otHOKs-aYE9bba0nAveRtYiHweD6o3XwFnD9HEZC9QhpGG8XDv8rGsHQJ93iAK1jjPWXRFASLM0gJdlVQ2jNfzhaYjcWPoqLnEfDhV5iftlz_N8LXH0RglI6C0vSlaL0ug0UZ2RuEww8hXS3xkNri1_wAInyu2iulRXmvLKACBpwOjJZYWNn9EZL24dRk78nFB_2wuMJ00BGl0qINkkZQixbCXilzauQwgGD2H8njm0_VIbC9wQMu_66oNxnP3YnU5R7OcQTsPA9TF36Ll7MdYREGfz4PuiL8rd7Wptj2XD4NGJoRbvQNGrq3XGNjHDXUIgV2QYSTV&maxdest=http%3A%2F%2Fwww.booking.com%2F%3Faid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DfQcm9D8rAAA6BL-1x7kpWg
+                        - generic [ref=f46e24]:
+                          - link "◆ Dormy Inn Ikebukuro - Natural Hot Spring NT$ 6 079 立即預訂" [ref=f46e26]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=geezMXp7gIHLlaT5s9Psvf1L7UO_Fin8G-T21YLr5pPuVgJLNV_pmMpqEj_JWTQjXlJob2s09DqF4cfTgiBKQGvGBbT7EX37fx9-L64V_3q1xu_DwskF3Okm3OoIMpeDwWbD3a_VxX7G8QxYTtUjrDa-nr96OAAL_rCM-Wl0IPbemoIHHTq5DbRsSGI_oIXJafeyx_oT3iqy_sE9BwMPs1R4xX3e0WbjnMiyn2c1jbvIZunIiQZZyNBgEC5qhP4nO4GeY0hH4MGYW71qXFqw2kL7BoCNeOxDSDIitYU2lWtRaY-Kb7kuhMuFpjrZp6Umt5QuYxBsFBkelvtXYT2oKVEXeiVZjeNDtFsCtiT4hOgDMzxciSKc_bstfS_TtksQoZQN31CN-IadZG_nHMPdE4bHh_Fm32EJikXptfYoHazyv2jnwZGit9ypJYQW1U9jVwzAsUKjho0UR19cZNqC6V6p-LYAyOIHbfiPH64vRml86QC4G_OO3DJ5pgh0W22ZZNztd1K3I-q9icGGUWqmZidkYROa4M3mBG9hnE1MiIZFAeXTUVKtKzsakPZ9qHlXBHsQoTsCtGaEzEiUt2Iedy2WNCPg8c6l0xopzWPSMqRavYSElWtddv0xPo-zaU-SC1ybNxA1lCZzKCIg4nBdDqGVRGQkkDzEiKCQD_gtZ8d5JHeiT7Ac76O-fniNdzJriRLqNw&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fdomiinchi-dai.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-6993550%26utm_medium%3Dexchange%26label%3Dhotel-6993550_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DGlPwzj8rAAA0DAQdUVQ0FA
+                            - generic [ref=f46e28]:
+                              - generic [ref=f46e41]: ◆
+                              - generic [ref=f46e45]:
+                                - generic [ref=f46e47]: Dormy Inn Ikebukuro - Natural Hot Spring
+                                - generic [ref=f46e49]: NT$ 6 079
+                                - generic [ref=f46e52]: 立即預訂
+                          - link "◆ 新宿華盛頓酒店 NT$ 8 118 立即預訂" [ref=f46e54]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=W3_gs3p7gIHLlaT5s9Psvf1L7UO_Fin8G-T21YLr5pPuVgJLNV_pmMpqEj_JWTQjXlJob2s09DqF4cfTgiBKQGvGBbT7EX37fx9-L64V_3q1xu_DwskF3Okm3OoIMpeDwWbD3a_VxX7G8QxYTtUjrDa-nr96OAAL_rCM-Wl0IPbemoIHjXusYag1ZMIV9l0avrujZZA9sJcQlpF3w_GxJS7cL5MgcD1JTV-mXRjlx3t5N39O1hAs3T2bPLXizEmOppxdgs1tkxaOlVQsRYi4r3LCp7gBVcbNwjqhY2yVDHftoxnS5KD8mYaQwe94s5YC19tqHIDCtG476Qmsq8hRWbURzOb5blWXMXtERc8UFWOOlMh4V0MiC8IkKjlwBoKS5-h2hphIXS0cgDM8u_tiTLnN1dTMQO1mVXY8ojeaoP_otfJBMrrh6zn9YX8nn9XRYYfQEPINRaAD7zPuKqWEpA0g-jrNemPYroXeTT6a9IfX1b96rmXADK8sQXdqbgBZovoiwshShTpovyUi1_ak-C7uVuZYo7iw9u1tnbkHFkhK5oc_Q44Op9cYEbgOp7UJmmzBLdgPstKAvzEMTK8DuHqfw1LRqcEdKGauopjKpROE7S8KuJK8NYHwIrefP2VL94tYYGzRoibJ5kzz8tRes2Knz3mjBq-g5bAbHSBDqGJkTZPzzIi3CRNZfVNagHoQ-K6KxZl06yeiTNkipSl0XG7crS8&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fshinjuku-washington-hotel.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-238525%26utm_medium%3Dexchange%26label%3Dhotel-238525_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DFOrFEj8rAABn7GHfqYEPVg
+                            - generic [ref=f46e56]:
+                              - generic [ref=f46e69]: ◆
+                              - generic [ref=f46e73]:
+                                - generic [ref=f46e75]: 新宿華盛頓酒店
+                                - generic [ref=f46e77]: NT$ 8 118
+                                - generic [ref=f46e80]: 立即預訂
+                          - link "◆ 東京新宿歌舞伎町柔婕閣酒店 NT$ 9 042 立即預訂" [ref=f46e82]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=r3AkQXp7gIHLlaT5s9Psvf1L7UO_Fin8G-T21YLr5pPuVgJLNV_pmMpqEj_JWTQjXlJob2s09DqF4cfTgiBKQGvGBbT7EX37fx9-L64V_3q1xu_DwskF3Okm3OoIMpeDwWbD3a_VxX7G8QxYTtUjrDa-nr96OAAL_rCM-Wl0IPbemoIHCqnJ98vQsM20BkQSxl89GaxyYI9OTccahLh47diQkHJoJMKJsTT23nOgQf2x6Ntgxe86Y-HRz5-VgJmqPCQ2sZvb5BWlmrOJHLkkKItpL00tw71ptNPTjlVcIyktBpDouu_p_yDyRkOgrKJEhty-JdVCwsaTV1vhcpYZeklJKnh4Vk3oY8mjv3iguEpVa6XI9pPheeU4pKX7s5E5Lh1dcmH2ILPfJZ27usDziKkX5fJAKCj7h_GNOkh3M2DvC5jH0IxaFZR305gYNAX6NJiFFjGcZaA7vtmRlkHkJka8jvVTkcOm9As2AewIF0G7c1dAYVvLpqrkRdR27GECB5bfs_dZ3x-1sZiHmGdD6KM7SPoxzmsnZUDbL-WLEM9Znhzyw-0JU3rJ_oDjYisaD4mBPk4WowVqPi7HX_oEgwVICbh5dxcNLFwfacSF4IQXXx4k3TmU2Ph4F8-2Xsd8jefb907am4jed8YMbEe9A8amzofxAxXj9bmaVR-DMhtkOJcX4vHT30PHhOCHo7Azfg90CS3QELevoYwTbEIasvLerQ4&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fla-gent-hotel-shinjuku-kabukicho.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-4633259%26utm_medium%3Dexchange%26label%3Dhotel-4633259_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DeqBCUj8rAAAaT7wcLE0nhw
+                            - generic [ref=f46e84]:
+                              - generic [ref=f46e97]: ◆
+                              - generic [ref=f46e101]:
+                                - generic [ref=f46e103]: 東京新宿歌舞伎町柔婕閣酒店
+                                - generic [ref=f46e105]: NT$ 9 042
+                                - generic [ref=f46e108]: 立即預訂
+                          - link "◆ 新宿王子大酒店 NT$ 12 348 立即預訂" [ref=f46e110]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=xzg4k3p7gIHLlaT5s9Psvf1L7UO_Fin8G-T21YLr5pPuVgJLNV_pmMpqEj_JWTQjXlJob2s09DqF4cfTgiBKQGvGBbT7EX37fx9-L64V_3q1xu_DwskF3Okm3OoIMpeDwWbD3a_VxX7G8QxYTtUjrDa-nr96OAAL_rCM-Wl0IPbemoIHGd7aLMgtcxyKsAYFIcnM8Wv9buKskqnALm27b8JgTprJBZDxiLTkBIqGdpBlZo98s1Z8FGMisl7Q6TmVyTWUMEyJyIZt1B2BQQwc2JasIT4FCaJolxIRGjR8k8hMFUbWTQ3-m-zWZvnXn-xq3zA4Ug-e-giENqaTlZol7npC6lh3c2_x9V5Dht2MASO9HDcolY5hOHtLCF3v70tTh87SaAIyDa0bZ4f7JvL-c5G-PlplIl6qed6fM5gSGs3o5pWgZ60W3knntnAqybsWviJbd4by6yk_09ZA0guyMTyfajNBlvKLe0ABm_vyx5vkXJDn6zDRE1xmSwKw7IiFgWaQ4gqQS4M8sShKQ6aBL6AIdrT5kKE-kwH7qpPglO4Lv0oClEVvUUmKp5Kq0AXyIuj5-ivrtlyIPXPHHbEpDYVjZOiXcGWDhHEYHSFzrSjsIByU_ZncC-jESbvQ3iL5vnUbfItEZDApdG_J5Onf39xNUIdOI99sG7G3eQevOgiTei-L22DO1S82zHMNLpCtbdHr5g&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fshinjuku-prince.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-323291%26utm_medium%3Dexchange%26label%3Dhotel-323291_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DqJuaSz8rAAAOmEArVG_auA
+                            - generic [ref=f46e112]:
+                              - generic [ref=f46e125]: ◆
+                              - generic [ref=f46e129]:
+                                - generic [ref=f46e131]: 新宿王子大酒店
+                                - generic [ref=f46e133]: NT$ 12 348
+                                - generic [ref=f46e136]: 立即預訂
+            - heading "From Berkeley Research to Production Standard" [level=2] [ref=e54]
+            - paragraph [ref=e55]:
+              - text: The story of vLLM began in 2023 when researchers at UC Berkeley published their groundbreaking paper
+              - link "Efficient Memory Management for Large Language Model Serving with PagedAttention" [ref=e56] [cursor=pointer]:
+                - /url: https://arxiv.org/abs/2309.06180
+              - text: ". The paper, published at SOSP 2023, introduced PagedAttention - an attention algorithm inspired by virtual memory and paging techniques in operating systems. This innovation addressed one of the most challenging problems in LLM serving: the KV cache memory management that consumes significant GPU resources during autoregressive decoding."
+            - paragraph [ref=e57]:
+              - text: According to the
+              - link "vLLM blog" [ref=e58] [cursor=pointer]:
+                - /url: https://blog.vllm.ai/2023/06/20/vllm.html
+              - text: ", when vLLM was first released, it achieved up to 24x higher throughput compared to HuggingFace Transformers and up to 3.5x higher throughput than the previous state-of-the-art systems like FasterTransformer and Orca. The improvement was more pronounced with longer sequences, larger models, and more complex decoding algorithms. This dramatic performance improvement caught the attention of the AI community, and vLLM quickly became the default choice for organizations deploying LLMs at scale."
+            - insertion [ref=e60]:
+              - iframe [ref=e62]:
+                - iframe [ref=f9e3]:
+                  - generic [ref=f39e2] [cursor=pointer]:
+                    - link [ref=f39e4]:
+                      - /url: https://privacy.as.criteo.com/adchoices?cppv=3&cpp=MIuu55mNf1qnqsq2cIZqiw0TAv1tMZF4rjJo0vmsXecSdbvYxlyCLjjmSS5ekfJ0EjHTN_TBNIAOF5vSLYLbgz2uLmfXwus8_FgWJg76YoVbBbpfnsB3sAt_Y0IyHBdOSJR5_imyL3JqmNt6BaQCvAA1uf8
+                      - img [ref=f39e5]
+                    - img [ref=f39e7]
+                    - generic [ref=f39e8]:
+                      - link [ref=f39e9]:
+                        - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=npEnwnp7gIHLlaT5s9Psvf1L7UPRLp_jw9GSsn6bJlv7JUrovC5b78pOr-g_E0dMFKzsoqwoLEjSOAtXGJt6w7MxwRDbjoLjNL6mw8cqS1DqROekjGVIOcuqTL9QVJMv2xW3kTy2ubnnSppb626zyFQfV-bsEY-VLO0GrxVkjqbKdfratvAVtIUdNNfBCDP0pWl4oZaW_1r0SVFr9fbHj9htGjzYsm439uHryOllDjhSWFy5ZcM_C3qLAOBf3gllQY0sCNQsJcMYis4U8PwuAWVAXdaViHtizS1G-VQZ7XnliY7D6bbQxiktLeZy3k4wmEnc6OMOvr7HmIFJhzSlWU4dgLEGpp40ex7Hxu-I2oCD1V4DSPze2B3b67eQ7ppenX0xcceuLo18PrUIoT_UaW2yQDhdQK--XreyZhWTgoqpeB9PA4LYv1-4vIjTiTqEXfFX_GIpHqAJF5IHtuKnyMvQkvskjyeaoSYpxOEeabyLOPwmGEizgbRWVwNdsLlgVq2e7MGfqIoCVh9w03RFVRBWJ46KGXlQHeDYZfFgCHkb414Q33ikkjAyv2RqTbc-Zxt3ou4lYPhk7yqyiQPyLMaGVHkB8WcL_6fqZNzNHhvYmdeOhofzMn7vhWbsHvnMJL8n6IVUamzPMqC3NW0plE7XLakrrSFmD3T6qsiq1b9rZ5VLTnHYa9B2hpcOnLoTZfkI1g&maxdest=http%3A%2F%2Fwww.booking.com%2F%3Faid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DDPqisT8rAABPaQ3454YwzA
+                      - generic [ref=f39e13]:
+                        - link [ref=f39e14]:
+                          - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=rw_Qunp7gIHLlaT5s9Psvf1L7UPRLp_jw9GSsn6bJlv7JUrovC5b78pOr-g_E0dMFKzsoqwoLEjSOAtXGJt6w7MxwRDbjoLjNL6mw8cqS1DqROekjGVIOcuqTL9QVJMv2xW3kTy2ubnnSppb626zyFQfV-bsEY-VLO0GrxVkjqbKdfratvAVtIUdNNfBCDP0pWl4oZaW_1r0SVFr9fbHj9htGjzYsm439uHryOllDjhSWFy5ZcM_C3qLAOBf3gllQY0sCNQsJcMYis4U8PwuAWVAXdaViHtizS1G-VQZ7XnliY7D6bbQxiktLeZy3k4wmEnc6OMOvr7HmIFJhzSlWU4dgLEGpp40ex7Hxu-I2oCD1V4DSPze2B3b67eQ7ppenX0xcceuLo18PrUIoT_UaW2yQDhdQK--XreyZhWTgoqpeB9PA4LYv1-4vIjTiTqEXfFX_GIpHqAJF5IHtuKnyMvQkvskjyeaoSYpxOEeabyLOPwmGEizgbRWVwNdsLlgVq2e7MGfqIoCVh9w03RFVRBWJ45JJNsp0U_EVGj55h19eEJUxCOmIp_hJLJ4_jbSfN5CvaPywudm4SWFsBF5e2MYAVu8Bnf9jASAclCbc6EQRXhKTki-b1jAsZ2H-m93rCN0wdfxFlJLi5FfNsfHQWOlz4jP70oNwgMgfeT1EvepZGND7D489kwbjrqDlCgG1fOgxA&maxdest=http%3A%2F%2Fwww.booking.com%2F%3Faid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DyXxypz8rAADuR7WG74V2RQ
+                        - generic [ref=f39e24]:
+                          - link "◆ Dormy Inn Ikebukuro - Natural Hot Spring NT$ 6 079 立即預訂" [ref=f39e26]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=OKN9XXp7gIHLlaT5s9Psvf1L7UPRLp_jw9GSsn6bJlv7JUrovC5b78pOr-g_E0dMFKzsoqwoLEjSOAtXGJt6w7MxwRDbjoLjNL6mw8cqS1DqROekjGVIOcuqTL9QVJMv2xW3kTy2ubnnSppb626zyFQfV-bsEY-VLO0GrxVkjqbKdfrasAYdbiLGlE4OMJTOyXJOVuxuMqwzKPq6vvu0-qkgnKBOnemrnjdfJLs6srWRoL_mlZxJwXq64p-rT6T91zRjd7e117ayryuui4Zy2wqORgX7P282uILNCyE1MmIxvwi_ak8AKXwPpWWO7OxOycTcB2k4-VZ5VhR2NJY_r_ewqZw1tx_HK5UMt0ZILcoJTqieo-aUjhdjpNgv5wMj-4jywcmL7m6arTeOzEJMSHPwFMfCbR8ZG9cDmspXSAF4jQWtui6Twli6YMiV2Hl56v1Goc9UpHCXivyvDQ0SFuDVh_KM67uSeeD8XgR3F2TeUqGNpGNcrotwfsVkSHrEgcHoM0xuexFGdQJdK0FSPnJ9FUqxjLPSwkeEHjc0UDGuOW6Qec0mMm558BwTnug6hzUr9z9pNP5-SxnGZKULK_arrUtr2NTGm17Ik8doMTq6e-Vz50eZVy3COGWm0rMEXNJYrMWPBlu1Hki51Ya0dIas880fIFRVrmWI7CvS7u-WiFRDcMpT42YMsydGjcKpyD8xbD7AcERDqu8fFjKLwS-H3d4&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fdomiinchi-dai.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-6993550%26utm_medium%3Dexchange%26label%3Dhotel-6993550_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DqwMngD8rAAAH5KvKlQUi7w
+                            - generic [ref=f39e28]:
+                              - generic [ref=f39e41]: ◆
+                              - generic [ref=f39e45]:
+                                - generic [ref=f39e47]: Dormy Inn Ikebukuro - Natural Hot Spring
+                                - generic [ref=f39e49]: NT$ 6 079
+                                - generic [ref=f39e52]: 立即預訂
+                          - link "◆ 澀谷東急rei飯店 NT$ 10 228 立即預訂" [ref=f39e54]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=H02l93p7gIHLlaT5s9Psvf1L7UPRLp_jw9GSsn6bJlv7JUrovC5b78pOr-g_E0dMFKzsoqwoLEjSOAtXGJt6w7MxwRDbjoLjNL6mw8cqS1DqROekjGVIOcuqTL9QVJMv2xW3kTy2ubnnSppb626zyFQfV-bsEY-VLO0GrxVkjqbKdfrazYFGnfjHIuTsnp8H6ZtNZvY14z-d59HoyWGzEAUUxo_mc4PlHUdUJIrcrEQPfnHRiqvWT8aM6x8WaxXvKjDDEFRfZWK3_FAfXc-3Y-TeIu0dq6RK4qRyDTxTd9vFipNCr_PAdIyXOZjjnfh9k2WmFrVYF6JJ_miqgG9MDQQ7Z_WInPgUF2-D--1XHyRM1THuBZyFqjT4ppc-h8I0mmXfkvCHVE4xq2vY-lrttE-hCct-cfRTgykfGLuJUfrbigx6wJFygPSl1R5vMjl7SoTt_S4wGOtEBPwVvqdI1mIXdI9OAyKr42vczu4swTdrGGJwsFIuh10245VXUStwll__a_YJZRKZKZj3HWI5Gnbu4YT5ONTh_HYqDlEZWXSYWDBmBEoqVDrrGmEZ4zDsgXzf5jqjVcKqOhnd9by-37yY3syvPIFrI-0-ZuGm1YazsttSBC9zeJtlPbsq9O5gVLDwgNWuqYGHm7Kak80pnsaZiPlV1oI_KyRZ6f21NWfJtbY_AiKMWduFyEar0FoTiPWS7NsVbciOdNjXdkcwWh73Zio&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fshibuya-tokyu-inn.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-241337%26utm_medium%3Dexchange%26label%3Dhotel-241337_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DJ_bsrz8rAADuub6qo6e3CQ
+                            - generic [ref=f39e56]:
+                              - generic [ref=f39e69]: ◆
+                              - generic [ref=f39e73]:
+                                - generic [ref=f39e75]: 澀谷東急rei飯店
+                                - generic [ref=f39e77]: NT$ 10 228
+                                - generic [ref=f39e80]: 立即預訂
+                          - link "◆ 新宿華盛頓酒店 NT$ 8 118 立即預訂" [ref=f39e82]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=nzgCIXp7gIHLlaT5s9Psvf1L7UPRLp_jw9GSsn6bJlv7JUrovC5b78pOr-g_E0dMFKzsoqwoLEjSOAtXGJt6w7MxwRDbjoLjNL6mw8cqS1DqROekjGVIOcuqTL9QVJMv2xW3kTy2ubnnSppb626zyFQfV-bsEY-VLO0GrxVkjqbKdfraq9bmVI49Jgfb4pg9ICfPd12A5w3ZjuF4hgBOOvSPfC-ODjCd6WeCyW5MjhC_3YxXYGZSge5A74BBqc1d4Bw0AcknPEd3gvWBMWkQwzof8r-Bkd_2Eujo1vkLP4LCPUuCtav__LnUnaHLIdLSf6D8RVTb6xeIbPQIcc4-C5qutUldOgx6tknr7SrwNkrz0QKf6bqvALYO8GAfowWA33khN5Pay_xPmKoSFvrrbJypHvPI_pNhUTFDtkOrWnEmBRSEtu7lTSI5LHW5yGCuPUqteWvz4smvhD_1yqAvlPcVeBGRrjTXpFStowVjJFTRvVVo605u2WdD0vfJc_Z7dwJn42OZ_AHOu4Lrgr1cKLlWnZEEytfykFv7MBYFoZAdtgkpT8pKVrR8ZNL_OT0li6ujQA8NLcBZX09sJUIliXKjNfumASmBnjhEwCy8ygCr0IF9vVCU8RJDm0FygqLINCL5WN2jJ_78l9XjvSLv4BiTZ2KHfPWUbrrV8hKXwejghAb_r5CuZ-m2XZa5MBBHkTsmMnO10b1u98ucfO7CNnktalI&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fshinjuku-washington-hotel.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-238525%26utm_medium%3Dexchange%26label%3Dhotel-238525_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3Dpzd6_z8rAACIo3eomdQ3lQ
+                            - generic [ref=f39e84]:
+                              - generic [ref=f39e97]: ◆
+                              - generic [ref=f39e101]:
+                                - generic [ref=f39e103]: 新宿華盛頓酒店
+                                - generic [ref=f39e105]: NT$ 8 118
+                                - generic [ref=f39e108]: 立即預訂
+                          - link "◆ 小田急世紀南悅酒店 NT$ 12 644 立即預訂" [ref=f39e110]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=pSF0CXp7gIHLlaT5s9Psvf1L7UPRLp_jw9GSsn6bJlv7JUrovC5b78pOr-g_E0dMFKzsoqwoLEjSOAtXGJt6w7MxwRDbjoLjNL6mw8cqS1DqROekjGVIOcuqTL9QVJMv2xW3kTy2ubnnSppb626zyFQfV-bsEY-VLO0GrxVkjqbKdfraA4FFrsPkcFhz9bT4de_tHvlEEXM-vwE8Pm4sVgWqp2W5G1csrfsOKG8xAvBPgEXGRJ1LSNSfDQCPJM2ikzgjq5ChkmcE21zac_Uro0CSzGTteVCTLq2toGHDtegyfVmeWfVKIf5yN5Jekl_TxttuQP6Gz4eH4VlCqxOHSOP08RhkttRbpfFkY4gDzTH3eNkSnpfP9LJ0lCieoVy8H0r_AmBacGBqB94pTSXk3Mq9DLZ_aR5QW21d2OJYDVAYOyDHYkEWdq-5Mt77BOSxr-4FjqlC1VRvqlPM7mQAU3I2M7fZ0nr9FP-k23G8E6XEcrh0AoRiV-tYTjOe1WeIWsVxGoG8N5c-YLpCl0rTngildE-7uPPWTEuw07drBhI7k0LG8-SXlTEAqswcm_85lce38YPhuXCfXgZFaxblqWuZMyuSSatoruwskFkyRrzvW228CwJdjpevtdHzNCKAdGwmJvC3KfrrcS1t9IygOcllJWdrmQCDfGj5_M5lw07WFPA_hD65ESDcGAtdvS8fc-wV0gMz-wuMjPrPlGufJ07IewQ&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fcentury-southern-tower.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-716655%26utm_medium%3Dexchange%26label%3Dhotel-716655_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DRrh0ij8rAAAP09HQf9YNJw
+                            - generic [ref=f39e112]:
+                              - generic [ref=f39e125]: ◆
+                              - generic [ref=f39e129]:
+                                - generic [ref=f39e131]: 小田急世紀南悅酒店
+                                - generic [ref=f39e133]: NT$ 12 644
+                                - generic [ref=f39e136]: 立即預訂
+            - paragraph [ref=e63]: The deployment story at LMSYS provides a compelling case study. According to the vLLM documentation, the project was deployed at Chatbot Arena and Vicuna Demo, handling an average of 30,000 requests daily with peaks of 60,000. This utilization demonstrated vLLM's robustness in production environments, and the deployment reduced the number of GPUs needed for serving by 50%. The success at LMSYS convinced many organizations to adopt vLLM for their own production deployments, creating a flywheel effect that accelerated adoption.
+            - 'heading "The Technical Breakthrough: PagedAttention" [level=2] [ref=e64]'
+            - paragraph [ref=e65]: Understanding vLLM requires understanding PagedAttention - the core innovation that makes it different from other inference systems. According to the research paper, the key insight is that the KV cache memory in LLM serving is large, dynamic, and unpredictable. A single sequence in LLaMA-13B can require up to 1.7GB of KV cache, and managing this memory efficiently across multiple concurrent requests is challenging because the cache size depends on sequence length, which varies significantly.
+            - insertion [ref=e67]:
+              - iframe [ref=e69]:
+                - iframe [ref=f10e3]:
+                  - generic [ref=f43e2] [cursor=pointer]:
+                    - link [ref=f43e4]:
+                      - /url: https://privacy.as.criteo.com/adchoices?cppv=3&cpp=2mL63_SHvQOaEiJ_REqC3t9yGGU4OzqldA8U7YyYlPyNmuW3f-_RyneX9hPkMzg9PayBu01CXdCcGFoFcTETBzLQ7mLvPkP_AUxJoxOzprdE51OmLgxyfSRfc46Be4p5WZSslA0yx2a2vNdDs9KXe0AZz7Y
+                      - img [ref=f43e5]
+                    - img [ref=f43e7]
+                    - generic [ref=f43e8]:
+                      - link [ref=f43e9]:
+                        - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=RkvKw3p7gIHLlaT5s9Psvf1L7UP-YQCcMPsUwLw4dZxNo4pISkJKt5BMN2lUsYpAaMk6SXBVyfsVZ9-GbHAXIZX_noqK8WWlaPCm5K-k8V2TChTkPnEB_S_ohqofeIFNm_DTcSQ75TP0ya5oNLSHmWLjDMZ9HDt8Og-HLtRvqVUFMGXToTy453zteTFKrzIyw2JkENNoMSLI5I2jLPqYcNAtDUwfZN85fxQ_HO4VLeicHGD2p6wDUdAn9KsHlZhFemfTQzemrAIT67VREKj5UKPZn0jeVSdw4e68SWocbc8t8r8znX73-7bhLKQ6azvEeJwH0UnBQP3qGxLhCzQX8bmyxYhQEZeGU1XL-IP2yXfAX9q-fx2mk-zNt6Bilc9EkkzUUXHwI5Ziog1fnu6FgoPH7C4UA-A7zmOFxUyEI34qp4tOLc6t35vQHw4adCPSNZ3Xwz48IVQYKT0wp0Asl5Tq_omqrhjF0GK9Cv5tjBiWK4Ms23aT1w1tyslX36y4UsEhcD9aVleiyH7Hi7Vjik-mJz49RyYtB8Oz6S-7XqbtwwAkWGeuEjiIBiBXtyv7goAOL2kIINcE4Q4zEmqM-siutoJfkEKn5uiHWWaIRvKd5BIftn0DuajBYHbo2i5zL5UbHxWY1Ay4ZQBvCztCdw5WnkBs0SmleKm0dBrPYUsTedec&maxdest=http%3A%2F%2Fwww.booking.com%2F%3Faid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DKFr67j8rAAARE_RHoEzBGA
+                      - generic [ref=f43e13]:
+                        - link [ref=f43e14]:
+                          - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=5-dHZXp7gIHLlaT5s9Psvf1L7UP-YQCcMPsUwLw4dZxNo4pISkJKt5BMN2lUsYpAaMk6SXBVyfsVZ9-GbHAXIZX_noqK8WWlaPCm5K-k8V2TChTkPnEB_S_ohqofeIFNm_DTcSQ75TP0ya5oNLSHmWLjDMZ9HDt8Og-HLtRvqVUFMGXToTy453zteTFKrzIyw2JkENNoMSLI5I2jLPqYcNAtDUwfZN85fxQ_HO4VLeicHGD2p6wDUdAn9KsHlZhFemfTQzemrAIT67VREKj5UKPZn0jeVSdw4e68SWocbc8t8r8znX73-7bhLKQ6azvEeJwH0UnBQP3qGxLhCzQX8bmyxYhQEZeGU1XL-IP2yXfAX9q-fx2mk-zNt6Bilc9EkkzUUXHwI5Ziog1fnu6FgoPH7C4UA-A7zmOFxUyEI34qp4tOLc6t35vQHw4adCPSNZ3Xwz48IVQYKT0wp0Asl5Tq_omqrhjF0GK9Cv5tjBiWK4Ms23aT1w1tyslX36y4UsEhcHrJ0mUWtCDyvl2VjqoKdGufhLfpFjr9qg5Xi5kRL_IuoAbqQC427MIOYL36L6BN0RCB94l8uI6en4oO5BgzcKkFNfqoYfPgKcsR1qrTRcHXP8rqzzBU4_kT9mTYKTxQaH3BOve2CsnXGE3kkWqTUlj1HrFJz-aGAhjqeAcM9MJx&maxdest=http%3A%2F%2Fwww.booking.com%2F%3Faid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3D8Sxv3D8rAABmM5GL67ptAg
+                        - generic [ref=f43e24]:
+                          - link "◆ Dormy Inn Ikebukuro - Natural Hot Spring NT$ 6 079 立即預訂" [ref=f43e26]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=J1-DLHp7gIHLlaT5s9Psvf1L7UP-YQCcMPsUwLw4dZxNo4pISkJKt5BMN2lUsYpAaMk6SXBVyfsVZ9-GbHAXIZX_noqK8WWlaPCm5K-k8V2TChTkPnEB_S_ohqofeIFNm_DTcSQ75TP0ya5oNLSHmWLjDMZ9HDt8Og-HLtRvqVUFMGXT7hcdn4lpqHjexxXvM7d7h0gESAwDlUE1I0R7v_7w03qVQPk3LEUbEl_YbXrq9zSvmFF1dyV-ebaeo8eurGX02XxdoM69a010o3Vcdkr-tZ-iqHNgfbTGxfA2SLO7D_t06oolNekgoIkTaWJqbm4oa9EPWWFgk8ycjxfAhG1T5crEFw27TIPp_4CgakcqLI0ZqNPt3eKAdWJ275Th8vpBH2lyqxAeX9gSyEY9_jciW0iisAQ8EK04_IZZ3DCW8eGG9MSpEidsmFirvyseLOfop9wlVH3jeetX_ZrcfvqmRuPjnqZ5gxWmYAkxuhvqmTrO0jI0qMfaQCNSJ_vfvsxLAVulb6sK6CZ_3Owo2_zdMQ5PLjff1-vKGx2mnJ40r8slEYPbrHWHOTl7sDJitE3wFfSSDuUbQMF4XMw26bAdMjEdgH6UPdHgJbb6PYXyzdkDr6z0zmlMIX9NM9bE0Sdx6BaZKV7br_2cWTq8DMNqpb1nMhDDIgBnBilI-m2e5BPGnkPQd9xVsHgR773dC9b5cg&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fdomiinchi-dai.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-6993550%26utm_medium%3Dexchange%26label%3Dhotel-6993550_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DiplA7z8rAABrP1Snu23OpQ
+                            - generic [ref=f43e28]:
+                              - generic [ref=f43e41]: ◆
+                              - generic [ref=f43e45]:
+                                - generic [ref=f43e47]: Dormy Inn Ikebukuro - Natural Hot Spring
+                                - generic [ref=f43e49]: NT$ 6 079
+                                - generic [ref=f43e52]: 立即預訂
+                          - link "◆ 新宿華盛頓酒店 NT$ 8 118 立即預訂" [ref=f43e54]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=_w03THp7gIHLlaT5s9Psvf1L7UP-YQCcMPsUwLw4dZxNo4pISkJKt5BMN2lUsYpAaMk6SXBVyfsVZ9-GbHAXIZX_noqK8WWlaPCm5K-k8V2TChTkPnEB_S_ohqofeIFNm_DTcSQ75TP0ya5oNLSHmWLjDMZ9HDt8Og-HLtRvqVUFMGXTUeCjKEnLO_JZp-pOtXR907ExvU9eHtiyuGe2w3RZf6-ye-KXIG-us7dnEBLcd-nZvWKktVp3T_AivvBDHKvkLuxIVeEXcpDnhFWWS5XjhCqvAf1BXcSOvqFGtySzroxOiGOxO0cYxIv-Eh0L8CH07p8RIIowjsTzart6Ikh9dsDIMwgrA6czDKLdCBfsgAUbraoInBvoMjxWkGQyDqGTI3oHCRUPgIzW5ZUlO3159pWjDGubRUv3PiLlCyDwPDHARCS1lB2KE9ha8aUduFiyOnNpW9KyPOfgnxcHz8Gk6z_dtdVcmAuzjv68cC8Z2zH7fQuTZbAbvbJ0vdfU0EUZ0NA69Km5s0tQ2opmVpfLDXM7jve_5d_227taMd5dfmTwGUXrQp8u8H7nbyTOz4WXhDcT-XC-zHUFw9dI2ohHahmYiBgruwKa4aMI_SzPnezSJOar6dvqEH2xXlcagxTGjK67I19vbGryQBNw6JzU0bdgfDTpl9qhQZjNGDSRe3bkmvEcI2V-OC8g3k8cC3e_8g&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fshinjuku-washington-hotel.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-238525%26utm_medium%3Dexchange%26label%3Dhotel-238525_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DXoYAlz8rAAAlLcd28W_U3w
+                            - generic [ref=f43e56]:
+                              - generic [ref=f43e69]: ◆
+                              - generic [ref=f43e73]:
+                                - generic [ref=f43e75]: 新宿華盛頓酒店
+                                - generic [ref=f43e77]: NT$ 8 118
+                                - generic [ref=f43e80]: 立即預訂
+                          - link "◆ 銀座燦路都大飯店 NT$ 8 640 立即預訂" [ref=f43e82]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=y12Zcnp7gIHLlaT5s9Psvf1L7UP-YQCcMPsUwLw4dZxNo4pISkJKt5BMN2lUsYpAaMk6SXBVyfsVZ9-GbHAXIZX_noqK8WWlaPCm5K-k8V2TChTkPnEB_S_ohqofeIFNm_DTcSQ75TP0ya5oNLSHmWLjDMZ9HDt8Og-HLtRvqVUFMGXTmpTOZLSMJJlCx_BWTkQIQXEAv5bb3M9CGem4Bx5Mki2AJXvw_XKdqcbKs4AHlshKWDTVpOYVFjcnRUaJU75pUc-SqEnRnt4Px4HN3iZeOcpk3xoLFxGgtqJXiQ_qAKGMDEVUGg-ocRojlFkNaxywda3mp8rDKsJcebSAnhyPPYa_pS9iE7magCk5JC_FgBah46OAwkuy5Bk66MJyz7a3GIQ0DT3oGdxUELVA2syJxoH8DK72Oa4b4oA_Br-5O9BFtC4xgAfm1U0LqPX7sQOrczTf4JC7WzbO0xU5lZhibHDS8Rqo84TrSjX_D9j1lOaH6hjVZktfz3Gnm2a0EsEWOOyNFqbDhA8AAQ58Z0z7-5KAisgiRgX-ZwU8b5-kEXJraZ1DCd4kNuAXoCQGyt8200vRJJ0M0z3iYefgcgmkmM2umeLpEp3dKK_QCzoQaao32dIUQizo4JwD3eLz_cweW1QDfch2bjYByyu7BS_eiqjuZ5rVC1FdKc34H8YLg8uoLh87IfYjyANiV_UZXqhAzA&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fsunroute-ginza.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-1298573%26utm_medium%3Dexchange%26label%3Dhotel-1298573_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3Dkl7t7z8rAAC-365H1Y7JoA
+                            - generic [ref=f43e84]:
+                              - generic [ref=f43e97]: ◆
+                              - generic [ref=f43e101]:
+                                - generic [ref=f43e103]: 銀座燦路都大飯店
+                                - generic [ref=f43e105]: NT$ 8 640
+                                - generic [ref=f43e108]: 立即預訂
+                          - link "◆ 新宿王子大酒店 NT$ 12 348 立即預訂" [ref=f43e110]:
+                            - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=nmCsfXp7gIHLlaT5s9Psvf1L7UP-YQCcMPsUwLw4dZxNo4pISkJKt5BMN2lUsYpAaMk6SXBVyfsVZ9-GbHAXIZX_noqK8WWlaPCm5K-k8V2TChTkPnEB_S_ohqofeIFNm_DTcSQ75TP0ya5oNLSHmWLjDMZ9HDt8Og-HLtRvqVUFMGXTVN2tjPywRMFY6TKok0KvOixVoJ-yqdTbtrXFrKxe3GO9L-8KRUEOXY-hx5TY7qTd-79Rv8dhnbRUCRW4VF5qaT7xXgjQ-moHObxyXJiiDobdLIp140bLHFHcdUnTiXVjsNM3HDA4za7KCDyJdpi7AExLkbE3M7_QLdAhs1pdh0mNW0JPBRk1NagbMkIcLMPs3ss9kyh4Zox5X-sOyFtdOZDYTGsPJo4feB8DoCRD1xXQVs3tHxWCbz0Y6bzgEBOIVmHVNajWievIYbYy9YlzWlvcNJK9QwNf7NDzptc8AuEXRYGa9L_HmaNlRQgkmDrlNgFfdij-KJIwiASVADsegL9mTHW55fEsLBktOkEcnxW8rNMGBIFdUPg-beFI2manvz-G35KPTtYVEbBFJH9oR4p0wlC6SmdygnfI-t71zZxFVLcXY8GS4U8Tfk4tP2NdrnW-VqNKnf_O-fLheeNVZnrjIfWS8LsyRuO6ylVF92PAqmJ-FTrFwXfeobxlD3hHAgX7NhIOq6l6JT25uSJACg&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fshinjuku-prince.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-323291%26utm_medium%3Dexchange%26label%3Dhotel-323291_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DsJGzcj8rAADUSbxhEONcYw
+                            - generic [ref=f43e112]:
+                              - generic [ref=f43e125]: ◆
+                              - generic [ref=f43e129]:
+                                - generic [ref=f43e131]: 新宿王子大酒店
+                                - generic [ref=f43e133]: NT$ 12 348
+                                - generic [ref=f43e136]: 立即預訂
+            - paragraph [ref=e70]: Existing systems waste 60-80% of KV cache memory due to fragmentation and over-reservation. This memory waste limits the batch size and consequently the throughput that can be achieved. PagedAttention solves this by allowing continuous keys and values to be stored in non-contiguous memory space, partitioning the KV cache into blocks that can be managed independently.
+            - paragraph [ref=e71]: The block table design maps non-contiguous logical blocks to physical blocks, similar to how virtual memory works in operating systems. According to the vLLM documentation, this approach results in near-optimal memory usage with waste of under 4%. The improvement in memory efficiency directly translates to higher batch sizes and better GPU utilization, which explains the throughput gains that vLLM achieves.
+            - paragraph [ref=e72]: PagedAttention also enables efficient memory sharing for complex sampling algorithms. In parallel sampling, multiple output sequences are generated from the same prompt, and the computation and memory for the prompt can be shared. The block table naturally supports this by mapping different logical blocks to the same physical block, with reference counting ensuring safe sharing through a copy-on-write mechanism. According to the paper, this reduces memory usage by up to 55% for parallel sampling and beam search.
+            - insertion [ref=e74]
+            - 'heading "Model Runner V2: The 2026 Architecture Overhaul" [level=2] [ref=e76]'
+            - paragraph [ref=e77]:
+              - text: March 2026 marked a significant milestone with the release of Model Runner V2 (MRV2), a ground-up re-implementation of the vLLM model runner. According to the
+              - link "vLLM blog" [ref=e78] [cursor=pointer]:
+                - /url: https://blog.vllm.ai/blog/mrv2
+              - text: ", MRV2 delivers a cleaner, more modular, and more efficient execution core with no API changes. The redesign addresses accumulated technical debt as vLLM evolved from a research project to a production system."
+            - paragraph [ref=e79]: The MRV2 design is built on three core principles. First, modularity isolates model-specific logic from the common execution path. Second, GPU-native design moves bookkeeping off the CPU and onto the GPU. Third, async-first design treats overlapped CPU/GPU execution as a fundamental constraint rather than a retrofit.
+            - insertion [ref=e81]
+            - paragraph [ref=e83]: According to the vLLM team, MRV2 achieves a 56% throughput increase on small models by offloading input preparation to the GPU. For speculative decoding, MRV2 delivers 6.3% lower time-per-output-token (TPOT) by eliminating CPU-GPU synchronization points. The improvement comes from the zero-synchronization design that allows GPU-side preparation kernels to directly consume rejection sampling results.
+            - paragraph [ref=e84]: The modularization addresses a common complaint from users and contributors. According to the blog post, the existing runner had grown into a single file exceeding 6,700 lines. MRV2 breaks this into smaller files with clearer responsibilities - the largest file is now under 1,300 lines. The new ModelState abstraction defines interfaces for model-specific logic including multimodal embeddings, extra model inputs, attention metadata, and CUDA graph capture.
+            - heading "Production Features and Ecosystem Integration" [level=2] [ref=e85]
+            - insertion [ref=e87]
+            - paragraph [ref=e89]:
+              - text: vLLM has evolved beyond its academic roots into a full-featured production inference engine. According to the
+              - link "vLLM GitHub README" [ref=e90] [cursor=pointer]:
+                - /url: https://github.com/vllm-project/vllm
+              - text: ", the engine supports state-of-the-art serving throughput with efficient management of attention key and value memory through PagedAttention, continuous batching of incoming requests, fast model execution with CUDA/HIP graphs, and various quantizations including GPTQ, AWQ, AutoRound, INT4, INT8, and FP8."
+            - paragraph [ref=e91]: The framework integrates with popular HuggingFace models seamlessly, supporting transformer-like LLMs like LLaMA, Mixture-of-Expert LLMs like Mixtral and DeepSeek-V2 and V3, embedding models like E5-Mistral, and multimodal LLMs like LLaVA. This broad model support means organizations can switch to vLLM without retraining or converting models.
+            - paragraph [ref=e92]: Distributed inference is supported through tensor, pipeline, data, and expert parallelism. The engine provides an OpenAI-compatible API server, making it straightforward to replace closed APIs with self-hosted infrastructure. According to the documentation, vLLM supports NVIDIA GPUs, AMD CPUs and GPUs, Intel CPUs and GPUs, PowerPC CPUs, Arm CPUs, and TPUs, plus hardware plugins for Intel Gaudi, IBM Spyre, and Huawei Ascend.
+            - insertion [ref=e94]
+            - paragraph [ref=e96]:
+              - text: Speculative decoding is another production-critical feature. According to the
+              - link "vLLM blog" [ref=e97] [cursor=pointer]:
+                - /url: https://blog.vllm.ai/blog/p-eagle
+              - text: ", the P-EAGLE implementation provides faster LLM inference with parallel speculative decoding. This technique uses a draft model to predict multiple tokens ahead, which are then verified in parallel by the target model, reducing the number of sequential passes required."
+            - heading "Python at the Core" [level=2] [ref=e98]
+            - paragraph [ref=e99]: Python remains the primary interface for vLLM, consistent with its roots in the Python-dominated ML ecosystem. According to the documentation, vLLM can be used for both offline inference and online serving through Python APIs. The simple usage pattern makes it accessible to teams already familiar with Python-based ML workflows.
+            - code [ref=e101]: "from vllm import LLM # Offline inference example prompts = [\"Hello, my name is\", \"The capital of France is\"] llm = LLM(model=\"meta-llama/Llama-2-7b-hf\") outputs = llm.generate(prompts) for output in outputs: print(output.outputs[0].text)"
+            - paragraph [ref=e102]:
+              - text: The engine also provides an OpenAI-compatible API server that can be started with a single command. According to the
+              - link "vLLM documentation" [ref=e103] [cursor=pointer]:
+                - /url: https://docs.vllm.ai
+              - text: ", organizations can query the server with standard OpenAI API formats, enablingdrop-in replacement for existing applications that use closed APIs. This backwards compatibility has been critical for enterprise adoption."
+            - insertion [ref=e105]
+            - heading "The Inference Serving Landscape" [level=2] [ref=e107]
+            - paragraph [ref=e108]:
+              - text: vLLM operates in a competitive landscape but has established itself as the open source leader. According to industry benchmarks, vLLM consistently delivers 2-4x throughput improvements over naive implementations, making it essential for cost-effective production deployments. The combination of PagedAttention, continuous batching, and modern architecture makes it the preferred choice for teams building production AI systems.
+              - link "Aprendizaje automático e inteligencia artificial" [ref=e109] [cursor=pointer]:
+                - img [ref=e111]
+                - text: Aprendizaje automático e inteligencia artificial
+            - paragraph [ref=e113]: The project's development remains active, with 88 releases as of March 2026 and continuous improvements to performance and model support. The vLLM team continues to optimize for new hardware including NVIDIA Blackwell and AMD Instinct, and new model architectures as they emerge. The move to MRV2 demonstrates the project's commitment to long-term technical excellence rather than feature accumulation.
+            - insertion [ref=e115]
+            - paragraph [ref=e117]: For organizations building production AI systems, vLLM provides a critical piece of infrastructure. The open source nature means teams can inspect, modify, and contribute to the codebase, building confidence in production deployments. The strong community and commercial adoption ensure the project will continue to evolve, making it a safe choice for long-term infrastructure investments.
+            - paragraph [ref=e118]: As AI moves from experimentation to production, the infrastructure that powers inference becomes as important as the models themselves. vLLM has established itself as the open source standard for LLM inference, providing the performance, flexibility, and community support that production systems require.
+        - generic [ref=e120]:
+          - generic [ref=e121]: "Tags:"
+          - generic [ref=e122]: "#vLLM"
+          - generic [ref=e123]: "#LLM Inference"
+          - generic [ref=e124]: "#Open Source"
+          - generic [ref=e125]: "#PagedAttention"
+          - generic [ref=e126]: "#AI Infrastructure"
+          - generic [ref=e127]: "#Python"
+          - generic [ref=e128]: "#Production AI"
+          - generic [ref=e129]: "#Model Serving"
+        - generic [ref=e130]:
+          - generic [ref=e131]: "Share:"
+          - generic [ref=e132]:
+            - link "Twitter" [ref=e133] [cursor=pointer]:
+              - /url: https://twitter.com/intent/tweet?text=vLLM%202026%3A%20The%20Open%20Source%20LLM%20Inference%20Engine%20Powering%20Production%20AI%20at%20Scale&url=https%3A%2F%2Fwww.programming-helper.com%2Ftech%2Fvllm-2026-open-source-llm-inference-engine
+            - link "Facebook" [ref=e134] [cursor=pointer]:
+              - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.programming-helper.com%2Ftech%2Fvllm-2026-open-source-llm-inference-engine
+            - link "LinkedIn" [ref=e135] [cursor=pointer]:
+              - /url: https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.programming-helper.com%2Ftech%2Fvllm-2026-open-source-llm-inference-engine&title=vLLM%202026%3A%20The%20Open%20Source%20LLM%20Inference%20Engine%20Powering%20Production%20AI%20at%20Scale
+        - insertion [ref=e137]
+        - generic [ref=e141]:
+          - img "Sarah Chen" [ref=e143]
+          - generic [ref=e144]:
+            - heading "About Sarah Chen" [level=3] [ref=e145]:
+              - text: About
+              - link "Sarah Chen" [ref=e146] [cursor=pointer]:
+                - /url: /author/sarah-chen
+            - paragraph [ref=e147]: Sarah Chen is a technology writer and AI expert with over a decade of experience covering emerging technologies, artificial intelligence, and software development.
+            - link "View all articles by Sarah Chen →" [ref=e148] [cursor=pointer]:
+              - /url: /author/sarah-chen
+        - generic [ref=e150]:
+          - heading "Related Articles" [level=2] [ref=e151]
+          - generic [ref=e152]:
+            - 'link "Cursor 2026: How the AI-First IDE Redefined Developer Productivity Cursor 2026: How the AI-First IDE Redefined Developer Productivity Cursor has transformed from an experimental AI coding tool into the defining platform of the third era of software development. With Composer 2, autonomous agents, and enterprise adoption across half of the Fortune 500, Cursor represents a fundamental shift in how code gets written, reviewed, and shipped. This comprehensive analysis explores Cursor''s 2026 capabilities, the technical innovations behind its agentic architecture, and why it has become the standard for AI-powered development." [ref=e153] [cursor=pointer]':
+              - /url: /tech/cursor-2026-ai-first-ide-composer-agents-python
+              - 'img "Cursor 2026: How the AI-First IDE Redefined Developer Productivity" [ref=e155]'
+              - generic [ref=e156]:
+                - 'heading "Cursor 2026: How the AI-First IDE Redefined Developer Productivity" [level=3] [ref=e157]'
+                - paragraph [ref=e158]: Cursor has transformed from an experimental AI coding tool into the defining platform of the third era of software development. With Composer 2, autonomous agents, and enterprise adoption across half of the Fortune 500, Cursor represents a fundamental shift in how code gets written, reviewed, and shipped. This comprehensive analysis explores Cursor's 2026 capabilities, the technical innovations behind its agentic architecture, and why it has become the standard for AI-powered development.
+            - 'link "Mojo Programming Language 2026: The Python Performance Revolution Reshaping AI Development Mojo Programming Language 2026: The Python Performance Revolution Reshaping AI Development Mojo, the Python-compatible language from Modular, is delivering up to 35,000x faster performance than standard Python while maintaining syntax compatibility. With the path to Mojo 1.0 underway and the language now open source, we examine how this breakthrough is solving the two-language problem in AI development." [ref=e159] [cursor=pointer]':
+              - /url: /tech/mojo-programming-language-2026-python-performance-gpu
+              - 'img "Mojo Programming Language 2026: The Python Performance Revolution Reshaping AI Development" [ref=e161]'
+              - generic [ref=e162]:
+                - 'heading "Mojo Programming Language 2026: The Python Performance Revolution Reshaping AI Development" [level=3] [ref=e163]'
+                - paragraph [ref=e164]: Mojo, the Python-compatible language from Modular, is delivering up to 35,000x faster performance than standard Python while maintaining syntax compatibility. With the path to Mojo 1.0 underway and the language now open source, we examine how this breakthrough is solving the two-language problem in AI development.
+            - 'link "CUDA 2026: Parallel Computing, Python, and GPU Programming Evolution CUDA 2026: Parallel Computing, Python, and GPU Programming Evolution CUDA has been the backbone of GPU computing for nearly two decades, powering AI revolution from deep learning training to scientific simulation. In 2026, with the TIOBE Index showing C++ at #3 and Python at #1, this analysis explores how CUDA continues to evolve, the role of Python in GPU programming, and what the future holds for parallel computing as specialized AI accelerators reshape the landscape." [ref=e165] [cursor=pointer]':
+              - /url: /tech/cuda-2026-parallel-computing-python-gpu-programming
+              - 'img "CUDA 2026: Parallel Computing, Python, and GPU Programming Evolution" [ref=e167]'
+              - generic [ref=e168]:
+                - 'heading "CUDA 2026: Parallel Computing, Python, and GPU Programming Evolution" [level=3] [ref=e169]'
+                - paragraph [ref=e170]: "CUDA has been the backbone of GPU computing for nearly two decades, powering AI revolution from deep learning training to scientific simulation. In 2026, with the TIOBE Index showing C++ at #3 and Python at #1, this analysis explores how CUDA continues to evolve, the role of Python in GPU programming, and what the future holds for parallel computing as specialized AI accelerators reshape the landscape."
+            - 'link "AI Model Evaluation Platforms 2026: The Rise of Comprehensive Benchmarking Frameworks AI Model Evaluation Platforms 2026: The Rise of Comprehensive Benchmarking Frameworks As AI models proliferate across enterprise deployments, a new category of evaluation platforms has emerged to provide systematic, reproducible, and transparent model assessments. This comprehensive analysis explores how AI model evaluation platforms are transforming how organizations select, benchmark, and monitor AI models in production, why Python serves as the dominant language for building evaluation pipelines, and what the leading platforms offer in 2026." [ref=e171] [cursor=pointer]':
+              - /url: /tech/ai-model-evaluation-platforms-2026-benchmarking-frameworks
+              - 'img "AI Model Evaluation Platforms 2026: The Rise of Comprehensive Benchmarking Frameworks" [ref=e173]'
+              - generic [ref=e174]:
+                - 'heading "AI Model Evaluation Platforms 2026: The Rise of Comprehensive Benchmarking Frameworks" [level=3] [ref=e175]'
+                - paragraph [ref=e176]: As AI models proliferate across enterprise deployments, a new category of evaluation platforms has emerged to provide systematic, reproducible, and transparent model assessments. This comprehensive analysis explores how AI model evaluation platforms are transforming how organizations select, benchmark, and monitor AI models in production, why Python serves as the dominant language for building evaluation pipelines, and what the leading platforms offer in 2026.
+            - 'link "AI Agent Tool Use Revolution 2026: How Advanced Tool Orchestration is Reshaping Enterprise AI AI Agent Tool Use Revolution 2026: How Advanced Tool Orchestration is Reshaping Enterprise AI In 2026, a new generation of AI agent tool use capabilities is transforming how enterprises build autonomous systems. From Anthropic''s Tool Search Tool and Programmatic Tool Calling to dynamic tool discovery, organizations can now build agents that intelligently discover, execute, and orchestrate hundreds of tools without context bloat. This comprehensive analysis explores the technical innovations driving this revolution, the performance gains achievable, and why Python remains the orchestration layer for production AI agents." [ref=e177] [cursor=pointer]':
+              - /url: /tech/ai-agent-tool-use-revolution-2026
+              - 'img "AI Agent Tool Use Revolution 2026: How Advanced Tool Orchestration is Reshaping Enterprise AI" [ref=e179]'
+              - generic [ref=e180]:
+                - 'heading "AI Agent Tool Use Revolution 2026: How Advanced Tool Orchestration is Reshaping Enterprise AI" [level=3] [ref=e181]'
+                - paragraph [ref=e182]: In 2026, a new generation of AI agent tool use capabilities is transforming how enterprises build autonomous systems. From Anthropic's Tool Search Tool and Programmatic Tool Calling to dynamic tool discovery, organizations can now build agents that intelligently discover, execute, and orchestrate hundreds of tools without context bloat. This comprehensive analysis explores the technical innovations driving this revolution, the performance gains achievable, and why Python remains the orchestration layer for production AI agents.
+            - 'link "Matter and Thread 2026: The Smart Home Standard Finally Delivers on Its Promise Matter and Thread 2026: The Smart Home Standard Finally Delivers on Its Promise After years of promises, Matter and Thread protocols are now powering over 1,500 certified devices in 2026, with major retailers like IKEA launching 21 new Matter-compatible products and Samsung enabling cross-platform camera support. This comprehensive analysis explores how the unified smart home standard is transforming consumer adoption, the technical architecture driving local control, and why Python remains the language of choice for home automation scripting." [ref=e183] [cursor=pointer]':
+              - /url: /tech/matter-thread-2026-smart-home-standard-delivers
+              - 'img "Matter and Thread 2026: The Smart Home Standard Finally Delivers on Its Promise" [ref=e185]'
+              - generic [ref=e186]:
+                - 'heading "Matter and Thread 2026: The Smart Home Standard Finally Delivers on Its Promise" [level=3] [ref=e187]'
+                - paragraph [ref=e188]: After years of promises, Matter and Thread protocols are now powering over 1,500 certified devices in 2026, with major retailers like IKEA launching 21 new Matter-compatible products and Samsung enabling cross-platform camera support. This comprehensive analysis explores how the unified smart home standard is transforming consumer adoption, the technical architecture driving local control, and why Python remains the language of choice for home automation scripting.
+            - 'link "DORA Metrics 2026: How Elite Software Delivery Teams Measure Performance DORA Metrics 2026: How Elite Software Delivery Teams Measure Performance The DORA research program enters its eleventh year with new insights into software delivery performance. As platform engineering transforms how organizations build software, the four key metrics remain the gold standard for measuring engineering excellence. This analysis explores the latest DORA findings, how AI amplifies delivery capabilities, and why Python has become essential for measuring and visualizing performance data." [ref=e189] [cursor=pointer]':
+              - /url: /tech/dora-metrics-2026-software-delivery-performance
+              - 'img "DORA Metrics 2026: How Elite Software Delivery Teams Measure Performance" [ref=e191]'
+              - generic [ref=e192]:
+                - 'heading "DORA Metrics 2026: How Elite Software Delivery Teams Measure Performance" [level=3] [ref=e193]'
+                - paragraph [ref=e194]: The DORA research program enters its eleventh year with new insights into software delivery performance. As platform engineering transforms how organizations build software, the four key metrics remain the gold standard for measuring engineering excellence. This analysis explores the latest DORA findings, how AI amplifies delivery capabilities, and why Python has become essential for measuring and visualizing performance data.
+            - 'link "Python 3.15 JIT Breakthrough 2026: How Community-Driven Development Achieved 11-12% Performance Gains Python 3.15 JIT Breakthrough 2026: How Community-Driven Development Achieved 11-12% Performance Gains Python''s JIT compiler hits major milestones in 2026 with 11-12% speedups on macOS AArch64 and 5-6% on x86_64 Linux, achieved through community stewardship after the Faster CPython team''s funding ended. This comprehensive analysis covers lazy imports, frozendict, the new Tachyon profiler, and how Python is evolving in the age of AI." [ref=e195] [cursor=pointer]':
+              - /url: /tech/python-3-15-jit-2026-community-breakthrough
+              - 'img "Python 3.15 JIT Breakthrough 2026: How Community-Driven Development Achieved 11-12% Performance Gains" [ref=e197]'
+              - generic [ref=e198]:
+                - 'heading "Python 3.15 JIT Breakthrough 2026: How Community-Driven Development Achieved 11-12% Performance Gains" [level=3] [ref=e199]'
+                - paragraph [ref=e200]: Python's JIT compiler hits major milestones in 2026 with 11-12% speedups on macOS AArch64 and 5-6% on x86_64 Linux, achieved through community stewardship after the Faster CPython team's funding ended. This comprehensive analysis covers lazy imports, frozendict, the new Tachyon profiler, and how Python is evolving in the age of AI.
+            - 'link "Python Type Checking 2026: mypy, Pyright, and the Static Typing Revolution Python Type Checking 2026: mypy, Pyright, and the Static Typing Revolution Python''s type checking ecosystem has matured dramatically in 2026, with mypy and Pyright leading a shift toward safer, more maintainable code. This comprehensive analysis explores how static typing became essential for AI/ML pipelines, enterprise Python, and modern development workflows." [ref=e201] [cursor=pointer]':
+              - /url: /tech/python-type-checking-2026-mypy-pyright-static-typing
+              - 'img "Python Type Checking 2026: mypy, Pyright, and the Static Typing Revolution" [ref=e203]'
+              - generic [ref=e204]:
+                - 'heading "Python Type Checking 2026: mypy, Pyright, and the Static Typing Revolution" [level=3] [ref=e205]'
+                - paragraph [ref=e206]: Python's type checking ecosystem has matured dramatically in 2026, with mypy and Pyright leading a shift toward safer, more maintainable code. This comprehensive analysis explores how static typing became essential for AI/ML pipelines, enterprise Python, and modern development workflows.
+    - insertion [ref=e208]
+    - contentinfo [ref=e210]:
+      - generic [ref=e212]:
+        - link "Tech" [ref=e213] [cursor=pointer]:
+          - /url: /tech
+        - link "Contact" [ref=e214] [cursor=pointer]:
+          - /url: /contact-and-privacy
+        - link "Privacy Policy" [ref=e215] [cursor=pointer]:
+          - /url: /contact-and-privacy
+        - link "zigarettenautomatkarte.de" [ref=e216] [cursor=pointer]:
+          - /url: https://www.zigarettenautomatkarte.de/
+        - link "cigarettemap.com" [ref=e217] [cursor=pointer]:
+          - /url: https://www.cigarettemap.com/
+        - link "bäckerei-indernähe.de" [ref=e218] [cursor=pointer]:
+          - /url: https://www.bäckerei-indernähe.de
+        - link "ai-coding-assistant.com" [ref=e219] [cursor=pointer]:
+          - /url: https://www.ai-coding-assistant.com/
+        - link "randomnamesgenerator.net" [ref=e220] [cursor=pointer]:
+          - /url: https://www.randomnamesgenerator.net/
+  - alert [ref=e221]
+  - insertion [ref=e222]:
+    - iframe [ref=e225]:
+      - iframe [ref=f14e3]:
+        - generic [ref=f20e2] [cursor=pointer]:
+          - link [ref=f20e4]:
+            - /url: https://privacy.as.criteo.com/adchoices?cppv=3&cpp=6KR9gsPV-N7W_0pDdtjzcCpbuKX5T3OV6Ev85oYj6BKBb0MlBhh0xL5BHakcSR2_UnIEN_kAGHC-ttTs-NS2i5pIzzXJxpeP5nWpDvUP8GlQ4q0IovDxC_Z2yo_OolP2Z-NFSCEjcn0WfPwOUr-cfWt4yq4
+            - img [ref=f20e5]
+          - img [ref=f20e7]
+          - generic [ref=f20e8]:
+            - link [ref=f20e9]:
+              - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=BBLBggDzbLt4wyJkHvnxvM5JCku5l-Z5WFbMEmT8sI9aQDEDB3kuSW5qgYf3gmhaxxqU5mV1otuqlgdaiR4Ca9dPgsVxcO6i2UyFDnqG_IJmDp_1oHq6t31WJ2-obXM7kHvARccQJwSUV_dttwTjG52RAY7v0-fVWxWjLkfxJWkKXgoEVDX5B5TOOr7kxh8wt9fhLoGcxosZGhkutod2AkpiOBF-1iGMPMceZ7v1qMh-cEAaAZ-KlPCWuhYUy_2wIBuxbwkLh4U174J7CW8f5Lm_BdhZlK0hvCqF0yP0wXoFf0pNlTp9kzMTrRx2ug75WV9BzKbgB9Gjlzc5_Ptmh9Ev5v_wtVEk5riqPMevBga-lyZpb75435eLicAqgX3HxDzeiqO5MdrfxbRCIJFJDY_iHCSv32WVBWQFw1DsqPlq7Y-UQ_MyAuRfayMs0ER0dN2Lkc87zrfv1DjGGSnMnv_BKKpzHKs-S_wodEOGSnXwXaqyaCjcpoPSIvROMbfTLykNY7KvO3EorBhd2ZYKLitXKAT6dSiAhh4dphSufYyrfkUSg2VlCesYdUpu3xLP2hIz4jU48CMF_Ee4byNsRJA6C3xyk_2PzmFxe_lQQsUKXr4LFCKNasy1bzOanTAvz7LOdBdSoDlBOjAFJHGeiXJ66EYTNj8salCEYJc0sD8UKRhL&maxdest=http%3A%2F%2Fwww.booking.com%2F%3Faid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DMdx69j8rAABq86bPeyMK7w
+            - generic [ref=f20e13]:
+              - link [ref=f20e14]:
+                - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=LVFg3gDzbLt4wyJkHvnxvM5JCku5l-Z5WFbMEmT8sI9aQDEDB3kuSW5qgYf3gmhaxxqU5mV1otuqlgdaiR4Ca9dPgsVxcO6i2UyFDnqG_IJmDp_1oHq6t31WJ2-obXM7kHvARccQJwSUV_dttwTjG52RAY7v0-fVWxWjLkfxJWkKXgoEVDX5B5TOOr7kxh8wt9fhLoGcxosZGhkutod2AkpiOBF-1iGMPMceZ7v1qMh-cEAaAZ-KlPCWuhYUy_2wIBuxbwkLh4U174J7CW8f5Lm_BdhZlK0hvCqF0yP0wXoFf0pNlTp9kzMTrRx2ug75WV9BzKbgB9Gjlzc5_Ptmh9Ev5v_wtVEk5riqPMevBga-lyZpb75435eLicAqgX3HxDzeiqO5MdrfxbRCIJFJDY_iHCSv32WVBWQFw1DsqPlq7Y-UQ_MyAuRfayMs0ER0dN2Lkc87zrfv1DjGGSnMnv_BKKpzHKs-S_wodEOGSnXwXaqyaCjcpoPSIvROMbfTLykNY59ohBBTEdIRg85H5la5xfzmcNs1xyzULU7QtjJq-5ZoN8xPLA_9i-nXJ5VXfRgSAwZkvmQ1u208sNZ4cGr6TGg6_QdVJGAPxMXNh3ibOIOrAMqYWmdQsjC2ZSdYJMdKz0W-NHp97xxogdp2QKk2RelrT6xi5xOT8Phvy0PlYkS6&maxdest=http%3A%2F%2Fwww.booking.com%2F%3Faid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DJIRJEz8rAADkXUMWYbzL_A
+              - generic [ref=f20e24]:
+                - link "◆ 立即預訂 Dormy Inn Ikebukuro - Natural Hot Spring NT$ 6 079" [ref=f20e27]:
+                  - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=f-mR6ADzbLt4wyJkHvnxvM5JCku5l-Z5WFbMEmT8sI9aQDEDB3kuSW5qgYf3gmhaxxqU5mV1otuqlgdaiR4Ca9dPgsVxcO6i2UyFDnqG_IJmDp_1oHq6t31WJ2-obXM7kHvARccQJwSUV_dttwTjG52RAY7v0-fVWxWjLkfxJWkKXgoE4u6p33ieEB13Ht_rJa3L_5lAnCN5YckIDb37roaHwBz72T_vBOgsFI1Y5zZwgPc7-mGd69SorDJAYuQBdbFOn9VhwMjPjR1ioOkN4ZrOy0OJ0jZ9LLDgSKUOI1dbVC7TLVWrRmnGeCtl9lJ3ASEgkbAXtvOZVtfmYdvHwWhATGBBWEqb4gKKj2G2xL3lfmXFeoGwm05oFcwPgCtAnB2maH2MFTf4ztLLdPNDI7diwYJ7CikqLfEayDOhn8jIwKWzrAekrc2LOYNV3yx1KlY2A50-ZJ-tzDgPakFS2bmgrLeUvzRao3OEW8pXe33FGM73rjj2mr5GIMRrur5llUE-80IjBkohCLiqrquB14QN3UVqvtEwpPcb1dm07ZdJnmVSkmOviMAek_IL06-6fu4enUhd69PIKTAoPsCF2rGL8MYQtBjgi9U9boqeRDbRE_V-wOgZ1AnJM18MsJWO0LAE-3W9JAlvcVjUIxWDRcRKhqXWtz6fryYL850EeFsid56d_fCq3x1JHru7grssrN-OAQ&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fdomiinchi-dai.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-6993550%26utm_medium%3Dexchange%26label%3Dhotel-6993550_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DxgTynT8rAACqJnavwzPD_A
+                  - generic [ref=f20e28]:
+                    - generic [ref=f20e39]:
+                      - generic [ref=f20e44]: ◆
+                      - generic [ref=f20e51]: 立即預訂
+                    - generic [ref=f20e54]:
+                      - generic [ref=f20e56]: Dormy Inn Ikebukuro - Natural Hot Spring
+                      - generic [ref=f20e59]: NT$ 6 079
+                - link "◆ 立即預訂 東京新宿歌舞伎町柔婕閣酒店 NT$ 9 042" [ref=f20e62]:
+                  - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=4W51qADzbLt4wyJkHvnxvM5JCku5l-Z5WFbMEmT8sI9aQDEDB3kuSW5qgYf3gmhaxxqU5mV1otuqlgdaiR4Ca9dPgsVxcO6i2UyFDnqG_IJmDp_1oHq6t31WJ2-obXM7kHvARccQJwSUV_dttwTjG52RAY7v0-fVWxWjLkfxJWkKXgoECZR4fnQ4vWwOKuNjf_Pbj4xa0VmsZlmddmkd4AeqQlB9bDKtkg6i7NGC_nGUmJXVMduQ8ohKdSio9IPET7MGyHBrczfbvQG1un02DAQhqprtHIReMJm-ER9ETcaex5w7f1ch3e38nbmi5bmPd27-V6X0_tv3ayjLCVpjgE_yqLh-2qcMtRyodbrgewOmXANioDkDLWIY4XLKQ-bWurW0V1rC7MN0dwlvyt42O1wnqgqY_3RWhYw1EQ2_yVJq__pzVp9fjTqKJKDc0jErPmnt_hPlN48In197Pnrx21wTYrFejGjB26VzZHYzjXrp0Zmadk8MVUa8F-o_4Xdh9icX8aDabH2vl3M1qjk6YQvWuv3sCGEdeRX-X1XdI-lHlWMJnX-MPVvzJMztMZvSD3uTo-HNrMIEOp5GQMwtD9srrzMpnuQCH9GcmzfiG3Z0LzCLRAqvW7rJuJB0JA4DTB1iL4nGRNidZxZCslKiXWk178zZ46hk7p90_gSxsrgTVfo4WaACI_egG3fsJjJHVB6few&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fla-gent-hotel-shinjuku-kabukicho.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-4633259%26utm_medium%3Dexchange%26label%3Dhotel-4633259_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3D4aidPz8rAAB5ru4GfXBybw
+                  - generic [ref=f20e63]:
+                    - generic [ref=f20e74]:
+                      - generic [ref=f20e79]: ◆
+                      - generic [ref=f20e86]: 立即預訂
+                    - generic [ref=f20e89]:
+                      - generic [ref=f20e91]: 東京新宿歌舞伎町柔婕閣酒店
+                      - generic [ref=f20e94]: NT$ 9 042
+                - link "◆ 立即預訂 Mystays 上野東酒店 NT$ 2 994" [ref=f20e97]:
+                  - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=zOj3NgDzbLt4wyJkHvnxvM5JCku5l-Z5WFbMEmT8sI9aQDEDB3kuSW5qgYf3gmhaxxqU5mV1otuqlgdaiR4Ca9dPgsVxcO6i2UyFDnqG_IJmDp_1oHq6t31WJ2-obXM7kHvARccQJwSUV_dttwTjG52RAY7v0-fVWxWjLkfxJWkKXgoELwGmELiszfCsKOXBdSzaBXYksgcN91EcL7s-O_B4p5fd1E3piQokux2bOQxjijZsO2HG4elaHNrBn27Jgg5Qfr8xz1L50jBhnVBv4IZ8XEhDCgkJurFa9M2GquT0_1415Ckzv5tr0048k7eaaqJ8eeaU-Ril-kYBxReG_BPp9W8bJFr8ZiaSnVnZVEC2M9L9aW6JSkXnj4XB7uaUSNlgJyLlgYfJ7IF76NwFHrdlgKQekyJdQpkwCP5STW0Un4zxe8H8LyDgTqx7RKA5Glm61X87Td4Cog1lNAXZdukuGP_-O-2cDtxdSoSErMyKnwH-eDwAzhIg0wktxa9ydrb_CdXvAKiLgeVDRHJvAmnxHV0URw539MleppTSncJbvzeC4kEWC0UzrBGKBveAYUVQSn0LKwgi8BfRSco5khV9kL8qv_ytE4vuzdxuYQZ-jjJ9z20PGfloLQC6cc5u-imMeRUHVRLdkHmfXhR3EmObz3TWv8ywVbdEbP0DEIAeM5cMMazUS3w3gBjdRA2cEGPLpw&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fchisun-ueno.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-317528%26utm_medium%3Dexchange%26label%3Dhotel-317528_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3D4-SYnD8rAABFZ31-eFhvaQ
+                  - generic [ref=f20e98]:
+                    - generic [ref=f20e109]:
+                      - generic [ref=f20e114]: ◆
+                      - generic [ref=f20e121]: 立即預訂
+                    - generic [ref=f20e124]:
+                      - generic [ref=f20e126]: Mystays 上野東酒店
+                      - generic [ref=f20e129]: NT$ 2 994
+                - link "◆ 立即預訂 新宿華盛頓酒店 NT$ 8 118" [ref=f20e132]:
+                  - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=fuBdqwDzbLt4wyJkHvnxvM5JCku5l-Z5WFbMEmT8sI9aQDEDB3kuSW5qgYf3gmhaxxqU5mV1otuqlgdaiR4Ca9dPgsVxcO6i2UyFDnqG_IJmDp_1oHq6t31WJ2-obXM7kHvARccQJwSUV_dttwTjG52RAY7v0-fVWxWjLkfxJWkKXgoE1QCVO7WwBRGy5eSvvVRb1pDqQybLFJGMJZ5jBBtLpyvbsFOi29mQ4of1cC6vemaWCfHqJKxKviVZoBmuBCtnrHZMKf8dsi_0Dv3O62WUekH1jZRx3PmjpmZwMsfpdX603fuMZPyKFbTavj7ejdGGRGMeak5qhaRxMvMK3XmpUHv4qEXA7vLTAD4Kogo0hPf7TUvRIh0Am9mbVO2Egh5NK-Ks3scpAmQEh1CZJLUrWzPaHWHbc2F37NG-QYiWCn4zNFDmFqiESp8CMenA-8wa4ujXmAQ2eIVoLMHfcplHg5glrqvQMVR0SdSqWUdJs8DY_FmQxHPF-6x0LBRXF8qQjYMXgjyGZavawdVe7HWeeee99LOa2hoYf4yoP0-awhgUYSzWuCDj0q6xY1IzKaFLO_YKuTJHOsQ44OkfO4wTnKpG0oMQupzKgR-gKiLRh7O0H0426C_twypd_vPwcUoSLHiw61vmMuuLR5wXkdLLlz3Hff71LafjKONsutgY9r7WKHpVdxt-6YJxD90m4A_24A&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fshinjuku-washington-hotel.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-238525%26utm_medium%3Dexchange%26label%3Dhotel-238525_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DUah-VD8rAAA8lLM7Wkcq_g
+                  - generic [ref=f20e133]:
+                    - generic [ref=f20e144]:
+                      - generic [ref=f20e149]: ◆
+                      - generic [ref=f20e156]: 立即預訂
+                    - generic [ref=f20e159]:
+                      - generic [ref=f20e161]: 新宿華盛頓酒店
+                      - generic [ref=f20e164]: NT$ 8 118
+                - link "◆ 立即預訂 Jr-East Hotel Mets Koenji NT$ 5 522" [ref=f20e167]:
+                  - /url: https://cat.sg1.as.criteo.com/delivery/ck.php?cppv=3&cpp=iePO6ADzbLt4wyJkHvnxvM5JCku5l-Z5WFbMEmT8sI9aQDEDB3kuSW5qgYf3gmhaxxqU5mV1otuqlgdaiR4Ca9dPgsVxcO6i2UyFDnqG_IJmDp_1oHq6t31WJ2-obXM7kHvARccQJwSUV_dttwTjG52RAY7v0-fVWxWjLkfxJWkKXgoEa8vAT7ZnKWoh5D4YnhGwnrn58m0QaRoET3WZBAupFctqFWWfyI7FCn6KFaCJzCdPf1cBbZROsBKjT_2E3zMmKsshii1JKZVfEBO_Eqrz0BkstpwXtB9fIVvqTw37R1AEQSbXZ1LftRkfFxnb5RFL1bhgfVS5ShvGoM2aNriVVGacgW-XPRNO21mhVyz9dMwwS07HYjtOdQvqQA4oqv8PFBnbxkBkts3pBINXAV5cTIo5BPLr6Yy511bkMoq5ApNYXDP5F6sKfiOjCCkT8RsPEzbR_xca38yDjZPLUqODtXrQfwlTWpFrHNCtHv0RPlYOST15sn3VEpc2dJUiaABQRO8-1B1RH48BKfwRlxWZkmdM991QmAB5oFg352e1tUcj_pLPgk5T2LHVFsKckA5xuo7XayLzu-woSZb4rfx6Zut062xdnptINqJTVfKvBFXhrC-vbdAF7fB8xgoCeD-Yea0YtzBJGCae-iroFF60JlaoaW6TKYJAZ_xWKbrjE1Z8od-9X-3tR0ZGOE5zWedXjg&maxdest=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Fjr-east-mets-koenji.html%3Futm_medium%3DSPPC%26utm_term%3Dhotel-9045026%26utm_medium%3Dexchange%26label%3Dhotel-9045026_bcwid-415842%26aid%3D2404074%26utm_source%3Ddisplay-retargeting-criteo%26affiliate_id%3D2404074%26checkin%3D2026-06-25%26checkout%3D2026-06-28%26utm_id%3D415842%26cto_pld%3DShnEBT8rAADeoSUecuXSMQ
+                  - generic [ref=f20e168]:
+                    - generic [ref=f20e179]:
+                      - generic [ref=f20e184]: ◆
+                      - generic [ref=f20e191]: 立即預訂
+                    - generic [ref=f20e194]:
+                      - generic [ref=f20e196]: Jr-East Hotel Mets Koenji
+                      - generic [ref=f20e199]: NT$ 5 522
+  - dialog "Unlock more content" [active] [ref=e228]:
+    - button "Close" [ref=e229] [cursor=pointer]:
+      - img [ref=e233]
+    - generic [ref=e238]:
+      - paragraph [ref=e240]: Welcome to programming-helper.com
+      - generic [ref=e241]:
+        - heading "Unlock more content" [level=1] [ref=e242]
+        - paragraph [ref=e244]: Take action to continue accessing the content on this site
+      - button "View a short ad Site-wide access for 24 hours" [ref=e246] [cursor=pointer]:
+        - generic [ref=e247]:
+          - generic [ref=e248]: View a short ad
+          - generic [ref=e250]: Site-wide access for 24 hours
+        - img [ref=e253]
