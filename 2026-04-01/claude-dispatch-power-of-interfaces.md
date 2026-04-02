@@ -5,9 +5,12 @@ date: 2026-04-01
 author: Ethan Mollick
 layout: post
 permalink: /2026-04-01/claude-dispatch-power-of-interfaces.html
+image: /2026-04-01/og-claude-dispatch-power-of-interfaces.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-01</div>
+
+![](/2026-04-01/og-claude-dispatch-power-of-interfaces.png)
 
 **原文連結：** [Claude Dispatch and the Power of Interfaces](https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of)
 
