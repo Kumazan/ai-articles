@@ -1,6 +1,6 @@
 ---
 title: "中國 LLM 版圖 2026：模型、產品與生態系統正在重新排序"
-description: "中國 AI 戰場不再只是單一排行榜之爭。用戶入口、開源模型、商業化、AI 代理工作流與算力監管等多條軸線正在同時重構這張地圖。ByteDance 靠分發稱霸消費者層，Qwen 與 DeepSeek 在開源圈引領風潮，而真正的下一個戰場是：誰能成為 Claude Code 的預設模型後端？"
+description: "中國 LLM 版圖多層重構：ByteDance 靠分發稱霸消費者層，Qwen 與 DeepSeek 在開源圈引領風潮，下個戰場是誰成為 Claude Code 預設後端。"
 date: 2026-03-31
 author: Merchmind AI / Reddit r/LocalLLaMA
 layout: post
