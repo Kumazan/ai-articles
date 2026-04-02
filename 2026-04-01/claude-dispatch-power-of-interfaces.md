@@ -1,6 +1,6 @@
 ---
 title: "Claude Dispatch 與介面的力量：AI 的瓶頸從來不是模型"
-description: "Ethan Mollick 指出 AI 的真正瓶頸不在模型能力，而在於介面設計。聊天機器人造成認知負擔，Claude Cowork + Dispatch 讓你從手機遙控桌面 AI 代理，而未來的終局或許是 AI 按需動態生成介面。"
+description: "Ethan Mollick 指出 AI 的瓶頸在介面而非模型。聊天機器人造成認知負擔，Claude Cowork + Dispatch 代表新的代理介面方向。"
 date: 2026-04-01
 author: Ethan Mollick
 layout: post
