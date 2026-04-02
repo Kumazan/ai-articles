@@ -14,6 +14,14 @@ title: AI News & Articles
 
 ## 文章列表
 
+<div class="date-section">
+<h3>2026-04-03</h3>
+<div class="article-group" data-title="微軟發佈三款 mai 多模態模型：看、聽、說一站式解決方案" data-desc="微軟正式推出 mai-transcribe-1、mai-voice-1 與 mai-image-2 三款模型，專攻語音轉文字、文字轉語音及圖像生成，主打企業級精準度與極高成本效益，全面佈局多模態 ai 應用生態。">
+  <h4>・ <a href="/ai-articles/2026-04-03/microsoft-mai-multimedia-models.html">微軟發佈三款 MAI 多模態模型：看、聽、說一站式解決方案</a></h4>
+  <p class="article-desc">微軟正式推出 MAI-Transcribe-1、MAI-Voice-1 與 MAI-Image-2 三款模型，專攻語音轉文字、文字轉語音及圖像生成，主打企業級精準度與極高成本效益，全面佈局多模態 AI 應用生態。</p>
+</div>
+</div>
+
 {% assign post_articles = site.pages | where: "layout", "post" %}
 {% assign raw_articles = site.pages | where: "layout", "raw" %}
 {% assign articles = post_articles | concat: raw_articles | sort: "url" | reverse %}
