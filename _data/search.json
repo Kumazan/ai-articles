@@ -1,0 +1,17 @@
+---
+---
+{%- assign post_articles = site.pages | where: "layout", "post" -%}
+{%- assign raw_articles = site.pages | where: "layout", "raw" -%}
+{%- assign articles = post_articles | concat: raw_articles -%}
+[
+  {%- for article in articles -%}
+  {%- if article.title and article.url -%}
+  {
+    "title": {{ article.title | jsonify }},
+    "description": {{ article.description | jsonify | default: '""' }},
+    "url": {{ article.url | jsonify }},
+    "date": {{ article.date | date: "%Y-%m-%d" | jsonify | default: '""' }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+  {%- endif -%}
+  {%- endfor -%}
+]

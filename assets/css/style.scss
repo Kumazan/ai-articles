@@ -312,3 +312,63 @@ pre {
     display: none;
   }
 }
+
+/* ---------- Search box ---------- */
+.search-wrap {
+  position: relative;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px 40px 10px 16px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--fg);
+  background: rgba(255,255,255,0.7);
+  border: 1px solid var(--faint);
+  border-radius: 999px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  -webkit-appearance: none;
+}
+
+#search-input::placeholder {
+  color: var(--muted);
+}
+
+#search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(196,75,43,0.12);
+}
+
+#search-clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--muted);
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+  display: none;
+}
+
+#search-clear.visible {
+  display: block;
+}
+
+#search-clear:hover {
+  color: var(--accent);
+}
+
+.search-empty {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+}
