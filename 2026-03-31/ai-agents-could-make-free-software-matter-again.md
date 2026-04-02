@@ -5,9 +5,12 @@ author: George London
 layout: post
 permalink: /2026-03-31/ai-agents-could-make-free-software-matter-again.html
 description: "George London 主張，AI coding agent 正把自由軟體從程式人的抽象權利，變成一般使用者也能實際行使的客製化能力。"
+image: /ai-articles/2026-03-31/og-ai-agents-could-make-free-software-matter-again.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-31</div>
+
+![](/ai-articles/2026-03-31/og-ai-agents-could-make-free-software-matter-again.png)
 
 **原文連結：** [AI Agents Could Make Free Software Matter Again](https://www.gjlondon.com/blog/ai-agents-could-make-free-software-matter-again/)
 
