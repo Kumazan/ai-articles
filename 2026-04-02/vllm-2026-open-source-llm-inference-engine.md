@@ -10,6 +10,8 @@ permalink: /2026-04-02/vllm-2026-open-source-llm-inference-engine.html
 
 <div class="hero-badge">Programming Helper · 2026-04-02</div>
 
+![](/2026-04-02/og-vllm-2026-open-source-llm-inference-engine.png)
+
 **原文連結：** [vLLM 2026: The Open Source LLM Inference Engine Powering Production AI at Scale](https://www.programming-helper.com/tech/vllm-2026-open-source-llm-inference-engine)
 
 ## 摘要
