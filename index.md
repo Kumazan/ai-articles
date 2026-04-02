@@ -18,7 +18,7 @@ title: AI News & Articles
 ### {{ url_date }}
 {% assign prev_url_date = url_date %}
 {% endif %}
-#### ・ [{{ article.title }}]({{ article.url }})
+#### ・ [{{ article.title }}]({{ site.baseurl }}{{ article.url }})
 {% if article.description %}<p class="article-desc">{{ article.description }}</p>{% endif %}
 
 {% endfor %}
