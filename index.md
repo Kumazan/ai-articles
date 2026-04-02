@@ -24,9 +24,9 @@ title: AI News & Articles
 ### {{ url_date }}
 {% assign prev_url_date = url_date %}
 {% endif %}
-<div class="article-entry" data-title="{{ article.title | downcase | escape }}" data-desc="{{ article.description | downcase | escape | default: '' }}">
-#### ・ [{{ article.title }}]({{ site.baseurl }}{{ article.url }})
-{% if article.description %}<p class="article-desc">{{ article.description }}</p>{% endif %}
+<div class="article-group">
+  <h4 class="article-title" data-title="{{ article.title | downcase | escape }}" data-desc="{{ article.description | downcase | escape | default: '' }}">・ <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></h4>
+  {% if article.description %}<p class="article-desc">{{ article.description }}</p>{% endif %}
 </div>
 {% endfor %}
 
@@ -35,7 +35,6 @@ title: AI News & Articles
   var input = document.getElementById('search-input');
   var clearBtn = document.getElementById('search-clear');
   var emptyMsg = document.getElementById('search-empty');
-  var entries = document.querySelectorAll('.article-entry');
 
   function normalize(str) {
     return (str || '').toLowerCase();
@@ -43,43 +42,20 @@ title: AI News & Articles
 
   function filter() {
     var q = normalize(input.value.trim());
+    var groups = document.querySelectorAll('.article-group');
     var visible = 0;
-    var prevDate = null;
 
-    entries.forEach(function(entry) {
-      var title = entry.getAttribute('data-title') || '';
-      var desc = entry.getAttribute('data-desc') || '';
+    groups.forEach(function(group) {
+      var h4 = group.querySelector('.article-title');
+      if (!h4) return;
+      var title = h4.getAttribute('data-title') || '';
+      var desc = h4.getAttribute('data-desc') || '';
       var match = !q || title.includes(q) || desc.includes(q);
-      entry.style.display = match ? '' : 'none';
-      if (match) {
-        visible++;
-        // Show the date heading just before this entry
-        var prevSibling = entry.previousElementSibling;
-        while (prevSibling) {
-          if (prevSibling.tagName === 'H3') {
-            prevSibling.style.display = '';
-            break;
-          }
-          prevSibling = prevSibling.previousElementSibling;
-        }
-      }
+      group.style.display = match ? '' : 'none';
+      if (match) visible++;
     });
 
-    emptyMsg.style.display = visible === 0 && q ? '' : 'none';
-
-    // Hide date headings with no visible articles below them
-    document.querySelectorAll('h3').forEach(function(h) {
-      var next = h.nextElementSibling;
-      var hasVisible = false;
-      while (next) {
-        if (next.classList && next.classList.contains('article-entry')) {
-          if (next.style.display !== 'none') { hasVisible = true; break; }
-        }
-        if (next.tagName === 'H3') break;
-        next = next.nextElementSibling;
-      }
-      h.style.display = hasVisible || !q ? '' : 'none';
-    });
+    emptyMsg.style.display = (visible === 0 && q) ? '' : 'none';
   }
 
   input.addEventListener('input', function() {
@@ -94,7 +70,6 @@ title: AI News & Articles
     filter();
   });
 
-  // Initialize on page load
   filter();
 })();
 </script>
