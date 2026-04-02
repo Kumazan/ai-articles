@@ -1,6 +1,6 @@
 ---
 title: "Anthropic 史上最大規模資料外洩：待發布的 Claude Mythos 完整曝光，Capybara 新 tier 確認存在"
-description: "Anthropic 因 CMS 設定錯誤，意外暴露近 3,000 份內部文件，包括尚未發布的 Claude Mythos 模型 draft blog post。官方已證實正在測試，並形容這是「step change」與公司史上最強模型。新 tier Capybara 將居於 Opus 之上，瞄準網路安全與高效能推理市場。"
+description: "Anthropic CMS 設定錯誤，意外暴露近 3,000 份內部文件。新 tier Capybara 將居於 Opus 之上，被形容為「step change」與公司史上最強。"
 date: 2026-03-31
 author: The Decoder
 layout: post
@@ -8,7 +8,7 @@ permalink: /2026-03-31/anthropic-claude-mythos-capybara-leak.html
 image: /ai-articles/2026-03-31/og-anthropic-claude-mythos-capybara-leak.png
 ---
 
-<div class="hero-badge">獨家新聞 · 2026-03-27</div>
+<div class="hero-badge">AI News · 2026-03-31</div>
 
 ![](/ai-articles/2026-03-31/og-anthropic-claude-mythos-capybara-leak.png)
 
