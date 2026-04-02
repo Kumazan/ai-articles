@@ -5,9 +5,12 @@ date: 2026-03-31
 author: OpenAI Developers / Perplexity
 layout: post
 permalink: /2026-03-31/perplexity-realtime-voice-agent-lessons.html
+image: /ai-articles/2026-03-31/og-perplexity-realtime-voice-agent-lessons.png
 ---
 
 <div class="hero-badge">Voice Agents · 2026-03-31</div>
+
+![](/ai-articles/2026-03-31/og-perplexity-realtime-voice-agent-lessons.png)
 
 **原文連結：** [https://developers.openai.com/blog/realtime-perplexity-computer](https://developers.openai.com/blog/realtime-perplexity-computer)
 
