@@ -14,7 +14,9 @@
       "Bash(sed*)",
       "Bash(cd\nFix:\n\nCo-Authored-By:\nEOF\n\\)\"*)",
       "Bash(echo*)",
-      "Edit(*)"
+      "Edit(*)",
+      "Bash(for\n\ndone*)",
+      "Bash(git*)"
     ]
   }
 }
