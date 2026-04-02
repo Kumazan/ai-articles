@@ -1,6 +1,6 @@
 ---
 title: "2026 年 3 月 LLM 版圖回顧：GPT-5.4 並列第一，但真正的故事在別處"
-description: "2026 年 3 月九款新模型發布，七款開源，GPT-5.4 與 Gemini 3.1 Pro 並列榜首，MoE 架構主導性更明顯，Mistral Small 4 以 6.5B 活躍參數展現極致效率。"
+description: "2026 年 3 月 LLM 版圖：GPT-5.4 並列榜首，MoE 架構成主流，Mistral Small 4 以 6.5B 活躍參數展現效率。"
 date: 2026-03-31
 author: Dylan Bristot / What LLM
 layout: post
