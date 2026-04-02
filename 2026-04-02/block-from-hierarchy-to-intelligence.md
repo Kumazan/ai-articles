@@ -5,7 +5,7 @@ date: 2026-04-02
 author: Jack Dorsey & Roelof Botha (Sequoia Capital)
 permalink: /2026-04-02/block-from-hierarchy-to-intelligence.html
 image: /2026-04-02/og-block-from-hierarchy-to-intelligence.png
-description: Jack Dorsey 與 Sequoia Capital 的 Roelof Botha 聯名發文，主張 AI 已能取代企業階層的核心功能——資訊路由。Block 裁員 4000 人後，提出以「公司世界模型」與「客戶世界模型」取代中層管理，重新定義未來組織設計。
+description: Jack Dorsey 與 Sequoia 聯名主張 AI 取代資訊路由。Block 裁員 4000 人，以「世界模型」取代中層管理，重寫組織運作邏輯。
 ---
 
 <div class="hero-badge">📖 Sequoia Capital · 2026-03-31</div>
