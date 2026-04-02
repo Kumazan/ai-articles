@@ -74,6 +74,7 @@ Source: user message 2026-02-09.
 - pokopia-zh：寶可夢 Pokopia 中文整理站，private repo + Cloudflare Pages，方向 `play.kumax.dev/pokopia`，主色百變怪紫。翻譯基準：wiki.52poke.com；專長官方用語已確認為「專長」（共 17 種）；進化機制無練等，棲息地直接招募。 (Updated 2026-03-14)
 - 搖滾路跑 肌肉組（HYROX）備賽：4/18 比賽，訓練細節 → Obsidian `Projects/搖滾路跑肌肉組.md`
 - Bangkok 曼谷之旅（3/18–3/24）：已完成，詳情 → Obsidian `Projects/2026 曼谷慶生之旅/`
+- 鎌倉繡球花一日遊（6/20）：定版為早上長谷寺 75 分、鎌倉大佛 20 分、下午茶後進江之島，回程抓 19:39 片瀬江ノ島發的 `えのしま6号` 浪漫特快；已產出 HackMD 分享連結。 (Set 2026-04-02)
 
 ## Web / CSS Lessons
 
