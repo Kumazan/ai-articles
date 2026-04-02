@@ -10,6 +10,8 @@
 
 #### ・ [長時間運行應用開發的 Harness 設計](./2026-04-02/harness-design-long-running-apps.html)
 
+#### ・ [微軟 Copilot 引入多 AI 協作：GPT 與 Claude 相互驗證，向「合議制」進化](./2026-04-02/microsoft-copilot-multi-ai-critique.html)
+
 ### 2026-04-01
 
 #### ・ [OpenAI 完成史上最大規模融資：1220 億美元、估值 8520 億，IPO 前的最後衝刺](./2026-04-01/openai-122b-funding-round.html)
