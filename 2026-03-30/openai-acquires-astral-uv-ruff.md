@@ -5,9 +5,12 @@ author: OpenAI
 description: "OpenAI 收購 Astral，將 uv、Ruff、ty 等 Python 開源工具整合進 Codex 生態，顯示 AI 開發賽道從寫程式走向管理整個工具鏈。"
 layout: post
 permalink: /2026-03-30/openai-acquires-astral-uv-ruff.html
+image: /ai-articles/2026-03-30/og-openai-acquires-astral-uv-ruff.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>
+
+![](/ai-articles/2026-03-30/og-openai-acquires-astral-uv-ruff.png)
 
 **原文連結：** [OpenAI to acquire Astral](https://openai.com/index/openai-to-acquire-astral/)
 
