@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "微軟發佈三款 MAI 多模態模型：看、聽、說一站式解決方案"
-description: "微軟正式推出 MAI-Transcribe-1、MAI-Voice-1 與 MAI-Image-2 三款模型，專攻語音轉文字、文字轉語音及圖像生成，主打企業級精準度與極高成本效益，全面佈局多模態 AI 應用生態。"
+description: "微軟推出 MAI-Transcribe-1、MAI-Voice-1、MAI-Image-2 三款模型，主打語音辨識、語音生成與圖像生成，瞄準企業級市場。"
 author: "Naomi Moneypenny (Microsoft)"
 date: 2026-04-03
 image: "/ai-articles/2026-04-03/og-microsoft-mai-multimedia-models.png"
 ---
 
-<div class="hero-badge">2026-04-03</div>
+<div class="hero-badge">AI News · 2026-04-03</div>
 
 ![](/ai-articles/2026-04-03/og-microsoft-mai-multimedia-models.png)
 
@@ -25,11 +25,11 @@ image: "/ai-articles/2026-04-03/og-microsoft-mai-multimedia-models.png"
 
 自成立以來，微軟 Foundry 的目標一直是提供最完整的 AI 與應用智能體工廠；讓開發者能夠存取最新的前沿模型、工具、基礎架構、安全性與可靠性，從而自信地構建與擴展其 AI 解決方案。
 
-今天，我們朝著這一願景邁出了另一步，宣佈在 Microsoft Foundry 中公開預覽微軟 AI 的三款新模型：
+今天，微軟朝著這一願景邁出了另一步，宣佈在 Microsoft Foundry 中公開預覽微軟 AI 的三款新模型：
 
-- **MAI-Transcribe-1**：我們的第一代語音辨識模型，支援 25 種語言，提供企業級精準度，且 GPU 成本比領先的替代方案低約 50%。
+- **MAI-Transcribe-1**：微軟的第一代語音辨識模型，支援 25 種語言，提供企業級精準度，且 GPU 成本比領先的替代方案低約 50%。
 - **MAI-Voice-1**：高保真語音生成模型，能夠在單個 GPU 上於不到一秒內產生 60 秒的具表現力音訊。
-- **MAI-Image-2**：我們最強大的文字轉圖像模型，在 Arena.ai 圖像模型家族排行榜上首次亮相即位居第三。
+- **MAI-Image-2**：微軟最強大的文字轉圖像模型，在 Arena.ai 圖像模型家族排行榜上首次亮相即位居第三。
 
 這些模型與目前支援 Copilot、Bing、PowerPoint 和 Azure Speech 的模型相同，現在專供 Foundry 開發者使用。
 
