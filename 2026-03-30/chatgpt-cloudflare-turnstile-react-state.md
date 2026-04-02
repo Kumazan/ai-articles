@@ -5,9 +5,12 @@ date: 2026-03-30
 author: buchodi
 layout: post
 permalink: /2026-03-30/chatgpt-cloudflare-turnstile-react-state.html
+image: /ai-articles/2026-03-30/og-chatgpt-cloudflare-turnstile-react-state.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>
+
+![](/ai-articles/2026-03-30/og-chatgpt-cloudflare-turnstile-react-state.png)
 
 **原文連結：** [ChatGPT Won't Let You Type Until Cloudflare Reads Your React State. I Decrypted the Program That Does It.](https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/)
 
