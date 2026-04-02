@@ -14,7 +14,7 @@ permalink: /2026-03-31/anthropic-claude-mythos-capybara-leak.html
 ## 摘要
 
 - Anthropic 因 CMS 設定錯誤，意外將近 3,000 份內部文件暴露在公開可搜尋的資料庫中，包括一份尚未發布的 draft blog post，詳細介紹了名為「Claude Mythos」的新模型。
-- Anthropic 已向 Fortune 證實正在測試這個新模型，並以「step change」與「公司史上最強」來形容其能力 advance in reasoning, coding, and cybersecurity。
+- Anthropic 已向 Fortune 證實正在測試這個新模型，並以「step change」與「公司史上最強」來形容其在推理、coding 與網路安全方面的能力。
 - 新模型將屬於一個名為「Capybara」的全新 tier，位於現有 Opus 之上。這是 Claude 家族首次引入比 Opus 更高的產品定位。
 - 洩露文件顯示，Capybara 在軟體 coding、學術推理與網路安全測試中的得分都「遠高於」Claude Opus 4.6，尤其網路安全能力被形容為「目前所有 AI 模型之冠」。
 - Anthropic 坦言這個模型「對我們來說成本極高，對客戶來說也會非常昂貴」，因此採取比以往更謹慎的階段性發布策略，首波僅提供給早期 access 客戶做網路安全應用評估。
