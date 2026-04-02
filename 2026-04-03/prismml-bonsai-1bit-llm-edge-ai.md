@@ -4,6 +4,8 @@ date: 2026-04-03
 author: Jon Markman (Forbes)
 image: /2026-04-03/og-prismml-bonsai-1bit-llm-edge-ai.jpg
 description: "加州理工學院數學家團隊 PrismML 推出 Bonsai 8B 模型，透過極致壓縮將 8.2 億參數模型縮小 14 倍，僅需 1.15GB 記憶體即可在 iPhone 上高速運行。這項突破性進展預示著邊緣 AI 時代的到來，且根據「傑文斯悖論」，模型效率提升將帶動更大規模的算力基礎設施需求。"
+layout: post
+permalink: /2026-04-03/prismml-bonsai-1bit-llm-edge-ai.html
 ---
 
 <div class="hero-badge">深度分析</div>
