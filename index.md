@@ -6,6 +6,8 @@
 
 ### 2026-04-02
 
+#### ・ [Claude Code 原始碼外洩事件詳解：Anthropic 犯了什麼錯？程式碼裡藏了什麼秘密？](./2026-04-02/claude-code-source-leak-deep-dive.html)
+
 #### ・ [2026 年 Claude Code 原始碼大外洩：意外、失控、還是 AI 史上最成功的公關操作？](./2026-04-02/claude-code-source-leak-2026.html)
 
 #### ・ [長時間運行應用開發的 Harness 設計](./2026-04-02/harness-design-long-running-apps.html)
