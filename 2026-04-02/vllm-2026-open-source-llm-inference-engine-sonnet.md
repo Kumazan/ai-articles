@@ -1,6 +1,6 @@
 ---
 title: "vLLM 2026：驅動生產級 AI 大規模部署的開源 LLM 推論引擎"
-description: "vLLM 從 UC Berkeley 的研究項目演進為生產級 LLM 推論的核心骨幹，憑藉 PagedAttention 技術突破記憶體瓶頸，2026 年 3 月更推出 Model Runner V2 架構，吞吐量提升 56%，已成為全球最廣泛採用的開源推論框架，GitHub 累計超過 74,900 顆星。"
+description: "vLLM 以 PagedAttention 突破記憶體瓶頸，Model Runner V2 吞吐量提升 56%，成為開源 LLM 推論標準框架。"
 date: 2026-04-02
 author: Sarah Chen
 layout: post
