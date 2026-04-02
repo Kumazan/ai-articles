@@ -8,7 +8,7 @@ layout: post
 permalink: /2026-04-02/microsoft-copilot-multi-ai-critique.html
 ---
 
-<div class="hero-badge">📰 AI 文章翻譯</div>
+<div class="hero-badge">AI News · 2026-04-02</div>
 
 **原文連結：**[微軟、Copilotで複数AI連携を実装　GPTとClaudeが相互検証へ進化（Plus Web3）](https://plus-web3.com/media/latestnews_1000_8381/)
 
@@ -22,8 +22,6 @@ permalink: /2026-04-02/microsoft-copilot-multi-ai-critique.html
 - 功能以「Frontier」先行用戶計畫逐步推廣，象徵生成 AI 從單體性能競賽進入**協調設計**的新階段
 
 <div class="sep">· · ·</div>
-
-完整翻譯
 
 ## Copilot 的多 AI 相互驗證功能
 
