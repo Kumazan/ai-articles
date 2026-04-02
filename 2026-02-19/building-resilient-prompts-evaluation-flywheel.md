@@ -5,9 +5,12 @@ author: OpenAI Cookbook
 description: "OpenAI Cookbook 提出 Evaluation Flywheel 方法：透過分析、量測、改進的迭代循環，系統化打造穩健的 prompt。"
 layout: post
 permalink: /2026-02-19/building-resilient-prompts-evaluation-flywheel.html
+image: /ai-articles/2026-02-19/og-building-resilient-prompts-evaluation-flywheel.png
 ---
 
 <div class="hero-badge">OpenAI Cookbook · 2026-02-19</div>
+
+![](/ai-articles/2026-02-19/og-building-resilient-prompts-evaluation-flywheel.png)
 
 **原文連結：** [OpenAI Cookbook（Building resilient prompts using an evaluation flywheel）](https://developers.openai.com/cookbook/examples/evaluation/building_resilient_prompts_using_an_evaluation_flywheel)
 
