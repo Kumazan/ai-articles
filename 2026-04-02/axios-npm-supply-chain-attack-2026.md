@@ -100,3 +100,13 @@ npm uninstall axios && npm install axios@1.14.0  # 或 1.13.x
 **若使用 Socket、Dependabot、Snyk 等工具，已自動封鎖惡意版本。**
 
 **長期解法：** Axios 官方正在評估 Trusted Publishing，讓 npm 發布權完全綁定 GitHub Actions，移除人為持有 long-lived token 的風險。
+
+<div class="sep">· · ·</div>
+
+## 延伸評論：npm 生態的信任危機，才剛開始
+
+Axios 不是孤例。LiteLLM、Telnyx SDK、Trivy——過去一個月，光是 Socket 公告過的重大供應鏈事件就足以讓任何理智的開發者暫停所有非必要的 `npm install`。問題的結構性根源在於：npm 的「只要你拿到 token 就能發布」模式，與 GitHub 對「所有 commit 必須來自 Actions」的 Trusted Publishing 相比，幾乎是把金庫鑰匙放在每個開發者的口袋裡。
+
+短期解法是依賴像 Socket 這類自動化工具做即時封鎖；但長期而言，整個生態需要的不是更多掃描器，而是一次根本性的信任模型重構——PyPI 已經邁出第一步，npm 的落後不只是技術問題，更是激勵結構的問題：平台從數十億次週下載中獲利，卻把安全責任外包給社群。
+
+對於使用 AI 工具自動建構、測試、發布流程的團隊而言，這次事件敲響了另一記警鐘：當你的 CI/CD pipeline 能在幾分鐘內完成「程式碼 commit → 套件發布」的全鏈路，惡意行為者同樣享有這個速度優勢。AI 在加速開發的同時，也在加速病毒傳播。
