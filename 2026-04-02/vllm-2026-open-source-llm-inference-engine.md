@@ -1,6 +1,6 @@
 ---
 title: "vLLM 2026：成為生產級 AI 推理引擎支柱的開源歷程"
-description: "vLLM 從 UC Berkeley 研究專案發展成开源部署標準，74.9K stars，24 倍吞吐量領先 HuggingFace，MRV2 帶來 56% 吞吐量提升。"
+description: "vLLM 從 UC Berkeley 研究專案發展成開源部署標準，74.9K stars，24 倍吞吐量領先 HuggingFace，MRV2 帶來 56% 吞吐量提升。"
 date: 2026-04-02
 author: Sarah Chen
 layout: post
