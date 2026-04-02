@@ -1,6 +1,6 @@
 ---
 title: "Copilot 悄悄在你的 PR 裡塞廣告：AI 工具的「腐化」時刻到了嗎？"
-description: "GitHub Copilot 被發現在用戶的 Pull Request 描述裡自動插入 Raycast 的廣告文字，引爆 Hacker News 470 則留言討論。微軟 Copilot 工程師承認這是錯誤判斷，已緊急停用，但事件讓開發者圈重新審視 AI 工具的「腐化曲線」與信任邊界。"
+description: "Copilot 被發現自動在用戶 PR 插入 Raycast 廣告，引爆 HN 討論。微軟緊急停用，但 AI 工具「腐化曲線」爭議持續。"
 date: 2026-03-30
 author: Zach Manson
 layout: post

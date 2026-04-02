@@ -18,7 +18,8 @@
       "Bash(for\n\ndone*)",
       "Bash(git*)",
       "Bash(for\n\n\ndone*)",
-      "Bash(find*)"
+      "Bash(find*)",
+      "Bash(python3\nimport\nwith\n\n\n#\nsimplified_only_chars*)"
     ]
   }
 }
