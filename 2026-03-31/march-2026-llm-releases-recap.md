@@ -5,9 +5,12 @@ date: 2026-03-31
 author: Dylan Bristot / What LLM
 layout: post
 permalink: /2026-03-31/march-2026-llm-releases-recap.html
+image: /ai-articles/2026-03-31/og-march-2026-llm-releases-recap.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-31</div>
+
+![](/ai-articles/2026-03-31/og-march-2026-llm-releases-recap.png)
 
 **原文連結：** [https://whatllm.org/blog/llm-releases-march-2026](https://whatllm.org/blog/llm-releases-march-2026)
 
