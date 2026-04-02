@@ -17,18 +17,25 @@ title: AI News & Articles
 {% assign post_articles = site.pages | where: "layout", "post" %}
 {% assign raw_articles = site.pages | where: "layout", "raw" %}
 {% assign articles = post_articles | concat: raw_articles | sort: "url" | reverse %}
-{% assign prev_url_date = "" %}
+{% assign prev_url_date = nil %}
 {% for article in articles %}
 {% assign url_date = article.url | slice: 1, 10 %}
-{% if url_date != prev_url_date %}
-### {{ url_date }}
-{% assign prev_url_date = url_date %}
+{% if prev_url_date == nil %}
+<div class="date-section">
+<h3>{{ url_date }}</h3>
+{% elsif url_date != prev_url_date %}
+</div>
+<div class="date-section">
+<h3>{{ url_date }}</h3>
 {% endif %}
-<div class="article-group">
-  <h4 class="article-title" data-title="{{ article.title | downcase | escape }}" data-desc="{{ article.description | downcase | escape | default: '' }}">・ <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></h4>
+<div class="article-group" data-title="{{ article.title | downcase | escape }}" data-desc="{{ article.description | downcase | escape | default: '' }}">
+  <h4>・ <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></h4>
   {% if article.description %}<p class="article-desc">{{ article.description }}</p>{% endif %}
 </div>
+{% assign prev_url_date = url_date %}
 {% endfor %}
+{% if prev_url_date != nil %}</div>
+{% endif %}
 
 <script>
 (function() {
@@ -42,20 +49,26 @@ title: AI News & Articles
 
   function filter() {
     var q = normalize(input.value.trim());
-    var groups = document.querySelectorAll('.article-group');
-    var visible = 0;
+    var sections = document.querySelectorAll('.date-section');
+    var totalVisible = 0;
 
-    groups.forEach(function(group) {
-      var h4 = group.querySelector('.article-title');
-      if (!h4) return;
-      var title = h4.getAttribute('data-title') || '';
-      var desc = h4.getAttribute('data-desc') || '';
-      var match = !q || title.includes(q) || desc.includes(q);
-      group.style.display = match ? '' : 'none';
-      if (match) visible++;
+    sections.forEach(function(section) {
+      var groups = section.querySelectorAll('.article-group');
+      var sectionVisible = 0;
+
+      groups.forEach(function(group) {
+        var title = group.getAttribute('data-title') || '';
+        var desc = group.getAttribute('data-desc') || '';
+        var match = !q || title.includes(q) || desc.includes(q);
+        group.style.display = match ? '' : 'none';
+        if (match) sectionVisible++;
+      });
+
+      section.style.display = (q && sectionVisible === 0) ? 'none' : '';
+      totalVisible += sectionVisible;
     });
 
-    emptyMsg.style.display = (visible === 0 && q) ? '' : 'none';
+    emptyMsg.style.display = (totalVisible === 0 && q) ? '' : 'none';
   }
 
   input.addEventListener('input', function() {
