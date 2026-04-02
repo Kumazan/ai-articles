@@ -1,6 +1,6 @@
 ---
 title: "長時間運行應用開發的 Harness 設計"
-description: "Anthropic Labs 工程師分享如何用 GAN 啟發的三代理架構（規劃器 + 生成器 + 評估器）突破 AI 自主編碼的兩大瓶頸：context 焦慮與自我評估膨脹，實現多小時無人介入的全端應用開發。"
+description: "Anthropic 工程師用 GAN 啟發的三代理架構突破 AI 編碼瓶頸：規劃器 + 生成器 + 評估器，實現多小時無人介入的全端開發。"
 date: 2026-04-02
 author: Prithvi Rajasekaran (Anthropic Labs)
 layout: post
