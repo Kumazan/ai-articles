@@ -5,7 +5,7 @@ date: 2026-03-31
 author: The Decoder
 layout: post
 permalink: /2026-03-31/anthropic-claude-mythos-capybara-leak.html
-image: /ai-articles/2026-03-31/og-anthropic-claude-mythos-capybara-leak.png
+image: /2026-03-31/og-anthropic-claude-mythos-capybara-leak.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-31</div>

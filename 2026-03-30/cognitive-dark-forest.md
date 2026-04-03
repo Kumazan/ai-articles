@@ -5,7 +5,7 @@ date: 2026-03-30
 author: Tomaž Kovačič (ryelang.org)
 layout: post
 permalink: /2026-03-30/cognitive-dark-forest.html
-image: /ai-articles/2026-03-30/og-cognitive-dark-forest.png
+image: /2026-03-30/og-cognitive-dark-forest.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>

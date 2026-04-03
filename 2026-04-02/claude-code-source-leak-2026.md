@@ -5,7 +5,7 @@ date: 2026-04-02
 author: varshithvhegde
 layout: post
 permalink: /2026-04-02/claude-code-source-leak-2026.html
-image: /ai-articles/2026-04-02/og-claude-code-source-leak-2026.png
+image: /2026-04-02/og-claude-code-source-leak-2026.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-02</div>

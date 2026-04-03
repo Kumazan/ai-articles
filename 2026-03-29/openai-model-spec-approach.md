@@ -5,7 +5,7 @@ author: OpenAI Research
 description: "深入解析 OpenAI Model Spec 的哲學與機制：指令鏈架構、不可覆寫紅線，以及與 Anthropic Constitution 的差異。"
 layout: post
 permalink: /2026-03-29/openai-model-spec-approach.html
-image: /ai-articles/2026-03-29/og-openai-model-spec-approach.png
+image: /2026-03-29/og-openai-model-spec-approach.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-29</div>

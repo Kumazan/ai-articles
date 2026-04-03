@@ -5,7 +5,7 @@ author: OpenAI Safety Team
 description: "OpenAI 用 GPT-5.4 驅動的即時監控系統，偵測內部 coding agent 的錯位行為，五個月內分析數千萬條軌跡。"
 layout: post
 permalink: /2026-03-29/openai-monitoring-coding-agents-misalignment.html
-image: /ai-articles/2026-03-29/og-openai-monitoring-coding-agents-misalignment.png
+image: /2026-03-29/og-openai-monitoring-coding-agents-misalignment.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-29</div>

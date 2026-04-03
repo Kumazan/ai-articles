@@ -5,7 +5,7 @@ date: 2026-03-30
 author: Zach Manson
 layout: post
 permalink: /2026-03-30/copilot-ad-in-pr.html
-image: /ai-articles/2026-03-30/og-copilot-ad-in-pr.png
+image: /2026-03-30/og-copilot-ad-in-pr.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>

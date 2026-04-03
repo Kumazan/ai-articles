@@ -5,7 +5,7 @@ date: 2026-04-02
 author: Jack Dorsey & Roelof Botha (Sequoia Capital)
 layout: post
 permalink: /2026-04-02/block-from-hierarchy-to-intelligence.html
-image: /ai-articles/2026-04-02/og-block-from-hierarchy-to-intelligence.png
+image: /2026-04-02/og-block-from-hierarchy-to-intelligence.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-02</div>

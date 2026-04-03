@@ -5,7 +5,7 @@ date: 2026-03-31
 author: Merchmind AI / Reddit r/LocalLLaMA
 layout: post
 permalink: /2026-03-31/china-llm-landscape-2026.html
-image: /ai-articles/2026-03-31/og-china-llm-landscape-2026.png
+image: /2026-03-31/og-china-llm-landscape-2026.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-31</div>

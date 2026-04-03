@@ -5,7 +5,7 @@ author: Boris Cherny / 寶玉整理
 layout: post
 permalink: /2026-03-31/claude-code-underrated-features-boris-cherny.html
 description: "Claude Code 創辦人 Boris Cherny 分享 15 個被低估的功能，涵蓋手機端、遠端接手、定時自動化、hooks、worktrees、batch 與語音編程。"
-image: /ai-articles/2026-03-31/og-claude-code-underrated-features-boris-cherny.png
+image: /2026-03-31/og-claude-code-underrated-features-boris-cherny.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-31</div>

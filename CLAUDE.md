@@ -44,7 +44,8 @@ permalink: /2026-03-29/slug.html
 ---
 ```
 
-- frontmatter `image` 欄位（`/YYYY-MM-DD/og-{slug}.png`）對應 head-custom.html 的 `page.image`，用於 OG/Twitter card 圖片
+- frontmatter `image` 欄位（`/YYYY-MM-DD/og-{slug}.png`）對應 head-custom.html 的 `page.image`，用於 OG/Twitter card 圖片。**不含 `/ai-articles/`**，因為 Liquid `absolute_url` 會自動補 baseurl
+- body 內的圖片路徑（`![](/ai-articles/YYYY-MM-DD/og-{slug}.png)`）**要含 `/ai-articles/`**，因為瀏覽器直接從 domain root 解析
 
 文章結構（按順序）：
 1. `<div class="hero-badge">AI News · 2026-03-29</div>`

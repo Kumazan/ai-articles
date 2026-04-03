@@ -5,7 +5,7 @@ date: 2026-03-30
 author: buchodi
 layout: post
 permalink: /2026-03-30/chatgpt-cloudflare-turnstile-react-state.html
-image: /ai-articles/2026-03-30/og-chatgpt-cloudflare-turnstile-react-state.png
+image: /2026-03-30/og-chatgpt-cloudflare-turnstile-react-state.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>

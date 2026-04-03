@@ -5,7 +5,7 @@ date: 2026-04-02
 author: Sarah Chen
 layout: post
 permalink: /2026-04-02/vllm-2026-open-source-llm-inference-engine-sonnet.html
-image: /ai-articles/2026-04-02/og-vllm-2026-open-source-llm-inference-engine.png
+image: /2026-04-02/og-vllm-2026-open-source-llm-inference-engine.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-02</div>

@@ -5,7 +5,7 @@ author: Jonathan Edwards
 description: "為什麼用 Obsidian markdown 當 AI 記憶系統是根本性的誤解——資料庫存知識、markdown 存指令，別搞混。"
 layout: post
 permalink: /2026-03-29/stop-calling-it-memory-obsidian.html
-image: /ai-articles/2026-03-29/og-stop-calling-it-memory-obsidian.png
+image: /2026-03-29/og-stop-calling-it-memory-obsidian.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-29</div>

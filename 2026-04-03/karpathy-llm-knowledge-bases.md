@@ -5,7 +5,7 @@ date: 2026-04-03
 author: karpathy
 layout: post
 permalink: /2026-04-03/karpathy-llm-knowledge-bases.html
-image: /ai-articles/2026-04-03/og-karpathy-llm-knowledge-bases.png
+image: /2026-04-03/og-karpathy-llm-knowledge-bases.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-03</div>

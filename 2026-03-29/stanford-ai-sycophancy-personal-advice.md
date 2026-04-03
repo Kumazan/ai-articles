@@ -5,7 +5,7 @@ author: Stanford University / Science Journal
 description: "Stanford 測試 11 款 LLM 的個人建議回應，發現多數模型的肯定率高於人類基準，AI 諂媚源自 RLHF 訓練結構而非偶然。"
 layout: post
 permalink: /2026-03-29/stanford-ai-sycophancy-personal-advice.html
-image: /ai-articles/2026-03-29/og-stanford-ai-sycophancy-personal-advice.png
+image: /2026-03-29/og-stanford-ai-sycophancy-personal-advice.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-29</div>

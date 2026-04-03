@@ -5,7 +5,7 @@ date: 2026-04-03
 author: Google DeepMind
 layout: post
 permalink: /2026-04-03/google-gemma-4-open-models.html
-image: /ai-articles/2026-04-03/og-google-gemma-4-open-models.png
+image: /2026-04-03/og-google-gemma-4-open-models.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-03</div>

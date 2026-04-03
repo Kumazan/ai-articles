@@ -5,7 +5,7 @@ author: trq212 (X/Twitter)
 description: "Anthropic 分享 Claude Code 的 prompt caching 架構心得：前綴匹配、快取命中率監控，以及常見的快取失效陷阱。"
 layout: post
 permalink: /2026-02-19/lessons-building-claude-code-prompt-caching.html
-image: /ai-articles/2026-02-19/og-lessons-building-claude-code-prompt-caching.png
+image: /2026-02-19/og-lessons-building-claude-code-prompt-caching.png
 ---
 
 <div class="hero-badge">AI News · 2026-02-19</div>

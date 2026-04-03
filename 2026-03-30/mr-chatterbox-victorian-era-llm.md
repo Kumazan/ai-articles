@@ -5,7 +5,7 @@ date: 2026-03-30
 author: Simon Willison
 layout: post
 permalink: /2026-03-30/mr-chatterbox-victorian-era-llm.html
-image: /ai-articles/2026-03-30/og-mr-chatterbox-victorian-era-llm.png
+image: /2026-03-30/og-mr-chatterbox-victorian-era-llm.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>

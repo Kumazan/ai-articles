@@ -5,7 +5,7 @@ date: 2026-04-02
 author: Mistral AI
 layout: post
 permalink: /2026-04-02/mistral-voxtral-tts-voice-stack.html
-image: /ai-articles/2026-04-02/og-mistral-voxtral-tts-voice-stack.png
+image: /2026-04-02/og-mistral-voxtral-tts-voice-stack.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-02</div>

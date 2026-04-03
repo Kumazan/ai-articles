@@ -5,7 +5,7 @@ date: 2026-03-31
 author: OpenAI Developers / Perplexity
 layout: post
 permalink: /2026-03-31/perplexity-realtime-voice-agent-lessons.html
-image: /ai-articles/2026-03-31/og-perplexity-realtime-voice-agent-lessons.png
+image: /2026-03-31/og-perplexity-realtime-voice-agent-lessons.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-31</div>

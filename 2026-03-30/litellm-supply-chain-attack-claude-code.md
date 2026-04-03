@@ -5,7 +5,7 @@ date: 2026-03-30
 author: Callum McMahon / FutureSearch
 layout: post
 permalink: /2026-03-30/litellm-supply-chain-attack-claude-code.html
-image: /ai-articles/2026-03-30/og-litellm-supply-chain-attack-claude-code.png
+image: /2026-03-30/og-litellm-supply-chain-attack-claude-code.png
 ---
 
 <div class="hero-badge">AI News · 2026-03-30</div>

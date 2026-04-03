@@ -4,7 +4,7 @@ date: 2026-04-02
 author: Plus Web3
 layout: post
 permalink: /2026-04-02/microsoft-copilot-multi-ai-critique.html
-image: /ai-articles/2026-04-02/og-microsoft-copilot-multi-ai-critique.png
+image: /2026-04-02/og-microsoft-copilot-multi-ai-critique.png
 description: "微軟為 Copilot 引入「Critique」功能，由 GPT 生成、Claude 驗證，打造多 AI 相互把關的協作架構，並支援多模型並列比較的「Council」模式。"
 layout: post
 permalink: /2026-04-02/microsoft-copilot-multi-ai-critique.html
