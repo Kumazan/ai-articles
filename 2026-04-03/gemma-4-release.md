@@ -12,6 +12,8 @@ image: /ai-articles/2026-04-03/og-gemma-4-release.png
   <img src="https://img.shields.io/badge/來源-Google_DeepMind-orange" alt="source">
 </div>
 
+![](/ai-articles/2026-04-03/og-gemma-4-release.png)
+
 **原文連結：** [Gemma 4: Byte for byte, the most capable open models](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)
 
 ## 摘要
