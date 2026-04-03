@@ -13,6 +13,8 @@ image: "/ai-articles/2026-04-03/og-prismml-1-bit-bonsai-llm.png"
   <span class="badge">Edge AI</span>
 </div>
 
+![](/ai-articles/2026-04-03/og-prismml-1-bit-bonsai-llm.png)
+
 **原文連結：** [PrismML Introduces The First Commercially Viable 1-Bit LLM](https://www.forbes.com/sites/jonmarkman/2026/04/02/prismml-introduces-the-first-commercially-viable-1-bit-llm/)
 
 ## 摘要
