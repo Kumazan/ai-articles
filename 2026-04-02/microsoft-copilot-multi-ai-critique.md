@@ -1,9 +1,11 @@
 ---
-title: 微軟 Copilot 引入多 AI 協作：GPT 與 Claude 相互驗證，向「合議制」進化
-date: '2026-04-02'
-image: /ai-articles/2026-04-02/og-microsoft-copilot-multi-ai-critique.png
-description: 微軟宣布為 Copilot 加入「Critique」功能，由 GPT 生成回答、Claude 進行驗證，打造多 AI 相互把關的協作架構，並支援並行比較不同模型輸出的「Council」模式。
+title: "微軟 Copilot 引入多 AI 協作：GPT 與 Claude 相互驗證，向「合議制」進化"
+date: 2026-04-02
 author: Plus Web3
+layout: post
+permalink: /2026-04-02/microsoft-copilot-multi-ai-critique.html
+image: /ai-articles/2026-04-02/og-microsoft-copilot-multi-ai-critique.png
+description: "微軟為 Copilot 引入「Critique」功能，由 GPT 生成、Claude 驗證，打造多 AI 相互把關的協作架構，並支援多模型並列比較的「Council」模式。"
 layout: post
 permalink: /2026-04-02/microsoft-copilot-multi-ai-critique.html
 ---
