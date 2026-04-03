@@ -120,6 +120,12 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - 使用策略: 知道確切詞 → `qmd search`；語意/跨語言 → `qmd query`；記憶相關 → `memory_search`
 - 上次 embed: 2026-03-29（1150 chunks, workspace + obsidian）
 
+### Tabelog MCP / locale URL Gotcha
+- 舊問題（2026-04-03 前）：`tabelog_detail` 對 `/tw/` 等 locale URL 可能只抓到殘缺資料，`tabelog_reviews` 甚至會回空陣列；同一間店改成日文主站 URL 才正常。
+- 修復（2026-04-03）：`tabelog-mcp` 已在 fetch 前自動把 locale URL normalize 成日文主站，正規式吃任意兩碼語系前綴，例如 `/tw/`、`/en/`、`/cn/`、`/kr/`。
+- 目前預期行為：看到 `https://tabelog.com/<locale>/...` 不用手動改網址；MCP 會自動轉成 `https://tabelog.com/...` 再抓 detail / reviews。
+- 測試：已補 `normalizeTabelogUrl()` 的 UT，總測試 152 全綠後重啟 MCP。
+
 ### auto-skill (自進化知識系統)
 - Installed via: `git clone https://github.com/toolsai/auto-skill` → `skills/auto-skill/`
 - Knowledge base: `skills/auto-skill/knowledge-base/` (JSON index + md files)
@@ -138,4 +144,18 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+### Web Fetching
+
+- **Always use `defuddle` skill** instead of `web_fetch` when reading web pages，無例外
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
+
+## image_generate (Gemini)
+
+- Gemini 3 Pro 可以直接在圖片中渲染繁體中文文字，品質 OK，不需要 Pillow 疊字
+- `aspectRatio: 16:9` 最接近 OG image 比例（1200×630 ≈ 1.9:1）
+- 可用 size: 1024x1024, 1024x1536, 1536x1024, 1024x1792, 1792x1024
+- subagent 無法呼叫 image_generate，只能在主 session 跑
+- Prompt 中加 "No text" 可以拿到乾淨插圖；或直接在 prompt 中指定中文標題讓 Gemini 一次畫好
