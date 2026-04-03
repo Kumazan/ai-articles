@@ -38,7 +38,7 @@ Frontmatter 必要欄位：
 title: "文章標題"
 date: 2026-03-29
 author: 原作者名
-description: "60-100 字繁中摘要，用於社群分享預覽（OG description）"
+description: "繁中摘要，120 字以內（80 字以內為佳）。用於社群分享預覽（OG description）"
 layout: post
 permalink: /2026-03-29/slug.html
 ---

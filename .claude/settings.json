@@ -27,7 +27,8 @@
       "Bash(find\n\n\n\n\n\n\ndone*)",
       "Bash(ls*)",
       "Bash(cat\n\n##\n\n###\nhero-badge\n\n###\nhero-badge:\n\n###\nhero*)",
-      "Bash(cat\n\n##\n\n###\ndescription\n\n###\ndescription:\n\n###\nde*)"
+      "Bash(cat\n\n##\n\n###\ndescription\n\n###\ndescription:\n\n###\nde*)",
+      "Bash(grep*)"
     ]
   }
 }
