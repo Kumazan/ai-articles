@@ -1,6 +1,6 @@
 ---
 title: "Google 發布 Gemma 4 開放模型：從樹莓派到工作站，每參數智慧再創新高"
-description: "Google DeepMind 推出 Gemma 4 系列四款開放模型，基於 Gemini 3 研究技術，支援多模態輸入、256K 上下文視窗、140 種語言，首次採用 Apache 2.0 授權，覆蓋從手機邊緣裝置到伺服器的完整部署場景。"
+description: "Google DeepMind 推出 Gemma 4 四款開放模型，基於 Gemini 3，支援多模態輸入與 256K 上下文，Apache 2.0 授權，覆蓋邊緣到伺服器全場景。"
 date: 2026-04-03
 author: Google DeepMind
 layout: post
