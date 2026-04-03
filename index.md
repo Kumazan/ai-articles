@@ -14,22 +14,6 @@ title: AI News & Articles
 
 ## 文章列表
 
-<div class="date-section">
-<h3>2026-04-03</h3>
-<div class="article-group" data-title="prismml 發布全球首款商用 1-bit llm：bonsai 8b 讓 ai 模型縮小 14 倍、速度提升 8 倍" data-desc="prismml 推出首款商用 1-bit llm『bonsai 8b』，將 80 億參數模型壓縮至 1.15gb，速度提升 8 倍且能耗降低 80%，實現邊緣裝置運行強大 ai 的突破。">
-  <h4>・ <a href="/ai-articles/2026-04-03/prismml-1-bit-bonsai-llm.html">PrismML 發布全球首款商用 1-Bit LLM：Bonsai 8B 讓 AI 模型縮小 14 倍、速度提升 8 倍</a></h4>
-  <p class="article-desc">PrismML 推出首款商用 1-bit LLM『Bonsai 8B』，將 80 億參數模型壓縮至 1.15GB，速度提升 8 倍且能耗降低 80%，實現邊緣裝置運行強大 AI 的突破。</p>
-</div>
-<div class="article-group" data-title="google 發布 gemma 4 開放模型：從樹莓派到工作站，每參數智慧再創新高" data-desc="google deepmind 推出 gemma 4 系列四款開放模型，基於 gemini 3 研究技術，支援多模態輸入、256k 上下文視窗、140 種語言，首次採用 apache 2.0 授權，覆蓋從手機邊緣裝置到伺服器的完整部署場景。">
-  <h4>・ <a href="/ai-articles/2026-04-03/google-gemma-4-open-models.html">Google 發布 Gemma 4 開放模型：從樹莓派到工作站，每參數智慧再創新高</a></h4>
-  <p class="article-desc">Google DeepMind 推出 Gemma 4 系列四款開放模型，基於 Gemini 3 研究技術，支援多模態輸入、256K 上下文視窗、140 種語言，首次採用 Apache 2.0 授權，覆蓋從手機邊緣裝置到伺服器的完整部署場景。</p>
-</div>
-<div class="article-group" data-title="微軟發佈三款 mai 多模態模型：看、聽、說一站式解決方案" data-desc="微軟正式推出 mai-transcribe-1、mai-voice-1 與 mai-image-2 三款模型，專攻語音轉文字、文字轉語音及圖像生成，主打企業級精準度與極高成本效益，全面佈局多模態 ai 應用生態。">
-  <h4>・ <a href="/ai-articles/2026-04-03/microsoft-mai-multimedia-models.html">微軟發佈三款 MAI 多模態模型：看、聽、說一站式解決方案</a></h4>
-  <p class="article-desc">微軟正式推出 MAI-Transcribe-1、MAI-Voice-1 與 MAI-Image-2 三款模型，專攻語音轉文字、文字轉語音及圖像生成，主打企業級精準度與極高成本效益，全面佈局多模態 AI 應用生態。</p>
-</div>
-</div>
-
 {% assign post_articles = site.pages | where: "layout", "post" %}
 {% assign raw_articles = site.pages | where: "layout", "raw" %}
 {% assign articles = post_articles | concat: raw_articles | sort: "url" | reverse %}
