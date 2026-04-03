@@ -8,7 +8,7 @@ image: /ai-articles/2026-04-02/og-block-from-hierarchy-to-intelligence.png
 description: Jack Dorsey 與 Sequoia 聯名主張 AI 取代資訊路由。Block 裁員 4000 人，以「世界模型」取代中層管理，重寫組織運作邏輯。
 ---
 
-<div class="hero-badge">📖 Sequoia Capital · 2026-03-31</div>
+<div class="hero-badge">AI News · 2026-04-02</div>
 
 **原文連結：** [From Hierarchy to Intelligence](https://sequoiacap.com/article/from-hierarchy-to-intelligence/)
 
