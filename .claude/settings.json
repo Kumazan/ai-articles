@@ -24,7 +24,8 @@
       "Bash(cat\n\n##\n\n###\nDescription\n\n###\n（frontmatter\n\n###*)",
       "Bash(for\n\n\n\n\n\n\n\n\n\n\ndone*)",
       "Bash(for\n\n\n\n\n\ndone*)",
-      "Bash(find\n\n\n\n\n\n\ndone*)"
+      "Bash(find\n\n\n\n\n\n\ndone*)",
+      "Bash(ls*)"
     ]
   }
 }
