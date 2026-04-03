@@ -3,7 +3,7 @@ layout: post
 title: "PrismML 發布全球首款商用 1-Bit LLM：Bonsai 8B 讓 AI 模型縮小 14 倍、速度提升 8 倍"
 author: "Jon Markman (Forbes / PrismML)"
 date: 2026-04-03
-permalink: /ai-articles/2026-04-03/prismml-1-bit-bonsai-llm.html
+permalink: /2026-04-03/prismml-1-bit-bonsai-llm.html
 description: "PrismML 推出首款商用 1-bit LLM『Bonsai 8B』，將 80 億參數模型壓縮至 1.15GB，速度提升 8 倍且能耗降低 80%，實現邊緣裝置運行強大 AI 的突破。"
 image: /ai-articles/2026-04-03/og-prismml-1-bit-bonsai-llm.png
 ---
