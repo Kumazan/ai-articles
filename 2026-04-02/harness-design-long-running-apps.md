@@ -8,7 +8,7 @@ permalink: /2026-04-02/harness-design-long-running-apps.html
 image: /ai-articles/2026-04-02/og-harness-design.png
 ---
 
-<div class="hero-badge">AI Engineering · 2026-04-02</div>
+<div class="hero-badge">AI News · 2026-04-02</div>
 
 **原文連結：** [Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps)
 
