@@ -5,9 +5,12 @@ date: 2026-04-03
 author: karpathy
 layout: post
 permalink: /2026-04-03/karpathy-llm-knowledge-bases.html
+image: /ai-articles/2026-04-03/og-karpathy-llm-knowledge-bases.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-03</div>
+
+![](/ai-articles/2026-04-03/og-karpathy-llm-knowledge-bases.png)
 
 **原文連結：** [LLM Knowledge Bases](https://x.com/karpathy/status/2039805659525644595)
 
@@ -27,6 +30,8 @@ permalink: /2026-04-03/karpathy-llm-knowledge-bases.html
 **資料攝入（Data Ingest）**
 
 我會把來源文件（文章、論文、repo、資料集、圖片等）索引進一個 `raw/` 目錄，然後用 LLM 增量地「編譯」成一個 wiki——也就是一個目錄結構中的 `.md` 檔案集合。這個 wiki 包含 `raw/` 中所有資料的摘要、backlinks，然後將資料分類成概念、撰寫文章，並建立所有連結。要把網頁文章轉成 `.md` 檔案，我喜歡用 Obsidian Web Clipper 擴充功能，然後用一個快捷鍵下載所有相關圖片到本地，這樣我的 LLM 就能輕鬆引用它們。
+
+![](/ai-articles/2026-04-03/karpathy-llm-knowledge-bases-illustration.png)
 
 **IDE**
 
