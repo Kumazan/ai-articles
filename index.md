@@ -14,6 +14,14 @@ title: AI News & Articles
 
 ## 文章列表
 
+<div class="date-section">
+<h3>2026-04-03</h3>
+<div class="article-group" data-title="gemma 4：google 推出「每位元最強」開源模型，主打推理與 agent 實踐" data-desc="google deepmind 發佈 gemma 4 系列開源模型，包含 2b 到 31b 四種尺寸。憑藉「每參數最高智慧」的架構優化，gemma 4 在推理、agent 工作流及多模態處理上表現卓越，並採 apache 2.0 開放授權。">
+  <h4>・ <a href="{{ site.baseurl }}/2026-04-03/gemma-4-release.html">Gemma 4：Google 推出「每位元最強」開源模型，主打推理與 Agent 實踐</a></h4>
+  <p class="article-desc">Google DeepMind 發佈 Gemma 4 系列開源模型，包含 2B 到 31B 四種尺寸。憑藉「每參數最高智慧」的架構優化，Gemma 4 在推理、Agent 工作流及多模態處理上表現卓越，並採 Apache 2.0 開放授權。</p>
+</div>
+</div>
+
 {% assign post_articles = site.pages | where: "layout", "post" %}
 {% assign raw_articles = site.pages | where: "layout", "raw" %}
 {% assign articles = post_articles | concat: raw_articles | sort: "url" | reverse %}

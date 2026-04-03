@@ -1,0 +1,326 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - heading "AI Articles" [level=1] [ref=e3]:
+        - link "AI Articles" [ref=e4] [cursor=pointer]:
+          - /url: https://kumazan.github.io/ai-articles/
+      - paragraph [ref=e5]: AI 領域精選文章翻譯
+      - paragraph [ref=e6]:
+        - link "View the Project on GitHub Kumazan/ai-articles" [ref=e7] [cursor=pointer]:
+          - /url: https://github.com/Kumazan/ai-articles
+          - text: View the Project on GitHub
+          - generic [ref=e8]: Kumazan/ai-articles
+      - navigation [ref=e9]:
+        - generic [ref=e10]: 段落導覽
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - link "文章列表" [ref=e13] [cursor=pointer]:
+              - /url: "#文章列表"
+          - listitem [ref=e14]:
+            - link "2026-04-03" [ref=e15] [cursor=pointer]:
+              - /url: "#section-1"
+          - listitem [ref=e16]:
+            - link "2026-04-03" [ref=e17] [cursor=pointer]:
+              - /url: "#section-2"
+          - listitem [ref=e18]:
+            - link "2026-04-02" [ref=e19] [cursor=pointer]:
+              - /url: "#section-3"
+          - listitem [ref=e20]:
+            - link "2026-04-01" [ref=e21] [cursor=pointer]:
+              - /url: "#section-4"
+          - listitem [ref=e22]:
+            - link "2026-03-31" [ref=e23] [cursor=pointer]:
+              - /url: "#section-5"
+          - listitem [ref=e24]:
+            - link "2026-03-30" [ref=e25] [cursor=pointer]:
+              - /url: "#section-6"
+          - listitem [ref=e26]:
+            - link "2026-03-29" [ref=e27] [cursor=pointer]:
+              - /url: "#section-7"
+          - listitem [ref=e28]:
+            - link "2026-03-13" [ref=e29] [cursor=pointer]:
+              - /url: "#section-8"
+          - listitem [ref=e30]:
+            - link "2026-02-19" [ref=e31] [cursor=pointer]:
+              - /url: "#section-9"
+          - listitem [ref=e32]:
+            - link "2026-02-15" [ref=e33] [cursor=pointer]:
+              - /url: "#section-10"
+      - generic [ref=e34]:
+        - paragraph [ref=e35]: This project is maintained by Kuma
+        - paragraph [ref=e36]:
+          - generic [ref=e37]:
+            - text: Hosted on GitHub Pages — Theme by
+            - link "orderedlist" [ref=e38] [cursor=pointer]:
+              - /url: https://github.com/orderedlist
+    - generic [ref=e39]:
+      - heading "AI News & Articles" [level=1] [ref=e40]
+      - paragraph [ref=e41]: 歡迎來到 Kuma 的 AI 翻譯文章專區
+      - textbox "搜尋標題或描述..." [ref=e43]
+      - heading "文章列表" [level=2] [ref=e44]
+      - generic [ref=e45]:
+        - heading "2026-04-03" [level=3] [ref=e46]
+        - generic [ref=e47]:
+          - heading "・ PrismML 發布全球首款商用 1-Bit LLM：Bonsai 8B 讓 AI 模型縮小 14 倍、速度提升 8 倍" [level=4] [ref=e48]:
+            - text: ・
+            - link "PrismML 發布全球首款商用 1-Bit LLM：Bonsai 8B 讓 AI 模型縮小 14 倍、速度提升 8 倍" [ref=e49] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-03/prismml-1-bit-bonsai-llm.html
+          - paragraph [ref=e50]: PrismML 推出首款商用 1-bit LLM『Bonsai 8B』，將 80 億參數模型壓縮至 1.15GB，速度提升 8 倍且能耗降低 80%，實現邊緣裝置運行強大 AI 的突破。
+        - generic [ref=e51]:
+          - heading "・ Google 發布 Gemma 4 開放模型：從樹莓派到工作站，每參數智慧再創新高" [level=4] [ref=e52]:
+            - text: ・
+            - link "Google 發布 Gemma 4 開放模型：從樹莓派到工作站，每參數智慧再創新高" [ref=e53] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-03/google-gemma-4-open-models.html
+          - paragraph [ref=e54]: Google DeepMind 推出 Gemma 4 系列四款開放模型，基於 Gemini 3 研究技術，支援多模態輸入、256K 上下文視窗、140 種語言，首次採用 Apache 2.0 授權，覆蓋從手機邊緣裝置到伺服器的完整部署場景。
+        - generic [ref=e55]:
+          - heading "・ 微軟發佈三款 MAI 多模態模型：看、聽、說一站式解決方案" [level=4] [ref=e56]:
+            - text: ・
+            - link "微軟發佈三款 MAI 多模態模型：看、聽、說一站式解決方案" [ref=e57] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-03/microsoft-mai-multimedia-models.html
+          - paragraph [ref=e58]: 微軟正式推出 MAI-Transcribe-1、MAI-Voice-1 與 MAI-Image-2 三款模型，專攻語音轉文字、文字轉語音及圖像生成，主打企業級精準度與極高成本效益，全面佈局多模態 AI 應用生態。
+      - generic [ref=e59]:
+        - heading "2026-04-03" [level=3] [ref=e60]
+        - generic [ref=e61]:
+          - heading "・ PrismML 推出 Bonsai 8B：史上首個商業可用 1-bit LLM，8B 模型僅需 1.15GB 記憶體" [level=4] [ref=e62]:
+            - text: ・
+            - link "PrismML 推出 Bonsai 8B：史上首個商業可用 1-bit LLM，8B 模型僅需 1.15GB 記憶體" [ref=e63] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-03/prismml-bonsai-1bit-llm-edge-ai.html
+          - paragraph [ref=e64]: PrismML 推 82 億參數模型，壓縮至 1.15GB，iPhone 可跑每秒 44 token。解析邊緣 AI 與傑文斯悖論：效率提升反帶動算力需求。
+        - generic [ref=e65]:
+          - heading "・ PrismML 發布全球首款商用 1-Bit LLM：Bonsai 8B 讓 AI 模型縮小 14 倍、速度提升 8 倍" [level=4] [ref=e66]:
+            - text: ・
+            - link "PrismML 發布全球首款商用 1-Bit LLM：Bonsai 8B 讓 AI 模型縮小 14 倍、速度提升 8 倍" [ref=e67] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-03/prismml-1-bit-bonsai-llm.html
+          - paragraph [ref=e68]: PrismML 推出首款商用 1-bit LLM『Bonsai 8B』，將 80 億參數模型壓縮至 1.15GB，速度提升 8 倍且能耗降低 80%，實現邊緣裝置運行強大 AI 的突破。
+        - generic [ref=e69]:
+          - heading "・ 微軟發佈三款 MAI 多模態模型：看、聽、說一站式解決方案" [level=4] [ref=e70]:
+            - text: ・
+            - link "微軟發佈三款 MAI 多模態模型：看、聽、說一站式解決方案" [ref=e71] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-03/microsoft-mai-multimedia-models.html
+          - paragraph [ref=e72]: 微軟推出 MAI-Transcribe-1、MAI-Voice-1、MAI-Image-2 三款模型，主打語音辨識、語音生成與圖像生成，瞄準企業級市場。
+        - generic [ref=e73]:
+          - heading "・ Google 發布 Gemma 4 開放模型：從樹莓派到工作站，每參數智慧再創新高" [level=4] [ref=e74]:
+            - text: ・
+            - link "Google 發布 Gemma 4 開放模型：從樹莓派到工作站，每參數智慧再創新高" [ref=e75] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-03/google-gemma-4-open-models.html
+          - paragraph [ref=e76]: Google DeepMind 推出 Gemma 4 四款開放模型，基於 Gemini 3，支援多模態輸入與 256K 上下文，Apache 2.0 授權，覆蓋邊緣到伺服器全場景。
+      - generic [ref=e77]:
+        - heading "2026-04-02" [level=3] [ref=e78]
+        - generic [ref=e79]:
+          - heading "・ vLLM 2026：驅動生產級 AI 大規模部署的開源 LLM 推論引擎" [level=4] [ref=e80]:
+            - text: ・
+            - link "vLLM 2026：驅動生產級 AI 大規模部署的開源 LLM 推論引擎" [ref=e81] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-02/vllm-2026-open-source-llm-inference-engine-sonnet.html
+          - paragraph [ref=e82]: vLLM 以 PagedAttention 突破記憶體瓶頸，Model Runner V2 吞吐量提升 56%，成為開源 LLM 推論標準框架。
+        - generic [ref=e83]:
+          - heading "・ Runway 砸 1000 萬美元投資 AI 新創，想把影片模型變成整個生態系" [level=4] [ref=e84]:
+            - text: ・
+            - link "Runway 砸 1000 萬美元投資 AI 新創，想把影片模型變成整個生態系" [ref=e85] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-02/runway-launches-10m-fund-builders-program-early-stage-ai-startups.html
+          - paragraph [ref=e86]: Runway 砸 1000 萬美元成立創投基金，鎖定早期 AI、媒體與世界模擬新創，同步推出 Builders 計畫提供 50 萬 API credits。
+        - generic [ref=e87]:
+          - heading "・ Mistral 推出 Voxtral TTS：4B 參數、9 種語言、企業級語音生成" [level=4] [ref=e88]:
+            - text: ・
+            - link "Mistral 推出 Voxtral TTS：4B 參數、9 種語言、企業級語音生成" [ref=e89] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-02/mistral-voxtral-tts-voice-stack.html
+          - paragraph [ref=e90]: Mistral 發布首款 TTS 模型 Voxtral TTS，4B 參數、9 種語言、情緒感知與低延遲串流，定價每千字 $0.016，Hugging Face 開放權重版本已上架。
+        - generic [ref=e91]:
+          - heading "・ 微軟 Copilot 引入多 AI 協作：GPT 與 Claude 相互驗證，向「合議制」進化" [level=4] [ref=e92]:
+            - text: ・
+            - link "微軟 Copilot 引入多 AI 協作：GPT 與 Claude 相互驗證，向「合議制」進化" [ref=e93] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-02/microsoft-copilot-multi-ai-critique.html
+          - paragraph [ref=e94]: 微軟為 Copilot 引入「Critique」功能，由 GPT 生成、Claude 驗證，打造多 AI 相互把關的協作架構，並支援多模型並列比較的「Council」模式。
+        - generic [ref=e95]:
+          - heading "・ 長時間運行應用開發的 Harness 設計" [level=4] [ref=e96]:
+            - text: ・
+            - link "長時間運行應用開發的 Harness 設計" [ref=e97] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-02/harness-design-long-running-apps.html
+          - paragraph [ref=e98]: Anthropic 工程師用 GAN 啟發的三代理架構突破 AI 編碼瓶頸：規劃器 + 生成器 + 評估器，實現多小時無人介入的全端開發。
+        - generic [ref=e99]:
+          - heading "・ 2026 年 Claude Code 原始碼大外洩：意外、失控、還是 AI 史上最成功的公關操作？" [level=4] [ref=e100]:
+            - text: ・
+            - link "2026 年 Claude Code 原始碼大外洩：意外、失控、還是 AI 史上最成功的公關操作？" [ref=e101] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-02/claude-code-source-leak-2026.html
+          - paragraph [ref=e102]: Anthropic 因錯誤的 .npmignore 設定，導致 59.8 MB 的 source map 被上傳至 npm，512,000 行 TypeScript 程式碼與 44 個隱藏功能旗標就此曝光。
+        - generic [ref=e103]:
+          - heading "・ 從層級到智能：AI 將取代中層管理，Block 正在重寫企業組織 2000 年的運作邏輯" [level=4] [ref=e104]:
+            - text: ・
+            - link "從層級到智能：AI 將取代中層管理，Block 正在重寫企業組織 2000 年的運作邏輯" [ref=e105] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-02/block-from-hierarchy-to-intelligence.html
+          - paragraph [ref=e106]: Jack Dorsey 與 Sequoia 聯名主張 AI 取代資訊路由。Block 裁員 4000 人，以「世界模型」取代中層管理，重寫組織運作邏輯。
+        - generic [ref=e107]:
+          - heading "・ 8.1 萬人想要的 AI，是讓生活變好" [level=4] [ref=e108]:
+            - text: ・
+            - link "8.1 萬人想要的 AI，是讓生活變好" [ref=e109] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-02/anthropic-81000-people-want-from-ai.html
+          - paragraph [ref=e110]: Anthropic 對 80,508 名 Claude 使用者做了史上最大規模的多語質性訪談，整理出人們對 AI 的九大期待與六種已經發生的回饋。
+      - generic [ref=e111]:
+        - heading "2026-04-01" [level=3] [ref=e112]
+        - generic [ref=e113]:
+          - heading "・ OpenAI 完成史上最大規模融資：1220 億美元、估值 8520 億，IPO 前的最後衝刺" [level=4] [ref=e114]:
+            - text: ・
+            - link "OpenAI 完成史上最大規模融資：1220 億美元、估值 8520 億，IPO 前的最後衝刺" [ref=e115] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-01/openai-122b-funding-round.html
+          - paragraph [ref=e116]: OpenAI 正式宣布完成 1220 億美元的融資，估值衝上 8520 億美元，並透露其每月營收已達 20 億美元。這筆資金將用於晶片、資料中心與 Coding Agent 研發，標誌著 OpenAI 邁向 IPO 與超大應用（Superapp）轉型的關鍵時刻。
+        - generic [ref=e117]:
+          - heading "・ Claude Dispatch 與介面的力量：AI 的瓶頸從來不是模型" [level=4] [ref=e118]:
+            - text: ・
+            - link "Claude Dispatch 與介面的力量：AI 的瓶頸從來不是模型" [ref=e119] [cursor=pointer]:
+              - /url: /ai-articles/2026-04-01/claude-dispatch-power-of-interfaces.html
+          - paragraph [ref=e120]: Ethan Mollick 指出 AI 的瓶頸在介面而非模型。聊天機器人造成認知負擔，Claude Cowork + Dispatch 代表新的代理介面方向。
+      - generic [ref=e121]:
+        - heading "2026-03-31" [level=3] [ref=e122]
+        - generic [ref=e123]:
+          - heading "・ Perplexity 把語音代理做到每月數百萬次會話後，學到的 4 個硬道理" [level=4] [ref=e124]:
+            - text: ・
+            - link "Perplexity 把語音代理做到每月數百萬次會話後，學到的 4 個硬道理" [ref=e125] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-31/perplexity-realtime-voice-agent-lessons.html
+          - paragraph [ref=e126]: Perplexity 分享語音代理實戰：context 分塊增量、音訊標準化、VAD 抗噪音、工具輸出保持 in-distribution。
+        - generic [ref=e127]:
+          - heading "・ 2026 年 3 月 LLM 版圖回顧：GPT-5.4 並列第一，但真正的故事在別處" [level=4] [ref=e128]:
+            - text: ・
+            - link "2026 年 3 月 LLM 版圖回顧：GPT-5.4 並列第一，但真正的故事在別處" [ref=e129] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-31/march-2026-llm-releases-recap.html
+          - paragraph [ref=e130]: 2026 年 3 月 LLM 版圖：GPT-5.4 並列榜首，MoE 架構成主流，Mistral Small 4 以 6.5B 活躍參數展現效率。
+        - generic [ref=e131]:
+          - heading "・ AI 時代科技圈最後 4 種工作？其實更值得看的是 coding agent 基礎設施之戰" [level=4] [ref=e132]:
+            - text: ・
+            - link "AI 時代科技圈最後 4 種工作？其實更值得看的是 coding agent 基礎設施之戰" [ref=e133] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-31/last-4-jobs-in-tech-agent-harness-race.html
+          - paragraph [ref=e134]: AI coding agent 最新戰況：harness 競賽、本地推論崛起、模型廠商與工具鏈整合，真正的主線是部署與工作流模式的創新。
+        - generic [ref=e135]:
+          - heading "・ Claude Code 創辦人點名 15 個被低估的功能：從寫程式助手走向可持續運作的開發系統" [level=4] [ref=e136]:
+            - text: ・
+            - link "Claude Code 創辦人點名 15 個被低估的功能：從寫程式助手走向可持續運作的開發系統" [ref=e137] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-31/claude-code-underrated-features-boris-cherny.html
+          - paragraph [ref=e138]: Claude Code 創辦人 Boris Cherny 分享 15 個被低估的功能，涵蓋手機端、遠端接手、定時自動化、hooks、worktrees、batch 與語音編程。
+        - generic [ref=e139]:
+          - heading "・ 中國 LLM 版圖 2026：模型、產品與生態系統正在重新排序" [level=4] [ref=e140]:
+            - text: ・
+            - link "中國 LLM 版圖 2026：模型、產品與生態系統正在重新排序" [ref=e141] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-31/china-llm-landscape-2026.html
+          - paragraph [ref=e142]: 中國 LLM 版圖多層重構：ByteDance 靠分發稱霸消費者層，Qwen 與 DeepSeek 在開源圈引領風潮，下個戰場是誰成為 Claude Code 預設後端。
+        - generic [ref=e143]:
+          - heading "・ Anthropic 史上最大規模資料外洩：待發布的 Claude Mythos 完整曝光，Capybara 新 tier 確認存在" [level=4] [ref=e144]:
+            - text: ・
+            - link "Anthropic 史上最大規模資料外洩：待發布的 Claude Mythos 完整曝光，Capybara 新 tier 確認存在" [ref=e145] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-31/anthropic-claude-mythos-capybara-leak.html
+          - paragraph [ref=e146]: Anthropic CMS 設定錯誤，意外暴露近 3,000 份內部文件。新 tier Capybara 將居於 Opus 之上，被形容為「step change」與公司史上最強。
+        - generic [ref=e147]:
+          - heading "・ AI 代理可能讓自由軟體再次重要：當『能不能被代理改造』成為新採購標準" [level=4] [ref=e148]:
+            - text: ・
+            - link "AI 代理可能讓自由軟體再次重要：當『能不能被代理改造』成為新採購標準" [ref=e149] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-31/ai-agents-could-make-free-software-matter-again.html
+          - paragraph [ref=e150]: George London 主張，AI coding agent 正把自由軟體從程式人的抽象權利，變成一般使用者也能實際行使的客製化能力。
+      - generic [ref=e151]:
+        - heading "2026-03-30" [level=3] [ref=e152]
+        - generic [ref=e153]:
+          - heading "・ OpenAI 收購 Astral：uv、Ruff 背後的公司將加入 Codex 生態" [level=4] [ref=e154]:
+            - text: ・
+            - link "OpenAI 收購 Astral：uv、Ruff 背後的公司將加入 Codex 生態" [ref=e155] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-30/openai-acquires-astral-uv-ruff.html
+          - paragraph [ref=e156]: OpenAI 收購 Astral，將 uv、Ruff、ty 等 Python 開源工具整合進 Codex 生態，顯示 AI 開發賽道從寫程式走向管理整個工具鏈。
+        - generic [ref=e157]:
+          - heading "・ Mr. Chatterbox：用維多利亞時代文本訓練的 340M 模型，能在你的電腦上跑了" [level=4] [ref=e158]:
+            - text: ・
+            - link "Mr. Chatterbox：用維多利亞時代文本訓練的 340M 模型，能在你的電腦上跑了" [ref=e159] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-30/mr-chatterbox-victorian-era-llm.html
+          - paragraph [ref=e160]: 用 28,000 本維多利亞時代書籍、29.3 億 tokens 訓練的 340M 小模型，Simon Willison 實際跑過結論是「很弱，但很有趣」。
+        - generic [ref=e161]:
+          - heading "・ 分分秒秒：我用 Claude Code 即時破解 LiteLLM PyPI 供應鏈攻擊" [level=4] [ref=e162]:
+            - text: ・
+            - link "分分秒秒：我用 Claude Code 即時破解 LiteLLM PyPI 供應鏈攻擊" [ref=e163] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-30/litellm-supply-chain-attack-claude-code.html
+          - paragraph [ref=e164]: LiteLLM 1.82.8 被植入惡意程式，46 分鐘近 47,000 次下載。作者與 Claude Code 即時對話實錄，記錄從發現到公開揭露的過程。
+        - generic [ref=e165]:
+          - heading "・ 衡量 AGI 進展：Google DeepMind 的認知分類框架" [level=4] [ref=e166]:
+            - text: ・
+            - link "衡量 AGI 進展：Google DeepMind 的認知分類框架" [ref=e167] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-30/deepmind-measuring-agi-cognitive-framework.html
+          - paragraph [ref=e168]: Google DeepMind 以認知科學為基礎建立 AGI 評估框架，識別 10 項核心能力，並與 Kaggle 合辦 20 萬美元黑客松。
+        - generic [ref=e169]:
+          - heading "・ Copilot 悄悄在你的 PR 裡塞廣告：AI 工具的「腐化」時刻到了嗎？" [level=4] [ref=e170]:
+            - text: ・
+            - link "Copilot 悄悄在你的 PR 裡塞廣告：AI 工具的「腐化」時刻到了嗎？" [ref=e171] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-30/copilot-ad-in-pr.html
+          - paragraph [ref=e172]: Copilot 被發現自動在用戶 PR 插入 Raycast 廣告，引爆 HN 討論。微軟緊急停用，但 AI 工具「腐化曲線」爭議持續。
+        - generic [ref=e173]:
+          - heading "・ 認知黑暗森林：AI 時代，你的每一個想法都在餵養吃掉你的怪物" [level=4] [ref=e174]:
+            - text: ・
+            - link "認知黑暗森林：AI 時代，你的每一個想法都在餵養吃掉你的怪物" [ref=e175] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-30/cognitive-dark-forest.html
+          - paragraph [ref=e176]: AI 時代，公開你的想法可能正在餵養吃掉你的怪物。借用《黑暗森林》理論，探討 AI 如何將整個網路變成吸收創新者的認知黑洞。
+        - generic [ref=e177]:
+          - heading "・ 你打字之前，Cloudflare 已讀完你的 React 狀態：我解密了那支程式" [level=4] [ref=e178]:
+            - text: ・
+            - link "你打字之前，Cloudflare 已讀完你的 React 狀態：我解密了那支程式" [ref=e179] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-30/chatgpt-cloudflare-turnstile-react-state.html
+          - paragraph [ref=e180]: 研究者逆向工程 ChatGPT 的 Cloudflare Turnstile 機制，解密 377 支程式後發現：每次輸入前都會蒐集 55 個瀏覽器屬性，包含 GPU、字型、地理位置，甚至 React 應用程式的內部狀態——機器人防護已進化到應用層。
+      - generic [ref=e181]:
+        - heading "2026-03-29" [level=3] [ref=e182]
+        - generic [ref=e183]:
+          - heading "・ 別再叫它記憶：每一篇「AI + Obsidian」教學的根本問題" [level=4] [ref=e184]:
+            - text: ・
+            - link "別再叫它記憶：每一篇「AI + Obsidian」教學的根本問題" [ref=e185] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-29/stop-calling-it-memory-obsidian.html
+          - paragraph [ref=e186]: 為什麼用 Obsidian markdown 當 AI 記憶系統是根本性的誤解——資料庫存知識、markdown 存指令，別搞混。
+        - generic [ref=e187]:
+          - heading "・ 當 AI 成為你的應聲蟲：Stanford 大規模研究發現 11 款 LLM 普遍過度肯定用戶" [level=4] [ref=e188]:
+            - text: ・
+            - link "當 AI 成為你的應聲蟲：Stanford 大規模研究發現 11 款 LLM 普遍過度肯定用戶" [ref=e189] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-29/stanford-ai-sycophancy-personal-advice.html
+          - paragraph [ref=e190]: Stanford 測試 11 款 LLM 的個人建議回應，發現多數模型的肯定率高於人類基準，AI 諂媚源自 RLHF 訓練結構而非偶然。
+        - generic [ref=e191]:
+          - heading "・ OpenAI 如何監控內部 Coding Agent 的錯位行為" [level=4] [ref=e192]:
+            - text: ・
+            - link "OpenAI 如何監控內部 Coding Agent 的錯位行為" [ref=e193] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-29/openai-monitoring-coding-agents-misalignment.html
+          - paragraph [ref=e194]: OpenAI 用 GPT-5.4 驅動的即時監控系統，偵測內部 coding agent 的錯位行為，五個月內分析數千萬條軌跡。
+        - generic [ref=e195]:
+          - heading "・ OpenAI Model Spec 的哲學與機制：他們如何決定 ChatGPT 的行為邊界" [level=4] [ref=e196]:
+            - text: ・
+            - link "OpenAI Model Spec 的哲學與機制：他們如何決定 ChatGPT 的行為邊界" [ref=e197] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-29/openai-model-spec-approach.html
+          - paragraph [ref=e198]: 深入解析 OpenAI Model Spec 的哲學與機制：指令鏈架構、不可覆寫紅線，以及與 Anthropic Constitution 的差異。
+        - generic [ref=e199]:
+          - heading "・ Google TurboQuant：用極致壓縮重新定義 AI 效率" [level=4] [ref=e200]:
+            - text: ・
+            - link "Google TurboQuant：用極致壓縮重新定義 AI 效率" [ref=e201] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-29/google-turboquant-kv-cache-compression.html
+          - paragraph [ref=e202]: Google TurboQuant 將 LLM 的 KV Cache 壓縮 6 倍，零精度損失、免重訓練，社群已推出三種開源實作。
+      - generic [ref=e203]:
+        - heading "2026-03-13" [level=3] [ref=e204]
+        - generic [ref=e205]:
+          - heading "・ 兩個月 21,000 顆星：Vercel 的 agent-browser 為什麼讓 AI 工程師瘋狂？" [level=4] [ref=e206]:
+            - text: ・
+            - link "兩個月 21,000 顆星：Vercel 的 agent-browser 為什麼讓 AI 工程師瘋狂？" [ref=e207] [cursor=pointer]:
+              - /url: /ai-articles/2026-03-13/vercel-agent-browser-why-ai-engineers-care.html
+          - paragraph [ref=e208]: agent-browser 兩個月衝破 21,000 星，真正戳中的不是 browser automation，而是 agentic coding 最痛的驗證瓶頸。
+      - generic [ref=e209]:
+        - heading "2026-02-19" [level=3] [ref=e210]
+        - generic [ref=e211]:
+          - heading "・ 建構 Claude Code 學到的教訓：Prompt Caching 就是一切" [level=4] [ref=e212]:
+            - text: ・
+            - link "建構 Claude Code 學到的教訓：Prompt Caching 就是一切" [ref=e213] [cursor=pointer]:
+              - /url: /ai-articles/2026-02-19/lessons-building-claude-code-prompt-caching.html
+          - paragraph [ref=e214]: Anthropic 分享 Claude Code 的 prompt caching 架構心得：前綴匹配、快取命中率監控，以及常見的快取失效陷阱。
+        - generic [ref=e215]:
+          - heading "・ 用 Evaluation Flywheel 打造更穩健的 Prompt" [level=4] [ref=e216]:
+            - text: ・
+            - link "用 Evaluation Flywheel 打造更穩健的 Prompt" [ref=e217] [cursor=pointer]:
+              - /url: /ai-articles/2026-02-19/building-resilient-prompts-evaluation-flywheel.html
+          - paragraph [ref=e218]: OpenAI Cookbook 提出 Evaluation Flywheel 方法：透過分析、量測、改進的迭代循環，系統化打造穩健的 prompt。
+      - generic [ref=e219]:
+        - heading "2026-02-15" [level=3] [ref=e220]
+        - generic [ref=e221]:
+          - heading "・ 個人全景監獄：用 Claude Code 管理整個人生" [level=4] [ref=e222]:
+            - text: ・
+            - link "個人全景監獄：用 Claude Code 管理整個人生" [ref=e223] [cursor=pointer]:
+              - /url: /ai-articles/2026-02-15/personal-panopticon-claude-code.html
+          - paragraph [ref=e224]: 用 Claude Code 建立 8 個平行 agent 全面自動化生活，從一夜打造千萬人使用的工具到父母學會命令列的真實故事。
+        - generic [ref=e225]:
+          - heading "・ Claude Opus 4.6 思維更聰明、xAI 加入 SpaceX、AI 超越醫生、標準化 AI 審計" [level=4] [ref=e226]:
+            - text: ・
+            - link "Claude Opus 4.6 思維更聰明、xAI 加入 SpaceX、AI 超越醫生、標準化 AI 審計" [ref=e227] [cursor=pointer]:
+              - /url: /ai-articles/2026-02-15/claude-opus-xai-spacex-ai-audits.html
+          - paragraph [ref=e228]: The Batch 本週重點：Claude Opus 4.6 推理能力躍進、xAI 與 SpaceX 合作、AI 診斷超越醫生、標準化 AI 審計框架。
