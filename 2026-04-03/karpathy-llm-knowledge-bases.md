@@ -14,7 +14,7 @@ permalink: /2026-04-03/karpathy-llm-knowledge-bases.html
 ## 摘要
 
 - Karpathy 近來大量 token 流量從「操作程式碼」轉向「操作知識」（以 markdown 和圖片形式儲存）
-- 三層架構：**Raw Data** → **LLM 編譯成 Wiki** → **Q&A / Output**，所有產出回流丰富 wiki
+- 三層架構：**Raw Data** → **LLM 編譯成 Wiki** → **Q&A / Output**，所有產出回流豐富 wiki
 - IDE 前端選 **Obsidian**，搭配 Marp（簡報）、matplotlib 圖表等多種視覺化輸出格式
 - 小規模知識庫（~100 篇、~40 萬字）不需要 fancy RAG，全文塞進 context window 效果就很好
 - LLM 會自動維護 index、文件摘要，並透過「健康檢查」發現不一致與缺失資料
@@ -46,7 +46,7 @@ permalink: /2026-04-03/karpathy-llm-knowledge-bases.html
 
 **額外工具**
 
-我发现自己正在开发更多处理数据的工具。例如，我用 vibe coding 刻了一個簡單但直覺的 wiki 搜尋引擎，我既直接使用它的 web UI，但更常見的情況是透過 CLI 將它交給 LLM，作為大型查詢的工具。
+我正在開發更多處理資料的工具。例如，我用 vibe coding 刻了一個簡單但直覺的 wiki 搜尋引擎，我既直接使用它的 web UI，但更常見的情況是透過 CLI 將它交給 LLM，作為大型查詢的工具。
 
 **進一步的探索**
 
