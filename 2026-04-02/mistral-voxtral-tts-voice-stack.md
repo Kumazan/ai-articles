@@ -1,6 +1,6 @@
 ---
 title: "Mistral 推出 Voxtral TTS：4B 參數、9 種語言、企業級語音生成"
-description: "Mistral 發布首款文字轉語音模型 Voxtral TTS，4B 參數、支援 9 種語言與多方言，具備情緒感知、低延遲串流與跨語言聲音克隆能力，定價每千字 $0.016，另提供 Hugging Face 開放權重版本。"
+description: "Mistral 發布首款 TTS 模型 Voxtral TTS，4B 參數、9 種語言、情緒感知與低延遲串流，定價每千字 $0.016，Hugging Face 開放權重版本已上架。"
 date: 2026-04-02
 author: Mistral AI
 layout: post
@@ -8,7 +8,7 @@ permalink: /2026-04-02/mistral-voxtral-tts-voice-stack.html
 image: /ai-articles/2026-04-02/og-mistral-voxtral-tts-voice-stack.png
 ---
 
-<div class="hero-badge">AI Audio · 2026-04-02</div>
+<div class="hero-badge">AI News · 2026-04-02</div>
 
 ![](/ai-articles/2026-04-02/og-mistral-voxtral-tts-voice-stack.png)
 
