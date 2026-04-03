@@ -10,6 +10,8 @@ image: /ai-articles/2026-04-02/og-claude-code-source-leak-2026.png
 
 <div class="hero-badge">AI News · 2026-04-02</div>
 
+![](/ai-articles/2026-04-02/og-claude-code-source-leak-2026.png)
+
 **原文連結：** [The Great Claude Code Leak of 2026: Accident, Incompetence, or the Best PR Stunt in AI History?](https://dev.to/varshithvhegde/the-great-claude-code-leak-of-2026-accident-incompetence-or-the-best-pr-stunt-in-ai-history-3igm)
 
 ## 摘要
