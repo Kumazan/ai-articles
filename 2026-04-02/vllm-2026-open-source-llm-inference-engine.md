@@ -4,7 +4,7 @@ description: "vLLM 以 PagedAttention 突破記憶體瓶頸，Model Runner V2 �
 date: 2026-04-02
 author: Sarah Chen
 layout: post
-permalink: /2026-04-02/vllm-2026-open-source-llm-inference-engine-sonnet.html
+permalink: /2026-04-02/vllm-2026-open-source-llm-inference-engine.html
 image: /2026-04-02/og-vllm-2026-open-source-llm-inference-engine.png
 ---
 
