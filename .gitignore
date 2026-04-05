@@ -3,3 +3,6 @@
 .sass-cache/
 _site/
 .playwright-mcp/
+article-*.png
+home-*.png
+live-home.png
