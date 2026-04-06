@@ -5,9 +5,12 @@ date: 2026-04-06
 author: Simon Willison
 layout: post
 permalink: /2026-04-06/google-ai-edge-gallery.html
+image: /2026-04-06/og-google-ai-edge-gallery.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-06</div>
+
+![](/ai-articles/2026-04-06/og-google-ai-edge-gallery.png)
 
 **原文連結：** [Google AI Edge Gallery](https://simonwillison.net/2026/Apr/6/google-ai-edge-gallery/)
 
