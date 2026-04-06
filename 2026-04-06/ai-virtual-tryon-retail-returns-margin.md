@@ -12,7 +12,7 @@ image: /2026-04-06/og-ai-virtual-tryon-retail-returns-margin.png
 
 ![](/ai-articles/2026-04-06/og-ai-virtual-tryon-retail-returns-margin.png)
 
-**原文連結：** [AI start-ups are trying to solve one of retail's biggest problems](https://www.cnbc.com/2026/04/05/ai-retail-start-ups-virtual-try-on-tech-margins.html)
+**原文連結：** [AI 新創如何用虛擬試穿對抗零售退貨黑洞](https://www.cnbc.com/2026/04/05/ai-retail-start-ups-virtual-try-on-tech-margins.html)
 
 ## 摘要
 
