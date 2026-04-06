@@ -17,7 +17,7 @@ image: /2026-04-06/og-building-with-ai.png
 ## 摘要
 
 - Lalit Maganti 花了 8 年想做 SQLite devtools，最後在 3 個月、約 250 小時內靠 AI coding agents 做出 syntaqlite
-- 這個專案源自 Perfetto 與 PerfettoSQL 的實務需求：formatter、linter、editor extension 都需要，但現成工具不是不準，就是不夠快，或不夠彈性
+- 這個專案源自 Perfetto 與 PerfettoSQL 的實務需求：formatter、linter、editor extension 都需要，但現成工具不是不準，就是不夠快，或不夠彈性。畢竟這套語言在 Google 內部已經有大約 10 萬行的實際使用量，還被各種團隊拿來查性能 trace。
 - 他先讓 Claude 幾乎包辦設計與實作，1 月做出可用原型，但整個 codebase 很快變得支離破碎，最後決定全部重寫
 - 重寫後改成「人類主導設計、AI 協助執行」：更早做架構決策、持續重構、加強測試，最後在 3 月推出 0.1 版本
 - AI 最有價值的地方是解除起步阻力、加速明確任務、補齊長尾功能，像 editor extensions、Python bindings、WASM playground 與文件站
