@@ -50,7 +50,7 @@ image: /2026-04-06/og-building-with-ai.png
 
 ## 它怎麼成形
 
-Lalit 從 2025 年初開始用 coding agents：Aider、Roo Code，後來是 Claude Code。這些工具一直有幫助，但他從來沒覺得它們已經可靠到可以扛一個真正重要的專案。
+Lalit 從 2025 年初開始用 coding agents：Aider、Roo Code，到了 7 月才轉向 Claude Code。這些工具一直有幫助，但他從來沒覺得它們已經可靠到可以扛一個真正重要的專案。
 
 直到 2025 年底，模型品質出現明顯躍升；同時他在 Perfetto 工作中持續碰到一些問題，如果有可靠的 parser，本來可以輕鬆解掉。這些 workaround 一次次提醒他：也許現在真的是把這個東西做出來的時候了。
 
