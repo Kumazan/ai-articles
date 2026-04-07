@@ -25,7 +25,7 @@ image: /2026-04-07/og-anthropic-openclaw-extra-billing.png
 
 <div class="sep">· · ·</div>
 
-Anthropic 已經開始收緊 Claude 的第三方使用方式。根據 PCMag 報導，Claude Pro 和 Max 訂閱用戶現在不能再把自己的額度透過 OpenClaw 這類第三方框架使用，必須另外支付一個新的「額外用量」計費方案。
+Anthropic 已經開始收緊 Claude 的第三方使用方式。根據 PCMag 報導，OpenClaw 這款免費、開源的 AI agent 工具，原本可以把 Claude、ChatGPT、Grok 或 Google Gemini 接進來執行任務；它 2025 年 11 月以 Clawdbot 之名登場，後來在社群間快速走紅，也因此引來 Anthropic 注意，最後還被要求改名。現在，Claude Pro 和 Max 訂閱用戶已經不能再把自己的額度透過 OpenClaw 這類第三方框架使用，必須另外支付一個新的「額外用量」計費方案。
 
 Anthropic Claude Code 負責人 Boris Cherny 表示，問題核心是成本與容量控制。這類第三方工具的使用模式，並不是原本訂閱方案設計時考慮的情境，因此公司必須更謹慎地管理可用資源。他也強調，Anthropic 依然支持開源，只是這次調整比較像是工程與容量上的限制，而不是理念上的轉向。
 
