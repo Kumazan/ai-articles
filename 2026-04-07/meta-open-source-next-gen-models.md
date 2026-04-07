@@ -5,9 +5,12 @@ date: 2026-04-07
 author: Maria Deutscher
 layout: post
 permalink: /2026-04-07/meta-open-source-next-gen-models.html
+image: /2026-04-07/og-meta-open-source-next-gen-models.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-07</div>
+
+![](/ai-articles/2026-04-07/og-meta-open-source-next-gen-models.png)
 
 **原文連結：** [Report: Meta developing open-source versions of upcoming AI models](https://siliconangle.com/2026/04/06/report-meta-developing-open-source-versions-upcoming-ai-models/)
 
