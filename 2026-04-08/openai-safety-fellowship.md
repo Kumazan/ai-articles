@@ -2,7 +2,7 @@
 title: "OpenAI 推出 Safety Fellowship，開放外部 AI 安全與對齊研究"
 description: "OpenAI 新設 Safety Fellowship，提供月薪、算力與導師資源，邀請外部研究者投入 AI 安全、對齊、代理監督與高風險誤用研究。"
 date: 2026-04-08
-author: OpenAI
+author: Sinisa Markovic
 layout: post
 permalink: /2026-04-08/openai-safety-fellowship.html
 image: /2026-04-08/og-openai-safety-fellowship.png
@@ -12,7 +12,7 @@ image: /2026-04-08/og-openai-safety-fellowship.png
 
 ![](/ai-articles/2026-04-08/og-openai-safety-fellowship.png)
 
-**原文連結：** [Introducing the OpenAI Safety Fellowship](https://openai.com/index/introducing-openai-safety-fellowship/)
+**原文連結：** [OpenAI opens applications for an external AI safety research fellowship](https://www.helpnetsecurity.com/2026/04/07/openai-safety-fellowship-applications/)
 
 ## 摘要
 
