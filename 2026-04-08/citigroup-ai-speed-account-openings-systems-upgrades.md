@@ -1,6 +1,7 @@
 ---
 title: "花旗靠 AI 加速開戶與系統汰舊，文件審查從 1 小時縮到 15 分鐘"
 description: "花旗把 AI 用在舊系統資料搬遷、程式自動化與客戶開戶流程，已把文件審查時間從 1 小時壓到 15 分鐘，並持續縮減外包依賴。"
+image: /2026-04-08/og-citigroup-ai-speed-account-openings-systems-upgrades.png
 date: 2026-04-08
 author: Tatiana Bautzer
 layout: post
@@ -8,6 +9,8 @@ permalink: /2026-04-08/citigroup-ai-speed-account-openings-systems-upgrades.html
 ---
 
 <div class="hero-badge">AI Articles · 2026-04-08</div>
+
+![](/ai-articles/2026-04-08/og-citigroup-ai-speed-account-openings-systems-upgrades.png)
 
 **原文連結：** https://www.reuters.com/business/finance/citigroup-says-ai-helps-speed-account-openings-systems-upgrades-2026-04-08/
 
