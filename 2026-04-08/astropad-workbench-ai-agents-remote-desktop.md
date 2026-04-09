@@ -5,9 +5,12 @@ date: 2026-04-08
 author: Sarah Perez
 layout: post
 permalink: /2026-04-08/astropad-workbench-ai-agents-remote-desktop.html
+image: /2026-04-08/og-astropad-workbench-ai-agents-remote-desktop.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-08</div>
+
+![](/ai-articles/2026-04-08/og-astropad-workbench-ai-agents-remote-desktop.png)
 
 **原文連結：** [Astropad’s Workbench reimagines remote desktop for AI agents, not IT support](https://techcrunch.com/2026/04/08/astropads-workbench-reimagines-remote-desktop-for-ai-agents-not-it-support/)
 
