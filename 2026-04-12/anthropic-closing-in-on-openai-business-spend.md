@@ -16,7 +16,7 @@ image: /2026-04-12/og-anthropic-closing-in-on-openai-business-spend.png
 
 ## 摘要
 
-- Ramp 的企業消費數據顯示，Anthropic 正快速追上 OpenAI，在 AI 支出占比上已逼近
+- Ramp 的企業消費數據顯示，Anthropic 正快速追上 OpenAI，在 AI 支出占比上已逼近 OpenAI
 - 目前使用 Ramp 平台的客戶中，30.6% 採用 Anthropic，35.2% 採用 OpenAI，差距明顯縮小
 - Anthropic 目前在資訊、金融保險、個人服務等三個產業領先 OpenAI
 - Claude Code 在軟體工程師之間的高人氣，可能是這波企業採用成長的重要推手
