@@ -5,9 +5,12 @@ date: 2026-04-13
 author: David Pierce
 layout: post
 permalink: /2026-04-13/ai-code-wars-heating-up.html
+image: /2026-04-13/og-ai-code-wars-heating-up.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-13</div>
+
+![](/ai-articles/2026-04-13/og-ai-code-wars-heating-up.png)
 
 **原文連結：** [The AI code wars are heating up](https://www.theverge.com/column/910019/ai-coding-wars-openai-google-anthropic)
 
