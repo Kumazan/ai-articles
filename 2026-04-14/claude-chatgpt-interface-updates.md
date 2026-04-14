@@ -35,14 +35,14 @@ OpenAI 這邊的方向也差不多。TestingCatalog 的報導指出，ChatGPT、
 
 ## 其他更新
 
-- Anthropic 也被傳出在測試 Claude Tasks Mode 的 Build 選項，介面從空白畫布改成 Research、Analyze、Build、Write、Plan 五個工作流入口，明顯對標 Replit 和 v0
-- Sam Altman 的住處在 48 小時內接連遭到汽油彈與槍擊，雖然和產品本身無關，但也把 AI 巨頭周邊的社會壓力與對立拉到檯面上
-- Anthropic 同時把 Mythos Preview 收進 Glasswing 資安聯盟，不公開釋出，改讓 AWS、Apple、Cisco、CrowdStrike、Linux Foundation 與其他夥伴拿去做防禦性漏洞研究
-- Meta 的 Muse Spark 則把閉源模型塞進 Meta AI 的整體產品線，還加入 Contemplating mode，讓多代理並行推理直接變成產品能力
-- Anthropic 的營收也繼續上衝，年化 ARR 據報已到 300 億美元，1,000 家以上大企業客戶的成長速度仍然很快
-- OpenAI 替 Codex 開出 100 美元的 Pro 方案，夾在 20 美元 Plus 與 200 美元 Pro 之間，讓重度使用者有新選項
-- Apple 傳出正在測試四種智慧眼鏡框型，預計 2027 年推出，首代先不做顯示器，重點在外觀與感測整合
-- Perplexity Computer 也在往個人 CFO 的方向擴張，接上 Plaid 後，已可讀取支票、儲蓄、信用卡與貸款資料
+- Anthropic 也被傳出在測試 Claude Tasks Mode 的 Build 選項，介面從空白畫布改成 Research、Analyze、Build、Write、Plan 五個工作流入口，明顯對標 Replit 和 v0，這還只是 A/B rollout，尚未正式確認
+- Sam Altman 的住處在 48 小時內接連遭到汽油彈與槍擊，April 10 的事件之後又有一輪警報，雖然和產品本身無關，但也把 AI 巨頭周邊的社會壓力與對立拉到檯面上
+- Anthropic 同時把 Mythos Preview 收進 Glasswing 資安聯盟，不公開釋出，改讓 AWS、Apple、Cisco、CrowdStrike、Linux Foundation 與 40+ 夥伴拿去做防禦性漏洞研究；該模型據報找出數千個 zero-day，甚至包含一個 27 年前的 OpenBSD 漏洞
+- Meta 的 Muse Spark 則把閉源模型塞進 Meta AI 的整體產品線，這是 Alexandr Wang 帶隊、歷時 9 個月的重建成果；它在 HealthBench Hard 上拿到 42.8，還贏過 GPT-5.4，並加入 Contemplating mode，讓多代理並行推理直接變成產品能力
+- Anthropic 的營收也繼續上衝，年化 ARR 據報從 2025 年底的 90 億美元跳到 300 億美元，1,000 家以上的大企業客戶在兩個月內翻倍；Broadcom 的 4/6 SEC 文件則承諾自 2027 年起提供 3.5 GW 的 Google TPU 容量
+- OpenAI 替 Codex 開出 100 美元的 Pro 方案，夾在 20 美元 Plus 與 200 美元 Pro 之間；新方案讓重度使用者得到 5 倍 Plus 的 Codex 用量，且到 5/31 前可提高到 10 倍，Codex 的週活也已突破 300 萬
+- Apple 傳出正在測試四種智慧眼鏡框型，兩種是長方形、兩種是圓角橢圓，顏色包括黑色、海軍藍與淺棕，預計 2027 年推出，首代先不做顯示器，重點在外觀與感測整合
+- Perplexity Computer 也在往個人 CFO 的方向擴張，4/9 的 Plaid 整合已從券商延伸到支票、儲蓄、信用卡與貸款，涵蓋 12,000 家機構；疊加 4/2 的 IRS 報稅模組後，它已能代寫聯邦報稅表並整理債務清償表
 - xAI 則傳出財務主管 Anthony Armstrong 離職，顯示馬斯克系 AI 團隊的人事震盪還在繼續
 - 美國法院也維持 Anthropic 被排除在國防合約外的現況，讓資安與軍工的界線繼續卡在法律與政治中間
 
