@@ -5,9 +5,12 @@ date: 2026-04-16
 author: OpenAI
 layout: post
 permalink: /2026-04-16/codex-for-almost-everything.html
+image: /2026-04-16/og-codex-for-almost-everything.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-16</div>
+
+![](/ai-articles/2026-04-16/og-codex-for-almost-everything.png)
 
 **原文連結：** [Codex for (almost) everything](https://openai.com/index/codex-for-almost-everything/)
 
