@@ -10,7 +10,7 @@ image: /2026-04-16/og-claude-opus-4-7.png
 
 <div class="hero-badge">AI News · 2026-04-16</div>
 
-![](/ai-articles/2026-04-16/og-claude-opus-4-7.png)
+![](/2026-04-16/og-claude-opus-4-7.png)
 
 **原文連結：** [Claude Opus 4.7](https://www.anthropic.com/news/claude-opus-4-7)
 
@@ -50,6 +50,17 @@ Anthropic 也說，他們在 coding 模型上已經有很高標準，而 Opus 4.
 Opus 4.7 也把長航程自治能力往上拉了一級。以 Devin 為例，它能連續穩定工作數小時，遇到難題也不會輕易放棄，讓過去不容易可靠跑起來的深度研究任務，變得更可行。
 
 對 Replit 來說，這次升級幾乎是直接換上去就好。對他們的日常工作而言，Opus 4.7 在分析 logs、找 bug、提修正建議時，品質一樣好甚至更便宜，也更精準。Anthropic 的產品經理還提到，它在技術討論時會適時反駁，幫忙做出更好的決策，真的像是更好的同事。
+
+## 更多外部回饋與 benchmark
+
+- CursorBench 上，Opus 4.7 直接衝到 70%，而 Opus 4.6 只有 58%，顯示它在真實 coding 任務的提升不是小修小補。
+- 在複雜多步驟工作上，它比 Opus 4.6 提升 14%，而且工具錯誤少了三分之一，這也是為什麼 Notion Agent 會把它視為更像「隊友」的原因。
+- Rakuten-SWE-Bench 上，它解出的 production tasks 是 Opus 4.6 的 3 倍，對工程團隊來說這種差距很實際。
+- Factory Droids 看到的 task success 提升落在 10% 到 15%，而且驗證步驟的跟進更穩。
+- XBOW 的 computer-use benchmark 中，它拿到 98.5%，對比 Opus 4.6 的 54.5%，這直接改變了能不能把它拿去做 autonomous pentest。
+- Harvey 的 BigLaw Bench 則看到 90.9% 的高 effort 成績，而且 review table 與文件編修判斷都更穩。
+- Databricks 的 OfficeQA Pro 顯示它在 source-based 文書推理上比 4.6 少 21% 錯誤。
+- 一些合作夥伴也提到，它在 1 in 18 的 query 上才會卡成 loop，整體 loop resistance 和 error recovery 都更好。
 
 ## 亮點與筆記
 
