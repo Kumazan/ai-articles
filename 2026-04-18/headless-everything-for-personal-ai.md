@@ -5,9 +5,12 @@ date: 2026-04-18
 author: Matt Webb
 layout: post
 permalink: /2026-04-18/headless-everything-for-personal-ai.html
+image: /2026-04-18/og-headless-everything-for-personal-ai.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-18</div>
+
+![](/ai-articles/2026-04-18/og-headless-everything-for-personal-ai.png)
 
 **原文連結：** [Headless everything for personal AI](https://interconnected.org/home/2026/04/18/headless)
 
