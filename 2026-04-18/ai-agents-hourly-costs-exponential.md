@@ -5,9 +5,12 @@ date: 2026-04-18
 author: Toby Ord
 layout: post
 permalink: /2026-04-18/ai-agents-hourly-costs-exponential.html
+image: /2026-04-18/og-ai-agents-hourly-costs-exponential.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-18</div>
+
+![](/ai-articles/2026-04-18/og-ai-agents-hourly-costs-exponential.png)
 
 **原文連結：** [Are the Costs of AI Agents Also Rising Exponentially? — Toby Ord](https://www.tobyord.com/writing/hourly-costs-for-ai-agents)
 
