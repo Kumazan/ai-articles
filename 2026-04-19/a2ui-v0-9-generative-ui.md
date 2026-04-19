@@ -5,7 +5,7 @@ date: 2026-04-19
 author: Google Developers Blog
 layout: post
 permalink: /2026-04-19/a2ui-v0-9-generative-ui.html
-image: /2026-04-19/og-a2ui-v0-9-generative-ui.png
+image: /ai-articles/2026-04-19/og-a2ui-v0-9-generative-ui.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-19</div>
