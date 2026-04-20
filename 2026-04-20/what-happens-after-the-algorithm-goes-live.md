@@ -1,6 +1,6 @@
 ---
 title: "AI 算法上線後，真正的考驗才開始"
-description: "放進臨床流程只是開始。Radiology AI 指出，部署後的資料漂移、性能衰退與持續監測，才是模型能否長期可信的關鍵。"
+description: "放進臨床流程只是開始。這篇提醒，部署後的資料漂移、性能衰退、監測缺口、責任歸屬與持續驗證，才是模型能否長期可信的關鍵所在。"
 date: 2026-04-20
 author: Lisa C. Adams, MD, PhD
 layout: post
