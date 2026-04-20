@@ -5,9 +5,12 @@ date: 2026-04-19
 author: Rupert Goodwins
 layout: post
 permalink: /2026-04-19/prompt-injection-ai-models-gullible.html
+image: /2026-04-19/og-prompt-injection-ai-models-gullible.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-19</div>
+
+![](/ai-articles/2026-04-19/og-prompt-injection-ai-models-gullible.png)
 
 **原文連結：** [Prompt injection proves AI models are gullible like humans](https://www.theregister.com/2026/04/19/just_like_phishing_for_gullible/)
 
