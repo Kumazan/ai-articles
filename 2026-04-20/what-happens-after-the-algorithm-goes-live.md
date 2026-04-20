@@ -5,9 +5,12 @@ date: 2026-04-20
 author: Lisa C. Adams, MD, PhD
 layout: post
 permalink: /2026-04-20/what-happens-after-the-algorithm-goes-live.html
+image: /2026-04-20/og-what-happens-after-the-algorithm-goes-live.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-20</div>
+
+![](/ai-articles/2026-04-20/og-what-happens-after-the-algorithm-goes-live.png)
 
 **原文連結：** [What Happens After the Algorithm Goes Live?](https://radiologyai.substack.com/p/what-happens-after-the-algorithm)
 
