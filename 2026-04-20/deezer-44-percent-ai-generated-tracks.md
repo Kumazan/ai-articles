@@ -4,10 +4,13 @@ description: "Deezer 表示，每天上傳到平台的新歌中已有 44% 是 AI
 date: 2026-04-20
 author: Aisha Malik
 layout: post
+image: /2026-04-20/og-deezer-44-percent-ai-generated-tracks.png
 permalink: /2026-04-20/deezer-44-percent-ai-generated-tracks.html
 ---
 
 <div class="hero-badge">AI News · 2026-04-20</div>
+
+![](/ai-articles/2026-04-20/og-deezer-44-percent-ai-generated-tracks.png)
 
 **原文連結：** [Deezer says 44% of songs uploaded to its platform daily are AI-generated](https://techcrunch.com/2026/04/20/deezer-says-44-of-songs-uploaded-to-its-platform-daily-are-ai-generated/)
 
