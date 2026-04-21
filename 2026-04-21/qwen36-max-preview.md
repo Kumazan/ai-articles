@@ -118,16 +118,11 @@ Qwen3.6-Max-Preview 是下一代專有模型的早期預覽版，在代理式 co
 
 ```text
 @misc {
-qwen36_max_preview
-,
-title = {{Qwen3.6-Max-Preview}: Smarter, Sharper, Still Evolving}
-,
-url = {https://qwen.ai/blog?id=qwen3.6-max-preview}
-,
-author = {{Qwen Team}}
-,
-month = {April}
-,
-year = {2026}
+qwen36_max_preview,
+  title = {Qwen3.6-Max-Preview: Smarter, Sharper, Still Evolving},
+  url = {https://qwen.ai/blog?id=qwen3.6-max-preview},
+  author = {Qwen Team},
+  month = {April},
+  year = {2026}
 }
 ```
