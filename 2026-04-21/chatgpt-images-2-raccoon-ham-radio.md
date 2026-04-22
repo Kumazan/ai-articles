@@ -4,10 +4,13 @@ description: "Simon Willison 用『找拿火腿電台的浣熊』測試 ChatGPT 
 date: 2026-04-21
 author: Simon Willison
 layout: post
+image: /2026-04-21/og-chatgpt-images-2-raccoon-ham-radio.png
 permalink: /2026-04-21/chatgpt-images-2-raccoon-ham-radio.html
 ---
 
 <div class="hero-badge">AI News · 2026-04-21</div>
+
+![](/ai-articles/2026-04-21/og-chatgpt-images-2-raccoon-ham-radio.png)
 
 **原文連結：** [Where’s the raccoon with the ham radio? (ChatGPT Images 2.0)](https://simonwillison.net/2026/Apr/21/gpt-image-2/)
 
