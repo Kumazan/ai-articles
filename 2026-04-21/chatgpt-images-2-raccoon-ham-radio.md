@@ -4,7 +4,7 @@ description: "Simon Willison 用『找拿火腿電台的浣熊』測試 ChatGPT 
 date: 2026-04-21
 author: Simon Willison
 layout: post
-image: /2026-04-21/og-chatgpt-images-2-raccoon-ham-radio.png
+image: /ai-articles/2026-04-21/og-chatgpt-images-2-raccoon-ham-radio.png
 permalink: /2026-04-21/chatgpt-images-2-raccoon-ham-radio.html
 ---
 
@@ -37,7 +37,7 @@ OpenAI [今天推出了 ChatGPT Images 2.0](https://openai.com/index/introducing
 
 先拿舊版 gpt-image-1 當基準，這是我直接在 ChatGPT 裡得到的結果：
 
-https://static.simonwillison.net/static/2026/chatgpt-image-1-ham-radio.png
+![](https://static.simonwillison.net/static/2026/chatgpt-image-1-ham-radio.png)
 
 我沒辦法把浣熊找出來，我很快就發現，拿「找威利」風格的圖來測試圖像生成模型，其實會讓人非常抓狂。
 
@@ -49,7 +49,7 @@ https://static.simonwillison.net/static/2026/chatgpt-image-1-ham-radio.png
 
 接著我試了 Google 的 Nano Banana 2，經由 [Gemini](https://gemini.google.com/share/3775db96c576)：
 
-https://static.simonwillison.net/static/2026/nano-banana-2-ham-radio.jpg
+![](https://static.simonwillison.net/static/2026/nano-banana-2-ham-radio.jpg)
 
 這張就非常明顯了，浣熊就在圖片中央的「Amateur Radio Club」攤位裡！
 
@@ -59,7 +59,7 @@ Claude 說：
 
 我也在 [AI Studio](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221sGU5A7mrngkfLfSEU84xaV1DhtOTnS--%22%5D,%22action%22:%22open%22,%22userId%22:%22106366615678321494423%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing) 試了 Nano Banana Pro，結果得到的是這張，到目前為止，這是所有模型裡最糟的一次。我也不確定到底哪裡出了問題。
 
-https://static.simonwillison.net/static/2026/nano-banana-pro-ham-radio.jpg
+![](https://static.simonwillison.net/static/2026/nano-banana-pro-ham-radio.jpg)
 
 #### gpt-image-2
 
@@ -78,7 +78,7 @@ OPENAI_API_KEY="$(llm keys get openai)" \
 
 這是我拿到的結果。我覺得裡面看不到浣熊，我自己找不到，Claude 也找不到。
 
-https://static.simonwillison.net/static/2026/gpt-image-2-default.png
+![](https://static.simonwillison.net/static/2026/gpt-image-2-default.png)
 
 [OpenAI 的 image generation cookbook](https://github.com/openai/openai-cookbook/blob/main/examples/multimodal/image-gen-models-prompting-guide.ipynb) 已經更新，加入 gpt-image-2 的說明，包括 outputQuality 設定和可用尺寸。
 
@@ -91,7 +91,7 @@ OPENAI_API_KEY="$(llm keys get openai)" \
  --quality high --size 3840x2160
 ```
 
-https://static.simonwillison.net/static/2026/image-fc93bd-q100.webp
+![](https://static.simonwillison.net/static/2026/image-fc93bd-q100.webp)
 
 這張就相當不錯了！火腿電台浣熊確實在裡面，位置在左下角，而且很容易辨認。
 
@@ -106,6 +106,8 @@ https://static.simonwillison.net/static/2026/image-fc93bd-q100.webp
 #### 更新：請模型自己解題其實很危險
 
 rizaco [在 Hacker News 上](https://news.ycombinator.com/item?id=47852835#47853561) 要 ChatGPT 在一張他沒找到浣熊的圖片上，把浣熊圈出來。下面這張是他得到的結果，和原圖混合後的動畫：
+
+![](https://static.simonwillison.net/static/2026/ham-radio-cheat.gif)
 
 看起來我們真的不能相信這些模型能可靠地替自己解題！
 
