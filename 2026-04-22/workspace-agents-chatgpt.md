@@ -5,9 +5,12 @@ date: 2026-04-22
 author: OpenAI
 layout: post
 permalink: /2026-04-22/workspace-agents-chatgpt.html
+image: /2026-04-22/og-workspace-agents-chatgpt.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-22</div>
+
+![](/ai-articles/2026-04-22/og-workspace-agents-chatgpt.png)
 
 **原文連結：** [Introducing workspace agents in ChatGPT](https://openai.com/index/introducing-workspace-agents-in-chatgpt/)
 
