@@ -5,9 +5,12 @@ date: 2026-04-23
 author: Mikayla Maki, Richard Feldman
 layout: post
 permalink: /2026-04-23/parallel-agents-in-zed.html
+image: /2026-04-23/og-parallel-agents-in-zed.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-23</div>
+
+![](/ai-articles/2026-04-23/og-parallel-agents-in-zed.png)
 
 **原文連結：** [Introducing Parallel Agents in Zed](https://zed.dev/blog/parallel-agents)
 
