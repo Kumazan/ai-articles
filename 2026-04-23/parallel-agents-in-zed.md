@@ -24,7 +24,7 @@ image: /2026-04-23/og-parallel-agents-in-zed.png
 
 <div class="sep">· · ·</div>
 
-Zed 現在讓你在同一個視窗裡調度多個 agent，而且每個 agent 都可以平行運作。新的 Threads Sidebar 會把所有 thread 一次攤開，並依專案分組，讓你可以：
+Zed 現在讓你在同一個視窗裡調度多個 agent，而且每個 agent 都可以平行運作。這套功能跑在 Zed 著名的 120 fps 流暢體驗上，也能搭配你喜歡的任何 agent，而且整個專案是開源的。新的 Threads Sidebar 會把所有 thread 一次攤開，並依專案分組，讓你可以：
 
 - 依照 thread 自由混搭不同 agent，因為 Zed 允許你選擇要用哪個 agent。
 - 跨專案工作，讓一個 agent thread 可以讀寫多個 repo。
