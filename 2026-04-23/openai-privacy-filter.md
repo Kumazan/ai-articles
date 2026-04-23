@@ -5,9 +5,12 @@ date: 2026-04-23
 author: OpenAI
 layout: post
 permalink: /2026-04-23/openai-privacy-filter.html
+image: /2026-04-23/og-openai-privacy-filter.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-23</div>
+
+![](/ai-articles/2026-04-23/og-openai-privacy-filter.png)
 
 **原文連結：** [Introducing OpenAI Privacy Filter](https://openai.com/index/introducing-openai-privacy-filter/)
 
