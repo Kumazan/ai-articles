@@ -3,11 +3,14 @@ title: "Claude Code 品質回報異常的最新說明"
 description: "Anthropic 釐清近月 Claude Code 品質下降的三個原因，說明問題其實出在產品層與提示層，而不是模型本身，並公布修正與後續改進措施。"
 date: 2026-04-24
 author: Anthropic
+image: /2026-04-24/og-claude-code-quality-reports.png
 layout: post
 permalink: /2026-04-24/claude-code-quality-reports.html
 ---
 
 <div class="hero-badge">AI News · 2026-04-24</div>
+
+![](/ai-articles/2026-04-24/og-claude-code-quality-reports.png)
 
 **原文連結：** [An update on recent Claude Code quality reports](https://www.anthropic.com/engineering/april-23-postmortem)
 
