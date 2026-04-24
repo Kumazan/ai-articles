@@ -1,5 +1,5 @@
 ---
-title: "南韓警方逮捕散布 AI 逃脫狼照片的男子"
+title: "南韓警方逮捕散布 AI 生成逃脫狼照片的男子"
 description: "南韓警方逮捕一名散布 AI 生成逃脫狼照片的男子，這張假圖一度干擾搜捕行動，也把 AI 假內容的實際風險推上新聞焦點。"
 date: 2026-04-24
 author: "Koh Ewe / Jake Kwon, BBC News"
