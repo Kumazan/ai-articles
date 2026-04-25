@@ -26,7 +26,7 @@ image: /2026-04-24/og-deepseek-v4-fraction-price.png
 
 <div class="sep">· · ·</div>
 
-24th April 2026
+2026 年 4 月 24 日
 
 Chinese AI lab DeepSeek’s last model release was V3.2 (and V3.2 Speciale) [last December](https://simonwillison.net/2025/Dec/1/deepseek-v32/). They just dropped the first of their hotly anticipated V4 series in the shape of two preview models, [DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) and [DeepSeek-V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash).
 
