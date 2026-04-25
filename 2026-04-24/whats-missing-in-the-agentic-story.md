@@ -5,9 +5,12 @@ date: 2026-04-24
 author: Mark Nottingham
 layout: post
 permalink: /2026-04-24/whats-missing-in-the-agentic-story.html
+image: /2026-04-24/og-whats-missing-in-the-agentic-story.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-24</div>
+
+![](/ai-articles/2026-04-24/og-whats-missing-in-the-agentic-story.png)
 
 **原文連結：** [What's Missing in the 'Agentic' Story](https://www.mnot.net/blog/2026/04/24/agents_as_collective_bargains)
 
