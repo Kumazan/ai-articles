@@ -3,11 +3,14 @@ title: "Google 擬向 Anthropic 投資高達 400 億美元"
 description: "Google 擬向 Anthropic 投資高達 400 億美元，還會提供更多雲端算力；這筆交易也顯示 AI 競賽正從模型本身，快速轉向資本、電力與基礎設施。"
 date: 2026-04-24
 author: Rebecca Bellan
+image: /2026-04-24/og-google-anthropic-40b-investment.png
 layout: post
 permalink: /2026-04-24/google-anthropic-40b-investment.html
 ---
 
 <div class="hero-badge">AI News · 2026-04-24</div>
+
+![](/ai-articles/2026-04-24/og-google-anthropic-40b-investment.png)
 
 **原文連結：** [Google to invest up to $40B in Anthropic in cash and compute](https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/)
 
