@@ -5,9 +5,12 @@ date: 2026-04-24
 author: Simon Willison
 layout: post
 permalink: /2026-04-24/deepseek-v4-fraction-price.html
+image: /2026-04-24/og-deepseek-v4-fraction-price.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-24</div>
+
+![](/ai-articles/2026-04-24/og-deepseek-v4-fraction-price.png)
 
 **原文連結：** [DeepSeek V4—almost on the frontier, a fraction of the price](https://simonwillison.net/2026/Apr/24/deepseek-v4/)
 
