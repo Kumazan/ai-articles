@@ -57,7 +57,7 @@ image: /2026-04-26/og-model-still-not-product-agent-loops.png
 
 它在 code 裡實際長這樣。觸發條件只是一條 system prompt 指令。`prompt_builder.py` 裡的原文如下：
 
-> “After completing a complex task (5+ tool calls), fixing a tricky error, or discovering a non-trivial workflow, save the approach as a skill with skill_manage so you can reuse it next time.”
+> 「完成一個複雜任務（5+ 次 tool calls）、修好一個棘手錯誤，或發現一個非平凡的工作流程後，就把這套做法存成一個 skill，交給 `skill_manage`，下次就能直接重用。」
 
 沒有背景 daemon，沒有 scheduler。門檻就是 5 次 tool calls，而且是否跨過這條線，由模型自己判斷。當它真的跨過去時，`skill_manager_tool.py` 會跑一個謹慎的建立流程：
 
@@ -71,11 +71,11 @@ skills index 會透過雙層快取注入每一次 system prompt：先是 in-proc
 
 載入 skills 時，header 寫著：
 
-> “Err on the side of loading, it is always better to have context you don’t need than to miss critical steps, pitfalls, or established workflows.”
+> 「寧可多載入一些，也不要少掉關鍵步驟、坑點或既有工作流程。你不需要的 context，總比漏掉重要資訊好。」
 
 而在完成困難任務後，還有一句：
 
-> “If a skill you loaded was missing steps, had wrong commands, or needed pitfalls you discovered, update it before finishing.”
+> 「如果你載入的 skill 少了步驟、指令有誤，或漏掉了你發現的坑，在完成前把它補上。」
 
 作者認為，這句才是系統能不能真的工作、能不能擴張的關鍵。agent 不只是建立 skills，還被要求維護它們。`skill_manage` 的 patch action 用的是 fuzzy match engine（和檔案編輯同一套），能處理空白差異、縮排差異、block anchor matching。這表示 agent 可以回頭修補自己三個 session 前寫的 skill，不必仰賴完全相同的字串。這很漂亮，因為它也能處理 tools 演進後帶來的潛在 breaking change。
 
@@ -127,7 +127,7 @@ GPT 和 Codex 模型會拿到一組 XML blocks：`<tool_persistence>`、`<mandat
 
 這一段的註解寫著：
 
-> “Inspired by patterns from OpenAI’s GPT-5.4 prompting guide & OpenClaw PR #38953.”
+> 「靈感來自 OpenAI 的 GPT-5.4 prompting guide 與 OpenClaw PR #38953 的模式。」
 
 這代表框架本身正在公開地向其他 codebase 借鑑，而且還清楚註明來源。這個領域正在公開地收斂到共享解法。
 
@@ -137,7 +137,7 @@ GPT 和 Codex 模型會拿到一組 XML blocks：`<tool_persistence>`、`<mandat
 
 `prompt_builder.py` 裡有一個小小的設計，卻對 runtime 影響很大：memory guidance。
 
-> “Write memories as declarative facts, not instructions to yourself. ‘User prefers concise responses’ ✓ — ‘Always respond concisely’ ✗. ‘Project uses pytest with xdist’ ✓ — ‘Run tests with pytest -n 4’ ✗. Imperative phrasing gets re-read as a directive in later sessions and can cause repeated work or override the user’s current request. Procedures and workflows belong in skills, not memory.”
+> 「把記憶寫成宣告式事實，不要寫成對自己的指令。『User prefers concise responses』✓ — 『Always respond concisely』✗。『Project uses pytest with xdist』✓ — 『Run tests with pytest -n 4』✗。命令式措辭在後續 session 會被重新讀成指令，可能造成重複工作，甚至覆蓋使用者當下的要求。流程與工作方法應該放在 skills，不該放在 memory。」
 
 這段的重點是：記憶要寫成宣告式事實，不要寫成對自己的指令。`User prefers concise responses` 是事實；`Always respond concisely` 則像命令。`Project uses pytest with xdist` 是事實；`Run tests with pytest -n 4` 會變成規則。命令式措辭在後續 session 可能被重新讀成指令，導致重複工作，甚至覆蓋使用者當下的要求。procedures 和 workflows 應該放在 skills，不該放在 memory。
 
