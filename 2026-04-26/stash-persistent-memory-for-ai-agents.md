@@ -3,11 +3,14 @@ title: "Stash：替 AI 代理補上持久記憶層"
 description: "Stash 用 PostgreSQL + pgvector 建立持久記憶層，讓 AI 代理能跨 session 保留對話、專案、目標與失敗經驗，不必每次都從零開始。"
 date: 2026-04-26
 author: Mohamed Al-Ashaal
+image: /2026-04-26/og-stash-persistent-memory-for-ai-agents.png
 layout: post
 permalink: /2026-04-26/stash-persistent-memory-for-ai-agents.html
 ---
 
 <div class="hero-badge">AI News · 2026-04-26</div>
+
+![](/ai-articles/2026-04-26/og-stash-persistent-memory-for-ai-agents.png)
 
 **原文連結：** [Stash — Persistent Memory for AI Agents](https://alash3al.github.io/stash/?_v01)
 
