@@ -5,9 +5,12 @@ date: 2026-04-26
 author: OpenAI
 layout: post
 permalink: /2026-04-26/why-swe-bench-verified-no-longer-measures-frontier-coding-capabilities.html
+image: /2026-04-26/og-why-swe-bench-verified-no-longer-measures-frontier-coding-capabilities.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-26</div>
+
+![](/ai-articles/2026-04-26/og-why-swe-bench-verified-no-longer-measures-frontier-coding-capabilities.png)
 
 **原文連結：** [Why SWE-bench Verified no longer measures frontier coding capabilities](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/)
 
