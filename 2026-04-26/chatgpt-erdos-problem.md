@@ -5,9 +5,12 @@ date: 2026-04-26
 author: Joseph Howlett
 layout: post
 permalink: /2026-04-26/chatgpt-erdos-problem.html
+image: /2026-04-26/og-chatgpt-erdos-problem.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-26</div>
+
+![](/ai-articles/2026-04-26/og-chatgpt-erdos-problem.png)
 
 **原文連結：** [Amateur armed with ChatGPT 'vibe-maths' a 60-year-old problem](https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/)
 
