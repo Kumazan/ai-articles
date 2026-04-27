@@ -61,7 +61,7 @@ Michael Chen 那封信也就更說得通了。Acutus 的前端 code 顯示，這
 
 Acutus 本身又沒有什麼公開能見度。Google 幾乎找不到外部討論，Twitter/X 上也只被少數帳號提及過四次。但其中兩次都和一個人有關：Patrick Hynes，一家共和黨公關公司 Novus Public Affairs 的總裁。他曾轉發 Acutus 關於 Scott Brown 2026 年參議員選戰的文章，還轉推過一篇被反 AI safety 帳號分享的 Acutus 文章。
 
-這裡開始有味道了。Hynes 所在的新罕布夏州，剛好也是 Acutus 特別愛寫的地區之一；網站大量文章都在談新罕布夏、緬因州與東北部政治。Acutus 甚至還替某些 Novus 客戶關心的議題發稿，像是藥品中間商、住房政策、或是特定參選人。
+這裡開始有味道了。Hynes 所在的新罕布夏州，剛好也是 Acutus 特別愛寫的地區之一；網站大量文章都在談新罕布夏、緬因州與東北部政治。Acutus 甚至還替某些 Novus 客戶關心的議題發稿，像是藥品中間商、住房政策、或是特定參選人。舉例來說，作者提到 1 月 24 日、也就是在川普簽署那項全面藥品福利管理改革法案前 10 天，Acutus 跑了一篇攻擊 PBM 的文章；而後文又指出，PhRMA 這個 2025 年花了 3,819 萬美元遊說的產業協會，居然在內部 source log 裡被標成「PhRMA statements」，但公開版文章根本沒引用到任何 PhRMA 人物。
 
 更值得注意的是，Acutus 大約有 15% 的文章在談 AI，而且它們常常與一組反監管科技遊說話術一致：批評 Anthropic、批評藍州管 AI、也批評紅州管 AI，並把近期針對 OpenAI 的暴力事件歸咎於記者與草根組織的言論。這些觀點，和那個規模達 1.25 億美元、由 OpenAI president Greg Brockman 與 OpenAI 投資人 a16z 主要資助的 super PAC，還有 Chris Lehane 周邊團隊推動的說法高度相似。
 
