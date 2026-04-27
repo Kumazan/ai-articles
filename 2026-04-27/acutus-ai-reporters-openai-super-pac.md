@@ -43,7 +43,7 @@ Acutus 是一家匿名經營的數位新聞站，於 2025 年 12 月 29 日上�
 
 Acutus 甚至把所有內容都用 Creative Commons 授權，包裝成一種 wire service。About 頁面寫得很直白：他們的故事會像新聞通訊社一樣，讓其他出版方直接使用。
 
-但網站露出的不只是成品，還有製作過程。`acutuswire.com/api/wire` 這個 API 在瀏覽器裡就能打開，回傳的不只是文章資料庫，還包括每篇內容的內部生成紀錄與 AI 審核結果。裡面有五種審核項目，其中四項會打分數：AP style compliance、quote accuracy、source verification、以及一個直接叫作 acutus 的欄位；另一項則是 fact-checking 狀態。每個審核項目都會列出 AI 找到的問題、建議修正，以及修正完成的時間戳。
+但網站露出的不只是成品，還有製作過程。`acutuswire.com/api/wire` 這個 API 在瀏覽器裡就能打開，回傳的不只是文章資料庫，還包括每篇內容的內部生成紀錄與 AI 審核結果。裡面有五種審核項目，其中四項會打分數，而且都是以 100 分為滿分：AP style compliance、quote accuracy、source verification、以及一個直接叫作 acutus 的欄位；另一項則是 fact-checking 狀態。每個審核項目都會列出 AI 找到的問題、建議修正，以及修正完成的時間戳。
 
 時間戳本身就很能說明問題。單篇內容從第一個問題被修到最後一個問題的中位數只要 44 秒，而最後一次修正到正式發佈之間，通常只隔 10 秒。94 篇文章裡，有 42 篇的 AI 最終狀態甚至還是 needs_revision，也就是 AI 自己都覺得還沒準備好上線，但它們還是被發佈了。
 
@@ -61,7 +61,7 @@ Michael Chen 那封信也就更說得通了。Acutus 的前端 code 顯示，這
 
 Acutus 本身又沒有什麼公開能見度。Google 幾乎找不到外部討論，Twitter/X 上也只被少數帳號提及過四次。但其中兩次都和一個人有關：Patrick Hynes，一家共和黨公關公司 Novus Public Affairs 的總裁。他曾轉發 Acutus 關於 Scott Brown 2026 年參議員選戰的文章，還轉推過一篇被反 AI safety 帳號分享的 Acutus 文章。
 
-這裡開始有味道了。Hynes 所在的新罕布夏州，剛好也是 Acutus 特別愛寫的地區之一；網站大量文章都在談新罕布夏、緬因州與東北部政治。Acutus 甚至還替某些 Novus 客戶關心的議題發稿，像是藥品中間商、住房政策、或是特定參選人。舉例來說，作者提到 1 月 24 日、也就是在川普簽署那項全面藥品福利管理改革法案前 10 天，Acutus 跑了一篇攻擊 PBM 的文章；而後文又指出，PhRMA 這個 2025 年花了 3,819 萬美元遊說的產業協會，居然在內部 source log 裡被標成「PhRMA statements」，但公開版文章根本沒引用到任何 PhRMA 人物。
+這裡開始有味道了。Hynes 所在的新罕布夏州，剛好也是 Acutus 特別愛寫的地區之一；網站大量文章都在談新罕布夏、緬因州與東北部政治。Acutus 甚至還替某些 Novus 客戶關心的議題發稿，像是藥品中間商、住房政策、或是特定參選人。舉例來說，作者提到 1 月 24 日、也就是在川普簽署那項全面藥品福利管理改革法案前 10 天，Acutus 跑了一篇攻擊 PBM 的文章；而後文又指出，PhRMA 這個 2025 年花了 3,819 萬美元遊說的產業協會，居然在內部 source log 裡被標成「PhRMA statements」，但公開版文章根本沒引用到任何 PhRMA 人物。更早之前，Patrick Hynes 其實已在 2010 年與其他共和黨 operatives 一起創辦 New Hampshire 的 NH Journal，2014 年又離開去加入一個支持 Scott Brown 的 501(c)(4) PAC；The Hill 當時就指出，這種關係會讓媒體獨立性受到質疑。接著作者又提到 Rep. Nancy Mace 的 Skills-Based Federal Contracting Act，H.R. 5235 已進入眾議院程序，Acutus 竟在這個節點前後發出相關內容。
 
 更值得注意的是，Acutus 大約有 15% 的文章在談 AI，而且它們常常與一組反監管科技遊說話術一致：批評 Anthropic、批評藍州管 AI、也批評紅州管 AI，並把近期針對 OpenAI 的暴力事件歸咎於記者與草根組織的言論。這些觀點，和那個規模達 1.25 億美元、由 OpenAI president Greg Brockman 與 OpenAI 投資人 a16z 主要資助的 super PAC，還有 Chris Lehane 周邊團隊推動的說法高度相似。
 
