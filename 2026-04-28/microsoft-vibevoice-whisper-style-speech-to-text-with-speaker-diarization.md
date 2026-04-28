@@ -5,9 +5,12 @@ date: 2026-04-28
 author: Simon Willison
 layout: post
 permalink: /2026-04-28/microsoft-vibevoice-whisper-style-speech-to-text-with-speaker-diarization.html
+image: /2026-04-28/og-microsoft-vibevoice-whisper-style-speech-to-text-with-speaker-diarization.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-28</div>
+
+![](/ai-articles/2026-04-28/og-microsoft-vibevoice-whisper-style-speech-to-text-with-speaker-diarization.png)
 
 **原文連結：** [Simon Willison - microsoft/VibeVoice](https://simonwillison.net/2026/Apr/27/vibevoice/)
 
