@@ -5,9 +5,12 @@ date: 2026-04-28
 author: "Nick Levine, David Duvenaud, Alec Radford"
 layout: post
 permalink: /2026-04-28/talkie-vintage-language-model-1930.html
+image: /2026-04-28/og-talkie-vintage-language-model-1930.png
 ---
 
 <div class="hero-badge">AI News · 2026-04-28</div>
+
+![](/ai-articles/2026-04-28/og-talkie-vintage-language-model-1930.png)
 
 **原文連結：** [Introducing talkie: a 13B vintage language model from 1930](https://talkie-lm.com/introducing-talkie)
 
