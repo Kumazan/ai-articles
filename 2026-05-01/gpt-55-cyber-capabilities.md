@@ -1,6 +1,7 @@
 ---
 title: "GPT-5.5 的 cyber 能力評估：第二個完成長鏈攻擊模擬的模型"
 description: "UK AISI 對 GPT-5.5 做 cyber 能力評估，發現它已接近 Claude Mythos Preview，甚至能在無人協助下完成部分長鏈企業網路攻擊模擬。"
+image: /2026-05-01/og-gpt-55-cyber-capabilities.png
 date: 2026-05-01
 author: UK AI Security Institute
 layout: post
@@ -8,6 +9,8 @@ permalink: /2026-05-01/gpt-55-cyber-capabilities.html
 ---
 
 <div class="hero-badge">AI Safety · 2026-05-01</div>
+
+![](/ai-articles/2026-05-01/og-gpt-55-cyber-capabilities.png)
 
 **原文連結：** [UK AISI - Our evaluation of OpenAI's GPT-5.5 cyber capabilities](https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities)
 
