@@ -3,11 +3,14 @@ title: "Goodfire Silico：把 LLM 訓練從煉金術推向精密工程"
 description: "Goodfire 推出 Silico，試圖把 mechanistic interpretability 從事後審計工具變成訓練中的控制面板，讓模型開發者能更精準地定位、調整與預防不想要的模型行為。"
 date: 2026-05-02
 author: Will Douglas Heaven
+image: /2026-05-02/og-goodfire-silico-mechanistic-interpretability.png
 layout: post
 permalink: /2026-05-02/goodfire-silico-mechanistic-interpretability.html
 ---
 
 <div class="hero-badge">AI Interpretability · 2026-05-02</div>
+
+![](/ai-articles/2026-05-02/og-goodfire-silico-mechanistic-interpretability.png)
 
 **原文連結：** [MIT Technology Review - This startup's new mechanistic interpretability tool lets you debug LLMs](https://www.technologyreview.com/2026/04/30/1136721/this-startups-new-mechanistic-interpretability-tool-lets-you-debug-llms/)
 
