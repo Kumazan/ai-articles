@@ -66,7 +66,7 @@ context window 也要盡可能拉大。大型 codebase 加上 agent framework �
 
 好消息是，負責追蹤模型狀態的 key-value cache 不一定要用 16-bit 儲存。把 KV cache 壓到 8-bit，通常可以在效能和品質之間取得可接受的折衷。prefix caching 也應該打開，因為 agent 工作流常會反覆處理相同的 system prompt 或 codebase context；快取後可以避免每次都重算。
 
-文章用 24GB Nvidia RTX 3090 Ti 示範的 Llama.cpp 啟動指令如下：
+文章用 24GB Nvidia RTX 3090 Ti 示範的 Llama.cpp 啟動指令如下；如果機器有更多記憶體，可以嘗試把 context window 提高到 131,072 或 262,144：
 
 ```bash
 llama-server \
