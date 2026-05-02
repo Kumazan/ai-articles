@@ -1,6 +1,6 @@
 ---
 title: "訂閱越來越貴？本機 AI coding agents 開始有實戰價值了"
-description: "The Register 實測用 Qwen3.6-27B、Llama.cpp、Claude Code、Pi Coding Agent 與 Cline 組成本機 coding agent 工作流，提醒它還不能取代前沿模型，但已足以處理小型程式任務。"
+description: "The Register 實測用 Qwen3.6-27B、Llama.cpp 與多種 agent harness 跑本機 coding agents，降低雲端 token 成本並保留控制權。"
 date: 2026-05-03
 author: Tobias Mann and Thomas Claburn
 image: /2026-05-03/og-local-ai-coding-agents.png
