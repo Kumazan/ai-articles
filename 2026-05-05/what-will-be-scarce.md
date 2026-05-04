@@ -5,9 +5,12 @@ author: Grant Harvey
 layout: post
 permalink: /2026-05-05/what-will-be-scarce.html
 description: "Alex Imas 從 Starbucks、收入效應與模仿性慾望切入，主張 AI 會把 commodity 壓成低價，但真正稀缺的會是人味、故事、exclusivity 與 relational sector。"
+image: /2026-05-05/og-what-will-be-scarce.png
 ---
 
 <div class="hero-badge">The Neuron · 2026-05-03</div>
+
+![](/ai-articles/2026-05-05/og-what-will-be-scarce.png)
 
 **原文連結：** [What gets scarce when AI does everything?](https://aleximas.substack.com/p/what-will-be-scarce)
 
