@@ -5,9 +5,12 @@ date: 2026-05-04
 author: The CTO
 layout: post
 permalink: /2026-05-04/ai-infra-agent-memory-governance.html
+image: /2026-05-04/og-ai-infra-agent-memory-governance.png
 ---
 
 <div class="hero-badge">The Art of CTO · 2026-05-03</div>
+
+![](/ai-articles/2026-05-04/og-ai-infra-agent-memory-governance.png)
 
 **原文連結：** [The Art of CTO - Daily Sync: May 3, 2026](https://theartofcto.com/daily-sync/2026-05-03-daily-sync)
 
