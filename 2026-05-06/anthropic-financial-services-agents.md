@@ -5,9 +5,12 @@ date: 2026-05-06
 author: Anthropic
 layout: post
 permalink: /2026-05-06/anthropic-financial-services-agents.html
+image: /2026-05-06/og-anthropic-financial-services-agents.png
 ---
 
 <div class="hero-badge">Anthropic · 2026-05-05</div>
+
+![](/ai-articles/2026-05-06/og-anthropic-financial-services-agents.png)
 
 **原文連結：** [Anthropic - Agents for financial services](https://www.anthropic.com/news/finance-agents)
 
