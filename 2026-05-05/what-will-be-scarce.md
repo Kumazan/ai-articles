@@ -1,7 +1,7 @@
 ---
 title: "當 AI 什麼都能做，什麼會變稀缺？"
 date: 2026-05-05
-author: Grant Harvey
+author: Alex Imas
 layout: post
 permalink: /2026-05-05/what-will-be-scarce.html
 description: "AI 會把 commodity 壓成低價，但真正稀缺的會是人味、故事、exclusivity 與 relational sector，未來工作也會往這裡重分配。"
