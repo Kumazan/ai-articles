@@ -1,6 +1,6 @@
 ---
 title: "Anthropic 把 Claude agents 帶進金融工作流"
-description: "Anthropic 推出 10 個金融服務 agent 模板，整合 Claude Cowork、Claude Code、Managed Agents、Microsoft 365 add-ins 與金融資料 connectors，目標是把金融業導入 AI agents 的週期從數月縮到數天。"
+description: "Anthropic 推出 10 個金融服務 agent 模板，結合 Claude Cowork、Claude Code 與資料 connectors，主打數天內導入真實金融工作流。"
 date: 2026-05-06
 author: Anthropic
 layout: post
