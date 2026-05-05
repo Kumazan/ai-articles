@@ -5,9 +5,12 @@ date: 2026-05-05
 author: The Economy Editorial Board
 layout: post
 permalink: /2026-05-05/cheap-ai-compute-crunch.html
+image: /2026-05-05/og-cheap-ai-compute-crunch.png
 ---
 
 <div class="hero-badge">The Economy · 2026-05-05</div>
+
+![](/ai-articles/2026-05-05/og-cheap-ai-compute-crunch.png)
 
 **原文連結：** [The Bill Comes Due for Cheap AI](https://economy.ac/review/2026/05/202605288956)
 
