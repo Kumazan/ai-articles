@@ -5,9 +5,12 @@ date: 2026-05-06
 author: Jennifer Huergo
 layout: post
 permalink: /2026-05-06/us-frontier-ai-model-testing.html
+image: /2026-05-06/og-us-frontier-ai-model-testing.png
 ---
 
 <div class="hero-badge">NIST · 2026-05-05</div>
+
+![](/ai-articles/2026-05-06/og-us-frontier-ai-model-testing.png)
 
 **原文連結：** [CAISI Signs Agreements Regarding Frontier AI National Security Testing With Google DeepMind, Microsoft and xAI](https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing)
 
