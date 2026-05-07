@@ -3,11 +3,14 @@ title: "AlphaEvolve 的下一步：讓 Gemini coding agent 走進科學、電網
 description: "DeepMind 展示 AlphaEvolve 一年來如何從演算法探索工具走向實際部署，改善基因定序、電網最佳化、量子電路、TPU 設計與企業工作負載。"
 date: 2026-05-08
 author: AlphaEvolve team
+image: /2026-05-08/og-alphaevolve-scaling-impact.png
 layout: post
 permalink: /2026-05-08/alphaevolve-scaling-impact.html
 ---
 
 <div class="hero-badge">Google DeepMind · 2026-05-07</div>
+
+![](/ai-articles/2026-05-08/og-alphaevolve-scaling-impact.png)
 
 **原文連結：** [AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields](https://deepmind.google/blog/alphaevolve-impact/)
 
