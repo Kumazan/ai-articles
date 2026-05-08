@@ -1,6 +1,6 @@
 ---
 title: "OpenAI 如何安全部署 Codex：企業 coding agents 的控制面"
-description: "OpenAI 分享內部部署 Codex 的安全控制：透過 sandbox、核准政策、網路規則與 agent-native telemetry，讓 coding agents 在企業環境中可審計、可治理地運作。"
+description: "OpenAI 分享內部部署 Codex 的安全控制：用 sandbox、核准政策、網路規則與 agent-native telemetry，讓 coding agents 在企業環境中可審計、可治理。"
 date: 2026-05-09
 author: OpenAI
 image: /2026-05-09/og-running-codex-safely-openai.png
