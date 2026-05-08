@@ -1,6 +1,6 @@
 ---
 title: "ZAYA1-8B：用不到 10 億活躍參數挑戰前沿推理模型"
-description: "Zyphra 發布 ZAYA1-8B，這個在 AMD MI300 stack 上訓練的 MoE 模型，主打高 intelligence density，能用 7.6 億活躍參數在數學、推理與 coding benchmark 上逼近大模型。"
+description: "Zyphra 發布 ZAYA1-8B：在 AMD MI300 stack 上訓練的 8.4B MoE 模型，每次推論只啟用 7.6 億參數，主打高推理與 coding 能力密度。"
 date: 2026-05-08
 author: "Robert Washbourne 等 / Zyphra"
 image: /2026-05-08/og-zaya1-8b-frontier-intelligence-density.png
