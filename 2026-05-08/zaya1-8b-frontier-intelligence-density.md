@@ -71,7 +71,7 @@ Zyphra 觀察到，在 RL 階段中，許多能力都有明顯改善；其中數
 
 ZAYA1-8B 從 SFT 階段開始，就被訓練去理解並回應 Markovian RSA 的 aggregation prompts 與 chunking 方法。Zyphra 透過合成方式建構能反映目標行為的 prompts，並在 RL 中用一部分 prompts 訓練 Markovian RSA self-aggregation behavior。Zyphra 發現，對 ZAYA1-8B 而言，Markovian RSA 能大幅提升表現，尤其是在困難的數學推理任務上。
 
-在主要結果中，Zyphra 展示了 ZAYA1-8B 使用 Markovian RSA 時的表現：中間 chain-of-thoughts 使用 40K-token budget，且每次只把最後 4K tokens 傳給下一輪。在這種設定下，ZAYA1-8B 可接近 DeepSeek-V3.2 與 Qwen3-A22B 等前沿開放權重模型的水準，距離 GPT-5-High 也只剩幾分差距。進一步使用 extra-high test-time compute 設定時，也就是每題 5.5M tokens，ZAYA1-8B 在 APEX-shortlist 這個困難數學 benchmark 上，超過 DeepSeek-V3.2 與 GPT-OSS-High。
+在主要結果中，Zyphra 展示了 ZAYA1-8B 使用 Markovian RSA 時的表現：中間 chain-of-thoughts 使用 40K-token budget，且每次只把最後 4K tokens 傳給下一輪。在這種設定下，ZAYA1-8B 可接近 DeepSeek-V3.2 與 Qwen3-A22B 等前沿開放權重模型的水準，距離 GPT-5-High 也只剩幾分差距。進一步使用 extra-high test-time compute 設定時，也就是每題 5.5M tokens，ZAYA1-8B 在 APEX-shortlist 這個困難數學 benchmark 上，超過 DeepSeek-V3.2 與 GPT OSS 120B (high)。
 
 Zyphra 也發現，要讓這種方法有效，模型必須被訓練成能理解 Markovian RSA harness。當 Zyphra 把同樣方法套到 Qwen3-4B-Thinking-2507 時，效能提升明顯小得多。這突顯出最終模型 harness 與 post-training 方法共同設計的重要性。
 
