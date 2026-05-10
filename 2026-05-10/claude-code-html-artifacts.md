@@ -51,7 +51,13 @@ Simon 也立刻做了一個實驗。他拿 copy.fail 這個最近被發現的 Li
 
 他讓 GPT-5.5 建立一個 HTML explanation，要求模型詳細解釋程式碼、重新格式化、展開困惑之處，並用 HTML、CSS、JavaScript 的能力讓說明更 rich、interactive、clear。
 
-結果產出的 HTML page 還不錯。不過 Simon 也補充，自己應該在 prompt 裡更明確強調「解釋 exploit 本身」，而不是讓模型花太多力氣說明包在外面的 Python harness。
+他使用的指令如下：
+
+```bash
+curl https://copy.fail/exp | llm -m gpt-5.5 -s 'Explain this code in detail. Reformat it, expand out any confusing bits and go deep into what it does and how it works. Output HTML, neatly styled and using capabilities of HTML and CSS and JavaScript to make the explanation rich and interactive and as clear as possible'
+```
+
+結果產出的 [HTML page](https://gisthost.github.io/?ae53e3461ffdbfd0826156aacf025c7e) 還不錯。不過 Simon 也補充，自己應該在 prompt 裡更明確強調「解釋 exploit 本身」，而不是讓模型花太多力氣說明包在外面的 Python harness。
 
 <div class="sep">· · ·</div>
 
