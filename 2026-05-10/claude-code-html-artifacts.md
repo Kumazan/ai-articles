@@ -3,11 +3,14 @@ title: "Claude Code 的 HTML artifacts：把 AI 回答變成可互動文件"
 description: "Simon Willison 重新思考讓 Claude Code 輸出 HTML 而非 Markdown：對 PR review、研究、設計與互動說明來說，瀏覽器原生格式可能比文字牆更能承載理解。"
 date: 2026-05-10
 author: Simon Willison
+image: /2026-05-10/og-claude-code-html-artifacts.png
 layout: post
 permalink: /2026-05-10/claude-code-html-artifacts.html
 ---
 
 <div class="hero-badge">Simon Willison · 2026-05-08</div>
+
+![](/ai-articles/2026-05-10/og-claude-code-html-artifacts.png)
 
 **原文連結：** [The Unreasonable Effectiveness of HTML](https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/)
 
