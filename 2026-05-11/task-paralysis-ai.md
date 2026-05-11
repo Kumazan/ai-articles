@@ -3,11 +3,14 @@ title: "AI 幫你跨過任務癱瘓，也可能變成新的上癮迴圈"
 description: "Daniel Gilbert 從自身任務癱瘓經驗談起：Claude Code 能幫他啟動卡住的工作，但快速回饋與 token 付費機制也可能放大依賴與衝動消費。"
 date: 2026-05-11
 author: Daniel Gilbert
+image: /2026-05-11/og-task-paralysis-ai.png
 layout: post
 permalink: /2026-05-11/task-paralysis-ai.html
 ---
 
 <div class="hero-badge">Daniel Gilbert · 2026-05-10</div>
+
+![](/ai-articles/2026-05-11/og-task-paralysis-ai.png)
 
 **原文連結：** [Task Paralysis & AI](https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html)
 
