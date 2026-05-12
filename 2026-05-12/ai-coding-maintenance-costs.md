@@ -3,11 +3,14 @@ title: "AI coding agent 真正該降低的是維護成本"
 description: "James Shore 用簡單模型提醒：AI coding agent 如果只是加速產碼，卻沒有按比例降低維護成本，短期速度紅利會很快被長期債務吃掉。"
 date: 2026-05-12
 author: James Shore
+image: /2026-05-12/og-ai-coding-maintenance-costs.png
 layout: post
 permalink: /2026-05-12/ai-coding-maintenance-costs.html
 ---
 
 <div class="hero-badge">James Shore · 2026-05-10</div>
+
+![](/ai-articles/2026-05-12/og-ai-coding-maintenance-costs.png)
 
 **原文連結：** [You Need AI That Reduces Maintenance Costs](https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs)
 
