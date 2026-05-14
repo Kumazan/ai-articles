@@ -5,9 +5,12 @@ date: 2026-05-15
 author: Ara Kharazian
 layout: post
 permalink: /2026-05-15/anthropic-openai-business-adoption.html
+image: /2026-05-15/og-anthropic-openai-business-adoption.png
 ---
 
 <div class="hero-badge">AI News · 2026-05-15</div>
+
+![](/ai-articles/2026-05-15/og-anthropic-openai-business-adoption.png)
 
 **原文連結：** [Anthropic beats OpenAI on business adoption](https://ramp.com/leading-indicators/ai-index-may-2026)
 
