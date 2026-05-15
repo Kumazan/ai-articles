@@ -3,11 +3,14 @@ title: "每位員工一個 AI agent，為什麼不如讓團隊共享專職 agent
 description: "Every 團隊實際把 AI agent 發給每位員工後發現：真正的瓶頸不只是模型能力，而是平台穩定性、維護責任、共享脈絡與權限設計。"
 date: 2026-05-16
 author: Brandon Gell and Willie Williams
+image: /2026-05-16/og-team-ai-agents-workplace-lessons.png
 layout: post
 permalink: /2026-05-16/team-ai-agents-workplace-lessons.html
 ---
 
 <div class="hero-badge">Every · 2026-05-15</div>
+
+![](/ai-articles/2026-05-16/og-team-ai-agents-workplace-lessons.png)
 
 **原文連結：** [We Gave Every Employee an AI Agent. Here's What We're Doing Differently Now.](https://every.to/source-code/we-gave-every-employee-an-ai-agent-here-s-what-we-re-doing-differently-now)
 
