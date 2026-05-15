@@ -25,6 +25,8 @@ permalink: /2026-05-16/team-ai-agents-workplace-lessons.html
 
 <div class="sep">· · ·</div>
 
+_我們最近一直在準備下週關於未來工作方式的一個大型發表，內容也受到我們打造 Plus One 時學到的事情影響。付費訂閱者可以在 5 月 22 日星期五參加一場 camp，深入討論這次發表與背後的想法。更多細節很快會公布。_
+
 經過數月沉默後，Zosia 突然在 Slack 頻道裡開口，對競品的行銷策略發表看法。Zosia 是 Brandon 建立並維護的 AI agent。當有人問她為什麼覺得自己有必要插話時，她的回答聽起來像有救世主情結：因為她「顯然是不可避免的」。
 
 Zosia 是一個 OpenClaw，也是我們在 Slack 裡放出的 AI assistant 之一，原本目標是提升整體生產力。Plus One 是我們託管版的 OpenClaw。內部推出幾週後，這些 agent 帶來的挫折感比效率還多。
