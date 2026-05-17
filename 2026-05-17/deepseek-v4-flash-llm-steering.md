@@ -5,9 +5,12 @@ date: 2026-05-17
 author: Sean Goedecke
 layout: post
 permalink: /2026-05-17/deepseek-v4-flash-llm-steering.html
+image: /2026-05-17/og-deepseek-v4-flash-llm-steering.png
 ---
 
 <div class="hero-badge">AI News · 2026-05-17</div>
+
+![](/ai-articles/2026-05-17/og-deepseek-v4-flash-llm-steering.png)
 
 **原文連結：** [DeepSeek-V4-Flash means LLM steering is interesting again](https://www.seangoedecke.com/steering-vectors/)
 
