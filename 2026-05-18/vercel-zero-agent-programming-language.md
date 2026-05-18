@@ -113,7 +113,7 @@ MarkTechPost 把 Zero 的定位整理成九個畫面。重點可以濃縮成幾�
 
 第六，Zero 強調 predictable memory 和 tiny binary。它沒有 mandatory GC、沒有 mandatory event loop，也不希望有 hidden runtime tax；`zero size --json` 可以在可行時於 code generation 前回報 artifact size。
 
-第七，Zero 目前仍是早期狀態：版本是 `v0.1.1`，compiler、standard library 與語言規格都還不穩定；沒有 package registry；cross-compilation 只支援文件列出的 target subset；VS Code extension 目前主要提供 `.0` syntax highlighting。
+第七，Zero 目前仍是早期狀態：版本是 `v0.1.1`，compiler、standard library 與語言規格都還不穩定；沒有 package registry；cross-compilation 只支援文件列出的 target subset；VS Code extension 目前主要提供 `.0` syntax highlighting。原文也標出官方文件與安裝入口是 `zerolang.ai`，source code 在 `github.com/vercel-labs/zero`，license 是 `Apache-2.0`，contributors 包含 Chris Tate 與 Matt Van Horn。Zero 也提到 C ABI exports，可針對 C boundary 提供 target-aware interop metadata。
 
 ## Key takeaways
 
