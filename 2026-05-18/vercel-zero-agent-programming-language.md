@@ -97,6 +97,8 @@ zero --version
 
 installer 會從 GitHub release 下載最新版 binary，放到 `$HOME/.zero/bin/zero`。Zero package 使用 `zero.json` manifest，source file 放在 `src/` 底下，可以用 `zero new cli <name>` 初始化。repo 裡也附了一個 `.0` 檔案的 VS Code syntax highlighting extension，位置在 `extensions/vscode/`。
 
+原文的 quick start 也示範了幾個常用指令：`zero check examples/hello.0`、`zero run examples/add.0`，以及用 `zero build --emit exe --target linux-musl-x64 examples/add.0 --out .zero/out/add` 編出 executable。建立新 package 後，也可以在專案內跑 `zero check . && zero test . && zero run .` 做基本驗證。
+
 ## MarkTechPost 的 visual explainer 重點
 
 MarkTechPost 把 Zero 的定位整理成九個畫面。重點可以濃縮成幾件事。
