@@ -5,9 +5,12 @@ date: 2026-05-19
 author: Simon Sharwood
 layout: post
 permalink: /2026-05-19/linux-ai-bug-hunters-security-list.html
+image: /2026-05-19/og-linux-ai-bug-hunters-security-list.png
 ---
 
 <div class="hero-badge">Simon Sharwood · 2026-05-18</div>
+
+![](/ai-articles/2026-05-19/og-linux-ai-bug-hunters-security-list.png)
 
 **原文連結：** [Linus Torvalds says AI-powered bug hunters have made Linux security mailing list ‘almost entirely unmanageable’](https://www.theregister.com/security/2026/05/18/linus-torvalds-says-ai-powered-bug-hunters-have-made-linux-security-mailing-list-almost-entirely-unmanageable/5241633)
 
