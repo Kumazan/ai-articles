@@ -5,9 +5,12 @@ date: 2026-05-18
 author: Michal Sutter
 layout: post
 permalink: /2026-05-18/vercel-zero-agent-programming-language.html
+image: /2026-05-18/og-vercel-zero-agent-programming-language.png
 ---
 
 <div class="hero-badge">Michal Sutter · 2026-05-17</div>
+
+![](/ai-articles/2026-05-18/og-vercel-zero-agent-programming-language.png)
 
 **原文連結：** [Vercel Labs Introduces Zero, a Systems Programming Language Designed So AI Agents Can Read, Repair, and Ship Native Programs](https://www.marktechpost.com/2026/05/17/vercel-labs-introduces-zero-a-systems-programming-language-designed-so-ai-agents-can-read-repair-and-ship-native-programs/)
 
