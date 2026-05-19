@@ -51,11 +51,15 @@ OpenAI 和 Anthropic 在 2025 年大多數時間都投入 Reinforcement Learning
 
 同樣是在 11 月，另一件事發生了：一個當時還很冷門、名叫「Warelay」的 repo，由一位叫 Pete 的人送出了第一個 commit。
 
+投影片截圖顯示，這個 initial commit 的 hash 是 `f6dd362`，時間是 2025 年 11 月 24 日，內容是一份 MIT license。
+
 到了 12 月到 1 月的假期期間，很多人都趁著休息時間測試這些新模型與 coding agents，看看它們到底能做到什麼。
 
 它們能做到很多事！有些人因此稍微興奮過頭。我自己也短暫經歷了一種 LLM psychosis，開始開出各種野心過大的專案，想看看自己能把它們推到多遠。
 
 其中一個專案，是我用 vibe coding 做出來的 Python 版 JavaScript 實作，算是鬆散移植 MicroQuickJS。我把它叫做 micro-javascript，你可以在瀏覽器裡試用它的 playground。
+
+投影片中的 playground 範例使用 `numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`，把它變成 `Doubled: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]`，篩出 `Evens: [2, 4, 6, 8, 10]`，最後得到 `Sum: 55`；畫面也顯示 `Output 27` 與 `Execution time: 8.00ms`。
 
 那個 playground demo 展示的是：JavaScript 程式碼透過我的 micro-javascript library 執行，而這個 library 是用 Python 寫的，跑在 Pyodide 裡；Pyodide 又跑在 WebAssembly 裡；WebAssembly 又跑在 JavaScript 裡；最後整套東西跑在瀏覽器裡。
 
@@ -75,7 +79,7 @@ Mac Minis 開始在矽谷周邊賣到缺貨，因為大家都在買來跑自己�
 
 Drew Breunig 跟我開玩笑說，這是因為它們就像新的 digital pets，而 Mac Mini 正好是安置 Claw 的完美水族箱。
 
-我最喜歡用來比喻 Claws 的，是 Alfred Molina 在 2004 年電影《Spider-Man 2》裡飾演的 Doc Ock。他的機械觸手由 AI 驅動，只要 inhibitor chip 沒壞就很安全；一旦壞掉，它們就會變邪惡並接管一切。
+我最喜歡用來比喻 Claws 的，是 Alfred Molina 在 2004 年電影《Spider-Man 2》裡飾演的 Doc Ock。他的四隻機械觸手由 AI 驅動，只要 inhibitor chip 沒壞就很安全；一旦壞掉，它們就會變邪惡並接管一切。
 
 2 月還有另一件事：Gemini 3.1 Pro 發布，並且幫我畫出了一張非常好的鵜鶘騎腳踏車圖。你看，牠籃子裡甚至還有一條魚。
 
@@ -85,9 +89,9 @@ Drew Breunig 跟我開玩笑說，這是因為它們就像新的 digital pets，
 
 光是過去一個月就發生了很多事。
 
-Google 發布了 Gemma 4 系列模型，這是我看過美國公司推出的最強 open weight 模型。
+Google 發布了 Gemma 4 系列模型，這是我看過美國公司推出的最強 open weight 模型。投影片上示範的是 Gemma 4 26B-A4B（17.99GB）。
 
-同樣是在上個月，中國 AI lab GLM 推出了 GLM-5.1，一個 open weight、1.5TB 的怪物。如果你負擔得起運行它的硬體，這是個非常有效的模型。
+同樣是在上個月，中國 AI lab GLM 推出了 GLM-5.1，一個 open weight、1.5TB 的怪物；投影片標示它是 MIT 授權、754B parameters、1.51TB。如果你負擔得起運行它的硬體，這是個非常有效的模型。
 
 GLM-5.1 幫我畫出了這張相當稱職的鵜鶘騎腳踏車圖。
 
