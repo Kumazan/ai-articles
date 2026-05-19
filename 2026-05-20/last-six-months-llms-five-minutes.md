@@ -1,6 +1,6 @@
 ---
 title: "LLM 過去六個月：coding agents 變好，本地模型超出預期"
-description: "Simon Willison 用 PyCon US 2026 五分鐘 lightning talk 回顧近半年 LLM 發展：模型王座快速輪替，但真正轉折是 coding agents 變得可日常使用，本地開源模型也大幅超出預期。"
+description: "Simon Willison 回顧近半年 LLM 變化：模型王座快速輪替，但真正轉折是 coding agents 已可日常交付，本地開源模型也開始超出預期。"
 date: 2026-05-20
 author: Simon Willison
 layout: post
