@@ -5,9 +5,12 @@ date: 2026-05-20
 author: Simon Willison
 layout: post
 permalink: /2026-05-20/last-six-months-llms-five-minutes.html
+image: /2026-05-20/og-last-six-months-llms-five-minutes.png
 ---
 
 <div class="hero-badge">Simon Willison · 2026-05-19</div>
+
+![](/ai-articles/2026-05-20/og-last-six-months-llms-five-minutes.png)
 
 **原文連結：** [The last six months in LLMs in five minutes](https://simonwillison.net/2026/May/19/5-minute-llms/)
 
