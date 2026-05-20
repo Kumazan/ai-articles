@@ -5,9 +5,12 @@ date: 2026-05-21
 author: OpenAI
 layout: post
 permalink: /2026-05-21/openai-synthid-content-provenance.html
+image: /2026-05-21/og-openai-synthid-content-provenance.png
 ---
 
 <div class="hero-badge">OpenAI · 2026-05-19</div>
+
+![](/ai-articles/2026-05-21/og-openai-synthid-content-provenance.png)
 
 **原文連結：** [Advancing content provenance for a safer, more transparent AI ecosystem](https://openai.com/index/advancing-content-provenance/)
 
