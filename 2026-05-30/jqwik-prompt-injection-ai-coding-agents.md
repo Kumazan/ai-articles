@@ -5,9 +5,12 @@ date: 2026-05-30
 author: Dan Goodin, Ars Technica
 layout: post
 permalink: /2026-05-30/jqwik-prompt-injection-ai-coding-agents.html
+image: /2026-05-30/og-jqwik-prompt-injection-ai-coding-agents.png
 ---
 
 <div class="hero-badge">Ars Technica · 2026-05-28</div>
+
+![](/ai-articles/2026-05-30/og-jqwik-prompt-injection-ai-coding-agents.png)
 
 **原文連結：** [Fed up with vibe coders, dev sneaks data-nuking prompt injection into their code](https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code/)
 
