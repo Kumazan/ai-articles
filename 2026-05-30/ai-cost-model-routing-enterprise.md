@@ -5,9 +5,12 @@ date: 2026-05-30
 author: Madison Mills, Axios
 layout: post
 permalink: /2026-05-30/ai-cost-model-routing-enterprise.html
+image: /2026-05-30/og-ai-cost-model-routing-enterprise.png
 ---
 
 <div class="hero-badge">Axios · 2026-05-29</div>
+
+![](/ai-articles/2026-05-30/og-ai-cost-model-routing-enterprise.png)
 
 **原文連結：** [CEOs go bargain hunting for AI](https://www.axios.com/2026/05/29/ceos-ai-cheaper-tokens)
 
