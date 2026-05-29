@@ -5,9 +5,12 @@ date: 2026-05-29
 author: Simon Willison
 layout: post
 permalink: /2026-05-29/claude-opus-48-modest-improvement.html
+image: /2026-05-29/og-claude-opus-48-modest-improvement.png
 ---
 
 <div class="hero-badge">Simon Willison · 2026-05-28</div>
+
+![](/ai-articles/2026-05-29/og-claude-opus-48-modest-improvement.png)
 
 **原文連結：** [Claude Opus 4.8: “a modest but tangible improvement”](https://simonwillison.net/2026/May/28/claude-opus-4-8/)
 
