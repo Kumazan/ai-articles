@@ -1,6 +1,7 @@
 ---
 title: "AI 對 AI 資安：LLM Agent 已開始主導入侵鏈"
 description: "Tech Times 報導指出，Sysdig 捕捉到第一起由 LLM agent 即時主導的入侵鏈，從 Marimo 漏洞到資料庫外洩不到一小時，迫使防禦思維走向機器速度。"
+image: /2026-05-31/og-ai-agent-cyberattack-marimo-sysdig.png
 date: 2026-05-31
 author: Adrian Parham, Tech Times
 layout: post
@@ -8,6 +9,8 @@ permalink: /2026-05-31/ai-agent-cyberattack-marimo-sysdig.html
 ---
 
 <div class="hero-badge">Tech Times · 2026-05-30</div>
+
+![](/ai-articles/2026-05-31/og-ai-agent-cyberattack-marimo-sysdig.png)
 
 **原文連結：** [AI vs AI Cybersecurity: Sysdig Documents First LLM-Agent Intrusion in the Wild](https://www.techtimes.com/articles/317423/20260530/ai-vs-ai-cybersecurity-sysdig-documents-first-llm-agent-intrusion-wild.htm)
 
