@@ -5,9 +5,12 @@ date: 2026-06-01
 author: "David, thoughts.hmmz.org"
 layout: post
 permalink: /2026-06-01/cancelling-ai-subscription-attention.html
+image: /2026-06-01/og-cancelling-ai-subscription-attention.png
 ---
 
 <div class="hero-badge">thoughts.hmmz.org · 2026-05-31</div>
+
+![](/ai-articles/2026-06-01/og-cancelling-ai-subscription-attention.png)
 
 **原文連結：** [the solution might be cancelling my AI subscription](https://thoughts.hmmz.org/2026-05-31.html)
 
