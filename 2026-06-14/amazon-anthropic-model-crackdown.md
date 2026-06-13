@@ -5,9 +5,12 @@ date: 2026-06-14
 author: "Amrith Ramkumar and Robert McMillan, The Wall Street Journal"
 layout: post
 permalink: /2026-06-14/amazon-anthropic-model-crackdown.html
+image: /2026-06-14/og-amazon-anthropic-model-crackdown.png
 ---
 
 <div class="hero-badge">The Wall Street Journal · 2026-06-13</div>
+
+![](/ai-articles/2026-06-14/og-amazon-anthropic-model-crackdown.png)
 
 **原文連結：** [Amazon CEO's Talks With U.S. Officials Triggered Crackdown on Anthropic Models](https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578)
 
