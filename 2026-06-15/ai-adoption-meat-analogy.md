@@ -5,9 +5,12 @@ date: 2026-06-15
 author: "Gabriel Weinberg"
 layout: post
 permalink: /2026-06-15/ai-adoption-meat-analogy.html
+image: /2026-06-15/og-ai-adoption-meat-analogy.png
 ---
 
 <div class="hero-badge">Gabriel Weinberg · 2026-06-13</div>
+
+![](/ai-articles/2026-06-15/og-ai-adoption-meat-analogy.png)
 
 **原文連結：** [No, everyone is not using AI for everything.](https://gabrielweinberg.com/p/people-are-consuming-ai-like-they)
 
