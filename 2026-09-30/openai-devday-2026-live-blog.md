@@ -1,7 +1,7 @@
 ---
 title: "OpenAI DevDay 2026 現場紀錄：Dots、GPT-6.1 Sol 與開發者平台新功能"
-description: "Simon Willison 從現場記錄 OpenAI DevDay 2026，涵蓋常駐代理 Dots、GPT-6.1 Sol、Codex 雲端、安全工具，以及 ChatGPT 平台與開發者功能的發布和實際展示。"
-date: 2026-09-30 04:30:00 +0800
+description: "OpenAI DevDay 2026 現場紀錄：涵蓋常駐代理 Dots、GPT-6.1 Sol、Codex 雲端與 ChatGPT 開發平台的新功能及展示。"
+date: 2026-09-30
 author: Simon Willison
 image: /2026-09-30/og-openai-devday-2026-live-blog.png
 layout: post
