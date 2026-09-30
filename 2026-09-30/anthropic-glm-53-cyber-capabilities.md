@@ -3,11 +3,14 @@ title: "GLM-5.3 與進階網路能力的擴散"
 description: "Anthropic 評估指出，GLM-5.3 已能自主串接端到端漏洞利用，且其安全防護容易繞過，讓高階網路攻擊能力更廣泛流通。"
 date: 2026-09-30
 author: Andrew Fasano, Marius Fleischer, Cole McFaul, Robert Xiao, Tripp Gallagher
+image: /2026-09-30/og-anthropic-glm-53-cyber-capabilities.png
 layout: post
 permalink: /2026-09-30/anthropic-glm-53-cyber-capabilities.html
 ---
 
 <div class="hero-badge">AI News · 2026-09-30</div>
+
+![](/ai-articles/2026-09-30/og-anthropic-glm-53-cyber-capabilities.png)
 
 **原文連結：** [GLM-5.3 and the spread of advanced cyber capabilities](https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities)
 
