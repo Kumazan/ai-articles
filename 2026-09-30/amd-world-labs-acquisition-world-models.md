@@ -5,9 +5,12 @@ date: 2026-09-30
 author: Samuel Axon
 layout: post
 permalink: /2026-09-30/amd-world-labs-acquisition-world-models.html
+image: /2026-09-30/og-amd-world-labs-acquisition-world-models.png
 ---
 
 <div class="hero-badge">AI News · 2026-09-30</div>
+
+![](/ai-articles/2026-09-30/og-amd-world-labs-acquisition-world-models.png)
 
 **原文連結：** [AMD acquires World Labs AI startup, upping the ante against Nvidia](https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup/)
 
