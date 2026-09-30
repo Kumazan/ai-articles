@@ -5,9 +5,12 @@ date: 2026-10-01
 author: Sarah Perez
 layout: post
 permalink: /2026-10-01/meta-muse-private-messages-permissions.html
+image: /2026-10-01/og-meta-muse-private-messages-permissions.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-01</div>
+
+![](/ai-articles/2026-10-01/og-meta-muse-private-messages-permissions.png)
 
 **原文連結：** [Meta disputes claim that Muse read a user’s private messages without permission](https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/)
 
@@ -21,17 +24,17 @@ permalink: /2026-10-01/meta-muse-private-messages-permissions.html
 
 <div class="sep">· · ·</div>
 
-Meta 正反駁一名記者的說法。該記者指稱，Meta 的 AI 助理 Muse 未經許可讀取了他的私人訊息。《Inc.》專欄作家 Jason Aten 先前報導了這起事件；Meta 傳播副總裁 Andy Stone 隨後在 X 上回應，明確表示公司不認為產品曾在未取得使用者同意的情況下讀取訊息。
+Meta 正反駁一名記者的說法。該記者指稱，Meta 的 AI 助理 Muse 未經許可讀取了他的私人訊息。《Inc.》專欄作家 Jason Aten 先前報導了這起事件；Meta 傳播副總裁 Andy Stone 隨後在 X 上[回應](https://x.com/andymstone/status/2105106775259128080)，明確表示公司不認為產品曾在未取得使用者同意的情況下讀取訊息。
 
 Stone 回應該報導時在 X 上寫道：「Muse Mac App 的訊息整合功能完全採選擇加入制。你必須同時啟用『完整磁碟取用權限』和『訊息連接器』，Muse 才能讀取你的訊息內容。除非你這麼做，否則它無法讀取訊息。」
 
 儘管 Meta 否認，許多人仍懷疑公司是否說了實話。
 
-這並不令人意外。多年來，這家科技巨頭處理消費者資料的方式屢遭批評，也因此面臨訴訟、遭聯邦貿易委員會（FTC）裁罰，以及其他罰款。例如就在幾天前，新墨西哥州一個陪審團裁定，Meta 在資料處理方式上誤導了使用者；該案源自 2018 年 Cambridge Analytica 資料外洩事件。
+這並不令人意外。多年來，這家科技巨頭處理消費者資料的方式屢遭批評，包括[兒童安全訴訟](https://techcrunch.com/2026/03/24/new-mexico-just-handed-meta-its-first-courtroom-defeat-over-child-safety-and-the-rest-of-the-country-is-watching/)、[影響 300 萬歐盟用戶的 2018 年資安事件](https://techcrunch.com/2024/12/17/meta-fined-263m-over-2018-security-breach-that-affected-3m-eu-users/)，以及[兒童資料相關和解案](https://techcrunch.com/2026/08/27/buried-in-metas-18b-settlement-is-a-legal-pass-on-kids-data/)。Meta 也曾面對[投資人提起的隱私訴訟](https://techcrunch.com/2025/07/17/zuckerberg-and-meta-investors-reach-settlement-in-8b-privacy-case/)、[聯邦貿易委員會（FTC）的處分](https://techcrunch.com/2019/07/12/ftc-gives-facebook-5-billion-wrist-slap/)及[相關罰款](https://techcrunch.com/2019/07/24/facebook-settles-with-ftc-5-billion-and-new-privacy-guarantees/)。例如就在幾天前，新墨西哥州一個陪審團[裁定 Meta 在資料處理方式上誤導了使用者](https://www.reuters.com/business/meta-misled-consumers-case-over-cambridge-analytica-scandal-new-mexico-jury-says-2026-09-25/)；該案源自 2018 年 Cambridge Analytica 資料外洩事件。
 
-使用者是否信任 Muse，將是 Meta 能否在消費型 AI 市場勝出的關鍵。Muse 應用程式目前表現不錯，仍位居 App Store 排名第一；但若類似報導持續出現，不論內容是否屬實，Meta 的聲譽都可能難以挽回。公司至少應直接聯繫該名記者，釐清事情可能如何發生，而不是只否認事件。
+使用者是否信任 Muse，將是 Meta 能否在消費型 AI 市場勝出的關鍵。正如 TechCrunch 先前探討過的[產品信任問題](https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/)，Muse 應用程式目前[表現不錯](https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/)，仍位居 App Store 排名第一；但若類似報導持續出現，不論內容是否屬實，Meta 的聲譽都可能難以挽回。公司至少應直接聯繫該名記者，釐清事情可能如何發生，而不是只否認事件。
 
-Meta 超級智慧實驗室主管 David Singleton 在 Threads 上先行回覆 Aten，接著才有 Stone 代表 Meta 發表正式聲明。Singleton 表示，若要讓 Muse 在 Mac 上讀取訊息，使用者必須完成「三個不同步驟，包括應用程式層級權限與 macOS 內建的系統保護」；即使 Muse 應用程式本身有錯誤，也「無法繞過」這些保護。
+Meta 超級智慧實驗室主管 David Singleton 在 Threads 上先行[回覆 Aten](https://www.threads.com/@davidsingleton/post/DddI7WtG8ul?xmt=AQG035dTcsxGqj6YjXbrUYpUJ3OkB_RSLi9nfz6ed_BvWrlEBJZJnQRThLHoKTL8G2VDSmI)，接著才有 Stone 代表 Meta 發表正式聲明。Singleton 表示，若要讓 Muse 在 Mac 上讀取訊息，使用者必須完成「三個不同步驟，包括應用程式層級權限與 macOS 內建的系統保護」；即使 Muse 應用程式本身有錯誤，也「無法繞過」這些保護。
 
 這些步驟包括明確授予 Muse「完整磁碟取用權限」，之後使用者還能選擇 Muse 對「訊息」App 的存取等級，例如「無」、「唯讀」或「讀取」。若未啟用「完整磁碟取用權限」，這些選項就會呈現灰色、無法選取。
 
@@ -39,11 +42,11 @@ Meta 超級智慧實驗室主管 David Singleton 在 Threads 上先行回覆 Ate
 
 然而，Aten 的報導聲稱 Muse 讀取訊息時，「完整磁碟取用權限」其實是關閉的。他也表示，詢問 Muse 為何發生此事時，AI 回答說正在同步他的「裝置通知」。Aten 因此認為，Muse 可能把 Mac 上收到的訊息通知橫幅文字傳給了 AI 助理。
 
-Singleton 也否認這種說法，表示 AI 當時搞錯了，給出的解釋並不正確。他接著引用 Meta 關於 Muse 安全架構與漏洞獎勵計畫的說明頁面。
+Singleton 也否認這種說法，表示 AI 當時搞錯了，給出的解釋並不正確。他接著引用 Meta 關於 [Muse 安全架構與漏洞獎勵計畫](http://security.muse.ai/)的說明頁面。
 
 簡言之，Meta 的回應基本上是：Aten 描述的事情並未發生，而且在技術上不可能發生。
 
-這並非 Muse 首度被指控越界，恐怕也不會是最後一次。另一名使用者、YouTuber Matt Robb 最近表示，Muse 在協助他於 Facebook Marketplace 販售物品時處理不當，導致他的住址被分享出去，甚至有買家趁他不在家時找上門。根據 Singleton 在 Threads 上的回覆，Meta 似乎認為至少這起事件可能確實是產品的問題，並表示正在調查。
+這並非 Muse 首度被指控越界，恐怕也不會是最後一次。另一名使用者、YouTuber Matt Robb 最近表示，Muse 在協助他於 Facebook Marketplace 販售物品時[處理不當](https://www.threads.com/@matt.j.robb/post/DdxwAJnDhNy?xmt=AQG035dTcsxGqj6YjXbrUYpUJ3OkB_RSLi9nfz6ed_BvWrlEBJZJnQRThLHoKTL8G2VDSmI)，導致他的住址被分享出去，甚至有買家趁他不在家時[找上門](https://www.businessinsider.com/meta-muse-facebook-marketplace-address-story-matt-robb-2026-9)。根據 Singleton 在 Threads 上的回覆，Meta 似乎認為至少這起事件可能確實是產品的問題，並表示正在調查。
 
 <div class="sep">· · ·</div>
 
