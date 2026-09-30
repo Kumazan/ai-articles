@@ -3,11 +3,14 @@ title: "白宮 AI 自律協議：業者承諾監督，監管之爭仍未解"
 description: "川普邀集主要科技公司簽署前沿 AI 責任協議，要求內部監控、外部稽核與董事會監督；但協議的自願性質與政府監管立場，讓 AI 安全治理爭論持續升高。"
 date: 2026-09-30
 author: Ari Levy
+image: /2026-09-30/og-white-house-ai-self-regulation-safety-accord.png
 layout: post
 permalink: /2026-09-30/white-house-ai-self-regulation-safety-accord.html
 ---
 
 <div class="hero-badge">AI News · 2026-09-30</div>
+
+![](/ai-articles/2026-09-30/og-white-house-ai-self-regulation-safety-accord.png)
 
 **原文連結：** [Trump's meeting with tech leaders leaves AI safety more unsettled than ever](https://www.cnbc.com/2026/09/30/after-trump-meeting-with-tech-leaders-ai-safety-in-more-chaotic-state.html)
 
