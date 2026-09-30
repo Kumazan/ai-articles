@@ -63,6 +63,8 @@ Alphabet 執行長 Sundar Pichai 則稱這一刻「具有歷史意義，也至�
 
 Warner 在聲明中說：「打造最強大 AI 系統的公司正在警告我們，這項技術進步的速度超過安全防護的建置速度。總統的回應呢？把它改個名字，再叫開發技術的公司自行監管。但改變人工智慧的稱呼，無法處理愈來愈強大的 AI 系統帶來的真實風險。」
 
+—— CNBC 的 Kevin Breuninger、Samantha Subin 與 Lora Kolodny 亦有參與本文報導。
+
 <div class="sep">· · ·</div>
 
 ## 自律承諾能否取信，關鍵在於可驗證的問責
