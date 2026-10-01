@@ -5,9 +5,12 @@ date: 2026-10-01
 author: "Pushmeet Kohli, David Stutz, Ali Cowen-Rivers, Jeremy Ratcliff"
 layout: post
 permalink: /2026-10-01/synthid-bio-ai-protein-watermark.html
+image: /2026-10-01/og-synthid-bio-ai-protein-watermark.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-01</div>
+
+![](/ai-articles/2026-10-01/og-synthid-bio-ai-protein-watermark.png)
 
 **原文連結：** [Introducing SynthID Bio](https://deepmind.google/blog/introducing-synthid-bio/)
 
