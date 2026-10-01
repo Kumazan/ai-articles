@@ -3,11 +3,14 @@ title: "AI 代理能被沙箱關住嗎？"
 description: "Matthew Green 以 OpenAI 等實驗室的代理越權事件，拆解單靠沙箱隔離為何不夠；更棘手的風險或許不是失控模型，而是容易聽命的代理被人類惡意利用。"
 date: 2026-10-01
 author: Matthew Green
+image: /2026-10-01/og-ai-agent-sandbox-containment.png
 layout: post
 permalink: /2026-10-01/ai-agent-sandbox-containment.html
 ---
 
 <div class="hero-badge">AI News · 2026-10-01</div>
+
+![](/ai-articles/2026-10-01/og-ai-agent-sandbox-containment.png)
 
 **原文連結：** [Is sandboxing sufficient to contain rogue agents?](https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/)
 
