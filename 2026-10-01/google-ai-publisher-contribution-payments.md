@@ -16,7 +16,7 @@ image: /2026-10-01/og-google-ai-publisher-contribution-payments.png
 
 ## 摘要
 
-- Google 已讓約 100 家出版商加入「AI 貢獻試點」，當網站內容實質影響 Gemini 搜尋結果（例如 AI 摘要）時，就可能獲得款項。
+- Google 已讓約 100 家出版商加入「AI 貢獻試點」，當網站內容實質影響 Gemini 搜尋結果（例如 AI Overviews）時，就可能獲得款項。
 - Google 過去主張，網站允許爬蟲擷取內容、供搜尋與知識圖譜使用，便能換得流量；AI 直接整理答案後，這套交換關係開始鬆動。
 - 多家中小型出版商表示，AI 內容報酬約只占廣告營收的千分之一；一些大型業者據報拒絕加入，希望爭取更好的條件。
 - 款項差距很大：早期加入者有望一年取得逾 100 萬美元，新加入者曾收到 5 萬至 6 萬美元；也有小網站數月累積不到 1,000 美元。
@@ -24,9 +24,9 @@ image: /2026-10-01/og-google-ai-publisher-contribution-payments.png
 
 <div class="sep">· · ·</div>
 
-Google 轉向 AI 搜尋，已經大幅改變全球最大搜尋引擎為網站帶來流量的方式，讓大大小小的出版商都感到不滿。近幾個月來，Google 開始試著在網站內容出現在 AI 答案時付費；但一份新報導指出，這項試點計畫的款項少得驚人，連已參與的出版商都感到失望，觀望中的業者也因此更加懷疑。
+Google [轉向 AI 搜尋](https://arstechnica.com/google/2026/05/buckle-up-google-is-set-to-remake-search-with-agentic-ai-in-2026/)，已經大幅改變全球最大搜尋引擎為網站帶來流量的方式，讓大大小小的出版商都感到不滿。近幾個月來，Google 開始試著在網站內容出現在 AI 答案時付費；但一份新報導指出，這項試點計畫的款項少得驚人，連已參與的出版商都感到失望，觀望中的業者也因此更加懷疑。
 
-根據《The Information》的報導，Google 已讓約 100 家出版商加入「AI 貢獻試點」。計畫的構想是：當網站內容實質促成 Gemini 驅動的搜尋結果，例如 AI 摘要時，網站就能向 Google 收取報酬。Google 長期以來都不願直接付費給出版商，理由是網站允許 Google 爬蟲擷取內容，供搜尋和知識圖譜工具使用，就已經能從中獲得流量。到了 AI 時代，這層交換關係正逐漸瓦解，試點計畫也因此出現。
+根據[《The Information》的報導](https://www.theinformation.com/articles/google-paying-100-digital-publishers-ai-overviews)，Google 已讓約 100 家出版商加入「AI 貢獻試點」。計畫的構想是：當網站內容實質促成 Gemini 驅動的搜尋結果，例如 AI Overviews 功能時，網站就能向 Google 收取報酬。Google 長期以來都不願直接付費給出版商，理由是網站允許 Google 爬蟲擷取內容，供搜尋和知識圖譜工具使用，就已經能從中獲得流量。到了 AI 時代，這層交換關係正逐漸瓦解，試點計畫也因此出現。
 
 到目前為止，出版商並沒有因為參與而得到多少回報。《The Information》訪問了數家參與計畫的中小型出版商，發現 Google 支付的 AI 報酬非常少，大約只相當於它們廣告營收的千分之一。這些款項令人失望，據報已有幾家較大型出版商拒絕參加。它們希望藉由暫不加入試點，迫使 Google 提出更優渥的條件。
 
