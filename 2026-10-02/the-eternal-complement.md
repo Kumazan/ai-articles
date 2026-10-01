@@ -5,9 +5,12 @@ date: 2026-10-02
 author: "Hemanth Asirvatham、Elliott Mokski"
 layout: post
 permalink: /2026-10-02/the-eternal-complement.html
+image: /2026-10-02/og-the-eternal-complement.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-02</div>
+
+![](/ai-articles/2026-10-02/og-the-eternal-complement.png)
 
 **原文連結：** [The eternal complement](https://openai.com/index/the-eternal-complement/)
 
