@@ -5,9 +5,12 @@ date: 2026-10-02
 author: Tim Fernholz / TechCrunch
 layout: post
 permalink: /2026-10-02/amazon-strands-decider-2b-decision-model.html
+image: /2026-10-02/og-amazon-strands-decider-2b-decision-model.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-02</div>
+
+![](/ai-articles/2026-10-02/og-amazon-strands-decider-2b-decision-model.png)
 
 **原文連結：** [Amazon releases its own Jev clone as decision models flood the web](https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/)
 
