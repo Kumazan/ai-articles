@@ -5,9 +5,12 @@ date: 2026-10-01
 author: Ryan Whitwam
 layout: post
 permalink: /2026-10-01/google-ai-publisher-contribution-payments.html
+image: /2026-10-01/og-google-ai-publisher-contribution-payments.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-01</div>
+
+![](/ai-articles/2026-10-01/og-google-ai-publisher-contribution-payments.png)
 
 **原文連結：** [Google's early attempt to pay websites for AI answers is struggling](https://arstechnica.com/google/2026/09/google-is-paying-100-websites-for-contributions-to-ai-overviews-but-the-amounts-are-tiny/)
 
