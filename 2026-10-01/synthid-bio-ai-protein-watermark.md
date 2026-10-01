@@ -12,7 +12,7 @@ image: /2026-10-01/og-synthid-bio-ai-protein-watermark.png
 
 ![](/ai-articles/2026-10-01/og-synthid-bio-ai-protein-watermark.png)
 
-**原文連結：** [Introducing SynthID Bio](https://deepmind.google/blog/introducing-synthid-bio/)
+**原文連結：** [Introducing SynthID Bio](https://deepmind.google/blog/introducing-synthid-bio/)（原文發布於 2026 年 9 月 30 日）
 
 ## 摘要
 
@@ -24,6 +24,8 @@ image: /2026-10-01/og-synthid-bio-ai-protein-watermark.png
 - 團隊公開方法論、程式碼與體外實驗資料，並向研究社群釋出模型權重，盼促進後續驗證與合作。
 
 <div class="sep">· · ·</div>
+
+*概念驗證：在保留生物功能的前提下，為 AI 生成蛋白質加上浮水印。*
 
 Google DeepMind 今日推出 SynthID Bio，將浮水印技術帶進合成生物學。SynthID Bio 會把難以察覺的簽章嵌入生物序列，使浮水印不只可在數位模型中驗證，也能在實際合成出的蛋白質上驗證；實驗室測試同時顯示，標記不會破壞蛋白質的生物功能。
 
