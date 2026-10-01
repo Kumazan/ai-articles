@@ -5,9 +5,12 @@ date: 2026-10-01
 author: Carl Franzen
 layout: post
 permalink: /2026-10-01/google-gemini-4-argon-frontier-model.html
+image: /2026-10-01/og-gemini-4-argon-frontier-model.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-01</div>
+
+![](/ai-articles/2026-10-01/og-gemini-4-argon-frontier-model.png)
 
 **原文連結：** [Google 推出 Gemini 4 Argon，基準測試領先 OpenAI 與 Anthropic，但目前僅限受控發布](https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release)
 
@@ -136,11 +139,11 @@ Google 將 Argon 定位成基準測試領先項目廣、且至少在初期價格
 
 ## Google 是否成功追回落後數月的差距？
 
-這次發布的時機相當重要。Google 一直承受壓力，必須證明自己能在模型能力前沿與其他公司競爭，而不只是在產品通路、基礎設施與較便宜的 Flash 模型上占優勢。上週，《The Verge》報導，Google DeepMind 新任主管 Koray Kavukcuoglu 表示 Gemini 4 正在最後調整，可能遠早於年底推出。報導指出，Google 自 2025 年 11 月 Gemini 3 系列以來，尚未發布新的旗艦模型；同一期間 OpenAI 與 Anthropic 已推出 GPT-6 與新一代 Claude 模型。
+這次發布的時機相當重要。Google 一直承受壓力，必須證明自己能在模型能力前沿與其他公司競爭，而不只是在產品通路、基礎設施與較便宜的 Flash 模型上占優勢。上週，《The Verge》[報導](https://www.theverge.com/tech/999802/google-deepmind-gemini-4-timeline-koray-kavukcuoglu)，Google DeepMind 新任主管 Koray Kavukcuoglu 表示 Gemini 4 正在最後調整，可能遠早於年底推出。報導指出，Google 自 2025 年 11 月 Gemini 3 系列以來，尚未發布新的旗艦模型；同一期間 OpenAI 與 Anthropic 已推出 GPT-6 與新一代 Claude 模型。
 
-這段落差之前，Google 已承受數月的公開檢視。《路透社》7 月報導，Alphabet 投資人擔憂 Gemini 3.5 Pro 延後、AI 基礎設施支出增加，以及 AI 團隊人才流失。《Axios》8 月報導一次重大 AI 領導層調整：Demis Hassabis 辭去 Google DeepMind 執行長，改任 Alphabet 董事長兼首席科學家；Jeff Dean 離開首席科學家職位，與其他 AI 研究人員創業；Koray Kavukcuoglu 則接掌 DeepMind，向 Sundar Pichai 匯報。Axios 將這次變動形容為 Google 自 2023 年 OpenAI 動盪以來最大規模的 AI 領導層重整，同時指出 Google 並未將這些異動歸因於模型延宕。
+這段落差之前，Google 已承受數月的公開檢視。《路透社》[7 月報導](https://www.reuters.com/business/alphabets-gemini-delay-spending-worries-loom-over-earnings-2026-07-21/)，Alphabet 投資人擔憂 Gemini 3.5 Pro 延後、AI 基礎設施支出增加，以及 AI 團隊人才流失。《Axios》[8 月報導](https://www.axios.com/2026/08/06/googles-ai-leadership-shuffle)一次重大 AI 領導層調整：Demis Hassabis 辭去 Google DeepMind 執行長，改任 Alphabet 董事長兼首席科學家；Jeff Dean 離開首席科學家職位，與其他 AI 研究人員創業；Koray Kavukcuoglu 則接掌 DeepMind，向 Sundar Pichai 匯報。Axios 將這次變動形容為 Google 自 2023 年 OpenAI 動盪以來最大規模的 AI 領導層重整，同時指出 Google 並未將這些異動歸因於模型延宕。
 
-外部報導也指出更深層的緊張。《MarketWatch》報導，Google 的 AI 組織受到人才流失、模型發布延遲，以及研究、前沿能力與商業產品優先順序之間理念分歧的影響。因此，Argon 發布不只是新模型亮相，也是對外界觀感的回應：Google 的 AI 人才底子雖深，前沿產品的推出節奏卻已落後。
+外部報導也指出更深層的緊張。《MarketWatch》[報導](https://www.marketwatch.com/story/a-decade-of-internal-ai-battles-is-finally-catching-up-to-google-7b3358a1)，Google 的 AI 組織受到人才流失、模型發布延遲，以及研究、前沿能力與商業產品優先順序之間理念分歧的影響。因此，Argon 發布不只是新模型亮相，也是對外界觀感的回應：Google 的 AI 人才底子雖深，前沿產品的推出節奏卻已落後。
 
 至少從公開資料來看，Argon 讓 Google 更有力地回應這些批評。它在數個與企業部署密切相關的測試中領先或並列，包括衡量長程程式開發的 DeepSWE、漏洞修補的 CWE-bench、知識工作經濟效益的 Vals Index、商務執行的 AutomationBench，以及提示注入抵抗能力的 Gray Swan IPI。Google 也採用差異化發布策略，先提供給資安防禦者，同時持續進行安全工作與政府預先存取程序。
 
