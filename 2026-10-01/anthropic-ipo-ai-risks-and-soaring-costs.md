@@ -5,9 +5,12 @@ date: 2026-10-01
 author: Nilesh Christopher
 layout: post
 permalink: /2026-10-01/anthropic-ipo-ai-risks-and-soaring-costs.html
+image: /2026-10-01/og-anthropic-ipo-ai-risks-and-soaring-costs.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-01</div>
+
+![](/ai-articles/2026-10-01/og-anthropic-ipo-ai-risks-and-soaring-costs.png)
 
 **原文連結：** [Anthropic warns of AI’s ‘existential risk’ to humans in its IPO filing](https://www.latimes.com/business/story/2026-09-30/anthropic-warns-of-ais-existential-risk-to-humans-in-its-ipo-filing)
 
