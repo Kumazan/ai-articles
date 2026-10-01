@@ -42,7 +42,7 @@ AI 貢獻試點是 Google 與其仰賴的出版商建立新關係的一步。然
 
 有些出版商已開始反擊 Google 轉向 AI 搜尋的作法。一個[圖書出版商聯盟](https://www.publishersweekly.com/pw/by-topic/digital/copyright/article/100820-new-lawsuit-aims-to-stop-google-from-copyright-infringement-in-creating-ai-models.html)控告 Google，指其在訓練 AI 模型時涉嫌使用受著作權保護的內容。旗下擁有 Variety 和 Rolling Stone 等網站的 Penske Media，也因[流量損失](https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews/)對 Google 提告。該公司認為，Google 把 AI 資料擷取綁在一般網頁索引上，並不公平。網站若想出現在 Google 一般搜尋結果中，就也必須接受 AI 搜尋，因為目前沒有專門的退出選項。
 
-監管機關也開始注意這個問題。今年稍早，英國政府要求 Google 提供 AI 搜尋退出選項，且不得因此懲罰出版商在一般搜尋結果中的排名。歐盟執委會也正在調查，Google 是否公平補償出版商在 AI 答案中使用的內容。考量到 Google 近年在歐盟的處境，這件事恐怕不會輕易落幕。
+監管機關也開始注意這個問題。今年稍早，英國政府要求 Google 提供 AI 搜尋退出選項，且不得因此懲罰出版商在一般搜尋結果中的排名。歐盟執委會也正在調查，Google 是否公平補償出版商在 AI 答案中使用的內容。考量到 Google 近年在歐盟的處境，這項調查恐怕不會對 Google 有利。
 
 <div class="sep">· · ·</div>
 
