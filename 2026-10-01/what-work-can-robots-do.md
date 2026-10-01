@@ -1,13 +1,16 @@
 ---
 title: "機器人能做哪些工作？"
-description: "Anthropic 以 Claude 評估機器人目前可執行的工作，發現它們涵蓋近四分之三的美國體力工作，但受成本與能力限制，具成本競爭力的工作僅約 0.3%。研究也比較機器人與大型語言模型對就業的影響。"
+description: "Anthropic 以 Claude 評估機器人目前可執行的工作，發現涵蓋近四分之三的美國體力工作；但受成本與能力限制，具成本競爭力者僅約 0.3%，並比較機器人與 LLM 的就業影響。"
 date: 2026-10-01
 author: "Russell Legate-Yang、Maxim Massenkoff"
 layout: post
 permalink: /2026-10-01/what-work-can-robots-do.html
+image: /2026-10-01/og-what-work-can-robots-do.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-01</div>
+
+![](/ai-articles/2026-10-01/og-what-work-can-robots-do.png)
 
 **原文連結：** [What work can robots do?](https://www.anthropic.com/research/what-work-can-robots-do)
 
