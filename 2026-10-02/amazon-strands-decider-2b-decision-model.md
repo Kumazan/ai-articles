@@ -49,6 +49,12 @@ TypeSafe 的主管則表示，他們目前仍專注於改進後續模型。
 
 他補充：「現在這批產品看起來比較像是機器學習研究者想實作一種很酷的架構，而不是一支專注於讓智慧真正派上用場的團隊。」
 
+若讀者透過本文連結購買商品，TechCrunch 可能會收取少量佣金；這不會影響其編輯獨立性。
+
+Tim Fernholz 是一名報導科技、金融與公共政策的記者。他曾長期追蹤私人太空產業的興起，並著有《Rocket Billionaires: Elon Musk, Jeff Bezos and the New Space Race》。加入 TechCrunch 前，他曾在全球商業新聞網站 Quartz 擔任資深記者超過十年；他的新聞生涯則始於華盛頓特區的政治報導。
+
+如需聯繫 Tim 或驗證聲稱來自他的聯絡訊息，可寄信至 tim.fernholz@techcrunch.com，或透過 Signal 帳號 tim_fernholz.21 傳送加密訊息。
+
 <div class="sep">· · ·</div>
 
 ## 從生成模型到選擇模型：代理系統開始拆分工作
