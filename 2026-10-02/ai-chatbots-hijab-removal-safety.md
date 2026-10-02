@@ -4,10 +4,13 @@ description: "《衛報》測試發現，ChatGPT、Grok 等圖像工具能依提
 date: 2026-10-02
 author: Johana Bhuiyan（The Guardian）
 layout: post
+image: /2026-10-02/og-ai-chatbots-hijab-removal-safety.png
 permalink: /2026-10-02/ai-chatbots-hijab-removal-safety.html
 ---
 
 <div class="hero-badge">AI News · 2026-10-02</div>
+
+![](/ai-articles/2026-10-02/og-ai-chatbots-hijab-removal-safety.png)
 
 **原文連結：** [AI chatbots remove hijabs from images of Muslim women when prompted](https://www.theguardian.com/technology/2026/oct/01/ai-chatbots-hijabs-muslim-women)
 
