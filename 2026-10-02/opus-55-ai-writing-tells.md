@@ -53,6 +53,8 @@ OpenAI 發布 GPT-6 Sol 和 Luna 時也有類似說法，表示使用者可以�
 
 Russell Brandom 自 2012 年起報導科技產業，主要關注平台政策與新興科技。他曾任職於 The Verge 和 Rest of World，也曾為 Wired、The Awl 及 MIT Technology Review 撰稿。
 
+若要聯絡他，可寄信至 russell.brandom@techcrunch.com，或透過 Signal 撥打 412-401-5489。
+
 <div class="sep">· · ·</div>
 
 ## 「像 AI」不是固定清單，而是一場追逐賽
