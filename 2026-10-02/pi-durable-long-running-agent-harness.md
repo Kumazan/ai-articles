@@ -1,6 +1,7 @@
 ---
 title: "Pi Durable：打造能長時間運作的 AI 代理框架"
 description: "Earendil 開源實驗性 Pi Durable，以可恢復任務、並行對話、可插拔擴充與持久化狀態，讓代理應用跨越程序重啟並持續運作；同時保留 Pi 一貫的精簡與可塑性。"
+image: /2026-10-02/og-pi-durable-long-running-agent-harness.png
 date: 2026-10-02
 author: Mario Zechner（Earendil）
 layout: post
@@ -8,6 +9,8 @@ permalink: /2026-10-02/pi-durable-long-running-agent-harness.html
 ---
 
 <div class="hero-badge">AI News · 2026-10-02</div>
+
+![](/ai-articles/2026-10-02/og-pi-durable-long-running-agent-harness.png)
 
 **原文連結：** [Pi Durable](https://earendil.com/posts/pi-durable/)
 
