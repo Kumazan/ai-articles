@@ -5,9 +5,12 @@ date: 2026-10-02
 author: Ethan Mollick
 layout: post
 permalink: /2026-10-02/the-dot-and-the-swarm.html
+image: /2026-10-02/og-the-dot-and-the-swarm.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-02</div>
+
+![](/ai-articles/2026-10-02/og-the-dot-and-the-swarm.png)
 
 **原文連結：** [The Dot and the Swarm](https://www.oneusefulthing.org/p/the-dot-and-the-swarm)
 
