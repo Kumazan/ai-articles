@@ -5,9 +5,12 @@ date: 2026-10-02
 author: Kenneth Roth
 layout: post
 permalink: /2026-10-02/ai-weapons-human-control-algorithmic-targeting.html
+image: /2026-10-02/og-ai-weapons-human-control-algorithmic-targeting.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-02</div>
+
+![](/ai-articles/2026-10-02/og-ai-weapons-human-control-algorithmic-targeting.png)
 
 **原文連結：** [AI weapons systems are already here. Algorithms must not decide who lives and dies](https://www.theguardian.com/commentisfree/2026/oct/02/ai-weapons-systems-algorithms-war)
 
@@ -78,6 +81,8 @@ permalink: /2026-10-02/ai-weapons-human-control-algorithmic-targeting.html
 要對 AI 保有實質的人類控制，不能只是名義上認可它的決策。我們必須嚴格質疑它產生的結果，並在下層人員未盡責時追究指揮官責任。
 
 唯有保持懷疑，才有希望讓部署 AI 的士兵記得：在他們推動的殺傷鏈另一端，是真實的人類。即使在戰爭中，也不應有人被演算法機械式地抹去。
+
+—— Kenneth Roth 是《衛報》美國專欄作家、耶魯大學高級研究員，曾任人權觀察執行董事，著有《Righting Wrongs: Three Decades on the Front Lines Battling Abusive Governments》。
 
 <div class="sep">· · ·</div>
 
