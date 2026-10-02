@@ -5,9 +5,12 @@ date: 2026-10-03
 author: Matthew Schwartz
 layout: post
 permalink: /2026-10-03/claude-shaped-science.html
+image: /2026-10-03/og-claude-shaped-science.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-03</div>
+
+![](/ai-articles/2026-10-03/og-claude-shaped-science.png)
 
 **原文連結：** [Claude-shaped science](https://www.anthropic.com/research/claude-shaped-science)
 
