@@ -5,9 +5,12 @@ date: 2026-10-02
 author: Russell Brandom
 layout: post
 permalink: /2026-10-02/opus-55-ai-writing-tells.html
+image: /2026-10-02/og-opus-55-ai-writing-tells.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-02</div>
+
+![](/ai-articles/2026-10-02/og-opus-55-ai-writing-tells.png)
 
 **原文連結：** [Opus 5.5 loves to tell you ‘this matters’ (and other AI writing tells)](https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/)
 
