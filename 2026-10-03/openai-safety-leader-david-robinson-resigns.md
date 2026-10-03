@@ -3,11 +3,14 @@ title: "OpenAI 安全主管 David Robinson 離職，團隊震盪持續擴大"
 description: "OpenAI 安全系統主管 David Robinson 上週離職；這項人事變動發生在三名安全研究員遭解僱、外界重新關注公司 AI 安全制度之際。"
 date: 2026-10-03
 author: Stephen Council
+image: /2026-10-03/og-openai-safety-leader-david-robinson-resigns.png
 layout: post
 permalink: /2026-10-03/openai-safety-leader-david-robinson-resigns.html
 ---
 
 <div class="hero-badge">AI News · 2026-10-03</div>
+
+![](/ai-articles/2026-10-03/og-openai-safety-leader-david-robinson-resigns.png)
 
 **原文連結：** [OpenAI safety leader David Robinson resigns as the team's upheaval mounts](https://www.businessinsider.com/safety-leader-david-robinson-resigns-from-openai-2026-10)
 
