@@ -29,6 +29,8 @@ image: /2026-10-03/og-airbnb-inside-out-ai-transformation.png
 
 實際做法，是先在公司內部運用 AI 加速產品開發，再把相同能力用來改變顧客體驗。本文將這種路徑稱為「由內而外」的 AI，並深入探討其做法。
 
+「由內而外」AI 的一例：Airbnb 使用自製工具 Everest，加速推出新的對外服務。（圖表：Latent Space）
+
 Al-Dahle 接受 Latent Space 訪問時談到，為什麼他從 Meta 的前沿模型開發轉向 Airbnb 的 AI 部署。他回答，自己一直想追逐心目中最艱難的前沿——或許這句話也暗藏雙關。「在 Meta，我們大致知道飛輪長什麼樣，也理解怎麼一代又一代提升模型能力。」
 
 Al-Dahle 認為，下一個挑戰是大規模部署模型。在 Airbnb，他希望「推動大家改變工作方式，因為這些工具正在改變工作的樣貌」，並且「把這些系統部署到正式環境，用有創意的方式真正改善核心使用者體驗」。
@@ -39,7 +41,7 @@ Al-Dahle 列出幾項數字，說明 Airbnb 目前對 AI 的投入程度：公�
 
 ### 改變工程團隊的合作方式
 
-Airbnb 的做法首先從改造軟體工程流程開始。傳統流程可能先寫產品需求，再交給設計團隊、工程團隊實作，最後才進入正式環境測試；每個階段都要從一個團隊交接給另一個團隊。現在，產品、設計與工程團隊則直接圍繞原型協作。
+Airbnb 的做法首先從改造軟體工程流程開始。傳統流程可能先寫產品需求，再到 Figma 做設計，接著由工程團隊實作，最後才進入正式環境測試；每個階段都要從一個團隊交接給另一個團隊。現在，產品、設計與工程團隊則直接圍繞原型協作。
 
 Al-Dahle 說，傳統軟體公司若要跨過這道門檻，光是縮短流程中的等待時間，就能帶來很大的效益；Airbnb 跨出這一步後，也為產品開發過程注入了更多推力。
 
@@ -55,11 +57,11 @@ Al-Dahle 表示，客服是 Airbnb 第一個導入面向使用者的 AI 領域�
 
 ### 內部知識圖譜讓不同團隊重用經驗
 
-Airbnb Services 有兩項可能不太為人熟悉的服務：雜貨配送與機場接送。兩者都在今年推出，而 Airbnb 表示，「由內而外」的 AI 策略是促成快速開發的原因之一。名為 Everest 的內部組織脈絡圖譜，協助這些服務更快進入市場。Al-Dahle 說，Everest 運用大型語言模型、嵌入向量與 AI 檢索等技術來建構及查詢圖譜。
+[Airbnb Services](https://www.airbnb.co.uk/services) 有兩項可能不太為人熟悉的服務：雜貨配送與機場接送；其中雜貨配送最近也[擴展到更多城市](https://news.airbnb.com/airbnb-expands-groceries-with-instacart-across-us-and-canada)。兩者都在今年推出，而 Airbnb 表示，「由內而外」的 AI 策略是促成快速開發的原因之一。名為 Everest 的內部組織脈絡圖譜，協助這些服務更快進入市場。Al-Dahle 說，Everest 運用大型語言模型、嵌入向量與 AI 檢索等技術來建構及查詢圖譜。
 
 他指出，雜貨配送與機場接送都是整合外部合作夥伴 API、再接上 Airbnb 平台的服務。團隊先完成雜貨配送，並將開發經驗整理進 Everest；因此，後來的機場接送團隊可以更快完成專案。根據 Airbnb 的[第二季財報電話會議紀錄](https://s26.q4cdn.com/656283129/files/doc_financials/2026/q2/Airbnb-Q2-2026-Earnings-Call-Transcript.pdf)，雜貨服務花了八、九個月開發，機場接送則約六週。
 
-有了 Everest，開發者不一定要具備某個領域的專業知識，才能參與相關專案。Al-Dahle 說：「有了這張涵蓋整個程式碼庫的脈絡圖譜，通才也能跨足非常專門的程式領域。」這兩項服務都曾在執行長 Brian Chesky 五月發布的 [Airbnb 2026 夏季更新](https://www.youtube.com/watch?v=bFHdNb74YDo)中亮相。
+有了 Everest，開發者不一定要具備某個領域的專業知識，才能參與相關專案。Al-Dahle 說：「有了這張涵蓋整個程式碼庫的脈絡圖譜，通才也能跨足非常專門的程式領域。」這兩項服務都曾在執行長 Brian Chesky 五月發布的 [Airbnb 2026 夏季更新](https://www.youtube.com/watch?v=bFHdNb74YDo)中亮相。他在 X 上的相關貼文發布於 2026 年 5 月 20 日晚間 7:14；頁面記錄 782K 次瀏覽、327 則回覆、172 次轉發與 3.51K 個讚。
 
 ### 不同工作選不同模型
 
@@ -73,7 +75,7 @@ Airbnb 會沿著成本、效能和延遲之間的 Pareto 前緣評估模型，�
 
 ### 從內部助理走向非同步代理
 
-和其他 AI 原生公司一樣，Airbnb 也建立了內部代理，名為 AirChat。Al-Dahle 說，AirChat「納入了所有必要的 MCP 組織脈絡」。
+和其他 [AI 原生公司](https://www.latent.space/p/lovable-future-of-saas)一樣，Airbnb 也建立了內部代理，名為 AirChat。Al-Dahle 說，AirChat「納入了所有必要的 MCP 組織脈絡」。
 
 Airbnb 也開始採用 Al-Dahle 視為代理下一階段的模式：在容器中執行、由事件觸發的非同步代理。他舉例說，許多團隊正開始自動化值班流程：「如果監控系統觸發警示，例如 Grafana 門檻超標，代理就會啟動，進行分類並處理初步值班工作。」
 
