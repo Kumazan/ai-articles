@@ -5,9 +5,12 @@ date: 2026-10-03
 author: Richard MacManus
 layout: post
 permalink: /2026-10-03/airbnb-inside-out-ai-transformation.html
+image: /2026-10-03/og-airbnb-inside-out-ai-transformation.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-03</div>
+
+![](/ai-articles/2026-10-03/og-airbnb-inside-out-ai-transformation.png)
 
 **原文連結：** [Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience](https://www.latent.space/p/airbnb)
 
