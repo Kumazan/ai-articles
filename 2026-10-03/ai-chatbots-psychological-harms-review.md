@@ -30,13 +30,13 @@ image: /2026-10-03/og-ai-chatbots-psychological-harms-review.png
 
 這篇論文整理既有研究，討論 Replika、Character.AI 等以特定角色為核心設計的 AI 陪伴機器人，也涵蓋 OpenAI 的 ChatGPT、Anthropic 的 Claude 等通用 AI 助理。作者承認，與聊天機器人進行情感互動可能帶來一些「潛在好處」，例如短期降低孤獨感、改善情緒；但他們也指出，這些好處與文獻中反覆記錄的不良結果並存，風險從情感依賴、既有疾病或症狀惡化，一直到自傷都有。
 
-研究者認為，聊天機器人使用富有情緒、近似人類的方式互動，是一項風險因素。這種設計可能讓使用者過度投入一段人機關係；但說到底，這段關係是單向的。
+研究者認為，聊天機器人以富含情緒、近似人類的方式與使用者互動，是一項風險因素。這種設計可能讓使用者過度投入一段人機關係；但說到底，這段關係是單向的。
 
-論文寫道：「能引發人格感與溫暖感的設計選擇，會鼓勵使用者把這些系統擬人化。」研究者接著指出，「模擬同理心」會形成「結構上不對等的互動：使用者揭露心事、系統作出回應，兩者之間卻沒有互惠、脆弱性或責任承擔。」
+論文寫道：「能營造人格特質與溫暖感的設計選擇，會鼓勵使用者把這些系統擬人化。」研究者接著指出，「模擬同理心」會形成「結構上不對等的互動：使用者揭露心事、系統作出回應，兩者之間卻沒有互惠、脆弱性或責任承擔。」
 
 換句話說，這段關係對使用者而言或許很真實，但對聊天機器人而言並非如此。
 
-研究者也點出聊天機器人的順從性（agreeability）與諂媚迎合（sycophancy）設計可能造成傷害。他們寫道，「過度肯定（overvalidation）與諂媚迎合（sycophancy）」可能強化使用者的妄想或失調思考；若聊天機器人把順著使用者說話看得比正確性更重要，這種效果尤其值得注意。（在對妄想使用者的聊天紀錄中，研究者曾發現，AI 系統會[抗拒使用者試圖檢驗其誇大或自我吹捧主張是否符合現實](https://www.nytimes.com/2025/08/08/technology/ai-chatbots-delusions-chatgpt.html)。）
+研究者也點出聊天機器人的順從性（agreeability）與諂媚迎合（sycophancy）設計可能造成傷害。他們寫道，「過度肯定（overvalidation）與諂媚迎合（sycophancy）」可能強化使用者的妄想或失調思考；若聊天機器人把附和使用者看得比正確性更重要，這種效果尤其值得注意。（在對妄想使用者的聊天紀錄中，研究者曾發現，AI 系統會[抗拒使用者試圖檢驗其誇大或自我吹捧主張是否符合現實](https://www.nytimes.com/2025/08/08/technology/ai-chatbots-delusions-chatgpt.html)。）
 
 不只這些研究者提出警訊。他們的分析延續了[數項研究](https://futurism.com/artificial-intelligence/certain-chatbots-worse-ai-psychosis-study)，那些研究已將這類設計特徵[列為潛在危險](https://futurism.com/artificial-intelligence/study-chats-delusional-users-ai)。早在至少[2023 年](https://academic.oup.com/schizophreniabulletin/article/49/6/1418/7251361)，學者便警告聊天機器人可能加劇妄想或[失調的思考模式](https://futurism.com/psychiatrist-warns-ai-psychosis)。Google DeepMind 在[2024 年初發表的一篇論文](https://futurism.com/google-suicide-teen-research)也曾警告，具有「說服力」的聊天機器人可能傷害弱勢族群，包括孩童、正面臨心理健康困難的人，以及單純感到孤獨的人。近期還有[一項研究](https://futurism.com/artificial-intelligence/paper-proposes-ai-psychosis)，由倫敦國王學院（King’s College London）與德國福音派應用科學大學（Protestant University of Applied Sciences）的精神科醫師共同撰寫；研究主張，諂媚迎合、模仿使用者語言（mirrored language）與高度個人化（hyper-personalization）等特徵結合後，可能在部分受影響的使用者身上形成強力的「放大螺旋」（amplification spiral），助長妄想思考。
 
