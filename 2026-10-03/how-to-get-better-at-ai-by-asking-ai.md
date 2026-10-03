@@ -5,9 +5,12 @@ date: 2026-10-03
 author: Arielle Shipper
 layout: post
 permalink: /2026-10-03/how-to-get-better-at-ai-by-asking-ai.html
+image: /2026-10-03/og-how-to-get-better-at-ai-by-asking-ai.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-03</div>
+
+![](/ai-articles/2026-10-03/og-how-to-get-better-at-ai-by-asking-ai.png)
 
 **原文連結：** [How to Get Better at AI by Asking AI](https://every.to/p/codex-graded-my-ai-habits-then-it-became-my-coach)
 
