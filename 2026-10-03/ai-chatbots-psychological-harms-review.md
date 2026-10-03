@@ -5,9 +5,12 @@ date: 2026-10-03
 author: Maggie Harrison Dupré
 layout: post
 permalink: /2026-10-03/ai-chatbots-psychological-harms-review.html
+image: /2026-10-03/og-ai-chatbots-psychological-harms-review.png
 ---
 
 <div class="hero-badge">AI News · 2026-10-03</div>
+
+![](/ai-articles/2026-10-03/og-ai-chatbots-psychological-harms-review.png)
 
 **原文連結：** [The AI Chatbots That Tech Companies Are Aggressively Pushing to Billions of Users Appear to Be Causing Serious Psychological Harms, New Research Finds](https://futurism.com/artificial-intelligence/ai-chatbots-serious-psychological-harms)
 
